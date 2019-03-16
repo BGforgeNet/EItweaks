@@ -18,16 +18,16 @@ Features:
   - Undead and golems no longer regenerate
   - Halved for dragons and ogres
   - Dramatically for all other monster types and PC
+- Armor:
+  - Hard leather and hide now provide extra protection against piercing (match monster protection)
+  - Dragon hide now provide extra protection against corresponding elements
 
 (Try) Todo:
-- Armor protection should match source monster protection (i.e. Hard Leather/Ogres/Piercing)
-- Increase (hide) armor protection from magic to make it more attractive (acid, lightning, etc)
 - Hide (light) armor blueprints on Gipath
 - Widescreen
 - Allow to select (all) stats for the main PC
 - Configurable auto-aim (hands by default)
 - Open Ruins/Witch's Cave/Death Canyon/Wormheads's Cave for returning
-- Reduce regeneration (skeletons in particular)
 - Better loot from Khadaganians on Gipath
 - Vulnerabilities/protections for elementals
 - Fix Gipat bats damage description (lightning > fire)
