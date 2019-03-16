@@ -42,6 +42,5 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul
 - Configurable auto-aim (hands by default)
 - Open Ruins/Witch's Cave/Death Canyon/Wormheads's Cave for returning
 - Better loot from Khadaganians on Gipath
-- Fix Wormheads fire resistance
 - Disable batteries
 - Make run speed/length dependent on current load
