@@ -13,6 +13,7 @@ Features:
 - Stronger Green Dragon Horn.
 - New game "My head hurts" cutscene is shortened.
 - Zak no longer has a level of backstab perk.
+- Reduce over-the-top armor values for golems and other "unkillable" monsters from 150 to 44.
 
 (Try) Todo:
 - Armor protection should match source monster protection (i.e. Hard Leather/Ogres/Piercing)
