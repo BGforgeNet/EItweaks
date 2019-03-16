@@ -22,6 +22,12 @@ Features:
   - Hard leather and hide now provide extra protection against piercing (match monster protection)
   - Dragon hide now provide extra protection against corresponding elements
 
+Bug fixes:
+  - Gipath bats description now correctly states fire damage
+  - Stony harpies have extra protection from lightning instead of fire
+  - Grey harpies have extra protection from acid instead of fire
+
+
 (Try) Todo:
 - Hide (light) armor blueprints on Gipath
 - Widescreen
@@ -30,9 +36,6 @@ Features:
 - Open Ruins/Witch's Cave/Death Canyon/Wormheads's Cave for returning
 - Better loot from Khadaganians on Gipath
 - Vulnerabilities/protections for elementals
-- Fix Gipat bats damage description (lightning > fire)
-- Fix stony harpies protection (fire > lightning)
-- Fix grey harpies protection (fire > acid)
 - Fix Wormheads fire resistance
 - Disable batteries
 - Make run speed/length dependent on current load
