@@ -20,9 +20,10 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul
   - Stronger Green Dragon Horn.
 
 - Regeneration:
-  - Undead and golems no longer regenerate
+  - Disabled for undead and golems
   - Halved for dragons and ogres
-  - Dramatically for all other monster types and PC
+  - Green/blue trolls are untouched, and black ones now match them
+  - Reduced dramatically for all other monsters and characters
 
 - Resistances:
   - Hard leather and hide now provide extra protection against piercing (match monster protection)
@@ -44,3 +45,4 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul
 - Better loot from Khadaganians on Gipath
 - Disable batteries
 - Make run speed/length dependent on current load
+- Vulnerabilities for metal armored NPCs
