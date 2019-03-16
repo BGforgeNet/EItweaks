@@ -1,8 +1,8 @@
 ,,,,,,,,,,,,,,,,,
 ,Name,Physical Piercing,Physical Shashing,Physical Bludgeoning,Elemental Termal,Elemental Chemic,Elemental Electric,Other General,Physical Piercing2,Physical Shashing2,Physical Bludgeoning2,Elemental Termal2,Elemental Chemic2,Elemental Electric2,Other General2,Unk3-0,Unk4-0
 ,FLD0-0,FLD1-0,FLD1-1,FLD1-2,FLD1-3,FLD1-4,FLD1-5,FLD1-6,FLD2-0,FLD2-1,FLD2-2,FLD2-3,FLD2-4,FLD2-5,FLD2-6,FLD3-0,FLD4-0
-,none,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.0,4.0
-,skull,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.0,0.0
-,torso,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.0,1.0
+,none,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,4.0
+,skull,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,0.0
+,torso,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,1.0
 ,leg,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,3.0
 ,arm,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,2.0
