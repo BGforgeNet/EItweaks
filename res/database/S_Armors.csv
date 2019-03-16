@@ -1,0 +1,25 @@
+,,,,,,,,,
+,Prototype,Required,Optional,Power,Shop 1,Shop 2,Shop 3,Shop 4,Shop 5
+,FLD1-0,FLD2-0,FLD3-0,FLD4-0,FLD5-0,FLD5-1,FLD5-2,FLD5-3,FLD5-4
+,eagle_sight,ic,,,1.0,1.0,1.0,1.0,1.0
+,eagle_sight,"ic,d",m,,1.0,1.0,1.0,1.0,1.0
+,eagle_sight,"ic,d,d",m,,1.0,1.0,1.0,1.0,1.0
+,infravision,ic,,,1.0,1.0,1.0,1.0,1.0
+,infravision,"ic,d",m,,1.0,1.0,1.0,1.0,1.0
+,infravision,"ic,d,d",m,,1.0,1.0,1.0,1.0,1.0
+,invisibility,ic,,,1.0,1.0,1.0,1.0,1.0
+,invisibility,"ic,d",m,,1.0,1.0,1.0,1.0,1.0
+,invisibility,"ic,d,d",m,,1.0,1.0,1.0,1.0,1.0
+,silence,ic,,,1.0,1.0,1.0,1.0,1.0
+,silence,"ic,d",m,,1.0,1.0,1.0,1.0,1.0
+,silence,"ic,d,d",m,,1.0,1.0,1.0,1.0,1.0
+,strength,ic,,,1.0,1.0,1.0,1.0,1.0
+,strength,"ic,d",m,,1.0,1.0,1.0,1.0,1.0
+,strength,"ic,d,d",m,,1.0,1.0,1.0,1.0,1.0
+,healing,ic,,,1.0,1.0,1.0,1.0,1.0
+,healing,"ic,e",m,,1.0,1.0,1.0,1.0,1.0
+,healing,"ic,e,e",m,,1.0,1.0,1.0,1.0,1.0
+,healing,it,,,1.0,1.0,1.0,1.0,1.0
+,healing,"it,e",m,,1.0,1.0,1.0,1.0,1.0
+,healing,"it,e,e",m,,1.0,1.0,1.0,1.0,1.0
+,,,,,0.0,0.0,0.0,0.0,0.0

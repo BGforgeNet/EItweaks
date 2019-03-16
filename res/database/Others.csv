@@ -1,0 +1,16 @@
+,,,
+,Name,Talk,Rest
+,FLD1-0,FLD10-0,FLD11-0
+,Human Mercenary Warrior,,
+,Human Gipath NPC Expeditor F15,,
+,Human Kania NPC Manager F1,,
+,Human Mercenary Archer,,
+,Human Gipath NPC Boss F5,,
+,Human Mercenary Hadagan Warrior,,
+,Human Mercenary Hadagan Archer,,
+,Human Gipath NPC Warlord F5,{1=npc\talk\wrld.wav##2=10##3=##4=},{1=npc\rest\wrld.wav##2=10##3=##4=}
+,Human Mercenary Hadagan Thief,,
+,Human Mercenary Thief,,
+,Human Mercenary Kania Archer,,
+,Human Mercenary Kania Thief,,
+,Human Mercenary Kania Warrior,,
