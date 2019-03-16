@@ -1,4 +1,4 @@
-EItweaks
+## EItweaks
 
 EItweaks is a mod for Evil Islands: Curse of the Lost Soul
 
@@ -13,7 +13,11 @@ Features:
 - Stronger Green Dragon Horn.
 - New game "My head hurts" cutscene is shortened.
 - Zak no longer has a level of backstab perk.
-- Reduce over-the-top armor values for golems and other "unkillable" monsters from 150 to 44.
+- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44.
+- Regeneration:
+  - Undead and golems no longer regenerate
+  - Halved for dragons and ogres
+  - Dramatically for all other monster types and PC
 
 (Try) Todo:
 - Armor protection should match source monster protection (i.e. Hard Leather/Ogres/Piercing)
@@ -30,6 +34,5 @@ Features:
 - Fix stony harpies protection (fire > lightning)
 - Fix grey harpies protection (fire > acid)
 - Fix Wormheads fire resistance
-- Change unkillable monsters (armor 150) to managebable armor of 44
 - Disable batteries
 - Make run speed/length dependent on current load
