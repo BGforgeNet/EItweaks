@@ -26,10 +26,11 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul
   - Reduced dramatically for all other monsters and characters
 
 - Resistances:
-  - Hard leather and hide provide extra protection against piercing/bludgeoning (match monster protection)
+  - Hard leather provide extra protection against piercing and bludgeoning, matching monster protection
+  - Hide provides extra protection against piercing
   - Fur provides extra protection against bludgeoning
   - Lava elementals get extra protection from fire, Snow elementals get vulnerability to it
-  - Lightning vulnerability for NPCs using metal armor
+  - Lightning vulnerability for NPCs using metal armor and golems
 
 - Bug fixes:
   - Gipath bats description correctly states fire damage
