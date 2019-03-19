@@ -29,12 +29,12 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul
   - Hard leather and hide now provide extra protection against piercing (match monster protection)
   - Dragon hide now provides extra protection against corresponding elements
   - Lava elementals get extra protection from fire, Snow elementals get vulnerability to it
+  - Lightning vulnerability for metal armored NPCs
 
 - Bug fixes:
   - Gipath bats description now correctly states fire damage
   - Stony harpies have extra protection from lightning instead of fire
   - Grey harpies have extra protection from acid instead of fire
-
 
 (Try) Todo:
 - Hide (light) armor blueprints on Gipath
@@ -45,4 +45,3 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul
 - Better loot from Khadaganians on Gipath
 - Disable batteries
 - Make run speed/length dependent on current load
-- Vulnerabilities for metal armored NPCs
