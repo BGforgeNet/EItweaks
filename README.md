@@ -2,6 +2,7 @@
 
 EItweaks is a mod for Evil Islands: Curse of the Lost Soul
 
+### Overview
 - Gameplay changes:
   - When a player character is running, stamina is depleted by points rather than percentage, which allows to run longer as stamina grows.
   - Human (PC and NPC) run speed slightly increased.
@@ -39,12 +40,9 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul
   - Dragons and items from dragon hide have extra protection from the corresponding elements
   - Dragons description correctly states their damage type
 
-(Try) Todo:
-- Hide (light) armor blueprints on Gipath
-- Widescreen
-- Allow to select (all) stats for the main PC
-- Configurable auto-aim (hands by default)
-- Open Ruins/Witch's Cave/Death Canyon/Wormheads's Cave for returning
-- Better loot from Khadaganians on Gipath
-- Disable batteries
-- Make run speed/length dependent on current load
+### Installation
+
+1. Download and install [EI starter](https://www.gipat.ru/forum/index.php?download=51)
+2. Download updated [addon.dll](https://www.gipat.ru/forum/index.php?download=59) and drop it into starter's directory, replacing old addon.dll.
+3. Dowload latest EItweaks release, unzip it in into "Mods" subdir of starter's install directory.
+4. Launch starter, select EItweaks in dropdown.
