@@ -19,4 +19,4 @@ cp -r config \
 zip -r "$fname" "$dname"
 rm -rf "$dname"
 
-#githubrelease release BGforgeNet/EItweaks create "$version" --publish --name "$version" "$fname"
+githubrelease release BGforgeNet/EItweaks create "$version" --publish --name "$version" "$fname"
