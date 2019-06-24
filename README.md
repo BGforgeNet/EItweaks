@@ -50,9 +50,11 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul.
 ### Installation
 
 1. Download and install [EI starter](https://www.gipat.ru/forum/index.php?download=51).
-2. Download updated [addon.dll](https://www.gipat.ru/forum/index.php?download=59) and drop it into starter's directory, replacing old addon.dll.
-3. Dowload latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest)), unzip it in into "Mods" subdir of starter's install directory.
-4. Launch starter, select EItweaks in dropdown.
+1. Download updated [addon.dll](https://www.gipat.ru/forum/index.php?download=59) and drop it into starter's directory, replacing old addon.dll.
+1. Dowload latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest)), unzip it.
+1. Put `eitweaks` in into "Mods" subdir of starter's installation directory.
+1. Put `game.exe` into main game directory (this is only required for "run longer" component).
+1. Launch starter, select EItweaks in dropdown.
 
 
 ### Reporting issues
