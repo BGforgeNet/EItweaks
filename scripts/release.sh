@@ -2,14 +2,21 @@
 
 set -xeu -o pipefail
 
-version="$1"
+version="v$1"
 fname="eitweaks-$version.zip"
+dname="eitweaks"
 
-rm -f "$fname"
-zip -r "$fname" \
-  config \
+rm -rf "$dname"
+mkdir -p "$dname"
+
+ini2reg config.ini
+cp -r config \
   config.reg \
   movies \
-  res/*.res
+  res/*.res \
+  "$dname"
 
-githubrelease release BGforgeNet/EItweaks create "v$version" --publish --name "v$version" "$fname"
+zip -r "$fname" "$dname"
+rm -rf "$dname"
+
+#githubrelease release BGforgeNet/EItweaks create "$version" --publish --name "$version" "$fname"
