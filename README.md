@@ -4,7 +4,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul.
 
 - [Overview](#overview)
 - [Installation](#installation)
-- [Reporting issues](#reporting-issues)
+- [Support](#support)
 - [Author](#author)
 - [Changelog](CHANGELOG.md)
 - [Todo](TODO.md)
@@ -57,9 +57,9 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul.
 1. Launch starter, select EItweaks in dropdown.
 
 
-### Reporting issues
+### Support
 * Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).
-* Discuss and ask question on the [forum](https://forums.bgforge.net/viewtopic.php?f=22&t=183).
+* Discuss and ask questions on the [forum](https://forums.bgforge.net/viewtopic.php?f=22&t=183).
 
 ### Author
 [Magus at BGforge](https://forums.bgforge.net/viewtopic.php?f=22&t=183)
