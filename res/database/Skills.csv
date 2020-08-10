@@ -1,10 +1,10 @@
 ,,,,
 ,Name,Code,TTI,Base Attributes
 ,FLD0-0,FLD1-0,FLD2-0,FLD10-0
-,Melee,melee,0.0,dex
-,Archery,archery,1.0,dex
-,Backstab,backstab,2.0,dex
-,Elemental,elemental,3.0,int
-,Sense,sense,4.0,int
-,Astral,astral,5.0,int
-,Science,science,9.0,int
+,Melee,melee,0,dex
+,Archery,archery,1,dex
+,Backstab,backstab,2,dex
+,Elemental,elemental,3,int
+,Sense,sense,4,int
+,Astral,astral,5,int
+,Science,science,9,int

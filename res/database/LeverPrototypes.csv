@@ -1,40 +1,40 @@
 ,,,,,,,,,,,
 ,Name,Place1-1,Place1-2,Place2-1,Place2-2,Unk2-0,Scale,Switch Time,Material,Switch Sound,Lever Text
 ,FLD0-0,FLD1-0,FLD1-1,FLD1-2,FLD1-3,FLD2-0,FLD3-0,FLD4-0,FLD5-0,FLD6-0,FLD7-0
-,stbr9,1.74468e-39,0.1,nan,1.74458e-39,1.0,1.0,22.0,Stone,Tools\BridgeW.wav,OrcDrawBridge00         Деревянный разводной мост
-,stbr10,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,7.0,Stone,Tools\WoodR.wav,DrawBridgeGear00        Деревянный рычаг
-,stbr14,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,22.0,Stone,Tools\BridgeW.wav,dambaBridge00           Большая деревянная подъемная заслонка
-,stbr17,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,22.0,Stone,Tools\BridgeS.wav,flyerBridge00           Металлический подъемный мост
-,stbuho12,-1.0,1.0,1.0,-1.0,2.0,2.0,22.0,Stone,Tools\Melnik.wav,bigMachine00            Ломающаяся деревянная мельница
-,stbuho15,1.0,5.0,-1.0,5.0,2.0,2.0,10.0,Stone,Tools\Gate.wav,driadPrison00           Подьем металлической решетки
-,stbuho48,0.0,3.5,0.0,2.0,2.0,2.0,10.0,Stone,Tools\Gate.wav,vivary00                Опускание металлической решетки
-,stbuho57,0.0,2.5,nan,1.74458e-39,1.0,2.0,10.0,Stone,Tools\Gate.wav,hadoganPrison00         Опускание металлической решетки
-,stbuho64,0.0,8.0,-1.0,7.5,2.0,2.0,10.0,Stone,Tools\Gate.wav,whiteTigerGate00        Подьем металлической решетки
-,stga2,0.0,-1.0,nan,1.74458e-39,1.0,4.0,30.0,Stone,Tools\StoneG.wav,DgunGate00              Опускание каменной плиты
-,stga4,0.0,2.2,0.0,-2.2,2.0,3.0,30.0,Stone,Tools\StoneG.wav,dgunGate01              Опускание каменной плиты
-,stga5,0.0,1.0,0.0,-1.0,2.0,2.0,22.0,Stone,Tools\BridgeW.wav,farmGate00              Раздвигание деревянных жердей
-,stga6,0.0,1.1,0.0,-0.2,2.0,2.0,22.0,Stone,Tools\Door.wav,hadoganGates00          Открывание деревянных ворот
-,stga8,0.0,1.0,nan,1.74458e-39,1.0,2.0,22.0,Stone,Tools\Door.wav,hadoganCaveDoor00       Открывание деревянных ворот
-,stsi3,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,15.0,Stone,Tools\On_off.wav,Level00                 Опускание каменного столба
-,stst27,0.0,0.6,-1.0,0.0,2.0,4.0,19.0,Stone,Tools\Stone.wav,Crypt00                 Сдвиг каменной плиты
-,stst32,0.6,0.8,nan,1.74458e-39,1.0,2.0,10.0,Stone,Tools\Gate.wav,LizardCage00            Открывание металлической клетки
-,stst33,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,22.0,Stone,Tools\Wood.wav,GoblinCage00            Поворот бревна
-,stst34,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,15.0,Stone,Tools\On_off.wav,Altar00                 Опускание каменного столба
-,stst38,0.0,0.7,0.0,-0.7,2.0,3.0,10.0,Stone,Tools\Gate.wav,bars00                  Подьем металлической решетки
-,stst43,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,10.0,Stone,Tools\BoxW.wav,chest00                 Открывание деревянного сундука
-,stst47,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,19.0,Stone,Tools\Stone.wav,grave00                 Сдвиг каменной плиты
-,stst57,0.0,2.0,0.0,-1.0,2.0,3.0,22.0,Stone,Tools\Door.wav,CaveDoor                Открывание деревянных ворот
-,stst58,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,4.0,Stone,Tools\Metal.wav,CaveLevel00             Металлический рычаг
-,stst62,0.0,1.2,nan,1.74458e-39,1.0,3.0,15.0,Stone,Tools\On_off.wav,golemControl00          Опускание каменного столба
-,stst81,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,22.0,Stone,Tools\BoxM.wav,flyerChest00            Открывание металлического сундука
-,stst84,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,22.0,Stone,Tools\BoxM.wav,ogreChest00             Открывание кожанного сундука
-,stst92,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,22.0,Stone,Tools\BoxM.wav,hadoganChest00          Открывание металлического сундука
-,stst95,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,4.0,Stone,Tools\Metal.wav,flyerBridgeLever00      Металлический рычаг
-,stst102,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,41.0,Stone,Tools\Bigstone.wav,fallingStone00          Катящийся и плюхающийся в воду камень
-,stst105,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,15.0,Stone,Tools\On_off.wav,teleportControlPanel00  Опускание каменного столба
-,stst106,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,15.0,Stone,Tools\loot.wav,DeadScientist00         Труп ученого
-,stst107,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,41.0,Stone,Tools\loot.wav,DeadWarrior00           Труп хадаганского воина
-,stst115,1.74468e-39,6.02966e-39,nan,1.74458e-39,0.0,1.0,15.0,Stone,Tools\On_off.wav,mineControl00           Опускание каменного столба
-,stwa7,0.0,-1.0,nan,1.74458e-39,1.0,3.0,10.0,Stone,Tools\BoxW.wav,driadFence01            Поворот (перекручивание) старого дерева
-,stwa9,0.0,-1.0,nan,1.74458e-39,1.0,3.0,10.0,Stone,Tools\BoxW.wav,driadFence03            Поворот (перекручивание) старого дерева
-,stst28,0.0,0.5,0.2,0.5,2.0,4.0,10.0,Stone,Tools\water.wav,Source00                По идее звука нет.. Прописан просто так..
+,stbr9,1.74468e-39,0.1,nan,1.74458e-39,1,1,22,Stone,Tools\BridgeW.wav,OrcDrawBridge00         Деревянный разводной мост
+,stbr10,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,7,Stone,Tools\WoodR.wav,DrawBridgeGear00        Деревянный рычаг
+,stbr14,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,22,Stone,Tools\BridgeW.wav,dambaBridge00           Большая деревянная подъемная заслонка
+,stbr17,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,22,Stone,Tools\BridgeS.wav,flyerBridge00           Металлический подъемный мост
+,stbuho12,-1,1,1,-1,2,2,22,Stone,Tools\Melnik.wav,bigMachine00            Ломающаяся деревянная мельница
+,stbuho15,1,5,-1,5,2,2,10,Stone,Tools\Gate.wav,driadPrison00           Подьем металлической решетки
+,stbuho48,0,3.5,0,2,2,2,10,Stone,Tools\Gate.wav,vivary00                Опускание металлической решетки
+,stbuho57,0,2.5,nan,1.74458e-39,1,2,10,Stone,Tools\Gate.wav,hadoganPrison00         Опускание металлической решетки
+,stbuho64,0,8,-1,7.5,2,2,10,Stone,Tools\Gate.wav,whiteTigerGate00        Подьем металлической решетки
+,stga2,0,-1,nan,1.74458e-39,1,4,30,Stone,Tools\StoneG.wav,DgunGate00              Опускание каменной плиты
+,stga4,0,2.2,0,-2.2,2,3,30,Stone,Tools\StoneG.wav,dgunGate01              Опускание каменной плиты
+,stga5,0,1,0,-1,2,2,22,Stone,Tools\BridgeW.wav,farmGate00              Раздвигание деревянных жердей
+,stga6,0,1.1,0,-0.2,2,2,22,Stone,Tools\Door.wav,hadoganGates00          Открывание деревянных ворот
+,stga8,0,1,nan,1.74458e-39,1,2,22,Stone,Tools\Door.wav,hadoganCaveDoor00       Открывание деревянных ворот
+,stsi3,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,15,Stone,Tools\On_off.wav,Level00                 Опускание каменного столба
+,stst27,0,0.6,-1,0,2,4,19,Stone,Tools\Stone.wav,Crypt00                 Сдвиг каменной плиты
+,stst32,0.6,0.8,nan,1.74458e-39,1,2,10,Stone,Tools\Gate.wav,LizardCage00            Открывание металлической клетки
+,stst33,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,22,Stone,Tools\Wood.wav,GoblinCage00            Поворот бревна
+,stst34,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,15,Stone,Tools\On_off.wav,Altar00                 Опускание каменного столба
+,stst38,0,0.7,0,-0.7,2,3,10,Stone,Tools\Gate.wav,bars00                  Подьем металлической решетки
+,stst43,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,10,Stone,Tools\BoxW.wav,chest00                 Открывание деревянного сундука
+,stst47,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,19,Stone,Tools\Stone.wav,grave00                 Сдвиг каменной плиты
+,stst57,0,2,0,-1,2,3,22,Stone,Tools\Door.wav,CaveDoor                Открывание деревянных ворот
+,stst58,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,4,Stone,Tools\Metal.wav,CaveLevel00             Металлический рычаг
+,stst62,0,1.2,nan,1.74458e-39,1,3,15,Stone,Tools\On_off.wav,golemControl00          Опускание каменного столба
+,stst81,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,22,Stone,Tools\BoxM.wav,flyerChest00            Открывание металлического сундука
+,stst84,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,22,Stone,Tools\BoxM.wav,ogreChest00             Открывание кожанного сундука
+,stst92,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,22,Stone,Tools\BoxM.wav,hadoganChest00          Открывание металлического сундука
+,stst95,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,4,Stone,Tools\Metal.wav,flyerBridgeLever00      Металлический рычаг
+,stst102,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,41,Stone,Tools\Bigstone.wav,fallingStone00          Катящийся и плюхающийся в воду камень
+,stst105,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,15,Stone,Tools\On_off.wav,teleportControlPanel00  Опускание каменного столба
+,stst106,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,15,Stone,Tools\loot.wav,DeadScientist00         Труп ученого
+,stst107,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,41,Stone,Tools\loot.wav,DeadWarrior00           Труп хадаганского воина
+,stst115,1.74468e-39,6.02966e-39,nan,1.74458e-39,0,1,15,Stone,Tools\On_off.wav,mineControl00           Опускание каменного столба
+,stwa7,0,-1,nan,1.74458e-39,1,3,10,Stone,Tools\BoxW.wav,driadFence01            Поворот (перекручивание) старого дерева
+,stwa9,0,-1,nan,1.74458e-39,1,3,10,Stone,Tools\BoxW.wav,driadFence03            Поворот (перекручивание) старого дерева
+,stst28,0,0.5,0.2,0.5,2,4,10,Stone,Tools\water.wav,Source00                По идее звука нет.. Прописан просто так..
