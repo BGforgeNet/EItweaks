@@ -13,7 +13,7 @@ ini2reg config.ini
 cp -r config \
   config.reg \
   movies \
-  res/*.res \
+  res \
   "$dname"
 
 zip -r "$fname" "$dname"
