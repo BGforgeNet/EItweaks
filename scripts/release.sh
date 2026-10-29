@@ -11,11 +11,11 @@ mkdir -p "$dname"
 
 ini2reg config.ini
 cp -r config \
-  config.reg \
-  maps \
-  movies \
-  res \
-  "$dname"
+    config.reg \
+    maps \
+    movies \
+    res \
+    "$dname"
 
 zip -r "$fname" "$dname"
 rm -rf "$dname"
