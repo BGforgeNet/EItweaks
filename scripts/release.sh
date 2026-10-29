@@ -12,6 +12,7 @@ mkdir -p "$dname"
 ini2reg config.ini
 cp -r config \
   config.reg \
+  maps \
   movies \
   res \
   "$dname"
