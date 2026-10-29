@@ -1,0 +1,41 @@
+Frage nach dem Dorf
+#show Hero 1
+#show Elder 2
+#ANIMATION 3
+#phrase Hero  1
+Gehe ich recht in der Annahme, dass du der Älteste dieses Dorfes bist?
+#ANIMATION 11
+#CAMERA 3
+#phrase Elder  2
+Oh ja. Ich bin der Älteste Erfar. Die Bewohner dieses Dorfes haben mich beauftragt, sie zu regieren. Manchmal nennen sie mich Silberzunge, aber das stört mich nicht. Ich betrachte es als Zeichen des Respekts.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  3
+Der Herrscher dieses Landes erlaubt dem Volk auszuwählen, wer sie regieren soll? Ich frage mich, was euer König dazu sagt…
+#ANIMATION 9
+#CAMERA 11
+#phrase Elder  4
+Aber, Auserwählter! Wir haben keinen Herrscher und keinen König. Niemand interessiert sich für ein so wertloses Land wie Gipath. Das Dorf existiert ganz allein für sich und niemand weiß, wie man andere Länder erreicht.
+#ANIMATION 44
+#CAMERA 3
+#phrase Elder  5
+Praktisch gesehen bin ich also hier der Herrscher und treffe alle Entscheidungen. Es ist nicht immer leicht und sehr mühselig, aber einer muss sich ja für das Wohl des Volkes opfern. Das Gute ist, dass der Hauptmann immer hier ist, um mir zu helfen. Und ich glaube, dass die Dinge auch nicht besser laufen würden, wenn ein König hier wäre.
+#ANIMATION 7
+#CAMERA 2
+#phrase Hero  6
+Aber was ist mit den anderen Dörfern – verwalten die sich auch selbst?
+#ANIMATION 8
+#CAMERA 11
+#phrase Elder  7
+Es gibt keine anderen Dörfer. Unseres ist das einzige auf Gipath. Vor langer Zeit haben hier noch andere gelebt, aber die sind längst vergessen. Es sind nur Ruinen und verlassene Straßen zurückgeblieben und überall ziehen Goblins und Orks umher.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  8
+Ich verstehe… Nun, das ist wirklich eine traurige Geschichte. Darüber muss ich erst mal nachdenken.
+#NOLIPS
+#show Hero 4
+#ANIMATION 30
+#CAMERA 10
+#phrase Hero  9
+Bei den Göttern! Was ist das für ein Ort? Was ist mit mir passiert? Ich weiß, dass ich nicht hier geboren wurde – aber wo dann? Ich habe das Gefühl, dass ich etwas Bestimmtes tun sollte. Was nur? Ich muss es herausfinden, aber wer kann mir dabei helfen?!
+#DESC To himself

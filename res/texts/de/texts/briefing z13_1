@@ -1,0 +1,65 @@
+Neuigkeiten von Airy
+#show Daughter 5
+#show Witch 3
+#show Hero 4
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  1
+Sieh nur, Auserwählter, hier ist sie! Sie ist gerade zurückgekommen, als ob nichts geschehen wäre! Sie sollte ihrem Schicksal danken, dass sie es tatsächlich geschafft hat, etwas Nützliches herauszufinden, sonst hätte sie es bereut, das freche Kind! Aber alles zu seiner Zeit... So, du freche Kreatur, erzähle dem Auserwählten alles genau so, wie du es mir erzählt hast.
+#ANIMATION 62
+#CAMERA 7
+#phrase Daughter  2
+Also: In den Mittelbergen im Norden gibt es ein altes Observatorium, das von den gleichen Leuten errichtet wurde, die die Stadt des Todes erbaut haben. Und dort gab es eine Bibliothek...Vielleicht kannst du dort etwas finden, das dich in die Stadt bringt?
+#DESC Proudly
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  3
+Bist du dir da sicher?
+#DESC With certain reservation
+#ANIMATION 7
+#CAMERA 3
+#phrase Daughter  4
+Na ja, nicht wirklich....Man kann nicht einfach in das Observatorium hinein gehen. Es gibt dort eine Menge Harpyien! Aber du kannst ihre Erzfeinde, die Drachen, auf sie ansetzen!
+#DESC A bit embarrassed but then quickly recovers
+#ANIMATION 9
+#CAMERA 5
+#phrase Hero  5
+Ach, na dann ist es einfach! Ich hole einfach meinen zahmen Drachen und alles regelt sich von selbst!
+#DESC Nastily
+#ANIMATION 32
+#CAMERA 4
+#phrase Witch  6
+Deinen Sarkasmus kannst du dir sparen. Genau das wollte ich vorschlagen!
+#ANIMATION 62
+#CAMERA 7
+#phrase Daughter  7
+Ich kann zwar keine Drachen zähmen, aber ich habe gesehen, wie die Echsen es machen. Sie haben für jeden Drachen ein spezielles Amulett. Wenn jemand, der dieses Amulett trägt, in die Nähe eines bestimmten Drachen kommt, so wird er nicht angegriffen und der Drache folgt ihm! Das Amulett funktioniert aber nicht bei allen Drachen, nur bei einem!
+#ANIMATION 44
+#CAMERA 7
+#phrase Daughter  8
+Und ich weiß auch, wo du die Echse finden kannst, die ein Amulett hat: Sie ist in den alten Steinbruch in den Mittelbergen gegangen. Dort hat sie zwei zahme Kröten - die sind unglaublich fett und hässlich …
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  9
+Ja ja. Angenommen, ich bekomme das Amulett, wo finde ich dann den Drachen, bei dem es wirkt?
+#ANIMATION 63
+#CAMERA 1
+#phrase Daughter  10
+Der Drache lebt auf der anderen Seite des Sees...zu schade, dass es jetzt Sommer ist, im Winter wäre es viel einfacher. Es ist leichter, über das Eis zu gehen, als den Weg entlang des Ufers zu finden!
+#DESC Regretfully
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  11
+Du müsstest bis zum Winter warten, dummes Mädchen! Der Auserwählte kann dort sofort hingelangen - mit meiner Hilfe natürlich. Im Norden der Stadt des Todes gibt es eine Schlucht und in der Schlucht gibt es grüne Kristalle. Kristalle sind nahe mit Eis verwandt, weißt du. Bring sie zu mir und ich werde den See zufrieren lassen.
+#ANIMATION 29
+#CAMERA 11
+#phrase Daughter  12
+Ich hole den Kristall!
+#ANIMATION 3
+#CAMERA 9
+#phrase Witch  13
+Sei ruhig! Ich werde dich nicht noch einmal aus den Augen lassen! Lass den Auserwählten gehen, um den Kristall zu holen - das heißt, wenn er will.
+#ANIMATION 44
+#CAMERA 5
+#phrase Hero  14
+Also gut! Um in die Stadt des Todes zu gelangen, muss ich ins Observatorium. Um in das Observatorium zu gelangen, muss ich einen Drachen zähmen. Um den Drachen zu zähmen, brauche ich das Amulett. Und um an den Drachen heranzukommen, brauche ich einen grünen Kristall. Das ist also alles? Dann ist es ja ganz leicht!

@@ -1,0 +1,60 @@
+Verhöre zusammen mit dem Ältesten GoGo
+#show bGoblinC 4
+#show Elder 3
+#show Hero 5
+#CAMERA 9
+#phrase bGoblinC  1
+Ich komme dich fragen gib Ur-Goblin zurück. Dafür ich nichts stehlen Schweine mehr zwei drei Woche. Schwöre bei mein blaue Augenstein!
+#ANIMATION 46
+#CAMERA 4
+#phrase Elder  2
+Was ist das für eine Art von Schwur? Was geht mich denn dein Stein an - vielleicht hast du ihn im Dreck gefunden und nun leistet du darauf einen Eid..
+#CAMERA 11
+#phrase bGoblinC  3
+Blaue Augenstein nicht im Dreck! Du das nie nicht reden! Alter Häuptling mir gab Augenstein, als er wurde schwach und gestorben war!
+#ANIMATION 45
+#CAMERA 12
+#phrase Elder  4
+Und wo hatte der alte Häuptling ihn her?
+#CAMERA 7
+#phrase bGoblinC  5
+Von alter-alter Häuptling, als Bein er brach und alter Häuptling ihn roh gegessen. Wenn ich werde schlecht, neuer Häuptling brät mich und nimmt Augenstein. Tradition - Goblin-Häuptling trägt Augenstein! Der Ur-Goblin hat gefunden es!
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  6
+Das sind ja wirklich schöne Aussichten! Aber wo kam der Stein ursprünglich her?
+#CAMERA 9
+#phrase bGoblinC  7
+Ork gab, als Ur-Goblin erlaubt in der Nähe leben. Ork schrieb Buchstaben auf Fell, wo er her. Ich aber nichts kenne Buchstaben.
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  8
+Verstehe! Nun, dann ist es einfach: Bring das Fell hierher und du bekommst deine Vogelscheuche zurück, kapiert?
+#CAMERA 11
+#phrase bGoblinC  9
+Ah, ich nichts bringe Fell hierher! Als Ur-Goblin verschwunden, ich gehe zu Ork und frage Hilfe. Ork brachte mich auf Trostlose Insel und schlug mich, viel. Ork sagen: 'Du GoGo jetzt ...' und sagt Wort. Schlechtes Wort. Ich vergesse.
+#CAMERA 3
+#phrase bGoblinC  10
+Dann Ork nehmt mir Geld, nehmt mir Fell mit Buchstaben, legt in Kiste, schmeißen mir raus. Armer, armer GoGo! Ich Häuptling gewesen, nun mir...das. Das schlimme Wort.
+#CAMERA 7
+#phrase bGoblinC  11
+Mensch, Mensch, gib Ur-Goblin wieder! Du gibst mir nicht zurück, ich sitze hier, betteln. Auch morgen sitze, nach morgen auch sitze ...
+#ANIMATION 11
+#CAMERA 8
+#phrase Elder  12
+Ach, das ist in Ordnung, du kannst hier so lange sitzen wie du willst. Ich wüsste nicht, warum ich dir dein Götzenbild zurückgeben sollte. Du hast uns nicht verraten, was wir wissen wollen!
+#hide bGoblinC
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  13
+Und diese Trostlose Insel? Das muss irgendein wichtiger Ort für die Orks sein… Erfar, weißt du irgendetwas darüber?
+#ANIMATION 44
+#CAMERA 4
+#phrase Elder  14
+Sehr wenig, er befindet sich irgendwo im Südosten und wird auch 'Ödland' genannt. Aber das wird uns kaum helfen. Es ist unmöglich, die Brücken der Orks zu überqueren und Menschen können nicht auf die Inseln!
+#NOLIPS
+#ANIMATION 30
+#CAMERA 6
+#phrase Hero  15
+Vielleicht, vielleicht auch nicht. Wenn man die Höhlenbrücke überqueren kann, warum nicht auch die zu den Inseln?
+#DESC Under his nose

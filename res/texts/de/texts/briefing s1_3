@@ -1,0 +1,31 @@
+Frage nach dem getöteten Goblin
+#show Hero 1
+#show Elder 2
+#ANIMATION 31
+#phrase Elder  1
+Ich danke dir vielmals, Auserwählter! Auch im Namen aller Dorfbewohner! Jetzt können wir die restlichen Tiere unserer Herden wieder weiden lassen, ohne Angst vor Goblins haben zu müssen. Und wenn die Götter uns gnädig sind, behalten wir eine kleine Herde. Das hoffe ich zumindest…
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  2
+Ich verstehe das nicht, Erfar. Die Gefahr durch die Goblins gibt es nicht mehr und trotzdem redest du, als ob ihr euer letztes Schwein verlieren werdet.
+#ANIMATION 7
+#CAMERA 11
+#phrase Elder  3
+Außer den Goblins gibt es auch noch die Wölfe, die jede Nacht über unsere Herden herfallen. Aber vielleicht kannst du dich ja auch darum kümmern, Auserwählter?
+#ANIMATION 3
+#CAMERA 6
+#phrase Hero  4
+Du willst, dass ich mich um lächerliche Wölfe kümmere? Das ist eine Aufgabe für einen Hirtenhund und nicht für mich!
+#ANIMATION 9
+#CAMERA 3
+#phrase Elder  5
+Sie sind ganz und gar nicht lächerlich! Das Wolfsrudel, das unsere Schweine stiehlt, besteht nicht aus gewöhnlichen Tieren und der weiße Leitwolf ist schlauer als jeder Hund… Er hat schon oft unsere Jäger zum Narren gehalten! Nur du, Auserwählter, kannst dieses Tier überlisten. Deine Intelligenz und dein Geschick würden dem weißen Wolf keine Chance lassen!
+#ANIMATION 44
+#CAMERA 2
+#phrase Hero  8
+Hm... In Ordnung. Aber würde dieser kleine Drache den weißen Wolf nicht sowieso bald verjagt haben? Ich habe hier in Gipath schon mehrmals einen kleinen glitzernden Drachen gesehen. Und jedes Mal, wenn er erschien, ist etwas passiert!
+#ANIMATION 14
+#CAMERA 7
+#phrase Elder  9
+Ich weiß nicht, wovon du redest, Auserwählter. Vielleicht siehst du mehr als wir einfachen Sterblichen. Ich auf jeden Fall habe dergleichen noch nie gesehen!
+#DESC With sincere surprise

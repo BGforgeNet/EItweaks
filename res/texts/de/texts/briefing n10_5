@@ -1,0 +1,11 @@
+Rinas aus Gruppe entlassen
+#show Hero
+#show Merc5 
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  1
+Nun, Rinas, es wird Zeit, sich zu verabschieden. Du sagtest zwar, du wolltest keine Bezahlung, aber schulde ich dir nicht doch etwas?
+#ANIMATION 43
+#CAMERA 3
+#phrase Merc5  2
+Mach dir da mal keine Sorgen. Diera wird nicht mehr in der Lage sein, in unserer Stadt Unsinn zu machen und das ist hauptsächlich dir zu verdanken. Wie konnte ich da noch Entlohnung erwarten? Lebewohl, Kiran, und viel Glück!

@@ -1,0 +1,28 @@
+Geschenk des Eremiten
+#show Hero 
+#show OLIZ 
+#CAMERA 9
+#phrase OLIZ  1
+Mensch, ich muss dir etwas sagen. Du wirst vielen Gefahren ausgesetzt sein.
+#ANIMATION 11
+#CAMERA 5
+#phrase Hero  2
+Wirklich? Na, so eine Überraschung!
+#CAMERA 3
+#phrase OLIZ  3
+Jetzt weißt du es. Ich möchte, dass du sie überleben kannst. Das wird dir helfen.
+#show DragonWand 7
+#ANIMATION 6
+#CAMERA 6
+#phrase Hero  4
+Was ist das? Sieht wie ein Horn oder eine Muschel aus... Derjenige, der das gemacht hat, wusste wahrscheinlich selbst nicht so genau, was am Ende dabei rauskommen sollte!
+#CAMERA 11 10 5 2
+#phrase OLIZ  5
+Vielleicht nicht. Vielleicht doch. Nimm es einfach. Es wird dir helfen.
+#ANIMATION 32
+#CAMERA 2 25 6 3
+#phrase Hero  6
+Aber was soll ich denn damit anfangen?
+#CAMERA 1 0 4 4
+#phrase OLIZ  7
+Das weiß ich nicht. Du bist ein Mensch, du bist klug. Finde es selbst heraus.

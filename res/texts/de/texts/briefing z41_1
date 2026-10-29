@@ -1,0 +1,24 @@
+Frage nach Esteras geretteter Enkelin
+#show Hero
+#show Daughter
+#show Witch
+#ANIMATION 61
+#CAMERA 4
+#phrase Witch  1
+Na, das nenn ich aber wirklich ein unglaublich undankbares Mädchen – da riskiert einer sein Leben, um die junge Dame zu retten, und dann kommt noch nicht mal das kleinste Dankeschön! Na, macht nichts, du sollst es nicht bereuen, ich werde dich reich belohnen.
+#ANIMATION 63
+#CAMERA 12
+#phrase Witch  2
+Schau das nur nicht so misstrauisch an, das ist eine echte Rarität! Und ich habe noch einen Auftrag für dich – könntest du bitte mit dem Mädchen sprechen? Sie ist wirklich nicht sie selbst in letzter Zeit.
+#DESC Shows item
+#hide Witch 
+#show Hero 1
+#ANIMATION 11
+#CAMERA 11
+#phrase Daughter  3
+Warum willst du mich selbst jetzt nicht anschauen? Was gefällt dir nicht an mir?
+#DESC (Guiltily but challenging)
+#ANIMATION 62
+#CAMERA 10
+#phrase Hero  4
+Es liegt nicht an dir, Airy, es liegt an mir. Obwohl ich mich an meine Vergangenheit nicht erinnere, fühle ich doch etwas in meinem Herzen. Ich weiß... Ich spüre, dass ich eine Andere liebe, und dass sie auf mich wartet! Aber ich erinnere mich nicht, wo sie ist und wie ich sie finden kann. Du bist wirklich ein sehr nettes Mädchen, Airy, aber ich werde weder dich noch mich selbst betrügen. Und bitte, stell' keine Dummheiten mehr an. Das nächste Mal bin ich vielleicht nicht rechtzeitig da, um dir zu helfen.

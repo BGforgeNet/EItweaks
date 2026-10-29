@@ -1,0 +1,11 @@
+Frage nach dem Diebstahl im Haus des Gouverneurs
+#show Hero 1
+#show Magess 2
+#ANIMATION 44
+#CAMERA 3
+#phrase Magess  1
+Mein lieber junger Mann, ich mag Euer Interesse an diesem Fall überhaupt nicht. Ja, Gouverneur Valrasian und ich sind gute Freunde und ja, ich habe magische Fallen in seinem Haus errichtet. Ich gebe sogar zu, dass sie irgendwie nicht funktioniert haben.
+#ANIMATION 43
+#CAMERA 11
+#phrase Magess  2
+Aber all das geht nur ihn und mich etwas an. Es tut mir ja leid, das sagen zu müssen, aber es würde Euch auch dann nichts angehen, wenn Euer Intellekt so gut ausgebildet wäre wie Eure Neugier!

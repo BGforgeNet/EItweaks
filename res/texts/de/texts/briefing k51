@@ -1,0 +1,49 @@
+Frage nach den verlassenen Minen
+#show Hero 1
+#show Kapitan 2
+#ANIMATION 44
+#CAMERA 2
+#phrase Hero  1
+Ich habe die Suche nach der Prinzessin immer noch nicht aufgegeben, Hauptmann! Ich bin dicht dran, aber ich brauche Eure Hilfe. Meine Dankbarkeit wäre grenzenlos...äh... zumindest innerhalb gewisser Grenzen.
+#ANIMATION 11
+#CAMERA 11
+#phrase Kapitan  2
+Junger Mann, Ihr könntet mir die komplette Belohnung versprechen und ich würde Euch nicht helfen. Ich weiß sehr wohl, dass der Rang eines Leutnants in der Wache ebenfalls Teil dieser Belohnung ist – und Offiziere mit allzu viel Ehrgeiz kann ich in meiner Einheit nicht gebrauchen.
+#ANIMATION 46
+#CAMERA 2
+#phrase Hero  3
+Oh, auf diesen Teil der Belohnung kann ich gut verzichten.
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  4
+Und auf alle anderen Teile auch! Aber wenn ich das sage, kommt Tilvar am Ende auf falsche Gedanken...
+#DESC To himself
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  5
+Ich wäre bereit, die Hälfte der Belohnung an Euch abzutreten – wenn Ihr mir Informationen über die verlassenen Minen gebt.
+#ANIMATION 9
+#CAMERA 3
+#phrase Kapitan  6
+Oh, Ihr glaubt, dort wird die Prinzessin gefangen gehalten? Da muss ich Euch leider enttäuschen: Der Gouverneur hat die Minen vor langer Zeit verschließen lassen. Wenn Ihr es schafft, seine Exzellenz für die Minen zu interessieren, wird er sie vielleicht für Euch öffnen.
+#ANIMATION 44
+#CAMERA 11
+#phrase Kapitan  7
+An Eurer Stelle würde ich mich von den Minen fernhalten. Der schlechte Ruf, den sie haben, ist nicht unbegründet. Schließlich haben Bergarbeiter damals die Ruhe der Herrscher der Katakomben gestört – und mit denen ist bekanntlich nicht zu spaßen!
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  8
+Was für Herrscher? Davon habe ich noch nie gehört!
+#ANIMATION 43
+#CAMERA 11
+#phrase Kapitan  9
+Je weniger Ihr wisst, um so weniger Sorgen müsst Ihr Euch machen, mein Freund. Diese Kreaturen sind gemeinhin unter dem Namen „Wurmköpfe“ bekannt. Sie leben tief unter der Erde und keiner, der sie einmal gesehen hat, kann diesen schrecklichen Anblick je wieder vergessen. Sie sind intelligent, haben magische Kräfte und kennen keine Gnade... Mit anderen Worten, junger Freund: Wenn Ihr in diese Minen geht, habt Ihr mein aufrichtiges Mitgefühl!
+#ANIMATION 31
+#CAMERA 3
+#phrase Kapitan  10
+Ich gebe Euch noch einen Rat: Es gibt dort drei Stollen, die mit Nummern bezeichnet sind. Nehmt Stollen Nummer drei, den westlichsten. Der ist nicht ganz so gefährlich.
+#ANIMATION 62
+#CAMERA 11
+#phrase Kapitan  11
+Irgendwo im nordwestlichen Teil dieser Katakomben gab es früher einen Kerker für aufmüpfige Bergleute. Die traditionelle Bestrafung, he, he. Dort habe ich meine Karriere begonnen. Ooh, das waren noch Zeiten! Ich war damals genauso naiv wie Ihr und habe noch an Gerechtigkeit geglaubt... Aber das versteht Ihr jetzt noch nicht!

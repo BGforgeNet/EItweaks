@@ -1,0 +1,15 @@
+Lebewohl!
+#show Hero 
+#show Merc9
+#ANIMATION 11
+#CAMERA 11
+#phrase Merc9  1
+Oh junger Mann! Wollt Ihr den Pfad des Guten schon wieder verlassen, nachdem Ihr eine so kurze Strecke zurückgelegt habt?
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  2
+Leider ja, meine Pflicht verlangt es. Und jetzt bleibt uns nur noch übrig, uns voneinander zu verabschieden.
+#ANIMATION 45
+#CAMERA 11
+#phrase Merc9  3
+Nun, denkt nicht schlecht von mir! Und wenn Euch wieder Gerüchte über meinen Tod zu Ohren kommen, dann hört einfach nicht hin!

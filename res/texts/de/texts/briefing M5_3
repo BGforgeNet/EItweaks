@@ -1,0 +1,27 @@
+Frage nach den Hügel-Orks
+#show Hero 1
+#show Smith 2
+#ANIMATION 6
+#CAMERA 5
+#phrase Hero  1
+Die Orks sind lange nicht so gefährlich, wie Gort uns weismachen will! Es überrascht mich, dass du sie selber noch nicht verjagen konntest!
+#ANIMATION 7
+#CAMERA 7
+#phrase Smith  2
+Weißt du, das ist nicht so einfach! Das Volk in den Hügeln mag vielleicht nicht so stark sein, aber sie haben einen gerissenen Seher.
+#ANIMATION 9
+#CAMERA 11
+#phrase Smith  4
+Er hat die magische Pyramide unter seine Kontrolle gebracht – es gibt eine direkt bei der Siedlung. Ein merkwürdiges Ding – sie ist uralt und funktioniert immer noch, als wäre sie neu! Jeder, der sich zu nah heranwagt, wird mit ein paar schönen Blitzen empfangen.
+#ANIMATION 14
+#CAMERA 3
+#phrase Smith  5
+Wenn allerdings jemand diesen Seher töten und die Pyramide außer Kraft setzen könnte, würden die Orks wohl ganz schnell wieder vernünftig werden... Aber es ist unmöglich, sich bis zu dem Seher vorzukämpfen. Und von unseren Leuten ist keiner gut genug, um die Aufgabe heimlich mit einem Messer zu erledigen.
+#ANIMATION 9
+#CAMERA 10
+#phrase Hero  6
+Und da hast du spontan wieder an mich gedacht?!
+#ANIMATION 31
+#CAMERA 11
+#phrase Smith  7
+Die Götter mögen dich segnen, Auserwählter! Wenn du das tust, bin ich dir für immer dankbar. Ich möchte endlich wieder frei in den Hügeln umherwandern können. Natürlich würde ich meine Dankbarkeit auch auf sehr materielle Weise ausdrücken. Hauptsache, du kümmerst dich um die Orks!

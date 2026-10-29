@@ -1,0 +1,16 @@
+Mit Echse reden
+#show Hero 1
+#show OLIZ 2
+#CAMERA 5
+#phrase OLIZ  1
+Ich kann dich befreien, Mensch.
+#ANIMATION 32
+#CAMERA 2
+#phrase Hero  2
+Was? Du kannst sprechen? Wer bist du, und warum bist du hier?
+#CAMERA 5
+#phrase OLIZ  3
+Du stellst zu viele Fragen, Mensch. Ich beantworte dir eine: Nenne mich Eremit. Ich werde auch deine anderen Fragen beantworten. Später. Ich kann dich befreien und dir die Kralle der Ahnen geben. Gib mir dein Wort, dass du zu mir nach Hause kommst. Dort werde ich mit dir sprechen.
+#CAMERA 5
+#phrase OLIZ  4
+Denke darüber nach. Ich komme später wieder.

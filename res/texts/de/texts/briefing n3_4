@@ -1,0 +1,15 @@
+Eila wieder mitnehmen
+#show Hero 
+#show Merc4
+#CAMERA 3
+#ANIMATION 45
+#phrase Merc4  1
+Willst du immer noch, dass ich in der Siedlung bleibe?
+#CAMERA 6
+#ANIMATION 15
+#phrase Hero  2
+Im Gegenteil. Ich brauche deine Magie!
+#CAMERA 3
+#ANIMATION 3
+#phrase Merc4  3
+Worauf warten wir dann noch? Ich bin bereit!

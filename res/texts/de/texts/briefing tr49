@@ -1,0 +1,61 @@
+Frage nach der gestohlenen Sammlung
+#show Hero
+#show Vor
+#show Shopper
+#ANIMATION 32
+#CAMERA 4
+#phrase Shopper  1
+Gut, Ihr wolltet Flein den Kahlen treffen: Hier ist er! Aber vergesst nicht das Ende von der Geschichte!
+#hide Shopper
+#ANIMATION 11
+#CAMERA 7
+#phrase Vor  2
+Mmmm... du wolltest mit mir reden?
+#ANIMATION 62
+#CAMERA 2
+#show GovenorChest00 3
+#phrase Hero  3
+Sieh mal was für eine schöne Schatulle... Und sie trägt sogar Valrasians Siegel. Aber ganz ruhig! Sie ist sowieso leer und der Inhalt an einem sicheren Ort. Du hast die Wahl: Entweder du redest mit mir oder ich rufe die Wachen und du redest mit Hauptmann Tivar.
+#hide GovenorChest00
+#ANIMATION 43
+#CAMERA 11
+#show GovenorChest00 5
+#phrase Vor  4
+Verflucht... Ich kann Leute aus der Stadt nicht leiden! Wie viel willst du?
+#hide GovenorChest00
+#ANIMATION 11
+#CAMERA 10
+#show GovenorChest00 3
+#phrase Hero  5
+Frag nicht 'wie viel', sondern 'was' ich haben will. Verrate mir, wie der Pfeil aus dieser Schatulle in die Leiche des Gesandten kommt! Und ich rate dir, die Wahrheit zu sagen.
+#hide GovenorChest00
+#ANIMATION 63
+#CAMERA 3
+#phrase Vor  6
+Hmm...nun... Man hat mir diesen Gesandten gezeigt und gesagt, ich solle ihn töten – aber so, dass jeder denkt, es wären die Waldleute gewesen. Ja, und dann hab ich ihn getötet.  Und 'nen Pfeil reingesteckt. Es war auch meine Idee, den Pfeil vom Gouverneur zu stehlen – immer noch einfacher, als sich mit den Waldleuten anzulegen. Außerdem wusste der Große Graue, wie man an den magischen Fallen vorbei kommt.
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  7
+Welcher Große Graue?
+#ANIMATION 61
+#CAMERA 3
+#phrase Vor  8
+Ein Fremder. Ich weiß auch nicht, wie er aussieht. Alles, was man von ihm sieht, ist sein Mantel und seine Kapuze – noch nicht einmal seine Nase guckt raus. Und alles was er sagt, murmelt er mit einer komischen Stimme. Vielleicht wird er hier gesucht.
+#ANIMATION 62
+#CAMERA 11
+#phrase Vor  9
+Ich glaube, der Gesandte und die Waldleute wussten etwas über ihn – und das gefiel ihm nicht. Der Gesandte hätte auf jeden Fall fast die Prinzessin gefunden. Aber was der Graue mit den Waldleuten hatte, weiß ich auch nicht. Vielleicht haben sie gesehen, wie er sich umzieht.
+#hide vor
+#show Hero 4 
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  10
+Aha! Also muss ich wieder zu den Waldleuten. Ich muss sie in ihrem neuen Versteck am Ende des 'geheimen Pfades' aufsuchen und herausfinden, was sie über den Mann in Grau wissen.
+#DESC To himself
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2
+#phrase Hero  11
+Hätte ich sie nur vorher schon danach gefragt... Na ja, woherr hätte ich das wissen sollen?
+#DESC To himself

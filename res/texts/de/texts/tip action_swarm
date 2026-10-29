@@ -1,0 +1,10 @@
+Aggressiver/Defensiver Modus
+Schaltet den Kampfmodus des 
+Charakters zwischen 'aggressiv' und 
+'defensiv' hin und her. 
+Im 'aggressiven' Modus wird der 
+Charakter jeden Feind angreifen, der ihn 
+entdeckt hat. 
+Im 'defensiven' Modus greift er nur an, 
+nachdem du ihm den entsprechenden 
+Befehl erteilt hast.

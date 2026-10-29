@@ -1,0 +1,23 @@
+Verhör
+#show Hero 1
+#show HWLeader 2
+#ANIMATION 11
+#CAMERA 5
+#phrase HWLeader  1
+Jämmerlicher Wilder, du solltest dich geehrt fühlen, dass ich überhaupt mit dir spreche! Wenn du am Leben bleiben willst, dann erzähl mir alles über diesen Meteor, der auf euer Land fiel. Rede mit mir, du Tier!
+#CAMERA 2
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  2
+Dieser verdammte Gesandte hat mich in eine Falle gelockt! Was soll ich jetzt nur tun? Ich glaube, der Soldat hält mich für einen dummen Wilden – na, den kann er haben!
+#DESC To himself
+#show Hero
+#show HWLeader
+#ANIMATION 8
+#CAMERA 2
+#phrase Hero  3
+Ich... Dort... Ich hüten Schweinchen, kenn nicht Meterit, nie gehört...
+#ANIMATION 14
+#CAMERA 5
+#phrase HWLeader  4
+Spiel hier nicht den Idioten! Ich habe zwar keinen Folterknecht in meiner Einheit, aber gute Kämpfer. Die wissen schon, wie man dich zum Reden bringt!

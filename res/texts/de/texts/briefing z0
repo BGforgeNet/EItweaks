@@ -1,0 +1,8 @@
+Treffen mit der Enkelin der Hexe
+#show Hero 1
+#show Daughter 2
+#ANIMATION 15
+#CAMERA 11
+#phrase Daughter  1
+Geh, geh schnell! Wenn Groﬂmutter aufwacht und einen Fremden sieht, wirst du nicht lebend von hier wegkommen.
+#DESC (Hurriedly, half-whispering)

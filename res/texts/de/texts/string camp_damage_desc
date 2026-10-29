@@ -1,0 +1,1 @@
+Wenn ein Gegner getroffen wird, verursacht die Waffe Schaden, die über ihrem Minimal- und unter ihrem Maximalschadenswert liegt. Wird der Gegner von einer Rüstung geschützt, wird der Schaden um die Rüstungsklasse der Panzerung reduziert. Liegt die Rüstungsklasse über dem maximalen Schadenswert der Waffe, kann der Gegner durch die Waffe nicht verletzt werden.

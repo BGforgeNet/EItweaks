@@ -1,0 +1,12 @@
+Frage erneut nach dem gefundenen Schriftstück
+#show Elder 3
+#show CodedHadaganNote 4
+#show Hero 5
+#ANIMATION 45
+#CAMERA 1
+#phrase Hero  1
+Hast du das Schriftstück schon übersetzt, das ich erwähnt habe?
+#ANIMATION 32
+#CAMERA 9
+#phrase Elder  2
+Es tut mir leid, Auserwählter, dafür hatte ich keine Zeit. Du kennst die schwierige Situation im Dorf und in der Umgebung!

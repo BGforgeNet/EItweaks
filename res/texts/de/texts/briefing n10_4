@@ -1,0 +1,15 @@
+Eila aus Gruppe entlassen
+#show Hero 
+#show Merc4
+#ANIMATION 8
+#CAMERA 6
+#phrase Hero  1
+Auf Wiedersehen, Eila! Wir haben zwar nicht viel Zeit miteinander verbracht, aber ich werde dich genauso vermissen, als würde ich dich seit Jahren kennen! Was wirst du denn jetzt tun?
+#ANIMATION 9
+#CAMERA 7
+#phrase Merc4  2
+Hm... wahrscheinlich werde ich zu Shei-Var zurückgehen. Ich glaube, er wird seine Meinung über Menschen ändern, nachdem er dich getroffen hat. Vielleicht kann ich ihn dazu bringen, einen Friedensvertrag mit dem Dorf abzuschließen.
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  3
+Ja, das ist ein ehrbares Ziel... Viel Glück!

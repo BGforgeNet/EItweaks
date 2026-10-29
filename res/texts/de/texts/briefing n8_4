@@ -1,0 +1,36 @@
+Treffen mit Eila
+#show Hero 
+#show Merc4
+#show OrcC
+#CAMERA 9
+#ANIMATION 4
+#phrase OrcC  1
+Hey, Wüstenfrau, du sagen Dörfler feige und jetzt einer hier! Will sprechen dich?!
+#CAMERA 3
+#ANIMATION 30
+#phrase Merc4  2
+Hm, du bist also der Auserwählte? Die Orks haben mir von dir erzählt, aber ich dachte, dass du irgendwie anders wärst.
+#CAMERA 6
+#ANIMATION 45
+#phrase Hero  3
+Von dir hat mir niemand erzählt! Wieso lebst du mit Orks zusammen und was tust du hier?
+#CAMERA 3
+#ANIMATION 15
+#phrase Merc4  4
+Mein Name ist Eila, ich floh vor langer Zeit aus dem Dorf, um bei einer Hexe in die Lehre zu gehen. Aber dieser Schreihals meinte, dass ich nicht gut genug bin! Deshalb ging ich zu den Banditen, da war es mit dieser Hexe, der Frau des Anführers, dasselbe. Zum Glück hat Rotschopf mir vom Stammesführer Shei-Var erzählte: Er ist zwar ein Ork, aber man kann mit ihm auskommen.
+#CAMERA 6
+#ANIMATION 45
+#phrase Hero  5
+Und, kommst du gut mit ihm aus?
+#CAMERA 3
+#ANIMATION 44
+#phrase Merc4  6
+Das siehst du ja. Die Orks nennen mich Wüstenfrau, aber ansonsten lasse ich mir von denen nichts gefallen. Der Seher lehrt mich die Kunst der Magie und im Gegenzug kämpfe ich für ihn. Der Shei-Var-Stamm hat viele Feinde! Rotschopf gab mir also einen guten Rat. Grüße ihn von mir, falls du ihn siehst!
+#CAMERA 6
+#ANIMATION 30
+#phrase Hero  7
+Äh... Wie soll ich das sagen... Ich habe ihn schon mal getroffen, äh, aber danach habe ich ihn nie wieder gesehen.
+#CAMERA 4
+#ANIMATION 6
+#phrase OrcC  8
+Menschen sprechen später. Und jetzt will sprechen ich. Auserwählter will machen Handelmit mir. Wenn er braucht, du helfen. Ich erlaube!

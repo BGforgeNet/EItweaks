@@ -1,0 +1,35 @@
+Rede mit GoGo
+#show Hero 3
+#show bGoblinC 4
+#show Sheriff 5
+#CAMERA 5
+#ANIMATION 45
+#phrase Hero  1
+Bist du GoGo, der Häuptling der Goblins?
+#CAMERA 9
+#phrase bGoblinC  2
+Ich GoGo, Häuptling GoGo, komme dich fragen, gib Ur-Goblin zurück!
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  3
+Vielleicht mache ich das, aber zuerst musst du mir etwas erzählen.
+#ANIMATION 3
+#CAMERA 8
+#phrase Sheriff  4
+Hey, Steinauge, halt deinen Mund oder ich werd ihn dir schließen! Hat man dir nicht gesagt, dass du still sein sollst?
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  5
+Was soll das?
+#ANIMATION 9
+#CAMERA 4
+#phrase Sheriff  6
+Der Älteste hat angewiesen, den Goblin nur in seiner Anwesenheit zu vernehmen und ihn nicht zuviel reden zu lassen. Er hat gesagt, er und der Auserwählte würden sich später miteinander unterhalten, ohne irgendwelche Zeugen.
+#ANIMATION 43
+#CAMERA 6
+#phrase Hero  7
+Nun, ich bin hier. Wo ist also das Problem?
+#ANIMATION 44
+#CAMERA 1
+#phrase Sheriff  8
+Ja, du bist hier, aber Erfar nicht. Da ist das Problem! Und ich mache genau, was mir gesagt wird. Ansonsten gibt es keine Ordnung, und wenn es keine Ordnung gibt, gibt es Unordnung, he he he! Ich habe einen tollen Sinn für Humor, nicht wahr?!

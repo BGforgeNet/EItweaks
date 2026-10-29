@@ -1,0 +1,24 @@
+Treffen mit dem Magier
+#show Hero 1
+#show Merc5 2
+#ANIMATION 11
+#CAMERA 3
+#phrase Merc5  1
+Ich höre, du suchst nach der Prinzessin? Brauchst du denn vielleicht jemanden, der spezielle Talente hat?
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  2
+Wer bist du? Und von welchen Talenten redest du denn jetzt genau?
+#ANIMATION 45
+#CAMERA 11
+#phrase Merc5  3
+Mein Name ist zu lang, aber du kannst mich Rinas nennen. Was meine Talente angeht... ich bin ein recht guter Hexenmeister, aber seit die Magierin Diera in die Stadt kam, haben die anderen Zauberer kaum mehr eine Chance. Der Gouverneur verbot uns allen, unsere Kunst auszuüben – allen außer dieser...
+#ANIMATION 43
+#CAMERA 11
+#phrase Merc5  4
+Nein, ich werde mich nicht zu billigen Beschimpfungen hinreißen lassen. Sagen wir lieber: Dieser berechnenden und nicht gerade zart besaiteten Frau.
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  5
+Hm... so einen könnte ich tatsächlich brauchen. Ich werde vielleicht noch auf ihn zurückgreifen müssen!
+#DESC To himself

@@ -1,0 +1,19 @@
+Frage nach dem vermissten Mädchen
+#show Hero 1
+#show Huber 2
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  1
+Gouverneur! Ich bin neu in der Stadt und hätte da eine Bitte…
+#ANIMATION 11
+#CAMERA 3
+#phrase Huber  2
+Junger Mann, Ihr habt Glück. Ich bin momentan sehr gut gelaunt und durchaus geneigt, etwas Gutes zu tun. Also gebe ich Euch zuerst einmal einen Rat.
+#ANIMATION 63
+#CAMERA 11
+#phrase Huber  3
+Kommt niemals ohne Absprache zu mir oder nur, wenn ich Euch zu mir rufen lasse. Diesmal noch vergebe ich Euch Euer ungebührliches Verhalten, aber wenn es noch einmal vorkommen sollte, werde ich die Wachen rufen und lasse Euch auspeitschen!
+#ANIMATION 44
+#CAMERA 3
+#phrase Huber  4
+Glaubt jetzt nicht, ich sei gefühllos. Ganz im Gegenteil, auf meine Art bin ich liberal und habe nichts gegen das einfache Volk, aber Tradition bleibt Tradition. Es ist meine Pflicht, sie durchzusetzen!

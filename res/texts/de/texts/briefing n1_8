@@ -1,0 +1,15 @@
+Fairakh in Gruppe aufnehmen
+#show Hero 
+#show Merc8
+#ANIMATION 45
+#phrase Merc8  1
+Als wir uns das letzte Mal sahen, kamen wir zu keinem Ergebnis, deswegen frage ich dich jetzt direkt: Brauchst du die Hilfe eines Zauberers?
+#ANIMATION 15
+#phrase Hero  2
+Allerdings! Wenn du mir versprichst, dass es nicht zu unnötiger Gewalt kommt.
+#ANIMATION 9
+#phrase Merc8  3
+Natürlich nicht. Ich werde mit deinen Feinden genauso verfahren, wie du es mir befiehlst. Aber falls wir meine persönlichen Feinde treffen, dann wirst du sehen, was Gewalt wirklich bedeuten kann!
+#ANIMATION 15
+#phrase Hero  4
+In Ordnung, dann komm mit mir. Aber es wäre für uns beide besser, wenn du zu deinem Wort stehst.

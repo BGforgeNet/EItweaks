@@ -1,0 +1,19 @@
+Frage nach der Reise in die Stadt
+#show Hero 1
+#show Merc10 2
+#ANIMATION 64
+#CAMERA 9
+#phrase Merc10  1
+Tja, Blondschopf, schade, dass wir uns nicht schon früher getroffen haben. Wir könnten eine Menge stehlen und viele Häuser ausräumen!
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  2
+Wovon redest du? Man kann in dieser Stadt nicht nicht Mal irgendwo hingehen, ohne alle fünf Minuten über Wachen zu stolpern, vom Stehlen ganz zu schweigen.
+#ANIMATION 61
+#CAMERA 3
+#phrase Merc10  3
+Aber warum denn in die Stadt gehen? Die Reichen haben Landhäuser, oder nicht - hast du nicht eines davon im Norden gesehen, als du aus der Höhle gekommen bist? Ich hatte schon darüber nachgedacht, dort mal vorbeizuschauen, aber ich bin nie dazu gekommen...
+#ANIMATION 68
+#CAMERA 9
+#phrase Merc10  4
+Vielleicht willst du dich dort mal umsehen? In so einem Landhaus gibt es immer ein, zwei kleine Schatullen, und wo Schatullen sind, findet sich meist auch etwas Nützliches!

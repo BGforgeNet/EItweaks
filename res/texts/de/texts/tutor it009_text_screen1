@@ -1,0 +1,8 @@
+     Indem du einen Entwurf im Inventar (unterer Balken) oder beim Händler (oberer Balken) anklickst, wird dieser im entsprechenden Herstellungsfeld platziert.
+     Sobald das geschehen ist, bekommen die jeweiligen Materialfelder einen blinkenden Rand. Die Anzahl der benötigten Materialfelder (und dementsprechend die Menge des Materials) ist abhängig von den Vorgaben des Entwurfs. Klicke im Inventar oder beim Händler das entsprechende Material an, um es in den Feldern zu platzieren. Du kannst nur ein Material verwenden. Verschiedene Materialien - auch wenn sie von der gleichen Art sind - können nicht miteinander kombiniert werden.
+
+     Hinweis: Ohne einen Entwurf können die Materialfelder nicht belegt werden. Wenn du einen vorhandenen Entwurf aus dem Herstellungsfeld entfernst, wird auch evtl. schon vorhandenes Material wieder entfernt.
+
+     Sobald die nötigen Materialfelder belegt sind, werden auf der linken Seite die Eigenschaften des hergestellten Gegenstands angezeigt. Unten im Bild siehst du den Preis des Gegenstands. Falls du Material gekauft hast, ist dieses im Preis bereits enthalten.
+
+     Mit den Schaltflächen <V> und <X> kannst du den Vorgang bestätigen oder abbrechen.

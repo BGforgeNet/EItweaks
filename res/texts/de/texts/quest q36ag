@@ -1,0 +1,47 @@
+Durch den Tunnel
+Du gelangst zu der Schlucht, indem du durch den Tunnel gehst. Dadurch vermeidest du es, mit den blutrünstigen Echsen kämpfen zu müssen.
+#subobj  1
+Finde das Loch in der Mauer
+Der Tunnel wurde durch einen Erdrutsch, der offensichtlich durch ein Erdbeben ausgelöst wurde, verschüttet. Allerdings entstand durch dasselbe Erdbeben eine Felsspalte, wodurch der Durchgang zu einer Höhle geschaffen wurde.
+#subobj  2
+Umgehe den Erdrutsch
+Du kannst den Erdrutsch umgehen, indem du durch die Höhle gehst und anschließend zum Haupttunnel zurückkehrst.
+#subobj  3
+Umgehe die Golems
+Golems sind mechanische Kreaturen, deren Aufgabe es ist, ungeladene Gäste nicht zu den Katakomben vordringen zu lassen. Wenn jemand von einem aktiven Golem entdeckt wird, so hat er nur wenig Chancen, diese Begegnung zu überleben.
+#subobj  4
+Verlasse den Tunnel
+Wenn du den Tunnel verlässt, wirst du dich im Innern der Schlucht wiederfinden. Dort in der Nähe wohnt der Großmagier.
+#subobj  5
+Sarkophag
+Du hast einen Sarkophag gefunden!
+#subobj  6
+Nimm den Inhalt des Sarkophags
+Es könnte sich etwas Nützliches im Sarkophag befinden. Du benötigst keinen Schlüssel, um ihn zu öffnen, aber deine 'Benutzen/Stehlen'-Werte müssen hoch genug sein, um ihn öffnen zu können.
+#subobj  7
+Finde den Sarkophag mit dem Schlüssel
+Seit Anbeginn der Zeit liegt in diesem Sarkophag ein Ersatzschlüssel, der die Golems steuert.
+#subobj  8
+Nimm den Schlüssel
+Du benötigst keinen Schlüssel, um den Sarkophag zu öffnen. Du kannst den Schlüssel auf dem Altar verwenden.
+#subobj  9
+Finde den Altarraum
+Der Altar, der die Golems steuert, muss sich in der Nähe des Tunnels befinden. Sehr wahrscheinlich ist der Durchgang zu diesem Raum versteckt oder geschlossen.
+#subobj  10
+Finde den Altar
+Du weißt zwar nicht, wie der Altar aussieht, aber du wirst ihn wahrscheinlich erkennen, wenn du ihn siehst.
+#subobj  11
+Benutze den Altar
+Den Zeichen auf dem Kontrollfeld nach zu urteilen wird der Altar einen passiven Golem aktivieren, dessen Aufgabe es ist, die Elemente im Westen der Höhle zu vernichten. Um den Altar benutzen zu können, benötigst du den Steinschlüssel.
+#subobj  12
+Warte…
+Sogar ein mitleidsloser Golem benötigt etwas Zeit, um sich um die Elemente zu kümmern.
+#subobj  14
+Finde das Schlachtfeld
+Der Ort, an dem die Golems gegen die Elemente gekämpft haben, befindet sich im westlichen Teil der Höhle auf einer Plattform, hinter dem kleinen Lavasee.Vielleicht findest du dort ja etwas, was dir weiterhilft.
+#subobj  16
+Finde den Sarkophagraum
+In einem der in den Fels gehauenen Räume befindet sich ein Sarkophag, der von einem Golem bewacht wird. Es ist nicht sehr wahrscheinlich, dass der Golem einen leeren Sarkophag bewacht!
+#subobj  17
+Durchsuche den Sarkophag
+Du solltest dir mal das Innere des Sarkophages näher anschauen. Aber vergiss nicht: Golems schlafen nie...

@@ -1,0 +1,19 @@
+Frage nach dem Ältesten
+#show Smith
+#show Hero
+#ANIMATION 32
+#CAMERA 9
+#phrase Smith  1
+Na, Auserwählter, du bist aber wirklich gerissen! Du hast es geschafft, sogar mich mit dieser zweiten Blume hinter's Licht zu führen! Doch jetzt hat der Älteste ausgespielt! Als ich erfuhr, dass du ihn entlarvt hast, war ich ganz außer mir vor Freude!
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  2
+Das kann ich verstehen, ihr habt euch ja schon immer bekriegt. Aber was sagen denn die anderen Dorfbewohner?
+#ANIMATION 29
+#CAMERA 3
+#phrase Smith  3
+Gut gemacht Auserwählter', sagen sie. Glaubst du vielleicht, dass sie so von ihm begeistert waren? Ganz bestimmt nicht! Sie hielten den Mund, weil sie Angst hatten, aber jetzt wird dir hier jeder sagen, was er wirklich dachte.
+#ANIMATION 8
+#CAMERA 9
+#phrase Smith  4
+Jetzt sagen sie alle, dass der Auserwählte eigens gesandt wurde, um das Dorf von diesem Schurken zu befreien. Aber ich glaube, zwischen euch beiden konnte es zu keiner anderen Lösung kommen – du oder er, so war das immer schon!

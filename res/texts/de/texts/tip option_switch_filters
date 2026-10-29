@@ -1,0 +1,10 @@
+Autom. Filter
+Mit den Inventarfiltern kann man sich
+Gegenstände anzeigen lassen, die zu einer
+bestimmten Kategorie gehören. Diese Filter
+können automatisch und manuell aktiviert
+werden.
+AN: Der Filter wird aktiviert, wenn ein neuer
+Gegenstand in das Inventar gelegt wird.
+AUS: Der Filter muss manuell aktiviert
+werden.

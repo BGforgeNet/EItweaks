@@ -1,0 +1,17 @@
+Öffnen des Durchgangs durch das Tal
+Du weißt, dass es einen Tunnel gibt, der zum Tal führt. Du kannst den Eingang zum Tunnel öffnen, indem du den Hebel benutzt, der sich im Bergdurchgang östlich des Flusses befindet. Denke daran, dass sich das Lager der Khadaganianer in diesem Gebiet befindet, von denen du nichts Gutes zu erwarten hast.
+#subobj  1
+Finde den Eingang zum Tunnel
+Der Eingang zum Tunnel befindet sich im Westen der Schlucht, durch die ein Fluss führt.
+#subobj  2
+Finde die enge Schlucht im östl. Teil der Berge
+Dem khadaganianischen Schriftstück zufolge befindet sich der Hebel, der den Eingang des Tunnels öffnet, am Ende eines engen Durchgangs, der östlich der Schlucht beginnt und nach Norden führt.
+#subobj  3
+Finde den Hebel
+Der Hebel sollte sich in einer der Sackgassen des schmalen Durchgangs befinden.
+#subobj  4
+Lege den Hebel um
+Du solltest den Hebel umlegen und dann schnell zum Eingang des Tunnels zurückkehren. Die Leute, die das System erbaut haben, haben wahrscheinlich auch eine Möglichkeit gehabt, schnell zum Tunneleingang zu gelangen - vielleicht hat es was mit dieser mysteriösen Plattform zu tun?
+#subobj  5
+Gehe in den Tunnel hinein
+Der Tunnel führt zur Schlucht!

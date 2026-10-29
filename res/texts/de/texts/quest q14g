@@ -1,0 +1,11 @@
+Buch der Orks
+Die Hexe kann die Nachricht, die für den Verräter bestimmt war, nicht ohne weiteres übersetzen. Sie benötigt vorher das Buch, das der Seher der Orks bei sich trägt. Der beste Weg, um zu ihm zu gelangen, ist durch 'Flüsse und Inseln' zur 'Wüste' zu gehen.
+#subobj  1
+Finde die Hütte des Sehers
+Es gibt ein großes Vorgebirge, das sich von Westen nach Südosten weit in den See erstreckt, der an die Wüste angrenzt. Am Ende dieses Vorgebirges gibt es eine kleine Insel ohne Vegetation, die man zu Fuß erreichen kann. Auf dieser Insel befindet sich eine Hütte. Dort lebt der Seher, der das Buch hat. Der Weg zum Ende des Vorgebirges ist gefährlich - er wird von Orks bewacht und in der Nähe lebt ein gefährlicher Oger.
+#subobj  2
+Töte den Seher
+Es gibt nur eine Möglichkeit, sicherzustellen, dass der Seher keinen Alarm schlagen wird: Töte ihn.
+#subobj  3
+Nimm das Buch
+Deine Aufgabe besteht darin, das Buch der Orks zu bekommen. Ohne dieses Buch kann die Hexe die Nachricht nicht übersetzen.

@@ -1,0 +1,14 @@
+Harad in Gruppe aufnehmen
+#show Hero 
+#show Merc7
+#CAMERA 3
+#phrase Merc7  1
+Bruder Kiran, dein Anliegen ist mir bekannt. Lass mich dir helfen! Meine Rache soll auch einem guten Zweck dienen. 
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  2
+Ich stimme dir zu, aber denke daran: Dein Eifer muss hinter der Vorsicht zurückstehen. Ich möchte nicht, dass du umkommst, weil du es mit einer ganzen Armee aufnimmst!
+#ANIMATION 3
+#CAMERA 3
+#phrase Merc7  3
+Mach dir keine Sorgen. Ja, mein Lebensinhalt ist die Rache! Doch ich möchte so lange wie möglich am Leben bleiben, denn wenn ich sterbe, kann ich an meinen Feinden keine Vergeltung mehr üben!

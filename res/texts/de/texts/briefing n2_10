@@ -1,0 +1,9 @@
+Sahilia in Zuflucht lassen
+#show Hero 
+#show Merc10
+#ANIMATION 9
+#phrase Hero  1
+Ich begebe mich auf eine gefährliche Mission, bei der reine Stärke und Kampfmagie entscheidend sind, nicht Unauffälligkeit und Geschick. Diesmal bleibst du besser hier.
+#ANIMATION 70
+#phrase Merc10  2
+Ich werde mich nicht mit dir streiten, aber ich bin mir sicher, dass du bald wieder hier sein und mich um Hilfe bitten wirst!

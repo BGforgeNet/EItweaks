@@ -1,0 +1,45 @@
+Frage nach dem Großen Magier und der Aufgabe
+#show Hero 1
+#show Deva 2
+#ANIMATION 30
+#CAMERA 11
+#phrase Deva  1
+Tka-Rik... so hieß ein Zauberer in den Märchen, die man mir erzählte, als ich noch klein war! Es hieß, er schläft in einer Höhle auf einer entlegenen Insel, und wenn er aufwacht, wird alles wieder so wie in der guten alten Zeit... Aber in Wirklichkeit ist bestimmt alles ganz anders, oder?
+#ANIMATION 62
+#CAMERA 2
+#phrase Hero  2
+Ich weiß nicht... vielleicht nicht alles. Es stimmt, dass er in einer Höhle in einem fernen Land wohnt und die alte Zeit wiederbringen will. Deshalb bin ich hier – meine Mission war es, dich zu finden.
+#ANIMATION 61
+#CAMERA 10
+#phrase Hero  4
+Ich bin glücklich, dass ich diese Mission erfüllt habe. Nicht etwa, weil Tka-Rik zufrieden mit mir sein wird. Er mag ein großer Zauberer sein – ich aber habe das schönste und hinreißendste Mädchen der Welt gefunden.
+#ANIMATION 40
+#CAMERA 5
+#phrase Hero  5
+Ich schwöre, dass andere Frauen für mich nicht mehr existieren, und ich schwöre, dass... Götter, mir fehlen die Worte!
+#ANIMATION 31
+#CAMERA 11
+#phrase Deva  6
+Bitte sag so etwas nicht. Du hast mich gerettet und das ehrt dich... Aber ich liebe jemand anderen und ich werde ihn niemals vergessen, auch wenn er weit weg ist.
+#ANIMATION 43
+#CAMERA 10
+#phrase Hero  7
+Wie kann er dich in solcher Gefahr alleine lassen? In meinen Augen ist er ein Feigling. Falls sich unsere Wege jemals kreuzen, wird er das bereuen!
+#ANIMATION 73
+#CAMERA 3
+#phrase Deva  8
+Sprich nicht so über At-Kira! Wir sind nur knapp dem Fluch der Joon entkommen. Dieses Grauen kannst du dir nicht vorstellen: Deine Familie und deine Freunde sterben, einer nach dem anderen, verlassene Häuser, blut durchtränkt den Staub und über allem der Fluch, den nicht einmal unser Großmagier besiegen konnte.
+#ANIMATION 73
+#CAMERA 11
+#phrase Deva  9
+At-Kira hat mich mehr als einmal vor dem sicheren Tod bewahrt. Er hat mich verlassen, um den Fluch von mir abzulenken, sodass der Fluch ihn und nicht mich verfolgt! Wenn du noch einmal schlecht von ihm sprichst, dann... dann... dann bleibe ich hier und du kannst gehen, wohin du willst.
+#ANIMATION 31
+#CAMERA 5
+#phrase Hero  10
+Ich muss deine Entscheidung akzeptieren, Lu-a-Jalla. Ich schwöre dir, dass du nie wieder ein schlechtes Wort über deinen At-Kira von mir hören wirst.
+#CAMERA 10
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  11
+Aber er wird sich einiges anhören müssen, wenn ich ihn treffe. Und wenn jenes Treffen nicht mit einem Duell endet, dann ist er ein noch schlimmerer Feigling als ich dachte.
+#DESC To himself

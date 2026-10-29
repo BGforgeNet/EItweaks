@@ -1,0 +1,39 @@
+Erfar des Verrats beschuldigen
+#show Elder
+#show Hero
+#show Nsheriff
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  1
+Ich weiß alles! Entscheide dich also, wie du sterben willst!
+#ANIMATION 54
+#CAMERA 9
+#phrase Elder  2
+Nein, nein! Ich bin hinters Licht geführt worden, es war alles ein heimtückischer Plan, ich bin unschuldig! Hilfe, Hilfe! Der Auserwählte ist verrückt geworden!!!
+#DESC Frightened, but still hopes he is trusted
+#ANIMATION 29
+#CAMERA 2
+#phrase Hero  3
+Schrei du nur. Je lauter du schreist, desto mehr Vergnügen wird es mir bereiten, dein Lügenmaul zum Schweigen zu bringen!
+#DESC Icy voice
+#ANIMATION 11
+#CAMERA 8
+#phrase NSheriff  4
+Nein, du solltest besser nicht schreien. Andernfalls... könnte das schlecht für dich sein. Verstanden?
+#ANIMATION 56
+#CAMERA 11
+#phrase Elder  5
+Oh Auserwählter, ich bin in deiner Gewalt... Aber bitte töte mich nicht, ich könnte dir immer noch nützen!
+#DESC Understands that he won't get away and abruptly changes his tone
+#ANIMATION 9
+#CAMERA 10
+#phrase Hero  6
+Ich kann mir zwar nicht vorstellen, wie du darauf kommst, aber ich werde dich nicht töten... noch nicht. Du wirst noch ein Weilchen am Leben bleiben – während ich darüber nachdenke, was mit dir passieren soll. Ich weiß ja nicht, ob es im Dorf einen bestimmten Brauch gibt, wie man mit Abschaum wie dir verfährt.
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  7
+Rivar, sag deinen Leuten, sie sollen Erfar genau im Auge behalten!
+#ANIMATION 15
+#CAMERA 12
+#phrase NSheriff  8
+Ja, Herr!

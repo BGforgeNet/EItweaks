@@ -1,0 +1,11 @@
+Frage nach GoGo
+#show Hero 
+#show Elder
+#ANIMATION 5
+#CAMERA 10
+#phrase Hero  1
+Und wo ist denn GoGo? Wo hat er sich versteckt?
+#ANIMATION 11
+#CAMERA 11
+#phrase Elder  2
+Ich habe Befehl gegeben, ihn hier zu vertreiben. Er richtete zwar keinen großen Schaden an, aber ich konnte ihn nicht mehr ertragen. Und übrigens, wir sollten das 'heilige Objekt der Goblins' wegwerfen – es hat für uns keinen Nutzen mehr.

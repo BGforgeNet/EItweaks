@@ -1,0 +1,11 @@
+     Um einen Zauber zu erschaffen, musst du auf einen magischen Stein im Inventar (unten im Bild) oder im Magieladen (oben im Bild) klicken. Der magische Stein erscheint dann im entsprechenden Erschaffungsfeld.
+     Sobald der magische Stein dort abgelegt ist, erhalten die Felder für die Runen einen blinkenden Rahmen. Die Anzahl der verfügbaren Felder für Runen ist abhängig von der Kapazität des Zaubers. Wenn du eine Rune im Inventar oder im Magieladen anklickst, wird diese im nächsten freien Feld abgelegt.
+     Welche Runen du zufügen kannst, hängt von dem verwendeten magischen Stein ab. Nicht verfügbare Runen erscheinen dunkler.
+
+     Hinweis: Runen können nur in den Erschaffungsfeldern abgelegt werden, wenn ein magischer Stein vorhanden ist. Falls du einen bereits vorhandenen magischen Stein aus dem Erschaffungsfeld entfernst, werden die Runen ebenfalls wieder entfernt.
+
+     Die Eigenschaften des Zaubers werden links im Bild angezeigt. Die Modifikationen durch Runen sind dabei schon eingeschlossen. Unten im Bild siehst du den Preis des Zaubers. Darin enthalten sind bereits alle Artikel, die du eventuell gekauft hast.
+
+     Mit den Schaltflächen <V> und <X> kannst du den Vorgang bestätigen oder abbrechen.
+
+     Hinweis: Wenn du einen Zauber auflöst und ihn gleich anschließend wieder erschaffst (ohne Runen und Stein wieder in das Inventar zu verschieben) wird dir trotzdem sowohl das Auflösen als auch das Erschaffen berechnet. Also Vorsicht - das ist reine Geldverschwendung!

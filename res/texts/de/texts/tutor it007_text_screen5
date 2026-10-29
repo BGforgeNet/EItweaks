@@ -1,0 +1,7 @@
+     Das Feld "Verfügbare Fertigkeiten" zeigt umrahmt jene Fertigkeiten an, die der Charakter erlernen kann. Neben dem Namen der Fertigkeiten steht der Preis für das Erlernen der Fertigkeit. Wird der Preis dunkler angezeigt, fehlt dem Charakter die nötige Erfahrung zum Erlernen dieser Fertigkeit.
+     Wenn du den Mauszeiger auf eine Fertigkeit bewegst, erscheint im Beschreibungsfenster eine Erklärung dazu.
+
+     Um den Charakter eine Fertigkeit erlernen zu lassen, musst du im Feld "Verfügbare Fertigkeit" auf das entsprechende Symbol klicken.
+    Mit den Schaltflächen im Feld "Erfahrung" kannst du den Vorgang bestätigen oder abbrechen.
+
+     Hinweis: Mit jeder erlernten Fertigkeit erhöht sich der Preis für das Erlernen anderer Fertigkeiten, d. h. ein Charakter kann nie alle Fertigkeiten besitzen. Das Geheimnis besteht darin, die richtigen Fertigekeiten zu erlernen und diese auch zu nutzen.

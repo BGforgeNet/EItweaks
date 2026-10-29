@@ -1,0 +1,76 @@
+Rede mit Drachen
+#show Hero 4
+#show SKD 1
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  1
+Nun, das ist der Berggipfel... Und natürlich ist kein Magier hier - um genau zu sein ist überhaupt niemand hier. Bin ich jetzt wirklich so weit gekommen und trotzdem kein Stück näher an meinem Ziel? Es ist zum Haare raufen!
+#ANIMATION 3
+#CAMERA 6
+#phrase Hero  2
+Was ist das für ein Geräusch? Es hört sich an, wie... Es ist ein Drache!!!
+#show SKD 1
+#show Hero 2
+#CAMERA 3
+#ANIMATION 5
+#phrase SKD  3
+Was ist denn das? Ein Mensch? Was machst du hier? Vielleicht möchtest du gegen mich kämpfen, so wie es der alte Brauch vorschreibt? Es würde mir nichts ausmachen, alten Traditionen zu folgen, aber offen gestanden sehe ich keinen Sinn darin...
+#CAMERA 7
+#phrase SKD  4
+Aber ich habe keine Lust, zu raten. Es wäre unterhaltsamer, wenn du es mir selber sagen würdest. Na?
+#ANIMATION 6
+#CAMERA 6
+#phrase Hero  5
+Ich… Äh… Ich hatte nicht erwartet, dich hier zu treffen, es war ein Irrtum...
+#DESC (We feel that hero is frightened, his throat is parched but he still manages to keep his dignity)
+#CAMERA 11
+#ANIMATION 5
+#phrase SKD  6
+Das glaube ich gerne. Ein Mensch, der zur Höhle eines Drachens kommt, begeht einen großen Fehler. Aber bis jetzt gefällt mir unsere Unterhaltung... Könntest du mir beispielsweise Folgendes verraten? Wen hattest du denn erwartet, hier zu sehen, warum bist du hierher gekommen - und so weiter. Das Übliche, du weißt schon...
+#ANIMATION 8
+#CAMERA 6
+#phrase Hero  7
+Ich hoffte, ich könnte hier den Magier treffen, den ich in der magischen Kugel gesehen habe... Und da diese Kugel aus der Stadt des Todes, stammt, dachte ich, der Magier würde hier leben und die Skelette von hier aus befehligen.
+#CAMERA 3
+#ANIMATION 5
+#phrase SKD  8
+Nun, das war schon gar nicht schlecht - für einen Menschen. Du hast nach einem Magier gesucht und mich gefunden. Und mit den Skeletten hattest du auch Unrecht. Manchmal befehlige ich sie, aber das kommt eher selten vor. So, und was soll ich jetzt mit dir anstellen?
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  9
+Vielleicht gar nichts? Wenn es dir nichts ausmacht, gehe ich einfach wieder und werde dich nicht weiter stören...
+#CAMERA 9
+#ANIMATION 5
+#phrase SKD  10
+Leider ist das nicht möglich. Wie schon gesagt, ich respektiere alte Traditionen und laut diesen Traditionen kannst du nicht einfach wieder gehen. Du hast viele verschiedene Gefahren überstanden, hast dich sehr bemüht und das darf einfach nicht sinnlos gewesen sein.
+#CAMERA 3
+#ANIMATION 5
+#phrase SKD  11
+Du könntest mich zu einem Kampf herausfordern, von mir verlangen, dass ich ein Mädchen befreie oder du könntest mich auch um einen Auftrag bitten und wenn du ihn ausführst, beantworte ich jede Frage, die dir in den Sinn kommt. Ich habe zufällig momentan kein Mädchen, das befreit werden muss, und ich sehe, dass du nicht unbedingt gegen mich kämpfen möchtest. Dann bleibt eigentlich nur noch der Auftrag. Bist du bereit?
+#DESC Counting
+#ANIMATION 30
+#NOLIPS
+#CAMERA 6
+#phrase Hero  12
+Das ist meine Chance! Der Drache sagte, ich könnte jede Frage stellen - also auch, wer ich bin und woher ich komme! Dafür würde ich mein Leben riskieren!
+#DESC To himself
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  13
+Natürlich, ich höre zu.
+#CAMERA 3
+#ANIMATION 5
+#phrase SKD  14
+Nun, es gibt hier sehr viele Höhlen, und in denen leben zahlreiche, ekelhafte Wesen, die von den Menschen Blutreißer genannt werden - und es werden immer mehr. Nachts krabbeln die Jungtiere an die Oberfläche und sogar bis in meine Höhle. Sie machen ständig Lärm und Ärger, sie kämpfen um Futter - mit einem Wort, sie stören mich.
+#CAMERA 7
+#ANIMATION 5
+#phrase SKD  15
+Ich bin zu groß, um in die Höhlen zu gelangen, also wirst du für mich dorthin gehen. Ich werde dir einen Trank mitgeben, mit dem du die unterirdische Quelle vergiften wirst. So wird mich kein Lebewesen, das an dem Strom lebt, jemals wieder belästigen können.
+#CAMERA 3
+#ANIMATION 5
+#phrase SKD  16
+Und wage es nicht aus der Höhle zu kommen, bis du das Muttertier getötet hast. Mein Gift wird sie nicht töten, aber es wird sie schwächen. Dann kann sie sogar ein Mensch erledigen. Kehre dann zu mir zurück, und ich werde mir, wie versprochen, deine Frage anhören. Aber überlege dir gut, welche Frage du stellst, sonst wirst du es bereuen.
+#CAMERA 9
+#ANIMATION 4
+#phrase SKD  17
+Obwohl ich bezweifle, dass du dir eine wirklich interessante Frage ausdenken kannst.

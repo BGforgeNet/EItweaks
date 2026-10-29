@@ -1,0 +1,45 @@
+Bitte um eine Übersetzung der Nachricht
+#show Witch 3
+#show Instruction4orcs00 4
+#show Hero 5
+#ANIMATION 61
+#CAMERA 9
+#phrase Witch  1
+Warum hältst du mir dieses Zeug unter die Nase? Habe ich dir nicht gesagt, dass die Orks ihre eigene Schrift entwickelt haben? Es ist unmöglich, sie ohne das Buch zu entziffern, das der Seher verwendet, um den anderen die Zeichen beizubringen. Nun, mein Junge, du musst ins Land der Orks gehen und dir dort ein solches Buch besorgen.
+#hide Instruction4orcs00
+#show Instruction4orcs00 5
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  2
+Schon wieder eine Insel? Ach, wenn du nur wüsstest, wie sehr mir diese Inseln auf die Nerven gehen! Meine Güte, langsam wird es wirklich langweilig...
+#ANIMATION 63
+#CAMERA 11
+#phrase Witch  3
+Macht nichts, mein Lieber, macht nichts. Da wo du hingehst, wird dir mit Sicherheit nicht langweilig sein, glaube mir!
+#DESC (Sweetly, mockingly)
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  4
+Ooh... Es sieht so aus, als hätte die alte Krähe eine Überraschung für mich.
+#DESC (To himself. Concerned, like having bad premonition)
+#ANIMATION 44
+#CAMERA 7
+#phrase Witch  5
+Um den Seher zu finden, musst du dich an den südlichsten Punkt von Gipath begeben. Wir nennen diese Gegend 'Wüste', obwohl es dort wirklich nicht besonders viel Sand gibt.
+#hide Instruction4orcs00
+#show Instruction4orcs00 4
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  6
+Dafür gibt es dort aber jede Menge lustiges Getier. Orks, Oger, Echsen... Genau die richtige Gesellschaft, um einen gelangweilten Mann aufzuheitern, he he he.
+#hide Instruction4orcs00
+#show Instruction4orcs00 5
+#ANIMATION 3
+#CAMERA 2
+#phrase Hero  7
+Ist ja gut, ich habe genug von deinen Scherzen.
+#ANIMATION 9
+#CAMERA 3
+#phrase Witch  8
+In Ordnung, genug davon. Hör gut zu: Im See nahe dieser Wüste gibt es eine recht große Landzunge. Dort befindet sich die Hütte des Sehers. Hol' dir das Buch von ihm!

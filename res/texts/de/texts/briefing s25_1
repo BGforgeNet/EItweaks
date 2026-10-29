@@ -1,0 +1,49 @@
+Erfar des Verrats beschuldigen
+#show Elder
+#show Hero
+#show Nsheriff
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  1
+Ich weiß alles! Entscheide dich, wie du sterben willst!
+#ANIMATION 54
+#CAMERA 9
+#phrase Elder  2
+Nein, nein! Ich bin hinter's Licht geführt worden, es war alles ein heimtückischer Plan, ich bin unschuldig! Hilfe, Hilfe! Der Auserwählte ist verrückt geworden!!!
+#DESC Frightened, but still hopes he is trusted
+#ANIMATION 29
+#CAMERA 2
+#phrase Hero  3
+Schrei du nur. Je lauter du schreist, desto mehr Vergnügen wird es mir bereiten, dein Lügenmaul zum Schweigen zu bringen!
+#DESC Icy voice
+#ANIMATION 11
+#CAMERA 8
+#phrase NSheriff  4
+Nein, du solltest besser nicht schreien. Andernfalls... könnte das schlecht für dich sein. Verstanden?
+#ANIMATION 56
+#CAMERA 9
+#phrase Elder  5
+Oh Auserwählter, ich bin in deiner Gewalt... Aber bitte töte mich nicht, ich könnte dir immer noch nützen! Außer mir kann dir keiner sagen, was in der Nachricht stand, den du gefunden hast! Gib mir dein Wort, dass du mich ziehen lässt, und ich werde es dir übersetzen!
+#DESC Understands that he won't get away and abruptly changes his tone
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  6
+Unverschämt bist du auch noch! Du wirst mir das Schriftstück übersetzen, aber versprechen werde ich dir gar nichts. Danach werden wir weitersehen.
+#DESC The first phrase amazedly, others - exaggeratedly sweet, like making a favour
+#ANIMATION 1
+#CAMERA 6
+#phrase Hero  7
+Ich meine, ich werde vielleicht darüber nachdenken...
+#ANIMATION 6
+#CAMERA 5
+#phrase Hero  8
+Und falls ich gerade besonders gut aufgelegt bin...
+#ANIMATION 61
+#CAMERA 9
+#phrase Hero  9
+Ich werde entscheiden, ob du am Leben bleibst oder nicht. Obwohl ein solcher Schurke wie du wirklich keine Gnade verdient. Rivar, sag deinen Leuten, sie sollen Erfar genau im Auge behalten!
+#DESC Cruelly and defiantly
+#ANIMATION 15
+#CAMERA 12
+#phrase NSheriff  10
+Ja, Herr!

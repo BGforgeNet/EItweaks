@@ -1,0 +1,31 @@
+Frage nach den verlassenen Minen
+#show Hero 1
+#show Trapper 2
+#ANIMATION 9
+#CAMERA 2
+#phrase Hero  1
+Guten Tag, Sver! Ich wollte dir danken - du hast mir sehr geholfen. Karansul und ich sind jetzt dicke Freunde.
+#ANIMATION 43
+#CAMERA 11
+#phrase Trapper  2
+Vertraust du ihm?
+#ANIMATION 62
+#CAMERA 2
+#phrase Hero  3
+Eigentlich nicht. Deswegen will ich auch mit dir sprechen. Karansul hat mir den Schlüssel zu einem Stollen im Osten des Landes der verlassenen Minen gegeben. Er sagt, dort könnte ich Gold finden. So ein Geschenk würde er mir niemals machen, oder?
+#ANIMATION 46
+#CAMERA 11
+#phrase Trapper  4
+Natürlich nicht! Er will, dass du dabei stirbst – das ist alles. Ich kannte mal jemanden, der dort gearbeitet hat.
+#ANIMATION 63
+#CAMERA 3
+#phrase Trapper  5
+Eines Tages – ein ganz normaler Arbeitstag – kamen von überallher wilde Tiger. Die Arbeiter flüchteten, ohne sich um die Aufseher und das Gold zu kümmern...
+#ANIMATION 61
+#CAMERA 11
+#phrase Trapper  6
+Und so liegt das Gold immer noch herum – seit damals sind die Eingänge verschlossen. Du kannst dort also tatsächlich Gold finden. Es wird aber nicht einfach sein…
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  7
+Schwierige Aufgaben zu lösen wird langsam zu meiner Spezialität! Aber trotzdem danke für die Warnung.

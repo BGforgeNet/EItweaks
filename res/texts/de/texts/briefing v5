@@ -1,0 +1,34 @@
+Frage nach neuer Ausrüstung
+#show Sheriff 1
+#show Hero 2
+#CAMERA 5
+#phrase Hero  1
+Hör zu, Gort, erinnerst du dich daran, dass du mir dieses Zahnrad des Orks gegeben hast? Hast du zufällig noch so etwas, aber von den Insel-Orks?
+#ANIMATION 32
+#CAMERA 9
+#phrase Sheriff  2
+Was willst du denn damit? Einen Vorrat für den Winter anlegen? He he he, der war gut, oder?
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  3
+Ja, sehr lustig. Also… Hast du noch eins oder nicht?
+#ANIMATION 9
+#CAMERA 7
+#phrase Sheriff  4
+Nun, es gab da eine Geschichte... Freie Jäger haben eine Truhe der Insel-Orks mitgehen lassen und unter anderem war da so ein Ding drin. Also haben sie die Beute auf einen Karren geladen, begonnen ihn wegzuziehen, aber dann haben sie angefangen, sich über irgend etwas zu streiten. Ein Wort gab das andere, weißt du, und am Ende kam nur einer von ihnen zurück und die anderen blieben neben dem Karren liegen.
+#ANIMATION 29
+#CAMERA 5
+#phrase Hero  5
+Ja, ich seh' schon, sie sind sehr nette Kerle, sehr umgänglich. Also, wo sagtest du, ist die Truhe?
+#ANIMATION 7
+#CAMERA 9
+#phrase Sheriff  6
+In den Mittelbergen, nicht weit von der Straße... Der Jäger, der überlebt hat, hat alles Wertvolle mit sich genommen, aber bestimmt nicht das Zahnrad - wer kann so etwas schon gebrauchen?!
+#hide Hero 1
+#show Sheriff 4
+#ANIMATION 30
+#NOLIPS
+#CAMERA 11
+#phrase Sheriff  7
+Er ist ein seltsamer Kerl. Sucht immer nach irgendwelchen dummen Sachen, und überhaupt...Vielleicht ist er am Ende gar nicht der Auserwählte? Ganz egal, was der Älteste sagt!
+#DESC To himself

@@ -1,0 +1,19 @@
+Ritter in Gruppe aufnehmen
+#show Hero 
+#show Merc9
+#ANIMATION 61
+#CAMERA 2
+#phrase Hero  1
+Äh... Geschätzter Ritter! Ich würde Euer Angebot nur zu gern annehmen, aber... seht... manchmal muss ich auf nicht ganz ehrhafte Methoden zurückgreifen und ich weiß nicht, wie Ihr darauf reagieren würdet...
+#ANIMATION 63
+#CAMERA 3
+#phrase Merc9  2
+Wenn ich sage, dass ich auf der Seite des Guten stehe, dann bedeutet das noch lange nicht, dass ich ein empfindsames Weib mit Samthandschuhen bin! Im Krieg ist jedes Mittel erlaubt, selbst wenn es ein Krieg zwischen Gut und Böse ist. Ich schwöre, dass ich Euch überallhin folgen und alles Nötige tun werde! 
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  3
+Ja, aber ich muss gelegentlich in die Stadt!
+#ANIMATION 9
+#CAMERA 11
+#phrase Merc9  4
+Oh, macht Euch da mal keine Sorgen. Innerhalb der Stadtmauern gibt es niemand mehr, der sich an mein Gesicht erinnert!

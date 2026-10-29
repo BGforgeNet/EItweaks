@@ -1,0 +1,13 @@
+     Wenn du deinem Charakter befiehlst, einen Gegner anzugreifen, kannst du auch angeben, auf welches Körperteil er zielen soll. Verwende den Ziffernblock, um einen gezielten Schlag anzubringen:
+
+     4: Linke Hand (bei Tieren: linkes Vorderbein)
+     6: Rechte Hand (bei Tieren: rechtes Vorderbein)
+     1: Linkes Bein
+     3: Rechtes Bein
+     5: Körper
+     8: Kopf
+
+     Um einen gezielten Schlag zu machen, musst du erst die entsprechende Taste auf dem Ziffernblock drücken und dann den Mauszeiger über den Gegner bewegen. Der Charakter wird auf das angegebene Körperteil zielen, bis du ein anderes Kommando gibst oder die Lebenskraft dieses Körperteils Null erreicht. Sollte der Gegner noch leben, führt der Charakter danach keine gezielten Schläge mehr aus.
+
+     Hinweis: Einige der Wesen haben keine Arme oder Beine. Gibst du in diesem Fall den Befehl, auf ein Körperteil zu zielen, das nicht existiert, wird der Charakter die Anweisung einfach ignorieren.
+     Hinweis: Alle Körperteile können von Rüstung geschützt sein, die den Schaden durch Waffen teilweise abfängt. Daher kann der Schaden, der bei geschützten Körperteilen angerichtet wird, geringer ausfallen.

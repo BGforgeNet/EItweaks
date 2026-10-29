@@ -1,0 +1,9 @@
+Fairakh in Zuflucht lassen
+#show Hero 3
+#show Merc8 5
+#phrase Hero  1
+Du siehst nicht gut aus, Fairakh... ich meine Bruder Fairakh. Geht es dir gut?
+#phrase Merc8  2
+Nein... Ich brauche einige Tage, um mich zu erholen. Kommst du auch ohne mich aus?
+#phrase Hero  3
+Ich werde mein Bestes versuchen…

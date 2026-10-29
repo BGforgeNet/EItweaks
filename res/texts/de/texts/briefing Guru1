@@ -1,0 +1,46 @@
+Mit Blindem reden
+#show Hero
+#show Guru
+#show Glav
+#ANIMATION 3
+#CAMERA 5
+#phrase Glav  1
+Bruder Augenlos! Ich kam, um eine wichtige Angelegenheit mit dir zu besprechen.
+#ANIMATION 32
+#CAMERA 3
+#phrase Guru  2
+Das Licht, das mir auf ewig entzogen ist, soll dir stets leuchten! Was kann ich für Bruder Kiran tun?
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  3
+Woher weißt du, dass ich auch hier bin? Und woher weißt du, dass ich etwas brauche?
+#ANIMATION 6
+#CAMERA 3
+#phrase Guru  4
+Ich bin zwar blind, aber nicht taub, und vor allem habe ich meinen Verstand noch nicht verloren.
+#ANIMATION 44
+#CAMERA 4
+#phrase Glav  5
+Bruder Augenlos hört sogar, wenn eine Ratte am anderen Ende der Höhle aus ihrem Loch kommt! Und hätte er einen Bogen, so könnte er sie mit dem ersten Pfeil treffen!
+#ANIMATION 31
+#CAMERA 3
+#phrase Guru  6
+Vielen Dank, aber normalerweise schieße ich nicht auf Ratten. Es gibt größere und wichtigere Ziele. Was wollt ihr denn von einem armen blinden Mann?
+#ANIMATION 8
+#CAMERA 8
+#phrase Glav  7
+Du warst vielen Menschen hier in der Letzten Zuflucht ein guter Lehrmeister. Kannst du nicht auch Bruder Kiran ausbilden?
+#hide Glav
+#ANIMATION 11
+#CAMERA 3
+#phrase Guru  8
+He he! In der Letzten Zuflucht sollte man Bruder Khatuls Wünschen schneller folgen als den Befehlen eines Offiziers der Kaiserlichen Wache! Ich hoffe, du hast nichts dagegen, deine Geschicklichkeit etwas zu verbessern?
+#DESC A bit nastily but on the whole clearly approves
+#ANIMATION 14
+#CAMERA 2
+#phrase Hero  9
+Natürlich nicht! Aber kann man das denn so schnell lernen?
+#ANIMATION 9
+#CAMERA 9
+#phrase Guru  10
+Ich verspreche niemals das Unmögliche. Aber du wirst es schon sehr bald selbst sehen!

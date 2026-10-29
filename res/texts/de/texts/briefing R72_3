@@ -1,0 +1,31 @@
+Frage nach der Aufgabe in Suslanger
+#show Hero 3
+#show Rick 4
+#CAMERA 1
+#ANIMATION 6
+#phrase Rick  1
+Als ich Euch nach Suslanger schickte, erwartete ich, dass Ihr dort auf Freunde treffen würdet, die Euch bei Eurer Suche helfen könnten.
+#CAMERA 11
+#ANIMATION 4
+#phrase Rick  2
+Trotzdem hatte ich nicht damit gerechnet, dass Ihr jemanden hierher nach Gipath mitbringen würdet. Ich bin deswegen nicht verärgert. Aber glaubt Ihr nicht, dass das ein bisschen leichtsinnig war?
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  3
+Vielleicht! Aber ich konnte schlecht jemanden am Portal zurücklassen, oder? Das wäre der sichere Tod gewesen!
+#CAMERA 7
+#ANIMATION 6
+#phrase Rick  4
+Das mag richtig sein. Aber trotz allem will ich keine Fremden in meiner Höhle!
+#ANIMATION 11
+#CAMERA 6
+#phrase Hero  5
+Was wollt Ihr jetzt tun? Wollt Ihr die Person bestrafen, die mir bei der Mission geholfen hat, auf die Ihr mich geschickt habt?
+#CAMERA 3
+#ANIMATION 6
+#phrase Rick  6
+Kiran, wie oft habe ich Euch schon davor gewarnt, voreilige Schlüsse zu ziehen? Ich will niemandem Schaden zufügen. Ich werde lediglich eine umgekehrte Teleportation durchführen. Danach ist alles wieder in Ordnung!
+#CAMERA 9
+#ANIMATION 6
+#phrase Rick  7
+Und selbstverständlich werde dafür Sorge tragen, dass die Reise vom Portal an einen sicheren Ort nicht von den khadaganianischen Wachen bemerkt wird.

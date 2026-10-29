@@ -1,0 +1,29 @@
+Buch mit den Abrechnungen
+Karansuls Vorarbeiter trägt ein Buch mit den Abrechnungen mit sich rum. Wenn du es in die Finger bekommst, kannst du Druck auf den Kaufmann ausüben. An den südlichen, östlichen und nördlichen Ufern des großen Sees befinden sich Minen, Sägewerke und andere in Karansuls Besitz befindliche Unternehmen. Dieses Gebiet wird gut bewacht und dort sind immer viele Leute anzufinden - sowohl Wachen als auch gewöhnliche Arbeiter. Die Arbeiter sind nicht bewaffnet, allerdings kann es geschehen, dass sie die Wachen alarmieren, wenn sie einen Fremden sehen.
+#subobj  1
+Gehe zum bewachten Gebiet
+Du gelangst über den am südlichen Seeufer gelegenen Posten zu dem Gebiet, in dem sich Karansuls Unternehmen befinden. Die dortige Wachtruppe ist nicht besonders stark und wird kaum Widerstand leisten. Um diesen Posten zu finden, musst du die Brücke überqueren, die über den Fluss führt, der von Westen her in den See fließt, und anschließend vom nördlichen Ufer zum südlichen wechseln.
+#subobj  2
+Finde das Dokument
+Laut Aussagen des Fallenstellers trägt der Vorarbeiter das Buch mit den Abrechnungen mit sich herum. Diese Information muss aber nicht richtig sein und vielleicht liegen ja einige Dokumente in der Nähe der Minen herum. Versuche, dich in der Nähe der Mine, die dem Eingang auf der südlichen Seeseite am nächsten ist, umzuschauen.
+#subobj  3
+Nimm das Dokument
+Du weißt nicht, was für Dokumente dies sind, aber du solltest sie trotzdem an dich nehmen und sei es nur, um genau dies herauszufinden.
+#subobj  4
+Überquere die Brücke
+Die Brücke verbindet den südlichen Teil des Gebiets, in dem sich Karansuls Unternehmen befinden, mit dem nördlichen und wird von Karansuls Söldnern bewacht.
+#subobj  5
+Finde den Vorarbeiter
+Das Haus des Vorarbeiters befindet sich im Norden. Du kannst es an den zwei niedrigen Schornsteinen erkennen. Der Vorarbeiter und seine Leibwachen müssen sich irgendwo in der Nähe befinden.
+#subobj  6
+Nimm das Buch mit den Abrechnungen
+Du musst einen Weg finden, das Buch mit den Abrechnungen in deinen Besitz zu bringen.
+#subobj  7
+Verlasse das bewachte Gebiet
+Du kannst dieses Gebiet durch den Posten am nördlichen Ufer verlassen. An diesem Posten befinden sich viele Wachen, aber sie erwarten keinen Ärger innerhalb des bewachten Gebiets, nur von außerhalb.
+#subobj  8
+Finde die mechanische Mühle
+Karansuls ganzer Stolz - eine mechanische Mühle, die von einem Windrad angetrieben wird. Sie befindet sich im Nordosten des bewachten Gebiets. Probleme mit dem Mechanismus würden Unruhen unter den Arbeitern zur Folge haben.
+#subobj  9
+Zerstöre den Mechanismus
+Wenn die mechanische Mühle nicht mehr funktionieren sollte, würden die Arbeiter und Wachen alle dorthin eilen, um zu sehen, was passiert ist. In der Zwischenzeit könntest du dich ohne lästige Störungen um den Vorarbeiter kümmern.

@@ -1,0 +1,42 @@
+Frage nach der Aufgabe in Khadagan
+#show Hero 3
+#show Rick 4
+#show Deva 5
+#CAMERA 1
+#ANIMATION 6
+#phrase Rick  1
+Ihr seid also alleine zurückgekommen. Der kleine Drache hat gesehen, was Euch in Khadagan wiederfahren ist. Aber er ist noch zu jung, um die Bedeutung der Ereignisse zu verstehen. Nun - ich warte auf eine Erklärung!
+#DESC (Severely)
+#ANIMATION 32
+#CAMERA 12
+#phrase Deva  2
+Oh großer Tka-Rik! Ihr habt einen Bruder erwartet, und ich meine Liebe... Wer von uns hat jetzt mehr Grund zur Verzweiflung? Trotzdem bitte ich Euch, diesen Mann nicht mit Eurem Zorn zu strafen. Er mag auf seiner Mission gescheitert sein, aber er ist ebenso knapp nur dem Tod entronnen. Verdient nicht wenigstens das Euren Respekt?
+#CAMERA 11
+#ANIMATION 3
+#phrase Rick  3
+Ihr habt Recht, Lu-a... Ich war schwach und habe es zugelassen, dass meine Enttäuschung in Ärger umschlägt. Das tut mir leid, Kiran, und ich bitte Euch, mir zu verzeihen. Doch nun erzählt, was passiert ist!
+#ANIMATION 31
+#CAMERA 6
+#phrase Hero  6
+Ich habe schlechte Nachrichten! At-Kira ist nicht in Khadagan: Er hat ein Teleport-Amulett benutzt. Für einen Großmagier dürfte es nicht schwierig sein herauszufinden, wo ihn das Amulett hingebracht hat. Aber es gibt noch ein weiteres Problem.
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  7
+Er wurde mit einem Verwandlungs-Zauber belegt, so dass keiner weiß, wie er jetzt aussieht! Um ehrlich zu sein, habe ich keine Ahnung, wie ich ihn finden soll.
+#CAMERA 11
+#ANIMATION 3
+#phrase Rick  8
+Das sind in der Tat schlechte Nachrichten... Ihr sagt, Ihr wollt Eure Suche fortsetzen? Nachdem Ihr so oft dem Tode ins Auge geblickt habt, kann ich schlecht von Euch verlangen, weitere Gefahren auf Euch zu nehmen…
+#ANIMATION 31
+#CAMERA 6
+#phrase Hero  9
+Ich will ehrlich sein: Wenn es nur um mich ginge, würde ich die ganze Sache vergessen. Aber der Kummer in Lu-a-Jallas Augen... Auch wenn sie mich in ihrem Glück vergessen wird, sobald At-Kira wieder bei ihr ist, so werde ich doch alles tun, um genau das zu erreichen.
+#ANIMATION 7
+#CAMERA 8
+#phrase Deva  10
+Du bist stark und mutig. Du hast mich gerettet, ohne dafür irgendetwas zu verlangen. Wie könnte ich das jemals vergessen?
+#ANIMATION 3
+#CAMERA 1
+#phrase Hero  11
+Du weißt genau, was ich meine… Aber jetzt genug davon!
+#DESC (Bitter, then decisively)

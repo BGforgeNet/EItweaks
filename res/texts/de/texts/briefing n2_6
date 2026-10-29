@@ -1,0 +1,15 @@
+Mairana in Stadt lassen
+#show Hero 1
+#show Merc6 2
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  1
+Ich glaube, diesmal solltest du besser in der Stadt bleiben, zumindest um den Schein zu wahren. Ich glaube nicht, dass Hauptmann Tilvar mir vertraut und sein Argwohn würde dir sicher auch nicht gut tun.
+#ANIMATION 31
+#CAMERA 3
+#phrase Merc6  2
+Ja,vermutlich hast du recht. Um ehrlich zu sein, wollte ich dich auch schon darum bitten.
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  3
+In Ordnung. Aber wenn die Dinge sich etwas beruhigt haben, werde ich deine Dienste vielleicht wieder benötigen.

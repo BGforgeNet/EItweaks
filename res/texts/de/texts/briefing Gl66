@@ -1,0 +1,30 @@
+Frage nach dem Treffen mit dem Besitzer der Joon-Artefakte
+#show Hero 1
+#show Glav 2
+#ANIMATION 44
+#CAMERA 3
+#phrase Glav  1
+Ich weiß, dass du dich mit einem Mann aus der Stadt triffst. Deshalb gebe ich dir einen Rat: Egal, wie abgelegen der Ort ist, sieh dich sehr gut um. Du kennst das Sprichwort: Wer auf sich selbst aufpasst, dem helfen die Götter.
+#ANIMATION 4
+#CAMERA 9
+#phrase Glav  2
+Bruder Schmied!
+#show Hero 3
+#show Glav 4
+#show Kuzn 5
+#ANIMATION 6
+#CAMERA 9
+#phrase Glav  3
+Könntest du Bruder Kiran von dem Ort erzählen, an dem du deine Kaufleute aus der Stadt triffst?
+#ANIMATION 9
+#CAMERA 4
+#phrase Kuzn  4
+Er ist sehr leicht zu finden. Wenn du unsere Katakomben verlässt und zu den Vororten der Stadt kommst, musst du ein kurzes Stück Richtung Sonnenaufgang gehen, dann siehst du eine große Steppe, umgeben von Palmen. Dort mache ich mit den Kaufleuten Geschäfte.
+#ANIMATION 7
+#CAMERA 12
+#phrase Kuzn  5
+Lass aber niemanden sehen, dass du dorthin gehst. Die Wachen finden vielleicht nichts Verdächtiges daran, dass die Kaufleute der Bruderschaft Waren liefern, aber gelegentlich schicken sie Patrouillen in die Vororte.
+#ANIMATION 32
+#CAMERA 1
+#phrase Kuzn  6
+Diese Patrouillen sind nicht sonderlich stark, wenn du auf Wachen triffst, wäre es vermutlich ein Leichtes sie zu töten!

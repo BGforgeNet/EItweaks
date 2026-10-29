@@ -1,0 +1,24 @@
+Frage nach dem gefundenen Schriftstück aus dem Lager
+#show Elder 3
+#show CodedHadaganNote 4
+#show Hero 5
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  1
+Erfar! Kannst du das lesen?
+#hide CodedHadaganNote
+#show CodedHadaganNote 5
+#ANIMATION 44
+#CAMERA 11
+#phrase Elder  2
+Es gibt eine Verschwörung gegen dich, dein Leben ist in Gefahr, also kümmere dich doch nicht um irgendwelche Schriftstücke!
+#hide CodedHadaganNote
+#show CodedHadaganNote 4
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  3
+Du hast mir nicht geantwortet - kannst du das lesen oder nicht?
+#ANIMATION 30
+#CAMERA 9
+#phrase Elder  4
+Nun, ich werde es mir ansehen...später, wenn der Auserwählte nicht mehr in Gefahr schwebt!

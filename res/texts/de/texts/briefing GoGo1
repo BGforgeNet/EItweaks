@@ -1,0 +1,37 @@
+Rückgabe des "Heiligen Objekts der Goblins"
+#show Hero 
+#show BGoblinC
+#ANIMATION 45
+#CAMERA 1
+#phrase Hero  1
+Hör zu, GoGo, wie lange willst du noch hier bleiben? Einen Monat? Ein Jahr? Zehn Jahre?
+#CAMERA 11
+#phrase BGoblinC  2
+Ich bleiben bis du mir gibst Kopf von Ur-Goblin. Oder ich sterbe hier!
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  3
+Warum sollte ich dir diese Vogelscheuche zurückgeben? Du hast mir noch nichts Sinnvolles gesagt!
+#CAMERA 3
+#phrase BGoblinC  4
+Ich sagen alles, was ich weiß, nicht mein Fehler, wenn nicht sinnvoll!
+#ANIMATION 43
+#CAMERA 6
+#phrase Hero  5
+Na, meiner aber auch nicht! Weißt du was, ich glaube, ich schmeiß dieses Ding einfach ins Feuer. Vielleicht verschwindest du dann endlich!
+#show VoodooWand 5
+#CAMERA 7
+#ANIMATION 60
+#phrase BGoblinC  6
+Nicht in Feuer! Nicht werfen! GoGo will kaufen Ur-Goblin. Tausch für Puppe – nicht einfach Puppe, Zauberpuppe!
+#ANIMATION 29
+#CAMERA 5
+#phrase Hero  7
+Bist du völlig durchgedreht, Einauge? Erwartest du vielleicht, dass ich mit Puppen spiele?
+#CAMERA 11
+#phrase BGoblinC  8
+Diese Puppe nicht zum Spielen! Diese Puppe für Magie! Feind schwächen, Stärke nehmen!
+#ANIMATION 46
+#CAMERA 10
+#phrase Hero  9
+Hm... Na das ist interessant... In Ordnung, gib mir die Puppe. Aber falls du mich reinlegen willst...

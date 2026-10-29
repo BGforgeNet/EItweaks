@@ -1,0 +1,51 @@
+Eine Übersetzung des Dokuments fordern
+#show Elder 3
+#show CodedHadaganNote 4
+#show Hero 5
+#ANIMATION 1
+#CAMERA 5
+#phrase Hero  1
+So Freundchen, ich gebe dir eine Chance, deine Aussichten etwas zu verbessern. Ein bisschen zumindest...
+#hide CodedHadaganNote
+#show CodedHadaganNote 5
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  2
+Du kannst das hier doch übersetzen, oder?
+#ANIMATION 15
+#CAMERA 3
+#phrase Elder  3
+Selbstverständlich, selbstverständlich! Ich mache mich sofort an die Arbeit!
+#ANIMATION 7
+#CAMERA 6
+#phrase Hero  4
+Und dir wird auch kein Fehler mehr unterlaufen, oder?
+#hide CodedHadaganNote
+#show CodedHadaganNote 4
+#ANIMATION 31
+#CAMERA 9
+#phrase Elder  5
+Nein, nein, Auserwählter, mir ist klar, dass ich dir ausgeliefert bin!
+#hide CodedHadaganNote
+#show CodedHadaganNote 5
+#ANIMATION 15
+#CAMERA 11
+#phrase Elder  6
+Dies ist das offizielle Alphabet des khadaganianischen Reichs und dieses Dokument ist eine Art Bericht. Eine Einheit... einige Soldaten und ein Gesandter... Ein Lager... Ein neues Lager in der Nähe der Weiten Berge... Und hier ist ein zusammenhängender Abschnitt: Er besagt, dass sich im östlichen Teil der Weiten Berge in den Felsen ein enger Durchgang befindet, der nach Norden führt und dann weiter zu einer Art Sackgasse, in der sich ein Hebel befindet.
+#ANIMATION 8
+#CAMERA 7
+#phrase Elder  7
+Dieser Hebel gehört zu einem Tunnel, der westlich aus der Schlucht führt. Legt man den Hebel um, dann öffnet sich der Eingang zum Tunnel! Der Durchgang ist verschlungen und gefährlich, hier steht etwas von Spalten und Sackgassen... Und dass es gefährlich ist, sich zu weit nach Osten vorzuwagen – dort leben Harpyien.
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  8
+Ist das alles?
+#ANIMATION 2
+#CAMERA 7
+#hide CodedHadaganNote 4
+#phrase Elder  9
+Nein, das ist noch nicht alles! Hier steht, dass im Tunnel Gefahr lauert, aber nicht, welche Art von Gefahr. Aber das ist dann alles.
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  10
+Ha! Denkst du wirklich, dass ich dich dafür gehen lasse? Oh nein, du wirst hier bleiben, bis ich mich entscheide, was mit dir geschehen soll!

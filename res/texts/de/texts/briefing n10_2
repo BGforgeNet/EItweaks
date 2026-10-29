@@ -1,0 +1,15 @@
+Bogenschütze aus Gruppe entlassen
+#show Hero 
+#show Merc2
+#CAMERA 6
+#ANIMATION 7
+#phrase Hero  1
+Wir müssen uns wohl voneinander verabschieden. Ohne deine ruhige Hand und dein scharfes Auge wäre ich mehr als einmal in ernsthafte Schwierigkeiten geraten!
+#CAMERA 7
+#ANIMATION 8
+#phrase Merc2  2
+Vielen Dank für das Lob... Ich hoffe, du wirst auf deiner Reise einen anderen guten Schützen finden. Lebwohl, Auserwählter!
+#CAMERA 6
+#ANIMATION 11
+#phrase Hero  3
+Lebwohl!

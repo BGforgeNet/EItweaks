@@ -1,0 +1,9 @@
+Rennen
+Wenn ein Charakter rennt, macht er mehr Lärm, 
+als wenn er geht, so dass er eher die 
+Aufmerksamkeit des Feindes auf sich 
+zieht, der ihn noch nicht gesehen hat. 
+Der Charakter bewegt sich dabei sehr schnell fort.
+Die 'Energie' nimmt ab. Wenn der Wert 
+der Energie 0 erreicht, beginnt der 
+Charakter automatisch zu gehen.

@@ -1,0 +1,23 @@
+Frage nach den getöteten Sklaventreibern
+#show Hero 3
+#show Kuzn 5
+#ANIMATION 32
+#CAMERA 5
+#phrase Hero  1
+Das war ja vielleicht ein Auftrag, den du mir da gegeben hast, Bruder Schmied!
+#ANIMATION 3
+#CAMERA 11
+#phrase Kuzn  2
+Haben die beiden etwa ernsthaften Widerstand geleistet?
+#ANIMATION 61
+#CAMERA 10
+#phrase Hero  3
+Nein, das nicht. Ich habe immer gedacht, die Arbeiter müssten ihre Peiniger hassen. Aber statt mir zu helfen, haben sie die Wachen gerufen und sich verhalten, als wären Peitschen-Aga und Prügel-Aga ihre besten Freunde!
+#ANIMATION 14
+#CAMERA 3
+#phrase Kuzn  4
+Wenn du hier in Suslanger leben würdest, wüsstest du warum: Arbeiter, die nicht Alarm schlagen, sobald sie einen Fremden sehen, werden totgeschlagen. So lautet das Gesetz!
+#ANIMATION 31
+#CAMERA 9
+#phrase Kuzn  5
+Du hast die beiden getötet, und mich damit gerächt – ich stehe in deiner Schuld!

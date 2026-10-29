@@ -1,0 +1,44 @@
+Hauptmann des Verrats beschuldigen
+#show Elder 2
+#show Hero 5
+#show Sheriff 3
+#show Letter2orcs00 4
+#ANIMATION 14
+#CAMERA 5
+#phrase Hero  1
+Gort! Mir wurde gesagt, dass du das geschrieben hast, es ist deine Handschrift. Und das bedeutet, dass du der Verräter bist.
+#hide Letter2orcs00
+#show Letter2orcs00 2
+#ANIMATION 32
+#CAMERA 4
+#phrase Sheriff  2
+Waaaas? Die falsche Schlange will mich dafür verantwortlich machen?! Wenn das so ist... Du suchst nach einem Verräter, den kannst du haben! Ha, besser hätte es gar nicht kommen können: Ich habe sowieso die Nase voll von all den Leuten, die mir sagen, was ich tun soll. Ich sollte der Anführer dieses Dorfes sein!
+#hide Letter2orcs00
+#show Letter2orcs00 5
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  3
+Ach ja?! Jetzt wirst du für alles bezahlen!!!
+#DESC (Sound of drawn weapon)
+#CAMERA 5
+#ANIMATION 3
+#hide Letter2orcs00
+#phrase Sheriff  4
+Im Augenblick ist es vielleicht ein bisschen zu früh dafür. Aber wenn ich mit den Waldleuten zurückkehre, dann ist meine Zeit gekommen!
+#hide Sheriff run
+#ANIMATION 3
+#CAMERA 6
+#phrase Hero  5
+Halt! Komm zurück, du Feigling!!! 
+#ANIMATION 14
+#CAMERA 10
+#phrase Hero  7
+Er ist geflohen, dieser dreckige Abschaum!
+#ANIMATION 7
+#CAMERA 7
+#phrase Elder  8
+Ja, er ist ein ehrloser Mann, ein Schurke! Aber unterschätze ihn nicht - er und seine Leute sind immer noch gefährlich! Oh je, und ich habe ihm so sehr vertraut... Es gibt keine Entschuldigung für meine Nachlässigkeit!
+#ANIMATION 15
+#CAMERA 9
+#phrase Elder  9
+Wir müssen uns Gort schnappen und ihn töten, bevor er die restlichen Banditen zusammentrommelt und mit ihnen zurückkommt. Er dürfte noch nicht allzu weit gekommen sein. Wenn du dich also beeilst, holst du ihn noch bei den Hügeln ein!

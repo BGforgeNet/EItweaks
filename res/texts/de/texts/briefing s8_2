@@ -1,0 +1,47 @@
+Frage nach den Inseln und dem Portal
+#show Elder 1
+#show Hero 2
+#ANIMATION 9
+#CAMERA 1
+#phrase Hero  1
+Hör zu, Erfar! Ich verstehe dich nicht: Zuerst sagst du, dass wir wichtige Dinge zu tun haben, und dann vergisst du sie einfach. Ich habe das 'Fell mit Buchstaben', von dem GoGo uns erzählt hat!
+#show Elder 3
+#show OrcLicense00 5
+#show Hero 5
+#ANIMATION 32
+#CAMERA 11
+#phrase Elder  2
+Oh Auserwählter! Hast du es tatsächlich geschafft, zu den Inseln zu gelangen und lebend wieder zurückzukommen?! Das ist wahrlich eine große Tat! Warte, ich werde versuchen, zu lesen, was dort steht... Dabei fällt mir ein: Hast du auf den Inseln irgend etwas Ungewöhnliches gesehen? Zum Beispiel ein seltsames Gestein, von ähnlicher Farbe wie GoGos Auge?
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  3
+Soll so etwa das Portal aussehen, das wir zu finden versuchen? Nun, wie dem auch sei, ich habe nichts dergleichen gesehen. Erzähl mir lieber, was auf dem Fell geschrieben steht.
+#hide OrcLicense00
+#show OrcLicense00 4
+#ANIMATION 3
+#CAMERA 9
+#phrase Elder  4
+Unglücklicherweise nichts, das uns nützen würde. Anscheinend hatte ich Unrecht. Was für eine Enttäuschung...
+#show Elder 1
+#hide OrcLicense00 4
+#show Hero 2
+#ANIMATION 44
+#CAMERA 3
+#phrase Elder  5
+Natürlich werden wir unsere Suche nach dem Portal fortsetzen, aber jetzt, oh Auserwählter, muss ich dich um deine Hilfe in einer anderen Angelegenheit bitten. Ich kann unser Gold nicht finden - das ganze Geld, das unsere Leute als Steuern gezahlt haben! Und Baburs Lehrling ist zur gleichen Zeit aus dem Dorf verschwunden. Anscheinend sind es die Intrigen des Handwerkers - er will zum Herrn über das ganze Dorf werden!
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  7
+Und was soll ich jetzt tun? Dem Dieb hinterher rennen?
+#ANIMATION 11
+#CAMERA 11
+#phrase Elder  8
+Ich fürchte, sogar du würdest ihn nicht finden. Es gibt allerdings eine andere Lösung für das Problem! In Gipath existiert ein Ort, an dem vor langer Zeit, als noch eine andere Rasse in diesen Landen lebte, eine reich beladene Karawane überfallen wurde. Die Leute in dem Dorf wissen davon, aber nur ich weiß, wo das Gold gefunden werden kann.
+#ANIMATION 44
+#CAMERA 9
+#phrase Elder  9
+Ich habe nie jemandem von dem Geheimnis erzählt, sonst hätte dieser primitive Babur alles an sich gerissen. Der Weg dorthin ist ein wenig gefährlich, aber für dich wäre es ein Leichtes.
+#ANIMATION 9
+#CAMERA 7
+#phrase Elder  10
+Der Ort heißt Goldenes Tal und befindet sich in dem Gebiet Gipaths, das an die Stadt des Todes angrenzt. In dem nordwestlichen Teil dieses Gebietes gibt es eine Flußschleife. Das Tal befindet sich am östlichen Ufer, etwa in der Mitte des Flusses. Wenn du uns nur wenigstens eine Truhe bringen könntest, dann wäre das Dorf gerettet. Aber ich bitte dich, verrate dieses Geheimnis niemandem.

@@ -1,0 +1,34 @@
+Frage nach dem Feind im Dorf
+#show Witch 1
+#show Hero 2
+#CAMERA 9
+#ANIMATION 9
+#phrase Witch  1
+Also, was redet man so im Dorf?
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  2
+Das kannst dir wohl denken.
+#ANIMATION 8
+#CAMERA 11
+#phrase Witch  3
+Sie beschuldigen sich gegenseitig?
+#ANIMATION 44
+#CAMERA 5
+#phrase Hero  4
+Ja - aber beide klingen glaubwürdig. Ich komme einfach nicht weiter!
+#ANIMATION 63
+#CAMERA 9
+#phrase Witch  5
+Oh, ihr jungen Hüpfer! Versteht ihr denn gar nichts? Wenn du der Sache nicht auf den Grund gehen kannst, dann muss es eine andere Lösung geben! Stell ihnen eine Falle!
+#hide Witch 
+#show Hero 4
+#ANIMATION 30
+#CAMERA 6
+#phrase Hero  6
+Gut...eine Falle stellen...aber was für eine Falle...Oh ja! Ich erzähle im Dorf, dass Estera mir ein Geheimnis verraten hat: Es soll eine weitere Weiße Blume in den Mittelbergen geben, und ich hätte ihr versprochen, sie zu holen.
+#DESC (Thinking aloud)
+#ANIMATION 44
+#CAMERA 5
+#phrase Hero  7
+Ich erzähle Babur, dass die Blume an einem Ort ist, und dem Ältesten sage ich, sie ist an einem anderen Ort. Bestimmt erwartet mich dann ein Hinterhalt. Und wenn ich sehe, wo der Hinterhalt ist, weiß ich, wer dafür verantwortlich ist!

@@ -1,0 +1,46 @@
+Frage nach dem Steinbruch
+#show Smith 1
+#show Hero 2
+#ANIMATION 44
+#CAMERA 9
+#phrase Smith  1
+Hör mal, nachdem du die Muschel vom Altar in den Weiten Bergen entfernt hast, komme ich jetzt nicht mehr zu meinem Steinbruch. Ich weiß nicht, was ich tun soll!
+#DESC Exaggeratedly sad, complaining, clearly counting on pity and offer of help
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  2
+Oh je, das ist ja tragisch! Versuch' nicht, mich reinzulegen, ich weiß genau, was du willst.
+#DESC Lightly, a bit mockingly
+#ANIMATION 11
+#CAMERA 11
+#phrase Smith  3
+Ich versuche nicht, dich reinzulegen, wirklich: Wenn der Weg zum Steinbruch wieder frei ist, soll es dein Schaden nicht sein. Ich bin bereit, eine Menge dafür zu zahlen!
+#DESC Abruptly changes to businesslike
+#ANIMATION 7
+#CAMERA 2
+#phrase Hero  4
+Hört sich gut an... Aber ich werde die Muschel nicht zurückbringen, das verfluchte Ding ist viel zu schwer!
+#ANIMATION 15
+#CAMERA 7
+#phrase Smith  5
+Ja, das mag sein... Aber das ist auch gar nicht nötig! Es gibt einen anderen Weg zu meinem Steinbruch, einen längeren. Aber da lebt jetzt ein Zyklop.
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  6
+Ein Zyklop? Was ist das nun wieder für ein Ungeheuer?
+#ANIMATION 9
+#CAMERA 9
+#phrase Smith  7
+Es ist kein Ungeheuer - na ja, zumindest nicht ganz. Zyklopen sehen aus wie Oger, sind aber viel schlauer. Zumindest ist der, von dem ich rede, nicht dumm: Er stahl eine ganze Herde Schweine von unseren Hirten und jetzt ist er selber eine Art Schweinehirte. Sobald er jemanden sieht, bewirft er ihn mit Steinen. Und hält sich so unerwünschte Besucher vom Leib.
+#ANIMATION 8
+#CAMERA 3
+#phrase Smith  8
+Du musst verstehen, mir sind sowohl Zyklopen als auch Schweine ganz egal. Das Problem ist, dass die Herde direkt neben meinem Steinbruch grast.
+#ANIMATION 31
+#CAMERA 11
+#phrase Smith  9
+Ich nehme also an, wenn du diese Schweine tötest, verschwindet der Zyklop einfach. Und in diesem Fall wäre dir mein Dank gewiss!
+#ANIMATION 32
+#CAMERA 9
+#phrase Smith  10
+Und noch was: Vergiss nicht, den Himmel im Auge zu behalten, wenn du zu den Weiten Bergen gehst. Ich habe dort schon ein paar Mal Drachen gesehen!

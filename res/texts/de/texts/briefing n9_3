@@ -1,0 +1,11 @@
+Naya mitnehmen
+#show Hero 
+#show Merc3
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  1
+Naya, willst du dich uns anschließen?
+#ANIMATION 31
+#CAMERA 3
+#phrase Merc3  2
+Tut mir leid, Auserwählter, aber du hast bereits genügend Gefährten. Ich bin an das ruhige Waldleben gewöhnt und kann die Gesellschaft von so vielen Leuten nicht ertragen.

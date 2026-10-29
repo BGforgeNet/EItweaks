@@ -1,0 +1,24 @@
+Rede mit dem Großen Magier
+#show Hero 3
+#show Rick 4
+#show Deva 5
+#CAMERA 1
+#ANIMATION 5
+#phrase Rick  1
+Das Glück wurde in den Legenden unseres Volkes immer als ein wildes Pferd ohne Mähne dargestellt, das ständig nur galoppiert. Die wenigsten können es besteigen und noch weniger schaffen es, lange im Sattel zu bleiben. In Ingos habt Ihr das Glück fest in Euren Händen gehalten – gebt Acht, dass es Euch in Suslanger nicht entgleitet! Es wird dort eine Menge Leute geben, die Euch mit Freude scheitern sehen...
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  2
+Von denen gab es bereits in Ingos genug. Diera allein hat mir schon gereicht!
+#ANIMATION 14
+#CAMERA 1
+#phrase Deva  3
+Erinnere mich nicht an diese... diese... Ich kenne keine Worte, die schlecht genug sind, um diese Frau zu beschreiben. Sie dachte, ich würde versuchen, ihr die Gunst des Gouverneurs streitig zu machen!
+#ANIMATION 7
+#CAMERA 12
+#phrase Deva  4
+Ich habe verzweifelt versucht, sie davon zu überzeugen, dass ich keinen anderen will als At-Kira – doch sie wollte mir nicht zuhören. Ich darf gar nicht an die kalten, feuchten Katakomben denken, in denen sie mich gefangen hielt! Den Göttern sei Dank, dass At-Kira so etwas nie erleiden musste!
+#CAMERA 1
+#ANIMATION 6
+#phrase Rick  5
+Ich weiß nicht viel über fremde Länder. Alles, was ich über Suslanger weiß ist, dass es dort weder kalt noch feucht ist. Aber ich glaube kaum, dass Euch das weiterhilft.

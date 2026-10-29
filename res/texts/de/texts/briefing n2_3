@@ -1,0 +1,19 @@
+Nayas Hilfe ablehnen
+#show Hero 1
+#show Merc3 2
+#ANIMATION 3
+#CAMERA 6
+#phrase Hero  1
+Tut mir leid, Naya, aber ich habe gute Gründe, dich diesmal nicht mitzunehmen.
+#ANIMATION 14
+#CAMERA 7
+#phrase Merc3  2
+Ich stelle normalerweise keine Fragen. Aber ich möchte wissen, ob es daran liegt, dass du von meinem Können nicht überzeugt bist.
+#ANIMATION 31
+#CAMERA 6
+#phrase Hero  3
+Ich habe überhaupt nichts gegen dich. Es gibt andere Gründe...
+#ANIMATION 15
+#CAMERA 3
+#phrase Merc3  4
+Aha. Nun, wenn du mich wieder einmal brauchen solltest, dann weißt du ja, wo du mich finden kannst!

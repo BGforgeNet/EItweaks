@@ -1,0 +1,5 @@
+     Im oberen Teil des Feldes für Fähigkeiten und Fertigkeiten ist umrandet der Bereich "Fähigkeiten" zu sehen. Die erste Zahl nach dem Namen der Fertigkeit gibt die aktuelle Stufe der Fähigkeiten an. Die zweite Zahl steht für den Preis für eine Verbesserung der Fähigkeit um eine Stufe. Wenn der Preis dunkler angezeigt wird, fehlt dem Charakter die nötige Erfahrung zur Verbesserung der Fähigkeiten.
+     Wenn du den Mauszeiger auf eine Fähigkeit bewegst, wird zu jeder Fähigkeit im Beschreibungsfeld ein Text angezeigt.
+
+     Um eine Fähigkeit zu verbessern, musst du auf das entsprechende Symbol klicken.
+     Mit den Schaltflächen <V> bzw. <X> im Feld "Erfahrung" kannst du den Vorgang bestätigen bzw. abbrechen.

@@ -1,0 +1,75 @@
+Treffen im Dorf
+#show  Hero 0 weapon
+#show Elder
+#show Sheriff
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  1
+Meine Güte! Sieht aus, als wäre das ganze Dorf auf den Beinen!
+#DESC To himself
+#ANIMATION 29
+#CAMERA 8
+#phrase Sheriff  2
+Gut, sind jetzt alle da? Ruhe bitte! Der Älteste will etwas sagen!
+#ANIMATION 32
+#CAMERA 11
+#phrase Elder  3
+Mein Volk! Heute ist ein großartiger Tag für unser Dorf! Wir alle erinnern uns an die Legende, nach der der Auserwählte aus den Heiligen Ruinen auferstehen soll – und seht! Hier steht er! In Fleisch und Blut!
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  4
+Hmm, ich habe tatsächlich ein paar Ruinen gesehen, als ich wieder zu mir gekommen bin… Bedeutet das, dass ich wirklich der Auserwählte bin?
+#DESC To himself, suspiciously
+#ANIMATION 11
+#phrase Elder  5
+Bestes Essen, die beste Unterkunft, Respekt und Ehre – das ist, was wir für den Auserwählten tun werden! Es wird ihm an nichts fehlen!
+#ANIMATION 6
+#NOLIPS
+#CAMERA 10
+#phrase Hero  6
+Klingt gut.
+#DESC To himself, in better mood now.
+#ANIMATION 31
+#phrase Elder  7
+Der Auserwählte ist unser Erlöser und unser Beschützer. Seht ihn euch an! Der Mut steht ihm ins Gesicht geschrieben: Dieser Mann fürchtet keine Gefahr!
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  8
+Hmmm... Gefahr? Vielleicht sollte ich es mir noch mal überlegen, ehe es zu spät ist…
+#DESC Still to himself
+#ANIMATION 14
+#CAMERA 7
+#phrase Elder  9
+Aber falls er natürlich ein Betrüger ist… Gort, sag uns, welche Strafe für ein solches Sakrileg vorgesehen ist.
+#ANIMATION 3
+#CAMERA 8
+#phrase Sheriff  10
+Oh, wir würden ihn angemessen bestrafen – wir werfen ihn einfach in das Feuer da!
+#ANIMATION 9
+#CAMERA 3
+#phrase Elder  12
+Doch wir alle sehen die seltsame Kleidung des Auserwählten. Wir sehen sein mutiges Gesicht und was noch wichtiger ist: Wir sehen sein Messer aus echtem Metall! Nicht mal ich habe ein solches Messer. Das ist der eindeutige Beweis dafür, dass wir den Auserwählten vor uns haben. Er soll uns sein Messer zeigen und etwas über sich erzählen!
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  13
+Aha, so sieht es also aus – entweder bin ich der Auserwählte, den alle lieben, oder ein Betrüger, der irgendwelche Ruinen entweiht hat. Es klingt, als hätte ich keine große Wahl…
+#DESC To himself
+#CAMERA 6
+#ANIMATION 49
+#phrase Hero  14
+Ja, ich bin der Auserwählte, aber ihr könnt mich auch Kiran nennen. Und ich... äh... Ich trage ein Messer aus Metall! Ich... ich werde euch vor aller Gefahr schützen! Wenn ich wüsste, um welche Gefahr es sich handelt.
+#DESC At first loudly and almost confidently, then losing his ground
+#ANIMATION 9
+#CAMERA 3
+#phrase Elder  15
+Wir haben es gewusst! Es ist unser Beschützer! Er ist begierig darauf, sich direkt in die Schlacht zu stürzen! Also hör uns zu, Auserwählter: Unser Dorf wurde vor kurzem von Goblins überfallen. Und diese feigen Goblins haben in der Nähe einen Wachposten aufgestellt, für den Fall, dass wir zurückschlagen wollen.
+#ANIMATION 44
+#CAMERA 7
+#phrase Elder  16
+Wenn einer unserer Krieger das Dorf verlassen würde, könnte die Goblin-Wache sofort seine Waffe und Rüstung sehen und würde Alarm schlagen. Aber du, Auserwählter, mit deinem ungewöhnlichen Dolch und deinen einfachen Kleidern, könntest die Wache töten, ehe sie begreift, was passiert ist.
+#ANIMATION 32
+#CAMERA 11
+#phrase Elder  17
+Wir werden hier warten und wünschen dir viel Glück! Aber wir brauchen uns keine Sorgen zu machen, denn der Auserwählte kann nicht versagen! Geh, töte den Goblin und komme so schnell wie möglich zurück!

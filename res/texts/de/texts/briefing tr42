@@ -1,0 +1,15 @@
+Frage nach dem vermissten Mädchen
+#show Hero 1
+#show Shopper 2
+#ANIMATION 63
+#CAMERA 11
+#phrase Shopper  1
+Man sagt, Junge, dass Ihr nach der Prinzessin sucht? Mein Name ist Kaufmann Karansul, nicht Kaufmann Hilf-Jedem. Ich verkaufe gute Waren gegen gutes Geld und das ist alles, was mich interessiert.
+#ANIMATION 61
+#CAMERA 2
+#phrase Hero  2
+Ja ja, schon gut... Aber wenn ich nun einen magischen Gegenstand erwerben wollte, wohin würde ich denn dann am besten gehen? Ihr mögt ja ein guter Kaufmann sein, aber Ihr seht nicht wie ein guter Magier aus!
+#ANIMATION 44
+#CAMERA 11
+#phrase Shopper  3
+Das Äußere kann täuschen. Ich kontrolliere den gesamten Handel in dieser Stadt. Deshalb verkaufe ich auch Runen. Und da sollte es Euch wirklich nicht kümmern, wer sie für mich macht. Ich bezahle die Magierin Diera ja schließlich nicht umsonst!

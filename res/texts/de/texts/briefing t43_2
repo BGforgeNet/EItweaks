@@ -1,0 +1,39 @@
+Frage nach dem Waldvolk
+#show Hero 1
+#show Trapper 2
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  1
+Du wolltest mir von den Waldleuten erzählen und sagtest, ich sollte dich daran erinnern. Also mache ich das jetzt!
+#ANIMATION 61
+#CAMERA 3
+#phrase Trapper  2
+Oh ja! Richtig, also: Waldleute sind so was wie die 'Kinder der Natur', weißt du? Ich meine, sie bauen keine Häuser, bearbeiten keine Felder und natürlich gibt es auch keine Dörfer. Aber sie sind keinesfalls dumm. Ihr Gehirn funktioniert nur anders als unseres.
+#ANIMATION 62
+#CAMERA 11
+#phrase Trapper  3
+Und da die Menschen sie natürlich nicht verstehen, mögen sie sie auch nicht oder haben Angst vor ihnen. Sieh dir mal den Hauptmann unserer Wachen an: Er ist so mutig, richtig? Er verspricht immer, ein für alle Mal mit den Waldleuten abzurechnen. Warum, glaubst du, tut er das? Weil er Angst vor ihnen hat, deswegen…
+#ANIMATION 63
+#CAMERA 3
+#phrase Trapper  4
+Aber man braucht keine Angst vor ihnen zu haben! Ganz im Gegenteil, wir könnten von ihnen noch was lernen: Kann denn beispielsweise irgendein Mensch Einhörner zähmen? Niemals! Und Waldleute machen das ständig, ganz ohne Probleme. Sie kennen die Wälder, so wie ich sie nie kennen werde, und ich jage schon seit meiner Kindheit!
+#ANIMATION 61
+#CAMERA 11
+#phrase Trapper  5
+Es ist so, dass sie nicht sonderlich an uns Menschen interessiert sind. Aber wenn sich jemand mit den Waldleuten anlegen würde, wären seine Aussichten nicht gerade rosig. Sie mögen zwar klein sein, aber ein Kampf mit ihnen ist nicht leicht. Waldleute haben spezielle Waffen: Ein Blasrohr, mit dem sie kleine, vergiftete Pfeile schießen, so wie den, der den Gesandten getötet hat.
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  6
+Was kann denn das winzinge Ding schon für einen Schaden anrichten? Es würde doch noch nicht einmal eine Lederrüstung durchdringen, oder?
+#ANIMATION 46
+#CAMERA 3
+#phrase Trapper  7
+Und selbst, wenn sie aus Mithril wäre! Jede Rüstung hat eine Schwachstelle. Und wenn es eine solche Stelle gibt, dann werden die Waldleute sie finden und treffen. Darauf kannst du dich verlassen!
+#ANIMATION 61
+#CAMERA 3
+#phrase Trapper  8
+Aussderm haben sie gezähmte Einhörner. Diese Tiere sind wunderschön, aber wenn sie verärgert sind, wirst du dir wünschen, sie niemals gesehen zu haben. Und schließlich können die Waldleute auch zaubern.
+#ANIMATION 9
+#CAMERA 11
+#phrase Trapper  9
+Wenn du dich mit ihnen anlegst, brauchst du dir keine Hoffungen mehr zu machen, aber wenn es dir gelingt, Freundschaft mit ihnen zu schließen, dann pflege diese Freundschaft. Sie könnte sich noch als sehr nützlich erweisen!

@@ -1,0 +1,53 @@
+Frage nach erfüllter Mission
+#show OLIZ 1
+#show Hero 2
+#ANIMATION 15
+#CAMERA 5
+#phrase Hero  1
+Alles erledigt! Und das ist diesmal kein Witz.
+#CAMERA 9
+#phrase OLIZ  2
+Gut. Du hast deinen Teil des Handels eingehalten. Ich stehe zu meinem. Hör zu. Die Echsen wissen alles über den alten Zauberer. Alle Menschen kamen einst von irgendwoher. Der alte Mann lebte in Gipath. Er ist Teil davon. Du bist ein Mensch, du kannst das nicht verstehen.
+#ANIMATION 45
+#CAMERA 10 -20 5 2
+#phrase Hero  3
+Schön, so weit, so gut. Aber wo kann ich ihn finden?
+#CAMERA 11 10 5 2
+#phrase OLIZ  4
+Der alte Mann lebt in dem Gebiet, das ihr Weite Berge nennt. Sein Heim ist in der Schlucht. Hinter dem See, in dem der große Fluss seinen Anfang nimmt. Echsen leben an den Ufern des Sees. Sie sind nicht wie ich. Sie sprechen nicht gern. Sie tun gar nichts gern. Außer töten.
+#ANIMATION 46
+#CAMERA 6
+#phrase Hero  5
+Klingt ja toll! Gibt es keinen anderen Weg?
+#CAMERA 9
+#phrase OLIZ  6
+Du kannst durch die Schlucht zum Tunnel gelangen. Der Eingang ist in den Bergen westlich der Schlucht. Aber der Tunnel ist versperrt. Ich weiß nicht, wie man ihn öffnen kann.
+#ANIMATION 44
+#CAMERA 5
+#phrase Hero  7
+Aha! Das sind also der Tunnel und der Hebel, aus dem khadaganiaschen Bericht! Man legt den Hebel um und der Tunnel wird geöffnet... Und was dann – gehe ich einfach in den Tunnel hinein und das war alles?
+#CAMERA 3
+#phrase OLIZ  8
+Du gehst in den Tunnel hinein. Aber das ist nicht einfach. Bevor ich zum Eremiten wurde, war ich einmal da. Der Tunnel ist sehr unheimlich.
+#CAMERA 10 -20 5 2
+#ANIMATION 11
+#NOLIPS
+#phrase Hero  9
+Er hatte Angst?! Was kann nur in dem Tunnel sein?!
+#DESC (Exclaims to himself)
+#CAMERA 9
+#phrase OLIZ  10
+Der Tunnel ist durch einen Erdrutsch blockiert. Du musst einen Umweg durch eine Höhle machen. In dieser Höhle leben Erd- und Lava-Elemente. Aber das ist normal. Etwas anderes ist wirklich unheimlich: In dem Tunnel lebt etwas, was die Menschen einen 'Golem' nennen. Golems sind zwar nicht lebendig, aber sie können sich bewegen. Sie sind nicht böse, doch sie töten. Sie sind nicht klug, und doch folgen sie Befehlen.
+#CAMERA 11 10 5 2
+#phrase OLIZ  11
+Echsen können diese Befehle nicht erteilen. Vielleicht wird es dir gelingen. Vielleicht gibt es dort Altare, mit deren Hilfe die Golems gesteuert werden können.
+#CAMERA 3
+#phrase OLIZ  12
+Ich habe dir alles gesagt, was ich weiß, Mensch. Der Handel ist vollzogen.
+#hide Hero
+#hide OLIZ
+#show Hero 4
+#ANIMATION 7
+#CAMERA 5
+#phrase Hero  13
+Na, das finde ich aber gar nicht gut... Golems, Golems... irgendwoher kenne ich das Wort... Aber ich komme nicht drauf.

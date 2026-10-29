@@ -1,0 +1,19 @@
+Mairana in Gruppe aufnehmen
+#show Hero 
+#show Merc6
+#ANIMATION 11
+#CAMERA 3
+#phrase Merc6  1
+Na, brauchst du nun meine Hilfe oder nicht?
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  2
+Ich könnte deine Hilfe schon gebrauchen, aber du möchtest doch sicher entlohnt werden? Bei dem Risiko, der Gefahr und allem...
+#ANIMATION 9
+#CAMERA 3
+#phrase Merc6  3
+Um ganz ehrlich zu sein, ich bin noch kein Mitglied der Söldnergilde und kann daher kein Geld verlangen. Die gewonnene Erfahrung, die mir helfen wird, der Gilde beizutreten, ist meine Entlohnung. Und danach werde ich den kleinen Verlust schnell wieder wett machen, keine Sorge!
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  4
+Hmmm... Na gut, abgemacht!

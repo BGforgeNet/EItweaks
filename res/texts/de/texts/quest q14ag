@@ -1,0 +1,11 @@
+Drachenamulett
+Die Echsen besitzen ein Amulett, womit man für kurze Zeit einen Drachen kontrollieren kann. Du brauchst es, um deine Aufgabe zu erfüllen.
+#subobj  1
+Finde den Besitzer des Amuletts
+Die Echse, die im Besitz des Drachenamuletts ist, richtet in der Nähe des alten Steinbruchs seine zahmen Kröten ab. Der Weg Richtung Osten wird dich direkt dorthin führen. Ein weiterer Orientierungspunkt ist der zerstörte Karren in der Nähe des Hügels.
+#subobj  2
+Töte den Besitzer des Amuletts
+Die Echse wird das Amulett nicht freiwillig hergeben und die abgerichteten Kröten machen es unmöglich, es zu stehlen. Der einzige Weg, an das Amulett zu gelangen, ist, den Besitzer zu töten.
+#subobj  3
+Nimm das Amulett
+Durchsuche die Leiche der Echse und nimm das Amulett an dich.

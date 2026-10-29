@@ -1,0 +1,15 @@
+Rede mit Bogenschützen
+#show Hero 
+#show Merc2
+#CAMERA 6
+#ANIMATION 9
+#phrase Hero  1
+Ich beobachte dich schon seit einiger Zeit: Du bist ein hervorragender Schütze. Was würdest du sagen, wenn ich dir die Möglichkeit biete, auf interessantere Ziele zu schießen? Zum Beispiel auf die Ghouls, die mir auf meinen Expeditionen immer wieder in die Quere kommen.
+#CAMERA 3
+#ANIMATION 15
+#phrase Merc2  2
+Hmmm... Man nennt mich nicht umsonst Rint den Bogenschützen – ich mag es nicht, wenn meine Pfeile im Köcher verstauben. Aber ich kann auch nicht einfach so gehen. Ich muss dem Hauptmann Meldung machen.
+#CAMERA 2
+#ANIMATION 11
+#phrase Hero  3
+Selbstverständlich. Aber ich möchte, dass du über meinen Vorschlag nachdenkst.

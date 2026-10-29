@@ -1,0 +1,43 @@
+Frage nach Besuch der Hexe
+#show Hero 
+#show Smith 
+#ANIMATION 31
+#CAMERA 9
+#phrase Smith  1
+Äh... Sag mal, haben wir nicht vor einiger Zeit von dem Geld für das magische Artefakt gesprochen?
+#ANIMATION 29
+#CAMERA 10
+#phrase Hero  2
+Ja, haben wir. Ich erinnere mich, dass du die Hälfte haben wolltest.
+#ANIMATION 15
+#CAMERA 11
+#phrase Smith  4
+Richtig, wollte ich. Und will ich immer noch.
+#ANIMATION 32
+#CAMERA 6
+#phrase Hero  5
+Dann nimm deinen Teil!
+#ANIMATION 5
+#CAMERA 7
+#phrase Smith  6
+Was soll ich nehmen? Ich sehe nichts!
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  7
+Genau. Das ist exakt die Hälfte von dem, was mir die Hexe gezahlt hat.
+#ANIMATION 3
+#CAMERA 11
+#phrase Smith  8
+Waaas? Sie hat nicht bezahlt? Diese elende, alte Hexe!
+#DESC Amazed, nastily
+#ANIMATION 14
+#CAMERA 9
+#phrase Smith  9
+Und du... Du bist verrückt, um es mal milde auszudrücken. Es war dumm von mir, so ein kostbares Objekt aus der Hand zu geben! Ade, du schönes Geld!
+#DESC At first defiantly, after "you" a pause - he wanted to say something else but reconsidered just in time. After that talks darkly, admitting his own fault.
+#nolips
+#ANIMATION 30
+#CAMERA 2 0 2.2 2
+#phrase Hero  10
+In Ordnung, beruhige dich wieder. Du würdest sowieso nie verstehen, was ich von der Hexe im Austausch erhalten habe!
+#DESC To himself, mockingly. Accent on "what"

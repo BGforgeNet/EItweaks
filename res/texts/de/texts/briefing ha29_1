@@ -1,0 +1,15 @@
+Einen Handel vorschlagen
+#show Hero 1
+#show HWLeader 2
+#ANIMATION 8
+#CAMERA 5
+#phrase HWLeader  1
+Was willst du, Unwürdiger?
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  2
+Also, als ich bei Schweinchen, ich sehe Mann – von euch. Mit Augengläsern. Kann ich gehen, wenn ich sage wo du findest?
+#ANIMATION 3
+#CAMERA 5
+#phrase HWLeader  3
+Du bist wirklich ein Idiot! Glaubst du, ich will diesen Schwätzer hier haben? Halt den Mund und sitz still, wenn du nicht willst, dass sich meine Jungs sofort mit dir beschäftigen!

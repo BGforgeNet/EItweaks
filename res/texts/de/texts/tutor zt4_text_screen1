@@ -1,0 +1,8 @@
+     Stelle die gewünschte Spielgeschwindigkeit mithilfe des gerahmten Feldes in der unteren, rechten Ecke des Bildschirms ein. In diesem Feld siehst du eine Markierung, die die derzeitige Spielgeschwindigkeit angibt. Das Feld zeigt außerdem Informationen zur Spielzeit an.
+
+     Du kannst aus drei verschiedenen Modi wählen: 'Normale' Geschwindigkeit, 'Hohe' Geschwindigkeit und 'Pause'. Wenn mit hoher Geschwindigkeit gespielt wird, bewegen sich alle Charaktere (sowohl deine als auch die der Gegner) schneller. Normale Geschwindigkeit ist die Grundeinstellung. Wenn du 'Pause' wählst, kannst du das Spiel für kurze Zeit unterbrechen, um dir deine Strategie auszudenken.
+
+     Du kannst die Spielgeschwindigkeit auch über die Tastatur einstellen: 
+     Hohe Geschwindigkeit: NUM <+>
+     Normale Geschwindigkeit: NUM <->
+     Pause: <Leertaste>

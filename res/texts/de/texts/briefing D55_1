@@ -1,0 +1,27 @@
+Frage nach den Banditen und der Höhle
+#show Hero 1
+#show Deva 2
+#ANIMATION 61
+#CAMERA 2
+#phrase Hero  1
+Du sagtest vorhin, du würdest die Herrscher der Katakomben zu Hilfe holen. Meintest du die Wurmköpfe? Kannst du diesen fürchterlichen Kreaturen wirklich Befehle erteilen?
+#ANIMATION 63
+#CAMERA 3
+#phrase Deva  4
+Nein, das kann ich nicht... Die Wurmköpfe halten sich lediglich an ein altes Abkommen mit den Joons. Unser Niedergang, das Elend, das über die Welt kam – all das interessiert sie nicht. Aber sie halten ihr Wort.
+#ANIMATION 61
+#CAMERA 11
+#phrase Deva  5
+Deswegen konnte ich auch aus dem unterirdischen Lager der Banditen fliehen, ohne dass sie es wagten, mich zu verfolgen. Um ehrlich zu sein, war ich überrascht und hatte Angst, als du hier aufgetaucht bist – auch noch in Begleitung.
+#ANIMATION 61
+#CAMERA 10
+#phrase Hero  6
+Das war nicht leicht... Ich hoffe, dass du weißt, wie wir hier wieder rauskommen. Wir könnten mit einem Teleport-Zauber zu Tka-Rik gelangen - allerdings nur wir beide. Und wir können hier doch niemanden zurücklassen!
+#ANIMATION 9
+#CAMERA 3
+#phrase Deva  7
+Oh, das ist kein Problem. Die Herrscher der Katakomben wissen inzwischen, dass meine Besucher keine Gefahr darstellen.
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  8
+Gut. Ich brauche nur noch einen kleinen Moment, um mich zu verabschieden...

@@ -1,0 +1,23 @@
+Mairana aus Gruppe entlassen
+#show Hero 
+#show Merc6
+#ANIMATION 11
+#CAMERA 3
+#phrase Merc6  1
+Scheint, als wäre es Zeit, sich zu verabschieden?
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  2
+Leider hast du Recht, Mairana. Tut mir leid, dass du nicht mit uns kommen kannst.
+#ANIMATION 9
+#CAMERA 3
+#phrase Merc6  3
+Du musst dich nicht entschuldigen, Kiran. Ich hätte ein solches Angebot ohnehin abgelehnt. Meine Heimat ist hier in Ingos und so bald werde ich die Stadt nicht verlassen.
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  4
+Nun, in dem Fall verlasse ich dich mit einem guten Gewissen. Lebewohl, Mairana.
+#ANIMATION 15
+#CAMERA 3
+#phrase Merc6  5
+Lebewohl!

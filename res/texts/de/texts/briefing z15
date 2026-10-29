@@ -1,0 +1,32 @@
+Frage nach den Funden aus dem Observatorium
+#show Witch 3
+#show Hero 4
+#show DCBook 4
+#ANIMATION 63
+#CAMERA 9
+#phrase Witch  1
+Ich habe mir mal angeschaut, was du gefunden hast... Du hast wirklich Glück gehabt, weißt du? Langsam frage ich mich, ob du ein einfacher Mensch bist, oder ob du vielleicht nicht doch etwas von einem Auserwählten in dir hast.
+#hide DCBook
+#show DCBook 5
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  2
+Ja, ja, schon gut. Erspar mir das. Sag mir einfach, was in dem Buch stand!
+#ANIMATION 9
+#CAMERA 11
+#phrase Witch  3
+Na, dann hör mal gut zu, mein Lieber. Es gibt einen geheimen Weg zur Stadt, etwas ähnliches wie ein enger Durchgang in den Bergen. Er beginnt südlich der Tore und um hineinzukommen, musst du das Passwort sagen. Es lautet: 'Valir und Cania!'.
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  4
+Und was bedeutet das?
+#ANIMATION 61
+#CAMERA 7
+#phrase Witch  5
+Ich habe keine Ahnung, klingt aber beeindruckend. Noch etwas: Wenn ich der Herrscher der Stadt des Todes wäre, würde ich mich auf der Spitze des Einsamen Berges niederlassen. Man kann ihn schon von weitem sehen, du wirst ihn nicht verfehlen können. Dahin musst du gehen.
+#hide DCBook
+#show DCBook 4
+#ANIMATION 31
+#CAMERA 9
+#phrase Witch  6
+Nun, viel Glück! Und wenn du den alten Knaben triffst, zolle ihm den nötigen Respekt! Bei Leuten wie mir kommst du mit deiner Art noch durch, aber mächtigen Magiern musst du mit Respekt begegnen!

@@ -1,0 +1,32 @@
+Erreichen des Höhleneingangs
+Der einzige Weg, den Wachen zu entfliehen, führt durch die Höhle. Der Eingang befindet sich am entfernten Ende der Schlucht.
+#subobj  1
+Finde den befehlshabenden Offizier
+Die Haupttore der südlichen Festung sind verschlossen und du benötigst einen Schlüssel, um sie zu öffnen. Der diensthabende Offizier hat sie. Du musst ihn finden (Leutnant Kardaur hat Dienst). Sein Posten befindet sich in der Nähe der Tore.
+#subobj  2
+Nimm den Schlüssel
+Du musst Kardaur töten, um die Schlüssel zu bekommen.
+#subobj  3
+Öffne die Haupttore
+Um die Haupttore der Festung zu öffnen, brauchst du den Schlüssel, den du Kardaur abgenommen hast. Anschließend musst du dich beeilen. Die offenen Tore werden unweigerlich die Aufmerksamkeit der Wachen auf sich ziehen und sie würden dich sofort verfolgen.
+#subobj  4
+Öffne die Käfige
+Die Wache an den Toren ist auch für die Käfige mit den wilden Spinnen verantwortlich. Neben den Toren befindet sich ein Hebel, der alle Käfige auf einmal öffnet. Wenn du dies tust, werden die freigelassenen Spinnen die Wachen angreifen, womit diese für eine Weile beschäftigt sein werden.
+#subobj  5
+Finde den Durchgang zur Höhle
+Es gibt eine enge Passage, die zu der Höhle im Nordwesten der Schlucht führt. Der Durchgang wird von Toren blockiert, die normalerweise verschlossen sind.
+#subobj  6
+Finde die Wache
+Der Durchgang zur Höhle ist verschlossen und die Wache hat den Schlüssel.
+#subobj  7
+Töte die Wache
+Die Wache muss getötet werden, ansonsten würde sie Alarm schlagen.
+#subobj  8
+Nimm den Schlüssel
+Nimm von der Leiche der Wache den Schlüssel zur Passage, die zur Höhle führt.
+#subobj  9
+Öffne die Tore der Höhle
+Du brauchst den Schlüssel, den du der Wache abgenommen hast, um die Tore zur Höhle zu öffnen.
+#subobj  10
+Entkomme der Verfolgung
+Du wirst verfolgt!

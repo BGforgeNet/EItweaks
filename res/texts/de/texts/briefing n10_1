@@ -1,0 +1,11 @@
+Raubein entlassen
+#show Hero
+#show Merc1
+#ANIMATION 9
+#CAMERA 6
+#phrase Hero  1
+Du bist ein guter Kerl, Raubein, und du hast mir sehr geholfen... Aber von jetzt an muss ich alleine weitergehen. Bis bald!
+#ANIMATION 3
+#CAMERA 7
+#phrase Merc1  2
+Da kann ich wohl nichts machen... Viel Glück und auf ein Wiedersehen – hoffe ich!

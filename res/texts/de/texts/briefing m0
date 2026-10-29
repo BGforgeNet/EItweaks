@@ -1,0 +1,16 @@
+Treffen mit dem Handwerker
+#show Hero 1
+#show Smith 2
+#ANIMATION 11
+#CAMERA 1 -15 6 3
+#phrase Smith  1
+Du bist also auserwählt. Und du bist gekommen, um mit mir zu reden? Nun, also gut, mein Name ist Babur. Sonst noch was?
+#DESC Defiantly, clearly wanting to start a conflict
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  2
+Bist du immer so freundlich?
+#ANIMATION 29
+#CAMERA 11
+#phrase Smith  3
+Wenn dich etwas an mir stört, kannst du jederzeit gehen.

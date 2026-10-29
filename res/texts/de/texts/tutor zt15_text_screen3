@@ -1,0 +1,2 @@
+     Wenn ein Charakter einen Arm verliert, kann er bei weitem nicht mehr so schnell angreifen oder zaubern wie vorher. Ein Arm ist verloren, sobald der Wert "Lebenskraft" für den Arm bei 0 steht. Dieser Wert wird angezeigt, wenn das Informationsfenster auf "Schaden" steht.
+     Wenn ein Charakter ein Bein verliert, bewegt er/sie sich wesentlich langsamer. Dies ist der Fall, sobald der Wert "Lebenskraft" für das Bein bei 0 steht. Dieser Wert wird angezeigt, wenn das Informationsfenster auf "Schaden" steht.

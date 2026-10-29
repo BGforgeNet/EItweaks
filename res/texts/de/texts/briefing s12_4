@@ -1,0 +1,45 @@
+Frage nach einer neuen Expedition gegen die Goblins
+#show Hero
+#show Sheriff
+#show Elder
+#ANIMATION 9
+#phrase Elder  1
+Die freien Jäger waren auf dich wegen des Missgeschicks mit Rotschopf sehr wütend, Auserwählter, aber ich konnte ihnen erklären, dass du in der allerbesten Absicht gehandelt hast. Um also ihren guten Willen zu beweisen, haben sie uns erzählt, dass die Goblins einen weiteren Raubüberfall planen. Wir sind überein gekommen, dass die freien Jäger und Gorts Soldaten die Goblins vorher angreifen werden. Es würde mich freuen, wenn der Auserwählte ebenfalls an diesem Unterfangen teilnehmen würde.
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2 0 2.2 2
+#phrase Hero  2
+Wird mich jemals irgendjemand fragen, was ich gerne machen würde? Na ja, ich könnte es tun - Goblins sind kein großes Problem.
+#DESC To himself
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  3
+In Ordnung, ich werde es tun.
+#ANIMATION 32
+#CAMERA 4
+#phrase Sheriff  4
+Großartig! Also dann: Die Goblins versammeln sich zurzeit am westlichen Rand der Sümpfe, in der Nähe der Hügel am Fluss. Aber zuerst musst du mit dem Stellvertreter des Häuptlings reden. Er wird dort auf dich warten, wo der Weg zum Fluss beginnt.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  6
+Allein?
+#ANIMATION 29
+#CAMERA 7
+#phrase Sheriff  7
+Natürlich! Und er ist unbewaffnet! Andere werden alle Zugänge zum Treffpunkt absichern: Du weißt, dies ist gefährliches Land, also ergreifen sie Vorsichtsmaßnahmen, nur für den Fall der Fälle. Geh zum Treffpunkt und dann wird es eine nette kleine Feier geben!
+#ANIMATION 15
+#CAMERA 9
+#phrase Elder  8
+Erzähl aber Babur nichts davon. Du bist vielleicht mit ihm befreundet, aber denke daran, dass er für Geld alles tut!
+#ANIMATION 7
+#NOLIPS
+#CAMERA 2 0 2.2 2
+#phrase Hero  9
+Mir gefällt die Sache nicht... Die Banditen haben mir zu schnell verziehen! Aber vielleicht hat der Älteste ja tatsächlich mit ihnen eine Abmachung getroffen? Er kann jeden beschwatzen...
+#DESC To himself
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2 0 2.2 2
+#phrase Hero  10
+Alles ausgeprochen undurchsichtig. Ich bin lieber vorsichtig!
+#DESC To himself

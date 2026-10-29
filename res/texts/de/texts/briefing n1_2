@@ -1,0 +1,19 @@
+Bogenschützen mitnehmen
+#show Hero 
+#show Merc2
+#CAMERA 3
+#ANIMATION
+#phrase Merc2  1
+Auserwählter, willst du immer noch, dass ich mit dir komme?
+#CAMERA 10
+#ANIMATION 29
+#phrase Hero  2
+Einen guten Schützen kann ich immer gebrauchen. Aber ich dachte, du hättest Verpflichtungen...
+#CAMERA 11
+#ANIMATION 6
+#phrase Merc2  3
+Das hat sich geändert. Ich werde ab jetzt für mich selbst entscheiden!
+#CAMERA 6
+#ANIMATION 15
+#phrase Hero  4
+Wunderbar! Dann warte am Tor auf mich!

@@ -1,0 +1,18 @@
+Frage nach den Anweisungen, den Auserwählten zu töten
+#show Sheriff 3
+#show Hero 5
+#show Letter2orcs00 4
+#ANIMATION 44
+#CAMERA 5
+#phrase Hero  1
+Schau mal... Kannst du mir irgendetwas darüber erzählen, aber komm mir nicht mit deinen Lügenmärchen!
+#hide Letter2orcs00
+#show Letter2orcs00 5
+#ANIMATION 3
+#CAMERA 3
+#phrase Sheriff  2
+Warum fragst du mich das? Erfar ist der große Redner, frag ihn! Er wird dir alles erklären.
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  5
+Ich werde mich mit dem Ältesten unterhalten. Aber mit dir bin ich trotzdem noch nicht fertig!

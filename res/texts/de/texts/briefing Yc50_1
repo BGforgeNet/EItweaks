@@ -1,0 +1,17 @@
+Was hat der grüne Clan Neues erfahren?
+#show Hero 1
+#show YCF 2
+#CAMERA 3
+#phrase YCF  1
+Ich bin froh, Euch zu sehen, Mensch. Ihr seid den geheimen Pfad gegangen – Ihr seid geschickt und mutig!
+#ANIMATION 9
+#CAMERA 2
+#phrase Hero  2
+Sagt mir, Ältester, habt Ihr inzwischen etwas erfahren, was mir weiterhelfen könnte?
+#CAMERA 11
+#phrase YCF  3
+Wie kann ich wissen, was Euch weiterhilft und was nicht? Stellt die richtigen Fragen und Ihr bekommt die richtigen Antworten.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  4
+Anscheinend bin ich zu früh hergekommen. Entschuldigt, Häuptling! Ich gehe zurück in die Stadt und komme erst wieder, wenn ich weiß, welche Fragen ich Euch stellen soll.

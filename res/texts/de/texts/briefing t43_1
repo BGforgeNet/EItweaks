@@ -1,0 +1,45 @@
+Frage nach Karansul
+#show Hero 1
+#show Trapper 2
+#ANIMATION 61
+#CAMERA 3
+#phrase Trapper  1
+Karansul lässt mich langsam verhungern. Alle Einheimischen hassen ihn: Jeder hat bei ihm Schulden, er kauft unsere Trophäen zu einem Spottpreis und verkauft sie dann für das Dreifache… Aber wenn man versucht, andere Käufer zu finden, hat man Schwierigkeiten. Karansul arbeitet mit den hiesigen Banditen zusammen. Wenn man etwas unternehmen will, schickt er seine Leute, um es dir 'auszureden'. Und das ist dann dein Ende.
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  2
+Ich verstehe. Aber gibt es nicht irgendeinen Weg, diesen Schurken unter Druck zu setzen?
+#ANIMATION 11
+#CAMERA 11
+#phrase Trapper  3
+Gut, lass uns einen Handel abschließen - du hilfst mir und ich helfe dir. Wenn du etwas für mich tust, erzähle ich dir alles, was ich über den Kaufmann weiß. Einverstanden?
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  4
+Was soll ich machen?
+#ANIMATION 62
+#CAMERA 11
+#phrase Trapper  5
+In Kürze wird ein Fellhändler aus der Hauptstadt in unsere Gegend kommen. Er bietet für Häute gute Preise, nicht so wie unser Wucherer. Aber ich kann unter keinen Umständen zu dem Treffpunkt gehen, wo er die Häute aufkauft. Karansuls Leute werden mich im Auge behalten.
+#show Hero
+#show Trapper
+#show SquirrelSkin 5
+#ANIMATION 44
+#CAMERA 3
+#phrase Trapper  6
+Wenn du meine Häute dorthin bringst… Dann können wir uns in Ruhe über den Kaufmann unterhalten! Es ist nicht schwer, den Weg zum Treffpunkt zu finden, aber das Problem ist, dass er sich in Karansuls Einflussbereich befindet. Du verstehst also, dass ich da lieber nicht auftauche.
+#hide  SquirrelSkin
+#show SquirrelSkin 3
+#ANIMATION 46
+#CAMERA 2
+#phrase Hero  7
+Abgemacht. Ich bringe deine Ware dort hin. Aber erzählst du mir auch, wie ich diesen Ort finde?
+#hide  SquirrelSkin
+#ANIMATION 62
+#CAMERA 3
+#phrase Trapper  8
+Sobald du in Karansuls Gebiet kommst, musst du zum ersten Tal im Süden gehen. Dort findest du ein altes Zelt, ein Feuer und in der Nähe des Feuers ein paar Heugabeln. Hänge die Häute auf diese Gabeln - und das war's schon!
+#ANIMATION 44
+#CAMERA 11
+#phrase Trapper  9
+Aber lauf nicht zu viel umher: In diesem Gebiet gibt es Wachen. Die Zeiten sind unruhig, so dass die Wachen dazu neigen, erst anzugreifen und dann zu fragen.

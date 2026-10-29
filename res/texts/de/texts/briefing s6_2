@@ -1,0 +1,51 @@
+Die wichtigen Angelegenheiten des Ältesten
+#show Hero 1
+#show Elder 2
+#ANIMATION 9
+#CAMERA 9
+#phrase Elder  1
+Oh Auserwählter! Aus allen Gerüchten und Legenden unseres Dorfes habe ich eine überraschende Schlussfolgerung gezogen: Unser Land ist nicht so isoliert, wie es scheint. Du, das heißt wir, müssen herausfinden, ob das stimmt und ob es einen Weg gibt, mit anderen Ländern in Verbindung zu treten. Unser Dorf wäre dir natürlich überaus dankbar...
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2 0 2.2 2
+#phrase Hero  2
+Ah! Vielleicht begegnen mir auf meiner Suche mächtige Magier, die mir mein Gedächtnis zurückgeben können. Es wäre natürlich einfacher, durch ein magisches Tor zu treten, als kreuz und quer durch dieses elende Gipath zu laufen.
+#DESC To himself
+#show Hero 1
+#show Elder 2
+#ANIMATION 15
+#CAMERA 5
+#phrase Hero  3
+Also sprich!
+#ANIMATION 9
+#CAMERA 3
+#phrase Elder  4
+Es gibt einen kleinen Goblin-Stamm, dessen Anführer sich GoGo nennt. Er hat einen blauen Stein anstelle eines Auges. Ich habe gehört, dass vor langer Zeit einmal magische Tore aus solchen Steinen gemacht wurden. Tore, die Menschen innerhalb von Sekunden an einen anderen Ort bringen. Wenn wir herausfinden könnten, wo dieser Stein herkommt, könnte ich auch sagen, ob es in Gipath ein solches Tor gibt.
+#ANIMATION 5
+#CAMERA 2
+#phrase Hero  5
+Gute Idee! Aber wie finde ich diesen... wie war sein Name... GoGo?
+#ANIMATION 44
+#CAMERA 11
+#phrase Elder  6
+Er wird von alleine kommen und uns alles erzählen, was er weiß. Sein Stamm verehrt den Ur-Goblin – sie haben sogar noch seinen Schädel. Wenn wir den in unseren Besitz bringen, wird GoGo alles tun, was wir wollen! So liegen die Dinge...
+#show Hero 3
+#show Elder 5
+#show GoblinFright00 5
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  7
+Man muss schon ein Goblin sein, um einen solchen...äh...heiligen Gegenstand zu verehren!
+#ANIMATION 3
+#CAMERA 7
+#phrase Elder  8
+Aber sprich bitte mit keinem über das Tor, bevor wir es gefunden haben. Wir wollen den Leuten keine falschen Hoffnungen machen!
+#hide Elder 
+#hide GoblinFright00 4
+#show Hero 4
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2 0 2.2 2
+#phrase Hero  9
+Als ob ich den Leuten davon erzähle! Das Erste, was ich machen würde, ist, selbst durch das Tor zu gehen – dann hätten die mich das letzte Mal gesehen! Sollte ich das wirklich tun? Sie setzen so viel Hoffnung auf mich... Ach, was soll’s! Dieses Dorf ist Jahrhunderte ohne einen Auserwählten zurechtgekommen – sie werden es auch noch ein paar Jahrhunderte länger überleben.
+#DESC To himself

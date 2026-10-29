@@ -1,0 +1,20 @@
+Besuch der Hexe
+Die Hexe mag keine ungeladenen Gäste, deswegen wird der Weg zu ihrer Höhle durch magische Fallen geschützt. Es gibt zwei Wege, die in den Norden zur Höhle der Hexe führen: durch die westliche oder die östliche Schlucht. Die Fallen in den westlichen Schluchten sind schwächer, allerdings lebt dort ein riesiger Troll. Der Troll in der östlichen Schlucht ist jünger und weniger intelligent, aber die Fallen sind tödlicher.
+#subobj  1
+Weiche den Fallen aus
+Die Fallen der westlichen Passage treffen nur spezielle Punkte. Wenn du vorsichtig bist, kannst du an ihnen vorbeikommen und vielleicht an den Ort gelangen, an dem der Ersatzschlüssel liegt, mit dem man alle anderen Fallen ausschalten kann.
+#subobj  2
+Finde den Schlüssel für die Fallen
+Barbur hatte für Estera einen Ersatzschlüssel gefertigt, mit dem man alle Fallen an-, bzw. ausschalten kann. Der Schlüssel muss sich irgendwo am Ende der westlichen Schlucht befinden.
+#subobj  3
+Schalte die Blitz-Falle aus
+Du kannst mit dem Schlüssel am magischen Obelisk die Blitz-Fallen ausschalten. Dadurch kannst du dich hier viel besser umherbewegen.
+#subobj  4
+Schalte die Feuer-Falle aus
+Du kannst mit dem Schlüssel am magischen Obelisk die Feuer-Fallen ausschalten. Dadurch kannst du an den Obelisken heran, der die Säure-Fallen steuert.
+#subobj  5
+Schalte die Säure-Falle aus
+Du kannst mit dem Schlüssel am magischen Obelisk die Säure-Fallen ausschalten. Anschließend kannst du ungehindert durch die östliche Schlucht gehen.
+#subobj  6
+Gehe durch die östliche Schlucht
+Nun, da die Säure-Fallen ausgeschaltet wurden, bietet die östliche Schlucht einen einfachen Weg zur Höhle der Hexe. Aber sei nicht unvorsichtig: Am Ende der Schlucht lebt ein Troll und du solltest dich nach Möglichkeit an ihm vorbeischleichen (beispielsweise durch Kriechen).

@@ -1,0 +1,27 @@
+Frage nach dem vermissten Mädchen
+#show Hero 1
+#show Kapitan 2
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  1
+Hauptmann!! Habt ihr keine Idee, wo das Mädchen stecken könnte? Ich weiß, dass Ihr beschäftigt seid, jedoch…
+#ANIMATION 44
+#CAMERA 3
+#phrase Kapitan  2
+Aber ich habe Euch doch schon gesagt, was ich von der ganzen Sache halte, junger Mann, ich will es nicht noch einmal wiederholen! Wenn Ihr sonst nichts Besseres zu tun habt, könnt Ihr ja den edlen Ritter Brissen suchen, ha ha!
+#ANIMATION 3
+#CAMERA 2
+#phrase Hero  3
+Bitte? Wen suchen?
+#ANIMATION 63
+#CAMERA 11
+#phrase Kapitan  4
+Na hört mal! Aus welchem entlegenen Ort kommt Ihr denn? Jeder kennt den Ritter Brissen, der sich entschloss, in den Wäldern zu leben, weil er denkt, dass in den Städten das Böse wohnt. Jedes Mal, wenn er aus den Wäldern hervorkam, gabn es nichts als Ärger!
+#ANIMATION 62
+#CAMERA 3
+#phrase Kapitan  5
+Mal brachte er den Steuereintreiber um und ließ das Geld auf der Straße liegen, dann war er hinter Jägern her - angeblich hatten sie außerhalb der Jagdsaison gejagt, oder es war irgendetwas ähnlich Dummes.
+#ANIMATION 45
+#CAMERA 11
+#phrase Kapitan  6
+Hmm, in letzter Zeit habe ich gar keine neuen Geschichten mehr von ihm gehört. Vielleicht ist er gestorben… Wäre gut so. Tot kann er deutlich weniger Ärger machen!

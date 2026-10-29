@@ -1,0 +1,28 @@
+Frage nach den getöteten Sklaventreibern
+#show Hero 3
+#show Glav 4
+#show Kuzn 5
+#ANIMATION 9
+#CAMERA 1
+#phrase Glav  1
+Auch gute Taten können üble Konsequenzen haben. Den Sklaventreibern weine ich keine Träne hinterher, aber du hättest Spuren hinterlassen können, die die Wachen hierher zur Letzten Zuflucht führen.
+#ANIMATION 6
+#CAMERA 7
+#phrase Glav  2
+Da das nicht passiert ist, vergebe ich dir deinen Ungehorsam. Aber für die Zukunft gilt: Sprich mit mir oder einem anderen Bruder, bevor du etwas planst – es sei denn, es hat mit deiner eigenen Mission zu tun.
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  3
+Aber Bruder Schmied hatte mich darum gebeten!
+#ANIMATION 11
+#CAMERA 3
+#phrase Glav  4
+Ich werde dafür sorgen, dass Bruder Schmied in Zukunft vorsichtiger ist – und du bist es hoffentlich auch. Wir sind zu schwach, um Risiken eingehen zu können, verstehst du?
+#ANIMATION 29
+#CAMERA 2
+#phrase Hero  5
+Ja! Aber ich kann schlecht jeder einzelnen Wache aus dem Weg gehen. Früher oder später werde ich ihnen gegenübertreten müssen – das lässt sich nicht vermeiden!
+#ANIMATION 15
+#CAMERA 9
+#phrase Glav  6
+Du hast Recht. Wenn ein Kampf jedoch unausweichlich ist, musst du siegen und darfst keinen Feind zurücklassen. Vielleicht sollte Bruder Augenlos dir ein paar Sachen zeigen... Ich werde ihn bitten, mit dir zu üben.

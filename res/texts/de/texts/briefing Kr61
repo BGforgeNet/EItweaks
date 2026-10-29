@@ -1,0 +1,31 @@
+Mit Odalisque reden
+#show Hero 1
+#show Nalo 2
+#ANIMATION 6
+#CAMERA 2 -30 10 10
+#phrase Nalo  1
+Hör gut zu: Nordwestlich der Schlucht ist ein Durchgang zu einer Höhle. Die Wachen gehen dort niemals hin – aus Angst vor den Wurmköpfen. Aber ich weiß, dass es dort noch andere Ausgänge gibt. Wenn ich dich befreit habe, musst du versuchen, dorthin zu gelangen.
+#ANIMATION 31
+#CAMERA 2 35 6 1.5
+#phrase Nalo  2
+Mein Vater war ein Rattenjäger und deshalb oft in den Höhlen... bis er eines Tages nicht mehr zurückkam. Aber ich werde dir sagen, was er mir erzählt hat.
+#ANIMATION 9
+#CAMERA 2 -30 7 7
+#phrase Nalo  3
+In der Höhle direkt an der Todesschlucht haben die Herrscher der Katakomben ihren Tempel errichtet und zwei Brücken über die Lavaflüsse gebaut – die östliche und die westliche Brücke. Man bewegt sie mit einfachen Hebeln, nach diesen musst du suchen. Wenn du die Höhle von West nach Ost durchquerst, müsstest du den Ausgang finden!
+#ANIMATION 44
+#CAMERA 2 35 6 1.5
+#phrase Nalo  4
+Nachdem ich dich befreit habe, nimm deine Sachen und geh zum Haupttor! Kardaur hält heute Wache und er hat den Schlüssel. Töte ihn, öffne das Tor und beeil dich – sie werden dich schon bald verfolgen!
+#ANIMATION 15
+#CAMERA 2 30 7 7
+#phrase Nalo  5
+Du kannst sie eine Weile aufhalten, indem du alle Käfige im Zoo der Festung öffnest. Ich weiß zwar nicht, wozu die Wachen ihn brauchen, aber es gibt dort einen Hebel, der alle Käfige auf einmal entriegelt.
+#ANIMATION 31
+#CAMERA 2 0 3 0.8
+#phrase Hero  6
+Ich hoffe, der Hebel funktioniert auch! Ich danke dir.
+#ANIMATION 31
+#CAMERA 2 35 6 1.5
+#phrase Nalo  7
+Ich wünsche dir viel Glück. Lebwohl!

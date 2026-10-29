@@ -1,0 +1,27 @@
+Mit Odalisque reden
+#show Hero 1
+#show Nalo 2
+#ANIMATION 3
+#CAMERA 2 -30 10 10
+#phrase Nalo  1
+Endlich ist der Sklaventreiber weg. Hör zu, ich will mit dir reden!
+#ANIMATION 6
+#CAMERA 2 0 3 0.8
+#phrase Hero  2
+Wer bist du? Was willst du?
+#ANIMATION 31
+#CAMERA 2 30 7 7
+#phrase Nalo  3
+Ich habe keinen Namen. Ich bin Kardaurs Odalisque – das Spielzeug dieses Abschaums! Aber ich bin nicht hierher gekommen, um mich zu beschweren! Ich werde den Schlüssel für deinen Käfig von meinem Herrn stehlen und dich befreien.
+#ANIMATION 8
+#CAMERA 2 0 3 0.8
+#phrase Hero  5
+Warum willst du mir helfen? Nicht, dass ich dir nicht glauben würde, aber...
+#ANIMATION 44
+#CAMERA 2 35 6 1.5
+#phrase Nalo  6
+Ganz einfach: Um von hier zu fliehen, musst du den Wachoffizier am Tor töten. Und heute Nacht wird Kardaur Wache halten... Oh, wie glücklich werde ich sein, wenn ich seinen leblosen Körper sehe!
+#ANIMATION 3
+#CAMERA 2 -30 7 7
+#phrase Nalo  9
+Es kommt jemand! Ich muss mich beeilen – die Wachen kennen keine Gnade...

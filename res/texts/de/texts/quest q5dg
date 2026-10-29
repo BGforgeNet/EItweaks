@@ -1,0 +1,11 @@
+Seher und Pyramide
+Die Orks, die in den Hügeln leben, fühlen sich wohl und sicher, da sie von einer magischen Pyramide beschützt werden. Wenn du den Seher tötest, der weiß, wie man sie kontrolliert, und dann die Pyramide ausschaltest, wäre der Stamm weitaus weniger gefährlich.
+#subobj  1
+Finde den Seher
+Der Seher steht in der Mitte der Siedlung und bewacht den Schalter. Wenn du versuchst, deinen Weg zu ihm freizukämpfen, werden die Orks in Scharen auf dich zu stürzen. Du kannst allerdings versuchen, in die Siedlung zu kriechen, so dass die Wachen dich nicht sehen.
+#subobj  2
+Töte den Seher
+Am besten schleichst du dich an ihn heran und stichst ihn von hinten nieder.
+#subobj  3
+Schalte die Pyramide ab
+Benutze den Hebel und schalte die Pyramide ab.

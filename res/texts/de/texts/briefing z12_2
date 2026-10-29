@@ -1,0 +1,15 @@
+Frage nach Airy
+#show Witch 1
+#show Hero 2
+#ANIMATION 61
+#CAMERA 1
+#phrase Witch  1
+Es gibt immer noch keine Neuigkeiten von meinem eigensinnigen Mädchen und dort draußen gibt es so viele Goblins. Oh je, ich fühle es in meinem Herzen, sie will zurückkommen, aber sie hat Angst davor.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  2
+Goblins sagst du? Mit denen nehme ich es jederzeit auf! Ich werde gehen und sie suchen! Sag mir nur, wo sie ist.
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  3
+Suche sie nur, Schlaukopf. Oder frage deinen Freund, den Ältesten.

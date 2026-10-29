@@ -1,0 +1,48 @@
+Frage nach dem Fluch der Joon
+#show JunBoy 3
+#show Rick 4
+#show Deva 5
+#ANIMATION 6
+#CAMERA 5
+#phrase JunBoy  1
+Ich muss Euch etwas sehr Wichtiges fragen, Tka-Rik! Ein khadaganianischer Gelehrter hat es geschafft den Fluch zu täuschen, indem er mich in eine Person namens Kiran verwandelt hat. Wird der Fluch mich jetzt wieder jagen, da ich nicht mehr Kiran, sondern der At-Kira bin?
+#CAMERA 3
+#ANIMATION 6
+#phrase Rick  2
+Ihr habt leider Recht! Zudem könnte ich Euch nicht noch einmal in jemand anderen verwandeln. Der Verwandlungs-Zauber wurde unbedacht und in großer Eile ausgeführt. Ihr hättet Euer Gedächtnis für immer verlieren können. Ihr seid noch nicht bereit für einen weiteren Persönlichkeitswechsel. Sogar meine Fähigkeiten haben Grenzen!
+#ANIMATION 6
+#CAMERA 12
+#phrase Deva  3
+Dann war all unsere Hoffen vergebens?
+#CAMERA 7
+#ANIMATION 6
+#phrase Rick  4
+Das müsst Ihr entscheiden. Ihr könnt weiterhin weglaufen, während ich den Fluch so lange aufhalte, wie ich kann, doch es gibt auch noch eine andere Möglichkeit...
+#ANIMATION 8
+#CAMERA 10
+#phrase JunBoy  5
+Welche?
+#CAMERA 11
+#ANIMATION 3
+#phrase Rick  6
+Ihr könntet dem Fluch ein für allemal ein Ende bereiten!
+#CAMERA 3
+#ANIMATION 6
+#phrase Rick  7
+Ihr seid stärker als je zuvor, At-Kira. Und hinter Euch steht Tka-Rik, der nicht gerade zu den schwächsten Magiern dieser Welt gehört. Wir locken den Fluch hierher nach Gipath und treten ihm gegenüber. Ich muss nicht erwähnen, dass es gefährlich wird. Worte reichen nicht, um den Schrecken des Fluchs der Joon zu beschreiben. Aber wir haben eine Chance, ihn zu besiegen.
+#CAMERA 9
+#ANIMATION 6
+#phrase Rick  8
+Ich werde Euch Joon-Ausrüstung aus den alten Tagen geben, die Ihr mit den stärksten Zaubern belegen könnt. Und in der Stunde der Entscheidung werde ich Seite an Seite mit Euch kämpfen.
+#CAMERA 11
+#ANIMATION 3
+#phrase Rick  9
+Ihr habt die Wahl – werdet Ihr fliehen oder kämpfen?
+#ANIMATION 3
+#CAMERA 10
+#phrase JunBoy  10
+Die Entscheidung ist leicht, Tka-Rik. Als Kiran wusste ich nicht, wofür ich mein Leben aufs Spiel setze. Jetzt aber habe ich alles, wovon ein Mann träumen kann. Denkt Ihr, ich würde meine Liebe und meine Träume nicht verteidigen?
+#CAMERA 1
+#ANIMATION 6
+#phrase Rick  11
+Ihr habt Eure Entscheidung getroffen. Bereitet Euch auf den Kampf vor, At-Kira!

@@ -1,0 +1,24 @@
+Frage nach dem Brief in der Sprache der Orks
+#show Elder 3
+#show Instruction4orcs00 4
+#show Hero 5
+#ANIMATION 14
+#CAMERA 5
+#phrase Hero  1
+Ich habe das Versteckspiel satt! Ich werde nichts weiter unternehmen, bis ich herausgefunden habe, was vor sich geht. Das ist ein Schriftstück der Orks und so weit ich mich erinnern kann, kannst du es entziffern. Also lies!
+#ANIMATION 30
+#CAMERA 9
+#phrase Elder  2
+Äääääh... mmmmm... Also, hier steht, dass sie dich umbringen wollen und dass es dafür eine große Belohnung gibt! Außerdem soll... ääääh... der Älteste, das bin ich, nie etwas davon erfahren.
+#hide Instruction4orcs00
+#show Instruction4orcs00 5
+#ANIMATION 9
+#CAMERA 11
+#phrase Elder  3
+Es ist also alles klar! Babur steckt dahinter! Dort ist das gestohlene Gold aufgetaucht! Welchen anderen Beweis brauchen wir denn noch? Ich werde jetzt den Hauptmann rufen und dann erteilen wir dem doppelzüngigen Verräter eine Lektion!
+#hide Instruction4orcs00
+#show Instruction4orcs00 4
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  4
+Nein, warte. Mir ist die Sache noch nicht ganz klar.

@@ -1,0 +1,39 @@
+Frage nach der angeblich gefundenen Prinzessin
+#show Hero 1
+#show Magess 2
+#ANIMATION 11
+#CAMERA 3
+#phrase Magess  1
+Oh, unser junger Held! Immer noch keine Prinzessin gefunden? Oder habt Ihr etwa schon aufgegeben?
+#ANIMATION 61
+#CAMERA 2
+#phrase Hero  2
+Ihr hattet Recht, als ihr mich vor den Schwierigkeiten gewarnt habt, Diera. Ich habe die ganze Stadt abgesucht, aber keinen einzigen Hinweis gefunden. Allerdings ist mir zu Ohren gekommen, dass die verlassenen Minen ein ideales Versteck wären. Meint Ihr, ich sollte mich dort mal umsehen?
+#ANIMATION 45
+#CAMERA 3
+#phrase Magess  3
+Also wirklich, Ihr werdet doch einen solchen Blödsinn nicht glauben, oder? Ihr könnt es natürlich versuchen, wenn Ihr Eure Zeit verschwenden wollt. Aber ich warne Euch: Der Weg dorthin ist gefährlich und viele der Eingänge sind schon seit langem eingestürzt.
+#ANIMATION 44
+#CAMERA 11
+#phrase Magess  4
+Außerdem werdet ihr dort vermutlich auf grausame Banditen treffen. Wenn Ihr es wagt, Eure Nase in diese alten Minen zu stecken, könnte sie Euch glatt abgeschnitten werden – zusammen mit Eurem ganzen Kopf.
+#ANIMATION 9
+#CAMERA 3
+#phrase Magess  5
+Wisst Ihr, mein Lieber, all diese Geschichten über die alten Minen sind nichts als dummes Geschwätz. Ich habe auch keine Lust, meine Zeit damit zu verschwenden. Es gibt so viel zu tun... Wenn Ihr mich also entschuldigen würdet…
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  6
+Oh ja, sicher. Ich bitte um Verzeihung!
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2
+#phrase Hero  7
+Sieh mal an! Sie würde wohl kaum versuchen, mich von den Minen fernzuhalten, wenn es dort wirklich nichts gäbe!
+#DESC To himself
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  8
+Außerdem war es bestimmt kein Zufall, dass sie auf einmal keine Zeit mehr hatte... Vielleicht glaubt sie, ich hätte bereits etwas herausgefunden und warnt jetzt ihre Handlanger?
+#DESC To himself

@@ -1,0 +1,23 @@
+Frage nach dem Ältesten
+#show Witch 1
+#show Hero 2
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  1
+Gut gemacht, Auserwählter! Das war gute Arbeit, wie du den Ältesten entlarvt hast! Aber mal unter uns gesagt: Wenn man genau darüber nachdenkt, fällt einem sofort auf, dass Erfar die zwielichtigste Person im Dorf war. Er ist neu hier.
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  2
+Wie meinst du das? Woher kommt er, und warum hat mir das niemand gesagt?
+#ANIMATION 44
+#CAMERA 11
+#phrase Witch  3
+Das ist doch der Punkt! Erfar tauchte einfach als erwachsener Mann im Dorf auf, behauptete, die Banditen hätten ihn als Kind entführt und er sei ihnen irgendwann entkommen. Dabei erzählte er so wilde Geschichten, dass jeder ihm Glauben schenkte, sogar ich.
+#ANIMATION 62
+#CAMERA 7
+#phrase Witch  4
+Und dann war Erfar plötzlich der beste Freund von Gort und rechte Hand des vorherigen Ältesten - und so war es auf einmal unhöflich, daran zu erinnern, dass er ein Fremdling war. So war das. Also, was hast du nun mit ihm vor?
+#ANIMATION 43
+#CAMERA 5
+#phrase Hero  5
+Was, wohl! Dasselbe, was er mit mir vorhatte. Erfar muss sich schon sehr anstrengen, um mich umzustimmen!

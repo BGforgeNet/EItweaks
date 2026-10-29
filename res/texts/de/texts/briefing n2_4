@@ -1,0 +1,11 @@
+Eila in Siedlung lassen
+#show Hero 
+#show Merc4
+#CAMERA 6
+#ANIMATION 45
+#phrase Hero  1
+Hör zu Eila! Ich glaube nicht, dass Shei-Var dich gern mit mir ziehen lässt. Vielleicht sollten wir ihn nicht verärgern?
+#CAMERA 3
+#ANIMATION 15
+#phrase Merc4  2
+Du hast Recht, daran habe ich nicht gedacht. Dann bleibe ich heute eben in der Siedlung.

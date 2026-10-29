@@ -1,0 +1,59 @@
+Frage nach dem Fund aus der Höhle
+#show Hero 3
+#show CryptRune00 4
+#show Smith 5
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  1
+Sieh mal, könnte ich das vielleicht der Hexe anbieten?
+#hide CryptRune00
+#show CryptRune00 5
+#ANIMATION 9
+#CAMERA 11
+#phrase Smith  2
+Ja, dieses magische Stück mit Sicherheit, und dafür kannst du schon einen guten Preis verlangen... Ich persönlich würde aber nie dorthin gehen! Der Pfad zu der Höhle, in der Estera wohnt, wird durch magische Fallen versperrt.
+#ANIMATION 7
+#CAMERA 10
+#phrase Hero  3
+Und es gibt keine Möglichkeit, an ihnen vorbei zu kommen?
+#ANIMATION 15
+#CAMERA 7
+#phrase Smith  4
+Ich habe es nie versucht - ich bin nicht so dumm, meinen sicheren Tod zu riskieren! Es gibt eine Möglichkeit, doch das wird nicht einfach sein. Die Fallen werden durch magische Obelisken gesteuert. Und für die Obelisken benötigt man einen speziellen Schlüssel.
+#ANIMATION 8
+#CAMERA 6
+#phrase Hero  6
+Woher weißt du das?
+#ANIMATION 9
+#CAMERA 3
+#phrase Smith  7
+Wer, wenn nicht ich, hätte den Ersatzschlüssel für die Hexe machen sollen? So sieht er aus...
+#show Hero 3
+#hide CryptRune00
+#show AmbushKey00 5
+#show Smith 5
+#ANIMATION 9
+#CAMERA 11
+#phrase Smith  8
+Estera hat ihn irgendwo am Ende der westlichen Schlucht versteckt. Dort gibt es ebenfalls Fallen, aber die Blitzstrahlen erreichen nur bestimmte Stellen. Du könntest also versuchen, an ihnen vorbeizukommen und dann die Obelisken abschalten, welche die Fallen steuern.
+#ANIMATION 44
+#CAMERA 7
+#phrase Smith  9
+Aber es gibt noch ein Problem: In der Nähe des Schlüssels befindet sich ein Troll. Wenn jemand versuchen würde, den Schlüssel an sich zu nehmen und der Troll sähe ihn... Das Monster hätte dann ein leckeres Frühstück, oder etwa nicht? Oder Abendbrot - kommt ganz auf die Tageszeit an.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  10
+Oh, vielen Dank. Ist das alles, was du mir sagen kannst? Vielleicht noch irgendwelche anderen Hinweise und Warnungen?
+#ANIMATION 29
+#CAMERA 11
+#phrase Smith  11
+Aber natürlich! Ich rate dir Folgendes: Wenn du Estera das Stück zeigst, warte, bis sie dir einen Preis dafür nennt. Danach wartest du noch ein bisschen und verlangst das Dreifache. Sie wird schon zahlen, keine Angst! Aber nicht vergessen, ich bekomme die Hälfte!
+#hide Smith
+#hide AmbushKey00 4
+#show Hero 4
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2 0 2.2 2
+#phrase Hero  12
+Denkt der wirklich, ich werde mit der Hexe feilschen? Was ich von ihr brauche sind keine Münzen, sondern Hilfe. Ich habe den Dorfbewohnern schon genug Gefallen erwiesen, jetzt wird es Zeit, an mich selber zu denken!
+#DESC To himself

@@ -1,0 +1,34 @@
+Frage nach dem Pfeil, der den Spion getötet hat
+#show Hero 3
+#show DriadArrow00 3
+#show YCF 5
+#ANIMATION 9
+#CAMERA 2
+#phrase Hero  1
+Oh Häuptling! Erzählt mir mehr von dem Pfeil. Ich habe gehört, dass jeder Eurer Krieger seine eigenen Pfeile herstellt, und dass keiner wie der andere aussieht. So erkennt Ihr den Jäger an den Pfeilen, die er verschießt.
+#CAMERA 3
+#hide DriadArrow00
+#show DriadArrow00 5
+#phrase YCF  2
+Wie soll man den Wolf erkennen, wenn nicht an seiner Fährte? Aber dieser Pfeil kommt nicht vom Grünen Clan, obwohl er so aussieht. Und noch etwas: Weder der Weiße Clan noch der Schwarze bemalen ihre Pfeile in dieser Art.
+#CAMERA 11
+#phrase YCF  3
+Diese Clans mögen meine Feinde sein, aber wir besiegen unsere Feinde mit Waffen, nicht mit Lügen.
+#hide DriadArrow00
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  4
+Schade. Ich dachte, Ihr könntet mir weiterhelfen... Dann muss ich meine Suche wohl in der Stadt fortsetzen.
+#CAMERA 3
+#phrase YCF  5
+Das tut mir leid. Aber niemand soll sagen können, dass die Waldmenschen undankbar sind! Unser Clan wird auf dem geheimen Pfad nach Osten wandern – dieser Pfad soll auch Euch offen stehen.
+#CAMERA 11
+#phrase YCF  6
+Geht von hier aus nach Osten, öffnet die Tore und betretet das Labyrinth zwischen den Hügeln. Geht durch das Labyrinth, öffnet das zweite Tor und Ihr erreicht einige Bergtäler. Vor langer Zeit haben dort Magier gelebt, die an Kriegszaubern arbeiteten. Aber das ist lange her. Und so wie nach einer Überschwemmung Dreck und Unrat zurückbleiben, so haben diese Zauberer Reste ihrer tödlichen Magie in jenen Tälern zurückgelassen.
+#CAMERA 3
+#phrase YCF  7
+Der Grüne Clan hat es geschafft, diese Magie unter seine Kontrolle zu bringen und sie für gute Dinge zu nutzen. Geht am südlichen Hang entlang und benutzt unseren Altar: Die magische Falle wird Euch die wilden Tiger vom Leib halten, so dass Ihr weiter im Südosten unser neues Lager erreichen könnt.
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  8
+Ich danke Euch, Graues Blatt! Falls ich die Hilfe des Grünen Clans brauche, weiß ich, wo ich Euch finden kann. Lebt wohl – ich muss zurück in die Stadt und dort meine Suche fortsetzen!

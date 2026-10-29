@@ -1,0 +1,15 @@
+Treffen mit dem Ritter
+#show Hero 
+#show Merc9
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  1
+Entschuldigt... Ihr seid nicht zufällig Brissen, der edle Ritter? Ich habe in der Stadt von Euch gehört, aber man sagte mir, dass Ihr tot seid!
+#ANIMATION 62
+#CAMERA 3
+#phrase Merc9  2
+Die Gerüchte über meinen Tod sind nichts als Ammenmärchen. Einige Leute würden gern daran glauben, und wann immer ich die Stadt für einige Zeit verlasse, fängt das Gerede über meinen Tod wieder an. Aber ich komme immer zurück, denn ich will dem Guten noch lange dienen.
+#ANIMATION 11
+#CAMERA 11
+#phrase Merc9  3
+Und, guter Mann! Ich freue mich, Eure Bekanntschaft zu machen. Graues Blatt hat mir von Euch und Euren Abenteuern erzählt. Ich dachte, dass wir vielleicht gemeinsam reisen sollten, da auch Ihr auf der Seite des Guten steht. Denkt darüber nach!

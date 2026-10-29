@@ -1,0 +1,56 @@
+Rede über erbeutete Sachen.
+#show Hero 1
+#show Smith 2
+#show Awl 6
+#show Knife 7
+#phrase Hero  1
+Sieh mal! Das habe ich dem Anführer und seiner Frau abgenommen.
+#ANIMATION 29
+#CAMERA 11
+#phrase Smith  2
+Aber… Das sind die Werkzeuge, die mir gestohlen wurden! Ich traue ja meinen Augen kaum!
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  3
+Na, dann fass' sie doch einfach mal an!
+#ANIMATION 9
+#CAMERA 7
+#phrase Smith  4
+Genau, das sind sie! Nun, Auserwählter, jetzt kannst du bei mir bestellen, was du willst! Ich habe nur keine Zaubersprüche, da musst du schon mit der Hexe reden. Aber ansonsten gebe ich dir sogar einen Rabatt…
+#DESC (At first enthusiastically, then catches himself at talking too much)
+#CAMERA 3
+#phrase Smith  15
+Naja, einen kleinen…
+#DESC (Much less enthusiastically)
+#CAMERA 11
+#phrase Smith  16
+Ähh... Ich meine, wenn du danach fragen würdest…
+#DESC (With great pain)
+#ANIMATION 7
+#CAMERA 6
+#phrase Hero  17
+Ganz ruhig, ich will keinen Rabatt von dir. Aber sag mir eins: Wie kommt es, dass die Freijäger und Goblins so dicht zusammenleben und sich noch nicht in Stücke gehauen haben?
+#DESC (At first squeamishly, then businesslike)
+#ANIMATION 6
+#CAMERA 7
+#phrase Smith  18
+Jäger? Pah… Für mich sind und bleiben es Banditen. Mir ist egal, was der Älteste sagt! Das war nicht das erste Mal, dass sie mich bestohlen haben….
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  19
+Hör mal, können wir nicht später über deine Probleme reden? Ich habe dich nach den Goblins gefragt!
+#ANIMATION 9
+#CAMERA 11
+#phrase Smith  20
+Und wovon, glaubst du, rede ich? Es gibt Gerüchte, dass diese Banditen nicht nur Abkommen mit den Goblins, sondern auch mit den Orks haben! Einige der Dorfbewohner schwören, dass sie einen der Banditen – sein Spitzname ist Rotschopf – auf der Straße zu den Trollhöhlen gesehen haben, als er mit einem Ork geredet hat.
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  21
+Nun, dann ist alles klar. Die Waldleute führen den Ältesten an der Nase herum und geben vor, die Retter des Dorfes zu sein!
+#CAMERA 3
+#phrase Smith  22
+Sie führen Erfar an der Nase herum? Ich frage mich…
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  23
+Ich bin sicher, dass es stimmt! Wir müssen diesen Rotschopf finden – dann können wir der Sache auf den Grund gehen.

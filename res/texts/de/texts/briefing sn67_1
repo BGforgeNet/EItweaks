@@ -1,0 +1,33 @@
+Kholais Geschenk
+#show Hero 
+#show OldNekro
+#ANIMATION 58
+#CAMERA 11
+#phrase OldNekro  1
+Oh, übrigens junger Mann! Euer Besuch könnte auch aus einem anderen Grund für mich von Nutzen sein. Dank dieses Idioten Taivo habe ich jetzt jede Menge Zeit. Ich habe bestimmte Experimente gemacht, zu denen ich vorher nie kam.
+#ANIMATION 57
+#CAMERA 3
+#phrase OldNekro  2
+Jetzt möchte ich sie gern in die Praxis umsetzen. Und dazu brauche ich Eure Hilfe, junger Mann!
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2
+#phrase Hero  3
+Hmm. Wenn er eine Art Zombie aus mir machen will, dann sollte ich mir schnell etwas einfallen lassen!
+#DESC To himself, wary, tense
+#ANIMATION 58
+#CAMERA 7
+#phrase OldNekro  4
+Ha ha ha! Junger Mann, Ihr könnt Eure Gefühle nicht verbergen, sie sind Euch ins Gesicht geschrieben! Entspannt Euch, ich werde nicht an Euch arbeiten, obwohl das Material ja nicht schlecht wäre. Nein, ganz und gar nicht schlecht...
+#ANIMATION 57
+#CAMERA 11
+#phrase OldNekro  5
+Ich gebe Euch ein Objekt, das Ihr, sagen wir mal, unter Kampfbedingungen ausprobieren könnt. Wenn Ihr am Leben bleibt, dann war das Experiment ein Erfolg.
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  6
+Und wenn nicht?
+#ANIMATION 59
+#CAMERA 7
+#phrase OldNekro  7
+Dann werde ich meine Arbeit in einer anderen Richtung fortsetzen. Ich kann also nicht verlieren und Eure Chancen stehen auch nicht schlecht. Glaubt mir, mehr kann man in Suslanger nicht verlangen!

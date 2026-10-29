@@ -1,0 +1,27 @@
+Treffen mit dem Bogenschützen
+#show Hero 1
+#show Merc6 2
+#ANIMATION 11
+#CAMERA 3
+#phrase Merc6  1
+Hey du! Man sagt, du suchst nach einer Prinzessin, genau wie dieser verschwundene Gesandte aus der Hauptstadt.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  2
+Wer bist du und warum willst du das wissen?
+#ANIMATION 44
+#CAMERA 3
+#phrase Merc6  3
+Ich heiße Mairana und kann recht gut mit dem Bogen umgehen... Falls du dich oft vor die Stadttore wagst, dann wäre ich sicher nützlich für dich.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  4
+Wie kommst du darauf?
+#ANIMATION 63
+#CAMERA 3
+#phrase Merc6  5
+Du bist offensichtlich neu in der Stadt! Wenn du von hier wärest, würdest du das nicht fragen. Hat dir der Hauptmann nicht von den Aufständen in den Provinzen erzählt? Begib dich 100 Schritte aus der Stadt hinaus, und du wirst zu einer wandelnden Zielscheibe. Du musst wissen, dass die Bogenschützen von Ingos sehr gut sind.
+#ANIMATION 9
+#CAMERA 2
+#phrase Hero  6
+Vielleicht hast du Recht, Mairana. Ich habe tatsächlich das Gefühl, dass die Dörfler hier in der Gegend nicht besonders gastfreundlich sind. Sollte ich Begleitung brauchen, dann werde ich an dich denken.

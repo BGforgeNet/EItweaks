@@ -1,0 +1,52 @@
+Frage nach den verlassenen Minen
+#show Hero 1
+#show Shopper 2
+#ANIMATION 11
+#CAMERA 11
+#phrase Shopper  1
+Ah, der Geschichtenerzähler... Was wollt Ihr denn hier? Nicht schon wieder eine Geschichte erzählen, hoffe ich!
+#ANIMATION 9
+#CAMERA 2
+#phrase Hero  2
+Ihr macht viele Geschäfte hier in der Gegend. Also müsst Ihr Euch hier gut auskennen.
+#ANIMATION 11
+#CAMERA 11
+#phrase Shopper  3
+Ich glaube, dass kann man sagen... Und?
+#DESC (Suspiciously)
+#ANIMATION 44
+#CAMERA 2
+#phrase Hero  4
+Obwohl das Land reich ist, gibt es hier verlassene Minen. Warum ist die Hälfte der Minen stillgelegt?
+#ANIMATION 62
+#CAMERA 11
+#phrase Shopper  5
+Nun, die Stollen für Minen werden nun mal unterirdisch gegraben und unter der Erde leben alle möglichen Kreaturen. Wenn die Bergleute einen Haufen Ghouls aufstöbern, sind sämtliche Investitionen dahin – ebenso die Arbeiter. Also hat der Gouverneur Befehl gegeben, die Minen verschließen zu lassen... Moment! Wollt Ihr die Stollen etwa wieder in Betrieb nehmen?
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  6
+Ich denke darüber nach. Doch zuerst muss ich die Genehmigung des Gouverneurs haben. Vielleicht könnt Ihr mir helfen. Nachdem ich Euch so eine interessante Geschichte erzählt habe, sind wir doch jetzt gute Freunde, oder?
+#ANIMATION 30
+#NOLIPS
+#CAMERA 11
+#phrase Shopper  7
+Freunde wie den sehe ich am liebsten tot in den Wäldern! Aber bis dahin werde ich ihm wohl helfen müssen...
+#DESC To himself
+#ANIMATION 63
+#CAMERA 3
+#phrase Shopper  8
+Warum macht Ihr dem Gouverneur nicht ein Geschenk. Etwas besonders Schönes, Kostbares – oder einfach nur etwas Teures. Zum Beispiel ein Stück Gold. Er wird sich sofort für die Minen interessieren und Euch die Erlaubnis geben, sie zu betreten, ich sage es Euch. Und dazu müsst Ihr noch nicht einmal Untertage gehen!
+#ANIMATION 61
+#CAMERA 11
+#phrase Shopper  9
+Im Land der verlassenen Minen, im Südosten, gibt es noch einen Stollen, der ebenfalls geschlossen ist. Wisst Ihr, die Arbeiter waren faul und haben nicht mehr gearbeitet. Einer von Ihnen hat mir verraten, dass er am südlichen Ende des Stollens ein Stück Gold versteckt hat.
+#ANIMATION 62
+#CAMERA 3
+#phrase Shopper  10
+Überhaupt haben diese Arbeiter eine ganze Menge Geschichten erzählt – also hat der Gouverneur das Gelände schließen lassen. Aber da wir Freunde sind, werde ich Euch den Schlüssel für das Tor geben. Es ist ganz leicht zu finden: Geht in das Land der verlassenen Minen, wendet Euch nach Osten und passiert das Lager der Soldaten nördlich. Dann seid Ihr schon so gut wie da.
+#ANIMATION 30
+#NOLIPS
+#CAMERA 11
+#phrase Shopper  11
+Geht! Geht und findet das Gold! Ihr seid genau der Richtige dafür, Geschichtenerzähler – schließlich liegen noch lange nicht genug bleiche Knochen in diesen Stollen, he, he!
+#DESC To himself

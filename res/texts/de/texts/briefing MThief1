@@ -1,0 +1,24 @@
+Rede mit Gauner
+#show Hero
+#show MThief
+#ANIMATION 61
+#CAMERA 2
+#phrase Hero  1
+Ich bin Svers Freund – man nennt ihn den Fallensteller – und er riet mir, mit dir zu sprechen. Er sagt, du kennst ein Geheimnis, mit dessen Hilfe man - wie soll ich es sagen - leise und unauffällig handeln kann, wenn die Umstände es verlangen.
+#ANIMATION 63
+#CAMERA 3
+#phrase MThief  2
+Ha! Du hast eine flinke Zunge, junger Mann, was man aber von deinen Händen leider nicht behaupten kann. Nimm‘s mir nicht krumm, aber ein Mann mit meinen Fähigkeiten sieht sofort, dass du nicht sehr geschickt bist.
+#ANIMATION 9
+#CAMERA 11
+#phrase MThief  3
+Aber dem kann abgeholfen werden - und aus diesem Grund hat der Fallensteller dich zu mir gesandt, glaubst du nicht auch?
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  4
+Ja, stimmt genau. Er sagte, du könntest mich einiges lehren.
+#ANIMATION 11
+#CAMERA 3
+#phrase MThief  5
+Der alter Fuchs, ha ha! Vor einiger Zeit hat mir der Fallensteller einen großen Gefallen getan und er weiß, dass ich ihm deshalb keinen Wunsch abschlagen kann!
+#DESC Genially, tender

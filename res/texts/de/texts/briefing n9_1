@@ -1,0 +1,12 @@
+Raubein mitnehmen
+#show Hero 
+#show Merc1
+#ANIMATION 45
+#phrase Merc1  1
+Wo willst du denn mit den ganzen Leuten hin?
+#ANIMATION 8
+#phrase Hero  2
+Wir haben was zu erledigen. Willst du mitkommen? Das ist genau das richtige Unternehmen für dich!
+#ANIMATION 32
+#phrase Merc1  3
+Nein, ihr seid schon zu dritt. Du kennst mich – wenn ich kämpfe, vergesse ich alles andere. Ich könnte aus Versehen einen von euch umbringen!

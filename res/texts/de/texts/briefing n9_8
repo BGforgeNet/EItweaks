@@ -1,0 +1,9 @@
+Fairakh in Gruppe aufnehmen
+#show Hero 
+#show Merc8
+#ANIMATION 45
+#phrase Merc8  1
+Warum sollten denn so viele ausziehen? Nur, um mit diesen j‰mmerlichen Gestalten da drauﬂen fertigzuwerden?
+#ANIMATION 32
+#phrase Hero  2
+Einige von ihnen sind gute K‰mpfer, unsere Gruppe ist also gerade groﬂ genug.

@@ -1,0 +1,11 @@
+Das Lager der Orks in den Mittelbergen finden
+Die Hexe hatte einen Alptraum, in dem ihre Enkelin von Goblins gefangen genommen wurde, die mit Duldung der Orks in den Mittelbergen leben. Du solltest herausfinden, ob sie mit ihrer Vorahnung Recht hatte.
+#subobj  1
+Gehe in das Lager der Orks
+Das Lager der Orks und der Goblins befindet sich im westlichen Gebiet der Weiten Berge. Du musst die Brücke überqueren, die über das ausgetrocknete Flussbett führt, um dorthin zu gelangen. Einer der Eingänge zum Lager befindet sich direkt nördlich hinter der Brücke. Dieser Eingang wird streng bewacht. Du solltest eine Möglichkeit finden, an den Wachen vorbeizukommen.
+#subobj  2
+Finde die Befestigung
+Hier werden die Gefangenen festgehalten. Sie ist eingezäunt und hat auf einer Seite ein Tor.
+#subobj  3
+Finde einen Beweis, dass Airy hier war
+Die Enkelin der Hexe ist nicht hier, aber vielleicht haben die Goblins sie in der Zwischenzeit woanders hingebracht? Du solltest versuchen, Beweise zu finden, dass sie tatsächlich hier war.

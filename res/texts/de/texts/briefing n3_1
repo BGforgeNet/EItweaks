@@ -1,0 +1,15 @@
+Raubein wieder mitnehmen
+#show Hero 1
+#show Merc1 2
+#ANIMATION 45
+#phrase Hero  1
+Hey Rauhbein, willst du dich ein bisschen amüsieren?
+#ANIMATION 45
+#phrase Merc1  2
+Aber sicher! Worum was geht es denn?
+#ANIMATION 9
+#phrase Hero  3
+Für einen guten Soldaten wie dich gibt es immer Arbeit. Ich möchte, dass du mich wieder begleitest. Kommst du mit?
+#ANIMATION 15
+#phrase Merc1  4
+Ich bin dabei!

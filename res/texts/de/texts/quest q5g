@@ -1,0 +1,14 @@
+Magischen Gegenstand finden
+Die Orks, die in der Höhle im Nordosten der Hügel leben, haben einen magischen Gegenstand, der für die Hexe von Interesse sein könnte. Der Karte des Banditen nach zu urteilen ist dieser Gegenstand in einem verschlossenen Sarkophag versteckt. Der Seher der Orks hat den Schlüssel dazu. HINWEIS! Um die Höhle zu erreichen, musst du den Weg in den nordöstlichen Bereich der Hügel nehmen und den Troll überlisten, der neben dem Höhleneingang lebt. Um tiefer in die Höhlen vordringen zu können, brauchst du das Zahnrad für eine Zugbrücke. Wenn du es nicht hast, rede mit dem Hauptmann darüber.
+#subobj  1
+Lasse die Brücke herunter
+Um in das Innere der Höhle zu gelangen, musst du die Zugbrücke herablassen. Dazu brauchst du ein Ersatzteil für die Zugbrücke.
+#subobj  2
+Finde den Schlüssel für den Sarkophag
+Der Seher der Orks hat ihn.
+#subobj  3
+Finde den Sarkophag mit dem magischen Gegenstand
+Der Sarkophag mit dem magischen Gegenstand muss sich irgendwo in der Nähe des Ortes befinden, an dem die Orks leben. Es macht nicht viel Sinn, ihn an weiter weg gelegenen Orten zu suchen.
+#subobj  4
+Nimm den Gegenstand
+Um den Gegenstand zu bekommen, musst du den Sarkophag mit Hilfe des Schlüssels öffnen.

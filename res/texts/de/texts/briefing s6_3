@@ -1,0 +1,11 @@
+Frage nach dem Plan des Ältesten
+#show Hero 3
+#show Elder 5
+#ANIMATION 9
+#CAMERA 9
+#phrase Elder  1
+Der Stamm, der von GoGo regiert wird, lebt in der Nähe des Sees, wo der große Fluss ein Delta mit vielen Inseln bildet. Du wirst nicht in der Lage sein, die Inseln zu erreichen. Das ist aber auch gar nicht erforderlich: Die Siedlung der Goblins befindet sich auf dieser Seite des Flusses, zwischen dem Sumpf und der Sandbank.
+#ANIMATION 15
+#CAMERA 11
+#phrase Elder  2
+Und vergiss nicht: Die Goblins liegen mit den Echsen in Fehde. Vielleicht hilft dir dieser Umstand ja weiter.

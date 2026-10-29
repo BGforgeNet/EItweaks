@@ -1,0 +1,9 @@
+Tritt das Schwein
+#show Hero 1
+#show Pig 2
+#CAMERA 10
+#phrase Hero  1
+Verschwinde von hier!
+#CAMERA 3 30 6 4
+#phrase Pig  2
+Hrr-hrrr... Weeeeee!!!

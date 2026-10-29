@@ -1,0 +1,23 @@
+Ritter wieder mitnehmen
+#show Hero 
+#show Merc9
+#ANIMATION 61
+#CAMERA 3
+#phrase Merc9  1
+Graues Blatt hat mir erzählt, dass in der Stadt alles ruhig ist. Derjenige, der mich angeblich erkannt hat, wird schwören, dass ich ihm im Rausch erschien.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  2
+Und woher weiß Graues Blatt das?
+#ANIMATION 62
+#CAMERA 11
+#phrase Merc9  3
+Oh junger Mann, Ihr unterschätzt die Kraft des Guten! Nehmen wir einmal an, ein Bürger besitzt ein Gebäude außerhalb der Stadtmauern. Ein Gebäude, das jeden Moment niederbrennen oder einstürzen könnte. Und nehmen wir weiterhin an, er erhält eine Nachricht von den Waldleuten, die ihn freundlich bitten, die Geschichte vom Rausch zu erzählen und nichts anderes – glaubt Ihr wirklich, er würde ihnen diesen kleinen Wunsch abschlagen? 
+#ANIMATION 9
+#CAMERA 3
+#phrase Merc9  4
+Und sollte es noch jemanden geben, der niemals ein Gesicht vergisst, dann wird auch er freundlich gebeten...
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  5
+Ja... Ihr hattet Recht, Geschätzter Ritter. Im Krieg ist jedes Mittel erlaubt.

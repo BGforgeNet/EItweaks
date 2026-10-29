@@ -1,0 +1,62 @@
+Frage nach den vermissten Kindern
+#show Hero 1
+#show Merc10 2
+#ANIMATION 64
+#CAMERA 9
+#phrase Merc10  1
+Was für ein Pech! Ich würde mir den rothäutigen Mann zu gerne anschauen. Sieht er sehr gut aus? Ich könnte ihn stehlen, obwohl... Vielleicht bleibe ich lieber beim Geld!
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  2
+Ich habe in meinem Leben nur einen Joon gesehen und das war ein Mädchen. Sie war wirklich das wunderschönste Wesen, das ich je gesehen habe!
+#ANIMATION 66
+#CAMERA 11
+#phrase Merc10  3
+Lass mich raten: Du bist in sie verliebt, aber sie nicht in dich? Streite es nicht ab! Ich werde dir einen guten Rat geben: Hör auf, nach dem jungen Joon zu suchen. Eine Zeit lang wird sie traurig sein, aber danach wird sie sich dir zuwenden. Das Herz einer Frau ist wankelmütig, das ist nun mal so!
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  4
+Ich habe es versprochen. Versprochen, verstehst du?
+#ANIMATION 64
+#CAMERA 3
+#phrase Merc10  5
+Tja, so sind die Männer… Ihr gebt euer Wort ohne nachzudenken und dann müsst ihr es halten! Frauen verhalten sich da ganz anders!
+#ANIMATION 6
+#CAMERA 10
+#phrase Hero  6
+Könnten wir bitte wieder zum Thema zurückkehren?
+#ANIMATION 65
+#CAMERA 11
+#phrase Merc10  7
+Ach herrje, wir sind aber ungeduldig! Gut, hör zu: Ich habe mal ein Haus 'besucht' und es war voll mit allen möglichen Dingen: zersprungene Statuen, staubige Manuskripte, Bilder, mit denen man kaum was anfangen kann. Ich dachte, diese Beute könnte mir einiges Geld einbringen, aber der Hehler wollte sie nicht haben - anscheinend sind Artefakte der Joon aus der Mode gekommen!
+#ANIMATION 32
+#CAMERA 6
+#phrase Hero  9
+Ausgezeichnet! Der Besitzer der Sammlung wird sich freuen, zumindest einen Teil zurückzubekommen. Könntest du mir ein paar der Sachen geben?
+#ANIMATION 63
+#CAMERA 7
+#phrase Merc10  10
+Du kannst sie alle haben, allerdings hatte ich keine Lust, sie in die Letzte Zuflucht zu bringen. Es ist alles nahe der Stadt untergebracht, in den Ruinen der alten Kasernen am Flussufer. Ich könnte es ja selber holen, aber das Problem ist, dass sie dort neue Barracken gebaut haben und ich würde nur ungern noch einmal mit den Wachen zusammentreffen. Wenn du also meine Beute haben willst, dann musst du sie dir selber holen.
+#show Note 5
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  11
+In Ordnung. Aber du musst mir noch sagen, wo der Sammler der Joon-Artefakte lebt. Ich möchte ihm eine Nachricht schicken und ihn zu einem Gespräch hierher einladen.
+#ANIMATION 64
+#CAMERA 11
+#phrase Merc10  12
+Oh nein, du darfst niemanden hierher bringen! Gut, dass du das nicht Bruder Khatul erzählt hast - er würde dir danach nie wieder vertrauen!
+#ANIMATION 7
+#CAMERA 2
+#phrase Hero  13
+Ich will mit dem Sammler aber nicht in seinem Haus reden! Er könnte mich mit irgendeinem schmutzigen Trick reinlegen...
+#ANIMATION 63
+#CAMERA 3
+#phrase Merc10  14
+Na ja, das musst du ja auch nicht, oder? Schlag für das Treffen irgendeinen abgelegenen Ort vor. Wenn du keinen kennst, frag Bruder Schmied, er trifft sich mit den Kaufleuten aus der Stadt und weiß, welche Treffpunkte sicher sind und welche nicht. Wenn Bruder Khatul nichts dagegen hat, erzählt er dir alles.
+#hide Note
+#show Note 4
+#ANIMATION 69
+#CAMERA 9
+#phrase Merc10  15
+Du kannst das Haus, zu dem du willst, nicht verfehlen. Der Sammler hat am Eingang zwei Steinfiguren aufgestellt. Muss eine Menge Arbeit gewesen sein, die dorthin zu schleppen!

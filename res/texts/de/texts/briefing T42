@@ -1,0 +1,35 @@
+Frage nach dem vermissten Mädchen
+#show Hero 1
+#show Trapper 2
+#ANIMATION 62
+#CAMERA 11
+#phrase Trapper  1
+Es ist ein kleiner Ort, also weiß mittlerweile jeder, dass du die Prinzessin suchst. Der alte Fallensteller Sver sagt dir eines, Bürschchen: Es ist zwar durchaus eine gute Sache, einer Dame in Nöten zu helfen, aber es ist auch gefährlich. Vor dir hat schon jemand Fragen gestellt. Und dann ist er spurlos verschwunden.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  2
+Und was ist mit ihm geschehen? Weißt du das?
+#ANIMATION 61
+#CAMERA 11
+#phrase Trapper  3
+Hmm? Er war ein Fremder wie du. Man sagt sogar, er wäre aus der Hauptstadt, besonders gut darin, verschwundene Leute zu finden. Mit anderen Worten, jemand der einfach zu neugierig ist. Er hat also herumgeschnüffelt, hat sich durch ein rundes Glas Fußabdrücke angeschaut, mit seiner Pfeife viel Rauch produziert und viel Schlaues dahergeredet.
+#ANIMATION 63
+#CAMERA 3
+#phrase Trapper  4
+Ein Stadtmensch, aber eigentlich sehr vernünftig. So hat er es auch asnscheinend geschafft, etwas herauszufinden. Das letzte Mal, als ich ihn sah, war er aus irgendeinem Grund sehr glücklich. Aber nicht lange - er ging Richtung Osten und das war das Letzte, was man von ihm sah. Mir sind Gerüchte zu Ohren gekommen, dass er umgebracht wurde…
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  5
+Aber wenn du doch weißt, wohin er gegangen ist, warum versuchst du dann nicht, ihn zu finden?
+#ANIMATION 62
+#CAMERA 3
+#phrase Trapper  6
+Ich will nichts davon wissen, ich muss zuerst an mich denken, richtig? Und ich bin außerdem sehr beschäftigt. Dieser Halsabschneider von Karansul hat wieder die Preise für Häute gesenkt. Also muss ich mehr arbeiten, damit das Geld am Ende stimmt!
+#hide Trapper
+#show Hero 4
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2
+#phrase Hero  7
+Hm... Es war offensichtlich kein Zufall, dass der Gesandte verschwunden ist. Wenn ich dieses Rätsel löse, bekomme ich vielleicht einen Hinweis darauf, wo die Prinzessin ist.
+#DESC To himself

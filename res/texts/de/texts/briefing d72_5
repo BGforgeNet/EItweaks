@@ -1,0 +1,27 @@
+Frage nach "verletzt"
+#show JunBoy 1
+#show Deva 2
+#ANIMATION 31
+#CAMERA 9
+#phrase Deva  1
+Ich… ich weiß nicht, was ich sagen soll, At-Kira. Ich habe so oft davon geträumt, dich wiederzusehen, und jetzt ist alles ganz anders als ich es mir vorgestellt habe. Du warst die ganze Zeit da - und ich habe es nicht bemerkt! Kannst du mir verzeihen?
+#ANIMATION 7
+#CAMERA 6
+#phrase JunBoy  2
+Es gibt nichts zu verzeihen, Liebste! Nicht ich war bei dir, sondern Kiran... Er war ein anständiger Kerl, doch im Nachhinein bin ich froh, dass du ihn abgewiesen hast.
+#ANIMATION 44
+#CAMERA 10
+#phrase JunBoy  3
+Aber was macht das jetzt noch?! Wir sind zusammen, dieses großartige Land heißt uns willkommen und wir haben einen mächtigen Beschützer hinter uns. Es sieht so aus, als würde die Sonne nur für uns allein aufgehen!
+#ANIMATION 6
+#CAMERA 5
+#phrase JunBoy  4
+Aber was ist? Warum bist du so blass?
+#ANIMATION 72
+#CAMERA 11
+#phrase Deva  5
+Du hast genau dasselbe gesagt, als wir dem Fluch das erste Mal entkamen. Zumindest glaubten wir das…
+#ANIMATION 15
+#CAMERA 10
+#phrase JunBoy  6
+Du hast Recht. Wir können nicht über Glück reden, solange der Fluch existiert. Doch ich schwöre dir, dass wir eines Tages unser Leben genießen werden, ohne uns um den Fluch sorgen zu müssen!

@@ -1,0 +1,37 @@
+Frage nach dem Diebstahl im Haus des Gouverneurs
+#show Hero 1
+#show Shopper 2
+#ANIMATION 62
+#CAMERA 11
+#phrase Shopper  1
+Ich sage immer, keine Magie ist in der Lage, lebende Wachen zu ersetzen! Ich zum Beispiel zahle meinen Wachen gutes Geld und bis jetzt ist es noch niemandem gelungen, irgendetwas von mir zu stehlen. Aber sobald man anfängt, über Magie zu reden, fängt das Gehirn an, einem Streiche zu spielen! Der Gouverneur ist selber daran Schuld, dass er der Magierin Diera vertraut hat - sogar dieser Anfänger Flein der Kahle schaffte es, an ihren Fallen vorbei zu kommen!
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  2
+Welcher Flein?
+#ANIMATION 11
+#CAMERA 11
+#phrase Shopper  3
+Ähhh… Wie bitte?
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  4
+Ihr sagtet, dass es ein gewisser Flein war, der den Gouverneur beraubt hat.
+#ANIMATION 61
+#CAMERA 11
+#phrase Shopper  5
+So etwas habe ich nie gesagt. Ihr habt nicht zufällig eine Schwäche für ungewöhnliche Pilze oder Gräser, oder? Nein? Das ist gut so, also fangt nicht an, Dinge zu hören, die nicht gesagt wurden, sonst seht Ihr bald auch noch Dinge, die überhaupt nicht da sind!
+#hide Shopper
+#show Hero 4
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2
+#phrase Hero  6
+Dieser Karansul ist ziemlich gerissen - als er aufgeregt war, hat er sich verplappert, es aber dann sofort bestritten! Er weiß mit Sicherheit etwas, aber wie bringe ich ihn zum Reden?
+#DESC To himself
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  7
+Obwohl… Ich glaube, Sver mag den Kaufmann nicht. Vielleicht kann er mir ja helfen?
+#DESC To himself

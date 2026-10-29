@@ -1,0 +1,15 @@
+Naya wieder mitnehmen
+#show Hero 1
+#show Merc3 2
+#ANIMATION 45
+#CAMERA 9
+#phrase Merc3  1
+Brauchst du meine Hilfe immer noch nicht?
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  2
+Doch. Genau darüber wollte ich mit dir sprechen.
+#ANIMATION 3
+#CAMERA 7
+#phrase Merc3  3
+Gut. Ich würde dich nach wie vor gerne bei deinen Abenteuern begleiten!

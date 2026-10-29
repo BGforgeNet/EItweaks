@@ -1,0 +1,55 @@
+Kugel benutzen
+#show Witch 1
+#show Hero 2
+#phrase Witch  1
+In Ordnung, gib mir jetzt die Kugel... Vorsicht! Vorsichtig, du hättest sie beinahe fallengelassen! Es ist ein wertvolles und zerbrechliches Ding und du stellst dich so ungeschickt an!
+#show Witch 3
+#show Palantir 4
+#show Hero 5
+#CAMERA 5
+#phrase Hero  2
+Nur ruhig, hier ist die Kugel. Aber was machen wir jetzt damit?
+#hide Palantir
+#show Palantir 5
+#ANIMATION 32
+#CAMERA 7
+#phrase Witch  3
+Du machst gar nichts damit. Sieh nur zu und merke dir das, was du siehst. Ich werde nun versuchen, sie dazu zu bringen, uns Bilder aus der Vergangenheit zu zeigen.
+#ANIMATION 6
+#CAMERA 11
+#phrase Witch  4
+Die Zeit der Stille ist vorbei,
+Sprich nun, durchsichtig' Glas,
+Erzähl, was im Vergangnen lag,
+Erzähl vom Hier und Jetzt!
+
+#hide Palantir
+#show PalantirRick00 5
+#show PalantirWork00 12
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  5
+Dieser alte Mann - war das meine Vergangenheit?
+#hide PalantirRick00
+#hide PalantirWork00
+#show PalantirBroken00 4
+#ANIMATION 11
+#CAMERA 5
+#phrase Hero  6
+Was war das? Was ist mit der Kugel passiert? Wer war der Mann, warum habe ich ihn gesehen? Sag es mir!
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  7
+Na, na, na, kein Grund sich so aufzuregen... Ich weiß wirklich nicht, was das sollte. Ich könnte höchstens raten. Der alte Mann in der Kugel, das warst nicht du, Junge, mach dir da mal keine Sorgen. Ich würde sagen, es war der Herr der Kugel und ein Goblin soll mich zum Abendessen fressen, wenn er nicht ein größerer Zauberer ist, als ich es bin. Wenn dir irgend jemand helfen kann, dann er. Versuche, ihn zu finden.
+#hide PalantirBroken00
+#show PalantirBroken00 5
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  8
+Ich muss nun also herausfinden, woher die Orks die Kugel haben. Aber wie soll ich das machen?
+#hide PalantirBroken00
+#show PalantirBroken00 4
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  9
+Nun, wie ich gehört habe, gibt es in jedem Ork-Stamm einen Seher, der die Geschichte des Stammes aufzeichnet. Wenn du an die Aufzeichnungen der Orks gelangen könntest, die die Kugel hatten, dann könnte ich vielleicht herausfinden, wo sie herkam. Der Chronist lebt wahrscheinlich dort, wo es mehr Orks als sonstwo gibt und die mittlere Insel im Flussdelta ist ein solcher Ort. Dort mußt du hingehen!

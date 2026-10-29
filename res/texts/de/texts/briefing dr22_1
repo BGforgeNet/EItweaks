@@ -1,0 +1,21 @@
+Geschenk des Drachen
+#show Hero 
+#show SKD
+#CAMERA 3
+#phrase SKD  1
+Warte! Deine Gesellschaft hat mir viel Vergnügen bereitet und ich würde dich gerne wieder sehen - irgendwann. Aber vielleicht bist du dann schon tot und nichts weiter als ein Skelett - und es ist nicht sehr amüsant, sich mit einem Skelett zu unterhalten.
+#CAMERA 9
+#phrase SKD  3
+Sieh dir den an: Er war einmal ein ausgezeichneter Feldherr eine äußerst schlaue Person. Und jetzt ist er nichts weiter als ein Untoter. Vielleicht erinnert er sich noch an etwas, aber er kann nicht darüber sprechen. Deshalb habe ich beschlossen, dafür zu sorgen, das es sehr schwierig wird, dich zu töten.
+#CAMERA 3
+#ANIMATION 1
+#phrase SKD  4
+Ich kann und will dich nicht beschützen. Du scheinst ganz gut selber auf dich aufpassen zu können. Aber damit aus diesem 'ganz gut' ein 'perfekt' wird, werde ich dir etwas schenken!
+#show Ancientsword 5
+#CAMERA 3
+#phrase SKD  5
+Nimm diese Waffe und setze sie mit Bedacht ein! Sie sieht nicht gerade beeindruckend aus, aber glaube mir, die Besten der Besten führten früher dieses Schwert - Menschen wie dieser, bevor er ein Skelett wurde.
+#ANIMATION 31
+#CAMERA 6
+#phrase Hero  6
+Ich danke dir! Und ich verspreche, dass ich das Schwert für das Gute in dieser Welt einsetzen werde - darauf kannst du dich verlassen!

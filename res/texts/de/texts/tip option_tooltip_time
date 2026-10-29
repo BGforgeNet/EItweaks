@@ -1,0 +1,5 @@
+Zeit für Popup-Tipps
+Diese Option legt die Verzögerung fest,
+nach der eine Erläuterung für das Element
+erscheint, auf dem sich der Mauszeiger befindet.
+Die mögliche Verzögerung liegt zwischen 0 und 5 Sekunden.

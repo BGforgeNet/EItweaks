@@ -1,0 +1,11 @@
+Bogenschützen anbieten, sich der Gruppe anzuschließen
+#show Hero 
+#show Merc2
+#CAMERA 2
+#ANIMATION 45
+#phrase Hero  1
+Na, hast du´s denn noch nicht satt, hier im Dorf rumzusitzen? Ich bin auf dem Weg zu ein paar richtigen Abenteuern, willst du mitkommen?
+#CAMERA 3
+#ANIMATION 14
+#phrase Merc2  2
+Äh, ich glaube nicht, dass das eine gute Idee ist. Du hast schon zuverlässige Begleiter – da wäre ich nur im Weg. Ich sage immer, dass man der Gefahr am besten mit nicht mehr als drei Leuten gegenübertritt.

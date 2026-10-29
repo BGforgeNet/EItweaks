@@ -1,0 +1,30 @@
+Frage nach der mysteriösen Einheit
+#show Witch 1
+#show Hero 2
+#ANIMATION 63
+#CAMERA 9
+#phrase Witch  1
+Oh, unser Held! Ich habe gehört, das du den Ältesten entlarvt hast. Aber während du dich im Dorf vergnügt hast, war ich auch nicht untätig. Ich habe ein paar Kräuter gesucht und plötzlich… Aber warte, ich zeig's dir!
+#show Witch 3
+#show Hero 4
+#show Clerk 5
+#ANIMATION 31
+#CAMERA 12
+#phrase Clerk  3
+Die Ehre, Euch zu treffen, oh Auserwählter, erfüllt mein Herz mit Freude und Glück!
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  4
+Wer seid Ihr?
+#ANIMATION 9
+#CAMERA 4
+#phrase Clerk  5
+Ich hatte die Ehre, ein Beamter im großartigen und mächtigen khadaganianischen Reich zu sein - möge sein Ruhm so lange anhalten wie die Schande des verhassten Cania. Hier im Toten Land kam ich mit einer besonderen Expedition an, deren Ziel es war... ääääh... unser Wissen über die Welt zu erweitern. Aber ich verlief mich, geriet an die Schwelle des Todes, und dann fand mich diese gütige Hexe hier.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  6
+Man kann also von hier aus doch in andere Länder gelangen?
+#ANIMATION 15
+#CAMERA 4
+#phrase Clerk  7
+Aber natürlich! Und solltet Ihr, junger Mann, diesen Weg einschlagen wollen, so rate ich Euch, den Anführer unserer Expedition zu besuchen. Er würde sich sicher freuen, einen Einheimischen zu treffen und sich mit ihm zu unterhalten!

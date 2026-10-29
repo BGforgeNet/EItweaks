@@ -1,0 +1,62 @@
+Prinzessin finden
+Das Mädchen befindet sich irgendwo tief in den Katakomben. Du musst sie finden und retten. Vergiss nicht, dass sich in der Nähe des Eingangs Wachposten befindet, die von Dieras Söldnern besetzt sind, und dass in den tiefer gelegenen Bereichen die Herrscher der Katakomben leben - magische Lebewesen, die jeden hassen, der nicht unter der Erde lebt.
+#subobj  2
+Finde die ehemalige Arrestzelle
+Im Nordwesten der Katakomben gibt es einen Raum, in dem aufständische Minenarbeiter bestraft wurden. Vielleicht ist das Mädchen ja dort.
+#subobj  3
+Finde den Kommandanten der Söldner
+Der Kommandant der Söldner der Magierin Diera hält sich im unterirdischen Lager auf. Vielleicht besitzt er etwas, was dir bei deiner Aufgabe helfen wird.
+#subobj  4
+Nimm die Sachen des Kommandanten an dich
+Wenn es etwas gibt, was dir helfen wird, das Mädchen zu finden, so wird es der Kommandant haben.
+#subobj  5
+Gehe in den Nordosten der Katakomben
+Das Mädchen war nicht in der ehemaligen Arrestzelle. Vielleicht konnte sie flüchten und versteckt sich nun tief im Innern der Katakomben. Die unterirdischen Korridore führen nach Osten. Du solltest deine Suche im nordöstlichen Teil des unterirdischen Labyrinths fortsetzen. Es gibt zwei Möglichkeiten, dorthin zu gelangen. Die erste Möglichkeit ist der direkte Weg, er wird aber durch eine verschlossene Tür blockiert. Die zweite Möglichkeit ist der nördliche Korridor. Dort gibt es keine unüberwindlichen Hindernisse, aber dieser Weg ist viel gefährlicher.
+#subobj  6
+Gehe in den Südosten der Katakomben
+Vielleicht gelang es dem Mädchen, noch weiter in die Katakomben vorzudringen. Du solltest sie also im südöstlichen Teil des unterirdischen Labyrinths suchen. Aber sei vorsichtig: Hier kannst du auf Wurmköpfe treffen. Dies sind intelligente Lebewesen, die alles und jeden hassen, der auf der Oberfläche lebt, und Magie beherrschen.
+#subobj  7
+Finde die Tür
+Wenn sich das Mädchen hier versteckt, muss sie sich hinter eine der Türen verstecken, die den Durchgang blockieren.
+#subobj  8
+Öffne die Tür
+Du musst die Tür öffnen, um herauszufinden, ob sich das Mädchen hier befindet. Dazu benötigst du einen Schlüssel.
+#subobj  9
+Gehe in die Zuflucht
+Das Mädchen ist hier!
+#subobj  10
+Finde den Hebel 'Süd-Ost'
+Die Tore, die den Weg zum südöstlichen Teil der Katakomben freigeben, werden durch den Hebel 'Süd-Ost' gesteuert, der sich im nordöstlichen Teil des Labyrinths, hinter einem der Tore, befindet. Du kannst ihn über einen Rundweg erreichen.
+#subobj  11
+Lege den Hebel 'Süd-Ost' um
+Wenn der Hebel 'Süd-Ost' umgelegt wird, öffnet sich der südöstliche Teil der Katakomben.
+#subobj  12
+Finde den Hebel 'Süd'
+Dieser Hebel befindet sich im südlichen Teil der Katakomben.
+#subobj  13
+Lege den Hebel 'Süd' um
+Scheinbar gibt es nichts, was durch diesen Hebel ausgelöst wird. Allerdings gibt es einen Grund für diesen Hebel. Vielleicht werden dadurch Passagen in einem anderen Teil der Katakomben geöffnet.
+#subobj  14
+Finde den Hebel 'Nord-Ost'
+Scheinbar gibt es nichts, was durch diesen Hebel ausgelöst wird. Allerdings gibt es einen Grund für diesen Hebel...
+#subobj  15
+Lege Hebel 'Nord-Ost' um
+Vielleicht werden dadurch Passagen in einem anderen Teil der Katakomben geöffnet.
+#subobj  16
+Na also!
+Nachdem du den Nordost-Hebel umgelegt hast, öffnet sich eine Passage, und dort wartet etwas auf dich, was nicht ganz nutzlos ist...
+#subobj  17
+Hebe auf, was du gefunden hast
+Was immer es auch ist, es ist besser in den Händen des Finders aufgehoben als in der Höhle.
+#subobj  18
+Na also! (Hebel 'Nord-Ost')
+Nachdem du den Hebel 'Nord-Ost' umgelegt hast, öffnet sich eine Passage und dort wartet etwas auf dich, was nicht ganz nutzlos ist...
+#subobj  19
+Hebe auf, was du gefunden hast
+Was immer es auch ist, es ist besser in den Händen des Finders aufgehoben als in der Höhle.
+#subobj  20
+Finde den Hebel 'Nord'
+Der Weg in den Nordosten der Katakomben wird durch Tore blockiert, die von einem Hebel gesteuert werden. Um den Hebel zu finden, musst du von der früheren Arrestzelle aus nach Osten gehen.
+#subobj  21
+Lege den Hebel 'Nord' um
+Benutze den Schlüssel, den der Kommandant der Söldner hatte, um den Hebel 'Nord' umzulegen.

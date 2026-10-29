@@ -1,0 +1,44 @@
+Rede mit Khatul
+#show Hero 3
+#show Glav 4
+#show Kuzn 5
+#ANIMATION 61
+#CAMERA 4
+#phrase Kuzn  1
+Bruder Khatul! Ich habe diesen Mann in der Schwarzen Höhle gefunden. Er ist aus der Todesschlucht entkommen, sagt er. Er wurde geschlagen, aber sein Wille ist nicht gebrochen. Er verdient es, einer von uns zu sein!
+#ANIMATION 11
+#CAMERA 3
+#phrase Glav  2
+Bist du nicht zu vertrauensselig, Bruder Schmied? Weisst du, wie viel Gold demjenigen versprochen wurde, der den Wachen verrät, wo unser Unterschlupf ist?
+#ANIMATION 7
+#CAMERA 3
+#phrase Glav  3
+Unser Gast mag vielleicht nicht aussehen wie einer von Aiset-Beks Spionen – aber wer kann das schon wissen?
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  4
+Alles was ich von Aiset-Bek will, ist ein ehrlicher Kampf von Angesicht zu Angesicht!
+#ANIMATION 32
+#CAMERA 12
+#phrase Kuzn  5
+Man kann andere Kleidung tragen und man kann sich selber verletzen. Aber diesen Hass in den Augen kann man nicht vortäuschen. Ich kann nicht glauben, dass er lügt. Ich möchte bitten, dass du ihn prüfst.
+#ANIMATION 15
+#CAMERA 3
+#phrase Glav  6
+In Ordnung, wir akzeptieren dich als einen der unseren... wenn du mir den Siegelring des Imperators bringst. Der Bote, der den Ring nach Suslanger bringen sollte, wurde von einem Zyklopen getötet. Außerdem wissen wir, dass der Zyklop den Ring bei seinen Schätzen versteckt. Hol ihn uns!
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  7
+Und was würde das beweisen? Vielleicht ist es dumm das zu sagen, aber diese Aufgabe scheint nicht weiter schwer zu sein...
+#ANIMATION 9
+#CAMERA 8
+#phrase Kuzn  8
+Bruder Khatul, der Kampf in der Todesschlucht hat seinen Geist vernebelt! Er denkt nicht einmal daran, welche Strafe auf den wartet, der es wagt, den Siegelring des Imperators zu berühren – geschweige denn zu stehlen!
+#ANIMATION 8
+#CAMERA 7
+#phrase Glav  9
+Bruder Schmied, lass diesen Mann selbst entscheiden, ob er den Ring holen will! Ich werde ihm lediglich verraten, wo er den Zyklopen finden kann. Also: Du musst erst einen Weg in die Wüste der Totenbeschwörer suchen und dort im Nordwesten eine Felsschlucht finden.
+#ANIMATION 9
+#CAMERA 7
+#phrase Glav  10
+Dort lebt der Zyklop – allerdings nicht alleine: Sein Unterschlupf wird von vielen Bösaugen bewacht. Einige von ihnen sind schon alt und faul, aber andere greifen alles an, was ihnen feindselig vorkommt. Die Bösaugen kann man töten oder austricksen. Aber ich würde mich an den Zyklopen heranwagen. Das ist alles, was ich dazu sagen werde!

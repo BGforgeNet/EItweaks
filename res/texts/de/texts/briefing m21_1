@@ -1,0 +1,27 @@
+Frage nach der Krankheit
+#show Smith 1
+#show Hero 2
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  1
+Wie fühlst du dich, Babur?
+#ANIMATION 45
+#CAMERA 7
+#phrase Smith  2
+Kann nicht klagen. Wieso?
+#ANIMATION 8
+#CAMERA 10
+#phrase Hero  3
+Man sagt, der Seher der Orks habe eine Krankheit über das Dorf kommen lassen. Der Älteste macht sich große Sorgen. Er bat mich, ihm eine Weiße Blume zu bringen, mit der die Menschen geheilt werden können.
+#ANIMATION 44
+#CAMERA 11
+#phrase Smith  4
+Hmmm...hör mal, warum gibst du die Blume nicht mir? Ich könnte tolle Geschäfte machen. Das ganze Dorf würde die Blume haben wollen, ich würde Riesengewinne machen und... ähh... sie mit dir teilen. Außerdem könnten wir Erfar loswerden - ich würde so viel von ihm verlangen, dass Sterben weit billiger für ihn wäre, he he. 
+#ANIMATION 3
+#CAMERA 6
+#phrase Hero  5
+Bist du verrückt?! Deine Gier hat dich vollkommen wahnsinnig gemacht! Die Menschen könnten sterben und du denkst nur an Geld!
+#ANIMATION 14
+#CAMERA 9
+#phrase Smith  6
+Oh, in Ordnung, tanz nur nach der Pfeife der anderen. Seht alle her, wie ehrlich ich bin! Pass nur auf, dass diese Blume nicht das Letzte ist, was du siehst!

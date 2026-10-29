@@ -1,0 +1,63 @@
+Versuchen zu erfahren, was die Echse will
+#show OLIZ 1
+#show Hero 2
+#CAMERA 9
+#phrase OLIZ  1
+Du bist gekommen, Mensch. Das ist gut.
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  2
+Ist das alles, was du mir zu sagen hast?
+#CAMERA 3
+#phrase OLIZ  3
+Du hetzt mich schon wieder. Ich erinnere mich an deine Fragen und ich werde sie beantworten. Ich kam zu den Menschen, die mit Eisen bekleidet sind, um einen Handel mit ihnen abzuschließen. Aber dann sah ich, was sie dir antaten. Sie stehen nicht zu ihrem Wort, und deshalb glaube ich ihnen nicht mehr. Du hingegen hast dein Wort gehalten. Und deshalb biete ich dir den Handel an.
+#CAMERA 11 10 5 2
+#phrase OLIZ  4
+Menschen lieben Gold. Echsen interessieren sich nicht für Gold. Du erfüllst den Auftrag, den ich dir gebe und ich gebe dir das Gold. Ich habe viel Gold.
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  5
+Hmmm... Gold... Kann nie schaden...
+#DESC (Reflecting, not very interested)
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  6
+Aber viel lieber wäre es mir, wenn du mir dabei helfen würdest, herauszufinden, wo der alte Zauberer lebt, den ich schon so lange suche. Schließlich sind die Echsen ein uraltes Volk, vielleicht weißt du etwas darüber!?
+#CAMERA 9
+#phrase OLIZ  7
+Du hast Recht. Echsen sind ein uraltes Volk. Ich kann alles Wissen zusammentragen, das wir über den alten Mann haben. Wirst du meinen Auftrag erfüllen?
+#ANIMATION 3
+#CAMERA 10 -20 5 2
+#phrase Hero  8
+Aber natürlich! Ist schon so gut wie erledigt.
+#CAMERA 11 10 5 2
+#phrase OLIZ  9
+Willst du mich etwa an der Nase herumführen?
+#DESC (Seriously)
+#ANIMATION 9
+#CAMERA 5
+#phrase Hero  10
+Eigentlich wollte ich nur einen Witz machen, du bist viel zu ernst.
+#CAMERA 9
+#phrase Oliz  11
+Ah, ich verstehe, das war ein Witz. Vielleicht könnte ich auch einen Witz machen. Später. Aber jetzt musst du das Wasser in den Kanal zurückbringen. Die Orks haben unser Wasser gestohlen.
+#CAMERA 7
+#show DumbLever 7
+#phrase Oliz  12
+Gehe am Wasser entlang Richtung Süden, bis du den Damm und den Kanal siehst. Du musst den Damm heben. Mit einem Hebel. Den werde ich dir geben. Du musst den Kanal blockieren. Mit einem Felsen. Den Felsen gebe ich dir nicht. Er ist bereits am Ufer des Kanals. Flussaufwärts vom Damm. Der Fels ist schwer. Als die Orks dort gruben, brauchten sie lange, um ihn hochzuheben. Wenn du ihn schiebst, fällt er gleich wieder zurück.
+#CAMERA 11 10 5 2
+#phrase Oliz  13
+Danach kommst du wieder hierher. Ich werde dir alles berichten, was ich über den alten Zauberer in Erfahrung bringen kann.
+#ANIMATION 15
+#CAMERA 10 -20 5 2
+#hide DumbLever
+#phrase Hero  14
+Einverstanden! Aber... Wenn du zu deinem Bericht noch ein paar Goldstücke dazulegen willst, bin ich dir auch nicht böse.
+#CAMERA 9
+#phrase Oliz  15
+Wenn du Münzen willst, dann gehe zu meinen Echsenfreunden, die weiter im Süden leben. Begib dich zu der am weitesten entfernten Sandinsel, der dritten. Der Schatz wird dein sein!
+#nolips
+#CAMERA 11 10 5 2
+#phrase OLIZ  16
+Seltsam. Der Mann hat Humor. Ich mache einen Witz. Und der Mann lächelt noch nicht einmal. Sehr seltsam.
+#DESC To himself

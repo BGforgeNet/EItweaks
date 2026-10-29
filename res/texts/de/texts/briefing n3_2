@@ -1,0 +1,11 @@
+Bogenschützen wieder mitnehmen
+#show Hero 
+#show Merc2
+#CAMERA 6
+#ANIMATION 45
+#phrase Hero  1
+Na, hast du´s denn noch nicht satt, hier im Dorf rumzusitzen? Ich bin auf dem Weg zu neuen Abenteuern, willst du mitkommen?
+#CAMERA 3
+#ANIMATION 15
+#phrase Merc2  2
+Sicher! Ich warte am Tor, wie immer!

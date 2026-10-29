@@ -1,0 +1,6 @@
+     Für das Informationsfenster können verschiedene Anzeigearten gewählt werden. Mit den Schaltflächen links am Informationsfenster oder mit der Tastatur kannst du zwischen den Anzeigearten wählen. Nachfolgend werden die einzelnen Anzeigen erklärt:
+
+     Allgemeine Ansicht: Bild des Charakters mit Info zu Energie, Lebenskraft usw. (<,> auf der Tastatur)
+     Schaden: Zeigt das Ausmaß der Verletzungen an den einzelnen Körperteilen (<.> auf der Tastatur).
+     Eigenschaften: Zeigt die Eigenschaften des Charakters an (<-> auf der Tastatur).
+     Zauber: Zeigt die Zauber an, die gerade auf den Charakter wirken und die Zeit (Sekunden) bis zum Ende der Wirkung (<Ä> auf der Tastatur).

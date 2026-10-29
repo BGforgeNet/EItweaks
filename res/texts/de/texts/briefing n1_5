@@ -1,0 +1,15 @@
+Rinas mitnehmen
+#show Hero 
+#show Merc5
+#ANIMATION 11
+#CAMERA 3
+#phrase Merc5  1
+Willst du nun meine Hilfe oder nicht?
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  2
+Ja, ich möchte, dass du mich auf meinen Reisen begleitest. Aber deine Dienste haben sicher ihren Preis und meine Mittel sind begrenzt.
+#ANIMATION 9
+#CAMERA 3
+#phrase Merc5  3
+Der alte Rinas hat ein gutes Gespür für Menschen. Ich glaube nicht, dass du so einfältig bist, wie du vorgibst. Deine Geldprobleme werden wohl kaum lange anhalten. Im Moment verlange ich noch keine Bezahlung, und später können wir dann neu verhandeln.

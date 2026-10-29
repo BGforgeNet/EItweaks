@@ -1,0 +1,28 @@
+Frage nach der Arbeit des Handwerkers
+#show Hero 1
+#show Smith 2
+#ANIMATION 11
+#CAMERA 9
+#phrase Smith  1
+Oh, meine Güte! Ist das nicht der Auserwählte? Ich nehme an, du willst jetzt etwas von mir umsonst haben, stimmt's? Nun, eines will ich dir sagen: Mir ist egal, wer du bist. Von mir bekommst du keine Geschenke, mein Freund!
+#ANIMATION 9
+#CAMERA 6
+#phrase Hero  2
+Hör mal zu: Mich interessieren deine Waren, nicht deine schlechte Laune! Dafür wirst du nicht bezahlt! Der Älteste hat mir gesagt…
+#ANIMATION 46
+#CAMERA 11
+#phrase Smith  3
+Mir ist egal, was Silberzunge dir erzählt hat. Ich konnte ihn noch nie leiden, und ich werde bestimmt nicht auf ihn hören. Erst soll er meine Sachen zurückholen, die sie mir gestohlen haben!!
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  4
+Wie? Was denn für Sachen? Von wem? Kannst du dich etwas genauer ausdrücken?
+#ANIMATION 44
+#CAMERA 3
+#phrase Smith  5
+Eigentlich ist alles ganz einfach. Sie sind sie… 'Freijäger', so sollen wir sie jetzt nennen. Der Älteste sagt, sie wären unsere Freunde, aber sie haben mich überfallen! Mein Lehrling hat sie gesehen und versucht, sie aufzuhalten. Sie haben ihn so verprügelt, dass er zwei Tage lang nicht arbeiten konnte!
+#DESC The words "free hunters" pronounces with obvious disgust.
+#ANIMATION 7
+#CAMERA 11
+#phrase Smith  6
+Um es kurz zu machen: Sie haben viele Sachen gestohlen, aber das Wichtigste waren meine Lieblingswerkzeuge. Solange ich mein gestohlenes Werkzeug nicht zurückbekomme, kann ich nichts machen!

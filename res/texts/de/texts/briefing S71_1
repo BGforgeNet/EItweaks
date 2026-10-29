@@ -1,0 +1,41 @@
+Verrat
+#show Hero
+#show Elder
+#ANIMATION 32
+#CAMERA 1
+#phrase Hero  1
+Du?! Was machst du denn hier?
+#DESC Now speaking to the Elder
+#ANIMATION 11
+#CAMERA 11
+#phrase Elder  2
+Ganz einfach, ha ha. Ich wurde in Suslanger geboren. An eurem miesen Gipath hat mich nur eines interessiert...
+#ANIMATION 6
+#CAMERA 10
+#phrase Hero  3
+Der Meteorit? Der, den auch die khadaganianische Expedition gesucht hat?
+#DESC Hero suddenly understands what it's all about
+#ANIMATION 9
+#CAMERA 7
+#phrase Elder  4
+Richtig geraten, ha ha, Auserwählter! Ich habe vor allen anderen herausgefunden, wo dieser Schatz liegt. Und ich habe es geschafft, durch das Portal zu gehen und nach Gipath zu gelangen. Oh, diese armen, naiven Dörfler... Ohne es zu wissen, haben sie die ganze Zeit nach meinem Meteoriten gesucht.
+#DESC With theatrical mocking admiration, about villagers- with false pity.
+#ANIMATION 43
+#CAMERA 3
+#phrase Elder  5
+Und du... du hättest eigentlich auch sterben sollen. Stattdessen hast du mir alles ruiniert. Du hattest gesiegt – doch jetzt ist die Zeit der Rache gekommen!
+#ANIMATION 7
+#CAMERA 11
+#phrase Elder  6
+Ich habe dir die Wahrheit gesagt. Es hat mir sogar Spaß gemacht, dir den Weg zum Portal zu erklären, während die Wachen genug Zeit hatten, zum Eingang der Höhle zu kommen. Und noch mehr Spaß wird es mir bereiten, dir - dem großen Auserwählten - gleich beim Sterben zuzusehen.
+#DESC Exulted
+#ANIMATION 11
+#CAMERA 9
+#phrase Elder  7
+Aber noch hast du eine Chance: Geh auf die Knie und fleh um Gnade! Wenn du überzeugend genug klingst, werde ich vielleicht dein Leben schonen. Nun, ich warte!
+#DESC Still exulted, making the most of his triumph
+#ANIMATION 14
+#CAMERA 10
+#phrase Hero  8
+Du hast leider eine Kleinigkeit vergessen, Erfar. Ich bin bewaffnet! Und selbst wenn die ganze Wache kommt, um mich zu holen, wirst du trotzdem der Erste sein, den ich töte!!!
+#DESC Exaggeratedly calm, but we can feel his hate

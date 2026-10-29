@@ -1,0 +1,26 @@
+Frage nach der Reise des Handwerkers zu den Bergen
+#show Smith 1
+#show Hero 2
+#ANIMATION 14
+#CAMERA 5
+#phrase Hero  1
+Du erzählst mir, die Mittelberge seien nichts Besonderes, aber du selbst gehst dorthin. Wieso?
+#ANIMATION 3
+#CAMERA 9
+#phrase Smith  2
+Weißt du, ich mache überall meine Geschäfte. Erwartest du, dass ich jedem davon erzähle? Dann wäre ich ja bald bettelarm.
+#hide Smith
+#hide Hero
+#show Hero 4
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  3
+Das ist ja wirklich nett - Babur hat keine Angst vor den Echsen und geht überall hin, wo er will. Und für andere ist der Weg, der vorher sicher war, nun gefährlich. Ich bin mir sicher, dass er die Muschel an einen anderen Ort gestellt hat, das Schlitzohr! Aber warte nur, ich bringe das schon wieder in Ordnung.
+#DESC To himself
+#NOLIPS
+#ANIMATION 30
+#CAMERA 10
+#phrase Hero  4
+Wenn ich die große Muschel vom Altar der Weiten Berge nehme und sie auf den Altar in den Mittelbergen lege, ist der Weg nach Norden wieder frei. Und ich werde in der Lage sein, am See vorbei zum Observatorium zu gelangen... so, das Wichtigste ist jetzt also die Muschel!
+#DESC To himself

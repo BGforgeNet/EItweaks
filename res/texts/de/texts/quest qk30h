@@ -1,0 +1,20 @@
+Landhaus
+Einer der reichen Bewohner besitzt in den nordwestlichen Vororten ein Landhaus. Wenn du dir das Innere seiner Truhe etwas genauer anschaust, wirst du vielleicht etwas Nützliches finden...
+#subobj  1
+Finde das Landhaus
+Das Anwesen des reichen Mannes befindet sich im Nordosten der Vororte der Stadt. Der Besitzer kommt nicht so oft dorthin, aber das Haus wird ständig bewacht.
+#subobj  2
+Finde den Hüter des Schlüssels
+Um in das Wohnhaus zu gelangen, brauchst du den Schlüssel für die Tore. Einer der Wächter hat ihn.
+#subobj  3
+Nimm den Schlüssel
+Der Hüter des Schlüssels ist nicht sehr vorsichtig und hält immer wieder für längere Zeit an und schaut starr nach vorne. Also wäre es besser, zu versuchen, den Schlüssel zu stehlen und nicht, ihn anzugreifen und die Aufmerksamkeit auf sich zu ziehen.
+#subobj  4
+Öffne die Tore des Wohnhauses
+Benutze den Schlüssel, um die Tore zu öffnen. Sei vorsichtig: Im Garten sind auch Wachen postiert.
+#subobj  5
+Finde die Truhe
+Die Truhe des Reichen befindet sich im Garten.
+#subobj  6
+Durchsuche die Truhe
+In der Truhe befindet sich definitiv etwas Wertvolles. Oder zumindest etwas Teures!

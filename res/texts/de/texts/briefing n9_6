@@ -1,0 +1,15 @@
+Mairana will nicht Vierte sein
+#show Hero 
+#show Merc6
+#ANIMATION 11
+#CAMERA 3
+#phrase Merc6  1
+Eine schlagkräftige Truppe hast du da beisammen, mein Freund!
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  2
+Ich wollte dir eigentlich vorschlagen, dich uns anzuschließen.
+#ANIMATION 15
+#CAMERA 3
+#phrase Merc6  3
+Wofür brauchst du mich denn? Ihr drei könntet mit jedem fertig werden.

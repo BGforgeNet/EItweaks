@@ -1,0 +1,20 @@
+Stillgelegte Minen
+Diera hält das entführte Mädchen in einer stillgelegten Mine fest. Du brauchst einen Schlüssel, um dorthin zu gelangen.
+#subobj  1
+Gehe zu den Minen
+Die verlassenen Minen befinden sich im Norden, auf der anderen Seite des Sees. Der Durchgang wird von Toren blockiert. Um zu den Toren zu gelangen, musst du von Osten aus um den See gehen, bei der Brücke den Fluss überqueren und nach Norden gehen.
+#subobj  2
+Öffne die Tore
+Du brauchst den Schlüssel des Gouverneurs, um die Tore zu den Minen zu öffnen. Sei vorsichtig: Die Eingänge zu den Minen werden von Schurken bewacht, die von Diera angeheuert und ausgerüstet wurden.
+#subobj  3
+Finde den Eingang zu Mine 1
+Diese Mine liegt den Toren am nächsten und es ist am einfachsten, dort hinein zu kommen. Wenn du allerdings den Eingang benutzt, wird dein Weg durch die Katakomben am längsten sein.
+#subobj  4
+Finde den Eingang zu Mine 2
+Sie befindet sich westlich des Eingangs zu Mine 1. Wenn du diesen Eingang benutzt, wird dein Weg durch die Katakomben etwas kürzer sein.
+#subobj  5
+Finde den Eingang zu Mine 3
+Diese Mine liegt am westlichsten und ist am schwierigsten zu erreichen. Wenn du allerdings diesen Eingang wählst, wird dein Weg durch die Katakomben am einfachsten sein (allerdings sind die Katakomben gefährlich - ganz egal, welchen Eingang du nimmst).
+#subobj  6
+Gehe in die Mine
+Um die Suche nach der Prinzessin fortsetzen zu können, musst du in die Mine gehen und die Katakomben durchsuchen.

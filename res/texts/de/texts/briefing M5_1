@@ -1,0 +1,65 @@
+Frage nach den Sachen des rothaarigen Banditen
+#show Hero 3
+#show Smith 5
+#show Map00 4
+#ANIMATION 29
+#CAMERA 5
+#phrase Hero  1
+Diese Karte habe ich in der Tasche des Banditen gefunden, der sich mit dem Ork unterhalten hat. Ich glaube, es geht um ein Objekt, das die Orks in ihrem Besitz haben. Hier ist auch ein Bild von einem Seher mit einem Schlüssel...
+#hide Map00
+#show Map00 5
+#ANIMATION 29
+#CAMERA 7
+#phrase Smith  2
+Lass mal sehen... Aha! Da ist ein Bild von einem Sarkophag und einem magischen Artefakt.
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  3
+Meinst du eine Rune?
+#ANIMATION 9
+#CAMERA 3
+#phrase Smith  4
+Nein, Runen sind anders. Diese Artefakte sind... Nun... Keiner weiß so richtig, was sie sind, aber als die Hexe noch im Dorf lebte, hat sie für solche Dinge immer einen guten Preis bezahlt. Ich glaube, sie wäre auch bei diesem hier nicht abgeneigt... Und den Gewinn teilen wir!
+#ANIMATION 29
+#CAMERA 6
+#phrase Hero  5
+Ich habe noch gar nichts gefunden und du willst schon den Gewinn aufteilen! Man sieht hier noch einen Troll, der vor so etwas wie einem Eingang zu einer Höhle steht. Weißt du, wo das ist?
+#ANIMATION 7
+#CAMERA 7
+#phrase Smith  6
+Die Höhle mit dem Troll ist in den Hügeln unterhalb der Berge. Es ist leicht, in die Höhle zu gelangen: Der Troll, der sie bewacht, ist groß, aber so dumm, dass jeder an ihm vorbei kommen kann. Viel schwieriger ist es, tiefer in die Höhle zu kommen.
+#ANIMATION 9
+#CAMERA 11
+#phrase Smith  7
+Die Orks sind gerissen. Sie können nicht nur gut kämpfen, sondern auch komplizierte Dinge bauen. Gleich hinter dem Eingang der Höhle ist eine Felsspalte mit einer Zugbrücke darüber. Ich weiß, wie die Brücke funktioniert, kann sie aber nicht herunterlassen: Dafür braucht man ein spezielles Bauteil.
+#ANIMATION 29
+#CAMERA 10
+#phrase Hero  8
+Warum machst du nicht einfach eines?
+#hide Map00
+#show Map00 4
+#ANIMATION 45
+#CAMERA 9
+#phrase Smith  9
+Und wer besorgt mir den Bauplan – du vielleicht? Außerdem hat jedes Volk der Orks seine eigenen Geheimnisse. Selbst wenn ich den Plan eines Rades von zum Beispiel den Insel-Orks hätte, würde der mir bei der Brücke der Höhlen-Orks nicht helfen.
+#hide Map00
+#show Map00 5
+#ANIMATION 14
+#CAMERA 6
+#phrase Hero  10
+Heißt das, die Orks trauen einander nicht?
+#ANIMATION 29
+#CAMERA 11
+#phrase Smith  11
+So ist es! Ich habe gehört, dass die Insel-Orks ein paar Goblins geschickt haben, um den Höhlen-Orks ein Zahnrad der Brücke zu stehlen. Und dieses Rad haben ihnen die Männer des Hauptmanns weggenommen.
+#ANIMATION 31
+#CAMERA 7
+#phrase Smith  12
+Warum versuchst du nicht, dieses Zahnrad von Gort zu kriegen? Erweise ihm Respekt oder tu etwas für ihn... Er wird in deiner Schuld stehen und deinen Wunsch nicht abschlagen können.
+#hide Smith
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  13
+Typisch Babur der Faustschwinger. Für ihn dreht sich alles um Geld und Verpflichtungen. Vielleicht hat der Älteste Recht, wenn er ihm nicht vertraut...
+#DESC To himself

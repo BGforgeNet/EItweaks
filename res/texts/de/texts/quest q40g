@@ -1,0 +1,14 @@
+Ankunft bei Ork Shei-Var
+Die Goblins übergaben Airy an Shei-Var, den Anführer der Orks. Er lebt östlich des großen Sees, nicht weit von der Sandwüste. Um die Siedlung von Shei-Vars Stamm zu finden, ohne dich dabei selber zu sehr in Gefahr zu bringen, musst du die Wüste von der Stadt des Todes aus betreten.
+#subobj  1
+Finde den Ork, der den Schlüssel bewahrt
+Um zum Sheivar-Clan zu gelangen, musst du mit Hilfe der Zugbrücke, die sich südöstlich der Passage von der Stadt des Todes zu der Wüste befindet, über die Felsspalte gehen. Das Zahnrad, mit dem die Zugbrücke heruntergelassen wird, wird vom Hüter des Schlüssels aufbewahrt, der in der einsamen Hütte neben der Brücke lebt.
+#subobj  2
+Bringe das Zahnrad in deinen Besitz
+Um das Zahnrad für die Zugbrücke zu bekommen, kannst du entweder den Ork, der es aufbewahrt, töten oder versuchen, das Zahnrad zu stehlen.
+#subobj  3
+Lasse die Zugbrücke herab
+Benutze das Zahnrad, um die Zugbrücke herunterzulassen, dann kannst du weitergehen.
+#subobj  4
+Shei-Vars Heim
+Shei-Var lebt nicht allzu weit entfernt von der Brücke. Um ihn dort zu finden, musst du nach Südosten gehen und nach Ork-Häusern Ausschau halten.

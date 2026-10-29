@@ -1,0 +1,48 @@
+Frage nach dem Großen Magier
+#show Rick 1
+#show Hero 2
+#CAMERA 1
+#ANIMATION 5
+#phrase Rick  1
+Ich habe Euch erwartet. Euch, den man den Auserwählten nennt!
+#DESC (Sonorous, impressive, even solemn)
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  2
+Seid Ihr... Kennt Ihr mich denn?
+#CAMERA 11
+#ANIMATION 6
+#phrase Rick  3
+Eure ungewöhnliche Ankunft erregte meine Aufmerksamkeit, und als Ihr es geschafft habt, in die Zauberkugel zu blicken, wurde mein Interesse noch größer. Mein kleiner Drache begleitete Euch überallhin und soweit ich weiß, bemerktet Ihr ihn sogar zuweilen. Je näher Ihr Eurem Ziel kamt, desto mehr freute ich mich darauf, Euch zu treffen.
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  4
+Aber wer seid Ihr? Wie heißt Ihr? Und wenn Ihr so mächtig seid, dass Ihr mich beobachten konntet, ohne Eure Höhle zu verlassen, könntet Ihr mir dann helfen? Ich muss Euch wahrscheinlich nichts erzählen, Ihr wisst sicher schon alles...
+#CAMERA 9
+#ANIMATION 5
+#phrase Rick  5
+Ihr stellt zu viele Fragen, zu schnell, ohne nachzudenken... Was wäre, wenn ich auf dieselbe Weise antworten würde? Dennoch soll Eure Neugierde gestillt werden – zumindest zum Teil.
+#CAMERA 11
+#ANIMATION 6
+#phrase Rick  6
+Mein Name würde für Euch etwa so klingen: Tka-a-Litan Rich-ty-a-Nik. Eine ungeduldige Person wie Ihr es seid, fänd ihn wahrscheinlich etwas zu lang, nennt mich also einfach Tka-Rik. Ihr könnt auch das Wort 'Großmagier' hinzufügen, obgleich ich selbst einen so großartigen Titel nicht brauche.
+#CAMERA 3
+#ANIMATION 6
+#phrase Rick  7
+Ich könnte Euch aus Euren Schwierigkeiten heraushelfen, aber... Wir werden zuerst einen Handel abschließen. Ich brauche nämlich auch Eure Hilfe.
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  8
+Ihr? Der Großmagier? Das kann nicht euer Ernst sein!
+#CAMERA 7
+#ANIMATION 5
+#phrase Rick  9
+Oh nein, dies ist nicht der richtige Zeitpunkt für Witze. Alles in der Welt hat seinen Preis, und ich bin gewohnt ihn zu bezahlen. Kein Großmagier hat das Recht, seine Insel zu verlassen – und deshalb bin ich förmlich an dieses trostlose Gipath gefesselt. Und so benötige ich jemanden, der in anderen Gegenden bestimmte Aufträge für mich erfüllt.
+#CAMERA 9
+#ANIMATION 6
+#phrase Rick  10
+Ihr müsst zwei junge Menschen finden und hierher bringen, einen Mann und ein Mädchen. Sie gehören, wie ich selbst auch, zu der großen Rasse der Joons, und ich muss... Aber das erzähle ich Euch alles später, falls es Euch interessiert. Nun sagt mir: Erklärt Ihr Euch dazu bereit?
+#ANIMATION 32
+#CAMERA 5
+#phrase Hero  11
+Hm... Als ob Ihr die Antwort nicht kennen würdet. Selbstverständlich erkläre ich mich dazu bereit!

@@ -1,0 +1,40 @@
+Frage nach dem Plan des Hauptmanns
+#show Hero 1
+#show Sheriff 2
+#ANIMATION 44
+#CAMERA 9
+#phrase Sheriff  1
+Ich will den Goblins zeigen, was es heißt, sich mit uns anzulegen. Wir können es zwar nicht mit dem ganzen Stamm aufnehmen, aber wenn wir sieben oder acht von ihnen das Fell über die Ohren ziehen, dann wird ihnen das eine Lehre sein.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  2
+Das hat doch keinen Zweck.
+#ANIMATION 7
+#CAMERA 7
+#phrase Sheriff  3
+Aber im ganzen Dorf redet man schon davon, dass der Auserwählte die Goblins für ihren Überfall bestrafen will.
+#ANIMATION 14
+#CAMERA 6
+#phrase Hero  4
+Tatsächlich?! Wie kommen die denn darauf?
+#ANIMATION 9
+#CAMERA 11
+#phrase Sheriff  5
+Der Älteste hat es ihnen erzählt. Eigentlich wollte ich ja meine Leute losschicken, aber wenn du die Sache in die Hand nehmen willst... Das würden dir meine Leute nicht krumm nehmen. Sie hätten keine Schwierigkeiten damit, wenn sie zu Hause rumsitzen müssten.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  6
+Ach so...Ich verstehe. Und was ist, wenn ich es mir anders überlege?
+#ANIMATION 7
+#CAMERA 9
+#phrase Sheriff  7
+Wie könntest du? Du bist der Auserwählte, du hast dein Wort gegeben. Du wirst es genauso machen, wie du gesagt hast – oder etwa nicht?
+#ANIMATION 30
+#CAMERA 10
+#phrase Hero  8
+Da bleibt mir wohl nichts anderes übrig... Vielen Dank, Erfar, und dir danke ich auch, Gort. Ich werde eure Freundlichkeit nicht vergessen.
+#DESC (At first annoyed, then nastily)
+#ANIMATION 31
+#CAMERA 7
+#phrase Sheriff  9
+Dann machst du es also?! Noch was: Du lässt dich besser nicht mit den Orks ein. Orks sind stärker als Goblins, außerdem haben sie einen Seher. Das ist ein richtiger Zauberer – nicht so wie die Hexe!

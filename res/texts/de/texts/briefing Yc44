@@ -1,0 +1,17 @@
+Bitte den Anführer um Hilfe
+#show Hero 1
+#show YCF 2
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  1
+Ich brauche Eure Hilfe, Häuptling!
+#CAMERA 11
+#phrase YCF  2
+Jeder Fluss fließt in seinem eigenen Bett und erst im See treffen sie sich. Aber Ihr könnt diesen See nicht sehen – nicht einmal vom Gipfel des höchsten Berges aus...
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  3
+Ein See? Könnt Ihr Euch nicht ein bisschen verständlicher ausdrücken?
+#CAMERA 3
+#phrase YCF  4
+Was ich versuche Euch zu erklären, ist Folgendes: Vielleicht werdet Ihr eines Tages unser Freund. Aber ich weiß nicht, wann das geschehen wird – falls es überhaupt geschieht. Geht zurück in die Stadt! Ihr habt hier nichts zu suchen.

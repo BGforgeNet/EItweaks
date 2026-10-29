@@ -1,0 +1,66 @@
+Frage nach dem Drachenamulett
+#show Witch 
+#show Daughter
+#show DragonAmulet 4
+#show Hero
+#ANIMATION 45
+#CAMERA 5
+#phrase Hero  1
+Hier, bitte, ein Drachenamulett. Was mache ich jetzt damit?
+#DESC (A bit irritated)
+#hide DragonAmulet
+#show DragonAmulet 5
+#ANIMATION 30
+#NOLIPS
+#CAMERA 11
+#phrase Witch  2
+Tja, was nur?
+#DESC To herself
+#ANIMATION 3
+#CAMERA 11
+#phrase Witch  3
+Airy, du hast mit all dem angefangen, also bist du jetzt dran. Nun mach schon und erzähl uns was das soll, ich habe nicht viel Zeit!
+#ANIMATION 63
+#CAMERA 8
+#phrase Daughter  4
+Es ist alles ganz einfach! Wenn du dich dem Drachen näherst, der auf der anderen Seite des Sees lebt, und dabei dieses Amulett trägst, wird der Drache dir friedlich überall hin folgen. Die Hauptsache ist es, das Amulett zu haben, sehr viel mehr musst du nicht machen.
+#DESC Happy that she can help
+#ANIMATION 9
+#CAMERA 4
+#phrase Daughter  5
+Gehe mit dem Drachen zum Observatorium. Wenn er die Harpyien erblickt, wird er sie angreifen und so den Weg für dich frei machen!
+#hide DragonAmulet
+#ANIMATION 61
+#CAMERA 11
+#phrase Witch  6
+Halt, halt, halt! Ich werde langsam wirklich alt... Das hätte ich ja fast vergessen! Ich hätte den Jungen beinahe in den sicheren Tod geschickt! Und du hast auch nichts gesagt!
+#ANIMATION 3
+#CAMERA 12
+#phrase Daughter  7
+Großmutter, wovon redest du eigentlich?
+#ANIMATION 8
+#CAMERA 3
+#phrase Witch  8
+Ich rede von den Echsen, die in den Mittelbergen hausen, in der Nähe des Passes, der zum See führt!
+#ANIMATION 45
+#CAMERA 8
+#phrase Daughter  9
+Aber sie sind friedlich!
+#ANIMATION 46
+#CAMERA 7
+#phrase Witch  10
+Das waren sie mal, aber jetzt nicht mehr – gnade dem, der in ihre Nähe kommt! Ich weiß noch nicht einmal, was man gegen sie unternehmen kann... Obwohl…
+#ANIMATION 62
+#CAMERA 9
+#phrase Witch  11
+Auserwählter, warum redest du nicht mit Babur? Er geht oft in die Weiten Berge, um seine Steine zu sammeln und die Echsen greifen ihn aus irgendeinem Grund nicht an. Aber denke noch nicht einmal daran, in die Mittelberge zu gehen, bevor du weißt, wie man mit den Echsen Frieden schließt!
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  12
+Hmmm… Als hätte ich nicht schon genug Probleme habe, jetzt muss ich auch noch mit den verdammten Echsen Frieden schließen! Das ist alles ganz schön lästig! Aber trotzdem danke für deinen Rat, Estera, und danke für die Informationen, Airy. Du bist wirklich ein beeindruckendes kleines Mädchen!
+#ANIMATION 30
+#NOLIPS
+#CAMERA 12
+#phrase Daughter  13
+Jetzt fängt er schon wieder mit dem 'kleinen Mädchen' an... Wann merken die Leute endlich, dass ich kein kleines Mädchen mehr bin?! Werde ich denn niemals in der Lage sein, dem Auserwählten begreiflich zu machen, dass ich mehr verdiene als ein paar nette Worte? Oh nein, ich werde nicht aufgeben!
+#DESC To herself

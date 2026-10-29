@@ -1,0 +1,22 @@
+Frage nach dem Leben im Dorf
+#show Hero 1
+#show Sheriff 2
+#CAMERA 5
+#phrase Hero  1
+Warum bist du denn so schlecht gelaunt, Gort?
+#ANIMATION 32
+#CAMERA 11
+#phrase Sheriff  2
+Nun… Ich würde Babur gerne eine Abreibung verpassen, aber der Älteste lässt mich nicht. Er sagt, dies wäre nicht der richtige Zeitpunkt. Also ich weiß nicht, für mich scheint der Zeitpunkt genau richtig. Der Handwerker ist arrogant, verlangt zu viel Geld und niemand kann sich seine Arbeit leisten.
+#ANIMATION 14
+#CAMERA 3
+#phrase Sheriff  3
+Und dann diese Sache mit den Freijägern – ich will lieber gar nicht daran denken. So viel Aufheben um gar nichts! Aber ist auch egal – der Älteste und ich werden dafür sorgen, dass er alles bereut!
+#ANIMATION 7
+#CAMERA 10
+#phrase Hero  4
+Nun, das ist nicht meine Sache. Aber sag mir eines: Einige Male sah ich - ich weiß nicht, wie ich es beschreiben soll - etwas wie einen kleinen Drachen, aber sehr klein, eher so groß wie eine Fliege. Er flog auf mich zu, dann um meinen Kopf und verschwand dann. Was war das?
+#ANIMATION 31
+#CAMERA 7
+#phrase Sheriff  5
+Oh, ich habe keine Zeit für Fliegen – einfach platt hauen und das war's. Eben noch Fliege, jetzt ein Fleck, hehehehe!

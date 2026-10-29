@@ -1,0 +1,24 @@
+Frage nach dem Teil der Höhlenbrücke
+#show Hero 1
+#show Sheriff 2
+#ANIMATION 9
+#CAMERA 9
+#phrase Sheriff  1
+Sieh mal, Auserwählter... Ich habe nachgedacht... Das ist nicht richtig. Ich bin der Hauptmann, aber du hast die Goblins besiegt. Das ist schlecht für meinen Ruf. Könntest du - na ja - könntest du vielleicht sagen, ich hätte das alles getan und du hättest bloß, sagen wir mal, du hättest bloß geholfen? Ich wäre dir sehr dankbar.
+#ANIMATION 29
+#CAMERA 6
+#phrase Hero  2
+Aber sicher, das verstehe ich vollkommen. So ehrgeizig bin ich nun auch wieder nicht. Aber ich erwarte eine Gegenleistung von dir. Es heißt, du hast etwas, das die Goblins den Orks gestohlen haben. Du hast dafür keine Verwendung, aber ich könnte es sehr gut gebrauchen.
+#show Hero 3
+#show Sheriff 5
+#show CaveGear00 5
+#CAMERA 3
+#phrase Sheriff  3
+Oh, das... Sicher, das kannst du haben!
+#hide CaveGear00
+#ANIMATION 30
+#NOLIPS
+#CAMERA 3
+#phrase Sheriff  4
+Ha, der Auserwählte ist wirklich verrückt! Ich hatte schon Angst, er würde etwas Besonderes haben wollen. Aber dieses Zahnrad ist wertlos. Anscheinend hat Babur ihm noch nicht beigebracht, wie man richtig handelt!
+#DESC To himself

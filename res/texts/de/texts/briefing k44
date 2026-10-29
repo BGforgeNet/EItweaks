@@ -1,0 +1,29 @@
+Frage nach Karansuls Einflussbereich
+#show Hero 1
+#show Kapitan 2
+#ANIMATION 11
+#CAMERA 3
+#phrase Kapitan  1
+So, mein Lieber, seid Ihr fündig geworden? Oder hattet Ihr Schwierigkeiten?
+#ANIMATION 46
+#CAMERA 2
+#phrase Hero  2
+Na ja, ich habe mein ganzes Geld ausgegeben, alles umsonst. Ich muss mich bald nach Arbeit umsehen. Wissen Sie zufällig, ob Karansul noch Arbeiter für die Minen sucht?
+#ANIMATION 9
+#CAMERA 3
+#phrase Kapitan  3
+Gut möglich. Vor kurzem hat er eine mechanische Mühle errichtet - ich weiß noch, ich habe Wachen abgestellt, um die Lieferung zu überwachen.
+#ANIMATION 44
+#CAMERA 11
+#phrase Kapitan  4
+Jetzt braucht Karansul ein paar Fachleute, die sich um die Maschine kümmern, sobald irgendetwas schief läuft, hört jeder auf zu arbeiten, um zu sehen, was passiert ist. Sie stehen dann während der ganzen Reparatur einfach rum und schwatzen.
+#ANIMATION 11
+#CAMERA 3
+#phrase Kapitan  5
+Vielleicht könnt Ihr ja lernen, wie man damit umgeht! Reparieren könnt Ihr sie nicht, aber kaputt bekommt ihr sie bestimmt, ha ha!
+#NOLIPS
+#ANIMATION 30
+#CAMERA 10
+#phrase Hero  6
+Hm... Das wäre eine Überlegung wert... Je mehr Leute zu der kaputten Maschine kommen, desto größer sind meine Chancen, ungesehen in das Haus des Vorarbeiter zu gelangen!
+#DESC To himself

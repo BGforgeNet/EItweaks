@@ -1,0 +1,38 @@
+Oger Utundry
+Shei-Var möchte sicherstellen, dass der Dämon besiegt wird. Als Beweis, dass du dazu in der Lage bist, musst du ihm den Inhalt der Truhe des Ogers Utundry bringen - er ist der Älteste von drei Oger-Brüdern, die hier in der Wüste leben. Nach deinem Treffen mit ihrem Anführer Shei-Var werden sich die Orks den Menschen gegenüber neutral verhalten. Die Aufgabe wird dadurch erschwert, dass die Oger-Brüder untereinander die Schlüssel ihrer Truhen aufbewahren. Du musst dich also mit allen drei Brüdern auseinander setzen.
+#subobj  1
+Finde den Oger namens Byr
+Byr, der erste Oger, den du besiegen musst, lebt in einem kreisförmigen Tal nördlich von Shey-Vars Lager. In der Nähe befindet sich eine Siedlung des Ork-Clan Kharu, der mit den Sheyvar verfeindet ist.
+#subobj  2
+Töte Byr
+Der Oger Byr muss getötet werden.
+#subobj  3
+Finde Byrs Truhe
+Byr besitzt eine Truhe, in der er den Schlüssel zu Oger Gyms Truhe aufbewahrt.
+#subobj  4
+Durchsuche Byrs Truhe
+Nimm den Schlüssel zu Gyms Truhe an dich.
+#subobj  5
+Finde den Oger namens Gym
+Gym, der zweite Oger, den du besiegen musst, lebt westlich von Shey-Vars Lager. Um ihn zu finden, musst du den Fluss beim Damm der Orks überqueren und ein Stück in westliche Richtung gehen.
+#subobj  6
+Töte Gym
+Der Oger Gym muss getötet werden.
+#subobj  7
+Finde Gyms Truhe
+Gym besitzt eine Truhe, in der er den Schlüssel zu Utundrys Truhe aufbewahrt.
+#subobj  8
+Nimm Gyms Schlüssel
+Nimm den Schlüssel mit zu Utundrys Truhe.
+#subobj  9
+Finde den Oger namens Utundry
+Der älteste der Oger-Brüder, Utundry, lebt in einem kleinen runden Tal im nördlichen Teil des östlichen Seeufers.
+#subobj  10
+Töte Utundry
+Der Oger Utundry muss getötet werden.
+#subobj  11
+Finde Utundrys Truhe
+Diese Truhe ist das Hauptziel deiner Suche.
+#subobj  12
+Durchsuche Utundrys Truhe
+Shei-Var möchte, dass Utundrys Truhe vollständig geleert wird.

@@ -1,0 +1,51 @@
+Wie man Karansul unter Druck setzt
+#show Hero 1
+#show Trapper 2
+#ANIMATION 63
+#CAMERA 11
+#phrase Trapper  1
+So mein Junge, du hast mir geholfen und nun ist es an der Zeit, dass ich mein Versprechen halte. Ich gebe dir einen Teil meines Profits und erzähle dir, was ich weiß. Karansul ist unglaublich reich. Eine solche Menge Geld können wir uns beide nicht einmal vorstellen.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  2
+Und woher kommen diese Reichtümer?
+#ANIMATION 61
+#CAMERA 3
+#phrase Trapper  3
+Da werde ich dir kaum etwas Neues erzählen… Ihm gehören Minen, Gruben, Sägemühlen - er ist der alleinige Eigentümer. Außerdem zahlt er nur ungefähr ein Zehntel der Steuern, die er eigentlich zahlen müsste. Er macht eine Menge Geld, verkauft direkt an die Hauptstadt und der Gouverneur bekommt überhaupt nichts - das Ganze sage ich dir natürlich nur im Vertrauen.
+#ANIMATION 44
+#CAMERA 11
+#phrase Trapper  5
+Der Gouverneur vertraut Karansul. Er weiß, wie man sich gepflegt unterhält und gibt dem Gouverneur ab und zu neue Stücke für seine Sammlung. Aber niemand hat sich jemals seine Abrechnungen angeschaut.
+#ANIMATION 32
+#CAMERA 2
+#phrase Hero  6
+Du meinst also keine Beweise – kein Verbrechen, habe ich Recht?
+#ANIMATION 63
+#CAMERA 11
+#phrase Trapper  7
+Genau. Wenn sich jemand seine Abrechnungen näher anschauen würde, wüsste man, was und wie viel illegal verkauft wurde… Aber Karansuls Wachtrupp ist nicht zu unterschätzen. Wie sagt man so schön? So nah und doch so fern?
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  8
+Aber ich könnte es doch mal versuchen, oder?
+#ANIMATION 63
+#CAMERA 3
+#phrase Trapper  9
+Schön, dann hör gut zu! Der Vorarbeiter der Minenleute trägt das Buch mit den Abrechnungen bei sich. Karansuls Minen und Sägewerke befinden sich rund um den See verteilt. Am nordöstlichen Ufer stehen die zwei wichtigsten Gebäude - das Haus des Vorarbeiters und eine mechanische Mühle. Die Maschine hat ihn ein Vermögen gekostet und sie ist wirklich praktisch!
+#ANIMATION 61
+#CAMERA 11
+#phrase Trapper  11
+Aber darum dreht es sich gar nicht. Das Haus des Vorarbeiters findest du so: Auf dem Dach sind zwei kurze Schornsteine. Verwechsel' es ja nicht mit der Kantine der Wachen. Das Haus hat auch zwei Schornsteine, nur sind die länger.
+#ANIMATION 63
+#CAMERA 3
+#phrase Trapper  12
+Noch etwas: Warum redest du nicht mal mit dem Hauptmann über Karansuls Geschäft? Erzähl ihm irgendeine Geschichte - von wegen, du hast kein Geld mehr und suchst jetzt Arbeit. Vielleicht kannst du ja was Nützliches von ihm in Erfahrung bringen! Und suche in der Stadt einen Mann namens Gauner auf und bestelle ihm schöne Grüße von mir.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  13
+Und was passiert dann?
+#ANIMATION 62
+#CAMERA 3
+#phrase Trapper  14
+Tja, weißt du, Gauner ist ein Dieb, aber auch ein guter Mann. Vielleicht gibt er dir ja ein paar Ratschläge, verrät dir ein paar Kniffe… Sag ihm einfach, dass ich dich schicke!

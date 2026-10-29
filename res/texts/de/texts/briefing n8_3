@@ -1,0 +1,23 @@
+Frage nach Esteras Schülerin
+#show Merc3
+#show Witch
+#show Hero
+#ANIMATION 9
+#CAMERA 4
+#phrase Witch  1
+Auserwählter, darf ich dich mit diesem faulen Mädchen bekannt machen – Das ist meine Schülerin, Naya. Weißt du, mein Lieber, ich dachte, du könntest ein wenig Hilfe brauchen, obwohl du so unglaublich auserwählt bist, so mächtig und weise. 
+#ANIMATION 9
+#CAMERA 8
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  3
+So eine alte Krähe! Sie weiß ganz genau, dass ich nicht der Auserwählte bin, aber sie will mich trotzdem festnageln!
+#DESC To himself
+#ANIMATION 31
+#CAMERA 6
+#phrase Hero  4
+Ich danke dir dafür, dass du mir bei meiner Arbeit helfen willst, Estera...
+#ANIMATION 9
+#CAMERA 4
+#phrase Witch  5
+Habe ich etwa gesagt, dass ich irgendwo mit dir hin gehen will? Ich bin nicht mehr in dem Alter, in dem man durch den Wald rennt! Aber Naya würde selbst in das Versteck der Orks vordringen, wenn es nötig wäre! Außerdem wäre das eine gute Prüfung für sie – wollen mal sehen, ob sie ihre Lektionen gelernt hat.

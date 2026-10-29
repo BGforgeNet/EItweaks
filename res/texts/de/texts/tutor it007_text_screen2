@@ -1,0 +1,6 @@
+     Im Eigenschaftsfeld werden die wesentlichen Eigenschaften eines Charakters angezeigt. Dazu gehören: "Stärke", "Geschicklichkeit" und "Intelligenz" sowie daraus hervorgehend: "Lebenskraft", "Energie", "Aktionen" und "Belastung". Dazu wird noch die gewonnene "Erfahrung" angegeben.
+
+     Mehr über eine Eigenschaft erfährst du, wenn du den Mauszeiger darüber bewegst. Es erscheint dann ein Text im Beschreibungsfeld.
+     "Erfahrung" gibt die Erfahrung an, die der Charakter während des Spiels gesammelt hat. Sie kann für den Ausbau von Fähigkeiten und Fertigkeiten eingesetzt werden. Welche Menge an Erfahrung dir noch zur Verfügung steht, siehst du unter "Erfahrung".
+
+     In den jeweiligen Feldern kannst du Erfahrung in Fähigkeiten und Fertigkeiten investieren. Unter "Erfahrung" siehst du, wie viel du dabei von deinen Erfahrungspunkten verbrauchst. Mit den Schaltflächen <V> und <X> kannst du bestätigen oder abbrechen.

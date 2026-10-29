@@ -1,0 +1,20 @@
+Zwei Sklaventreiber töten
+Der Schmied würde nur zu gerne an den zwei grausamen Sklaventreibern, Peitschen-Aga und Prügel-Aga, Rache üben. Momentan bewachen sie die Arbeiter auf den Plantagen in der Nähe der Stadt Suslanger.
+#subobj  1
+Finde die zentralen Plantagen
+Die zentralen Plantagen befinden sich nordöstlich der Stadt. Sie sind leicht zu finden, wenn man dem gut ausgebauten Netz der Bewässerungskanäle folgt.
+#subobj  2
+Finde Peitschen-Aga
+Peitschen-Aga beaufsichtigt die Arbeiten in den zentralen Plantagen.
+#subobj  3
+Töte Peitschen-Aga
+Peitschen-Aga muss getötet werden.
+#subobj  4
+Finde die südlichen Plantagen
+Die südlichen Plantagen befinden sich unten am Fluss, nicht weit von der Stelle, wo der Fluss in den See fließt. Hier gibt es viel weniger Bewässerungskanäle und sie sind nicht so groß wie die zentralen.
+#subobj  5
+Finde Prügel-Aga
+Prügel-Aga beaufsichtigt die Arbeiten in den südlichen Plantagen.
+#subobj  6
+Töte Prügel-Aga
+Prügel-Aga muss getötet werden.

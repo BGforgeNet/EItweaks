@@ -1,0 +1,55 @@
+Mit Aiset-Bek reden
+#show Hero 3
+#show Karh 5
+#show IZ 4
+#ANIMATION 32
+#CAMERA 2 -30 10 10
+#phrase Karh  1
+Oh großer Aiset-Bek! Wir haben neue Gefangene. Ich möchte mir erlauben anzumerken, dass dieser hier ein ganz besonderes Exemplar ist. Wir haben ihn in der Nähe des Tores zum Toten Land entdeckt – er hat sich verzweifelt gewehrt! Er ist gut gebaut und sieht nicht allzu dumm aus. Ich hoffe, dass mein Eifer nicht unbemerkt bleibt!
+#ANIMATION 14
+#CAMERA 4 30 5 3
+#phrase IZ  2
+Diesen unterernährten Landstreicher nennt Ihr ein „besonderes Exemplar“? Für diese Frechheit sollte ich Euch auspeitschen lassen!
+#ANIMATION 31
+#CAMERA 2 30 7 7
+#phrase Karh  3
+Bei allem Respekt, Herr, ich kann Euch nicht zustimmen. Ich schwöre Euch bei meinen Vorfahren, dass dieser Mann etwas wert ist – oder ich soll nicht Leutnant Kardaur sein!
+#ANIMATION 11
+#CAMERA 4 30 5 3
+#phrase IZ  4
+Ich brauche keinen Schwur, sondern ein anständiges Training für meine Soldaten! Hey, Blondschopf! Sag selbst: Möchtest du noch ein paar Stunden weiterleben, oder soll ich dich lieber gleich töten lassen?
+#ANIMATION 6
+#CAMERA 2 0 3 0.8
+#phrase Hero  5
+Gegen einen unbewaffneten Gefangenen wird jeder zum Helden. Gib mir meine Waffen zurück, lass mich hier raus und dann werden wir sehen, wer wie lange zu leben hat.
+#ANIMATION 32
+#CAMERA 4 30 5 3
+#phrase IZ  6
+Na, zeigt das Hündchen seine Zähne?
+#ANIMATION 3
+#CAMERA 2 30 7 7
+#phrase Karh  7
+Ich versichere Euch Herr, das Hündchen kann auch beißen!
+#ANIMATION 9
+#CAMERA 4 30 5 3
+#phrase IZ  8
+Na gut! Schickt ihn los! Aber denkt daran: Wenn er weniger als die Hälfte der Strecke schafft, geht Ihr das nächste Mal an seiner Stelle – auch Eure Speichelleckerei wird Euch dann nichts mehr nützen!
+#ANIMATION 15
+#CAMERA 2 -30 7 7
+#phrase Karh  9
+Wenn Ihr es befehlt, gehe ich sofort in die Todesschlucht. Und meine letzten Worte werden Dankesworte an Euch sein.
+#hide IZ
+#show Hero 1
+#show Karh 2
+#ANIMATION 6
+#CAMERA 2 35 6 1.5
+#phrase Karh  10
+Hört gut zu, armer Unbekannter! Morgen früh erhaltet Ihr Essen und Waffen, und werdet in der Todesschlucht, in der Nähe der südlichen Festung, ausgesetzt. Ein paar junge Soldaten, die unbedingt befördert werden möchten, werden mit Euch kommen.
+#ANIMATION 9
+#CAMERA 2 -30 7 7
+#phrase Karh  11
+Eure Aufgabe ist es, das Tor der nördlichen Festung zu erreichen – die Aufgabe der Soldaten, Euch daran zu hindern. Um ehrlich zu sein, wird die ganze Sache ein bisschen unfair, ha, ha, denn außerdem werden noch abgerichtete Spinnen hinter Euch her sein.
+#ANIMATION 11
+#CAMERA 2 35 6 1.5
+#phrase Karh  12
+Ihr dürft Widerstand leisten, ohne dafür bestraft zu werden. Aber wenn Ihr zu früh sterbt und der Grosse Aiset-Bek nicht zufrieden mit Euch ist... Dann verspreche ich Euch, dass ich den Totenbeschwörern genug zahlen werde, damit sie Eure Seele bis in alle Ewigkeit aufs Grausamste quälen.

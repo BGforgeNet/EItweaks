@@ -1,0 +1,24 @@
+Rede mit Khatul
+#show Hero 3
+#show Glav 4
+#show Kuzn 5
+#ANIMATION 31
+#CAMERA 9
+#phrase Glav  1
+Es tut mir leid, wenn ich zu unnachgiebig gewesen bin, Bruder! Ich hoffe, es gibt deswegen keinen Streit zwischen uns. Die Bruderschaft der Letzten Zuflucht kann dir ein neues Zuhause geben – und dir Familie sein.
+#ANIMATION 15
+#CAMERA 3
+#phrase Glav  2
+Deine Vergangenheit ist für uns hier nicht wichtig. Aber es wäre besser, wenn du uns wenigstens ein bisschen von dir erzählst und darüber, wie du in die Schlucht geraten bist.
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  3
+Das ist kein Geheimnis: Ich suche einen jungen Joon. Alles, was ich über ihn weiß ist, dass er eine rötliche Hautfarbe hat. Das ist alles, was mich nach Suslanger treibt. Und sobald ich ihn gefunden habe, gehen wir zurück nach Gipath...
+#ANIMATION 9
+#CAMERA 5
+#phrase Hero  4
+Ihr nennt es das Tote Land, aber für mich ist es das einzige, das ich momentan Heimat nennen kann – auch wenn es komisch klingt.
+#ANIMATION 44
+#CAMERA 7
+#phrase Glav  5
+Schade, dass du nicht bei uns bleibst. Aber ich, Khatul, der Erste unter Gleichen in unserer Bruderschaft, respektiere deine Entscheidung. Wir werden alles in unserer Macht Stehende tun, um dir bei deiner Suche zu helfen!

@@ -1,0 +1,15 @@
+Naya aus Gruppe entlassen
+#show Hero
+#show Merc3
+#ANIMATION 3
+#CAMERA 7
+#phrase Merc3  1
+Lebewohl, Auserwählter! Eines Tages werde ich an Esteras Stelle stehen und meinen eigenen Schüler haben. Dann werde ich voller Stolz erzählen, dass ich dich einst traf.
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  2
+Du redest, als würden wir uns niemals wieder sehen. Glaubst du vielleicht, ich würde in fernen Landen den Tod finden?
+#ANIMATION 44
+#CAMERA 7
+#phrase Merc3  3
+Nein, nicht den Tod, sondern… Nein, ich werde es dir nicht sagen, das wäre Estera gegenüber nicht gerecht. Schüler sollten nicht sehen, was der Lehrer selbst nicht erkannte. Lebewohl!

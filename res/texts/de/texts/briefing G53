@@ -1,0 +1,51 @@
+Frage nach den verlassenen Minen
+#show Hero 1
+#show Huber 2
+#ANIMATION 11
+#CAMERA 11
+#phrase Huber  1
+Ah, junger Freund, wozu die Eile? Was gibt es denn so dringendes?
+#ANIMATION 43
+#CAMERA 10
+#phrase Hero  2
+Die Mine!
+#ANIMATION 45
+#CAMERA 3
+#phrase Huber  3
+Welche Mine? Was soll das heißen: 'die Mine'? Und was ist mit einer Begrüßung und der entsprechenden Ehrerbietung?
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  4
+Entschuldigt meine Hast, Exzellenz, aber ich muss unbedingt mit Euch sprechen. Ich habe beschlossen, endlich etwas zu tun und möchte arbeiten. In der Mine.
+#ANIMATION 3
+#CAMERA 3
+#phrase Huber  5
+Oh, wie unerträglich langweilig... Warum kommt Ihr damit ausgerechnet zu mir?
+#ANIMATION 32
+#CAMERA 2
+#phrase Hero  6
+Mir ist nicht entgangen, dass Ihr an schönen Dingen Gefallen findet. Und eben solche schönen Dinge hoffe ich in den verlassenen Stollen zu finden...
+#show Hero 3
+#show GoldNugget00 4
+#show Huber 5
+#ANIMATION 9
+#CAMERA 5
+#phrase Hero  7
+Dinge, wie zum Beispiel dieses Stück Gold. Es wäre mir eine Ehre, wenn Ihr es als Geschenk annehmen würdet!
+#ANIMATION 62
+#CAMERA 7
+#hide GoldNugget00
+#show GoldNugget00 5
+#phrase Huber  8
+Hm... Es scheint tatsächlich, als könnte diese Art von Dingen Gefallen bei mir finden. Ich merke, Ihr besitzt Manieren und habt Sinn für Romantik. Was könnte schließlich romantischer sein, als ein schweres, glänzendes Stück Gold?
+#show Hero 1
+#hide GoldNugget00
+#show Huber 2
+#ANIMATION 63
+#CAMERA 2
+#phrase Hero  9
+Doch für derartiges Unterfangen brauche ich die Schlüssel zu den verlassenen Stollen – jene Schlüssel, die Ihr aufbewahrt. Aus diesen Stollen lassen sich eine Menge schöner Dinge zu Tage befördern, von welchen die schönsten vielleicht sogar eines Platzes in Eurer Sammlung würdig sind.
+#ANIMATION 9
+#CAMERA 9
+#phrase Huber  10
+Oh, der Schlüssel? Ja, der muss hier irgendwo sein... Wenn er das Einzige ist, was zwischen mir und dieser Pracht steht – wie könnte ich Euch die Herausgabe verweigern?

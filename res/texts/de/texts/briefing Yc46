@@ -1,0 +1,16 @@
+Frage nach dem Entführer des Ältesten
+#show Hero 1
+#show YCF 2
+#CAMERA 3
+#phrase YCF  1
+Wenn ein Rabe dem Falken die Beute stiehlt, was bleibt dann dem Falken? Ihm bleibt lediglich, sich an dem Raben zu rächen! Wenn ein Mensch uns Schaden zufügt, so wird ein anderer kommen und Rache für uns üben.
+#CAMERA 11
+#phrase YCF  2
+Geht in das Land der verlassenen Minen und wendet Euch nach Osten. Dort werdet Ihr zwischen zwei Hügeln ein Lager finden, in dem Soldaten zum Töten ausgebildet werden. Der Entführer bewegt sich unter ihnen, wie ein Tiger unter Ratten – Ihr könnt ihn nicht verfehlen. Wenn Ihr ihn tötet, würdet Ihr eine gute Tat vollbringen!
+#ANIMATION 43
+#CAMERA 10
+#phrase Hero  3
+Es scheint, als hätte ich in letzter Zeit nichts anderes gemacht. Aus irgendeinem Grund bestehen diese guten Taten immer daraus, jemanden umzubringen. Ich bin nicht empfindlich, aber ich bin auch kein gedungener Mörder!
+#CAMERA 11
+#phrase YCF  4
+Der Jäger tötet den Tiger und verkauft sein Fell. Trotzdem ist der Tiger kein harmloses Kätzchen. Ein Freund des Grünen Clans rächt sich für Habburas Entführung. Ist der getötete Entführer dann wirklich ein unschuldiges Opfer? Denkt darüber nach, Mensch!

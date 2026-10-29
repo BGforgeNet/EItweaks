@@ -1,0 +1,19 @@
+Treffen mit dem Hauptmann
+#show Hero 1
+#show Sheriff 2
+#CAMERA 9
+#ANIMATION 3
+#phrase Sheriff  1
+Ich bin der Hauptmann! Ich meine, ich bin der Anführer aller Soldaten. Mein Name ist Gort, aber sie nennen mich auch den Schädelbrecher. Wenn es Ärger gibt, brauchst du nur zu pfeifen und ich kümmere mich dann darum – überhaupt kein Problem.
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  2
+Was für Ärger?
+#ANIMATION 9
+#CAMERA 11 -15 5 4
+#phrase Sheriff  3
+Weißt du, es gibt einige Leute… Die glauben, sie wären schlauer als andere… Aber egal! Wichtig ist jetzt nur, dass du dich um diese Goblin-Wache kümmerst! Dieser Goblin schickt seiner Bande ununterbrochen irgendwelche Nachrichten. Wenn unser Hirte die Schafe auf das Feld treibt, fallen sie sofort über ihn her, doch wenn ich mit meinen Männern ausziehe, dann sind sie spurlos verschwunden.
+#ANIMATION 31
+#CAMERA 7
+#phrase Sheriff  4
+Es ist also gut, dass du da bist, Auserwählter. Du bist jetzt unsere einzige Hoffnung.

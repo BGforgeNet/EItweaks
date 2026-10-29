@@ -1,0 +1,20 @@
+Frage nach dem Pfeil, der den Spion getötet hat
+#show Hero 3
+#show YCF 5
+#ANIMATION 63
+#CAMERA 2
+#phrase Hero  1
+Was ist geschehen? Warum seid Ihr allein? Ich hatte so gehofft, den Tod des Gesandten aufklären zu können... Ich habe herausgefunden, dass der Mörder keiner von Euch war. Es war ein Mensch, der einen Befehl ausführte. Jetzt will ich herausfinden, wer diesen Befehl gegeben hat.
+#ANIMATION 62
+#CAMERA 10
+#phrase Hero  2
+Die Waldleute haben wohl etwas über diesen Auftraggeber herausgefunden, das ihm gefährlich werden könnte. Also versucht er, Euch in Verdacht zu bringen. Aber wo ist Euer Volk? Wo sind sie hingegangen?
+#CAMERA 3
+#phrase YCF  5
+Sie sind auf dem geheimen Pfad nach Osten gewandert. Ich habe hier gewartet, um Euch den Weg zu weisen – der geheime Pfad soll auch Euch offen stehen.
+#CAMERA 11
+#phrase YCF  6
+Geht von hier aus nach Osten, öffnet die Tore und betretet das Labyrinth zwischen den Hügeln. Geht durch das Labyrinth, öffnet das zweite Tor und Ihr erreicht einige Bergtäler. Vor langer Zeit haben dort Magier gelebt, die an Kriegszaubern arbeiteten. Aber das ist lange her. Und so wie nach einer Überschwemmung Dreck und Unrat zurückbleiben, so haben diese Zauberer Reste ihrer tödlichen Magie in jenen Tälern zurückgelassen.
+#CAMERA 3
+#phrase YCF  7
+Der Grüne Clan hat es geschafft, diese Magie unter seine Kontrolle zu bringen und sie für gute Dinge zu nutzen. Geht am südlichen Hang entlang und benutzt unseren Altar: Die magische Falle wird Euch die wilden Tiger vom Leib halten, so dass Ihr weiter im Südosten unser neues Lager erreichen könnt.

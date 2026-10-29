@@ -1,0 +1,25 @@
+Frage nach dem Diebstahl
+#show Hero 1
+#show Smith 2
+#phrase Hero  1
+Scheinbar bist du etwas ungehalten. Wenn sie dein letztes Geld gestohlen hätten, könnte ich deinen Ärger verstehen, aber du siehst nicht gerade wie ein armer Mann aus.
+#ANIMATION 45
+#CAMERA 11
+#phrase Smith  2
+Nun, ob es mein letztes Geld war oder nicht, ich kann mich nicht auch noch darüber freuen, bestohlen zu werden! Und außerdem dachte ich, ich hätte mich deutlich genug ausgedrückt: Es geht nicht um Geld, sondern darum, dass sie meine Ahle und meinen Meißel gestohlen haben!
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  3
+Ist das alles? Und ich dachte, es wäre etwas Wertvolles! Das ist ja wirklich ein Verlust – ein Messer und ein Schaber!
+#ANIMATION 9
+#CAMERA 7
+#phrase Smith  4
+Hah, du kennst dich wirklich in diesem Handwerk aus. Es waren Eisenwerkzeuge! Die kann man nicht einfach ersetzen, verstehst du? Und jetzt benutzt die fette Frau des Anführers meine Ahle, um ihre Schuhe zu reparieren und der Anführer hat meinen Meißel!
+#ANIMATION 44
+#CAMERA 11
+#phrase Smith  5
+Aber ich würde es nie schaffen, in ihr Lager kommen. Der direkte Weg zu den Hügeln wird von den Banditen gut bewacht. Und wenn du es über den anderen Weg den Fluss hinauf versuchst, würden dich die Kröten mit Gift vollspritzen.
+#ANIMATION 8
+#CAMERA 2 -30 5 3
+#phrase Hero  6
+Hah, ich habe keine Angst vor Kröten… Nun gut, Babur, vielleicht sind deine Eisenwerkzeuge doch noch nicht verloren!

@@ -1,0 +1,11 @@
+Brief
+Das Haus des Besitzers der Sammlerstücke befindet sich in der Stadt in der Straße, die von den nördlichen Toren aus zum Flussufer führt.  Das Haus, das du suchst, befindet sich hinter dem Gasthaus. Du erkennst es an den zwei Steinfiguren, die vor der Tür stehen.
+#subobj  1
+Gehe in die Stadt
+Du kannst die Stadt durch das westliche Tor betreten. Gehe am besten nachts in die Stadt oder verwende den Unsichtbarkeitszauber, um an den Wachen vorbeizukommen, ohne deren Aufmerksamkeit auf dich zu lenken. Es wäre sehr riskant, würdest du dich mit ihnen in einen offenen Kampf einlassen.
+#subobj  2
+Betrete den Garten des Hauses
+Das Haus, das du suchst, befindet sich am See, in der Straße, die von den Toren aus nach Süden führt. Wie andere Häuser auch ist es von einem kleinen Zaun umgeben, so dass du zuerst in den Garten gehen musst.
+#subobj  3
+Liefere den Brief ab
+Liefere den Brief an den Sammler einfach in seinem Haus ab.

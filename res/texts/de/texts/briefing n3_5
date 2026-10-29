@@ -1,0 +1,19 @@
+Rinas wieder mitnehmen
+#show Hero 1
+#show Merc5 2
+#ANIMATION 14
+#CAMERA 3
+#phrase Merc5  1
+Es ist mir etwas unangenehm, aber... Aber ich würde mich dir gern anschließen.
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  2
+Wirklich? Was ist passiert?
+#ANIMATION 44
+#CAMERA 3
+#phrase Merc5  3
+Aufgrund gewisser Umstände sollte ich mich so wenig wie möglich in der Stadt aufhalten. Ein bestimmtes Unterfangen hat zwar meine finanzielle Lage vebessert, aber leider auch mein Verhältnis zu den Wachen ganz erheblich verschlechtert. Kann ich mich wieder deiner Gruppe anschließen?
+#ANIMATION 46
+#CAMERA 2
+#phrase Hero  4
+Dein Verhältnis zu den Wachen geht mich nichts an. Und ich könnte deine Hilfe gebrauchen!

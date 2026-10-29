@@ -1,0 +1,22 @@
+Frage nach der Reise für die Blume
+#show Elder 3
+#show DriadIdol01 4
+#show Hero 5
+#phrase Hero  1
+Hier ist die Blume!
+#hide DriadIdol01
+#show DriadIdol01 5
+#ANIMATION 31
+#CAMERA 11
+#phrase Elder  2
+Ich weiß nicht, wie ich dir danken soll! Erneut rettet der Auserwählte unser Dorf vor dem sicheren Untergang! Glücklicherweise ist noch niemand krank geworden, deine Hilfe kam also gerade rechtzeitig!
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  3
+Nun, ich helfe gerne, aber lass uns über weitaus unangenehmere Dinge reden. Wie kann es sein, dass die Orks die Blume bewachten, so als ob sie schon wüssten, dass jemand nach ihr würde?
+#hide DriadIdol01
+#show DriadIdol01 4
+#ANIMATION 45
+#CAMERA 9
+#phrase Elder  4
+Überlege dir, wer nicht wollte, dass du mir die Blume bringst! Das war kein anderer Babur.

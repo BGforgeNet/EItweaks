@@ -1,0 +1,19 @@
+Eila mitnehmen
+#show Hero 
+#show Merc4
+#CAMERA 3
+#ANIMATION 3
+#phrase Merc4  1
+Um die Wahrheit zu sagen, selbst wenn Shei-Var mich nicht ziehen lassen wollte, würde ich trotzdem mit dir in die Wüste gehen. Orks sind auf ihre Art nicht übel, aber ich vermisse die Gesellschaft von Menschen!
+#CAMERA 6
+#ANIMATION 45
+#phrase Hero  2
+Ich hoffe, du kannst beweisen, dass der Seher dich wirklich in der Kunst der Magie unterwiesen hat? 
+#CAMERA 3
+#ANIMATION 45
+#phrase Merc4  3
+Ich lebe noch. Brauchst du noch mehr Beweise?
+#CAMERA 6
+#ANIMATION 30
+#phrase Hero  4
+Hm... Na, ich denke, das ist ein gutes Argument. Warte in der Nähe des Tores auf mich!

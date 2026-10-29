@@ -1,0 +1,19 @@
+Harad aus Gruppe entlassen
+#show Hero 
+#show Merc7
+#ANIMATION 15
+#CAMERA 7
+#phrase Merc7  1
+Ich bin froh, dir helfen zu können, Kiran.
+#CAMERA 6
+#ANIMATION 45
+#phrase Hero  2
+Hör zu, Kharad, warum bleibst du nicht in Gipath? Ich kann dir nichts versprechen, aber ich werde den Großmagier bitten, dich ins Dorf zu schicken...
+#CAMERA 7
+#ANIMATION 9
+#phrase Merc7  3
+Nein, Kiran, mein Herz ruft mich nach Hause. Die Rache brennt immer noch in mir. Außerdem kann ich die Brüder in der Letzten Zuflucht nicht im Stich lassen. Ich muss zurück nach Suslanger. Lebewohl.
+#CAMERA 6
+#ANIMATION 31
+#phrase Hero  4
+Ich verstehe, dass dir die Pflicht wichtiger ist als alles andere. Nun denn, Lebewohl, und viel Glück!

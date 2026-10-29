@@ -1,0 +1,15 @@
+Treffen mit dem Soldaten
+#show Hero
+#show Merc7 
+#CAMERA 3
+#ANIMATION 9
+#phrase Merc7  1
+Bruder Khatul sagte, dass du meine Hilfe brauchen könntest, Bruder Kiran. Mein Name ist Kharad. Bis vor kurzem war es meine Aufgabe, Leute wie dich zu fangen und zu töten.
+#CAMERA 3
+#ANIMATION 32
+#phrase Merc7  2
+Aber es stellte sich heraus, dass die khadaganianische Führung weniger über Ehre und Anstand weiß als selbst die niedrigsten Arbeiter! Und nun ist es mein Lebensziel, Rache an denen zu üben, die ich einst vergötterte!
+#ANIMATION 3
+#CAMERA 2
+#phrase Hero  3
+Nun, sollte ich einen Gefährten brauchen, so lasse ich es dich wissen.

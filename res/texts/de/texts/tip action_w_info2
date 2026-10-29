@@ -1,0 +1,9 @@
+Schaden
+Dieses Informationsfenster zeigt den 
+Schaden für die Körperteile des 
+Charakters an, über dem sich der 
+Mauszeiger befindet. 
+Wenn sich der Zeiger nicht über einem
+Charakter befindet, wird im
+Informationsfenster der momentan
+ausgewählte Charakter angezeigt.

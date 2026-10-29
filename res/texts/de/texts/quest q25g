@@ -1,0 +1,14 @@
+Den Feind entlarven!
+Sowohl der Handwerker Babur als auch der Älteste Erfar haben Grund, den Auserwählten als Gegner zu betrachten. Beide wissen, dass der Auserwählte wieder über die Mittelberge gehen wird, um eine weitere magische Pflanze zu holen. Falls der Hinterhalt dort ist, wo sich das ausgetrocknete Flussbett mit dem Fluss vereinigt, dann ist Babur der Verräter. Ist der Hinterhalt aber in der Nähe des zerstörten Wagens, so ist es das Werk des Ältesten.
+#subobj  1
+Kontrolliere das ausgetrocknete Flussbett
+Das ausgetrocknete Flussbett erstreckt sich von der Mitte der Mittelberge bis in den Südosten. Dort, wo es sich mit dem Fluss vereint, befindet sich eine kleine Bucht. Wenn der Hinterhalt in der Nähe der kleinen Bucht stattfinden sollte, so ist Babur der Verräter.
+#subobj  2
+Kontrolliere den zerstörten Wagen
+Der zerstörte Wagen liegt neben einem kleinen Hügel am Ende des Weges, der von den Hügeln in Richtung Osten führt. Wenn der Hinterhalt dort stattfinden sollte, so ist Erfar der Verräter.
+#subobj  3
+Zerschlage den Hinterhalt
+Jetzt weißt du mit Sicherheit, dass der Älteste der Verräter ist. Er wird für seinen Verrat bezahlen, aber auch die Feinde, die im Hinterhalt lauern, müssen bis zum letzten Mann vernichtet werden.
+#subobj  4
+Unschuld des Handwerkers
+In der Nähe des ausgetrockneten Flussbettes gab es keinen Hinterhalt. Also ist der Handwerker Babur unschuldig.

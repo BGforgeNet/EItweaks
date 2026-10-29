@@ -1,0 +1,19 @@
+Treffen mit Esteras Enkelin
+#show Daughter
+#show Witch
+#show Hero
+#phrase Witch  1
+Dies ist meine Enkeltochter Airy. Jetzt hör mir mal gut zu: Du brauchst noch nicht einmal daran zu denken, dich ihr in irgendeiner Weise zu nähern! Airy ist noch sehr jung und handelt unüberlegt. Ich hoffe nicht, dass sie sich in dich verliebt. Wir wissen ja nicht einmal, wer du wirklich bist?
+#ANIMATION 3
+#CAMERA 7
+#phrase Daughter  2
+Großmutter, ich bin kein Kind mehr! Wann hörst du endlich auf, mich wie ein kleines Kind zu behandeln?!
+#ANIMATION 32
+#CAMERA 12
+#phrase Witch  3
+Was soll das? Der Boden ist nicht gekehrt, das Geschirr ist noch schmutzig und du unterbrichst unsere Unterhaltung! Verschwinde und zwar sofort!
+#hide Daughter 
+#ANIMATION 7
+#CAMERA 8
+#phrase Witch  4
+Ein störrisches Mädchen, sie ist genauso wie ich! Aber du, sei du nur vorsichtig: Lass meine Enkeltochter in Ruhe, oder ich werde dich finden, egal wo du dich versteckst, und dich bei lebendigem Leib begraben!

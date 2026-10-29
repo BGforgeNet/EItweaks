@@ -1,0 +1,62 @@
+Frage nach dem Mann in Grau
+#show Hero 1
+#show YCF 2
+#CAMERA 3
+#phrase YCF  1
+Es war kein Zufall, dass sich heute die Wolken im Norden gesammelt haben und meine Pfeife nicht brennen wollte. Ihr kommt wieder? Wollt Ihr etwas Gutes tun?
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  2
+Mmm... Kommt darauf an, was es ist.
+#CAMERA 11
+#phrase YCF  3
+Gebt dem Grünen Clan jenen Pfeil zurück, den Ihr in dem toten Körper gefunden habt! Wir werden ihn zerstören, wie es unser Brauch ist!
+#ANIMATION 44
+#CAMERA 2
+#phrase Hero  4
+Sicher, den Pfeil kann ich Euch zurückgeben... Aber was ich Euch noch fragen wollte, Häuptling: Weiß Euer Stamm etwas über einen Mann in Grau? Vielleicht hat einer von Euch einen Mann im Wald gesehen, der sein Gesicht versteckt...
+#CAMERA 3
+#phrase YCF  5
+Ah, Mann-der-sein-Gesicht-verbirgt... Derjenige, der nur das Äußere sieht, sieht nicht das Wesen. Das Reh läuft zum Wasserloch und gerät in eine Fallgrube.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  6
+Aha?
+#CAMERA 11
+#phrase YCF  7
+Ein Reh wird nie den Gesang des Einhorns verstehen und ein Mensch nie die Sprache des Waldes. Ich werde versuchen, es so auszudrücken, dass Ihr es versteht: Wir haben diese Person gesehen, mit und ohne Kapuze.
+#ANIMATION 61
+#CAMERA 2
+#phrase Hero  8
+Und wie sieht er aus?
+#CAMERA 3
+#phrase YCF  9
+Die Person ist nicht wie Ihr... Ich glaube, diese Sorte Mensch nennt man Frau. Ihr Haar war so weiß wie der Schnee!
+#CAMERA 10
+#NOLIPS
+#ANIMATION 30
+#phrase Hero  10
+Eine Frau mit weißem Haar... Das ist Diera, die Zauberin! Sie hat also befohlen, den Gesandten zu töten, der beinahe die Prinzessin gefunden hätte... Aber das bedeutet, dass Diera es war, die die Prinzessin entführt hat.
+#DESC To himself
+#ANIMATION 43
+#CAMERA 2
+#phrase Hero  11
+Und wo ist sie dann hingegangen? Was hat sie gemacht?
+#CAMERA 3
+#phrase YCF  12
+Manchmal hat sie sich mit Leuten getroffen, die am westlichen Ufer des Sees leben. Aber meistens hat sie den See am anderen Ufer umrundet und ist zu dem Tor gegangen, das in die verlassenen Minen führt.
+#CAMERA 11
+#phrase YCF  13
+Wir haben es nie gewagt, ihr weiter zu folgen... Hinter dem Tor waren Leute in eisernen Rüstungen. Aber sie gehörten nicht zur Stadtwache!
+#hide YCF
+#show Hero 4
+#NOLIPS
+#ANIMATION 30
+#CAMERA 10
+#phrase Hero  14
+Verlassene Minen, bewaffnete Wachen – anscheinend hält sie die Prinzessin dort gefangen! Oder doch nicht? Vielleicht täusche ich mich. Doch es gibt einen Weg, das herauszufinden...
+#NOLIPS
+#ANIMATION 30
+#CAMERA 2
+#phrase Hero  15
+Ich muss zurück in die Stadt und Diera eine Frage über die Minen stellen. Wenn sie anfängt, nervös zu werden, habe ich mich nicht geirrt!

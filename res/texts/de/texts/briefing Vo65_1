@@ -1,0 +1,19 @@
+Frage über das prunkvolle Haus
+#show Hero 1
+#show Merc10 2
+#ANIMATION 61
+#CAMERA 11
+#phrase Merc10  1
+Ach du liebe Zeit! Solch ein gut aussehender Kerl und alles umsonst... was für eine Verschwendung…
+#ANIMATION 14
+#CAMERA 10
+#phrase Hero  2
+Du meinst also, ich bin eine Verschwendung?
+#ANIMATION 45
+#CAMERA 3
+#phrase Merc10  3
+Du wirst deinen jungen Joon finden und dich beeilen, in dein nutzloses Gipath zurückzukehren. Und da wird die Geschichte für dich zu Ende sein...
+#ANIMATION 64
+#CAMERA 9
+#phrase Merc10  4
+Hast du mir nicht selbst gesagt, dass es hier keine lohnenden Häuser gibt, nichts zu stehlen, niemanden, an den man verkaufen kann? Du wirst dein Talent verschwenden, das sag' ich dir, und wenn du alt bist, wirst du dich daran erinnern, dass ich dich gewarnt habe, aber dann wird es zu spät sein!

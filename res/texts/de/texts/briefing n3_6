@@ -1,0 +1,11 @@
+Mairana wieder mitnehmen
+#show Hero 1
+#show Merc6 2
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  1
+Ich benötige wieder mal dein Können. Kann ich auf dich zählen?
+#ANIMATION 9
+#CAMERA 3
+#phrase Merc6  2
+Selbstverständlich! Du hast dafür gesorgt, dass ich bei den Wachen immer noch gut dastehe – wie könnte ich mich da weigern, dir zu helfen? 

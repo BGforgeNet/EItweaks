@@ -1,0 +1,27 @@
+Frage nach dem Pfeil, der in der Leiche gefunden wurde
+#show Hero 1
+#show YCF 2
+#show DriadIdol00 5
+#CAMERA 3
+#phrase YCF  1
+Ihr bringt die heilige Blume! Ich danke Euch, Mensch. Aber Trauer schnürt mir mein Herz zu...
+#ANIMATION 11
+#CAMERA 2
+#hide DriadIdol00
+#show DriadIdol00 3
+#phrase Hero  2
+Das verstehe ich nicht. Hier ist die Blume – genau wie ihr wolltet. Ist etwas passiert?
+#CAMERA 11
+#hide DriadIdol00
+#phrase YCF  3
+Wenn eine Schlange sich im Oktober sonnt – gibt es dann keinen Schnee mehr? Wenn ein Mann Euch seine Hilfe anbietet – heißt das, dass Menschen nichts Böses tun? Ein Spion der Wachen hat unseren alten Häuptling, den ehrenwerten Ältesten, den großen Habbura, entführt. Wir müssen ihn retten!
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  4
+Ich werde versuchen, euch zu helfen. Sagt mir, wo er jetzt ist.
+#CAMERA 3
+#phrase YCF  5
+Er ist in einem Land, das ein Mann namens Karansul als sein Eigen betrachtet. Wenn Ihr der aufgehenden Sonne entgegengeht, werdet Ihr die Wachen sehen, die hin festhalten. Die Mauern sind hoch und die Wachen sehr schlau. Aber wenn Ihr stark und geschickt seid, könnt Ihr uns Habbura zurückbringen!
+#CAMERA 11
+#phrase YCF  6
+Noch etwas: Falls eine schwarze Wolke die Sonne verdunkelt, falls das Böse triumphiert und Habbura stirbt, kommt zurück und berichtet uns davon. Bittere Worte der Wahrheit sind besser als viele Tage in falscher Hoffnung!

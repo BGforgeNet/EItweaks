@@ -1,0 +1,22 @@
+Frage nach der gefundenen Leiche
+#show Hero 1
+#show Magess 2
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  1
+Ich habe die Leiche des Gesandten gefunden. War es das, wovon Ihr spracht, als Ihr mich gewarnt habt?
+#ANIMATION 11
+#CAMERA 11
+#phrase Magess  2
+Mein lieber junger Mann, vergesst eines nicht: Ich warne nie. Ich sage nur wie die Dinge so sind.
+#show Hero 3
+#show DriadArrow00 3
+#show Magess 5
+#ANIMATION 32
+#CAMERA 2
+#phrase Hero  3
+Hiermit wurde er getötet!
+#ANIMATION 11
+#CAMERA 3
+#phrase Magess  4
+Nun, Menschen sind sterblich. Und manchmal wird ihnen diese Sterblichkeit ganz schnell zum Verhängnis.

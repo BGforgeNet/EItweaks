@@ -1,0 +1,14 @@
+Herrscher der Stadt des Todes
+Jemand kontrolliert die Stadt des Todes. Vielleicht ist es der mächtige Magier, den du aufsuchen solltest. Zumindest solltest du herausfinden, wo er lebt. Vergiss nicht, dass es praktisch unmöglich ist, die Stadt des Todes durch die großen Tore zu betreten: Ghouls bewachen sie so scharf, wie es in den alten Zeiten die Stadtwachen getan haben. Du kannst die Stadt durch einen Geheimgang betreten, aber um diesen zu öffnen, benötigst du ein Passwort.
+#subobj  1
+Finde einen Weg in die Stadt des Todes
+Es gibt einen geheimen Weg durch die Berge. Der Eingang befindet sich südlich der großen Tore. Der Anfang des geheimen Durchgangs wird durch zwei Türme markiert. Doch du musst das Passwort kennen, das im Buch verzeichnet ist, welches du im Observatorium gefunden hast.
+#subobj  2
+Benutze den nun offenen Durchgang
+Der geöffnete Durchgang bringt dich genau dorthin, wo du hin willst: in die Stadt des Todes.
+#subobj  3
+Finde den Einsamen Berg
+Laut unvollständigen Informationen lebt der Herrscher der Stadt des Todes auf dem Gipfel des Einsamen Berges, der sich im Tal befindet. Sei sehr wachsam, während du ihn suchst: Die Ghouls der Stadt des Todes leben in der Nähe der großen Tore!
+#subobj  4
+Besteige den Einsamen Berg
+Der Gipfel des Einsamen Berges scheint in der Tat der richtige Ort für den Herrscher der Stadt des Todes zu sein. Um dorthin zu gelangen, musst du dem gewundenen Weg bis zur Bergspitze folgen.

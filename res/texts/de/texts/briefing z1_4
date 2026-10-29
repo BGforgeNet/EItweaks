@@ -1,0 +1,16 @@
+Frage nach Hilfe beim Umgang mit Magie
+#show Hero 1
+#show Witch 2
+#ANIMATION 63
+#CAMERA 5
+#phrase Hero  1
+Estera, weißt du wirklich, wie man mit Runen neue Zaubersprüche erschafft? Ich weiß, wie man existierende Zaubersprüche verwendet, aber neue... Ich denke, nur den weisesten und erfahrensten Magiern ist dies möglich.
+#ANIMATION 11
+#CAMERA 11
+#phrase Witch  2
+Du verstehst es zu schmeicheln. Warum bittest du nicht einfach um Hilfe?
+#DESC (A bit mockingly)
+#ANIMATION 7
+#CAMERA 9
+#phrase Witch  4
+In Ordnung, tun wir einfach so, als hättest du mich darum gebeten. Hier ist meine Antwort: Ich mache dir die Zauber, die du willst, mein Guter - vorausgesetzt natürlich, dass du dafür zahlen kannst. Ich werde nicht so viel verlangen, wie Babur, aber erwarte keine Geschenke!

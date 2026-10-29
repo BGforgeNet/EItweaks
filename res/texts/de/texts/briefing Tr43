@@ -1,0 +1,15 @@
+Frage nach der gefundenen Leiche
+#show Hero 1
+#show Shopper 2
+#ANIMATION 62
+#CAMERA 11
+#phrase Shopper  1
+Ich sage ungern Schlechtes über Tote, aber er war selbst dran Schuld. Er hat jeden hier verärgert und sich in alles eingemischt. Ich wette alles, was ich in einem Jahr verdiene, dass er wegen seiner Neugier niedergestreckt wurde. 
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  2
+Er wurde von den Waldleuten getötet.
+#ANIMATION 44
+#CAMERA 11
+#phrase Shopper  3
+Dumm, was? Der Wald ist voller Leute, aber ausgerechnet ihn haben sie getötet. Was denkt Ihr, dass er getan hat, um die Waldleute gegen sich aufzubringen? Oder vielleicht hat er jemand anderen verärgert, hm?

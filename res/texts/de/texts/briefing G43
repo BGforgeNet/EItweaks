@@ -1,0 +1,92 @@
+Frage nach dem Pfeil
+#show Hero 1
+#show Huber 2
+#show Kapitan
+#ANIMATION 9
+#CAMERA 9
+#phrase Huber  1
+Seid gegrüßt,junger Mann! Euer Gesicht kommt mir bekannt vor… Oh ja, Tilvar hat mir von Euch berichtet! Ihr versucht, die Prinzessin zu finden und ich wünsche Euch von ganzem Herzen viel Glück dabei. Ich hätte sehr gerne… ihre nähere Bekanntschaft gemacht… Aber diese unseligen Entführer sind mir zuvorgekommen…
+#ANIMATION 11
+#CAMERA 3
+#phrase Huber  2
+Wie dem auch sei, der Hauptmann sagte mir, dass Ihr etwas anderes gefunden habt. Stimmt das?
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  3
+Ja. Ich habe die Tatwaffe, die bei dem Mord verwendet wurde…
+#ANIMATION 14
+#CAMERA 3
+#phrase Huber  4
+Mord?
+#ANIMATION 8
+#CAMERA 10
+#phrase Hero  5
+Die Waffe, mit der dieser Gesandte getötet wurde. Hier!
+#show Hero 3
+#show DriadArrow00 5
+#show Huber 5
+#ANIMATION 3
+#CAMERA 3
+#phrase Huber  7
+Oh, was für ein nettes, kleines Ding… Eine Pfeilspitze! Wundervolle Arbeit.
+#ANIMATION 6
+#CAMERA 2
+#phrase Hero  8
+Ich habe die Leiche im Wald in der Nähe der Farm gefunden…
+#ANIMATION 9
+#CAMERA 3
+#phrase Huber  9
+Was? Welche Leiche? Oh, nun… Erzählt das Tilvar, er soll sich darum kümmern. Ich bezahle ihn schließlich damit ich mir die ganzen schrecklichen Geschichten nicht selber anhören muss.
+#ANIMATION 14
+#CAMERA 3
+#phrase Huber  10
+Aber der Pfeil ist wirklich wunderschön. Obwohl… Oh, was für ein Jammer! Ich habe schon einen solchen in meiner Sammlung.
+#hide DriadArrow00
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  11
+Ähm, ja, Eure Sammlung ist sehr berühmt.
+#ANIMATION 63
+#CAMERA 3
+#phrase Huber  12
+Und aus gutem Grund. Ich habe viele sehr seltene Stücke gesammelt. Ich mag junge Männer, die den Älteren noch den nötigen Respekt zollen. Es wäre mir also eine Freude, Euch meine Stücke zu zeigen.
+#ANIMATION 9
+#CAMERA 11
+#phrase Huber  13
+Hier habe ich ein sehr seltenes Stück. Die Schleuder eines Goblins und das ist die Axt eines Orks. Habt Ihr schon mal einen Ork gesehen, junger Mann?
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  14
+Wer, ich? Nein, natürlich nicht!
+#ANIMATION 61
+#CAMERA 11
+#phrase Huber  15
+Dachte ich mir. Damals, zu meiner Zeit… In all diesen Schlachten… Hier einen getötet und dort einen niedergestreckt, meine Truppe befehligt…
+#show DriadArrow00 4
+#ANIMATION 62
+#CAMERA 9
+#phrase Huber  16
+Aber zurück zu unserem Pfeil…  Hmm… Aber was ist denn das? Wo ist mein Kästchen mit den Waffen der Waldleute?! Es war das Prachtstück meiner Sammlung! Diebstahl! Verrat!!! Bringt mir sofort Hauptmann Tilvar!
+#hide DriadArrow00
+#ANIMATION 15
+#CAMERA 4
+#phrase Kapitan  17
+Zu Ihren Diensten, Exzellenz.
+#ANIMATION 61
+#CAMERA 3
+#phrase Huber  18
+Was geschieht in meiner Provinz? In der Stadt werden Mädchen entführt, in den Wäldern werden Leute umgebracht und ich - ich! - werde in meinem eigenen Heim ausgeraubt!
+#ANIMATION 31
+#CAMERA 12
+#phrase Kapitan  19
+Wenn die gnädige Herrin Diera nicht darauf bestanden hätte, meine Leute, die Ihr Haus bewachen, gegen ihre magischen Fallen auszutauschen…
+#ANIMATION 43
+#CAMERA 3
+#phrase Huber  20
+Ich will Eure Ausflüchte nicht hören!! Hinfort und besorgt mir meine Sammlerstücke!
+#ANIMATION 30
+#NOLIPS
+#CAMERA 10
+#phrase Hero  21
+Wenn in dem Kästchen so ein Pfeil war, vielleicht war es dann der Dieb, der diesen Gesandten getötet hat? Ich muss den Dieb finden.
+#DESC To himself

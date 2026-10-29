@@ -1,0 +1,8 @@
+Schatz der Harpyien
+Harpyien können keine Gegenstände oder Waffen benutzen, aber wenn sie etwas finden, bringen sie es in die Nähe ihrer Nester.
+#subobj  1
+Finde den Schatz der Harpyie
+Harpyien bewahren ihre Funde normalerweise in der Nähe ihres Baues auf.
+#subobj  2
+Nimm den Schatz der Harpyie
+Du benötigst keinen Schlüssel, um die Truhe zu öffnen. Harpyien würden sowieso nicht wissen, wie man einen Schlüssel benutzt.

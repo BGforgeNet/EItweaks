@@ -1,0 +1,32 @@
+Mit neuem Hauptmann reden
+#show Hero 
+#show NSheriff 
+#CAMERA 9
+#phrase NSheriff  1
+Hm... offen gestanden weiß ich nicht, was ich sagen soll. Ich bin Rivar. Man nennt mich den Mächtigen. Man hat mich zum neuen Hauptmann ernannt. Und dem Ältesten schien das irgendwie einerlei zu sein, obwohl er weiß, dass ich nicht der geborene Kämpfer bin.
+#CAMERA 2
+#phrase Hero  2
+Nun, wenn du nicht weißt, was du sagen sollst, dann mache ich dir einen Vorschlag. Wie wär’s denn zum Beispiel mit 'Ich schwöre, dass ich dem Auserwählten niemals ein Leid antun und jeden, der das versucht, strengstens bestrafen werde!'
+#CAMERA 3
+#phrase NSheriff  3
+Ich schwöre, dass ich dem Auserwählten niemals ein Leid antun und jeden, der das versucht, strengstens bestrafen werde!
+#DESC Eager, happy, solemn
+#CAMERA 3
+#phrase NSheriff  4
+Na, das klingt aber gut! Ich hätte es nie so schön ausdrücken können, ich bin nämlich ein ziemlich armseliger Redner.
+#CAMERA 2
+#phrase Hero  5
+Das ist schon in Ordnung, du hast andere Talente. Schau dir doch nur mal deine Arme an! Ich wette, du bist der stärkste Mann im ganzen Dorf?
+#CAMERA 3
+#phrase NSheriff  6
+Ja, das stimmt wohl... Deshalb hat man mich wohl zum Hauptmann gewählt. Mein Vater war auch schon der Stärkste, und mein Großvater, und mein Urgroßvater… Wir haben ein Familiengeheimnis, die eigene Stärke zu verbessern. Ein geheimes Wort – man sagt es nicht laut, man flüstert es nur. Soll ich es dir zeigen? Soll ich es dir zuflüstern?
+#DESC Pretends to be modest but clearly with pride
+#CAMERA 2
+#phrase Hero  7
+Na gut, warum nicht, vielleicht funktioniert es ja!
+#CAMERA 2
+#phrase Hero  8
+Nun? Worauf wartest du denn noch?
+#CAMERA 3
+#phrase NSheriff  9
+Schon passiert! Du wirst den Unterschied merken! Aber danke mir nicht, sonst funktioniert es nicht mehr.

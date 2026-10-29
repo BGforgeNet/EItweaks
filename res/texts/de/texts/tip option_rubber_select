@@ -1,0 +1,5 @@
+Auswahlrahmen
+Legt die Strecke fest, die die Maus 
+bewegt werden muss, um einen 
+Auswahlrahmen zu öffnen. Der Wert 0
+deaktiviert den Auswahlrahmen.

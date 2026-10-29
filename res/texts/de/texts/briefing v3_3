@@ -1,0 +1,16 @@
+Frage nach den getöteten Goblins
+#show Hero 1
+#show Sheriff 2
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  1
+Na, das war doch gar nicht so schlecht, oder? Die Goblins werden sich nicht so bald wieder hierher trauen!
+#ANIMATION 14
+#CAMERA 5
+#phrase Hero  2
+Hey Gort, was ist? Freust du dich nicht?
+#ANIMATION 9
+#CAMERA 11
+#phrase Sheriff  3
+Sicher freue ich mich. Sehr sogar. Hurra, Hurra, hoch lebe der Auserwählte. Der Älteste sagt, du bekommst eine Belohnung. Wenn ich losgezogen wäre, würde ich die Belohnung kassieren. Jetzt kriegst du sie.
+#DESC Without any enthusiasm at all

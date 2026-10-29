@@ -1,0 +1,21 @@
+Frage nach der Transformation
+#show JunBoy
+#show Rick
+#show Deva
+#ANIMATION 32
+#CAMERA 5
+#phrase JunBoy  1
+Das ist also das Geheimnis meiner Vergangenheit? Die ganze Zeit habe ich nach... nach mir selber gesucht?
+#DESC (Amazed)
+#CAMERA 9
+#ANIMATION 6
+#phrase Rick  2
+So ist es! Auch Großmagier sind Menschen, und Menschen machen Fehler. Ich habe meinen Blick auf etwas weit, weit Entferntes gerichtet - und dabei das Naheliegende nicht gesehen. Für diesen Fehler kann es keine Entschuldigung geben…
+#ANIMATION 9
+#CAMERA 10
+#phrase JunBoy  3
+Warum verzweifelt Ihr, großer Tka-Rik? Ihr habt Euer Versprechen gegenüber Kiran eingehalten, und ihm seine Erinnerung zurückgegeben. Und er hat seine Mission erfüllt – hier bin ich, in Fleisch und Blut. Es ist alles in Ordnung, glaubt mir!
+#CAMERA 11
+#ANIMATION 6
+#phrase Rick  4
+Wahrscheinlich habt Ihr Recht. Und jetzt geht und sprecht mit Lu-a-Jalla! Sie sehnt sich nach Euch und glaubt, sie hat Kiran verletzt.

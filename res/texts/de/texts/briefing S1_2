@@ -1,0 +1,47 @@
+Frage nach den Dorfbewohnern
+#show Hero 1
+#show Elder 2
+#ANIMATION 9
+#CAMERA 9
+#phrase Elder  1
+Es ist mir ein Vergnügen, dem Auserwählten etwas über die Bewohner dieses Dorfes zu erzählen! Mich, den Ältesten Erfar, kennst du ja bereits. Ich habe einen Helfer, den Hauptmann namens Gort – ein sehr ehrbarer Mann. Er ist etwas unfreundlich, aber er führt meine Befehle bis auf den letzten Punkt genau aus.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  3
+Und was ist, wenn ich ihm einen Befehl gebe? Ich bin der Auserwählte, oder etwa nicht?
+#ANIMATION 11
+#CAMERA 11
+#phrase Elder  4
+Natürlich bist du das! Allerdings ist Gort… Also er, er ist nicht sonderlich intelligent. Er könnte dich möglicherweise falsch verstehen! Also sagst du mir besser, was du willst, und ich werde deine Wünsche dem Hauptmann übermitteln.
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  5
+Und wer hilft dir in Fragen der Magie?
+#ANIMATION 44
+#CAMERA 9
+#phrase Elder  6
+Das ist eine traurige Geschichte, Auserwählter. Wir hatten früher eine Hexe namens Estera hier im Dorf. Sie war eine bösartige und streitsüchtige alte Frau. Aber jetzt hat sie das Dorf verlassen und lässt seitdem nur noch ihre Enkelin Airy und ihre Schülerin in ihre Nähe. Diese armen Mädchen! Wenn ich mir vorstelle, was sie unter dieser Harpyie erleiden müssen, kommen mir die Tränen!
+#ANIMATION 46
+#CAMERA 7
+#phrase Elder  7
+Der Einzige, der noch schlimmer ist als Estera, ist Babur der Faustschwinger. Er ist ein gieriger und widerlicher Mensch. Er hat die Freijäger beleidigt, also war der Goblin-Überfall seine Schuld.
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  9
+Moment mal, was für Jäger sind das? Und wie kann Babur für den Goblin-Überfall verantwortlich sein?
+#ANIMATION 9
+#CAMERA 11
+#phrase Elder  10
+Die Freijäger leben in der Wäldern in der Nähe des Dorfes. Normalerweise kümmern sie sich um die Angriffe der Goblins. Vor kurzem haben ein paar von ihnen einigen Tand aus der Werkstatt des Handwerkers gestohlen – nicht aus Gier, sondern einfach nur so aus Spaß.
+#ANIMATION 11
+#CAMERA 3
+#phrase Elder  11
+Aber unser Faustschwinger hat die ganze Sache aufgebauscht und ist zu den Jägern gegangen, um seinen Kram zurückzufordern! Der Anführer war so verärgert, dass er den Feind nicht rechtzeitig bemerkte und die Goblins unser Dorf überfallen konnten. Und so stand unser Dorf am Rande des Untergangs – und das alles nur wegen der Gier dieses Handwerkers!
+#ANIMATION 3
+#CAMERA 6
+#phrase Hero  12
+Ich verstehe… Sind das alle, von denen du mir berichten wolltest?
+#ANIMATION 31
+#CAMERA 11
+#phrase Elder  13
+Eigentlich schon. Natürlich sind auch die einfachen Dorfbewohner bereit, den Auserwählten zu unterstützen, aber ich glaube, dass ihre Hilfe dir kaum von Nutzen sein wird.

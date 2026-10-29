@@ -1,0 +1,35 @@
+Frage nach den vermissten Kindern
+#show Hero 3
+#show Kuzn 5
+#ANIMATION 61
+#CAMERA 1
+#phrase Kuzn  1
+Ich weiß nichts über Joons - das ist alles viel zu lange her. Ich habe immer gedacht, sie existieren nur in Märchen. Wenn du einen rothäutigen jungen Mann suchst, gehst du am besten zum Kerker – die Wachen hier mögen keine Leute, die irgendwie anders aussehen!
+#ANIMATION 62
+#CAMERA 3
+#phrase Kuzn  2
+Es wäre gar nicht so schlecht, wenn du dabei gleich noch einige von den Wachen erledigst. Und es wäre sogar noch besser, wenn es zufällig auch Peitschen-Aga und Prügel-Aga träfe. Eigentlich hätte ihre Mutter schon sterben müssen, bevor sie ihren Vater traf!
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  3
+Seltsame Namen!
+#ANIMATION 61
+#CAMERA 7
+#phrase Kuzn  4
+Es sind Spitznamen, die ihnen die Leute gaben – du kannst dir bestimmt vorstellen, warum. Ich habe noch eine alte Rechnung mit ihnen zu begleichen... eine ganz alte Rechnung. Wenn ich mich nicht hier verstecken müsste, hätte ich schon längst jemanden gefunden, der meine Rechnung begleichen kann. Aber dich kann ich doch darum bitten, oder?
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  6
+Du kannst mich bitten, aber ich kann dir nicht versprechen, dass ich es tun werde!
+#ANIMATION 44
+#CAMERA 3
+#phrase Kuzn  7
+Du musst mir nichts versprechen. Ich habe mich sowieso schon lange nicht mehr darum gekümmert... Ich werde dir erklären, wie du die beiden findest. Und du entscheidet dann, ob du dich um sie kümmerst oder nicht.
+#ANIMATION 62
+#CAMERA 11
+#phrase Kuzn  8
+Im Augenblick quälen diese Hunde die Arbeiter auf den Plantagen nordwestlich der Stadt. Einer der beiden beaufsichtigt die inneren Plantagen, der andere den südlichen Teil. Die Gegend ist leicht an den Bewässerungskanälen zu erkennen.
+#ANIMATION 14
+#CAMERA 9
+#phrase Kuzn  9
+Finde die beiden und töte sie! Niemand wird sie vermissen und ich wäre dir auf ewig dankbar.

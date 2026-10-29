@@ -1,0 +1,52 @@
+Treffen mit der Hexe
+#show Hero 1
+#show Witch 2
+#ANIMATION 61
+#CAMERA 9
+#phrase Witch  1
+Hey du! Wie hast du es geschafft, hierher zu kommen? Und was willst du, hä? Verschwinde, bevor ich dich in eine Kröte verwandle!
+#ANIMATION 3
+#CAMERA 6
+#phrase Hero  2
+Nun, wenn du kein Interesse an einem magischen Gegenstand hast, dann gehe ich wieder!
+#show CryptRune00 5
+#ANIMATION 9
+#CAMERA 3
+#phrase Witch  3
+Hey, hey, nicht so schnell... Oh je, da ist aber jemand empfindlich! Schluß jetzt, verstanden? Natürlich bin ich interessiert! Ich denke, ich könnte einen Gast willkommen heißen, der ein solches Geschenk für mich hat.
+#hide CryptRune00
+#show Hero 1
+#show Witch 2
+#ANIMATION 11
+#CAMERA 11
+#phrase Witch  4
+Und übrigens … Wer bist du eigentlich? Ich kann mich nicht entsinnen, dich schon einmal gesehen zu haben, du kommst nicht aus dem Dorf, oder?
+#ANIMATION 32
+#CAMERA 10
+#phrase Hero  5
+Ich bin der Auserwählte! Ich wurde von göttlichen Mächten geschickt, um die Bevölkerung Gipaths zu beschützen!
+#DESC (Histrionically)
+#ANIMATION 62
+#CAMERA 7
+#phrase Witch  6
+Da ist aber einer stolz auf sich! Wem versuchst du denn hier etwas vorzumachen? Erzähl mir keine Geschichte vom 'Auserwählten', ich durchschaue dich. Du hast einen weiten Weg vor dir, mein Junge, du verspürst eine Menge Kummer und in deiner Vergangenheit... in deiner Vergangenheit... Verflucht! Ich kann nicht sehen, was in deiner Vergangenheit geschehen ist!
+#ANIMATION 46
+#CAMERA 5
+#phrase Hero  7
+Ich leider auch nicht. Ich kann mich einfach nicht daran erinnern.
+#ANIMATION 9
+#CAMERA 9
+#phrase Witch  8
+Danke, das beruhigt mich. Ich dachte schon, ich werde zu alt und es sei Zeit für mich, zu sterben.
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  9
+Du bist doch gar nicht alt! Ich würde sagen, du stehst in der Blüte deines Lebens!
+#ANIMATION 63
+#CAMERA 3
+#phrase Witch  10
+Ich weiß, dass du lügst, aber trotzdem höre ich diese Lügen gerne. Und du bist ein netter Bursche, höflich und gut aussehend - nicht so, wie die Flegel aus dem Dorf. Du kannst gerne jederzeit wieder vorbeikommen, ich würde mich freuen...
+#ANIMATION 30
+#CAMERA 9
+#phrase Witch  11
+Ich frage mich ja, warum ich heute so nett bin... Ich wette, es fängt bald an zu regnen!

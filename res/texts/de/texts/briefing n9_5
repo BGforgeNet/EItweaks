@@ -1,0 +1,11 @@
+Rinas will nicht Vierter sein
+#show Hero 
+#show Merc5
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  1
+Rinas, möchtest du dich der Gruppe anschließen und ein bisschen durch's Land ziehen?
+#ANIMATION 43
+#CAMERA 3
+#phrase Merc5  2
+Drei ist eine Glückszahl, aber vier leider ganz und gar nicht. Ich will nicht die Nummer vier sein!

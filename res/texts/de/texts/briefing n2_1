@@ -1,0 +1,15 @@
+Raubein in Dorf lassen
+#show Hero 1
+#show Merc1 2
+#ANIMATION 9
+#phrase Hero  1
+Es tut mir leid, aber diesmal wirst du hier bleiben müssen.
+#ANIMATION 45
+#phrase Merc1  2
+Warum?
+#ANIMATION 45
+#phrase Hero  3
+Weil ich das so sage! Reicht dir das nicht?
+#ANIMATION 15
+#phrase Merc1  4
+Ja... Aber falls du mich brauchen solltest, bin ich hier im Dorf!

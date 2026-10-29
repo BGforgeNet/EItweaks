@@ -1,0 +1,11 @@
+Tut mir leid, aber ich bin im Moment beschäftigt.
+#show Hero
+#show Merc3
+#ANIMATION 31
+#CAMERA 7
+#phrase Merc3  1
+Ich kämpfe gern an deiner Seite, Auserwählter! Aber ich habe vorher im Dorf noch dringende Geschäfte zu erledigen.
+#ANIMATION 15
+#CAMERA 3
+#phrase Merc3  2
+Erst wenn ich meine Aufgaben im Dorf erledigt habe, kann ich mit dir kommen. Natürlich nur, wenn du es auch willst.

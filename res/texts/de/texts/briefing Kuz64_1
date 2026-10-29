@@ -1,0 +1,15 @@
+Frage nach der Arbeit des Schmieds
+#show Hero 3
+#show Kuzn 5
+#ANIMATION 9
+#CAMERA 9
+#phrase Kuzn  1
+Meine Geschichte ist schnell erzählt. Mich hat ein Geldverleiher über's Ohr gehauen: Einen Tag, nachdem ich mir Geld geliehen hatte,  brannte meine Schmiede lichterloh! Ich bin nur deshalb kein entflohener Sklave, weil ich schon geflüchtet war, bevor sie mich versklaven konnten.
+#ANIMATION 62
+#CAMERA 3
+#phrase Kuzn  2
+Manche Händler im Ort verkaufen mir noch etwas, so dass wir hier nicht ganz unbewaffnet sind. Selbstverständlich müssen wir all diese Sachen mit Gold teuer bezahlen – aber ich fürchte, in unserer Situation kann man nicht wählerisch sein. 
+#ANIMATION 44
+#CAMERA 11
+#phrase Kuzn  3
+Auch du musst mich bezahlen, damit ich das Material und die Zauber von Bruder Kehel kaufen kann.

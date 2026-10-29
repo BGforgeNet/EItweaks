@@ -1,0 +1,11 @@
+Frage nach dem Diebstahl im Haus des Gouverneurs
+#show Hero 1
+#show Kapitan 2
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  1
+Hauptmann!! Wird der Gouverneur eine Belohnung für das gestohlene Kästchen zahlen?
+#ANIMATION 11
+#CAMERA 11
+#phrase Kapitan  2
+Vielleicht, aber Ihr werdet diese Belohnung nicht bekommen, junger Mann. Ich würde es nicht gerne sehen, wenn der Gouverneur herausfindet, dass andere Leute meine Arbeit besser verrichten können, als ich.

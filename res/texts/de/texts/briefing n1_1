@@ -1,0 +1,13 @@
+Raubein mitnehmen
+#show Hero 
+#show Merc1
+#ANIMATION 9
+#phrase Merc1  1
+Ahh, Auserwählter, das Leben hier ist langweilig geworden, kein einziger anständiger Kampf! Es gibt niemanden im Dorf, mit dem man sich richtig prügeln kann…
+#ANIMATION 15
+#phrase Hero  2
+Gut, Rauhbein, ich glaube, ich kann dir etwas bieten, was dir gefallen wird!
+#ANIMATION 3
+#phrase Merc1  3
+Na endlich! Das hört sich gut an! Ich werde am Tor auf dich warten!
+#DESC Delighted and happy

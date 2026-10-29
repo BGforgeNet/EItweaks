@@ -1,0 +1,11 @@
+Frage nach dem vermissten Mädchen
+#show Hero 1
+#show Magess 2
+#ANIMATION 9
+#CAMERA 3
+#phrase Magess  1
+Prinzessin? Dieses dürre Etwas mit roter Haut? Ich weiß nichts über sie und will es auch nicht wissen – es interessiert mich einfach nicht. Und übrigens, junger Mann… Ihr seht nicht aus wie einer dieser Dummköpfe aus einem der Dörfer. Daher werde ich, Zauberin Diera, Euch einen Rat geben. Einfach so, weil ich Euch mag: Das Verbleiben des verschwundenen Mädchens sollte Euch auch nicht weiter interessieren.
+#ANIMATION 45
+#CAMERA 11
+#phrase Magess  2
+Vor kurzem ist schon jemand, der zu neugierig war, verschwunden. Vielleicht ist er gestorben, vielleicht hat er sich in den Wäldern verirrt… Denkt darüber nach, junger Mann. Und viel Glück!

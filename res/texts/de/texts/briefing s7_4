@@ -1,0 +1,30 @@
+Frage nach der Magischen Kugel
+#show Hero 1
+#show Elder 2
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  1
+Erfar! Ich würde gerne hören, was du über die magische Kugel weißt. Du musst dich daran erinnern, mir wurde versichert, dass du derjenige bist, der die Antworten auf alle Fragen kennt.
+#ANIMATION 29
+#CAMERA 9
+#phrase Elder  2
+Natürlich erinnere ich mich an die Kugel. Aber das war vor langer Zeit und es ist wirklich eine sehr lange Geschichte...
+#ANIMATION 15
+#CAMERA 6
+#phrase Hero  3
+Das ist mir egal, ich habe es nicht eilig. Erzähle es mir einfach und rede nicht drum herum.
+#ANIMATION 9
+#CAMERA 11
+#phrase Elder  4
+Nun, wir haben mal einen Goblin gefangen genommen und es stellte sich heraus, dass es sich um den Lakaien des Ork-Sehers handelte. Goblins sind dumme Kreaturen. Es war also schwer, irgendwas Verständliches aus ihm herauszubekommen.
+#ANIMATION 44
+#CAMERA 3
+#phrase Elder  5
+Ich habe nur verstanden, dass sich die magische Kugel auf einem Altar irgendwo auf der südlichsten Insel befindet. Und anscheinend ist sie für die Orks sehr wertvoll, deswegen wird die Insel stark bewacht. Tut mir leid, Auserwählter, aber wenn du erwogen hast, in den Besitz der Kugel zu gelangen, muss ich dich leider enttäuschen: Die Straße zu den entfernten Inseln ist so gefährlich, dass sogar du es nicht riskieren solltest!
+#hide Elder 
+#show Hero 4
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  7
+Hauptsache, ich bekomme ein Zahnrad für die Brücke, die zu den Inseln führt. Wie ich den Altar erreiche, ist mein Problem! 
+#DESC To himself

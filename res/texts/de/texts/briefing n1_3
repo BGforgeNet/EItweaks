@@ -1,0 +1,15 @@
+Naya mitnehmen
+#show Hero 1
+#show Merc3 2
+#ANIMATION 45
+#CAMERA 6
+#phrase Hero  1
+Nun, Naya, du hast gehört, was Estera gesagt hat... Sie hat doch recht, oder? Bist du wirklich bereit, für ein Abenteuer?
+#ANIMATION 3
+#CAMERA 3
+#phrase Merc3  2
+Tss! Estera hat vergessen zu erwähnen, dass ich schon seit langem für sie jage. Ich weiß, wie ich streunende Goblins loswerde, und ich habe auch schon mit Orks Bekanntschaft gemacht. Wenn du also meine Hilfe akzeptieren willst, dann mach' dir keine Sorgen: Ich werde keine Belastung für dich sein.
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  30
+In Ordnung. Bleib in der Nähe! Wir brechen bald auf.

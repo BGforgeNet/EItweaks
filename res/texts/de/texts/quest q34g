@@ -1,0 +1,14 @@
+Rückgabe des Flusses an die Echsen
+Die Orks haben die Quelle mit einem Damm in ihre Richtung umgeleitet. Ihr müsst den Damm beseitigen und den Kanal blockieren.
+#subobj  1
+Der Damm
+Gehe am östlichen Flussufer, das in der Nähe des Echsen Eremits beginnt, entlang nach Süden, um den Damm zu finden. Er liegt kurz hinter der Stelle, an der die kleine Quelle in den Fluss fließt (auf der östlichen Seite).
+#subobj  2
+Hebe den Damm
+Damit das Wasser wieder durch den Fluss fließen kann, musst du den Damm mit dem Heber der Echsen anheben.
+#subobj  3
+Finde den Stein
+Ein großer Stein, den die Orks nicht fortbewegen konnten, hängt teilweise über dem Kanal. Er befindet sich ein Stück flussaufwärts, hinter dem Damm. Wenn du ihn in den Kanal stößt, wird dieser blockiert.
+#subobj  5
+Stoße den Stein in den Kanal
+Die Orks haben den Stein nicht weit vom Rand des Kanals weggeschoben, sondern ließen ihn dort liegen, wo ein einzelner Mann ihn herunterstoßen kann.

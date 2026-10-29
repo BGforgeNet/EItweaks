@@ -1,0 +1,87 @@
+Frage nach den gestohlenen Aufzeichnungen
+#show Hero 1
+#show Shopper 2
+#ANIMATION 11
+#CAMERA 11
+#phrase Shopper  1
+Ihr schon wieder?! Ich weiß nichts über die Prinzessin! Ihr braucht gar nicht erst zu fragen!
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  2
+Deswegen bin ich auch nicht gekommen. Ich möchte Euch eine Geschichte erzählen.
+#ANIMATION 43
+#CAMERA 11
+#phrase Shopper  3
+Seid Ihr verrückt geworden? Ich bin ein Geschäftsmann und für mich ist Zeit Geld. Was für eine Geschichte?! Ihr müsst zu viele von diesen seltsamen Pilzen gegessen haben...
+#ANIMATION 44
+#CAMERA 10
+#phrase Hero  4
+Hört mir zu, es wird nicht lange dauern! Es war einmal ein angesehener Kaufmann. Dieser Kaufmann aber war unehrlich und betrog seinen Gouverneur. Alles lief ohne Probleme, bis eines Tages...
+#ANIMATION 45
+#CAMERA 11
+#phrase Shopper  5
+Ich weiß nicht, wovon Ihr redet, junger Mann. Was für ein Betrug?
+#ANIMATION 9
+#CAMERA 10
+#phrase Hero  6
+Bis eines Tages der Kaufmann einige seiner Geschäftsbücher verlor... Bücher, in denen alle seine schmutzigen Tricks schwarz auf weiß verzeichnet waren.
+#ANIMATION 15
+#CAMERA 11
+#phrase Shopper  7
+Und was passierte dann?
+#ANIMATION 61
+#CAMERA 10
+#phrase Hero  8
+Ein Mann kam zu dem Kaufmann und sagte: „Wenn Ihr Eure Unterlagen zurückwollt, dann sagt mir, was ich wissen will“. Aber der Kaufmann war dumm – er schenkte dem Mann keinen Glauben. Und so gelangten die Unterlagen noch am selben Tag in die Hände des Gouverneurs...
+#ANIMATION 62
+#CAMERA 11
+#phrase Shopper  9
+Das ist eine interessante Geschichte. Aber seid Ihr sicher, dass Ihr nicht noch etwas vergessen habt? Gab es da nicht noch den Teil mit dem Mann, der auf einmal gesundheitliche Probleme hatte? Wir leben in schwierigen Zeiten, wisst Ihr? So viele Dinge passieren...
+#ANIMATION 63
+#CAMERA 2
+#phrase Hero  10
+Oh, diese Geschichte kann man auf verschiedene Weise erzählen. Es gibt auch ein trauriges Ende, bei dem der Mann wirklich in ernste Schwierigkeiten gerät. Allerdings hat in dem Fall der Gouverneur dann immer noch die Unterlagen – da der Mann sie ja schließlich nicht mit sich herumträgt.
+#ANIMATION 11
+#CAMERA 3
+#phrase Shopper  11
+Immer dasselbe: Gouverneur, Gouverneur. Ich mag solche Geschichten nicht. Sie sind traurig und langweilen mich. Warum erzählt Ihr mir nicht etwas Fröhlicheres?
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  12
+Dafür müsste ich zuerst etwas von Euch hören.
+#ANIMATION 46
+#CAMERA 11
+#phrase Shopper  13
+In Ordnung, fragt! Ich möchte, dass die Geschichte gut ausgeht.
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  14
+Verratet mir, wer Valrasian ausgeraubt hat, und wo die Beute ist!
+#ANIMATION 45
+#CAMERA 11
+#phrase Shopper  15
+Woher soll ein ehrlicher Mann wie ich so etwas wissen? Aber es gab ein Gerücht, wonach ein Dieb namens Flein, die Leute nennen ihn „den Kahlen“, seinen Besitz auf unerklärliche Weise vermehrt hat...
+#ANIMATION 11
+#CAMERA 10
+#phrase Hero  16
+Gut. Was gibt es sonst noch?
+#ANIMATION 62
+#CAMERA 3
+#phrase Shopper  17
+Was wollt Ihr denn noch wissen? Er lebt auf einer Farm im Land der verlassenen Minen, direkt am westlichen Ufer des Sees. Seine Familie ist...wie soll ich das sagen...ist irgendwie unerträglich. Sie besitzen eine Art Zoo, in dem sie Tiger zähmen. Dementsprechend haben sie vor niemandem Angst.
+#ANIMATION 61
+#CAMERA 11
+#phrase Shopper  18
+Diesen Leuten muss man alles zutrauen! So oft habe ich dem Alten schon angeboten, mit seinen Tigern als Wache bei den Minen zu arbeiten. Aber er hat es abgelehnt. Er sagt, er sei kein Sklave. Und der Kahle ist der Experte der Familie, wenn es um Einbruch geht. Dieses Mal hat er es gewagt und ist in das Haus des Gouverneurs eingebrochen. Seine Exzellenz war außer sich... 
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  19
+Wenn Euch die Sache so nahe geht, verratet mir doch, wo die Beute ist!
+#ANIMATION 45
+#CAMERA 11
+#phrase Shopper  20
+Auf der Farm natürlich, wo sonst? Wahrscheinlich wurde sie in irgendeiner Scheune versteckt.
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  21
+Vielen Dank für Eure Hilfe. Und richtet Flein aus, dass ich mit ihm reden will. Vereinbart ein Treffen und Ihr werdet das Ende meiner Geschichte hören. Das glückliche Ende.

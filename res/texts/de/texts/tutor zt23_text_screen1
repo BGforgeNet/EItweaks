@@ -1,0 +1,5 @@
+     Charaktere können nicht schwimmen, aber durch seichtes Wasser oder Sümpfe waten. Das Wasser darf nicht tiefer sein als der Charakter groß ist, da er sonst ertrinken würde. Das heißt, dass ein Mensch durch tieferes Wasser laufen kann als ein Wolf, und dass ein Troll durch tieferes als ein Mensch.
+
+     Beispiel: Dein Charakter kommt an einen Fluss. Um deine Aufgabe zu erfüllen, muss dein Charakter aber auf die andere Seite des Flusses. Keine Sorge - er wird den Weg schon alleine finden und durch den Fluss waten.
+
+     Hinweis: Während sich ein Charakter im Wasser befindet, wird er seine Position nicht so ändern, dass sein Kopf unter Wasser geraten würde. Der Charakter wird sich einfach weigern, einen solchen Befehl auszuführen.

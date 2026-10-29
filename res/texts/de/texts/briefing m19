@@ -1,0 +1,8 @@
+Frage nach den Anweisungen, den Auserwählten zu töten
+#show Hero 3
+#show Manual 4
+#show Smith 5
+#ANIMATION 29
+#CAMERA 1
+#phrase Smith  1
+Ich habe dich gewarnt! Das wurde von Hauptmann Gort geschrieben und der Älteste hat es ihm mit Sicherheit diktiert!

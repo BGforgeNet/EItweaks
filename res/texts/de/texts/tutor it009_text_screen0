@@ -1,0 +1,6 @@
+     Um im Menü "Herstellung von Gegenständen" einen neuen Gegenstand bauen zu können, brauchst du genug Material und einen Entwurf. Das Material hängt natürlich vom Entwurf ab, so ist es z.B. nicht möglich, einen Steinspeer mit einer Vorlage für einen Knochenspeer zu fertigen.
+
+     Entweder du benutzt zur Herstellung vorhandene Entwürfe und Material oder du kaufst beides (Option "kaufen/verkaufen") beim Händler.
+     Wenn du den Mauszeiger auf eines der Herstellungsfelder bewegst, wird rechts im Bild eine Beschreibung angezeigt.
+
+     Verfügbare Felder sind von einem blinkenden Rahmen umgeben. Zur Herstellung musst du dort einen Entwurf platzieren. Legst du dort einen Gegenstand ab, wird dieser zerlegt. Die Herstellung/Zerlegung von Gegenständen wird in einem eigenen Hilfetext ausführlicher behandelt.

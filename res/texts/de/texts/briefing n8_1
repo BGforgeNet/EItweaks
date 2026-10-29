@@ -1,0 +1,19 @@
+Treffen mit dem Soldaten
+#show Hero 1
+#show Merc1 2
+#ANIMATION 9
+#phrase Merc1  1
+Auserwählter, nimmst du mich mit, wenn du das nächste Mal Goblins verprügelst? Oder sonst jemanden? Mir ganz egal, wen!
+#DESC A bit embarrassed
+#ANIMATION 45
+#phrase Hero  2
+Hm... Wer bist du überhaupt?
+#ANIMATION 9
+#phrase Merc1  3
+Gort und ich waren dicke Freunde. Ich war unter seinem Kommando, bis ich ihn in einem Streit beleidigt habe... Jetzt sind wir keine Freunde mehr. Deswegen habe ich im Moment auch nicht viel zu tun.… Aber ich kann immer noch mit einer Axt umgehen!
+#ANIMATION 45
+#phrase Hero  4
+Wie heißt du?
+#ANIMATION 3
+#phrase Merc1  5
+Mein Name ist Khador, aber alle nennen mich Rauhbein. Denk drüber nach. Wenn es Ärger gibt, dann bin ich dein Mann!

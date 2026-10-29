@@ -1,0 +1,21 @@
+Der Älteste ist ein Verräter!
+#show NSheriff
+#show Hero
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  1
+Hör mal, ich möchte etwas sehr Ernstes mit dir besprechen. Nehmen wir an, ich bitte dich um etwas und der Älteste bittet dich um etwas völlig anderes - was tust du dann?
+#DESC Quietly, very seriously
+#ANIMATION 9
+#CAMERA 3
+#phrase Nsheriff  2
+Da muss ich nicht lange überlegen. Du bist der Auserwählte, und bis jetzt hast du wohl alles richtig gemacht. Und der Älteste...ehrlich gesagt, finde ich ihn ein bisschen merkwürdig. Er etwas mit den Banditen zu tun, als nächstes diese Sache mit dem gestohlenen Gold, dann erweist sich sein Kommandant als Verräter. Mit einem Wort, ich traue ihm nicht. Oder habe ich jetzt etwas Falsches gesagt? 
+#DESC Still quietly and seriously. At the end a bit frightened: what if he said something stupid? After it's the Elder, such an important man...
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  3
+Nein, du hast mit allem Recht. Und jetzt weiß ich, dass der Älteste mehrfach versucht hat, mich zu töten. Und deswegen werde ich ihn öffentlich anklagen.
+#ANIMATION 6
+#CAMERA 9
+#phrase Nsheriff  4
+Ich verstehe... ich dachte mir doch, dass in unserem Dorf etwas faul ist! Sorge dich nicht, Auserwählter. Ich bin auf deiner Seite. Du kannst auf mich und meine Leute zählen!

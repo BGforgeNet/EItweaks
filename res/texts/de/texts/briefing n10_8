@@ -1,0 +1,19 @@
+Fairakh aus Gruppe entlassen
+#show Hero 
+#show Merc8
+#CAMERA 7
+#ANIMATION 15
+#phrase Merc8  1
+Lebewohl, Kiran. Es war mir ein Vergnügen, dich zu begleiten, obwohl es ziemlich gefährlich war.
+#CAMERA 6
+#ANIMATION 45
+#phrase Hero  2
+Möchtest du vielleicht hier in Gipath bleiben, Fairakh?
+#CAMERA 7
+#ANIMATION 45
+#phrase Merc8  3
+Und was würde ich in diesem armen, barbarischen Land anfangen? Wer würde meine magische Kunst zu schätzen wissen? Nein, ich bin hier gut aufgehoben. Lebewohl.
+#CAMERA 6
+#ANIMATION 15
+#phrase Hero  4
+Lebewohl, Fairakh. Du hast mir sehr geholfen und ich bin dir und deiner Kunst sehr dankbar.

@@ -1,0 +1,69 @@
+Frage nach der gefundenen Leiche
+#show Hero 1
+#show Trapper 2
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  1
+Ich habe die Leiche eines Mannes gefunden, und es sieht so aus, als wäre es die des Gesandten aus der Hauptstadt. Seht, das hat ihn getötet…
+#show Hero 3
+#show DriadArrow00 5
+#show Trapper 5
+#ANIMATION 61
+#CAMERA 11
+#phrase Trapper  2
+Meine Güte! Die Waldleute verschießen solche Pfeile aus ihren Blasrohren! Und man kann immer feststellen, wessen Pfeil das ist - jeder Stamm hat seine eigenen Farben und Zeichen!
+#hide DriadArrow00
+#show DriadArrow00 3
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  3
+Was für Waldleute? Da, wo ich herkomme, habe ich nie von ihnen gehört!
+#hide DriadArrow00
+#show DriadArrow00 5
+#ANIMATION 62
+#CAMERA 3
+#phrase Trapper  4
+Man lernt eben nie aus, Junge! Ich dachte, sie seien in ganz Ingos bekannt, aber anscheinend doch nicht… Kurz gesagt, es handelt sich um eine Art kleiner Menschen, die in den Wäldern wohnen. Ich sehe sie oft und ich kenne sogar einige von ihnen. Ich werde dir mehr über sie erzählen, wenn du willst. Erinnere mich später noch mal daran.
+#hide DriadArrow00
+#show DriadArrow00 3
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  5
+Das werde ich. Kannst du mir in der Zwischenzeit mehr über diesen Pfeil sagen? Zu welchem Stamm gehört er?
+#hide DriadArrow00
+#show DriadArrow00 5
+#ANIMATION 61
+#CAMERA 11
+#phrase Trapper  6
+Das Problem ist - ich kann diese Zeichen auf den Pfeilen nicht deuten! Da können dir nur die Waldleute helfen. Aber ich werde dir sagen, wie du diese Hilfe bekommst.
+#hide DriadArrow00
+#show Hero 1
+#show Trapper 2
+#ANIMATION 63
+#CAMERA 3
+#phrase Trapper  7
+Hauptmann Tilvar sucht schon seit langem einen Vorwand, um gegen die Waldleute vorzugehen und nun hast du einen Mann gefunden, der durch einen ihrer Pfeile getötet wurde. Die Wachen würden mit Sicherheit eine Strafexpedition schicken! Also wäre es im Interesse der Waldleute herauszufinden, welcher Stamm dafür verantwortlich ist.
+#ANIMATION 44
+#CAMERA 2
+#phrase Hero  8
+Du meinst also, ich soll zu ihnen gehen und sie irgendwie dazu bringen, mit mir zu reden? Ist das überhaupt möglich?
+#ANIMATION 62
+#CAMERA 11
+#phrase Trapper  9
+Ja, aber du wirst dein Leben riskieren müssen, um das zu erreichen. Weißt du, die Waldleute haben mehrere Clans, die ständig miteinander in Fehde liegen. Der Weiße Clan hat vor kurzem sogar den Bewahrer des Grünen Clans entführt und hält ihn nun gefangen.
+#ANIMATION 61
+#CAMERA 3
+#phrase Trapper  10
+Jeder Clan hat seine eigene Heilige Blume – sie sind für sie wie Flaggen für unsere Armeen. Und die Bewahrer passen auf sie auf. Wenn du also den Bewahrer des Grünen Clans befreist, wird er dir die Heilige Blume geben, damit du sie zum Clan bringst. Danach wird ihr Anführer mit dir reden müssen!
+#ANIMATION 3
+#CAMERA 2
+#phrase Hero  11
+Ausgezeichnet! Sag mir, wo ich den Bewahrer finden kann!
+#ANIMATION 63
+#CAMERA 11
+#phrase Trapper  12
+Hör gut zu, Junge. Wenn du aus der Stadt rauskommst, halte dich Richtung Westen, am See vorbei. Wenn du das Gefängnis findest, wo der Bewahrer festgehalten wird, musst du zuerst die Falle entschärfen! Der Seher des Weißen Clans hat das Blatt eines Immergrüns - nimm es und lege es auf den Altar, der vor dem Gefängnis steht. Na ja, die Waldleute nennen es Altar, aber ich finde, es sieht eher aus wie ein vermoderter Baumstumpf, auf dem Pilze wachsen.
+#ANIMATION 44
+#CAMERA 3
+#phrase Trapper  14
+Nachdem du die Heilige Blume bekommen hast, gehst du zum Grünen Clan! Der Weg dorthin ist nicht schwer zu finden: Gehe, von der Stadt aus gesehen, Richtung Süden. Ihr Anführer heißt Graues Blatt, ich kenne ihn.

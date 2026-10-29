@@ -1,0 +1,9 @@
+Fairakh wieder mitnehmen
+#show Hero 3
+#show Merc8 5
+#ANIMATION 45
+#phrase Hero  1
+Bruder Fairakh, könntest du mich begleiten? Unsere Feinde da draußen langweilen sich wahrscheinlich ohne deine Magie!
+#ANIMATION 15
+#phrase Merc8  2
+Ich langweile mich ebenfalls! Natürlich werde ich dich begleiten.

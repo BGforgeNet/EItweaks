@@ -1,0 +1,32 @@
+Frage nach dem blauen Kristall
+#show Hero 3
+#show LeftCrystal 4
+#show Witch 5
+#ANIMATION 9
+#CAMERA 1
+#phrase Witch  1
+Du bist aber eifrig! Ich habe nur nach einem grünen Kristall gefragt, aber du hast mir auch einen blauen gebracht, obwohl ich den für den Eiszauber nicht brauche.
+#ANIMATION 3
+#CAMERA 5
+#phrase Hero  2
+Was soll ich jetzt damit machen? Ihn wegwerfen?
+#hide LeftCrystal
+#show LeftCrystal 5
+#ANIMATION 61
+#CAMERA 11
+#phrase Witch  3
+Oh nein. Man braucht ihn zwar nicht für diesen Zauber, aber er wird bei einem anderen Zauber sehr nützlich sein. Ich werde ihn dir abkaufen.
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  4
+Und was wirst du damit machen?
+#ANIMATION 32
+#CAMERA 7
+#phrase Witch  5
+Oh, das ist ein Geheimnis! Ich werde es nicht einmal dir verraten!
+#CAMERA 11
+#ANIMATION 30
+#NOLIPS
+#phrase Witch  6
+Ich kann mich überhaupt nicht mehr daran erinnern, wozu diese Kristalle verwendet werden! Aber das konnte ich ihm ja schliesslich nicht verraten, oder? Vielleicht fällt es mir ja eines Tages wieder ein...
+#DESC To herself

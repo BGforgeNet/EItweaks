@@ -1,0 +1,11 @@
+Harad in Zuflucht lassen
+#show Hero 3
+#show Merc7 5
+#CAMERA 2
+#ANIMATION 9
+#phrase Hero  1
+Bleib besser hier. Für die Erfüllung meiner Mission kommt es mehr auf Unauffälligkeit denn auf Stärke an. Nimm es mir nicht übel, aber du bist nicht besonders bewandert darin unentdeckt zu bleiben, oder?
+#CAMERA 3
+#ANIMATION 15
+#phrase Merc7  2
+Es wäre dumm, dir deine Entscheidung zu verübeln. Ich warte hier in der Letzen Zuflucht auf dich und wenn du mich brauchst, dann werde ich gern an deiner Seite kämpfen!

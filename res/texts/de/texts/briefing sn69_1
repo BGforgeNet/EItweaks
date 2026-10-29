@@ -1,0 +1,62 @@
+Rede mit dem Geist
+#show Hero
+#show OldNekro
+#show Spirit
+#ANIMATION 6
+#CAMERA 4
+#phrase Spirit  2
+Ich. Hier. Werde sprechen. Lebender, der etwas in sich verborgen trägt, frag.
+#ANIMATION 8
+#CAMERA 2
+#phrase Hero  3
+Wo ist der junge Joon?
+#ANIMATION 7
+#CAMERA 12
+#phrase Spirit  4
+Gefahr. Angst. Schrecken. Rote Haut, Schrecken kommt. Der Schrecken muss betrogen werden. Nicht mehr junger Mann.
+#ANIMATION 32
+#CAMERA 2
+#phrase Hero  5
+Ist er tot?!
+#ANIMATION 7
+#CAMERA 4
+#phrase Spirit  6
+Er ist nicht bei den Toten. Er ist nicht bei den Lebenden. Er ist nirgendwo. Es gibt einen anderen, anderes Gesicht, andere Haut. Der andere - kein Schrecken. Rote Haut - Schrecken kommt.
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  7
+Was ist dieser Schrecken? Warum kommt er?
+#ANIMATION 15
+#CAMERA 12
+#phrase Spirit  8
+Schrecken tötet. Schrecken kam wegen Joon. Der Mann wurde zu einem anderen, der Mann ging irgendwo durchs Nirgendwo. Schrecken tötete mich, tötete alle. Dann ging er. Lass mich gehen, Lebender, hör auf, mich zu quälen.
+#hide Spirit
+#ANIMATION 5
+#CAMERA 2
+#phrase Hero  9
+Warte, komm zurück!
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  10
+Verdammt, er hat mir nichts erzählt, das einen Sinn ergibt...
+#DESC Resignedly
+#show Hero
+#show OldNekro
+#ANIMATION 59
+#CAMERA 7
+#phrase OldNekro  11
+Mit Geistern zu sprechen ist ein wenig schwieriger als dem Marktgeschwätz zuzuhören, junger Mann! Aber ich freue mich darauf, dass Taivo bald in Ungnade fallen wird, deshalb lasse ich mich dazu herab, dir zu erklären, was du gerade gehört hast.
+#ANIMATION 58
+#CAMERA 7
+#phrase OldNekro  12
+Etwas kam in das Landhaus des Wissenschaftlers, um den jungen Joon zu vernichten. Um dieses Etwas abzuwehren, wurde der junge Mann in eine andere Person transformiert und irgendwohin teleportiert. Der Teleport-Zauberspruch benötigt Zeit, also hat der junge Mann ein Artefakt verwendet, das mit dem Zauberspruch belegt war.
+#ANIMATION 57
+#CAMERA 11
+#phrase OldNekro  13
+Wenn du ihn also finden willst, so musst du in den Ruinen des Herrenhauses das Artefakt oder dessen Bruchstücke finden. Ein guter Magier wird in der Lage sein, den Bruchstücken zu entnehmen, wohin der Teleport gerichtet war.
+#ANIMATION 30
+#NOLIPS
+#CAMERA 2
+#phrase Hero  14
+Ein guter Magier? Ich frage mich, ob mir der alte Totenbeschwörer in der Letzten Zuflucht helfen könnte? Egal, ich sollte versuchen, das Amulett zu finden und anschließend dann mit Kehel darüber reden!
+#DESC To himself

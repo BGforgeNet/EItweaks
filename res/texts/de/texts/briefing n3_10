@@ -1,0 +1,9 @@
+Sahilia wieder in Gruppe aufnehmen
+#show Hero 
+#show Merc10
+#ANIMATION 45
+#phrase Hero  1
+Du hattest Recht, ich brauche deine Hilfe. Ich hoffe, du wirst nicht ablehnen?
+#ANIMATION 71
+#phrase Merc10  2
+Warum sollte ich? Mir wird hier langsam ziemlich langweilig!

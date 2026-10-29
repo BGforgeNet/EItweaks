@@ -1,0 +1,69 @@
+Das erste Mal in der Stadt von Ingos
+#show Hero 4
+#ANIMATION 5
+#NOLIPS
+#CAMERA 10
+#phrase Hero  1
+Endlich bin ich in der Stadt! Ich muss schon sagen, man kann sie nicht mit unserem Dorf vergleichen. Wie die Menschen hier leben?
+#DESC To himself
+#ANIMATION 11
+#NOLIPS
+#CAMERA 6
+#phrase Hero  2
+Ah, da hängt ein Stück Papier an der Wand. Mal sehen, was da steht...
+#DESC To himself
+#show Hero 1
+#show BillBoard00 2
+#ANIMATION 6
+#CAMERA 10
+#phrase Hero  3
+Aha... 'Vermisst! Belohnung! Eine junge Dame, die 'Prinzessin' gerufen wird und sich im 'Einhorn' eingemietet hatte, verschwand am zweiten Tag des zehnten Monats spurlos und ist bis heute nicht wieder aufgetaucht. Besondere Kennzeichen: ungewöhnliche rötliche Hauttönung, seltsame Bekleidung. Derjenige, der das Mädchen findet, wird BELOHNT: Gouverneur Valrasian hat versprochen, ihn zum Leutnant der Stadtwache zu ernennen und ihm eine beträchtliche Anzahl von Silbermünzen auszuhändigen. Verschwendet keine Zeit!'
+#DESC Reads aloud
+#hide Hero
+#hide BillBoard00
+#show Hero 4
+#ANIMATION 30
+#NOLIPS
+#phrase Hero  4
+Oh! Das muss die sein, die ich suche!
+#DESC To himself
+#hide Hero
+#show Hero 1
+#show Kapitan 2
+#ANIMATION 11
+#phrase Kapitan  5
+Junger Mann! Könntet Ihr mir bitte Euren Namen und den Zweck Eures Besuchs in unserer Stadt verraten! Ich bin Hauptmann Tilvar, Kommandeur der Stadtwache, und ich muss wissen, wer sich in der Stadt aufhält und zu welchem Zweck... Aber Euer Aussehen verrät mehr als Eure Worte. In Euren Träumen habt Ihr die Prinzessin bereits gefunden, nicht wahr?
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  8
+Ist das vielleicht verboten?
+#ANIMATION 9
+#CAMERA 3
+#phrase Kapitan  9
+Das Träumen ist natürlich nicht verboten. Doch leider werden Träume selten wahr. Denkt doch nur einmal darüber nach: Ein Mädchen, das Gouverneur Valrasian selbst besonders gern hatte, ist entführt worden. Sie ist wahrscheinlich so gut versteckt worden, wie Ihr es Euch überhaupt nicht vorstellen könnt.
+#ANIMATION 11
+#CAMERA 2
+#phrase Hero  10
+Warum sucht Ihr dann nicht nach ihr?
+#ANIMATION 9
+#CAMERA 11
+#phrase Kapitan  11
+Herzlichen Dank, mein Sold ist durchaus zufriedenstellend. Und was Euch angeht, junger Mann, so würde ich Euch gerne einen Rat geben: Vergesst das Ganze am besten. Nachdem Gouverneur Valrasian neue Steuern eingeführt hat, sind die Waldarbeiter und Bauern auf Städter nicht gut zu sprechen...
+#ANIMATION 44
+#CAMERA 3
+#phrase Kapitan  12
+Sie würden sich zwar nicht an Wachleute heranwagen, aber an Euresgleichen können sie sich gefahrlos austoben. Ihr habt ja sicherlich… wie soll ich es ausdrücken… auf Eurem Weg hierher einen gewissen Mangel an Gastfreundschaft vonseiten der gemeinen Bürger erlebt?
+#ANIMATION 9
+#CAMERA 2
+#phrase Hero  13
+Das ist wohl etwas untertrieben, Hauptmann. Ich bin um ein Haar getötet worden und das nennt Ihr Mangel an Gastfreundschaft?
+#ANIMATION 31
+#CAMERA 11
+#phrase Kapitan  14
+Oh, es tut mir so leid! Natürlich hätte ich einen Großalarm ausrufen und die gesamte Wachtruppe zu Eurem Schutz aussenden sollen!
+#DESC Ironically
+#ANIMATION 11
+#CAMERA 3
+#phrase Kapitan  15
+Junger Mann, ich handle ausschließlich auf Befehl des Gouverneurs und in seinem Interesse. Und Ihr, entschuldigt bitte, scheint nichts als ein junger Abenteurer zu sein, der auf eigenes Risiko handelt. Erwartet also keine Hilfe von den Wachen!
+#DESC Serious, businesslike

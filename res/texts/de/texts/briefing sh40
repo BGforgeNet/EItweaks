@@ -1,0 +1,47 @@
+Frage Shei-Var nach Airy
+#show OrcC 1
+#show Hero 2
+#CAMERA 9
+#ANIMATION 4
+#phrase OrcC  1
+Warum du hier? Dir noch bedauern wirst! Du aus Dorf. Dorf weit weg. Shei-Var Dorf nicht wichtig. Warum dir plötzlich Shei-Var wichtig?
+#ANIMATION 9
+#CAMERA 10
+#phrase Hero  2
+Das ist ganz einfach: Ich möchte, dass du das Mädchen gehen lässt, das dir die Goblins gebracht haben. Wenn du ein Lösegeld willst, dann nenne deinen Preis!
+#ANIMATION 5
+#CAMERA 7
+#phrase OrcC  3
+Shei-Var will nicht Lösegeld! Wir wollen nehmen Mädchen als Lösegeld. Ein Mensch-Dämon kommt von Bergen im Norden – böse, Angst, fängt Ork, nimmt mit. Shei-Var denkt und glaubt, wenn Dämon bekommt Mädchen, dann wird sein weniger böse!
+#ANIMATION 43
+#CAMERA 2 -30 5 3
+#phrase Hero  4
+Dann mache ich dich zum meinem Gefangenen. Wenn du von mir gehört hast, dann musst du wissen, wer ich bin!
+#CAMERA 3
+#ANIMATION 9
+#phrase OrcC  5
+Shei-Var kennt dich - du gewählt aus. Shei-Var versteckt Mädchen, damit du nicht findest. Du machst Unruhe, Mädchen wird sehr schlecht gehen! Du willst das?
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  6
+Nein, warte! Wenn ich dafür sorge, dass der Dämon dich nicht mehr belästigt? Wirst du das Mädchen dann freilassen? Du sagtest doch, dass dir Menschen egal sind, oder?
+#CAMERA 7
+#ANIMATION 4
+#phrase OrcC  7
+Mensch, du geben Shei-Var lachen! Ha ha! Dämon stark. Du schwach. Du sagen du kannst besiegen Dämon? Ich nicht glaube!
+#ANIMATION 11
+#CAMERA 6
+#phrase Hero  8
+Muss ich es dir erst beweisen? Willst du, dass ich den stärksten deiner Krieger besiege?
+#CAMERA 3
+#ANIMATION 6
+#phrase OrcC  9
+Ich brauche meine Krieger selbst. Du willst zeigen, wie stark du bist, öffne die Truhe von Oger Utundry und bring alles, was darin. Kharu- und Khamsy-Orks mögen Utundry, weil er reich. Wenn er ist arm, Kharu und Khamsy werden hören auf mich – ich werde reich in Wüste sein!
+#CAMERA 7
+#ANIMATION 7
+#phrase OrcC  11
+Aber das schwierig: Utundry ist ältester Bruder in Familie, dann gibt noch Zwillinge Byr und Gym.
+#CAMERA 9
+#ANIMATION 8
+#phrase OrcC  12
+Jeder hat Truhe, und sie geben einander Schlüssel. Für Utundrys Truhe du musst erst finden Byrs Truhe und dann du musst sehen in Gyms Truhe. Du besiegst Utundry, dann komm her. Ich dir sagen, wo du findest Dämon.

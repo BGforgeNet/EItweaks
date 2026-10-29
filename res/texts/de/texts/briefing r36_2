@@ -1,0 +1,11 @@
+Die Mission in Ingos beginnen
+#show Rick 1
+#show Hero 2
+#CAMERA 9
+#ANIMATION 6
+#phrase Rick  1
+Nun werde ich meine Magie benutzen, um Euch nach Ingos senden. Dieses Amulett wird Euch helfen, hierher zurückzukehren, aber es funktioniert nur, wenn Ihr das Mädchen findet!
+#CAMERA 11
+#ANIMATION 5
+#phrase Rick  2
+Macht Euch bereit – gleich wird Euch etwas schwindlig werden und wenn Ihr wieder zu Euch kommt, dann seid Ihr in einem anderen Land. Mein kleiner Drache wird Euch begleiten... Und möge Euch Euer Glück auf Schritt und Tritt folgen!

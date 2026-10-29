@@ -1,0 +1,14 @@
+Eila mitnehmen
+#show Hero 
+#show Merc4
+#CAMERA 3
+#phrase Merc4  1
+Dies ist ein gefährliches Abenteuer und ich nehme nicht das unnötige Risiko auf mich, mit so vielen Leuten in die Wüste zu ziehen!
+#ANIMATION 14
+#CAMERA 6
+#phrase Hero  2
+Was heißt hier 'so viele'? Wir sind doch nur zu dritt!
+#CAMERA 3
+#ANIMATION 32
+#phrase Merc4  3
+Mit mir wären es aber vier. Und vier sind wirklich zu viel!

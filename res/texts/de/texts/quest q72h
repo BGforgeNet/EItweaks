@@ -1,0 +1,77 @@
+Portal
+Das Portal ist der einzige Weg, Suslanger zu verlassen und nach Gipath zurückzukehren. Es wird streng bewacht. Es wird also nicht einfach sein, es zu benutzen.
+#subobj  1
+Vernichte die Feinde
+Erfar informierte die Wachen darüber, dass sich in der Höhle ein entflohener Gefangener befände. Die Wachen warten am Eingang der Höhle auf ihre Beute. Du kannst keinerlei Mitleid von ihnen erwarten. Der einzige Ausweg ist, sie alle zu töten.
+#subobj  2
+Überquere die westliche Brücke
+Um die Haupttore zu meiden (dieser Weg ist sehr gefährlich!), gehe über die Brücke, die über den westlichen Fluss führt, in die Stadt. Diese Brücke wird weniger gut bewacht als die Haupttore.
+#subobj  3
+Überquere die südliche Brücke
+Um die Stadt zu verlassen, solltest du die zweite Brücke im Süden benutzen.
+#subobj  4
+Finde den Hüter der Schlüssel für die Fallen
+Die Wache, die von Zeit zu Zeit den Altar kontrolliert, trägt den Schlüssel für die Fallen bei sich. Wenn du dich in der Nähe des Altars versteckst, kannst du ihn überwältigen.
+#subobj  5
+Nimm den Schlüssel
+Nimm den Schlüssel von der Leiche des Hüters.
+#subobj  6
+Finde den Altar der Fallen vom 1.Verteidigungsring
+Die Wege zum Altar sind durch mehrere Verteidigungsringe geschützt. Neben bewaffneten Wachen gibt es auch magische Fallen, die jeden vernichten, der ohne Genehmigung das verwunschene Land betritt. Die Fallen werden von Altaren gesteuert und du brauchst für jeden einzelnen einen speziellen Schlüssel.
+#subobj  7
+Schalte die Fallen des ersten Verteidigungsringes 
+Bevor die Fallen des ersten Verteidigungsringes nicht ausgeschaltet sind, kannst du dich dem Altar nicht nähern.
+#subobj  8
+Finde den Schlüsselhüter vom 2.Verteidigungsring
+Den Hüter des Schlüssels der Fallen des zweiten Verteidigungsrings findest du neben dem Altar, auf der anderen Seite des verwunschenen Landes. Benutze den Hellsehen-Zauber, um ihn zu finden. Um ihn hervorzulocken verwende den Feuerwerk-Zauber.
+#subobj  9
+Nimm den Schlüssel
+Nimm den Schlüssel von der Leiche des Hüters.
+#subobj  10
+Finde den Altar der Fallen vom 2.Verteidigungsring
+Die Fallen des zweiten Verteidigungsringes des Portals befinden sich auf dem Weg zur südlichen Brücke, die über die Schlucht führt.
+#subobj  11
+Schalte die Fallen vom 2.Verteidigungsring ab
+Bevor die Fallen des zweiten Verteidigungsringes nicht ausgeschaltet sind, kannst du dich dem Altar nicht nähern.
+#subobj  15
+Finde den Schlüsselhüter vom 3.Verteidigungsring
+Die südliche Brücke, die über die Schlucht führt, wird von einer großen Wacheinheit bewacht. Du kannst allerdings am Steilhang entlang zur nördlichen Brücke gehen, ohne gesehen zu werden. Hier befindet sich der dritte Verteidigungsring, aber es gibt einen engen Durchgang zum verwunschenen Land - er wird von einem jungen Kriegszauberer benutzt, der das Land bewacht. Du musst den Zauberer finden und dir genau merken, wo er lang läuft.
+#subobj  16
+Nimm den Pfad durch den dritten Verteidigungsring
+Es gibt keinerlei Möglichkeit, die Fallen des dritten Verteidigungsringes auszuschalten, aber du kannst dem Pfad folgen, den der Zauberer benutzt hat.
+#subobj  20
+Finde den Kommandanten der Portalwache
+Um sein Haus zu finden, musst du dich von der Stelle aus, von wo der Fluss nach Westen fließt, nach Osten wenden. Das Haus des Kommandanten steht auf einem Hügel in der Nähe der Mauer, der das Ende des ersten Verteidigungsringes des Portals markiert.
+#subobj  21
+Nimm den Schlüssel
+Um das Portal zu aktivieren, benötigst du den Schlüssel, den der Kommandant der Wache hat.
+#subobj  22
+Überquere die Schlucht
+Um zum Portal zu gelangen, musst du mit Hilfe einer der Brücken die Schlucht überqueren.
+#subobj  23
+Finde den östlichen Steinmechanismus
+Um das Portal aktivieren zu können, musst du an beiden Steinmechanismen den Steinschlüssel verwenden - am östlichen sowie auch am westlichen. Sie befinden sich in der Nähe des Eingangs zum Portal.
+#subobj  24
+Drehe den östlichen Steinmechanismus
+Das Portal wird nicht funktionieren, bis er nicht gedreht wurde.
+#subobj  25
+Finde den westlichen Steinmechanismus
+Um das Portal aktivieren zu können, musst du den Steinschlüssel an beiden Steinmechanismen verwenden - am östlichen sowie auch am westlichen. Sie befinden sich in der Nähe des Eingangs zum Portal.
+#subobj  26
+Drehe den östlichen Steinmechanismus
+Das Portal wird nicht funktionieren, bis er nicht gedreht wurde.
+#subobj  27
+Gehe durch das Portal
+Um nach Gipath zurückzukehren, musst du durch das Portal gehen (die Teleport-Zone).
+#subobj  34
+Entkomme den Stadtwachen
+Die Stadtwachen wurden alarmiert!
+#subobj  35
+Entkomme den Wachen des Haupttores
+Die Wachen des Haupttores wurden alarmiert!
+#subobj  36
+Entkomme den Portalwachen
+Die Portalwachen wurden alarmiert!
+#subobj  37
+Entkomme den Portalwachen
+Die Portalwachen wurden alarmiert!

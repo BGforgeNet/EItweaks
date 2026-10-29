@@ -1,0 +1,35 @@
+Frage nach dem Teleport-Amulett
+#show Hero
+#show Rick
+#CAMERA 9
+#ANIMATION 6
+#phrase Rick  1
+Wenn Ihr wirklich bereit seid, die Suche fortzusetzen, gebt mir die Teile von dem Teleport-Amulett, das Ihr in Suslanger gefunden habt.
+#show BrokenToy 5
+#CAMERA 3
+#ANIMATION 2
+#phrase Rick  2
+Und jetzt brauche ich einen Moment absolute Ruhe bitte – ich muss hören, was mir diese Teile sagen...
+#CAMERA 11
+#phrase Rick  3
+Was?! Das ist unglaublich...
+#DESC (Amazed)
+#ANIMATION 3
+#CAMERA 10
+#phrase Hero  4
+Was ist passiert?
+#hide BrokenToy
+#CAMERA 7
+#ANIMATION 6
+#phrase Rick  5
+Das Ziel der Teleportation war hier, in Gipath! Aber jeder, der in der letzten Zeit nach Gipath kam, nahm das alte Tor... Nur eine Person ist nicht durch das Tor gekommen – Ihr!!!
+#DESC (As if he can't believe himself)
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  6
+Moment... Wollt Ihr damit sagen, dass... Aber das ist unmöglich! Ich bin ich!!!
+#DESC (Almost frightened)
+#CAMERA 9
+#ANIMATION 4
+#phrase Rick  7
+Ja, Ihr seid Ihr! Auf Wiedersehen Kiran. Willkommen in Gipath, At-Kira!

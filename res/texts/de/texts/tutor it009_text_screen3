@@ -1,0 +1,7 @@
+     Du kannst Gegenstände wie z.B. Waffen oder Rüstungen mit Zaubern belegen und sie so mit "magischen" Eigenschaften versehen. Dazu muss der Zauber eine Rune enthalten, die dies ermöglicht. Solche Runen werden dir später im Spiel zur Verfügung stehen. Sie werden unterschieden in "Gegenstand (auslösbar)" und "Gegenstand (permanent)".
+     Für die Herstellung von Zauberstäben mit magischen Eigenschaften werden o.g. Runen nicht benötigt.
+Unter dem Herstellungsfeld für Entwürfe (Menü "Herstellung/Zerlegung von Gegenständen") findet sich ein Feld für Zauber. Dieses Feld kannst du belegen, sobald der Entwurf und das Material in den jeweiligen Feldern platziert sind. Klicke auf den entsprechenden Zauber im Inventar, um das Zauberfeld zu belegen.
+
+     Mit den Schaltflächen <V> und <X> kannst du die Herstellung bestätigen oder abbrechen.
+
+     Hinweis: Sowohl der Gegenstand als auch der gewünschte Zauber haben bestimmte "Komplexitätswerte". Der Wert des Gegenstandes muss höher sein als der des Zaubers. Es macht keinen Sinn, einen komplexen Zauber auf einen zu einfachen Gegenstand zu übertragen. Genauso wenig kann man einen Gegenstand mit einem niedrigen "Energiewert" mit einem Zauber belegen, der sehr viel "Ausdauer" verlangt.

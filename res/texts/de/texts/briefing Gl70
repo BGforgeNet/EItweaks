@@ -1,0 +1,20 @@
+Frage nach dem Portal
+#show Zaku 3
+#show Hero 4 
+#show Glav 5
+#ANIMATION 9
+#CAMERA 9
+#phrase Glav  1
+Es ist ein Unglück, dass Ihr uns verlassen wollt, Bruder. Ich hatte gehofft, Ihr wäret in der Lage, meinen Platz einzunehmen, wenn meine Zeit gekommen ist. Denkt darüber nach.
+#ANIMATION 15
+#CAMERA 10
+#phrase Hero  2
+Meine Entscheidung steht fest, Bruder Khatul.
+#ANIMATION 6
+#CAMERA 4
+#phrase Glav  3
+Deine Reise wird gefährlich sein: Das Portal wird so bewacht, als ob es der Weg zu einer Schatzkammer voller Gold wäre und nicht der Weg zum Toten Land. Aber einer unserer Brüder weiß, wie man dorthin gelangt. Bruder Namenlos, ich verlasse mich auf dich! Bruder Kiran hat unsere Unterstützung verdient.
+#ANIMATION 32
+#CAMERA 11
+#phrase Zaku  4
+Oh ja, Bruder Khatul. In der Wüste, in der sich das Portal befindet, gibt es in den nördlichen Gebirgsausläufern eine Höhle. Wir werden uns dort treffen. Ich zeige Bruder Kiran, wie man an den Schlüssel gelangt, der das Portal öffnet, und ich erkläre ihm, wie man an den Patrouillen vorbei kommt. Ich schwöre, er wird alles bekommen, was er verdient!

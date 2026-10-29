@@ -1,0 +1,12 @@
+Frage nach den Suslanger-Missionen
+#show Hero 
+#show Merc10
+#ANIMATION 61
+#phrase Merc10  1
+He Junge, du kannst vielleicht froh sein, mich zu treffen! Man könnte sogar sagen, du hast Glück...
+#ANIMATION 9
+#phrase Hero  2
+Mit dem Glück ist das so eine Sache. Mann kann es sich nicht einfach nehmen, du musst schon mit mir kommen, um es zu finden!
+#ANIMATION 64
+#phrase Merc10  3
+Junge, du sagst es. Dann warte ich auf deine Einladung. Und falls das Glück nicht zu mir kommt, dann ist es deine Schuld!

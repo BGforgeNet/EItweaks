@@ -1,0 +1,7 @@
+     Unten im Feld für Fähigkeiten und Fertigkeiten ist umrandet der Bereich "Bekannte Fertigkeiten" zu sehen. Rechts neben dem Namen der Fertigkeit steht der Preis für eine Verbesserung dieser Fertigkeit um eine Stufe. Wenn der Preis dunkler erscheint, besitzt der Charakter für eine solche Verbesserung nicht genug Erfahrung. 
+     Zu jeder Fertigkeit wird im Beschreibungsfeld ein Text angezeigt, wenn du den Mauszeiger auf die entsprechende Fertigkeit bewegst.
+
+     Um eine Fertigkeit zu erlernen, musst du im Feld "Bekannte Fertigkeiten" auf das entsprechende Symbol klicken.
+     Mit den Schaltflächen im Feld "Erfahrung" kannst du bestätigen oder abbrechen.
+
+     Hinweis: Jedes Mal, wenn du eine Fertigkeit erlernst, erhöht sich der Preis für das Erlernen anderer Fertigkeiten.

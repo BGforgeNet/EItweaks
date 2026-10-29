@@ -1,0 +1,8 @@
+Dämon besiegen
+Shei-Var möchte Airy einem Dämonen, der Orks entführt, als Lösegeld übergeben. Ist der Dämon besiegt, wird Shei-Var Airy laufen lassen.
+#subobj  1
+Finde den Dämon
+Der Dämon wurde südlich der Siedlung der Sheivars in einem Tal gesehen, das spiralförmig von einer Gebirgskette umgeben ist. Der Dämon sieht aus wie ein Mensch, trägt aber eine Rüstung, die niemand auf Gipath je zuvor gesehen hat.
+#subobj  2
+Töte den Dämon
+Wenn der Dämon getötet wird, wird Shei-Var Airy nach Hause gehen lassen.

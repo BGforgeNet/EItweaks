@@ -1,0 +1,23 @@
+Rede mit Kholai
+#show Hero 1
+#show OldNekro 2
+#ANIMATION 32
+#CAMERA 2
+#phrase Hero  1
+Oh Eure Großartigkeit! Wäret Ihr so freundlich, in Eurer äh... strahlenden Weisheit äh... die Bitte eines demütigen Sterblichen zu erwägen? Eure äh... außergewöhnliche Erscheinung erfüllt mich mit Ehrfurcht und Bewunderung!
+#ANIMATION 59
+#CAMERA 11
+#phrase OldNekro  2
+Junger Mann! Eine gute Schmeichelei sollte sein wie ein vergiftetes Messer, das in Seide eingewickelt ist: weich und sanft mit tödlichem Gift im Innern. Wenige Leute meistern diese Kunst und du bist bestimmt keiner davon. Erzähle mir also in einfachen Worten, was du von mir willst.
+#ANIMATION 31
+#CAMERA 2
+#phrase Hero  3
+Äh ja, ich muss mit dem Geist einer der Wissenschaftler reden, deren tote Körper in Eurem früheren Laboratorium untergebracht sind. Im Gegenzug biete ich Euch dafür Taivos Kopf. Wäre das genug?
+#ANIMATION 57
+#CAMERA 3
+#phrase OldNekro  4
+Ich könnte Taivo töten. Ich will ihn aber nicht tot, sondern erniedrigt und entwürdigt sehen. Ich will sehen, wie er seinen Rang und sein Amt verliert. Ich will hören, wie er sich beschwert und jammert und um Kleingeld bettelt... und ich denke, du kannst mir dabei helfen, dies zu erreichen, junger Mann. 
+#ANIMATION 59
+#CAMERA 11
+#phrase OldNekro  5
+Ich will, dass eine Leiche oder zumindest der Kopf einer der Leichen aus dem Laboratorium verschwindet und in meinen Räumen erscheint. Du kannst dich mit dem Geist unterhalten und ich... Ach, was werde ich für Anschuldigungen gegen Taivo erheben, was für Gerüchte ich über ihn verbreiten werde! Er wird den Tag bereuen, an dem er beschloss, sich gegen mich zu wenden! 

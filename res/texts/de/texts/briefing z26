@@ -1,0 +1,14 @@
+Frage nach dem gefundenen Schriftstück aus dem Lager
+#show Witch 3
+#show CodedHadaganNote 5
+#show Hero 5
+#ANIMATION 45
+#CAMERA 2
+#phrase Hero  1
+Sieh mal, ich habe dieses Schriftstück gefunden. Kennst du diese Sprache?
+#hide CodedHadaganNote
+#show CodedHadaganNote 4
+#ANIMATION 15
+#CAMERA 9
+#phrase Witch  2
+Ja, ich kenne sie...aber versteh’ mich nicht falsch. Ich habe nicht gesagt, dass ich sie lesen kann. Ich meine solche Schriftstücke schon vor langer Zeit gesehen zu haben - sie waren im Besitz des Ältesten.

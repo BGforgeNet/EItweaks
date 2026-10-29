@@ -1,0 +1,26 @@
+Unterirdische Kreaturen
+Der Drache respektiert die alten Traditionen. Er versprach dir deswegen, dir etwas Interessantes zu erzählen, aber im Gegenzug musst du die Blutreißer vernichten, die ihn stören. Um dir deine Aufgabe zu erleichtern, gab dir der Drache Gift, mit dem du einen der drei unterirdischen Flüsse vergiften sollst.
+#subobj  1
+Töte das Muttertier der Blutreißer
+Wenn du das große Muttertier der Blutreißer leben lässt, wird sie viele kleine Blutreißer zur Welt bringen und der alte Drache wird nie seine Ruhe haben. Du greifst sie besser erst an, nachdem du eine der Quellen vergiftet hast - das vergiftete Wasser wird sie zwar nicht umbringen, aber es wird sie sehr schwächen.
+#subobj  2
+Vernichte die kleinen Blutreißer
+Dies sind diejenigen, die den alten Drachen mit ihrem Lärm und ihrer Unruhe so irritieren.
+#subobj  3
+Finde die nächstgelegene Quelle
+Die nächstgelegene Quelle befindet sich im östlichen Teil der Höhle. Du kommst dorthin, indem du dem unterirdischen Fluss in östlicher Richtung folgst.
+#subobj  4
+Vergifte die nächstgelegene Quelle
+Benutze dazu das Gift, das du vom Drachen erhalten hast. Danach werden mehrere kleine Blutreißer sterben und das Muttertier wird geschwächt sein.
+#subobj  5
+Finde die mittlere Quelle
+Die mittlere Quelle befindet sich in der Höhle westlich der nächstgelegenen Quelle. Du kommst dorthin, indem du dem mittleren unterirdischen Fluss folgst.
+#subobj  6
+Vergifte die mittlere Quelle
+Benutze dazu das Gift, das du vom Drachen erhalten hast. Danach werden die meisten kleinen Blutreißer sterben und das Muttertier wird geschwächt sein.
+#subobj  7
+Finde die Quelle, die am weitesten entfernt ist
+Die Quelle, die am weitesten entfernt ist, befindet sich ungefähr in der Mitte des nördlichen Bereichs der Höhle. Du kommst dorthin, indem du dem entferntesten Fluss folgst.
+#subobj  8
+Vergifte die Quelle, die am weitesten entfernt ist
+Benutze dazu das Gift, das du vom Drachen erhalten hast. Danach werden alle kleinen Blutreißer sterben und das Muttertier wird geschwächt sein.

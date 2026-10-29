@@ -1,0 +1,36 @@
+Frage nach der Aufgabe im Observatorium
+#show Hero
+#show Daughter
+#ANIMATION 6
+#CAMERA 5
+#phrase Hero  1
+Airy! Ich dachte, es wäre viel einfacher, das alte Observatorium zu erreichen – das ist eine ganz schön unruhige Gegend... Wie hast du es geschafft, unversehrt aus den Mittelbergen zurückzukehren?
+#ANIMATION 32
+#CAMERA 3
+#phrase Daughter  2
+Ah, siehst du es jetzt endlich ein? Ich bin sogar noch geschickter als du!
+#ANIMATION 29
+#CAMERA 10
+#phrase Hero  3
+Ja ja, schon gut. Und was kannst du, was ich nicht kann?
+#ANIMATION 11
+#CAMERA 11
+#phrase Daughter  4
+Ha! Ich bin nicht umsonst die Enkelin einer Hexe! Ich weiß, wie ich die Magie der Gefühle schnell und ohne große Anstrengung meistern kann...
+#ANIMATION 15
+#CAMERA 2
+#phrase Hero  5
+Das klingt interessant! Die Fähigkeit hätte ich auch gern...
+#ANIMATION 63
+#CAMERA 7
+#phrase Daughter  6
+Dann schließe deine Augen... siehst du? Frage mich nur nicht, wie ich es geschafft habe, ich werd‘s dir nämlich nicht verraten.
+#ANIMATION 31
+#CAMERA 10
+#phrase Hero  7
+Danke, meine Kleine, das hat wirklich geholfen.... He, he, was ist denn los?
+#ANIMATION 11
+#CAMERA 9
+#phrase Daughter  8
+Kleine? Sagtest du Kleine?! Ich werde dir nie wieder einen Gefallen tun! Niemals!
+#DESC Indignantly

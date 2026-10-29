@@ -1,0 +1,15 @@
+Treffen mit dem Magier
+#show Hero
+#show Merc8
+#ANIMATION 45
+#phrase Merc8  1
+Brüder haben in der Letzten Zuflucht keine Geheimnisse voreinander. Ich weiß, dass dich dein Auftrag auf der ganzen Insel herumführen wird – brauchst du vielleicht die Hilfe eines Zauberers?
+#ANIMATION 9
+#phrase Merc8  2
+Jeder, der hier unter der Oberfläche lebt, hat Gründe, diejenigen zu hassen, die draußen leben. Auch ich habe meine Gründe und ich will diesen selbstherrlichen Kreaturen so viel Kummer wie möglich machen!
+#ANIMATION 32
+#phrase Hero  3
+Aber das ist ganz und gar nicht mein Anliegen!
+#ANIMATION 31
+#phrase Merc8  4
+Nein, nein, ich weiß. Aber nimm mich beim Wort, du wirst keinen Schritt machen können, ohne eine Wahl zu treffen: Entweder du tötest oder du wirst getötet. Und daher könnte ich, der Zauberer Fairakh, dir sehr nützlich sein. Und ein Vergnügen wäre es mir obendrein!

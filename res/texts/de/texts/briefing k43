@@ -1,0 +1,18 @@
+Frage nach der gefundenen Leiche
+#show Hero 3
+#show DriadArrow00 4
+#show Kapitan 5
+#ANIMATION 31
+#CAMERA 5
+#phrase Hero  1
+Hauptmann!! Ich habe die Leiche eines Mannes gefunden, der mit diesem Pfeil getötet wurde. Anscheinend ist es der Gesandte aus der Hauptstadt…
+#hide DriadArrow00
+#show DriadArrow00 5
+#ANIMATION 61
+#CAMERA 11
+#phrase Kapitan  2
+Aha! Die Waldleute haben den Pakt gebrochen und einen Menschen getötet! Jetzt habe ich endlich einen Grund, diesen Kröten zu zeigen, wer hier das Sagen hat! Ich werde eine solche Strafexpedition entsenden, dass in ganz Ingos darüber gesprochen werden wird. Bei meiner Ehre!
+#ANIMATION 11
+#CAMERA 3
+#phrase Kapitan  3
+Ich denke, Ihr solltet den Pfeil zum Gouverneur bringen. Er mag solche Sachen und es schadet nicht, beim Gouverneur gut dazustehen, richtig? Ich werde ihm von Euch erzählen. Aber denkt daran, junger Mann, seine Exzellenz zeigt Besuchern gerne seine Sammlungen und er schätzt es, wenn man diese dann gebührend bewundert.

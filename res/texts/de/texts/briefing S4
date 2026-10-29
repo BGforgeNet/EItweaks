@@ -1,0 +1,14 @@
+Frage nach den Gesprächen mit dem Handwerker
+#show Hero 1
+#show Elder 2
+#ANIMATION 31
+#phrase Elder  1
+Auserwählter! Darf ich dir einen guten Rat geben? Es geht um Babur, und darum, dass du mit ihm redest. Bitte denke daran, dass er schon viele Verbrechen begangen hat!
+#ANIMATION 45
+#CAMERA 10
+#phrase Hero  2
+Ich verstehe nicht… Willst du mir vorschreiben, was ich zu tun habe?
+#ANIMATION 9
+#CAMERA 3
+#phrase Elder  3
+Oh nein, wie könnte ich es wagen?! Ich will nichts dergleichen. Aber denke nach, Auserwählter. Jedes Mal, wenn du mit Babur redest, riskierst du deinen guten Ruf. Es scheint dann immer, als ob du tun wolltest, worum er dich anbettelt…. Kurz gesagt, ich bitte darum, damit aufzuhören. Glaub mir, es wäre zum Wohl aller. Dich eingeschlossen!

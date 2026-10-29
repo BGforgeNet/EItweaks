@@ -1,0 +1,6 @@
+     Je nach Situation beherrschen die Charaktere mehrere Bewegungsarten. Mit dem Steuerungsfeld links unten im Bild oder der Tastatur kannst du zwischen den verschiedenen Bewegungsarten hin- und herschalten. Nachfolgend sind die einzelnen Bewegungsarten erklärt:
+
+     Gehen: Beim Gehen bewegt sich der Charakter mit normaler Geschwindigkeit. Der Wert "Energie" bleibt konstant, d.h. er nimmt weder zu noch ab (<X> auf der Tastatur).
+     Laufen: Beim Laufen bewegt sich der Charakter naturgemäß schneller als beim Gehen. Er macht allerdings auch mehr Lärm und wird deshalb unter Umständen von Gegnern leichter bemerkt. Außerdem nimmt der Wert "Energie" ab. Wenn dieser Wert 0 erreicht, fängt der Charakter automatisch an zu gehen (<Y> auf der Tastatur).
+     Schleichen: Ein Charakter verursacht beim Schleichen so gut wie keine Geräusche und kann daher von Gegnern nicht gehört werden. Die Geschwindigkeit beim Schleichen ist eher gering. Allerdings bleibt auch der "Energie"-Wert konstant (<C> auf der Tastatur).
+     Kriechen: Kriecht ein Charakter, wird er von den Gegnern schlechter gesehen. Er bewegt sich aber sehr langsam. Wie beim Schleichen bleibt beim Kriechen der "Energie"-Wert konstant (<V> auf der Tastatur).

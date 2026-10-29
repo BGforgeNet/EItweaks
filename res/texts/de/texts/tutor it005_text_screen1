@@ -1,0 +1,8 @@
+     Sobald du auf der Übersichtskarte eine Spielzone ausgewählt hast, gelangst du zur Aufgabenübersicht. Dort siehst du oben rechts eine vereinfachte Karte des Bereichs. Auf der Karte ist mindestens ein Dreieck (meist mehr) zu sehen.
+    Die grünen Dreiecke symbolisieren Übergangsbereiche. Durch diese Bereiche gelangt dein Held in die Spielzone. Wenn du auf den gewünschten Übergangsbereich klickst, wird dieser markiert und du kannst ihn benutzen.
+     Die roten Dreiecke symbolisieren Übergangsbereiche, die deinem Helden nicht zur Verfügung stehen und die daher nicht ausgewählt werden können.
+
+     Wenn keine grünen Dreiecke angezeigt werden, liegt zwischen der gegenwärtigen Position deines Helden und der gewünschten Spielzone noch ein anderer, 'nicht erkundeter' Bereich. Um fortfahren zu können, musst du diesen nicht erkundeten Bereich erst durchqueren.
+
+     Mit der Schaltfläche <V> am unteren Bildschirmrand gelangst du in die Spielzone.
+     Mit der Schaltfläche <X> am oberen Bildschirmrand gelangst du zurück zur Übersichtskarte.
