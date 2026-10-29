@@ -4,6 +4,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul.
 
 - [Overview](#overview)
 - [Installation](#installation)
+- [Building](#building)
 - [Support](#support)
 - [Author](#author)
 - [Changelog](CHANGELOG.md)
@@ -11,6 +12,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul.
 
 ### Overview
 
+- [Patch 1.07](#patch-107)
 - [Gameplay](#gameplay)
 - [Speedup](#speedup)
 - [Items](#items)
@@ -18,6 +20,11 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul.
 - [Resistances](#resistances)
 - [Bug fixes](#bug-fixes)
 - [Running](#running)
+
+#### Patch 1.07
+- Includes the fixes of the unofficial patch 1.07 (Gipat Group) for every game language: map scripts (trolls returning to the witch's cave, Go-Go's dialogues, the goblin sentry phrase, levers and bridges that could trap the player, repeated quest rewards), the databases and the Russian texts.
+- English and German texts get 1.07's world map fix (the "Punishing goblins" quest marker).
+- Spears, maces, hammers and clubs get no attack skill bonus in multiplayer (1.07 had added one).
 
 #### Gameplay
 - When a player character is running, stamina is depleted by points rather than percentage, which allows to run longer as stamina grows.
@@ -63,9 +70,21 @@ To fix fatique depletion when running (it's supposed to be spent in absolute uni
 
 1. Download and install [EI starter](https://www.gipat.ru/forum/thread-3828.html).
 1. Download updated [addon.dll](https://www.gipat.ru/forum/thread-3827.html) and drop it into starter's directory, replacing old `addon.dll`.
-1. Dowload latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest)), unzip it.
+1. Make sure the game is at version 1.06. The GOG English and Russian versions are; for the GOG German version, install the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first.
+1. Download the latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest) for your game's language (`ru`, `en` or `de`), unzip it.
 1. Put `eitweaks` in into `Mods` subdir of starter's installation directory.
 1. Launch starter, select EItweaks in dropdown.
+
+### Building
+The game data is kept as source: databases as CSV sheets (`res/database*/csv`), texts as loose entries (`res/texts/<language>`), `config/ai.ini`, and the files with no text form as they are. The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container; install `podman` and put it on `PATH`.
+
+    podman build -t eitweaks-build -f build/Containerfile build
+    podman run --rm --network none -v "$PWD:/repo:ro" -v "$PWD/dist:/out" eitweaks-build eibuild build /repo <version> /out
+
+This writes `eitweaks-<version>-<language>.zip` for each language; `scripts/release.sh <version>` builds and publishes a release. To edit a database in a spreadsheet, convert it to a workbook and back, in the same container with the repository mounted read-write:
+
+    podman run --rm -v "$PWD:/repo" -w /repo eitweaks-build eibuild xlsx res/database/csv database.xlsx
+    podman run --rm -v "$PWD:/repo" -w /repo eitweaks-build eibuild csv database.xlsx res/database/csv
 
 ### Support
 * Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).

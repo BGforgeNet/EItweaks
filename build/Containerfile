@@ -1,0 +1,36 @@
+# Build image: um-multitool 1.15.2 (Kyr4l/ei-universal-mod 663fe39f1) with um-multitool.patch, and eibuild.
+# Debian sid because um-multitool 1.15.2 needs glibc 2.43. Base images are pinned by digest; Debian packages
+# are not, which can change the tools' binaries but not what they produce.
+
+FROM docker.io/library/debian:sid-slim@sha256:10e9e0d7aa4ed47205c7053f117199e6b06a9b17ac3eeb7f7bb1a818b963a803 AS um
+# Unpinned on purpose (see above): sid replaces package versions faster than pins would survive.
+# hadolint ignore=DL3008
+RUN apt-get update -qq \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+        g++ make pkg-config libglfw3-dev libgl-dev git ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+RUN git clone -q --filter=blob:none --no-checkout https://github.com/Kyr4l/ei-universal-mod.git /um \
+    && git -C /um sparse-checkout set tools/um-multitool resources/universal-mod/um-dll \
+    && git -C /um checkout -q 663fe39f1eb7d8aac6c8863849db8e74a42aa0b8
+COPY um-multitool.patch /um-multitool.patch
+# Upstream commits a prebuilt um-multitool; remove it so make cannot consider the target up to date.
+RUN git -C /um apply /um-multitool.patch \
+    && rm /um/tools/um-multitool/um-multitool \
+    && make -C /um/tools/um-multitool -j"$(nproc)" linux
+
+FROM docker.io/library/golang:1.25-bookworm@sha256:c268a04d59aea0b180ed9946a658cfab9e7b3391dc90eed6e4969ccff98c851f AS go
+WORKDIR /eibuild
+COPY go.mod ./
+COPY cmd cmd
+COPY internal internal
+RUN CGO_ENABLED=0 go build -trimpath -o /eibuild-bin ./cmd/eibuild
+
+FROM docker.io/library/debian:sid-slim@sha256:10e9e0d7aa4ed47205c7053f117199e6b06a9b17ac3eeb7f7bb1a818b963a803
+# hadolint ignore=DL3008
+RUN apt-get update -qq \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends libglfw3 libgl1 \
+    && rm -rf /var/lib/apt/lists/*
+COPY --from=um /um/tools/um-multitool/um-multitool /usr/local/bin/um-multitool
+COPY --from=go /eibuild-bin /usr/local/bin/eibuild
+# Runs as the image's root on purpose: under rootless podman that is the invoking user, so the build can write
+# the mounted output directory; a non-root USER would map to a subordinate uid that cannot.

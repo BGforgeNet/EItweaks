@@ -1,0 +1,330 @@
+// eibuild builds EItweaks from the repository's source data, one EI starter mod zip per language.
+//
+//	eibuild build <repo> <version> <out>   write <out>/eitweaks-<version>-<lang>.zip and SHA256SUMS
+//	eibuild xlsx <csv-dir> <out.xlsx>      a database's CSV sheets as one workbook, for spreadsheet editing
+//	eibuild csv <in.xlsx> <csv-dir>        a workbook back to CSV sheets, cell text verbatim
+//
+// The build calls um-multitool, expected on PATH as in the image built from build/Containerfile.
+package main
+
+import (
+	"archive/zip"
+	"bytes"
+	"crypto/sha256"
+	"encoding/hex"
+	"errors"
+	"fmt"
+	"io/fs"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"sort"
+	"strings"
+	"time"
+
+	"eitweaks/build/internal/xlsxcsv"
+)
+
+// Every file packed into a .res archive or the zip carries this time, so the output depends on content only.
+var epoch = time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC)
+
+var databases = []string{"database", "databaselmp"}
+
+func main() {
+	if len(os.Args) < 2 {
+		usage()
+	}
+	var err error
+	switch args := os.Args[2:]; {
+	case os.Args[1] == "build" && len(args) == 3:
+		err = build(args[0], args[1], args[2])
+	case os.Args[1] == "xlsx" && len(args) == 2:
+		err = xlsxcsv.Import(args[0], args[1])
+	case os.Args[1] == "csv" && len(args) == 2:
+		err = xlsxcsv.Export(args[0], args[1])
+	default:
+		usage()
+	}
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "eibuild:", err)
+		os.Exit(1)
+	}
+}
+
+func usage() {
+	fmt.Fprintln(os.Stderr, "usage: eibuild build <repo> <version> <out> | xlsx <csv-dir> <out.xlsx> | csv <in.xlsx> <csv-dir>")
+	os.Exit(2)
+}
+
+// ---- helpers ----
+
+// um runs um-multitool; on failure its combined output is part of the error.
+func um(args ...string) error {
+	out, err := exec.Command("um-multitool", args...).CombinedOutput()
+	if err != nil {
+		return fmt.Errorf("um-multitool %s: %w\n%s", strings.Join(args, " "), err, out)
+	}
+	return nil
+}
+
+func copyFile(src, dst string) error {
+	data, err := os.ReadFile(src)
+	if err != nil {
+		return err
+	}
+	if err := os.MkdirAll(filepath.Dir(dst), 0o755); err != nil {
+		return err
+	}
+	return os.WriteFile(dst, data, 0o644)
+}
+
+// copyTree copies every regular file under src into dst, keeping relative paths.
+func copyTree(src, dst string) error {
+	return filepath.WalkDir(src, func(p string, d fs.DirEntry, err error) error {
+		if err != nil || d.IsDir() {
+			return err
+		}
+		rel, err := filepath.Rel(src, p)
+		if err != nil {
+			return err
+		}
+		return copyFile(p, filepath.Join(dst, rel))
+	})
+}
+
+func listFiles(dir string) ([]string, error) {
+	var names []string
+	err := filepath.WalkDir(dir, func(p string, d fs.DirEntry, err error) error {
+		if err != nil || d.IsDir() {
+			return err
+		}
+		r, err := filepath.Rel(dir, p)
+		names = append(names, filepath.ToSlash(r))
+		return err
+	})
+	sort.Strings(names)
+	return names, err
+}
+
+// pack builds a .res archive from a copy of dir: restool records file times, which are pinned to epoch.
+func pack(dir, res, work string) error {
+	tmp, err := os.MkdirTemp(work, "pack-")
+	if err != nil {
+		return err
+	}
+	if err := copyTree(dir, tmp); err != nil {
+		return err
+	}
+	if err := filepath.WalkDir(tmp, func(p string, d fs.DirEntry, err error) error {
+		if err != nil || d.IsDir() {
+			return err
+		}
+		return os.Chtimes(p, epoch, epoch)
+	}); err != nil {
+		return err
+	}
+	if err := os.MkdirAll(filepath.Dir(res), 0o755); err != nil {
+		return err
+	}
+	return um("restool", "--pack", "--no-strip-ext", tmp, "-o", res)
+}
+
+// sameTrees returns the first difference between two directory trees, or "" when identical.
+func sameTrees(a, b string) (string, error) {
+	na, err := listFiles(a)
+	if err != nil {
+		return "", err
+	}
+	nb, err := listFiles(b)
+	if err != nil {
+		return "", err
+	}
+	if strings.Join(na, "\n") != strings.Join(nb, "\n") {
+		return fmt.Sprintf("file lists differ (%d vs %d files)", len(na), len(nb)), nil
+	}
+	for _, n := range na {
+		x, err := os.ReadFile(filepath.Join(a, n))
+		if err != nil {
+			return "", err
+		}
+		y, err := os.ReadFile(filepath.Join(b, n))
+		if err != nil {
+			return "", err
+		}
+		if !bytes.Equal(x, y) {
+			return n + " differs", nil
+		}
+	}
+	return "", nil
+}
+
+// ---- build ----
+
+func build(repo, version, out string) error {
+	work, err := os.MkdirTemp("", "eibuild-")
+	if err != nil {
+		return err
+	}
+	defer os.RemoveAll(work)
+
+	// Everything but the text archives is the same for every language.
+	common := filepath.Join(work, "common")
+	for _, db := range databases {
+		if err := buildDatabase(filepath.Join(repo, "res", db), filepath.Join(common, "res", db+".res"), filepath.Join(work, db)); err != nil {
+			return err
+		}
+	}
+	for _, a := range []string{"textures", "sfx"} {
+		if err := pack(filepath.Join(repo, "res", a), filepath.Join(common, "res", a+".res"), work); err != nil {
+			return err
+		}
+	}
+	for _, d := range []string{"maps", "movies"} {
+		if err := copyTree(filepath.Join(repo, d), filepath.Join(common, d)); err != nil {
+			return err
+		}
+	}
+	configs, err := filepath.Glob(filepath.Join(repo, "config", "*.ini"))
+	if err != nil {
+		return err
+	}
+	for _, c := range configs {
+		if filepath.Base(c) == "ai.ini" {
+			continue // source of ai.reg below
+		}
+		if err := copyFile(c, filepath.Join(common, "config", filepath.Base(c))); err != nil {
+			return err
+		}
+	}
+	if err := um("inireg", "--ini2reg", filepath.Join(repo, "config", "ai.ini"), "-o", filepath.Join(common, "config", "ai.reg")); err != nil {
+		return err
+	}
+	modIni, err := os.ReadFile(filepath.Join(repo, "config.ini"))
+	if err != nil {
+		return err
+	}
+
+	langDirs, err := os.ReadDir(filepath.Join(repo, "res", "texts"))
+	if err != nil {
+		return err
+	}
+	if err := os.MkdirAll(out, 0o755); err != nil {
+		return err
+	}
+	var sums []string
+	for _, l := range langDirs {
+		lang := l.Name()
+		mod := filepath.Join(work, "mod-"+lang)
+		if err := copyTree(common, mod); err != nil {
+			return err
+		}
+		archives, err := os.ReadDir(filepath.Join(repo, "res", "texts", lang))
+		if err != nil {
+			return err
+		}
+		var extra []string
+		for _, a := range archives {
+			if err := pack(filepath.Join(repo, "res", "texts", lang, a.Name()), filepath.Join(mod, "res", a.Name()+".res"), work); err != nil {
+				return err
+			}
+			if !strings.Contains(string(modIni), "\n"+a.Name()+".res=") {
+				// Archives only some languages ship (textslmp: Russian) are added to [RES] per language.
+				extra = append(extra, a.Name()+`.res=res\`+a.Name()+".res")
+			}
+		}
+		ini := strings.Replace(string(modIni), "[RES]\n", "[RES]\n"+strings.Join(append(extra, ""), "\n"), 1)
+		if len(extra) > 0 && ini == string(modIni) {
+			return errors.New("config.ini: no [RES] section")
+		}
+		iniPath := filepath.Join(work, "config-"+lang+".ini")
+		if err := os.WriteFile(iniPath, []byte(ini), 0o644); err != nil {
+			return err
+		}
+		if err := um("inireg", "--ini2reg", iniPath, "-o", filepath.Join(mod, "config.reg")); err != nil {
+			return err
+		}
+		name := fmt.Sprintf("eitweaks-%s-%s.zip", version, lang)
+		zipPath := filepath.Join(out, name)
+		if err := writeZip(mod, "eitweaks", zipPath); err != nil {
+			return err
+		}
+		data, err := os.ReadFile(zipPath)
+		if err != nil {
+			return err
+		}
+		sum := sha256.Sum256(data)
+		sums = append(sums, hex.EncodeToString(sum[:])+"  "+name)
+	}
+	return os.WriteFile(filepath.Join(out, "SHA256SUMS"), []byte(strings.Join(sums, "\n")+"\n"), 0o644)
+}
+
+// buildDatabase compiles <dbSrc>/csv with xlsxdb, packs the result with <dbSrc>/extra (the entries xlsxdb does
+// not produce), then exports the archive again and requires the export to equal the CSVs.
+func buildDatabase(dbSrc, res, work string) error {
+	if err := os.MkdirAll(work, 0o755); err != nil {
+		return err
+	}
+	csvDir := filepath.Join(dbSrc, "csv")
+	xlsx := filepath.Join(work, "source.xlsx")
+	if err := xlsxcsv.Import(csvDir, xlsx); err != nil {
+		return err
+	}
+	compiledRes := filepath.Join(work, "compiled.res")
+	if err := um("xlsxdb", "--no-check", xlsx, "-o", compiledRes); err != nil {
+		return err
+	}
+	entries := filepath.Join(work, "entries")
+	if err := um("restool", compiledRes, "-o", entries); err != nil {
+		return err
+	}
+	// A database whose entries all come from xlsxdb has no extra/ directory.
+	if err := copyTree(filepath.Join(dbSrc, "extra"), entries); err != nil && !errors.Is(err, fs.ErrNotExist) {
+		return err
+	}
+	if err := pack(entries, res, work); err != nil {
+		return err
+	}
+	back := filepath.Join(work, "back.xlsx")
+	if err := um("dbexport", res, "-o", back); err != nil {
+		return err
+	}
+	check := filepath.Join(work, "check")
+	if err := xlsxcsv.Export(back, check); err != nil {
+		return err
+	}
+	diff, err := sameTrees(csvDir, check)
+	if err != nil {
+		return err
+	}
+	if diff != "" {
+		return fmt.Errorf("%s: the compiled database does not export back to its CSVs: %s", dbSrc, diff)
+	}
+	return nil
+}
+
+// writeZip zips dir under the top folder name with sorted entries and fixed times.
+func writeZip(dir, top, zipPath string) error {
+	names, err := listFiles(dir)
+	if err != nil {
+		return err
+	}
+	var buf bytes.Buffer
+	zw := zip.NewWriter(&buf)
+	for _, n := range names {
+		data, err := os.ReadFile(filepath.Join(dir, n))
+		if err != nil {
+			return err
+		}
+		w, err := zw.CreateHeader(&zip.FileHeader{Name: top + "/" + n, Method: zip.Deflate, Modified: epoch})
+		if err != nil {
+			return err
+		}
+		if _, err := w.Write(data); err != nil {
+			return err
+		}
+	}
+	if err := zw.Close(); err != nil {
+		return err
+	}
+	return os.WriteFile(zipPath, buf.Bytes(), 0o644)
+}

@@ -1,0 +1,88 @@
+diff --git a/tools/um-multitool/db_schema.hpp b/tools/um-multitool/db_schema.hpp
+index fd98a64..abec64b 100644
+--- a/tools/um-multitool/db_schema.hpp
++++ b/tools/um-multitool/db_schema.hpp
+@@ -65,20 +65,18 @@ inline double SpreadsheetNumber(const std::string& text) {
+     return std::atof(text.c_str());
+ }
+ 
+-inline bool IsNeverWritten(const std::string& dbName, int blockId, int fieldId) {
+-    return dbName == "Items" && blockId == 4 && fieldId == 26; // QuickItems ByteList
+-}
+-inline bool IsAlwaysEmpty(const std::string& dbName, int blockId, int fieldId) {
+-    return dbName == "Items" && blockId == 4 && fieldId == 27; // QuickItems Hex
+-}
++// QuickItems fields 26 (ByteList) and 27 (Hex) are exported and compiled like any other field: the game's
++// own databases (1.06, 1.07) and EIDBEditor 1.4.4 output all carry both, so dropping them is lossy.
++inline bool IsNeverWritten(const std::string&, int, int) { return false; }
++inline bool IsAlwaysEmpty(const std::string&, int, int) { return false; }
+ 
+ static const std::map<std::string, std::string> DB_OUTPUT_NAME = {
+     {"Items", "items.idb"}, {"Levers", "levers.ldb"}, {"Perks", "perks.pdb"},
+     {"Prints", "prints.db"}, {"Spells", "spells.sdb"}, {"Units", "units.udb"},
+-    {"Acks", "acks.db"},
++    {"Acks", "acks.db"}, {"Quests", "quests.qdb"},
+ };
+ 
+-// Order matches dbfiles.txt (Items, Levers, Perks, Prints, Spells, Units, Acks).
++// Order matches dbfiles.txt (Items, Levers, Perks, Prints, Spells, Units, Acks, Quests).
+ static const std::vector<std::string> DB_ORDER = {
+-    "Items", "Levers", "Perks", "Prints", "Spells", "Units", "Acks",
++    "Items", "Levers", "Perks", "Prints", "Spells", "Units", "Acks", "Quests",
+ };
+diff --git a/tools/um-multitool/db_schema_generated.hpp b/tools/um-multitool/db_schema_generated.hpp
+index a32f478..491c758 100644
+--- a/tools/um-multitool/db_schema_generated.hpp
++++ b/tools/um-multitool/db_schema_generated.hpp
+@@ -46,6 +46,11 @@ static const std::map<std::string, std::map<int, std::vector<FieldDef>>> DBTYPES
+         {20, { {1, FieldType::String, 0}, {2, FieldType::SignedLong, 0}, {3, FieldType::String, 0}, {4, FieldType::String, 0} }},
+         {21, { {1, FieldType::String, 0}, {2, FieldType::SignedLong, 0}, {3, FieldType::String, 0}, {4, FieldType::String, 0}, {10, FieldType::UnsignedLong, 0} }},
+     }},
++    // Added by hand from the same dbtypes.txt ([Quests]): quests.qdb, as DBEditor reads and writes it.
++    {"Quests", {
++        {1, { {0, FieldType::String, 0}, {1, FieldType::Float, 0}, {2, FieldType::SignedLong, 0}, {3, FieldType::SignedLong, 0}, {4, FieldType::String, 0}, {5, FieldType::SignedLong, 0}, {6, FieldType::SignedLong, 0}, {7, FieldType::StringList, 0} }},
++        {2, { {0, FieldType::String, 0}, {1, FieldType::Float, 0}, {2, FieldType::Float, 0}, {3, FieldType::StringList, 0}, {4, FieldType::String, 0}, {5, FieldType::StringList, 0}, {6, FieldType::StringList, 0}, {7, FieldType::StringList, 0}, {8, FieldType::StringList, 0}, {9, FieldType::StringList, 0}, {10, FieldType::SignedLong, 0} }},
++    }},
+ };
+ 
+ static const std::map<std::string, std::vector<std::pair<int, std::string>>> DBBLOCKS = {
+@@ -56,4 +61,5 @@ static const std::map<std::string, std::vector<std::pair<int, std::string>>> DBB
+     {"Spells", { {1, "SpellPrototypes"}, {2, "SpellModifiers"}, {3, "S_Spells"}, {4, "S_Armors"}, {5, "S_Weapons"} }},
+     {"Units", { {1, "HitLocations"}, {2, "RaceModels"}, {3, "Monsters"}, {4, "NPC"} }},
+     {"Acks", { {1, "Answers"}, {2, "Cryes"}, {3, "Others"} }},
++    {"Quests", { {1, "Quests"}, {2, "Briefings"} }},
+ };
+\ No newline at end of file
+diff --git a/tools/um-multitool/inireg.cpp b/tools/um-multitool/inireg.cpp
+index a4821e0..96f119e 100644
+--- a/tools/um-multitool/inireg.cpp
++++ b/tools/um-multitool/inireg.cpp
+@@ -36,6 +36,8 @@
+ #include <cstring>
+ #include <cstdint>
+ #include <cctype>
++#include <cmath>
++#include <cstdlib>
+ #include <thread>
+ #include <mutex>
+ #include <atomic>
+@@ -225,10 +227,17 @@ static ValueType ClassifyValue(const std::string& s, int32_t& outInt, float& out
+ /**
+  * Formats a 32-bit float matching Evil Islands compact representation.
+  */
++// Shortest text that parses back to the same float, always with a '.' or exponent: without one,
++// ini2reg reads "3" as an integer and a list such as "1" and "0.33" as strings.
+ static std::string FormatFloat(float val) {
+     char buf[64];
+-    snprintf(buf, sizeof(buf), "%.6g", val);
+-    return std::string(buf);
++    for (int precision = 6; precision <= 9; ++precision) {
++        snprintf(buf, sizeof(buf), "%.*g", precision, val);
++        if (std::isnan(val) || std::isinf(val) || std::strtof(buf, nullptr) == val) break;
++    }
++    std::string s(buf);
++    if (std::isfinite(val) && s.find_first_of(".eE") == std::string::npos) s += ".0";
++    return s;
+ }
+ 
+ // ============================================================================

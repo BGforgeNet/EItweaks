@@ -3,21 +3,10 @@
 set -xeu -o pipefail
 
 version="v$1"
-fname="eitweaks-$version.zip"
-dname="eitweaks"
+out="$(mktemp -d)"
 
-rm -rf "$dname"
-mkdir -p "$dname"
+podman build -t eitweaks-build -f build/Containerfile build
+podman run --rm --network none -v "$PWD:/repo:ro" -v "$out:/out" eitweaks-build eibuild build /repo "$version" /out
 
-ini2reg config.ini
-cp -r config \
-    config.reg \
-    maps \
-    movies \
-    res \
-    "$dname"
-
-zip -r "$fname" "$dname"
-rm -rf "$dname"
-
-githubrelease release BGforgeNet/EItweaks create "$version" --publish --name "$version" "$fname"
+githubrelease release BGforgeNet/EItweaks create "$version" --publish --name "$version" "$out"/eitweaks-"$version"-*.zip
+rm -rf "$out"
