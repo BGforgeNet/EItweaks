@@ -12,56 +12,18 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixe
 
 ### Overview
 
-- [Patch 1.07 fixes](docs/patch-1.07.md)
-- [Gameplay](#gameplay)
-- [Speedup](#speedup)
-- [Items](#items)
-- [Regeneration](#regeneration)
-- [Resistances](#resistances)
-- [Bug fixes](#bug-fixes)
-- [Running](#running)
+- [Fixes](#fixes)
+- [Tweaks](#tweaks)
+  - [Gameplay](#gameplay)
+  - [Speedup](#speedup)
+  - [Items](#items)
+  - [Regeneration](#regeneration)
+  - [Resistances](#resistances)
 
-The changes below apply to the single player game; the multiplayer database is 1.07's, with the change listed among the [patch 1.07 fixes](docs/patch-1.07.md).
+EItweaks' own fixes and tweaks apply to the single player game; the multiplayer database is 1.07's, with the change listed among the [patch 1.07 fixes](docs/patch-1.07.md).
 
-#### Gameplay
-- When a player character is running, stamina is depleted by points rather than percentage, so a character can run longer as stamina grows (see [Running](#running)).
-- Human (PC and NPC) run speed slightly increased.
-- Human (PC and NPC) walk speed considerably increased.
-- Zak no longer has a level of backstab perk.
-- Airy grants +2 to Sensory Magic and Trickster +2 to Use/Steal, instead of +10.
-- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44.
-- Dragons on Gipath no longer have more than 1000 hit points.
-
-#### Speedup
-- 1C/Nival intro movies are disabled.
-- New game starting movie is disabled.
-- Help screens are disabled by default.
-- New game "My head hurts" cutscene is shortened.
-
-#### Items
-- Dragons drop hide in addition to bones.
-- Stronger Green Dragon Horn.
-- Hide armor is sold in the Gipath shop.
-- Half effect rune is sold on Gipath.
-
-#### Regeneration
-- Disabled for undead, golems, shadows and will-o-wisps.
-- Halved for ogres.
-- Green/blue trolls are untouched, but black ones toned down to match green/blue.
-- Ice elementals regenerate like other elementals.
-- Reduced dramatically for all other monsters and characters.
-
-#### Resistances
-- Hard leather provides extra protection against piercing and bludgeoning, matching monster protection.
-- Hide provides extra protection against piercing.
-- Fur provides extra protection against bludgeoning.
-- Ogres and lizardmen have the same protection against piercing and bludgeoning (Hadagan ogres keep their piercing protection).
-- Skeletons have extra protection against piercing; trolls have no extra protection against acid.
-- Cyclopes have no extra magic protection.
-- Lava elementals get extra protection from fire, Snow elementals get vulnerability to it.
-- Lightning vulnerability for NPCs using metal armor and golems.
-
-#### Bug fixes
+#### Fixes
+- The fixes of the unofficial [patch 1.07](docs/patch-1.07.md), for every language.
 - Gipath bats description correctly states fire damage.
 - Stony harpies have extra protection from lightning instead of fire.
 - Grey harpies have extra protection from acid instead of fire.
@@ -71,9 +33,46 @@ The changes below apply to the single player game; the multiplayer database is 1
 - Toads and will-o-wisps show their real magic damage.
 - Red harpies show their real damage type and range.
 - Goblins with slings do bludgeoning damage.
+- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows. This needs [SpellAddon](https://www.gipat.ru/forum/thread-3802.html): extract it into the main game directory.
 
-#### Running
-To fix fatigue depletion when running (it's supposed to be spent in absolute units, rather than percents), install [SpellAddon](https://www.gipat.ru/forum/thread-3802.html). Simply extract it into main game directory.
+#### Tweaks
+
+##### Gameplay
+- Human (PC and NPC) run speed slightly increased.
+- Human (PC and NPC) walk speed considerably increased.
+- Zak no longer has a level of backstab perk.
+- Airy grants +2 to Sensory Magic and Trickster +2 to Use/Steal, instead of +10.
+- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44.
+- Dragons on Gipath no longer have more than 1000 hit points.
+
+##### Speedup
+- 1C/Nival intro movies are disabled.
+- New game starting movie is disabled.
+- Help screens are disabled by default.
+- New game "My head hurts" cutscene is shortened.
+
+##### Items
+- Dragons drop hide in addition to bones.
+- Stronger Green Dragon Horn.
+- Hide armor is sold in the Gipath shop.
+- Half effect rune is sold on Gipath.
+
+##### Regeneration
+- Disabled for undead, golems, shadows and will-o-wisps.
+- Halved for ogres.
+- Green/blue trolls are untouched, but black ones toned down to match green/blue.
+- Ice elementals regenerate like other elementals.
+- Reduced dramatically for all other monsters and characters.
+
+##### Resistances
+- Hard leather provides extra protection against piercing and bludgeoning, matching monster protection.
+- Hide provides extra protection against piercing.
+- Fur provides extra protection against bludgeoning.
+- Ogres and lizardmen have the same protection against piercing and bludgeoning (Hadagan ogres keep their piercing protection).
+- Skeletons have extra protection against piercing; trolls have no extra protection against acid.
+- Cyclopes have no extra magic protection.
+- Lava elementals get extra protection from fire, Snow elementals get vulnerability to it.
+- Lightning vulnerability for NPCs using metal armor and golems.
 
 ### Installation
 
