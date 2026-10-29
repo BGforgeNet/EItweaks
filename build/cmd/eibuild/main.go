@@ -199,6 +199,10 @@ func build(repo, version, out string) error {
 	if err := um("inireg", "--ini2reg", filepath.Join(repo, "config", "ai.ini"), "-o", filepath.Join(common, "config", "ai.reg")); err != nil {
 		return err
 	}
+	// SpellAddon reads a SPELLADDON.INI from the active mod's folder, so these settings apply to EItweaks only.
+	if err := copyFile(filepath.Join(repo, "SPELLADDON.INI"), filepath.Join(common, "SPELLADDON.INI")); err != nil {
+		return err
+	}
 	modIni, err := os.ReadFile(filepath.Join(repo, "config.ini"))
 	if err != nil {
 		return err
@@ -245,7 +249,9 @@ func build(repo, version, out string) error {
 		}
 		name := fmt.Sprintf("eitweaks-%s-%s.zip", version, lang)
 		zipPath := filepath.Join(out, name)
-		if err := writeZip(mod, "eitweaks", zipPath); err != nil {
+		// SpellAddon ships unmodified beside the mod: its licence forbids distributing its files separately.
+		folders := []zipFolder{{mod, "eitweaks"}, {filepath.Join(repo, "spelladdon"), "SpellAddon"}}
+		if err := writeZip(folders, zipPath); err != nil {
 			return err
 		}
 		data, err := os.ReadFile(zipPath)
@@ -302,25 +308,29 @@ func buildDatabase(dbSrc, res, work string) error {
 	return nil
 }
 
-// writeZip zips dir under the top folder name with sorted entries and fixed times.
-func writeZip(dir, top, zipPath string) error {
-	names, err := listFiles(dir)
-	if err != nil {
-		return err
-	}
+type zipFolder struct{ dir, top string }
+
+// writeZip zips each folder's files under its top folder name, with sorted entries and fixed times.
+func writeZip(folders []zipFolder, zipPath string) error {
 	var buf bytes.Buffer
 	zw := zip.NewWriter(&buf)
-	for _, n := range names {
-		data, err := os.ReadFile(filepath.Join(dir, n))
+	for _, f := range folders {
+		names, err := listFiles(f.dir)
 		if err != nil {
 			return err
 		}
-		w, err := zw.CreateHeader(&zip.FileHeader{Name: top + "/" + n, Method: zip.Deflate, Modified: epoch})
-		if err != nil {
-			return err
-		}
-		if _, err := w.Write(data); err != nil {
-			return err
+		for _, n := range names {
+			data, err := os.ReadFile(filepath.Join(f.dir, n))
+			if err != nil {
+				return err
+			}
+			w, err := zw.CreateHeader(&zip.FileHeader{Name: f.top + "/" + n, Method: zip.Deflate, Modified: epoch})
+			if err != nil {
+				return err
+			}
+			if _, err := w.Write(data); err != nil {
+				return err
+			}
 		}
 	}
 	if err := zw.Close(); err != nil {

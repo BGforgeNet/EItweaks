@@ -9,12 +9,14 @@
 - English and German: 1.07's corrected marker position for the "Punishing goblins" quest on the world map.
 - Hide armor for sale in the Gipath shop.
 - Half effect rune for sale on Gipath.
+- Running depletes stamina by points rather than percentage: longer runs above 35 maximum stamina, shorter below.
+  The release includes SpellAddon 20.6, configured for EItweaks only; see the README for installing it.
 
 #### Changed
 - Airy grants +2 to Sensory Magic instead of +10, and Trickster +2 to Use/Steal instead of +10.
 - Dragons on Gipath no longer have more than 1000 hit points.
 - Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).
-- The release no longer includes a `game.exe`. For the running stamina change, install SpellAddon (see the README).
+- The release no longer includes a `game.exe`.
 
 #### Fixed
 - Toads and will-o-wisps show their real magic damage.

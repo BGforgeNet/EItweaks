@@ -33,7 +33,7 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 - Toads and will-o-wisps show their real magic damage.
 - Red harpies show their real damage type and range.
 - Goblins with slings do bludgeoning damage.
-- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows. This needs [SpellAddon](https://www.gipat.ru/forum/thread-3802.html): extract it into the main game directory.
+- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 35 maximum stamina, shorter below it. This uses the included [SpellAddon](https://evilislandsaddon.forumotion.com/) (see [Installation](#installation)).
 
 #### Tweaks
 
@@ -81,6 +81,7 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 1. Make sure the game is at version 1.06. The GOG English and Russian versions are; for the GOG German version, install the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first. Patch 1.07 is not needed: EItweaks includes its fixes.
 1. Download the latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest) for your game's language (`ru`, `en` or `de`), unzip it.
 1. Put `eitweaks` into the `Mods` subdirectory of starter's installation directory.
+1. From the `SpellAddon` folder, copy `SpellAddonXa.asi`, `SpellAddonInfo.txt` and `SPELLADDON.INI` into the game directory (with the newest starter, into its `Engine` directory as well). This `SPELLADDON.INI` changes nothing in the game; EItweaks brings its own settings, used only when EItweaks is selected.
 1. Launch starter, select EItweaks in the dropdown.
 
 ### Support

@@ -1,3 +1,5 @@
 # Game data is stored byte-exact: no line-ending conversion (the text entries use CRLF).
 res/** -text
 config/ai.ini -text
+SPELLADDON.INI -text
+spelladdon/** -text
