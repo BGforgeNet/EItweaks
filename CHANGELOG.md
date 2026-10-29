@@ -19,6 +19,7 @@
 #### Fixed
 - Toads and will-o-wisps show their real magic damage.
 - Red harpies show their real damage type and range.
+- Red dragons have extra protection from fire, like green and blue dragons from their elements.
 
 ### 1.0
 Initial release.
