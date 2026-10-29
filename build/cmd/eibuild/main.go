@@ -249,8 +249,17 @@ func build(repo, version, out string) error {
 		}
 		name := fmt.Sprintf("eitweaks-%s-%s.zip", version, lang)
 		zipPath := filepath.Join(out, name)
+		// The starter has Russian and English installers only; other languages get the English one.
+		setup := "setup_en.exe"
+		if lang == "ru" {
+			setup = "setup_ru.exe"
+		}
+		starter := filepath.Join(work, "starter-"+lang)
+		if err := copyFile(filepath.Join(repo, "starter", setup), filepath.Join(starter, setup)); err != nil {
+			return err
+		}
 		// SpellAddon ships unmodified beside the mod: its licence forbids distributing its files separately.
-		folders := []zipFolder{{mod, "eitweaks"}, {filepath.Join(repo, "spelladdon"), "SpellAddon"}}
+		folders := []zipFolder{{mod, "eitweaks"}, {filepath.Join(repo, "spelladdon"), "SpellAddon"}, {starter, "EI starter"}}
 		if err := writeZip(folders, zipPath); err != nil {
 			return err
 		}
