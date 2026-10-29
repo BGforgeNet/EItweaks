@@ -1,10 +1,10 @@
 ## EItweaks
 
-EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixes of the unofficial patch 1.07 and works with the Russian, English and German versions of the game.
+EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixes of the unofficial [patch 1.07](docs/patch-1.07.md) and works with the Russian, English and German versions of the game.
 
 - [Overview](#overview)
 - [Installation](#installation)
-- [Building](#building)
+- [Building from source](docs/building.md)
 - [Support](#support)
 - [Author](#author)
 - [Changelog](CHANGELOG.md)
@@ -12,7 +12,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixe
 
 ### Overview
 
-- [Patch 1.07](#patch-107)
+- [Patch 1.07 fixes](docs/patch-1.07.md)
 - [Gameplay](#gameplay)
 - [Speedup](#speedup)
 - [Items](#items)
@@ -21,12 +21,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixe
 - [Bug fixes](#bug-fixes)
 - [Running](#running)
 
-#### Patch 1.07
-- The fixes of the unofficial patch 1.07 (Gipat Group), for every language: campaign map scripts (trolls coming back to the witch's cave, Go-Go's dialogues, the goblin sentry phrase repeating, levers and mechanisms that could trap the player, quest rewards and experience given on every visit to a zone), the single and multiplayer databases and, in Russian, the texts.
-- English and German: 1.07's corrected marker position for the "Punishing goblins" quest on the world map.
-- Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).
-
-The changes below apply to the single player game; the multiplayer database is 1.07's with the change above.
+The changes below apply to the single player game; the multiplayer database is 1.07's, with the change listed among the [patch 1.07 fixes](docs/patch-1.07.md).
 
 #### Gameplay
 - When a player character is running, stamina is depleted by points rather than percentage, so a character can run longer as stamina grows (see [Running](#running)).
@@ -88,28 +83,6 @@ To fix fatigue depletion when running (it's supposed to be spent in absolute uni
 1. Download the latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest) for your game's language (`ru`, `en` or `de`), unzip it.
 1. Put `eitweaks` into the `Mods` subdirectory of starter's installation directory.
 1. Launch starter, select EItweaks in the dropdown.
-
-### Building
-
-The game data is kept as source:
-
-- `res/database/csv`, `res/databaselmp/csv`: the single and multiplayer databases, one CSV per sheet. `res/database/extra` holds the entries that have no CSV form.
-- `res/texts/<language>`: the text archives as loose entries.
-- `res/sfx`, `res/textures`, `maps`, `movies`, `config`: sounds, textures, maps, movies and configs; `config/ai.ini` is compiled to `ai.reg`.
-- `config.ini`: the starter mod config.
-
-The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container. Install `podman` and put it on `PATH`, then:
-
-    podman build -t eitweaks-build -f build/Containerfile build
-    mkdir -p dist
-    podman run --rm --network none -v "$PWD:/repo:ro" -v "$PWD/dist:/out" eitweaks-build eibuild build /repo <version> /out
-
-This writes `eitweaks-<version>-<language>.zip` for each language; two builds of the same tree give identical zips. `scripts/release.sh <version>` builds and publishes a release.
-
-To edit a database in a spreadsheet, convert it to a workbook and back, in the same container with the repository mounted read-write:
-
-    podman run --rm -v "$PWD:/repo" -w /repo eitweaks-build eibuild xlsx res/database/csv database.xlsx
-    podman run --rm -v "$PWD:/repo" -w /repo eitweaks-build eibuild csv database.xlsx res/database/csv
 
 ### Support
 * Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).
