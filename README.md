@@ -79,10 +79,11 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 The game must be at version 1.06. The GOG versions are ready as they are: the English and Russian ones are 1.06, and for the German one EItweaks includes the data of the German patch 1.06 (its `game.exe` is already 1.06). A German CD version needs the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first. Patch 1.07 is not needed: EItweaks includes its fixes.
 
 Each [release](https://github.com/BGforgeNet/EItweaks/releases/latest) comes per game language (`ru`, `en` or `de`) in two versions:
-- `starter`: a mod for [EI starter](https://www.gipath.org/forum/thread-3828.html). It leaves the game's files untouched and is selected in starter's dropdown.
+- `starter`: a mod for [EI starter](https://www.gipath.org/forum/thread-3828.html). It leaves the game's files untouched and is selected in starter's dropdown. Starter runs its own `game.exe`, the Russian 1.06 one; the mod's plugin lets it run without the game disc, as GOG's own `game.exe` does, and play the English and German briefing voices.
 - `standalone`: copied over the game's files. It lacks a few changes the starter version has: 1.07's missing face texture fix and, in Russian, the shortened "My head hurts" cutscene.
 
 #### With EI starter
+1. Start the game once without the starter and quit it from the main menu: the game then saves the settings starter reads. Otherwise starter's first start shows "Failed to get data for 'FILTERING'"; pressing OK carries on.
 1. Install [EI starter](https://www.gipath.org/forum/thread-3828.html) 1.046.1, unless you already have it.
 1. Download the `starter` release for your game's language, unzip it.
 1. Put `eitweaks` into the `Mods` subdirectory of starter's installation directory.

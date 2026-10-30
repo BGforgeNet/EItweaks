@@ -224,6 +224,9 @@ func build(repo, version, out string) error {
 		if err := copyTree(common, mod); err != nil {
 			return err
 		}
+		if err := buildPlugin(filepath.Join(repo, "plugin", "eitweaks.c"), filepath.Join(mod, "eitweaks.dll"), lang); err != nil {
+			return err
+		}
 		// lang/<lang> mirrors the mod: res/<archive> folders are packed, everything else is copied as is.
 		langSrc := filepath.Join(repo, "lang", lang)
 		entries, err := os.ReadDir(langSrc)
@@ -267,7 +270,8 @@ func build(repo, version, out string) error {
 		if err := copyTree(mod, standalone); err != nil {
 			return err
 		}
-		for _, f := range append([]string{"config.reg"}, partialArchives...) {
+		// The starter's config and plugin: the game's own exe needs neither.
+		for _, f := range append([]string{"config.reg", "eitweaks.dll"}, partialArchives...) {
 			if err := os.Remove(filepath.Join(standalone, f)); err != nil && !errors.Is(err, fs.ErrNotExist) {
 				return err
 			}
@@ -289,6 +293,22 @@ func build(repo, version, out string) error {
 		}
 	}
 	return os.WriteFile(filepath.Join(out, "SHA256SUMS"), []byte(strings.Join(sums, "\n")+"\n"), 0o644)
+}
+
+// buildPlugin compiles the starter plugin for one language. Russian speech.res holds the briefing voices twice, under
+// the paths the starter's Russian exe asks for, so only the other languages need the briefing fix.
+func buildPlugin(src, dll, lang string) error {
+	// The linker otherwise stamps the build time and derives the image base from the (temporary) output path.
+	args := []string{"-shared", "-O2", "-s", "-static-libgcc", "-Wl,--no-insert-timestamp,--disable-auto-image-base",
+		"-o", dll, src}
+	if lang != "ru" {
+		args = append(args, "-DBRIEFING_FIX")
+	}
+	out, err := exec.Command("i686-w64-mingw32-gcc", args...).CombinedOutput()
+	if err != nil {
+		return fmt.Errorf("i686-w64-mingw32-gcc %s: %w\n%s", strings.Join(args, " "), err, out)
+	}
+	return nil
 }
 
 // buildDatabase compiles <dbSrc>/csv with xlsxdb, packs the result with <dbSrc>/extra (the entries xlsxdb does

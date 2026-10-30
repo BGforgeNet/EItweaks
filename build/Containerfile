@@ -1,4 +1,5 @@
-# Build image: um-multitool 1.15.2 (Kyr4l/ei-universal-mod 663fe39f1) with um-multitool.patch, and eibuild.
+# Build image: um-multitool 1.15.2 (Kyr4l/ei-universal-mod 663fe39f1) with um-multitool.patch, eibuild, and a
+# 32-bit Windows C compiler for the starter plugin.
 # Debian sid because um-multitool 1.15.2 needs glibc 2.43. Base images are pinned by digest; Debian packages
 # are not, which can change the tools' binaries but not what they produce.
 
@@ -28,7 +29,7 @@ RUN CGO_ENABLED=0 go build -trimpath -o /eibuild-bin ./cmd/eibuild
 FROM docker.io/library/debian:sid-slim@sha256:10e9e0d7aa4ed47205c7053f117199e6b06a9b17ac3eeb7f7bb1a818b963a803
 # hadolint ignore=DL3008
 RUN apt-get update -qq \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends libglfw3 libgl1 \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends libglfw3 libgl1 gcc-mingw-w64-i686 \
     && rm -rf /var/lib/apt/lists/*
 COPY --from=um /um/tools/um-multitool/um-multitool /usr/local/bin/um-multitool
 COPY --from=go /eibuild-bin /usr/local/bin/eibuild

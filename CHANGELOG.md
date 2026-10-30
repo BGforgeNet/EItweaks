@@ -3,6 +3,8 @@
 #### Added
 - Separate releases for the Russian, English and German versions of the game.
 - A standalone version, copied over the game's files, for playing without EI starter.
+- The starter version runs on the GOG versions: its plugin lets starter's `game.exe` run without the game disc and,
+  in English and German, play the briefing voices.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
 - The fixes of the unofficial patch 1.07 (Gipat Group) that 1.0 lacked, for every language: campaign map scripts
