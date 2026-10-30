@@ -7,8 +7,6 @@ The game data is kept as source:
 - `res/sfx`, `res/textures`, `maps`, `movies`, `config`: sounds, textures, maps, movies and configs; `config/ai.ini` is compiled to `ai.reg`.
 - `config.ini`: the starter mod config.
 - `SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `spelladdon`: [SpellAddon](https://evilislandsaddon.forumotion.com/) 20.6 as published, shipped beside the mod.
-- `starter`: the [EI starter](https://www.gipath.org/forum/thread-3828.html) 1.046.1 installers as published; a release carries the Russian one for `ru` and the English one for the other languages.
-
 The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container. Install `podman` and put it on `PATH`, then, from the repository root:
 
     podman build -t eitweaks-build -f build/Containerfile build

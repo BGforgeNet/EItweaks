@@ -78,7 +78,7 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 
 1. Make sure the game is at version 1.06. The GOG English and Russian versions are; for the GOG German version, install the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first. Patch 1.07 is not needed: EItweaks includes its fixes.
 1. Download the latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest) for your game's language (`ru`, `en` or `de`), unzip it.
-1. Install [EI starter](https://www.gipath.org/forum/thread-3828.html) 1.046.1 with the installer in the `EI starter` folder, unless you already have it.
+1. Install [EI starter](https://www.gipath.org/forum/thread-3828.html) 1.046.1, unless you already have it.
 1. Put `eitweaks` into the `Mods` subdirectory of starter's installation directory.
 1. From the `SpellAddon` folder, copy `SpellAddonXa.asi`, `SpellAddonInfo.txt` and `SPELLADDON.INI` into the game directory (with the newest starter, into its `Engine` directory as well). This `SPELLADDON.INI` changes nothing in the game; EItweaks brings its own settings, used only when EItweaks is selected.
 1. Launch starter, select EItweaks in the dropdown.
