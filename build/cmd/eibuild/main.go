@@ -3,6 +3,7 @@
 //	eibuild build <repo> <version> <out>   write <out>/eitweaks-<version>-<lang>-{starter,standalone}.zip and SHA256SUMS
 //	eibuild xlsx <csv-dir> <out.xlsx>      a database's CSV sheets as one workbook, for spreadsheet editing
 //	eibuild csv <in.xlsx> <csv-dir>        a workbook back to CSV sheets, cell text verbatim
+//	eibuild unzip <in.zip> <dir>           extract a release zip, for the installer build
 //
 // The build calls um-multitool, expected on PATH as in the image built from build/Containerfile.
 package main
@@ -14,6 +15,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"io"
 	"io/fs"
 	"os"
 	"os/exec"
@@ -53,6 +55,8 @@ func main() {
 		err = xlsxcsv.Import(args[0], args[1])
 	case os.Args[1] == "csv" && len(args) == 2:
 		err = xlsxcsv.Export(args[0], args[1])
+	case os.Args[1] == "unzip" && len(args) == 2:
+		err = unzip(args[0], args[1])
 	default:
 		usage()
 	}
@@ -63,7 +67,7 @@ func main() {
 }
 
 func usage() {
-	fmt.Fprintln(os.Stderr, "usage: eibuild build <repo> <version> <out> | xlsx <csv-dir> <out.xlsx> | csv <in.xlsx> <csv-dir>")
+	fmt.Fprintln(os.Stderr, "usage: eibuild build <repo> <version> <out> | xlsx <csv-dir> <out.xlsx> | csv <in.xlsx> <csv-dir> | unzip <in.zip> <dir>")
 	os.Exit(2)
 }
 
@@ -392,4 +396,38 @@ func writeZip(folders []zipFolder, zipPath string) error {
 		return err
 	}
 	return os.WriteFile(zipPath, buf.Bytes(), 0o644)
+}
+
+// unzip extracts every file of zipPath under dir; an entry naming a path outside dir is an error.
+func unzip(zipPath, dir string) error {
+	zr, err := zip.OpenReader(zipPath)
+	if err != nil {
+		return err
+	}
+	defer zr.Close()
+	for _, f := range zr.File {
+		if !filepath.IsLocal(f.Name) {
+			return fmt.Errorf("%s: entry %q leaves the target folder", zipPath, f.Name)
+		}
+		if f.FileInfo().IsDir() {
+			continue
+		}
+		r, err := f.Open()
+		if err != nil {
+			return err
+		}
+		data, err := io.ReadAll(r)
+		r.Close()
+		if err != nil {
+			return fmt.Errorf("%s: %s: %w", zipPath, f.Name, err)
+		}
+		dst := filepath.Join(dir, filepath.FromSlash(f.Name))
+		if err := os.MkdirAll(filepath.Dir(dst), 0o755); err != nil {
+			return err
+		}
+		if err := os.WriteFile(dst, data, 0o644); err != nil {
+			return err
+		}
+	}
+	return nil
 }

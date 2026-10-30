@@ -3,6 +3,8 @@
 #### Added
 - Separate releases for the Russian, English and German versions of the game.
 - A standalone version, copied over the game's files, for playing without EI starter.
+- Installers for both versions. The standalone one backs up the game files it replaces, and uninstalling puts them
+  back.
 - The starter version runs on the GOG versions without the game disc.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
