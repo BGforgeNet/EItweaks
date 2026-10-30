@@ -3,7 +3,7 @@
 The game data is kept as source:
 
 - `res/database/csv`, `res/databaselmp/csv`: the single and multiplayer databases, one CSV per sheet. `res/database/extra` holds the entries that have no CSV form.
-- `lang/<language>`: what one language adds, laid out as in the mod: `res/<archive>` holds an archive as loose entries (texts; multiplayer texts; Russian sounds), the rest is copied as is. `lang/de/maps` holds the maps and quests of the German patch 1.06 that 1.07 left alone, for a German game without that patch; the maps equal the other languages' 1.06 ones.
+- `lang/<language>`: what one language adds, laid out as in the mod: `res/<archive>` holds an archive as loose entries (texts; multiplayer texts; Russian sounds), the rest is copied as is. `lang/de/maps` holds the maps and quests of the German patch 1.06 that 1.07 left alone, for a German game without that patch; the maps equal the other languages' 1.06 ones, and the file names are spelled as in the GOG German version.
 - `res/textures`, `maps`, `movies`, `config`: textures, maps, movies and configs; `config/ai.ini` is compiled to `ai.reg`.
 - `config.ini`: the starter mod config.
 - `plugin/eitweaks.c`: the [starter plugin](starter.md), built with a 32-bit Windows C compiler.
