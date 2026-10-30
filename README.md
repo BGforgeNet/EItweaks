@@ -83,11 +83,8 @@ Download the installer, `eitweaks-<version>-setup.exe`, from the latest [release
 1. The game folder, found by itself for an installed game.
 1. The game's language (Russian, English or German), detected from the game folder.
 1. The version:
-   - With [EI starter](https://www.gipath.org/forum/thread-3828.html) (recommended): EItweaks becomes a mod selected in starter's dropdown, and the game's files stay untouched. It needs EI starter 1.046.1; when starter is missing, the installer links to its download. Afterwards, launch starter and select EItweaks.
+   - With [EI starter](https://www.gipath.org/forum/thread-3828.html) (recommended): EItweaks becomes a mod selected in starter's dropdown, and the game's files stay untouched. It needs EI starter 1.046.1; when starter is missing, the installer downloads it from its site and runs its installer. Afterwards, launch starter: EItweaks is already selected.
    - Standalone: copied over the game's files, for playing without starter; launch the game as usual. Each file it replaces is backed up into `eitweaks-backup` and put back when EItweaks is uninstalled. It lacks a few changes the starter version has: 1.07's missing face texture fix and, in Russian, the shortened "My head hurts" cutscene.
-
-With EI starter, start the game once on its own and quit it from the main menu before starter's first start: the game then saves the settings starter reads. Otherwise starter's first start shows "Failed to get data for 'FILTERING'"; pressing OK carries on.
-
 ### Support
 * Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).
 * Discuss and ask questions on the [forum](https://forums.bgforge.net/viewtopic.php?f=22&t=183).

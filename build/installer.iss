@@ -24,10 +24,15 @@ OutputDir=out
 OutputBaseFilename=eitweaks-{#Version}-setup
 Compression=lzma2/ultra64
 SolidCompression=yes
-; Game folders are usually writable by the user; one under Program Files needs the administrator choice.
+; Game folders are usually writable by the user. For one that is not, the installer restarts itself with /ALLUSERS,
+; which asks for administrator rights.
 PrivilegesRequired=lowest
-PrivilegesRequiredOverridesAllowed=dialog
+PrivilegesRequiredOverridesAllowed=commandline
 DisableProgramGroupPage=yes
+; Every choice has its own page already.
+DisableReadyPage=yes
+; Unpacks the downloaded EI starter zip.
+ArchiveExtraction=full
 DirExistsWarning=no
 AppendDefaultDirName=no
 ; {app} is starter's folder or the game's, depending on the version chosen.
@@ -55,14 +60,16 @@ en.VariantDesc=How do you want to play EItweaks?
 en.VariantStarter=With EI starter (recommended): selected in starter, the game's files stay untouched
 en.VariantStandalone=Standalone: copied over the game's files, which are backed up and restored on uninstall
 en.StarterFound=EI starter is installed in %1.
-en.StarterMissing=EI starter is not installed. Download it with the button below, install it, then continue here.
-en.DownloadStarter=Download EI starter
+en.StarterMissing=EI starter is not installed: Next downloads and installs it.
+en.OpenStarterPage=EI starter's page
+en.DownloadCaption=EI starter
+en.DownloadDesc=Downloading EI starter 1.046.1 from its site.
+en.StarterFailed=EI starter could not be downloaded: %1%n%nInstall it from its page, then click Next again, or choose the standalone version.
+en.StarterNotInstalled=EI starter was not installed. Install it, then click Next again, or choose the standalone version.
 en.StarterDirLabel=Select the folder where EI starter is installed.
 en.NoStarter=There is no EIStarter.exe in this folder. Select the folder where EI starter 1.046.1 is installed, or install it first: https://www.gipath.org/forum/thread-3828.html
-en.ReadyGame=Game folder:
-en.ReadyLang=Game language:
-en.ReadyVariant=Version:
-en.ReadyStarter=EI starter folder:
+en.LaunchStarter=Launch EI starter
+en.LaunchGame=Launch the game
 ru.GameDirCaption=Папка игры
 ru.GameDirDesc=Куда установлены Проклятые Земли?
 ru.GameDirSub=Выберите папку игры, для которой устанавливается EItweaks.
@@ -75,14 +82,16 @@ ru.VariantDesc=Как вы хотите играть в EItweaks?
 ru.VariantStarter=С EI starter (рекомендуется): выбирается в стартере, файлы игры не меняются
 ru.VariantStandalone=Отдельно: копируется поверх файлов игры, которые сохраняются и восстанавливаются при удалении
 ru.StarterFound=EI starter установлен в %1.
-ru.StarterMissing=EI starter не установлен. Скачайте его кнопкой ниже, установите и продолжите здесь.
-ru.DownloadStarter=Скачать EI starter
+ru.StarterMissing=EI starter не установлен: «Далее» скачает и установит его.
+ru.OpenStarterPage=Страница EI starter
+ru.DownloadCaption=EI starter
+ru.DownloadDesc=Загрузка EI starter 1.046.1 с его сайта.
+ru.StarterFailed=Не удалось скачать EI starter: %1%n%nУстановите его со страницы стартера и снова нажмите «Далее» или выберите отдельный вариант.
+ru.StarterNotInstalled=EI starter не установлен. Установите его и снова нажмите «Далее» или выберите отдельный вариант.
 ru.StarterDirLabel=Выберите папку, куда установлен EI starter.
 ru.NoStarter=В этой папке нет EIStarter.exe. Выберите папку, куда установлен EI starter 1.046.1, или сначала установите его: https://www.gipath.org/forum/thread-3828.html
-ru.ReadyGame=Папка игры:
-ru.ReadyLang=Язык игры:
-ru.ReadyVariant=Вариант:
-ru.ReadyStarter=Папка EI starter:
+ru.LaunchStarter=Запустить EI starter
+ru.LaunchGame=Запустить игру
 de.GameDirCaption=Spielordner
 de.GameDirDesc=Wo ist Evil Islands installiert?
 de.GameDirSub=Wählen Sie den Ordner des Spiels, für das EItweaks bestimmt ist.
@@ -95,14 +104,16 @@ de.VariantDesc=Wie möchten Sie EItweaks spielen?
 de.VariantStarter=Mit EI starter (empfohlen): im Starter ausgewählt, die Spieldateien bleiben unverändert
 de.VariantStandalone=Eigenständig: über die Spieldateien kopiert, die gesichert und bei der Deinstallation wiederhergestellt werden
 de.StarterFound=EI starter ist in %1 installiert.
-de.StarterMissing=EI starter ist nicht installiert. Laden Sie ihn mit der Schaltfläche unten herunter, installieren Sie ihn und fahren Sie dann hier fort.
-de.DownloadStarter=EI starter herunterladen
+de.StarterMissing=EI starter ist nicht installiert: "Weiter" lädt ihn herunter und installiert ihn.
+de.OpenStarterPage=Seite von EI starter
+de.DownloadCaption=EI starter
+de.DownloadDesc=EI starter 1.046.1 wird von seiner Seite heruntergeladen.
+de.StarterFailed=EI starter konnte nicht heruntergeladen werden: %1%n%nInstallieren Sie ihn von seiner Seite und klicken Sie dann erneut auf "Weiter", oder wählen Sie die eigenständige Variante.
+de.StarterNotInstalled=EI starter wurde nicht installiert. Installieren Sie ihn und klicken Sie dann erneut auf "Weiter", oder wählen Sie die eigenständige Variante.
 de.StarterDirLabel=Wählen Sie den Ordner, in dem EI starter installiert ist.
 de.NoStarter=In diesem Ordner gibt es keine EIStarter.exe. Wählen Sie den Ordner, in dem EI starter 1.046.1 installiert ist, oder installieren Sie ihn zuerst: https://www.gipath.org/forum/thread-3828.html
-de.ReadyGame=Spielordner:
-de.ReadyLang=Sprache des Spiels:
-de.ReadyVariant=Variante:
-de.ReadyStarter=Ordner von EI starter:
+de.LaunchStarter=EI starter starten
+de.LaunchGame=Spiel starten
 
 [Files]
 ; SpellAddon's licence forbids distributing its files apart from its whole folder: the installer carries the folder
@@ -120,17 +131,52 @@ Source: "payload\SpellAddon\*"; DestDir: "{app}\eitweaks-SpellAddon"; Flags: rec
 Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
 Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
 
+[Registry]
+; The game settings EI starter reads; the game writes them only when quit from its main menu, and starter reports a
+; missing one on its first start. These are the game's own defaults, written only where absent. Starter copies the
+; game's key on its first start; once it has, its copy gets them too.
+#define GameSettings(Key) \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Antialiasing""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Audio""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Dithering""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Filtering""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""FPSIndependentCursor""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""FullScreen""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Mipmapping""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""TextureQuality""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Video""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""VideoColorDepthInBits""; ValueData: 32; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: string; ValueName: ""VideoResolution""; ValueData: ""1024x768""; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: dword; ValueName: ""LightingFreq""; ValueData: 1000; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: dword; ValueName: ""EnableWaterWaves""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: binary; ValueName: ""LOD1""; ValueData: ""00 00 20 42""; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: binary; ValueName: ""LOD2""; ValueData: ""00 00 96 42""; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
+  "Root: HKCU; Subkey: """ + Key + "\Network Settings""; ValueType: string; ValueName: ""Master Server Name""; ValueData: """"; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine
+; Starter's selected mod: EItweaks, just installed.
+Root: HKCU; Subkey: "Software\Gipat.ru\EI_Starter\Settings"; ValueType: string; ValueName: "AddonPath"; ValueData: "{app}\MODS\eitweaks"; Check: IsStarter
+#emit GameSettings("Software\Nival Interactive\EvilIslands")
+#emit StringChange(GameSettings("Software\Gipat.ru\EI_Starter\EvilIslands"), "Check: IsStarter", "Check: IsStarter and StarterCopiedSettings")
+
+[Run]
+Filename: "{app}\EIStarter.exe"; WorkingDir: "{app}"; Description: "{cm:LaunchStarter}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Check: IsStarter
+Filename: "{app}\game.exe"; WorkingDir: "{app}"; Description: "{cm:LaunchGame}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Check: IsStandalone
+
 [Code]
 const
   StarterURL = 'https://www.gipath.org/forum/thread-3828.html';
+  { EI starter 1.046.1 as published on its page; the download is checked against this. }
+  StarterZipURL = 'https://www.gipath.org/forum/attachment.php?aid=3003';
+  StarterZipSHA256 = 'ee13fa2b7317eadc77b9d69d00d9835c83b56f0fef1f199cd005c2ce9db011e0';
   { texts.res of the GOG Russian version, the same as the official Russian patch 1.06's. }
   RussianTextsSHA256 = '96d8e49a3472f93d92ec8b4ad4286fa7662d78fc4577fe2335832542014b3a5a';
 
 var
   GamePage: TInputDirWizardPage;
   LangPage, VariantPage: TInputOptionWizardPage;
-  DownloadButton: TNewButton;
+  DownloadPage: TDownloadWizardPage;
+  StarterPageButton: TNewButton;
   DetectedFor: String;
+  Relaunched: Boolean;
 
 { Language option index <-> code; the options are added in this order. }
 function LangCode(Index: Integer): String;
@@ -198,6 +244,83 @@ begin
   Result := FileExists(AddBackslash(StarterDir('')) + 'EIStarter.exe');
 end;
 
+{ Starter copies the game's key on its first start; writing its copy before that would make it skip the copy. }
+function StarterCopiedSettings: Boolean;
+begin
+  Result := RegKeyExists(HKCU, 'Software\Gipat.ru\EI_Starter\EvilIslands\Path Settings');
+end;
+
+{ Whether this run can write into Dir: a folder under Program Files needs administrator rights. }
+function CanWrite(Dir: String): Boolean;
+var
+  Probe: String;
+begin
+  Probe := AddBackslash(Dir) + 'eitweaks-write-test.tmp';
+  Result := SaveStringToFile(Probe, '', False);
+  if Result then
+    DeleteFile(Probe);
+end;
+
+{ Starts this setup again with administrator rights and the choices made so far, and closes this one. }
+procedure RelaunchAsAdmin;
+var
+  Params: String;
+  ErrorCode: Integer;
+begin
+  Params := '/ALLUSERS /EIGAMEDIR="' + GamePage.Values[0] + '" /EILANG=' + LangCode(LangPage.SelectedValueIndex) +
+    ' /DIR="' + WizardDirValue + '"';
+  if IsStarter then
+    Params := Params + ' /EIVARIANT=starter'
+  else
+    Params := Params + ' /EIVARIANT=standalone';
+  if ShellExec('', ExpandConstant('{srcexe}'), Params, '', SW_SHOWNORMAL, ewNoWait, ErrorCode) then
+  begin
+    Relaunched := True;
+    WizardForm.Close;
+  end
+  else
+    Log('Starting again as administrator failed: ' + SysErrorMessage(ErrorCode));
+end;
+
+procedure CancelButtonClick(CurPageID: Integer; var Cancel, Confirm: Boolean);
+begin
+  if Relaunched then
+    Confirm := False;
+end;
+
+{ Downloads EI starter, checks it, and runs its installer for the game's language; True once starter is installed. }
+function InstallStarter: Boolean;
+var
+  Setup: String;
+  ErrorCode: Integer;
+begin
+  Result := False;
+  DownloadPage.Clear;
+  DownloadPage.Add(StarterZipURL, 'eistarter.zip', StarterZipSHA256);
+  DownloadPage.Show;
+  try
+    try
+      DownloadPage.Download;
+      ExtractArchive(ExpandConstant('{tmp}\eistarter.zip'), ExpandConstant('{tmp}\eistarter'), '', True, nil);
+    except
+      MsgBox(FmtMessage(CustomMessage('StarterFailed'), [GetExceptionMessage]), mbError, MB_OK);
+      Exit;
+    end;
+  finally
+    DownloadPage.Hide;
+  end;
+  { Starter has Russian and English installers only. }
+  if IsGameLang('ru') then
+    Setup := ExpandConstant('{tmp}\eistarter\setup_ru.exe')
+  else
+    Setup := ExpandConstant('{tmp}\eistarter\setup_en.exe');
+  { ShellExec, not Exec: starter's installer asks for administrator rights. }
+  ShellExecAsOriginalUser('', Setup, '', '', SW_SHOWNORMAL, ewWaitUntilTerminated, ErrorCode);
+  Result := StarterInstalled;
+  if not Result then
+    MsgBox(CustomMessage('StarterNotInstalled'), mbError, MB_OK);
+end;
+
 function DefaultAppDir(Param: String): String;
 begin
   if ExpandConstant('{param:EIVARIANT|starter}') = 'standalone' then
@@ -263,7 +386,7 @@ begin
     end;
 end;
 
-procedure DownloadStarterClick(Sender: TObject);
+procedure StarterPageClick(Sender: TObject);
 var
   ErrorCode: Integer;
 begin
@@ -276,7 +399,7 @@ begin
     VariantPage.SubCaptionLabel.Caption := FmtMessage(CustomMessage('StarterFound'), [StarterDir('')])
   else
     VariantPage.SubCaptionLabel.Caption := CustomMessage('StarterMissing');
-  DownloadButton.Visible := not StarterInstalled;
+  StarterPageButton.Visible := not StarterInstalled;
 end;
 
 procedure InitializeWizard;
@@ -314,16 +437,17 @@ begin
     VariantPage.SelectedValueIndex := 1
   else
     VariantPage.SelectedValueIndex := 0;
-  DownloadButton := TNewButton.Create(VariantPage);
-  DownloadButton.Parent := VariantPage.Surface;
-  DownloadButton.Caption := CustomMessage('DownloadStarter');
-  DownloadButton.Width := ScaleX(200);
-  DownloadButton.Height := ScaleY(25);
-  DownloadButton.Top := VariantPage.SurfaceHeight - DownloadButton.Height;
-  DownloadButton.OnClick := @DownloadStarterClick;
-  VariantPage.CheckListBox.Height := DownloadButton.Top - VariantPage.CheckListBox.Top - ScaleY(8);
+  StarterPageButton := TNewButton.Create(VariantPage);
+  StarterPageButton.Parent := VariantPage.Surface;
+  StarterPageButton.Caption := CustomMessage('OpenStarterPage');
+  StarterPageButton.Width := ScaleX(200);
+  StarterPageButton.Height := ScaleY(25);
+  StarterPageButton.Top := VariantPage.SurfaceHeight - StarterPageButton.Height;
+  StarterPageButton.OnClick := @StarterPageClick;
+  VariantPage.CheckListBox.Height := StarterPageButton.Top - VariantPage.CheckListBox.Top - ScaleY(8);
   UpdateStarterStatus;
 
+  DownloadPage := CreateDownloadPage(CustomMessage('DownloadCaption'), CustomMessage('DownloadDesc'), nil);
   WizardForm.SelectDirLabel.Caption := CustomMessage('StarterDirLabel');
 end;
 
@@ -354,42 +478,59 @@ begin
     Result := CustomMessage('NoStarter');
 end;
 
+{ The last page before installing: the version page for standalone, the starter folder page for starter. When this
+  run cannot write where EItweaks goes, it starts again with administrator rights. }
+function ReadyToInstall: Boolean;
+begin
+  Result := True;
+  if not IsAdminInstallMode and (not CanWrite(WizardDirValue) or not CanWrite(GameDirValue(''))) then
+  begin
+    Log('Cannot write into ' + WizardDirValue + ' or ' + GameDirValue('') + ': starting again as administrator');
+    RelaunchAsAdmin;
+    Result := False;
+  end;
+end;
+
 function NextButtonClick(CurPageID: Integer): Boolean;
 var
   Problem: String;
 begin
+  Result := True;
   Problem := '';
   if (CurPageID = GamePage.ID) and not FileExists(AddBackslash(GameDirValue('')) + 'game.exe') then
     Problem := CustomMessage('NoGame')
   else if CurPageID = VariantPage.ID then
   begin
     if IsStarter then
-      WizardForm.DirEdit.Text := StarterDir('')
+    begin
+      if not StarterInstalled then
+        Result := InstallStarter;
+      if Result then
+        WizardForm.DirEdit.Text := StarterDir('');
+    end
     else
+    begin
       WizardForm.DirEdit.Text := GameDirValue('');
+      Result := ReadyToInstall;
+    end;
   end
   else if CurPageID = wpSelectDir then
+  begin
     Problem := FolderProblem;
-  Result := Problem = '';
-  if not Result then
+    if Problem = '' then
+      Result := ReadyToInstall;
+  end;
+  if Problem <> '' then
+  begin
     MsgBox(Problem, mbError, MB_OK);
+    Result := False;
+  end;
 end;
 
 { Also reached by silent installs, which skip the wizard pages. }
 function PrepareToInstall(var NeedsRestart: Boolean): String;
 begin
   Result := FolderProblem;
-end;
-
-function UpdateReadyMemo(Space, NewLine, MemoUserInfoInfo, MemoDirInfo, MemoTypeInfo, MemoComponentsInfo,
-  MemoGroupInfo, MemoTasksInfo: String): String;
-begin
-  Result := CustomMessage('ReadyGame') + NewLine + Space + GameDirValue('') + NewLine + NewLine +
-    CustomMessage('ReadyLang') + NewLine + Space + LangPage.CheckListBox.ItemCaption[LangPage.SelectedValueIndex] +
-    NewLine + NewLine + CustomMessage('ReadyVariant') + NewLine + Space +
-    VariantPage.CheckListBox.ItemCaption[VariantPage.SelectedValueIndex];
-  if IsStarter then
-    Result := Result + NewLine + NewLine + CustomMessage('ReadyStarter') + NewLine + Space + WizardDirValue;
 end;
 
 { Standalone: before each file is copied, keeps the game's original once, under eitweaks-backup. }
