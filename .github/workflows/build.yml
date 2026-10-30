@@ -1,0 +1,36 @@
+name: build
+
+on:
+  push:
+    branches: [dev, master]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - id: version
+        run: .github/scripts/build-version.sh
+
+      - name: build zips and installers
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: scripts/build.sh "$VERSION" "$RUNNER_TEMP/dist"
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: eitweaks-${{ steps.version.outputs.version }}
+          path: ${{ runner.temp }}/dist/
+          if-no-files-found: error
