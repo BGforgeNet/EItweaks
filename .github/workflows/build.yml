@@ -24,9 +24,18 @@ jobs:
       - id: version
         run: .github/scripts/build-version.sh
 
+      # Building the image compiles um-multitool, most of a cold run; it changes only with build/.
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ runner.temp }}/image
+          key: build-image-${{ hashFiles('build/**') }}
+
+      - run: .github/scripts/build-image.sh
+
       - name: build zips and installers
         env:
           VERSION: ${{ steps.version.outputs.version }}
+          EITWEAKS_BUILD_IMAGE_READY: "1"
         run: scripts/build.sh "$VERSION" "$RUNNER_TEMP/dist"
 
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2

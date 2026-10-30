@@ -15,6 +15,8 @@ The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/e
 
 This writes, for each language, `eitweaks-<version>-<language>-starter.zip` and `eitweaks-<version>-<language>-standalone.zip`, an installer for each (`...-setup.exe`), and `SHA256SUMS`. The standalone zip leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive, and names its folders as that language's GOG version does. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds and publishes a release.
 
+CI runs the same build on every push to `dev` or `master` and on pull requests, and keeps the files as the run's artifact.
+
 To edit a database in a spreadsheet, convert it to a workbook and back, in the same container with the repository mounted read-write:
 
     podman run --rm -v "$PWD:/repo" -w /repo eitweaks-build eibuild xlsx res/database/csv database.xlsx
