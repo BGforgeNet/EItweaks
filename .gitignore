@@ -4,3 +4,5 @@
 *.xlsx
 *.zip
 game.exe
+tmp/
+dist/
