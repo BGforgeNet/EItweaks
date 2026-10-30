@@ -12,6 +12,8 @@ The `starter` release is a mod for [EI starter](https://www.gipath.org/forum/thr
 
 `eitweaks.dll` is loaded by starter through the mod's `[DEV] Plugin` setting when EItweaks is selected.
 
+Starter's add-on, which loads the plugin, comes in through the `dinput.dll` beside starter's `game.exe`. Wine uses its own `dinput.dll` instead unless told otherwise, so under Wine the installer sets a `dinput` override (native, then builtin) for `game.exe` in Wine's per-program settings.
+
 Starter's `game.exe` checks that the current drive is the game disc, which a GOG install has not. GOG's own `game.exe` skips that check with a one-byte change; the plugin applies the same change in memory. It changes nothing unless the exact expected bytes are there, so any other `game.exe` is left alone.
 
 The game shows two kinds of help screens: the camp and map ones, which `config/tutorial.ini` switches off one by one, and the tutorials the maps' scripts start during the introductory quest, which only the game's "Show tutorial" option (Options > Windows) switches off. The plugin turns that option off once, on the first start with EItweaks, and records that with a `tutorials-off` file in the mod's folder, so a player who turns it back on keeps it on.

@@ -154,6 +154,9 @@ Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}"; Flags: ignore
   "Root: HKCU; Subkey: """ + Key + "\Network Settings""; ValueType: string; ValueName: ""Master Server Name""; ValueData: """"; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine
 ; Starter's selected mod: EItweaks, just installed.
 Root: HKCU; Subkey: "Software\Gipat.ru\EI_Starter\Settings"; ValueType: string; ValueName: "AddonPath"; ValueData: "{app}\MODS\eitweaks"; Check: IsStarter
+; Starter's game loads its add-on (and so EItweaks' plugin) through the dinput.dll beside it, which Wine skips for its
+; own unless told otherwise; without the add-on, the game asks for the disc. Starter needs this for any mod, so it stays.
+Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType: string; ValueName: "dinput"; ValueData: "native,builtin"; Check: IsStarter and IsWine
 #emit GameSettings("Software\Nival Interactive\EvilIslands")
 #emit StringChange(GameSettings("Software\Gipat.ru\EI_Starter\EvilIslands"), "Check: IsStarter", "Check: IsStarter and StarterCopiedSettings")
 
@@ -214,6 +217,12 @@ end;
 function IsStandalone: Boolean;
 begin
   Result := not IsStarter;
+end;
+
+{ Every Wine prefix has this key. }
+function IsWine: Boolean;
+begin
+  Result := RegKeyExists(HKLM, 'Software\Wine');
 end;
 
 function GameDirValue(Param: String): String;

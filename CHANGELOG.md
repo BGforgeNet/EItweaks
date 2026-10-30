@@ -5,7 +5,8 @@
 - A standalone version, copied over the game's files, for playing without EI starter.
 - An installer for every game language and both versions: it detects the game's language, downloads and runs EI
   starter's own installer when starter is missing, and selects EItweaks in starter. The standalone version backs up
-  the game files it replaces, and uninstalling puts them back.
+  the game files it replaces, and uninstalling puts them back. Under Wine, it sets the override starter needs to load
+  its add-on.
 - The starter version runs on the GOG versions without the game disc.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
