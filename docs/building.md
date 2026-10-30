@@ -15,7 +15,7 @@ The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/e
     mkdir -p dist
     podman run --rm --network none -v "$PWD:/repo:ro" -v "$PWD/dist:/out" eitweaks-build eibuild build /repo <version> /out
 
-This writes `eitweaks-<version>-<language>-starter.zip` and `eitweaks-<version>-<language>-standalone.zip` for each language; the standalone one leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds and publishes a release.
+This writes `eitweaks-<version>-<language>-starter.zip` and `eitweaks-<version>-<language>-standalone.zip` for each language; the standalone one leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive, and names its folders as that language's GOG version does. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds and publishes a release.
 
 To edit a database in a spreadsheet, convert it to a workbook and back, in the same container with the repository mounted read-write:
 

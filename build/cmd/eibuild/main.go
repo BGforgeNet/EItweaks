@@ -34,6 +34,13 @@ var databases = []string{"database", "databaselmp"}
 // while a standalone copy would replace the whole archive, so the standalone release leaves them out.
 var partialArchives = []string{filepath.Join("res", "textures.res"), filepath.Join("res", "sfx.res")}
 
+// The folder names of each language's GOG install where they are not lowercase. Windows ignores case when the
+// standalone release is copied over the game; Wine on a case-sensitive file system would get a second folder.
+var gogFolders = map[string]map[string]string{
+	"ru": {"config": "Config", "maps": "Maps", "movies": "Movies", "res": "Res"},
+	"de": {"maps": "Maps", "movies": "Movies", "res": "Res"},
+}
+
 func main() {
 	if len(os.Args) < 2 {
 		usage()
@@ -273,6 +280,11 @@ func build(repo, version, out string) error {
 		// The starter's config and plugin: the game's own exe needs neither.
 		for _, f := range append([]string{"config.reg", "eitweaks.dll"}, partialArchives...) {
 			if err := os.Remove(filepath.Join(standalone, f)); err != nil && !errors.Is(err, fs.ErrNotExist) {
+				return err
+			}
+		}
+		for from, to := range gogFolders[lang] {
+			if err := os.Rename(filepath.Join(standalone, from), filepath.Join(standalone, to)); err != nil && !errors.Is(err, fs.ErrNotExist) {
 				return err
 			}
 		}
