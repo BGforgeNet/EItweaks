@@ -13,7 +13,7 @@ The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/e
 
     scripts/build.sh <version> dist
 
-This writes, for each language, `eitweaks-<version>-<language>-starter.zip` and `eitweaks-<version>-<language>-standalone.zip`, then the one installer, `eitweaks-<version>-setup.exe`, built from the starter zips (`eibuild payload` stores the files every language shares once), and `SHA256SUMS`. The standalone zip leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive, and names its folders as that language's GOG version does; the installer's standalone version installs the same files into the game's folders as it finds them. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds a release and publishes the installer.
+This writes the installer, `eitweaks-<version>-setup.exe`, and `SHA256SUMS`. On the way it builds, in a temporary folder, a starter and a standalone zip for each language; the installer is made from the starter zips (`eibuild payload` stores the files every language shares once). The standalone zip leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive, and names its folders as that language's GOG version does; the installer's standalone version installs the same files into the game's folders as it finds them. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds a release and publishes the installer.
 
 CI runs the same build on every push to `dev` or `master` and on pull requests, and keeps the files as the run's artifact.
 

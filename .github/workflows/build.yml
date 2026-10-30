@@ -32,7 +32,7 @@ jobs:
 
       - run: .github/scripts/build-image.sh
 
-      - name: build zips and installers
+      - name: build the installer
         env:
           VERSION: ${{ steps.version.outputs.version }}
           EITWEAKS_BUILD_IMAGE_READY: "1"
