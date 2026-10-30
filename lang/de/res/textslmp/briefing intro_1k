@@ -1,0 +1,14 @@
+Frage nach der Arbeit des Handwerkers
+#show Hero
+#show Smith
+#CAMERA 9
+#phrase Smith  1
+Meine Aufgabe hat sich überhaupt nicht verändert: stelle etwas her, kaufe oder verkaufe oder repariere – und mache etwas Geld natürlich, hehe...
+#phrase Smith  2
+Aber ich habe einige Neuigkeiten. Nachdem der Auserwählte den Ältesten Erfar entlarvt hatte, hat die Hexe offensichtlich damit begonnen, die Dorfbewohner ein wenig freundlicher zu behandeln...
+#phrase Smith  3
+Sie hat sogar Frieden mit mir geschlossen, wir haben jetzt eine Art Pakt: Sie überlässt mir ihre Zauber und ich verkaufe sie.
+#phrase Smith  4
+Sie hat mich außerdem gelehrt, wie man neue Zauber macht, aber unter der Bedingung, dass ich das niemandem verrate. Das würde ich natürlich sowieso nie tun – ich bin doch kein Dummkopf!
+#phrase Smith  5
+Wenn jeder damit anfängt, sich Gegenstände und Zauber selbst herzustellen, wovon soll ich dann meinen Lebensunterhalt bestreiten? Wir bleiben also bei der alten Methode: Du willst etwas, du kommst zu mir. Anders geht es nicht!

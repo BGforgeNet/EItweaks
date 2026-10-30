@@ -1,0 +1,12 @@
+Ich bin ein mechanischer Diener
+#show Hero
+#show Golem
+#CAMERA 3 30 8 2
+#phrase Golem  1
+Ich bin Golem. Ich bin ein mechanischer Diener. Ich diene Großmagier.
+#phrase Golem  2
+Wenn er mir auftragen würde, dich zu töten, würde ich dich töten. Wenn er mir auftragen würde, für dich zu sterben, würde ich für dich sterben.
+#phrase Golem  3
+Nun sagte mir der Großmagier, dass ich für dich arbeiten solle - ich werde für dich arbeiten.
+#phrase Golem  4
+Ich bin Golem. Ich bin ein mechanischer Diener. Ich stehe zur Verfügung.

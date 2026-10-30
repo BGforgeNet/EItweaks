@@ -1,0 +1,9 @@
+Privater Server
+Ein "offener" Server wird in der Liste der Server aufgeführt, die allen Spielern 
+zugänglich sind. Um einen solchen Server zu starten, muss eine aktive 
+Verbindung zum Internet bestehen.
+Ein privater Server ist auf den Einsatz in lokalen Netzwerken ausgelegt. Die 
+daran teilnehmenden Spieler brauchen keine Verbindung zum Internet zu haben.
+Hinweis: Spieler können auf solche Server nur dann vom Internet aus zugreifen,
+wenn Sie die IP-Adresse dieses Servers kennen und der Server über eine
+Verbindung ins Internet verfügt.

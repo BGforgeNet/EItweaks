@@ -1,0 +1,12 @@
+Frage nach dem Leben im Dorf
+#show Hero
+#show Nsheriff
+#CAMERA 9
+#phrase NSheriff  1
+Ich hatte immer gedacht, dass die Führung des Dorfes eine leichte Aufgabe sei – einfach am Morgen die Anweisungen ausgeben und den Rest des Tages an einem netten kühlen Ort verbringen.
+#phrase NSheriff  2
+Es hat nicht lange gedauert, bis ich meine Meinung geändert habe: Es gibt ein Problem nach dem anderen und es nimmt niemals ein Ende. Banditen, Orks, Goblins... Und nun diese Echsen – haben wir mit ihnen Frieden, oder sind sie ebenfalls unsere Feinde?
+#phrase NSheriff  3
+Und jetzt haben wir noch nicht einmal einen Auserwählten, sondern sind auf uns selbst gestellt!
+#phrase NSheriff  4
+Ich habe erwogen, dieses Amt aufzugeben, aber dann habe ich beschlossen, zu bleiben: Schließlich haben die Leute mich mit dieser Aufgabe betraut und wenn ich einfach ginge, wäre das so, als würde ich sie betrügen. Und das kann ich mir nicht leisten, oder?

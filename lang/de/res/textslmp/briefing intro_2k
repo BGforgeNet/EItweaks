@@ -1,0 +1,8 @@
+Willkommen
+#show Hero
+#show Shopper
+#CAMERA 3 30 3 1
+#phrase Shopper  1
+Willkommen, verehrter Kunde!
+#phrase Shopper  2
+Ich führe meine Geschäfte auf folgende Weise: Du hast Geld, du bist willkommen. Du hast kein Geld, du bist ebenfalls willkommen. Gucken kostet nichts, aber es gibt auch keinen Kredit. Du machst etwas Geld, kommst zurück und kaufst, was du haben möchtest.

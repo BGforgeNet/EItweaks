@@ -171,7 +171,7 @@ func build(repo, version, out string) error {
 	}
 	defer os.RemoveAll(work)
 
-	// Everything but the archives under res/lang is the same for every language.
+	// Everything but lang/<lang> is the same for every language.
 	common := filepath.Join(work, "common")
 	for _, db := range databases {
 		if err := buildDatabase(filepath.Join(repo, "res", db), filepath.Join(common, "res", db+".res"), filepath.Join(work, db)); err != nil {
@@ -210,7 +210,7 @@ func build(repo, version, out string) error {
 		return err
 	}
 
-	langDirs, err := os.ReadDir(filepath.Join(repo, "res", "lang"))
+	langDirs, err := os.ReadDir(filepath.Join(repo, "lang"))
 	if err != nil {
 		return err
 	}
@@ -224,17 +224,30 @@ func build(repo, version, out string) error {
 		if err := copyTree(common, mod); err != nil {
 			return err
 		}
-		archives, err := os.ReadDir(filepath.Join(repo, "res", "lang", lang))
+		// lang/<lang> mirrors the mod: res/<archive> folders are packed, everything else is copied as is.
+		langSrc := filepath.Join(repo, "lang", lang)
+		entries, err := os.ReadDir(langSrc)
+		if err != nil {
+			return err
+		}
+		for _, e := range entries {
+			if e.Name() != "res" {
+				if err := copyTree(filepath.Join(langSrc, e.Name()), filepath.Join(mod, e.Name())); err != nil {
+					return err
+				}
+			}
+		}
+		archives, err := os.ReadDir(filepath.Join(langSrc, "res"))
 		if err != nil {
 			return err
 		}
 		var extra []string
 		for _, a := range archives {
-			if err := pack(filepath.Join(repo, "res", "lang", lang, a.Name()), filepath.Join(mod, "res", a.Name()+".res"), work); err != nil {
+			if err := pack(filepath.Join(langSrc, "res", a.Name()), filepath.Join(mod, "res", a.Name()+".res"), work); err != nil {
 				return err
 			}
 			if !strings.Contains(string(modIni), "\n"+a.Name()+".res=") {
-				// Archives only some languages ship (textslmp, sfx: Russian) are added to [RES] per language.
+				// Archives only some languages ship (textslmp, sfx) are added to [RES] per language.
 				extra = append(extra, a.Name()+`.res=res\`+a.Name()+".res")
 			}
 		}

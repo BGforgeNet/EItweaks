@@ -1,0 +1,14 @@
+Frage nach dem Leben in der Letzten Zuflucht
+#show Hero
+#show Kuzn
+#CAMERA 3 30 3 1
+#phrase Kuzn  1
+Hm ... Ein neues Gesicht? Gut! Bruder Khatul hat endlich sein Misstrauen aufgegeben und begonnen, neue Leute in die Zuflucht zu lassen.
+#phrase Kuzn  2
+Es ist allerdings sehr einfach, sein Vertrauen zu verlieren: Wenn er darum bittet, etwas zu tun oder rät, irgendwohin zu reisen, tut man besser das, was er sagt. Ansonsten wird dein Leben hier sehr ungemütlich werden!
+#phrase Kuzn  3
+Nun, das geht mich aber wirklich nichts an. Meine Welt sind Hammer und Zangen und nun auch Zaubersprüche. Bruder Kehel hat mir die immer gegeben, er ist aber nicht mehr bei uns.
+#phrase Kuzn  4
+Er war eine lange Zeit krank und starb kurz bevor du zu uns kamst. Wir waren nie befreundet... Ich glaube nicht, dass er auch nur einen einzigen Freund auf der Welt hatte!
+#phrase Kuzn  5
+Aber aus irgendeinem Grund hinterließ er mir seine Zauber und Runen!
