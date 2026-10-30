@@ -2,6 +2,7 @@
 
 #### Added
 - Separate releases for the Russian, English and German versions of the game.
+- A standalone version, copied over the game's files, for playing without EI starter.
 - The fixes of the unofficial patch 1.07 (Gipat Group) that 1.0 lacked, for every language: campaign map scripts
   (trolls coming back to the witch's cave, Go-Go's dialogues, the goblin sentry phrase repeating, levers and
   mechanisms that could trap the player, quest rewards and experience given on every visit to a zone), the

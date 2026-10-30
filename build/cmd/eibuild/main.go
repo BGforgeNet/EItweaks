@@ -1,6 +1,6 @@
-// eibuild builds EItweaks from the repository's source data, one EI starter mod zip per language.
+// eibuild builds EItweaks from the repository's source data: per language, an EI starter mod zip and a standalone zip.
 //
-//	eibuild build <repo> <version> <out>   write <out>/eitweaks-<version>-<lang>.zip and SHA256SUMS
+//	eibuild build <repo> <version> <out>   write <out>/eitweaks-<version>-<lang>-{starter,standalone}.zip and SHA256SUMS
 //	eibuild xlsx <csv-dir> <out.xlsx>      a database's CSV sheets as one workbook, for spreadsheet editing
 //	eibuild csv <in.xlsx> <csv-dir>        a workbook back to CSV sheets, cell text verbatim
 //
@@ -29,6 +29,10 @@ import (
 var epoch = time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC)
 
 var databases = []string{"database", "databaselmp"}
+
+// The mod's archives that hold only a few of the game's entries: the starter merges them into the game's archives,
+// while a standalone copy would replace the whole archive, so the standalone release leaves them out.
+var partialArchives = []string{filepath.Join("res", "textures.res"), filepath.Join("res", "sfx.res")}
 
 func main() {
 	if len(os.Args) < 2 {
@@ -167,17 +171,15 @@ func build(repo, version, out string) error {
 	}
 	defer os.RemoveAll(work)
 
-	// Everything but the text archives is the same for every language.
+	// Everything but the archives under res/lang is the same for every language.
 	common := filepath.Join(work, "common")
 	for _, db := range databases {
 		if err := buildDatabase(filepath.Join(repo, "res", db), filepath.Join(common, "res", db+".res"), filepath.Join(work, db)); err != nil {
 			return err
 		}
 	}
-	for _, a := range []string{"textures", "sfx"} {
-		if err := pack(filepath.Join(repo, "res", a), filepath.Join(common, "res", a+".res"), work); err != nil {
-			return err
-		}
+	if err := pack(filepath.Join(repo, "res", "textures"), filepath.Join(common, "res", "textures.res"), work); err != nil {
+		return err
 	}
 	for _, d := range []string{"maps", "movies"} {
 		if err := copyTree(filepath.Join(repo, d), filepath.Join(common, d)); err != nil {
@@ -208,7 +210,7 @@ func build(repo, version, out string) error {
 		return err
 	}
 
-	langDirs, err := os.ReadDir(filepath.Join(repo, "res", "texts"))
+	langDirs, err := os.ReadDir(filepath.Join(repo, "res", "lang"))
 	if err != nil {
 		return err
 	}
@@ -222,17 +224,17 @@ func build(repo, version, out string) error {
 		if err := copyTree(common, mod); err != nil {
 			return err
 		}
-		archives, err := os.ReadDir(filepath.Join(repo, "res", "texts", lang))
+		archives, err := os.ReadDir(filepath.Join(repo, "res", "lang", lang))
 		if err != nil {
 			return err
 		}
 		var extra []string
 		for _, a := range archives {
-			if err := pack(filepath.Join(repo, "res", "texts", lang, a.Name()), filepath.Join(mod, "res", a.Name()+".res"), work); err != nil {
+			if err := pack(filepath.Join(repo, "res", "lang", lang, a.Name()), filepath.Join(mod, "res", a.Name()+".res"), work); err != nil {
 				return err
 			}
 			if !strings.Contains(string(modIni), "\n"+a.Name()+".res=") {
-				// Archives only some languages ship (textslmp: Russian) are added to [RES] per language.
+				// Archives only some languages ship (textslmp, sfx: Russian) are added to [RES] per language.
 				extra = append(extra, a.Name()+`.res=res\`+a.Name()+".res")
 			}
 		}
@@ -247,19 +249,31 @@ func build(repo, version, out string) error {
 		if err := um("inireg", "--ini2reg", iniPath, "-o", filepath.Join(mod, "config.reg")); err != nil {
 			return err
 		}
-		name := fmt.Sprintf("eitweaks-%s-%s.zip", version, lang)
-		zipPath := filepath.Join(out, name)
-		// SpellAddon ships unmodified beside the mod: its licence forbids distributing its files separately.
-		folders := []zipFolder{{mod, "eitweaks"}, {filepath.Join(repo, "spelladdon"), "SpellAddon"}}
-		if err := writeZip(folders, zipPath); err != nil {
+		// The standalone release is copied over the game's own files, where an archive replaces the game's whole.
+		standalone := filepath.Join(work, "standalone-"+lang)
+		if err := copyTree(mod, standalone); err != nil {
 			return err
 		}
-		data, err := os.ReadFile(zipPath)
-		if err != nil {
-			return err
+		for _, f := range append([]string{"config.reg"}, partialArchives...) {
+			if err := os.Remove(filepath.Join(standalone, f)); err != nil && !errors.Is(err, fs.ErrNotExist) {
+				return err
+			}
 		}
-		sum := sha256.Sum256(data)
-		sums = append(sums, hex.EncodeToString(sum[:])+"  "+name)
+		for _, v := range []struct{ dir, variant string }{{mod, "starter"}, {standalone, "standalone"}} {
+			name := fmt.Sprintf("eitweaks-%s-%s-%s.zip", version, lang, v.variant)
+			zipPath := filepath.Join(out, name)
+			// SpellAddon ships unmodified beside the mod: its licence forbids distributing its files separately.
+			folders := []zipFolder{{v.dir, "eitweaks"}, {filepath.Join(repo, "spelladdon"), "SpellAddon"}}
+			if err := writeZip(folders, zipPath); err != nil {
+				return err
+			}
+			data, err := os.ReadFile(zipPath)
+			if err != nil {
+				return err
+			}
+			sum := sha256.Sum256(data)
+			sums = append(sums, hex.EncodeToString(sum[:])+"  "+name)
+		}
 	}
 	return os.WriteFile(filepath.Join(out, "SHA256SUMS"), []byte(strings.Join(sums, "\n")+"\n"), 0o644)
 }

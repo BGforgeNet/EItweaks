@@ -49,7 +49,7 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 - 1C/Nival intro movies are disabled.
 - New game starting movie is disabled.
 - Help screens are disabled by default.
-- New game "My head hurts" cutscene is shortened.
+- New game "My head hurts" cutscene is shortened (Russian).
 
 ##### Items
 - Dragons drop hide in addition to bones.
@@ -76,12 +76,25 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 
 ### Installation
 
-1. Make sure the game is at version 1.06. The GOG English and Russian versions are; for the GOG German version, install the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first. Patch 1.07 is not needed: EItweaks includes its fixes.
-1. Download the latest EItweaks [release](https://github.com/BGforgeNet/EItweaks/releases/latest) for your game's language (`ru`, `en` or `de`), unzip it.
+The game must be at version 1.06. The GOG English and Russian versions are; for the GOG German version, install the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first. Patch 1.07 is not needed: EItweaks includes its fixes.
+
+Each [release](https://github.com/BGforgeNet/EItweaks/releases/latest) comes per game language (`ru`, `en` or `de`) in two versions:
+- `starter`: a mod for [EI starter](https://www.gipath.org/forum/thread-3828.html). It leaves the game's files untouched and is selected in starter's dropdown.
+- `standalone`: copied over the game's files. It lacks a few changes the starter version has: 1.07's missing face texture fix and, in Russian, the shortened "My head hurts" cutscene.
+
+#### With EI starter
 1. Install [EI starter](https://www.gipath.org/forum/thread-3828.html) 1.046.1, unless you already have it.
+1. Download the `starter` release for your game's language, unzip it.
 1. Put `eitweaks` into the `Mods` subdirectory of starter's installation directory.
 1. From the `SpellAddon` folder, copy `SpellAddonXa.asi`, `SpellAddonInfo.txt` and `SPELLADDON.INI` into the game directory (with the newest starter, into its `Engine` directory as well). This `SPELLADDON.INI` changes nothing in the game; EItweaks brings its own settings, used only when EItweaks is selected.
 1. Launch starter, select EItweaks in the dropdown.
+
+#### Standalone
+1. Download the `standalone` release for your game's language, unzip it.
+1. Back up the game directory: the next steps overwrite its files.
+1. Copy the contents of `eitweaks` into the game directory, replacing the files there.
+1. From the `SpellAddon` folder, copy `SpellAddonXa.asi` and `SpellAddonInfo.txt` into the game directory. Keep the `SPELLADDON.INI` that came from `eitweaks`: it holds EItweaks' settings.
+1. Launch the game as usual.
 
 ### Support
 * Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).
