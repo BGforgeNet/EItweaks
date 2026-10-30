@@ -49,7 +49,7 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 ##### Speedup
 - 1C/Nival intro movies are disabled.
 - New game starting movie is disabled.
-- Help screens are disabled by default.
+- Help screens are disabled by default; Options > Windows > Show tutorial turns them back on. The standalone version disables the camp and map ones only: turn off Show tutorial for the rest.
 - New game "My head hurts" cutscene is shortened (Russian).
 
 ##### Items

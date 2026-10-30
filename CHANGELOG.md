@@ -21,6 +21,8 @@
 - Dragons on Gipath no longer have more than 1000 hit points.
 - Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).
 - The release no longer includes a `game.exe`.
+- The starter version also turns off the tutorials of the introductory quest, once; Options > Windows > Show
+  tutorial turns them back on.
 
 #### Fixed
 - Toads and will-o-wisps show their real magic damage.

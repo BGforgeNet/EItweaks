@@ -10,6 +10,10 @@ The `starter` release is a mod for [EI starter](https://www.gipath.org/forum/thr
 
 ### The plugin
 
-Starter's `game.exe` checks that the current drive is the game disc, which a GOG install has not. GOG's own `game.exe` skips that check with a one-byte change; `eitweaks.dll`, loaded by starter through the mod's `[DEV] Plugin` setting, applies the same change in memory when EItweaks is selected. It changes nothing unless the exact expected bytes are there, so any other `game.exe` is left alone.
+`eitweaks.dll` is loaded by starter through the mod's `[DEV] Plugin` setting when EItweaks is selected.
+
+Starter's `game.exe` checks that the current drive is the game disc, which a GOG install has not. GOG's own `game.exe` skips that check with a one-byte change; the plugin applies the same change in memory. It changes nothing unless the exact expected bytes are there, so any other `game.exe` is left alone.
+
+The game shows two kinds of help screens: the camp and map ones, which `config/tutorial.ini` switches off one by one, and the tutorials the maps' scripts start during the introductory quest, which only the game's "Show tutorial" option (Options > Windows) switches off. The plugin turns that option off once, on the first start with EItweaks, and records that with a `tutorials-off` file in the mod's folder, so a player who turns it back on keeps it on.
 
 The standalone release runs the game's own `game.exe` and does not need the plugin.
