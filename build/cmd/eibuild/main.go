@@ -208,6 +208,9 @@ func build(repo, version, out string) error {
 	if err := um("inireg", "--ini2reg", filepath.Join(repo, "config", "ai.ini"), "-o", filepath.Join(common, "config", "ai.reg")); err != nil {
 		return err
 	}
+	if err := buildPlugin(filepath.Join(repo, "plugin", "eitweaks.c"), filepath.Join(common, "eitweaks.dll")); err != nil {
+		return err
+	}
 	// SpellAddon reads a SPELLADDON.INI from the active mod's folder, so these settings apply to EItweaks only.
 	if err := copyFile(filepath.Join(repo, "SPELLADDON.INI"), filepath.Join(common, "SPELLADDON.INI")); err != nil {
 		return err
@@ -229,9 +232,6 @@ func build(repo, version, out string) error {
 		lang := l.Name()
 		mod := filepath.Join(work, "mod-"+lang)
 		if err := copyTree(common, mod); err != nil {
-			return err
-		}
-		if err := buildPlugin(filepath.Join(repo, "plugin", "eitweaks.c"), filepath.Join(mod, "eitweaks.dll"), lang); err != nil {
 			return err
 		}
 		// lang/<lang> mirrors the mod: res/<archive> folders are packed, everything else is copied as is.
@@ -307,15 +307,11 @@ func build(repo, version, out string) error {
 	return os.WriteFile(filepath.Join(out, "SHA256SUMS"), []byte(strings.Join(sums, "\n")+"\n"), 0o644)
 }
 
-// buildPlugin compiles the starter plugin for one language. Russian speech.res holds the briefing voices twice, under
-// the paths the starter's Russian exe asks for, so only the other languages need the briefing fix.
-func buildPlugin(src, dll, lang string) error {
+// buildPlugin compiles the starter plugin.
+func buildPlugin(src, dll string) error {
 	// The linker otherwise stamps the build time and derives the image base from the (temporary) output path.
 	args := []string{"-shared", "-O2", "-s", "-static-libgcc", "-Wl,--no-insert-timestamp,--disable-auto-image-base",
 		"-o", dll, src}
-	if lang != "ru" {
-		args = append(args, "-DBRIEFING_FIX")
-	}
 	out, err := exec.Command("i686-w64-mingw32-gcc", args...).CombinedOutput()
 	if err != nil {
 		return fmt.Errorf("i686-w64-mingw32-gcc %s: %w\n%s", strings.Join(args, " "), err, out)
