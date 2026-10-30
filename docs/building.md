@@ -9,11 +9,11 @@ The game data is kept as source:
 - `plugin/eitweaks.c`: the [starter plugin](starter.md), built with a 32-bit Windows C compiler.
 - `SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `spelladdon`: [SpellAddon](https://evilislandsaddon.forumotion.com/) 20.6 as published, shipped beside the mod.
 
-The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container, and the installers with [Inno Setup](https://jrsoftware.org/isinfo.php) (`build/installer.iss`) in another. Install `podman` and put it on `PATH`, then, from the repository root:
+The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container, and the installer with [Inno Setup](https://jrsoftware.org/isinfo.php) (`build/installer.iss`) in another. Install `podman` and put it on `PATH`, then, from the repository root:
 
     scripts/build.sh <version> dist
 
-This writes, for each language, `eitweaks-<version>-<language>-starter.zip` and `eitweaks-<version>-<language>-standalone.zip`, an installer for each (`...-setup.exe`), and `SHA256SUMS`. The standalone zip leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive, and names its folders as that language's GOG version does. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds and publishes a release.
+This writes, for each language, `eitweaks-<version>-<language>-starter.zip` and `eitweaks-<version>-<language>-standalone.zip`, then the one installer, `eitweaks-<version>-setup.exe`, built from the starter zips (`eibuild payload` stores the files every language shares once), and `SHA256SUMS`. The standalone zip leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive, and names its folders as that language's GOG version does; the installer's standalone version installs the same files into the game's folders as it finds them. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds a release and publishes the installer.
 
 CI runs the same build on every push to `dev` or `master` and on pull requests, and keeps the files as the run's artifact.
 

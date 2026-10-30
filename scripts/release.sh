@@ -8,5 +8,5 @@ out="$(mktemp -d)"
 scripts/build.sh "$version" "$out"
 
 githubrelease release BGforgeNet/EItweaks create "$version" --publish --name "$version" \
-    "$out"/eitweaks-"$version"-*.zip "$out"/eitweaks-"$version"-*-setup.exe "$out"/SHA256SUMS
+    "$out"/eitweaks-"$version"-setup.exe
 rm -rf "$out"

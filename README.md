@@ -79,24 +79,14 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 
 The game must be at version 1.06. The GOG versions are ready as they are: the English and Russian ones are 1.06, and for the German one EItweaks includes the data of the German patch 1.06 (its `game.exe` is already 1.06). A German CD version needs the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first. Patch 1.07 is not needed: EItweaks includes its fixes.
 
-Each [release](https://github.com/BGforgeNet/EItweaks/releases/latest) comes per game language (`ru`, `en` or `de`) in two versions, each as an installer (`-setup.exe`) and as a zip to install by hand:
-- `starter`: a mod for [EI starter](https://www.gipath.org/forum/thread-3828.html). It leaves the game's files untouched and is selected in starter's dropdown.
-- `standalone`: copied over the game's files. It lacks a few changes the starter version has: 1.07's missing face texture fix and, in Russian, the shortened "My head hurts" cutscene.
+Download the installer, `eitweaks-<version>-setup.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it. It asks for:
+1. The game folder, found by itself for an installed game.
+1. The game's language (Russian, English or German), detected from the game folder.
+1. The version:
+   - With [EI starter](https://www.gipath.org/forum/thread-3828.html) (recommended): EItweaks becomes a mod selected in starter's dropdown, and the game's files stay untouched. It needs EI starter 1.046.1; when starter is missing, the installer links to its download. Afterwards, launch starter and select EItweaks.
+   - Standalone: copied over the game's files, for playing without starter; launch the game as usual. Each file it replaces is backed up into `eitweaks-backup` and put back when EItweaks is uninstalled. It lacks a few changes the starter version has: 1.07's missing face texture fix and, in Russian, the shortened "My head hurts" cutscene.
 
-#### With EI starter
-1. Start the game once without the starter and quit it from the main menu: the game then saves the settings starter reads. Otherwise starter's first start shows "Failed to get data for 'FILTERING'"; pressing OK carries on.
-1. Install [EI starter](https://www.gipath.org/forum/thread-3828.html) 1.046.1, unless you already have it.
-1. Run the `starter` installer for your game's language and continue with the last step. Or, by hand: download the `starter` zip for your game's language, unzip it.
-1. Put `eitweaks` into the `Mods` subdirectory of starter's installation directory.
-1. From the `SpellAddon` folder, copy `SpellAddonXa.asi`, `SpellAddonInfo.txt` and `SPELLADDON.INI` into the game directory (with the newest starter, into its `Engine` directory as well). This `SPELLADDON.INI` changes nothing in the game; EItweaks brings its own settings, used only when EItweaks is selected.
-1. Launch starter, select EItweaks in the dropdown.
-
-#### Standalone
-1. Run the `standalone` installer for your game's language and continue with the last step. It backs up each game file it replaces into `eitweaks-backup`, and uninstalling EItweaks puts them back. Or, by hand: download the `standalone` zip for your game's language, unzip it.
-1. Back up the game directory: the next steps overwrite its files.
-1. Copy the contents of `eitweaks` into the game directory, replacing the files there.
-1. From the `SpellAddon` folder, copy `SpellAddonXa.asi` and `SpellAddonInfo.txt` into the game directory. Keep the `SPELLADDON.INI` that came from `eitweaks`: it holds EItweaks' settings.
-1. Launch the game as usual.
+With EI starter, start the game once on its own and quit it from the main menu before starter's first start: the game then saves the settings starter reads. Otherwise starter's first start shows "Failed to get data for 'FILTERING'"; pressing OK carries on.
 
 ### Support
 * Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).
