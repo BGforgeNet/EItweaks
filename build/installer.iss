@@ -68,6 +68,7 @@ en.StarterFailed=EI starter could not be downloaded: %1%n%nInstall it from its p
 en.StarterNotInstalled=EI starter was not installed. Install it, then click Next again, or choose the standalone version.
 en.StarterDirLabel=Select the folder where EI starter is installed.
 en.NoStarter=There is no EIStarter.exe in this folder. Select the folder where EI starter 1.046.1 is installed, or install it first: https://www.gipath.org/forum/thread-3828.html
+en.OldSpellAddon=An older SpellAddon, %1, could not be moved aside and would load together with EItweaks' one. Remove it by hand.
 en.LaunchStarter=Launch EI starter
 en.LaunchGame=Launch the game
 ru.GameDirCaption=Папка игры
@@ -90,6 +91,7 @@ ru.StarterFailed=Не удалось скачать EI starter: %1%n%nУстан
 ru.StarterNotInstalled=EI starter не установлен. Установите его и снова нажмите «Далее» или выберите отдельный вариант.
 ru.StarterDirLabel=Выберите папку, куда установлен EI starter.
 ru.NoStarter=В этой папке нет EIStarter.exe. Выберите папку, куда установлен EI starter 1.046.1, или сначала установите его: https://www.gipath.org/forum/thread-3828.html
+ru.OldSpellAddon=Старую версию SpellAddon, %1, не удалось убрать, и она будет загружаться вместе с версией EItweaks. Удалите её вручную.
 ru.LaunchStarter=Запустить EI starter
 ru.LaunchGame=Запустить игру
 de.GameDirCaption=Spielordner
@@ -112,6 +114,7 @@ de.StarterFailed=EI starter konnte nicht heruntergeladen werden: %1%n%nInstallie
 de.StarterNotInstalled=EI starter wurde nicht installiert. Installieren Sie ihn und klicken Sie dann erneut auf "Weiter", oder wählen Sie die eigenständige Variante.
 de.StarterDirLabel=Wählen Sie den Ordner, in dem EI starter installiert ist.
 de.NoStarter=In diesem Ordner gibt es keine EIStarter.exe. Wählen Sie den Ordner, in dem EI starter 1.046.1 installiert ist, oder installieren Sie ihn zuerst: https://www.gipath.org/forum/thread-3828.html
+de.OldSpellAddon=Eine ältere SpellAddon-Version, %1, konnte nicht beiseitegelegt werden und würde zusammen mit der von EItweaks geladen. Entfernen Sie sie von Hand.
 de.LaunchStarter=EI starter starten
 de.LaunchGame=Spiel starten
 
@@ -551,6 +554,56 @@ begin
     ForceDirectories(ExtractFileDir(Saved));
     CopyFile(Dest, Saved, False);
   end;
+end;
+
+{ SpellAddon's instructions ask to remove its older versions first: any other SpellAddon*.asi would load beside ours.
+  They are moved into BackupDir, not deleted; one already backed up under the same name is kept and the player told. }
+procedure MoveOldSpellAddons(const Dir, BackupDir: String);
+var
+  Found: TFindRec;
+  Names: TStringList;
+  I: Integer;
+begin
+  Names := TStringList.Create;
+  try
+    if FindFirst(Dir + '\SpellAddon*.asi', Found) then
+      try
+        repeat
+          if CompareText(Found.Name, 'SpellAddonXa.asi') <> 0 then
+            Names.Add(Found.Name);
+        until not FindNext(Found);
+      finally
+        FindClose(Found);
+      end;
+    for I := 0 to Names.Count - 1 do
+    begin
+      ForceDirectories(BackupDir);
+      if FileExists(BackupDir + '\' + Names[I]) or not RenameFile(Dir + '\' + Names[I], BackupDir + '\' + Names[I]) then
+      begin
+        Log('Could not move ' + Dir + '\' + Names[I] + ' into ' + BackupDir);
+        SuppressibleMsgBox(FmtMessage(CustomMessage('OldSpellAddon'), [Dir + '\' + Names[I]]), mbError, MB_OK, IDOK);
+      end
+      else
+        Log('Moved ' + Dir + '\' + Names[I] + ' into ' + BackupDir);
+    end;
+  finally
+    Names.Free;
+  end;
+end;
+
+{ Standalone: into eitweaks-backup, which uninstalling puts back along with removing our SpellAddon. Starter: our
+  SpellAddon stays after uninstalling, so the old ones stay aside too. Starter's Engine is checked as its readme tells
+  players to copy SpellAddon there. }
+procedure CurStepChanged(CurStep: TSetupStep);
+begin
+  if CurStep = ssInstall then
+    if IsStandalone then
+      MoveOldSpellAddons(GameDirValue(''), ExpandConstant('{app}\eitweaks-backup'))
+    else
+    begin
+      MoveOldSpellAddons(GameDirValue(''), AddBackslash(GameDirValue('')) + 'eitweaks-old-SpellAddon');
+      MoveOldSpellAddons(ExpandConstant('{app}\Engine'), ExpandConstant('{app}\eitweaks-old-SpellAddon'));
+    end;
 end;
 
 procedure RestoreDir(const Src, Dst: String);

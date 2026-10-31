@@ -85,6 +85,8 @@ Download the installer, `eitweaks-<version>-setup.exe`, from the latest [release
 1. The version:
    - With [EI starter](https://www.gipath.org/forum/thread-3828.html) (recommended): EItweaks becomes a mod selected in starter's dropdown, and the game's files stay untouched. It needs EI starter 1.046.1; when starter is missing, the installer downloads it from its site and runs its installer. Afterwards, launch starter: EItweaks is already selected.
    - Standalone: copied over the game's files, for playing without starter; launch the game as usual. Each file it replaces is backed up into `eitweaks-backup` and put back when EItweaks is uninstalled. It lacks a few changes the starter version has: 1.07's missing face texture fix and, in Russian, the shortened "My head hurts" cutscene.
+
+EItweaks installs SpellAddon into the game folder. An older SpellAddon there, or in starter's `Engine` folder, would load together with it, so the installer moves it into an `eitweaks-old-SpellAddon` folder beside it; the standalone version keeps it in `eitweaks-backup` and puts it back when uninstalled.
 ### Support
 * Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).
 * Discuss and ask questions on the [forum](https://forums.bgforge.net/viewtopic.php?f=22&t=183).
