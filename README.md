@@ -4,8 +4,7 @@
 | [**Report issues**](https://github.com/BGforgeNet/EItweaks/issues)
 | [**Discuss**](https://forums.bgforge.net/viewtopic.php?f=22&t=183)
 
-
-EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes, as well as certain tweaks, QoL and a few balance changes. It bundles [EI starter](docs/starter.md), its [add-on](docs/addon.md) and [SpellAddon](docs/spelladdon.md).
+EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes, as well as certain tweaks, QoL and a few balance changes. It runs through [EI starter](docs/starter.md) and its [add-on](docs/addon.md), which the installer sets up, or [standalone](docs/standalone.md), and includes [SpellAddon](docs/spelladdon.md).
 
 - [Fixes](docs/fixes.md)
 - [Tweaks](#tweaks)
@@ -24,7 +23,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple
 - Human (PC and NPC) walk speed considerably increased (it was the same as sneaking originally).
 - PC no longer has a level of backstab perk pre-selected. That allows for greater flexibility in character development.
 - Airy grants +2 to Sensory Magic and Trickster +2 to Use/Steal, instead of +10. This is to prevent the XP exploit with these bonuses.
-- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44. They are now killable (albeit extremely hard). Becuase unkillable enemies are not very fun.
+- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44. They are now killable (albeit extremely hard). Because unkillable enemies are not very fun.
 - Dragons on Gipath no longer have over 1000 hit points. Same reason.
 - Running depletes stamina by points rather than percentage, like game text suggests, so a character can run longer as stamina grows.
 
@@ -43,7 +42,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple
 
 ### Regeneration
 
-Regeneration is quite annoying in game. Often an enemy would regenerate faster than PC would damage it. In certain cases that seems justified (trolls, etc), but in other it isn't. So, regeneration is:
+Regeneration is quite annoying in game. Often an enemy would regenerate faster than PC would damage it. In certain cases that seems justified (trolls, etc), but in others it isn't. So, regeneration is:
 
 - Disabled for undead, golems, shadows and will-o-wisps.
 - Halved for ogres.
@@ -53,7 +52,7 @@ Regeneration is quite annoying in game. Often an enemy would regenerate faster t
 
 ### Resistances
 
-A collection of changes to standartize protections and make them "make sense".
+A collection of changes to standardize protections and make them "make sense".
 
 - Hard leather provides extra protection against piercing and bludgeoning, matching monster protection.
 - Hide provides extra protection against piercing.
@@ -68,7 +67,7 @@ A collection of changes to standartize protections and make them "make sense".
 
 The game must be at version 1.06. The GOG releases are ready as they are. If you have an older version, grab [1.06](https://allods.gipat.ru/index.php?p=filesei#patch-1-06) first.
 
-Download the installer, `eitweaks-<version>.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it.
+Download the installer, `eitweaks-<version>-setup.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it.
 
 ### More
 

@@ -1,13 +1,13 @@
 ## Fixes
 
-- [EItweaks](#eitweaks)
-- [Patch 1.07](#patch-107)
+- [1.08](#108)
+- [1.07](#107)
 
 ### 1.08
 
 #### Additional fixes on top of 1.07
 
-- Magic using monsters now show the corresponding damage type in decription window. That includes bats, dragons, banshees, evil eyes, toads, will-wisps, harpies.
+- Magic using monsters now show the corresponding damage type in description window. That includes bats, dragons, banshees, evil eyes, toads, will-o-wisps, harpies.
 - Goblins with slings do bludgeoning damage.
 - Red harpies show their real damage range.
 - Matching protections - the monsters generally get protection from the magic type that they are using:
@@ -16,13 +16,13 @@
   - Dragons and items from dragon hide have extra protection from the corresponding elements.
 - Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 35 maximum stamina, shorter below it. This uses the included [SpellAddon](spelladdon.md).
 
-#### GoG release fixes
+#### GOG release fixes
 
-Additionally, EItweaks fixes multiple issues _introduced_ by GoG:
+Additionally, EItweaks fixes multiple issues _introduced_ by GOG:
 
-- The camera tilts smoothly instead of jumping
+- The camera tilts smoothly instead of jumping.
 - The quest marker and hero lights have their original colors.
-- German version is unpatched at all.
+- The German version is not patched to 1.06: EItweaks includes the German patch 1.06 data (see [German version](de.md)).
 
 ### 1.07
 
