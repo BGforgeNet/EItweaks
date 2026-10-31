@@ -59,15 +59,16 @@ A collection of changes to standardize protections and make them "make sense".
 - Fur provides extra protection against bludgeoning.
 - Ogres and lizardmen have the same protection against piercing and bludgeoning (Hadagan ogres keep their piercing protection).
 - Skeletons have extra protection against piercing; trolls have no extra protection against acid.
+- Monsters match the armor made from their hide: trolls have half their protection against piercing, dragons extra protection against piercing, tigers against bludgeoning.
 - Cyclopes have no extra magic protection.
-- Lava elementals get extra protection from fire, Snow elementals get vulnerability to it.
+- Lava elementals get extra protection from fire instead of acid, Snow elementals get vulnerability to it.
 - Lightning vulnerability for NPCs using metal armor and golems.
 
 ## Installation
 
 The game must be at version 1.06. The GOG releases are ready as they are. If you have an older version, grab [1.06](https://allods.gipat.ru/index.php?p=filesei#patch-1-06) first.
 
-Download the installer, `eitweaks-<version>-setup.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it.
+Download the installer, `eitweaks-<version>.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it.
 
 ### More
 

@@ -9,6 +9,7 @@
 
 - Magic using monsters now show the corresponding damage type in description window. That includes bats, dragons, banshees, evil eyes, toads, will-o-wisps, harpies.
 - Goblins with slings do bludgeoning damage.
+- Dark banshees' lightning had broken spell settings, as 1.07 fixed for multiplayer.
 - Red harpies show their real damage range.
 - Matching protections - the monsters generally get protection from the magic type that they are using:
   - Stony harpies have extra protection from lightning instead of fire.
@@ -34,7 +35,15 @@ EItweaks includes the fixes of the [unofficial patch 1.07](https://allods.gipat.
   - The goblin sentry phrase repeating
   - Levers and mechanisms that could trap the player
   - Quest rewards and experience given on every visit to a zone.
-- The single and multiplayer databases.
+- Single player database
+  - Hadagan top armor (helm, plate, leggings) is sold in a shop.
+  - Positions and switch times of levers and mechanisms.
+  - A Kania gang member no longer wears two helmets.
+  - Boar head height; toad footstep sounds.
+- Multiplayer database
+  - Spells light up their surroundings, as in single player.
+  - Banshee mages' lightning and a strength potion had broken spell settings.
+  - An octopus drops loot.
 - Russian: the texts.
 - Corrected marker position for the "Punishing goblins" quest on the world map.
 - Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).

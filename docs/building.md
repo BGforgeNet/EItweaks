@@ -3,7 +3,7 @@
 The game data is kept as source. `mod` is laid out as the mod's folder; `vendor` holds third-party files, unmodified.
 
 - `mod/res/database/csv`, `mod/res/databaselmp/csv`: the single and multiplayer databases, one CSV per sheet. `mod/res/database/extra` holds the entries that have no CSV form.
-- `lang/<language>`: what one language adds, laid out as `mod`: `res/<archive>` holds an archive as loose entries (texts; multiplayer texts; Russian sounds), the rest is copied as is. `lang/de/maps` holds the maps and quests of the German patch 1.06 that 1.07 left alone, for a German game without that patch; the maps equal the other languages' 1.06 ones, and the file names are spelled as in the GOG German version.
+- `lang/<language>`: what one language adds, laid out as `mod`: `res/<archive>` holds an archive as loose entries (texts; multiplayer texts), the rest is copied as is. `lang/de/maps` holds the maps and quests of the German patch 1.06 that 1.07 left alone, for a German game without that patch; the maps equal the other languages' 1.06 ones, and the file names are spelled as in the GOG German version.
 - `mod/res/textures`, `mod/maps`, `mod/movies`, `mod/config`: textures, maps, movies and configs; `mod/config/ai.ini` is compiled to `ai.reg`.
 - `mod/config.ini`: the starter mod config, compiled to `config.reg`.
 - `plugin/eitweaks.c`: the [starter version's](starter.md) plugin, which skips the disc check and turns the tutorials off once, built with a 32-bit Windows C compiler.
@@ -14,7 +14,7 @@ The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/e
 
     scripts/build.sh <version> dist
 
-This writes the installer, `eitweaks-<version>-setup.exe`, and `SHA256SUMS`. On the way it builds, in a temporary folder, a starter and a standalone zip for each language; the installer is made from the starter zips (`eibuild payload` stores the files every language shares once). The standalone zip leaves out the archives that hold only a few of the game's entries (textures, the Russian sounds), as copied over the game they would replace the whole archive, and names its folders as that language's GOG version does; the installer's standalone version installs the same files into the game's folders as it finds them. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds a release and publishes the installer.
+This writes the installer, `eitweaks-<version>.exe`, and `SHA256SUMS`. On the way it builds, in a temporary folder, a starter and a standalone zip for each language; the installer is made from the starter zips (`eibuild payload` stores the files every language shares once). The standalone zip leaves out the archive that holds only a few of the game's entries (textures), as copied over the game it would replace the whole archive, and names its folders as that language's GOG version does; the installer's standalone version installs the same files into the game's folders as it finds them. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds a release and publishes the installer.
 
 CI runs the same build on every push to `dev` or `master` and on pull requests, and keeps the files as the run's artifact.
 

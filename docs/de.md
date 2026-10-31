@@ -1,5 +1,5 @@
-## German version
+## Deutsche Version
 
-- The GOG German release is not patched to 1.06. EItweaks includes the data of the German patch 1.06; its `game.exe` is already 1.06, so nothing else is needed.
-- A German CD version needs the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei#patch-1-06) first.
-- EI starter has no German version: the installer installs the English one.
+- Die deutsche GOG-Version ist nicht auf 1.06 gepatcht. EItweaks enthält die Daten des deutschen Patches 1.06; ihre `game.exe` ist bereits 1.06, daher ist sonst nichts nötig.
+- Eine deutsche CD-Version braucht zuerst den offiziellen deutschen [Patch 1.06](https://allods.gipat.ru/index.php?p=filesei#patch-1-06).
+- EI starter gibt es nicht auf Deutsch: Das Installationsprogramm installiert die englische Version.
