@@ -42,6 +42,9 @@
 - Mountain lizards, grey harpies, foxbats and black foxbats wear their own textures from the game files, instead of
   those of lake lizards, red harpies and bats.
 - The wings of foxbats and black foxbats have their names the right way round.
+- Black banshees in Death canyon at night wear the black banshee texture, not the white one.
+- Black Clan woodsfolk in the City environs wear their own clan's texture, not the White Clan's. Black Clan magicians
+  wear the magician texture from the game files, and two Green Clan magicians wear theirs, like the other magicians.
 
 ### 1.0
 Initial release.
