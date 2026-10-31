@@ -15,7 +15,7 @@
 - Toads and will-o-wisps show their real magic damage.
 - Red harpies show their real damage type and range.
 - Goblins with slings do bludgeoning damage.
-- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 35 maximum stamina, shorter below it. This uses the included [SpellAddon](https://evilislandsaddon.forumotion.com/) (see [Installation](../README.md#installation)).
+- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 35 maximum stamina, shorter below it. This uses the included [SpellAddon](spelladdon.md).
 
 ### Patch 1.07
 

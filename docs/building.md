@@ -6,9 +6,9 @@ The game data is kept as source:
 - `lang/<language>`: what one language adds, laid out as in the mod: `res/<archive>` holds an archive as loose entries (texts; multiplayer texts; Russian sounds), the rest is copied as is. `lang/de/maps` holds the maps and quests of the German patch 1.06 that 1.07 left alone, for a German game without that patch; the maps equal the other languages' 1.06 ones, and the file names are spelled as in the GOG German version.
 - `res/textures`, `maps`, `movies`, `config`: textures, maps, movies and configs; `config/ai.ini` is compiled to `ai.reg`.
 - `config.ini`: the starter mod config.
-- `plugin/eitweaks.c`: the [starter plugin](starter.md), built with a 32-bit Windows C compiler.
-- `addon/addon.dll`: starter's [add-on](starter.md) 0.12.4.2, as its developer published it on the [Gipat forum](https://www.gipath.org/forum/attachment.php?aid=3007).
-- `SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `spelladdon`: [SpellAddon](https://evilislandsaddon.forumotion.com/) 20.6 as published, carried whole in the installer, which installs the files SpellAddon's instructions name into the game folder.
+- `plugin/eitweaks.c`: the [starter plugin](starter.md#the-plugin), built with a 32-bit Windows C compiler.
+- `addon/addon.dll`: starter's [add-on](addon.md) 0.12.4.2, as its developer published it on the [Gipat forum](https://www.gipath.org/forum/attachment.php?aid=3007).
+- `SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `spelladdon`: [SpellAddon](spelladdon.md) 20.6 as published, carried whole in the installer, which installs the files SpellAddon's instructions name into the game folder.
 
 The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container, and the installer with [Inno Setup](https://jrsoftware.org/isinfo.php) (`build/installer.iss`) in another. Install `podman` and put it on `PATH`, then, from the repository root:
 

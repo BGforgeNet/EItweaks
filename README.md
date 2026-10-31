@@ -5,7 +5,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixe
 - [Overview](#overview)
 - [Installation](#installation)
 - [Building from source](docs/building.md)
-- [How the starter version works](docs/starter.md)
+- [EI starter](docs/starter.md), its [add-on](docs/addon.md) and [SpellAddon](docs/spelladdon.md): what EItweaks uses of them
 - [Support](#support)
 - [Author](#author)
 - [Changelog](CHANGELOG.md)
