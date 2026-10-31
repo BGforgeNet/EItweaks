@@ -8,6 +8,7 @@
   the game files it replaces, and uninstalling puts them back. Under Wine, it sets the override starter needs to load
   its add-on.
 - The starter version runs on the GOG versions without the game disc.
+- The starter version brings starter's add-on 0.12.4.2 (starter 1.046.1 has 0.11.0.0), used when EItweaks is selected.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
 - The fixes of the unofficial patch 1.07 (Gipat Group) that 1.0 lacked, for every language: campaign map scripts

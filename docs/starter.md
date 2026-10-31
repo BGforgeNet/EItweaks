@@ -8,6 +8,10 @@ The `starter` release is a mod for [EI starter](https://www.gipath.org/forum/thr
 - Starter finds the game directory through the game's registry key, `Software\Nival Interactive\EvilIslands\Path Settings` under `HKEY_CURRENT_USER`, which it copies into its own key on its first start. The GOG versions write that key.
 - Starter reads the game's settings from that copy. A game that has never been quit from its main menu has saved only a few of them, so starter's first start reports "Failed to get data for 'FILTERING'"; pressing OK carries on, and the game saves the rest the next time it is quit from its menu. The installer writes the game's defaults for the ones starter reads, where absent, so that message does not come up.
 
+### The add-on
+
+Starter's add-on, `addon.dll`, patches the running game and loads mods. EItweaks carries add-on 0.12.4.2 in its folder, which starter 1.046.1 loads in place of its own 0.11.0.0 when EItweaks is selected; other mods keep starter's.
+
 ### The plugin
 
 `eitweaks.dll` is loaded by starter through the mod's `[DEV] Plugin` setting when EItweaks is selected.

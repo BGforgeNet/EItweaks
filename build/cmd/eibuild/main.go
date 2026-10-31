@@ -36,10 +36,10 @@ var databases = []string{"database", "databaselmp"}
 // while a standalone copy would replace the whole archive, so the standalone release leaves them out.
 var partialArchives = []string{filepath.Join("res", "textures.res"), filepath.Join("res", "sfx.res")}
 
-// starterOnly lists the mod's files the standalone version leaves out: the starter's config and plugin, which the
-// game's own exe needs neither of, and the partial archives.
+// starterOnly lists the mod's files the standalone version leaves out: the starter's config, add-on and plugin, which
+// the game's own exe needs none of, and the partial archives.
 func starterOnly() []string {
-	return append([]string{"config.reg", "eitweaks.dll"}, partialArchives...)
+	return append([]string{"config.reg", "addon.dll", "eitweaks.dll"}, partialArchives...)
 }
 
 // The folder names of each language's GOG install where they are not lowercase. Windows ignores case when the
@@ -219,6 +219,10 @@ func build(repo, version, out string) error {
 		return err
 	}
 	if err := buildPlugin(filepath.Join(repo, "plugin", "eitweaks.c"), filepath.Join(common, "eitweaks.dll")); err != nil {
+		return err
+	}
+	// Starter 1.046.1 loads an addon.dll from the selected mod's folder in place of its own, for this mod only.
+	if err := copyFile(filepath.Join(repo, "addon", "addon.dll"), filepath.Join(common, "addon.dll")); err != nil {
 		return err
 	}
 	// SpellAddon reads a SPELLADDON.INI from the active mod's folder, so these settings apply to EItweaks only.
