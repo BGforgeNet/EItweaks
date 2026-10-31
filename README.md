@@ -37,6 +37,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple
 
 - Dragons drop hide in addition to bones. Just makes sense.
 - Stronger Green Dragon Horn. The original one was useless.
+- Hide armor blueprints (shirt, pants, boots, gloves) are sold in the Gipath shop, since dragons there drop hide now. They look like Khadaganian hide armor.
 - Half effect rune is sold on Gipath. A restoration from original game files, makes starting a mage a bit easier.
 
 ### Regeneration
