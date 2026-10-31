@@ -12,9 +12,9 @@
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
 - The fixes of the unofficial patch 1.07 (Gipat Group) that 1.0 lacked, for every language: campaign map scripts
-  (trolls coming back to the witch's cave, Go-Go's dialogues, the goblin sentry phrase repeating, levers and
-  mechanisms that could trap the player, quest rewards and experience given on every visit to a zone), the
-  multiplayer database, `ai.reg` and, in Russian, the texts.
+  (trolls coming back to the witch's cave, GoGo's sacred object quest in the village, the goblin sentry phrase
+  repeating, levers and mechanisms that could trap the player, quest rewards and experience given on every visit to a
+  zone), the multiplayer database, `ai.reg` and, in Russian, the texts.
 - English and German: 1.07's corrected marker position for the "Punishing goblins" quest on the world map.
 - Hide armor blueprints (shirt, pants, boots, gloves) for sale in the Gipath shop.
 - Half effect rune for sale on Gipath.
