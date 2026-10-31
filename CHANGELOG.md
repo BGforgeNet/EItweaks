@@ -36,6 +36,7 @@
   the player has not changed them. Texture and landscape detail default to their highest the same way.
 - Toads and will-o-wisps show their real magic damage.
 - Red harpies show their real damage type and range.
+- Russian: the name of the Khadaganian boots of green dragon hide is spelled right.
 - Red dragons have extra protection from fire, like green and blue dragons from their elements.
 
 ### 1.0
