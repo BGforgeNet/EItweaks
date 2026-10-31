@@ -1,6 +1,6 @@
 ## EItweaks
 
-EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixes of the unofficial [patch 1.07](docs/patch-1.07.md) and works with the Russian, English and German versions of the game.
+EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixes of the unofficial [patch 1.07](docs/fixes.md#patch-107) and works with the Russian, English and German versions of the game.
 
 - [Overview](#overview)
 - [Installation](#installation)
@@ -13,7 +13,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixe
 
 ### Overview
 
-- [Fixes](#fixes)
+- [Fixes](docs/fixes.md)
 - [Tweaks](#tweaks)
   - [Gameplay](#gameplay)
   - [Speedup](#speedup)
@@ -21,21 +21,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixe
   - [Regeneration](#regeneration)
   - [Resistances](#resistances)
 
-EItweaks' own fixes and tweaks apply to the single player game; the multiplayer database is 1.07's, with the change listed among the [patch 1.07 fixes](docs/patch-1.07.md).
-
-#### Fixes
-- The fixes of the unofficial [patch 1.07](docs/patch-1.07.md), for every language.
-- GOG versions: the camera tilts smoothly instead of jumping, and the quest marker and hero lights have their original colors. The GOG installers leave out the camera, light and shadow settings the CD installer wrote; the installer sets them, keeping any the player has changed. Texture and landscape detail default to their highest the same way.
-- Gipath bats description correctly states fire damage.
-- Stony harpies have extra protection from lightning instead of fire.
-- Grey harpies have extra protection from acid instead of fire.
-- Dragons and items from dragon hide have extra protection from the corresponding elements.
-- Dragons description correctly states their damage type.
-- Magic-using banshees, dragons, bats and evil eyes show correct damage values in the info window.
-- Toads and will-o-wisps show their real magic damage.
-- Red harpies show their real damage type and range.
-- Goblins with slings do bludgeoning damage.
-- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 35 maximum stamina, shorter below it. This uses the included [SpellAddon](https://evilislandsaddon.forumotion.com/) (see [Installation](#installation)).
+EItweaks' own fixes and tweaks apply to the single player game; the multiplayer database is 1.07's, with the change listed among the [patch 1.07 fixes](docs/fixes.md#patch-107).
 
 #### Tweaks
 
