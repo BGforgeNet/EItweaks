@@ -158,8 +158,8 @@ Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType
 ; differ from what the CD installer wrote: the camera tilts in jumps, and quest and hero lights glare. A value still at
 ; the built-in default (the same in every language's GOG exe), or missing, gets the CD installer's; one the player
 ; changed is kept. Both versions; starter's copy too, once it has made one. The texture and landscape detail settings
-; follow the same rule, to their highest: full-size textures, mipmapping, filtering 2, and the CD installer's
-; landscape detail distances.
+; follow the same rule, to their highest, as starter's options write them: textures High (full size), trilinear
+; filtering, landscape detail High (90 and 130, as the CD installer had), and mipmapping on.
 #define CdFloat(Root, Key, Name, Builtin, CD, Cond) \
   "Root: HKCU; Subkey: """ + Root + "\" + Key + """; ValueType: binary; ValueName: """ + Name + """; ValueData: """ + CD + \
   """; Check: FloatAtBuiltin('" + Root + "\" + Key + "', '" + Name + "', '" + Builtin + "')" + Cond + NewLine
