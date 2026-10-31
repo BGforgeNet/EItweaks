@@ -18,7 +18,7 @@
 - Hide armor for sale in the Gipath shop.
 - Half effect rune for sale on Gipath.
 - Running depletes stamina by points rather than percentage: longer runs above 35 maximum stamina, shorter below.
-  The release includes SpellAddon 20.6, configured for EItweaks only; see the README for installing it.
+  The installer installs SpellAddon 20.6 into the game folder, configured for EItweaks only.
 
 #### Changed
 - Airy grants +2 to Sensory Magic instead of +10, and Trickster +2 to Use/Steal instead of +10.

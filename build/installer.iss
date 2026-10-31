@@ -3,7 +3,7 @@
 ; Expects payload\ beside this file, as `eibuild payload` writes it; writes to out\.
 ;
 ; The player picks the game folder, the game's language (detected, can be changed) and the version:
-; with EI starter (recommended): the mod goes into starter's Mods folder, SpellAddon into the game and Engine folders;
+; with EI starter (recommended): the mod goes into starter's Mods folder, SpellAddon into the game folder;
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
 ; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>.
 
@@ -117,17 +117,14 @@ de.LaunchGame=Spiel starten
 
 [Files]
 ; SpellAddon's licence forbids distributing its files apart from its whole folder: the installer carries the folder
-; unmodified and installs it complete, beside the mod, as the release zips do. SpellAddon may serve other mods too, so
-; uninstalling EItweaks leaves the starter version's copies; its own SPELLADDON.INI changes nothing in the game, and
-; one already there is kept.
-Source: "payload\SpellAddon\*"; DestDir: "{app}\Mods\eitweaks\SpellAddon"; Flags: recursesubdirs ignoreversion; Check: IsStarter
+; unmodified (dontcopy) and installs the files SpellAddon's own instructions name, into the game folder. The game loads
+; .asi files from there, also when run through starter 1.046.1; a copy in starter's Engine folder is not loaded.
+; SpellAddon may serve other mods too, so uninstalling EItweaks leaves the starter version's copies; its own
+; SPELLADDON.INI changes nothing in the game, and one already there is kept.
+Source: "payload\SpellAddon\*"; Flags: dontcopy recursesubdirs
 Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{code:GameDirValue}"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
 Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{code:GameDirValue}"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
 Source: "payload\SpellAddon\SPELLADDON.INI"; DestDir: "{code:GameDirValue}"; Flags: onlyifdoesntexist uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SPELLADDON.INI"; DestDir: "{app}\Engine"; Flags: onlyifdoesntexist uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\*"; DestDir: "{app}\eitweaks-SpellAddon"; Flags: recursesubdirs ignoreversion; Check: IsStandalone
 Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
 Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
 
