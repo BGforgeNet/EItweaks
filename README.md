@@ -26,6 +26,7 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple
 - Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44. They are now killable (albeit extremely hard). Because unkillable enemies are not very fun.
 - Dragons on Gipath no longer have over 1000 hit points. Same reason.
 - Running depletes stamina by points rather than percentage, like game text suggests, so a character can run longer as stamina grows.
+- Spells with a permanent or triggered action item rune can't be put into wands. Such wands cast by themselves, and a few with healing make a character next to immortal.
 
 ### Speedup
 

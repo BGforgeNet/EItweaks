@@ -49,6 +49,27 @@ var gogFolders = map[string]map[string]string{
 	"de": {"maps": "Maps", "movies": "Movies", "res": "Res"},
 }
 
+// SpellAddon patches the Russian 1.06 game.exe at fixed addresses without checking them. The starter runs that exe for
+// every language; a standalone install runs the game's own, and the English and German exe have other code where
+// these settings patch, so their standalone releases turn them off.
+var russianExeOnlySpellAddon = []string{"batterycharge"}
+
+// disableSpellAddonKeys sets each key, which must be on exactly once, to 0 in the SPELLADDON.INI at path.
+func disableSpellAddonKeys(path string, keys []string) error {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return err
+	}
+	for _, k := range keys {
+		on := []byte("\r\n" + k + "=1\r\n")
+		if n := bytes.Count(data, on); n != 1 {
+			return fmt.Errorf("%s: %q is on %d times, want exactly once", path, k+"=1", n)
+		}
+		data = bytes.Replace(data, on, []byte("\r\n"+k+"=0\r\n"), 1)
+	}
+	return os.WriteFile(path, data, 0o644)
+}
+
 func main() {
 	if len(os.Args) < 2 {
 		usage()
@@ -295,6 +316,11 @@ func build(repo, version, out string) error {
 		}
 		for _, f := range starterOnly() {
 			if err := os.Remove(filepath.Join(standalone, f)); err != nil && !errors.Is(err, fs.ErrNotExist) {
+				return err
+			}
+		}
+		if lang != "ru" {
+			if err := disableSpellAddonKeys(filepath.Join(standalone, "SPELLADDON.INI"), russianExeOnlySpellAddon); err != nil {
 				return err
 			}
 		}
