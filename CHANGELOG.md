@@ -16,7 +16,6 @@
   mechanisms that could trap the player, quest rewards and experience given on every visit to a zone), the
   multiplayer database, `ai.reg` and, in Russian, the texts.
 - English and German: 1.07's corrected marker position for the "Punishing goblins" quest on the world map.
-- Hide armor for sale in the Gipath shop.
 - Half effect rune for sale on Gipath.
 - Running depletes stamina by points rather than percentage: longer runs above 35 maximum stamina, shorter below.
   The installer installs SpellAddon 20.6 into the game folder, configured for EItweaks only.
