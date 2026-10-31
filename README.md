@@ -4,18 +4,22 @@
 | [**Report issues**](https://github.com/BGforgeNet/EItweaks/issues)
 | [**Discuss**](https://forums.bgforge.net/viewtopic.php?f=22&t=183)
 
-EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes, as well as certain tweaks, QoL and a few balance changes. It runs through [EI starter](docs/starter.md) and its [add-on](docs/addon.md), which the installer sets up, or [standalone](docs/standalone.md), and includes [SpellAddon](docs/spelladdon.md).
+EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes and various tweaks, QoL and a few balance changes. It bundles [EI starter](docs/starter.md) its [add-on](docs/addon.md) and [SpellAddon](docs/spelladdon.md).
 
 - [Fixes](docs/fixes.md)
 - [Tweaks](#tweaks)
-  - [Gameplay](#gameplay)
-  - [Speedup](#speedup)
-  - [Items](#items)
-  - [Regeneration](#regeneration)
-  - [Resistances](#resistances)
 - [Installation](#installation)
 
 ## Tweaks
+
+The tweaks are mostly to make things more consistent within the game, add some flavour, improve QoL. Also close obvious exploits, but give PC a chance against previously impossible enemies, with [Hardcore](https://pihwiki.bgforge.net/Evil_Islands:_Curse_of_the_Lost_Soul) play style in mind.
+
+- [Gameplay](#gameplay)
+- [Speedup](#speedup)
+- [Items](#items)
+- [Regeneration](#regeneration)
+- [Resistances](#resistances)
+
 
 ### Gameplay
 
@@ -23,10 +27,10 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple
 - Human (PC and NPC) walk speed considerably increased (it was the same as sneaking originally).
 - PC no longer has a level of backstab perk pre-selected. That allows for greater flexibility in character development.
 - Airy grants +2 to Sensory Magic and Trickster +2 to Use/Steal, instead of +10. This is to prevent the XP exploit with these bonuses.
-- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44. They are now killable (albeit extremely hard). Because unkillable enemies are not very fun.
+- Reduced over-the-top armor values for golems and other "unkillable" monsters. They are now killable (albeit extremely hard). Because unkillable enemies are not very fun.
 - Dragons on Gipath no longer have over 1000 hit points. Same reason.
 - Running depletes stamina by points rather than percentage, like game text suggests, so a character can run longer as stamina grows.
-- Spells with a permanent or triggered action item rune can't be put into wands. Such wands cast by themselves, and a few with healing make a character next to immortal.
+- Batteries are disabled.
 
 ### Speedup
 
@@ -36,9 +40,9 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple
 
 ### Items
 
-- Dragons drop hide in addition to bones. Just makes sense.
+- Dragons drop hide in addition to bones. Because why wouldn't they?
 - Stronger Green Dragon Horn. The original one was useless.
-- Hide armor blueprints (shirt, pants, boots, gloves) are sold in the Gipath shop, since dragons there drop hide now. They look like Khadaganian hide armor.
+- Hide armor blueprints are sold in the Gipath shop, since it drops there.
 - Half effect rune is sold on Gipath. A restoration from original game files, makes starting a mage a bit easier.
 
 ### Regeneration
