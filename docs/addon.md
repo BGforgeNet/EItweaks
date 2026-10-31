@@ -8,7 +8,5 @@ Besides loading EItweaks, it brings:
 - **Draw distance**: how far objects and landscape are drawn, `ObjectsDrawRadius` and `LandscapeDrawRadius` (100 by default).
 - **Engine fixes**: spell effects no longer stack wrongly; a lock that needs no Use/Steal skill opens without it; chests no longer open for a character without the required abilities; several bugs of the game's script engine.
 - **Console**: Ctrl+A, Ctrl+C, Ctrl+V and Ctrl+X work; `nogui 1` hides the interface (for screenshots), `nogui 2` the cursor too, `nogui 0` brings them back.
-- **Crash safety**: if the game crashes, it tries to save the multiplayer character into `mp\backup`.
-- **Multiplayer options**: the console, a second game speed, and whether to load the host's quest files.
 
 The settings are in starter's options where it shows them, else under `HKEY_CURRENT_USER\Software\Gipat.Ru\EI_Starter\Settings` (for example `WideScreen`, 1 on, 0 off). EItweaks keeps the add-on's defaults.
