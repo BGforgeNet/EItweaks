@@ -21,7 +21,7 @@ AppVerName=EItweaks {#Version}
 AppPublisher=BGforge
 AppPublisherURL=https://github.com/BGforgeNet/EItweaks
 OutputDir=out
-OutputBaseFilename=eitweaks-{#Version}-setup
+OutputBaseFilename=eitweaks-{#Version}
 Compression=lzma2/ultra64
 SolidCompression=yes
 ; Game folders are usually writable by the user. For one that is not, the installer restarts itself with /ALLUSERS,

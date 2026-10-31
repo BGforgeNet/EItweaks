@@ -32,6 +32,6 @@ podman run --rm --network none -v "$work/zips:/zips:ro" -v "$work:/work" eitweak
 # The compiler runs as the image's own user, which writes the installer under the script's folder.
 chmod -R a+rwX "$work"
 podman run --rm --network none -v "$work:/work" "$inno" /work/installer.iss "/DVersion=$version"
-cp "$work/out/eitweaks-$version-setup.exe" "$out/"
+cp "$work/out/eitweaks-$version.exe" "$out/"
 podman run --rm --network none -v "$out:/out" -w /out eitweaks-build \
-    sh -c "sha256sum eitweaks-$version-setup.exe > SHA256SUMS"
+    sh -c "sha256sum eitweaks-$version.exe > SHA256SUMS"
