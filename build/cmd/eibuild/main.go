@@ -188,22 +188,24 @@ func build(repo, version, out string) error {
 	}
 	defer os.RemoveAll(work)
 
-	// Everything but lang/<lang> is the same for every language.
+	// Everything but lang/<lang> is the same for every language: mod/, the plugin and the vendored add-on.
+	src := filepath.Join(repo, "mod")
+	vendor := filepath.Join(repo, "vendor")
 	common := filepath.Join(work, "common")
 	for _, db := range databases {
-		if err := buildDatabase(filepath.Join(repo, "res", db), filepath.Join(common, "res", db+".res"), filepath.Join(work, db)); err != nil {
+		if err := buildDatabase(filepath.Join(src, "res", db), filepath.Join(common, "res", db+".res"), filepath.Join(work, db)); err != nil {
 			return err
 		}
 	}
-	if err := pack(filepath.Join(repo, "res", "textures"), filepath.Join(common, "res", "textures.res"), work); err != nil {
+	if err := pack(filepath.Join(src, "res", "textures"), filepath.Join(common, "res", "textures.res"), work); err != nil {
 		return err
 	}
 	for _, d := range []string{"maps", "movies"} {
-		if err := copyTree(filepath.Join(repo, d), filepath.Join(common, d)); err != nil {
+		if err := copyTree(filepath.Join(src, d), filepath.Join(common, d)); err != nil {
 			return err
 		}
 	}
-	configs, err := filepath.Glob(filepath.Join(repo, "config", "*.ini"))
+	configs, err := filepath.Glob(filepath.Join(src, "config", "*.ini"))
 	if err != nil {
 		return err
 	}
@@ -215,21 +217,21 @@ func build(repo, version, out string) error {
 			return err
 		}
 	}
-	if err := um("inireg", "--ini2reg", filepath.Join(repo, "config", "ai.ini"), "-o", filepath.Join(common, "config", "ai.reg")); err != nil {
+	if err := um("inireg", "--ini2reg", filepath.Join(src, "config", "ai.ini"), "-o", filepath.Join(common, "config", "ai.reg")); err != nil {
 		return err
 	}
 	if err := buildPlugin(filepath.Join(repo, "plugin", "eitweaks.c"), filepath.Join(common, "eitweaks.dll")); err != nil {
 		return err
 	}
 	// Starter 1.046.1 loads an addon.dll from the selected mod's folder in place of its own, for this mod only.
-	if err := copyFile(filepath.Join(repo, "addon", "addon.dll"), filepath.Join(common, "addon.dll")); err != nil {
+	if err := copyFile(filepath.Join(vendor, "addon", "addon.dll"), filepath.Join(common, "addon.dll")); err != nil {
 		return err
 	}
 	// SpellAddon reads a SPELLADDON.INI from the active mod's folder, so these settings apply to EItweaks only.
-	if err := copyFile(filepath.Join(repo, "SPELLADDON.INI"), filepath.Join(common, "SPELLADDON.INI")); err != nil {
+	if err := copyFile(filepath.Join(src, "SPELLADDON.INI"), filepath.Join(common, "SPELLADDON.INI")); err != nil {
 		return err
 	}
-	modIni, err := os.ReadFile(filepath.Join(repo, "config.ini"))
+	modIni, err := os.ReadFile(filepath.Join(src, "config.ini"))
 	if err != nil {
 		return err
 	}
@@ -277,7 +279,7 @@ func build(repo, version, out string) error {
 		}
 		ini := strings.Replace(string(modIni), "[RES]\n", "[RES]\n"+strings.Join(append(extra, ""), "\n"), 1)
 		if len(extra) > 0 && ini == string(modIni) {
-			return errors.New("config.ini: no [RES] section")
+			return errors.New("mod/config.ini: no [RES] section")
 		}
 		iniPath := filepath.Join(work, "config-"+lang+".ini")
 		if err := os.WriteFile(iniPath, []byte(ini), 0o644); err != nil {
@@ -305,7 +307,7 @@ func build(repo, version, out string) error {
 			name := fmt.Sprintf("eitweaks-%s-%s-%s.zip", version, lang, v.variant)
 			zipPath := filepath.Join(out, name)
 			// SpellAddon ships unmodified beside the mod: its licence forbids distributing its files separately.
-			folders := []zipFolder{{v.dir, "eitweaks"}, {filepath.Join(repo, "spelladdon"), "SpellAddon"}}
+			folders := []zipFolder{{v.dir, "eitweaks"}, {filepath.Join(vendor, "spelladdon"), "SpellAddon"}}
 			if err := writeZip(folders, zipPath); err != nil {
 				return err
 			}
