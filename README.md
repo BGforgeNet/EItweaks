@@ -25,6 +25,7 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 
 #### Fixes
 - The fixes of the unofficial [patch 1.07](docs/patch-1.07.md), for every language.
+- GOG versions: the camera tilts smoothly instead of jumping, and the quest marker and hero lights have their original colors. The GOG installers leave out the camera, light and shadow settings the CD installer wrote; the installer sets them, keeping any the player has changed.
 - Gipath bats description correctly states fire damage.
 - Stony harpies have extra protection from lightning instead of fire.
 - Grey harpies have extra protection from acid instead of fire.

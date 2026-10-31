@@ -159,6 +159,56 @@ Root: HKCU; Subkey: "Software\Gipat.ru\EI_Starter\Settings"; ValueType: string; 
 Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType: string; ValueName: "dinput"; ValueData: "native,builtin"; Check: IsStarter and IsWine
 #emit GameSettings("Software\Nival Interactive\EvilIslands")
 #emit StringChange(GameSettings("Software\Gipat.ru\EI_Starter\EvilIslands"), "Check: IsStarter", "Check: IsStarter and StarterCopiedSettings")
+; The GOG versions' installers write no camera or light settings, so the game saves its built-in defaults, which
+; differ from what the CD installer wrote: the camera tilts in jumps, and quest and hero lights glare. A value still at
+; the built-in default (the same in every language's GOG exe), or missing, gets the CD installer's; one the player
+; changed is kept. Both versions; starter's copy too, once it has made one.
+#define CdFloat(Root, Key, Name, Builtin, CD, Cond) \
+  "Root: HKCU; Subkey: """ + Root + "\" + Key + """; ValueType: binary; ValueName: """ + Name + """; ValueData: """ + CD + \
+  """; Check: FloatAtBuiltin('" + Root + "\" + Key + "', '" + Name + "', '" + Builtin + "')" + Cond + NewLine
+#define CdDWord(Root, Key, Name, Builtin, CD, Cond) \
+  "Root: HKCU; Subkey: """ + Root + "\" + Key + """; ValueType: dword; ValueName: """ + Name + """; ValueData: " + CD + \
+  "; Check: DWordAtBuiltin('" + Root + "\" + Key + "', '" + Name + "', " + Builtin + ")" + Cond + NewLine
+#define CdSettings(Root, Cond) \
+  CdDWord(Root, "Camera Settings", "CameraBorderScrollArea", "5", "1", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraBriefingMaxDistanceToCarrier", "00 00 c8 42", "00 00 d8 41", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraBriefingMaxLimitDistanceToCarrier", "00 00 a0 42", "00 00 f0 41", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraBriefingMinDistanceToCarrier", "00 00 80 40", "00 00 c0 40", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraBriefingMinPitch", "00 00 f0 41", "00 00 20 42", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultHeight", "00 00 f0 41", "00 00 00 40", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultMaxPitch", "00 00 a0 42", "00 00 70 42", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultMinPitch", "00 00 a0 41", "00 00 f0 41", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultPitchPowerKeyboard", "00 00 00 3f", "1f 85 eb 3e", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultPitchSpeed", "00 00 80 3f", "a6 9b c4 3a", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultRotatePowerKeyboard", "00 00 00 3f", "1f 85 eb 3e", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultRotateSpeed", "00 00 80 3f", "9a 99 19 3e", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultScrollPowerKeyboard", "00 00 00 3f", "1f 85 eb 3e", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultScrollSpeed", "00 00 80 3f", "00 00 c0 3f", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultXDeploy", "00 00 00 00", "00 00 f0 41", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultYDeploy", "00 00 00 00", "00 00 f0 41", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultZoomPowerKeyboard", "00 00 00 3f", "1f 85 eb 3e", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraDefaultZoomSpeed", "00 00 80 3f", "00 00 00 40", Cond) + \
+  CdDWord(Root, "Camera Settings", "CameraFrameSelectionSensetiveArea", "20", "30", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraMaxDistanceToCarrier", "00 00 c8 42", "00 00 48 42", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraMaxHeight", "00 00 c8 42", "00 00 8c 42", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraMaxLimitDistanceToCarrier", "00 00 a0 42", "00 00 8c 42", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraMinDistanceToCarrier", "00 00 80 40", "00 00 20 41", Cond) + \
+  CdFloat(Root, "Camera Settings", "CameraMinHeight", "00 00 80 40", "00 00 40 40", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Hero Light R", "255", "216", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Hero Light G", "236", "216", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Hero Light B", "170", "116", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Hero Light Radius", "10", "5", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Quest Light R", "200", "120", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Quest Light G", "255", "72", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Quest Light B", "255", "120", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "Quest Light Radius", "10", "5", Cond) + \
+  CdFloat(Root, "Game Specific Settings", "ObjectsLightingCoeff", "00 00 80 3f", "00 00 00 40", Cond) + \
+  CdDWord(Root, "Game Specific Settings", "UseSWCursors", "1", "0", Cond) + \
+  CdDWord(Root, "Shadow Settings", "ShadowQuality", "0", "2", Cond) + \
+  CdFloat(Root, "Terrain Settings", "BorderFogDistance", "00 00 00 42", "00 00 80 41", Cond) + \
+  CdDWord(Root, "Terrain Settings", "ShadowingFreq", "6000", "60000", Cond)
+#emit CdSettings("Software\Nival Interactive\EvilIslands", "")
+#emit CdSettings("Software\Gipat.ru\EI_Starter\EvilIslands", " and StarterCopiedSettings")
 
 [Run]
 Filename: "{app}\EIStarter.exe"; WorkingDir: "{app}"; Description: "{cm:LaunchStarter}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Check: IsStarter
@@ -257,6 +307,36 @@ end;
 function StarterCopiedSettings: Boolean;
 begin
   Result := RegKeyExists(HKCU, 'Software\Gipat.ru\EI_Starter\EvilIslands\Path Settings');
+end;
+
+{ For the CD installer's camera and light settings in [Registry]: whether a value is missing or still at the game's
+  built-in default. Builtin is the float's bytes in hex, as in [Registry]; the bytes are compared by value, as a
+  string of them would pass through a code page. }
+function FloatAtBuiltin(const Key, Name, Builtin: String): Boolean;
+var
+  Cur: AnsiString;
+  Hex: String;
+  I: Integer;
+begin
+  Result := not RegQueryBinaryValue(HKCU, Key, Name, Cur);
+  if not Result then
+  begin
+    Hex := '';
+    for I := 1 to Length(Cur) do
+    begin
+      if I > 1 then
+        Hex := Hex + ' ';
+      Hex := Hex + Lowercase(Format('%.2x', [Ord(Cur[I])]));
+    end;
+    Result := Hex = Builtin;
+  end;
+end;
+
+function DWordAtBuiltin(const Key, Name: String; Builtin: Integer): Boolean;
+var
+  Cur: Cardinal;
+begin
+  Result := not RegQueryDWordValue(HKCU, Key, Name, Cur) or (Cur = Cardinal(Builtin));
 end;
 
 { Whether this run can write into Dir: a folder under Program Files needs administrator rights. }
