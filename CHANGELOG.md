@@ -32,7 +32,7 @@
 #### Fixed
 - GOG versions: the camera tilts smoothly instead of jumping, the quest marker and hero lights have their original
   colors, and shadows are on: the installer sets the camera, light and shadow settings the CD installer wrote, where
-  the player has not changed them.
+  the player has not changed them. Texture and landscape detail default to their highest the same way.
 - Toads and will-o-wisps show their real magic damage.
 - Red harpies show their real damage type and range.
 - Red dragons have extra protection from fire, like green and blue dragons from their elements.

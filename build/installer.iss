@@ -139,18 +139,13 @@ Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}"; Flags: ignore
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Antialiasing""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Audio""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Dithering""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Filtering""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""FPSIndependentCursor""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""FullScreen""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Mipmapping""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""TextureQuality""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Video""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""VideoColorDepthInBits""; ValueData: 32; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: string; ValueName: ""VideoResolution""; ValueData: ""1024x768""; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: dword; ValueName: ""LightingFreq""; ValueData: 1000; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: dword; ValueName: ""EnableWaterWaves""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: binary; ValueName: ""LOD1""; ValueData: ""00 00 20 42""; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: binary; ValueName: ""LOD2""; ValueData: ""00 00 96 42""; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
   "Root: HKCU; Subkey: """ + Key + "\Network Settings""; ValueType: string; ValueName: ""Master Server Name""; ValueData: """"; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine
 ; Starter's selected mod: EItweaks, just installed.
 Root: HKCU; Subkey: "Software\Gipat.ru\EI_Starter\Settings"; ValueType: string; ValueName: "AddonPath"; ValueData: "{app}\MODS\eitweaks"; Check: IsStarter
@@ -162,7 +157,9 @@ Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType
 ; The GOG versions' installers write no camera or light settings, so the game saves its built-in defaults, which
 ; differ from what the CD installer wrote: the camera tilts in jumps, and quest and hero lights glare. A value still at
 ; the built-in default (the same in every language's GOG exe), or missing, gets the CD installer's; one the player
-; changed is kept. Both versions; starter's copy too, once it has made one.
+; changed is kept. Both versions; starter's copy too, once it has made one. The texture and landscape detail settings
+; follow the same rule, to their highest: full-size textures, mipmapping, filtering 2, and the CD installer's
+; landscape detail distances.
 #define CdFloat(Root, Key, Name, Builtin, CD, Cond) \
   "Root: HKCU; Subkey: """ + Root + "\" + Key + """; ValueType: binary; ValueName: """ + Name + """; ValueData: """ + CD + \
   """; Check: FloatAtBuiltin('" + Root + "\" + Key + "', '" + Name + "', '" + Builtin + "')" + Cond + NewLine
@@ -206,7 +203,12 @@ Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType
   CdDWord(Root, "Game Specific Settings", "UseSWCursors", "1", "0", Cond) + \
   CdDWord(Root, "Shadow Settings", "ShadowQuality", "0", "2", Cond) + \
   CdFloat(Root, "Terrain Settings", "BorderFogDistance", "00 00 00 42", "00 00 80 41", Cond) + \
-  CdDWord(Root, "Terrain Settings", "ShadowingFreq", "6000", "60000", Cond)
+  CdDWord(Root, "Terrain Settings", "ShadowingFreq", "6000", "60000", Cond) + \
+  CdDWord(Root, "General Settings", "TextureQuality", "1", "0", Cond) + \
+  CdDWord(Root, "General Settings", "Mipmapping", "0", "1", Cond) + \
+  CdDWord(Root, "General Settings", "Filtering", "1", "2", Cond) + \
+  CdFloat(Root, "Terrain Settings", "LOD1", "00 00 20 42", "00 00 b4 42", Cond) + \
+  CdFloat(Root, "Terrain Settings", "LOD2", "00 00 96 42", "00 00 02 43", Cond)
 #emit CdSettings("Software\Nival Interactive\EvilIslands", "")
 #emit CdSettings("Software\Gipat.ru\EI_Starter\EvilIslands", " and StarterCopiedSettings")
 

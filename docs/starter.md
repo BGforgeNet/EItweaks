@@ -6,7 +6,7 @@ The `starter` release is a mod for [EI starter](https://www.gipath.org/forum/thr
 
 - Starter runs its own `Engine\game.exe`, the Russian 1.06 one, whatever the game's language, with the game directory as the working directory. The game's own `game.exe` is not used.
 - Starter finds the game directory through the game's registry key, `Software\Nival Interactive\EvilIslands\Path Settings` under `HKEY_CURRENT_USER`, which it copies into its own key on its first start. The GOG versions write that key.
-- Starter reads the game's settings from that copy. A game that has never been quit from its main menu has saved only a few of them, so starter's first start reports "Failed to get data for 'FILTERING'"; pressing OK carries on, and the game saves the rest the next time it is quit from its menu. The installer writes the game's defaults for the ones starter reads, where absent, so that message does not come up.
+- Starter reads the game's settings from that copy. A game that has never been quit from its main menu has saved only a few of them, so starter's first start reports "Failed to get data for 'FILTERING'"; pressing OK carries on, and the game saves the rest the next time it is quit from its menu. The installer writes the ones starter reads, where absent, so that message does not come up: the game's defaults, with texture and landscape detail at their highest.
 
 ### The add-on
 
