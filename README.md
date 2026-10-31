@@ -1,17 +1,11 @@
-## EItweaks
+# EItweaks
 
-EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixes of the unofficial [patch 1.07](docs/fixes.md#patch-107) and works with the Russian, English and German versions of the game.
+[**Download**](https://github.com/BGforgeNet/EItweaks/releases/latest)
+| [**Report issues**](https://github.com/BGforgeNet/EItweaks/issues)
+| [**Discuss**](https://forums.bgforge.net/viewtopic.php?f=22&t=183)
 
-- [Overview](#overview)
-- [Installation](#installation)
-- [Building from source](docs/building.md)
-- [EI starter](docs/starter.md), its [add-on](docs/addon.md) and [SpellAddon](docs/spelladdon.md): what EItweaks uses of them
-- [Support](#support)
-- [Author](#author)
-- [Changelog](CHANGELOG.md)
-- [Todo](docs/TODO.md)
 
-### Overview
+EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes, as well as certain tweaks, QoL and a few balance changes. It bundles [EI starter](docs/starter.md), its [add-on](docs/addon.md) and [SpellAddon](docs/spelladdon.md).
 
 - [Fixes](docs/fixes.md)
 - [Tweaks](#tweaks)
@@ -20,39 +14,47 @@ EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes the fixe
   - [Items](#items)
   - [Regeneration](#regeneration)
   - [Resistances](#resistances)
+- [Installation](#installation)
 
-EItweaks' own fixes and tweaks apply to the single player game; the multiplayer database is 1.07's, with the change listed among the [patch 1.07 fixes](docs/fixes.md#patch-107).
+## Tweaks
 
-#### Tweaks
+### Gameplay
 
-##### Gameplay
-- Human (PC and NPC) run speed slightly increased.
-- Human (PC and NPC) walk speed considerably increased.
-- Zak no longer has a level of backstab perk.
-- Airy grants +2 to Sensory Magic and Trickster +2 to Use/Steal, instead of +10.
-- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44.
-- Dragons on Gipath no longer have more than 1000 hit points.
+- Human (PC and NPC) run speed slightly increased to match other characters.
+- Human (PC and NPC) walk speed considerably increased (it was the same as sneaking originally).
+- PC no longer has a level of backstab perk pre-selected. That allows for greater flexibility in character development.
+- Airy grants +2 to Sensory Magic and Trickster +2 to Use/Steal, instead of +10. This is to prevent the XP exploit with these bonuses.
+- Reduced over-the-top armor values for golems and other "unkillable" monsters from 150 to 44. They are now killable (albeit extremely hard). Becuase unkillable enemies are not very fun.
+- Dragons on Gipath no longer have over 1000 hit points. Same reason.
+- Running depletes stamina by points rather than percentage, like game text suggests, so a character can run longer as stamina grows.
 
-##### Speedup
+### Speedup
+
 - 1C/Nival intro movies are disabled.
 - New game starting movie is disabled.
-- Help screens are disabled by default; Options > Windows > Show tutorial turns them back on. The standalone version disables the camp and map ones only: turn off Show tutorial for the rest.
-- New game "My head hurts" cutscene is shortened (Russian).
+- Help screens are disabled by default.
 
-##### Items
-- Dragons drop hide in addition to bones.
-- Stronger Green Dragon Horn.
-- Hide armor is sold in the Gipath shop.
-- Half effect rune is sold on Gipath.
+### Items
 
-##### Regeneration
+- Dragons drop hide in addition to bones. Just makes sense.
+- Stronger Green Dragon Horn. The original one was useless.
+- Hide armor is sold in the Gipath shop. (Since it drops on Gipath now).
+- Half effect rune is sold on Gipath. A restoration from original game files, makes starting a mage a bit easier.
+
+### Regeneration
+
+Regeneration is quite annoying in game. Often an enemy would regenerate faster than PC would damage it. In certain cases that seems justified (trolls, etc), but in other it isn't. So, regeneration is:
+
 - Disabled for undead, golems, shadows and will-o-wisps.
 - Halved for ogres.
-- Green/blue trolls are untouched, but black ones toned down to match green/blue.
+- Green/blue trolls are unchanged, but black ones toned down to match green/blue.
 - Ice elementals regenerate like other elementals.
-- Reduced dramatically for all other monsters and characters.
+- Reduced dramatically for all other monsters and characters (including PC).
 
-##### Resistances
+### Resistances
+
+A collection of changes to standartize protections and make them "make sense".
+
 - Hard leather provides extra protection against piercing and bludgeoning, matching monster protection.
 - Hide provides extra protection against piercing.
 - Fur provides extra protection against bludgeoning.
@@ -62,21 +64,15 @@ EItweaks' own fixes and tweaks apply to the single player game; the multiplayer 
 - Lava elementals get extra protection from fire, Snow elementals get vulnerability to it.
 - Lightning vulnerability for NPCs using metal armor and golems.
 
-### Installation
+## Installation
 
-The game must be at version 1.06. The GOG versions are ready as they are: the English and Russian ones are 1.06, and for the German one EItweaks includes the data of the German patch 1.06 (its `game.exe` is already 1.06). A German CD version needs the official German [patch 1.06](https://allods.gipat.ru/index.php?p=filesei) first. Patch 1.07 is not needed: EItweaks includes its fixes.
+The game must be at version 1.06. The GOG releases are ready as they are. If you have an older version, grab [1.06](https://allods.gipat.ru/index.php?p=filesei#patch-1-06) first.
 
-Download the installer, `eitweaks-<version>-setup.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it. It asks for:
-1. The game folder, found by itself for an installed game.
-1. The game's language (Russian, English or German), detected from the game folder.
-1. The version:
-   - With [EI starter](https://www.gipath.org/forum/thread-3828.html) (recommended): EItweaks becomes a mod selected in starter's dropdown, and the game's files stay untouched. It needs EI starter 1.046.1; when starter is missing, the installer downloads it from its site and runs its installer. Afterwards, launch starter: EItweaks is already selected.
-   - Standalone: copied over the game's files, for playing without starter; launch the game as usual. Each file it replaces is backed up into `eitweaks-backup` and put back when EItweaks is uninstalled. It lacks a few changes the starter version has: 1.07's missing face texture fix and, in Russian, the shortened "My head hurts" cutscene.
+Download the installer, `eitweaks-<version>.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it.
 
-EItweaks installs SpellAddon into the game folder. An older SpellAddon there, or in starter's `Engine` folder, would load together with it, so the installer moves it into an `eitweaks-old-SpellAddon` folder beside it; the standalone version keeps it in `eitweaks-backup` and puts it back when uninstalled.
-### Support
-* Report bugs and suggest features on [Github](https://github.com/BGforgeNet/EItweaks/issues).
-* Discuss and ask questions on the [forum](https://forums.bgforge.net/viewtopic.php?f=22&t=183).
+### More
 
-### Author
-[Magus at BGforge](https://forums.bgforge.net/viewtopic.php?f=22&t=183)
+- [Build from source](docs/building.md)
+- [Changelog](CHANGELOG.md)
+- [Standalone](docs/standalone.md) version differences.
+- [German](docs/de.md) version notes.

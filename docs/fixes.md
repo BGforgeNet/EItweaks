@@ -3,26 +3,38 @@
 - [EItweaks](#eitweaks)
 - [Patch 1.07](#patch-107)
 
-### EItweaks
+### 1.08
 
-- GOG versions: the camera tilts smoothly instead of jumping, and the quest marker and hero lights have their original colors. The GOG installers leave out the camera, light and shadow settings the CD installer wrote; the installer sets them, keeping any the player has changed. Texture and landscape detail default to their highest the same way.
-- Gipath bats description correctly states fire damage.
-- Stony harpies have extra protection from lightning instead of fire.
-- Grey harpies have extra protection from acid instead of fire.
-- Dragons and items from dragon hide have extra protection from the corresponding elements.
-- Dragons description correctly states their damage type.
-- Magic-using banshees, dragons, bats and evil eyes show correct damage values in the info window.
-- Toads and will-o-wisps show their real magic damage.
-- Red harpies show their real damage type and range.
+#### Additional fixes on top of 1.07
+
+- Magic using monsters now show the corresponding damage type in decription window. That includes bats, dragons, banshees, evil eyes, toads, will-wisps, harpies.
 - Goblins with slings do bludgeoning damage.
+- Red harpies show their real damage range.
+- Matching protections - the monsters generally get protection from the magic type that they are using:
+  - Stony harpies have extra protection from lightning instead of fire.
+  - Grey harpies have extra protection from acid instead of fire.
+  - Dragons and items from dragon hide have extra protection from the corresponding elements.
 - Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 35 maximum stamina, shorter below it. This uses the included [SpellAddon](spelladdon.md).
 
-### Patch 1.07
+#### GoG release fixes
 
-EItweaks includes the fixes of the unofficial patch 1.07 (Gipat Group). The patch itself is for the Russian version only; EItweaks carries its fixes to every language.
+Additionally, EItweaks fixes multiple issues _introduced_ by GoG:
 
-- Campaign map scripts: trolls coming back to the witch's cave, Go-Go's dialogues, the goblin sentry phrase repeating, levers and mechanisms that could trap the player, quest rewards and experience given on every visit to a zone.
+- The camera tilts smoothly instead of jumping
+- The quest marker and hero lights have their original colors.
+- German version is unpatched at all.
+
+### 1.07
+
+EItweaks includes the fixes of the [unofficial patch 1.07](https://allods.gipat.ru/index.php?p=filesei#patch-1-07) by Gipat Group. The original patch is for the Russian version only; EItweaks carries its fixes to every language.
+
+- Campaign map scripts
+  - Trolls coming back to the witch's cave
+  - Go-Go's dialogues
+  - The goblin sentry phrase repeating
+  - Levers and mechanisms that could trap the player
+  - Quest rewards and experience given on every visit to a zone.
 - The single and multiplayer databases.
 - Russian: the texts.
-- English and German: 1.07's corrected marker position for the "Punishing goblins" quest on the world map.
+- Corrected marker position for the "Punishing goblins" quest on the world map.
 - Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).
