@@ -15,7 +15,7 @@
   - Stony harpies have extra protection from lightning instead of fire.
   - Grey harpies have extra protection from acid instead of fire.
   - Dragons and items from dragon hide have extra protection from the corresponding elements.
-- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 35 maximum stamina, shorter below it. This uses the included [SpellAddon](spelladdon.md).
+- Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 75 maximum stamina, shorter below it. This uses the included [SpellAddon](spelladdon.md).
 
 #### GOG release fixes
 
