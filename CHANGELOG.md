@@ -26,6 +26,7 @@
 - Dragons on Gipath no longer have more than 1000 hit points.
 - Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).
 - The release no longer includes a `game.exe`.
+- Russian: Zak's "My head hurts" speech at the start of a new game is no longer shortened.
 - The starter version also turns off the tutorials of the introductory quest, once; Options > Windows > Show
   tutorial turns them back on.
 

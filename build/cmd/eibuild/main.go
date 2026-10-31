@@ -34,7 +34,7 @@ var databases = []string{"database", "databaselmp"}
 
 // The mod's archives that hold only a few of the game's entries: the starter merges them into the game's archives,
 // while a standalone copy would replace the whole archive, so the standalone release leaves them out.
-var partialArchives = []string{filepath.Join("res", "textures.res"), filepath.Join("res", "sfx.res")}
+var partialArchives = []string{filepath.Join("res", "textures.res")}
 
 // starterOnly lists the mod's files the standalone version leaves out: the starter's config, add-on and plugin, which
 // the game's own exe needs none of, and the partial archives.
@@ -273,7 +273,7 @@ func build(repo, version, out string) error {
 				return err
 			}
 			if !strings.Contains(string(modIni), "\n"+a.Name()+".res=") {
-				// Archives only some languages ship (textslmp, sfx) are added to [RES] per language.
+				// Archives only some languages ship (textslmp) are added to [RES] per language.
 				extra = append(extra, a.Name()+`.res=res\`+a.Name()+".res")
 			}
 		}

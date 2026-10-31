@@ -6,5 +6,4 @@ Differences:
 
 - Disables only the camp and map help screens: turn off Options > Windows > Show tutorial for the rest.
 - Lacks 1.07's missing face texture fix.
-- Russian: the "My head hurts" cutscene is not shortened.
 - No [add-on](addon.md), so none of its fixes and options.
