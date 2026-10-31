@@ -39,6 +39,9 @@
 - Red harpies show their real damage type and range.
 - Russian: the name of the Khadaganian boots of green dragon hide is spelled right.
 - Red dragons have extra protection from fire, like green and blue dragons from their elements.
+- Mountain lizards, grey harpies, foxbats and black foxbats wear their own textures from the game files, instead of
+  those of lake lizards, red harpies and bats.
+- The wings of foxbats and black foxbats have their names the right way round.
 
 ### 1.0
 Initial release.

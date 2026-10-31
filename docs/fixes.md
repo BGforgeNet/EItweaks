@@ -11,6 +11,8 @@
 - Goblins with slings do bludgeoning damage.
 - Dark banshees' lightning had broken spell settings, as 1.07 fixed for multiplayer.
 - Red harpies show their real damage range.
+- Mountain lizards, grey harpies, foxbats and black foxbats wear their own textures from the game files, instead of those of lake lizards, red harpies and bats.
+- The wings of foxbats and black foxbats have their names the right way round.
 - Matching protections: monsters generally get protection from the magic type they use.
   - Stony harpies have extra protection from lightning instead of fire.
   - Grey harpies have extra protection from acid instead of fire.
