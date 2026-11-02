@@ -4,6 +4,8 @@
 
 Starter loads its [add-on](addon.md), which loads EItweaks.
 
+The installer sets the large-address-aware flag of starter's `Engine\game.exe` (the game's own files are not touched), so the 32-bit game can use 4 GB of address space on 64-bit Windows and Wine instead of 2 GB. It changes that one bit and keeps the unchanged file as `Engine\game.exe.eitweaks-nolaa`; to undo it, copy that file back over `game.exe`. Uninstalling EItweaks leaves the flag set, as it leaves SpellAddon.
+
 ### Playing
 
 - Launch starter: the installer has already selected EItweaks. Press Play.

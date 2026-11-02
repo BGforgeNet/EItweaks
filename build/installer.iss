@@ -3,7 +3,8 @@
 ; Expects payload\ beside this file, as `eibuild payload` writes it; writes to out\.
 ;
 ; The player picks the game folder, the game's language (detected, can be changed) and the version:
-; with EI starter (recommended): the mod goes into starter's Mods folder, SpellAddon into the game folder;
+; with EI starter (recommended): the mod goes into starter's Mods folder, SpellAddon into the game folder, and starter's
+; game.exe gets the large-address-aware flag;
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
 ; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>.
 
@@ -673,9 +674,68 @@ begin
   end;
 end;
 
+{ Sets the large-address-aware flag (bit 0x20 of the PE header's Characteristics) of Exe, no other byte, keeping the
+  unchanged file once as Exe + '.eitweaks-nolaa'. The flag gives the 32-bit game 4 GB of address space on 64-bit
+  Windows and Wine instead of 2 GB, which HD texture packs and D7VK need; the game, the original addon.dll and
+  SpellAddon ran with every allocation above 2 GB without a fault. A file that is missing or not a PE is left alone,
+  as the game runs without the flag. }
+procedure SetLargeAddressAware(const Exe: String);
+var
+  Data: AnsiString;
+  Kept: String;
+  Pe, Flags: Integer;
+begin
+  if not FileExists(Exe) then
+  begin
+    Log('Large address aware: ' + Exe + ' does not exist');
+    Exit;
+  end;
+  if not LoadStringFromFile(Exe, Data) then
+  begin
+    Log('Large address aware: could not read ' + Exe);
+    Exit;
+  end;
+  { e_lfanew is the little-endian dword at 0x3C; AnsiString is indexed from 1. }
+  if (Length(Data) < $40) or (Data[1] <> 'M') or (Data[2] <> 'Z') then
+  begin
+    Log('Large address aware: ' + Exe + ' is not an MZ executable');
+    Exit;
+  end;
+  Pe := Ord(Data[$3D]) + Ord(Data[$3E]) shl 8 + Ord(Data[$3F]) shl 16;
+  { A fourth byte above 0 puts the header beyond 16 MB, past any file this flag is for. }
+  if (Ord(Data[$40]) <> 0) or (Pe + 24 > Length(Data)) or (Data[Pe + 1] <> 'P') or (Data[Pe + 2] <> 'E') or
+    (Ord(Data[Pe + 3]) <> 0) or (Ord(Data[Pe + 4]) <> 0) then
+  begin
+    Log('Large address aware: ' + Exe + ' has no PE header');
+    Exit;
+  end;
+  { Characteristics is the 16-bit field 18 bytes into the file header, which follows the 4-byte signature. }
+  Flags := Ord(Data[Pe + 4 + 18 + 1]);
+  if Flags and $20 <> 0 then
+  begin
+    Log('Large address aware: ' + Exe + ' has the flag already');
+    Exit;
+  end;
+  Kept := Exe + '.eitweaks-nolaa';
+  if not FileExists(Kept) and not CopyFile(Exe, Kept, True) then
+  begin
+    Log('Large address aware: could not keep ' + Exe + ' as ' + Kept);
+    Exit;
+  end;
+  Data[Pe + 4 + 18 + 1] := Chr(Flags or $20);
+  if SaveStringToFile(Exe, Data, False) then
+    Log('Large address aware: set for ' + Exe)
+  else
+  begin
+    Log('Large address aware: could not write ' + Exe + ', restoring it');
+    CopyFile(Kept, Exe, False);
+  end;
+end;
+
 { Standalone: into eitweaks-backup, which uninstalling puts back along with removing our SpellAddon. Starter: our
-  SpellAddon stays after uninstalling, so the old ones stay aside too. Starter's Engine is checked as its readme tells
-  players to copy SpellAddon there. }
+  SpellAddon stays after uninstalling, so the old ones stay aside too, and so does the large-address-aware flag of
+  starter's game.exe (the unchanged file is beside it). Starter's Engine is checked as its readme tells players to copy
+  SpellAddon there. }
 procedure CurStepChanged(CurStep: TSetupStep);
 begin
   if CurStep = ssInstall then
@@ -685,6 +745,7 @@ begin
     begin
       MoveOldSpellAddons(GameDirValue(''), AddBackslash(GameDirValue('')) + 'eitweaks-old-SpellAddon');
       MoveOldSpellAddons(ExpandConstant('{app}\Engine'), ExpandConstant('{app}\eitweaks-old-SpellAddon'));
+      SetLargeAddressAware(ExpandConstant('{app}\Engine\game.exe'));
     end;
 end;
 

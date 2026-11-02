@@ -9,6 +9,9 @@
   its add-on.
 - The starter version runs on the GOG versions without the game disc.
 - The starter version brings starter's add-on 0.12.4.2 (starter 1.046.1 has 0.11.0.0), used when EItweaks is selected.
+- The starter version sets the large-address-aware flag of starter's `Engine\game.exe`, which gives the game 4 GB of
+  address space on 64-bit Windows and Wine instead of 2 GB (HD texture packs and D7VK need it). The unchanged file is
+  kept as `game.exe.eitweaks-nolaa`; uninstalling leaves the flag set.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
 - The fixes of the unofficial patch 1.07 (Gipat Group) that 1.0 lacked, for every language: campaign map scripts
