@@ -21,6 +21,8 @@
   - Dragons and items from dragon hide have extra protection from the corresponding elements.
 - Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 75 maximum stamina, shorter below it. This uses the included [SpellAddon](spelladdon.md).
 - The game no longer crashes when an object without its server-side half comes into view: the server skips it. This uses the included [SpellAddon](spelladdon.md) (`ultrafixes`); not in the English and German standalone versions.
+- Vision no longer jumps from night to day at 8:00: it grows evenly from 4:00 to 8:00, as it already fades from 20:00 to midnight. In caves, vision stays at its night value at any hour. This uses the included [SpellAddon](spelladdon.md) (`nightpowervisionpatch`, `nightvisionincaves`); not in the English and German standalone versions.
+- The Middle Mountains load the map their zone data names, instead of one of two maps chosen by the `z.gz6g.frozen` quest variable. This uses the included [SpellAddon](spelladdon.md) (`removefrozenvar`); not in the English and German standalone versions.
 
 #### GOG release fixes
 
