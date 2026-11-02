@@ -20,6 +20,8 @@
 - Half effect rune for sale on Gipath.
 - Running depletes stamina by points rather than percentage: longer runs above 75 maximum stamina, shorter below.
   The installer installs SpellAddon 20.6 into the game folder, configured for EItweaks only.
+- No crash when an object without its server-side half comes into view (SpellAddon's `ultrafixes`; Russian game
+  executable only, so not in the English and German standalone versions).
 
 #### Changed
 - Airy grants +2 to Sensory Magic instead of +10, and Trickster +2 to Use/Steal instead of +10.

@@ -52,7 +52,7 @@ var gogFolders = map[string]map[string]string{
 // SpellAddon patches the Russian 1.06 game.exe at fixed addresses without checking them. The starter runs that exe for
 // every language; a standalone install runs the game's own, and the English and German exe have other code where
 // these settings patch, so their standalone releases turn them off.
-var russianExeOnlySpellAddon = []string{"batterycharge"}
+var russianExeOnlySpellAddon = []string{"batterycharge", "ultrafixes"}
 
 // disableSpellAddonKeys sets each key, which must be on exactly once, to 0 in the SPELLADDON.INI at path.
 func disableSpellAddonKeys(path string, keys []string) error {

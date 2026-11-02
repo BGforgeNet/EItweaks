@@ -20,6 +20,7 @@
   - Grey harpies have extra protection from acid instead of fire.
   - Dragons and items from dragon hide have extra protection from the corresponding elements.
 - Running depletes stamina by points rather than percentage, as intended, so a character can run longer as stamina grows: longer than before above 75 maximum stamina, shorter below it. This uses the included [SpellAddon](spelladdon.md).
+- The game no longer crashes when an object without its server-side half comes into view: the server skips it. This uses the included [SpellAddon](spelladdon.md) (`ultrafixes`); not in the English and German standalone versions.
 
 #### GOG release fixes
 
