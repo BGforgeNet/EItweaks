@@ -300,12 +300,13 @@ begin
 end;
 
 { The launcher's folder: the one EIStarter-UM wrote at its last Play (EI starter writes the same value, so it counts
-  only with EIStarter-UM in it), else a new folder the player can write to. }
+  only with EIStarter-UM in it), else Games\EIStarter-UM on the system drive, which a player can write to without
+  administrator rights, unlike Program Files. }
 function StarterDir(Param: String): String;
 begin
   if not RegQueryStringValue(HKCU, 'Software\Gipat.ru\EI_Starter', 'path', Result) or (Result = '') or
     not FileExists(AddBackslash(Result) + StarterExe) then
-    Result := ExpandConstant('{autopf}\EIStarter-UM');
+    Result := ExpandConstant('{sd}\Games\EIStarter-UM');
   Result := RemoveBackslashUnlessRoot(Result);
 end;
 
