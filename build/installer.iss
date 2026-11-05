@@ -14,6 +14,10 @@
 
 #include "payload\files.iss"
 
+; The downloaded EIStarter-UM package, kept in the launcher's folder so installing again needs no download (the
+; release's files can be replaced upstream).
+#define StarterZipName "EIStarter-UM-0.2.9.zip"
+
 [Setup]
 AppId=EItweaks
 AppName=EItweaks
@@ -120,6 +124,8 @@ de.LaunchGame=Spiel starten
 ; EIStarter-UM, when its folder had none or an older one: the downloaded package, unpacked into {tmp}. It may serve
 ; other mods, so it stays after uninstalling, as the launcher a player installs by hand would.
 Source: "{tmp}\eistarter-um\EIStarter-UM\*"; DestDir: "{app}"; Flags: external recursesubdirs createallsubdirs ignoreversion uninsneveruninstall; Check: StarterDownloaded
+; The downloaded package itself, kept beside it for installing again without a download.
+Source: "{tmp}\eistarter-um.zip"; DestDir: "{app}"; DestName: "{#StarterZipName}"; Flags: external ignoreversion uninsneveruninstall; Check: StarterFetchedNow
 ; SpellAddon's licence forbids distributing its files apart from its whole folder: the installer carries the folder
 ; unmodified (dontcopy) and installs the files SpellAddon's own instructions name. EIStarter-UM's game runs with its
 ; own Miles (Engine\mss32.dll), which loads the .asi files of the Engine folder only, so they go there, in place of the
@@ -206,6 +212,7 @@ const
     every Play), published with Universal Mod's 0.8.7 pre-release; the download is checked against this. }
   StarterZipURL = 'https://github.com/Kyr4l/ei-universal-mod/releases/download/0.8.7/EIStarter-UM-0.2.9.zip';
   StarterZipSHA256 = '5f190de3f59e1cb3604de9c127f1100d577b40cb0564b1cbae173c3a5638d2a9';
+  StarterZipName = '{#StarterZipName}';
   StarterExe = 'EIStarter-UM.exe';
   { texts.res of the GOG Russian version, the same as the official Russian patch 1.06's. }
   RussianTextsSHA256 = '96d8e49a3472f93d92ec8b4ad4286fa7662d78fc4577fe2335832542014b3a5a';
@@ -232,6 +239,8 @@ var
   Relaunched: Boolean;
   { The launcher folder the package was downloaded and unpacked for, into the temporary folder; '' before that. }
   DownloadedFor: String;
+  { The package came from the network, not from the kept copy. }
+  StarterFetched: Boolean;
 
 function EnumDisplaySettings(DeviceName: Cardinal; ModeNum: Cardinal; var DevMode: TDevMode): BOOL;
   external 'EnumDisplaySettingsW@user32.dll stdcall';
@@ -319,6 +328,11 @@ begin
   Result := (DownloadedFor <> '') and (CompareText(DownloadedFor, WizardDirValue) = 0);
 end;
 
+function StarterFetchedNow: Boolean;
+begin
+  Result := StarterDownloaded and StarterFetched;
+end;
+
 { Whether the launcher has its copy of the game's key; until its first Play it reads the game's key alone. }
 function StarterCopiedSettings: Boolean;
 begin
@@ -396,29 +410,48 @@ begin
     Confirm := False;
 end;
 
-{ Downloads EIStarter-UM, checks it and unpacks it into the temporary folder, from where [Files] installs it; the
-  wizard shows its download page, a silent install has none. The error message, or '' once unpacked. }
+{ The copy of the launcher package kept in its folder after a download, when it is the pinned one. }
+function CachedStarterZip: String;
+begin
+  Result := AddBackslash(WizardDirValue) + StarterZipName;
+  if not FileExists(Result) or (Lowercase(GetSHA256OfFile(Result)) <> StarterZipSHA256) then
+    Result := '';
+end;
+
+{ Gets EIStarter-UM, from the copy a previous install kept in its folder, else downloaded and checked, and unpacks it
+  into the temporary folder, from where [Files] installs it; the wizard shows its download page, a silent install has
+  none. The error message, or '' once unpacked. }
 function DownloadStarter(UsePage: Boolean): String;
+var
+  Zip: String;
 begin
   Result := '';
   if StarterDownloaded then
     Exit;
   try
-    if UsePage then
+    Zip := CachedStarterZip;
+    StarterFetched := Zip = '';
+    if StarterFetched then
     begin
-      DownloadPage.Clear;
-      DownloadPage.Add(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256);
-      DownloadPage.Show;
-      try
-        DownloadPage.Download;
-      finally
-        DownloadPage.Hide;
-      end;
+      if UsePage then
+      begin
+        DownloadPage.Clear;
+        DownloadPage.Add(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256);
+        DownloadPage.Show;
+        try
+          DownloadPage.Download;
+        finally
+          DownloadPage.Hide;
+        end;
+      end
+      else
+        DownloadTemporaryFile(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256, nil);
+      Zip := ExpandConstant('{tmp}\eistarter-um.zip');
     end
     else
-      DownloadTemporaryFile(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256, nil);
+      Log('EIStarter-UM from the kept copy ' + Zip);
     DelTree(ExpandConstant('{tmp}\eistarter-um'), True, True, True);
-    ExtractArchive(ExpandConstant('{tmp}\eistarter-um.zip'), ExpandConstant('{tmp}\eistarter-um'), '', True, nil);
+    ExtractArchive(Zip, ExpandConstant('{tmp}\eistarter-um'), '', True, nil);
     DownloadedFor := WizardDirValue;
   except
     Result := GetExceptionMessage;
