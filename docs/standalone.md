@@ -1,6 +1,6 @@
 ## Standalone
 
-Installed directly into game directory. Use if you don't like starter for some reason, or are playing Cursed Lands. The files it replaces are backed up into `eitweaks-backup` and put back when EItweaks is uninstalled.
+Installed directly into game directory. Use if you don't like the [launcher](starter.md) for some reason, or are playing Cursed Lands. The files it replaces are backed up into `eitweaks-backup` and put back when EItweaks is uninstalled.
 
 Differences:
 

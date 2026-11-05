@@ -246,7 +246,8 @@ func build(repo, version, out string) error {
 	if err := buildPlugin(filepath.Join(repo, "plugin", "eitweaks.c"), filepath.Join(common, "eitweaks.dll")); err != nil {
 		return err
 	}
-	// Starter 1.046.1 loads an addon.dll from the selected mod's folder in place of its own, for this mod only.
+	// The add-on loader (EIStarter-UM's, as EI starter's) loads an addon.dll from the selected mod's folder in place of
+	// the launcher's own, for this mod only.
 	if err := copyFile(filepath.Join(vendor, "addon", "addon.dll"), filepath.Join(common, "addon.dll")); err != nil {
 		return err
 	}

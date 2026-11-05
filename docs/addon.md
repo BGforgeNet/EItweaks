@@ -1,6 +1,6 @@
 ## EI starter's add-on
 
-The add-on, `addon.dll`, is the part of [EI starter](starter.md) that runs inside the game and applies the selected mod.
+The add-on, `addon.dll`, is the part of EI starter that runs inside the game and applies the selected mod; [EIStarter-UM](starter.md) uses it too. EItweaks brings version 0.12.4.2, which the launcher uses when EItweaks is selected.
 
 Besides loading EItweaks, it brings:
 

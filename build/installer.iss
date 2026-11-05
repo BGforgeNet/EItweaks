@@ -3,8 +3,8 @@
 ; Expects payload\ beside this file, as `eibuild payload` writes it; writes to out\.
 ;
 ; The player picks the game folder, the game's language (detected, can be changed) and the version:
-; with EI starter (recommended): the mod goes into starter's Mods folder, SpellAddon into the game folder, and starter's
-; game.exe gets the large-address-aware flag;
+; with EIStarter-UM (recommended): the launcher is downloaded when its folder has none, the mod goes into its mods
+; folder, SpellAddon into its Engine folder, and the launcher's config selects EItweaks;
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
 ; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>.
 
@@ -32,11 +32,11 @@ PrivilegesRequiredOverridesAllowed=commandline
 DisableProgramGroupPage=yes
 ; Every choice has its own page already.
 DisableReadyPage=yes
-; Unpacks the downloaded EI starter zip.
+; Unpacks the downloaded EIStarter-UM zip.
 ArchiveExtraction=full
 DirExistsWarning=no
 AppendDefaultDirName=no
-; {app} is starter's folder or the game's, depending on the version chosen.
+; {app} is the launcher's folder or the game's, depending on the version chosen.
 UsePreviousAppDir=no
 WizardStyle=modern
 DefaultDirName={code:DefaultAppDir}
@@ -58,19 +58,18 @@ en.LangDesc=Which language is the game in?
 en.LangSub=Detected from the game folder. Change it if it is wrong.
 en.VariantCaption=Version
 en.VariantDesc=How do you want to play EItweaks?
-en.VariantStarter=With EI starter (recommended): selected in starter, the game's files stay untouched.
+en.VariantStarter=With EIStarter-UM (recommended): selected in the launcher, the game's files stay untouched.
 en.VariantStandalone=Standalone: installed directly into the game folder. Can be used with Cursed Lands.
-en.StarterFound=EI starter is installed in %1.
-en.StarterMissing=EI starter is not installed: Next downloads and installs it.
-en.OpenStarterPage=EI starter's page
-en.DownloadCaption=EI starter
-en.DownloadDesc=Downloading EI starter 1.046.1 from its site.
-en.StarterFailed=EI starter could not be downloaded: %1%n%nInstall it from its page, then click Next again, or choose the standalone version.
-en.StarterNotInstalled=EI starter was not installed. Install it, then click Next again, or choose the standalone version.
-en.StarterDirLabel=Select the folder where EI starter is installed.
-en.NoStarter=There is no EIStarter.exe in this folder. Select the folder where EI starter 1.046.1 is installed, or install it first: https://www.gipath.org/forum/thread-3828.html
+en.StarterFound=EIStarter-UM is installed in %1.
+en.StarterMissing=EIStarter-UM is not installed: it is downloaded from GitHub into the folder chosen next.
+en.StarterOld=EIStarter-UM in %1 is older than 0.2.9, which keeps the options changed in the game: it is updated from GitHub, keeping its settings and mods.
+en.OpenStarterPage=EIStarter-UM's page
+en.DownloadCaption=EIStarter-UM
+en.DownloadDesc=Downloading EIStarter-UM 0.2.9 from GitHub.
+en.StarterFailed=EIStarter-UM could not be downloaded: %1%n%nClick Next to try again, or go back and choose the standalone version.
+en.StarterDirLabel=Select the folder of EIStarter-UM. When it is not there, it is downloaded into this folder.
 en.OldSpellAddon=An older SpellAddon, %1, could not be moved aside and would load together with EItweaks' one. Remove it by hand.
-en.LaunchStarter=Launch EI starter
+en.LaunchStarter=Launch EIStarter-UM
 en.LaunchGame=Launch the game
 ru.GameDirCaption=Папка игры
 ru.GameDirDesc=Куда установлены Проклятые Земли?
@@ -81,19 +80,18 @@ ru.LangDesc=На каком языке игра?
 ru.LangSub=Определён по папке игры. Измените, если неверно.
 ru.VariantCaption=Вариант
 ru.VariantDesc=Как вы хотите играть в EItweaks?
-ru.VariantStarter=С EI starter (рекомендуется): выбирается в стартере, файлы игры не меняются.
+ru.VariantStarter=С EIStarter-UM (рекомендуется): выбирается в лаунчере, файлы игры не меняются.
 ru.VariantStandalone=Отдельно: устанавливается прямо в папку игры. Подходит для Cursed Lands.
-ru.StarterFound=EI starter установлен в %1.
-ru.StarterMissing=EI starter не установлен: «Далее» скачает и установит его.
-ru.OpenStarterPage=Страница EI starter
-ru.DownloadCaption=EI starter
-ru.DownloadDesc=Загрузка EI starter 1.046.1 с его сайта.
-ru.StarterFailed=Не удалось скачать EI starter: %1%n%nУстановите его со страницы стартера и снова нажмите «Далее» или выберите отдельный вариант.
-ru.StarterNotInstalled=EI starter не установлен. Установите его и снова нажмите «Далее» или выберите отдельный вариант.
-ru.StarterDirLabel=Выберите папку, куда установлен EI starter.
-ru.NoStarter=В этой папке нет EIStarter.exe. Выберите папку, куда установлен EI starter 1.046.1, или сначала установите его: https://www.gipath.org/forum/thread-3828.html
+ru.StarterFound=EIStarter-UM установлен в %1.
+ru.StarterMissing=EIStarter-UM не установлен: он будет скачан с GitHub в папку, выбранную далее.
+ru.StarterOld=EIStarter-UM в %1 старше версии 0.2.9, которая сохраняет настройки, изменённые в игре: он будет обновлён с GitHub, его настройки и моды сохранятся.
+ru.OpenStarterPage=Страница EIStarter-UM
+ru.DownloadCaption=EIStarter-UM
+ru.DownloadDesc=Загрузка EIStarter-UM 0.2.9 с GitHub.
+ru.StarterFailed=Не удалось скачать EIStarter-UM: %1%n%nНажмите «Далее», чтобы попробовать снова, или вернитесь и выберите отдельный вариант.
+ru.StarterDirLabel=Выберите папку EIStarter-UM. Если его там нет, он будет скачан в эту папку.
 ru.OldSpellAddon=Старую версию SpellAddon, %1, не удалось убрать, и она будет загружаться вместе с версией EItweaks. Удалите её вручную.
-ru.LaunchStarter=Запустить EI starter
+ru.LaunchStarter=Запустить EIStarter-UM
 ru.LaunchGame=Запустить игру
 de.GameDirCaption=Spielordner
 de.GameDirDesc=Wo ist Evil Islands installiert?
@@ -104,63 +102,47 @@ de.LangDesc=In welcher Sprache ist das Spiel?
 de.LangSub=Aus dem Spielordner erkannt. Ändern Sie sie, falls sie nicht stimmt.
 de.VariantCaption=Variante
 de.VariantDesc=Wie möchten Sie EItweaks spielen?
-de.VariantStarter=Mit EI starter (empfohlen): im Starter ausgewählt, die Spieldateien bleiben unverändert.
+de.VariantStarter=Mit EIStarter-UM (empfohlen): im Launcher ausgewählt, die Spieldateien bleiben unverändert.
 de.VariantStandalone=Eigenständig: direkt in den Spielordner installiert. Auch mit Cursed Lands nutzbar.
-de.StarterFound=EI starter ist in %1 installiert.
-de.StarterMissing=EI starter ist nicht installiert: "Weiter" lädt ihn herunter und installiert ihn.
-de.OpenStarterPage=Seite von EI starter
-de.DownloadCaption=EI starter
-de.DownloadDesc=EI starter 1.046.1 wird von seiner Seite heruntergeladen.
-de.StarterFailed=EI starter konnte nicht heruntergeladen werden: %1%n%nInstallieren Sie ihn von seiner Seite und klicken Sie dann erneut auf "Weiter", oder wählen Sie die eigenständige Variante.
-de.StarterNotInstalled=EI starter wurde nicht installiert. Installieren Sie ihn und klicken Sie dann erneut auf "Weiter", oder wählen Sie die eigenständige Variante.
-de.StarterDirLabel=Wählen Sie den Ordner, in dem EI starter installiert ist.
-de.NoStarter=In diesem Ordner gibt es keine EIStarter.exe. Wählen Sie den Ordner, in dem EI starter 1.046.1 installiert ist, oder installieren Sie ihn zuerst: https://www.gipath.org/forum/thread-3828.html
+de.StarterFound=EIStarter-UM ist in %1 installiert.
+de.StarterMissing=EIStarter-UM ist nicht installiert: Er wird von GitHub in den als Nächstes gewählten Ordner heruntergeladen.
+de.StarterOld=EIStarter-UM in %1 ist älter als 0.2.9, die im Spiel geänderte Optionen behält: Er wird von GitHub aktualisiert, seine Einstellungen und Mods bleiben erhalten.
+de.OpenStarterPage=Seite von EIStarter-UM
+de.DownloadCaption=EIStarter-UM
+de.DownloadDesc=EIStarter-UM 0.2.9 wird von GitHub heruntergeladen.
+de.StarterFailed=EIStarter-UM konnte nicht heruntergeladen werden: %1%n%nKlicken Sie auf "Weiter", um es erneut zu versuchen, oder gehen Sie zurück und wählen Sie die eigenständige Variante.
+de.StarterDirLabel=Wählen Sie den Ordner von EIStarter-UM. Ist er dort nicht vorhanden, wird er in diesen Ordner heruntergeladen.
 de.OldSpellAddon=Eine ältere SpellAddon-Version, %1, konnte nicht beiseitegelegt werden und würde zusammen mit der von EItweaks geladen. Entfernen Sie sie von Hand.
-de.LaunchStarter=EI starter starten
+de.LaunchStarter=EIStarter-UM starten
 de.LaunchGame=Spiel starten
 
 [Files]
+; EIStarter-UM, when its folder had none or an older one: the downloaded package, unpacked into {tmp}. It may serve
+; other mods, so it stays after uninstalling, as the launcher a player installs by hand would.
+Source: "{tmp}\eistarter-um\EIStarter-UM\*"; DestDir: "{app}"; Flags: external recursesubdirs createallsubdirs ignoreversion uninsneveruninstall; Check: StarterDownloaded
 ; SpellAddon's licence forbids distributing its files apart from its whole folder: the installer carries the folder
-; unmodified (dontcopy) and installs the files SpellAddon's own instructions name, into the game folder. The game loads
-; .asi files from there, also when run through starter 1.046.1; a copy in starter's Engine folder is not loaded.
-; SpellAddon may serve other mods too, so uninstalling EItweaks leaves the starter version's copies; its own
-; SPELLADDON.INI changes nothing in the game, and one already there is kept.
+; unmodified (dontcopy) and installs the files SpellAddon's own instructions name. EIStarter-UM's game runs with its
+; own Miles (Engine\mss32.dll), which loads the .asi files of the Engine folder only, so they go there, in place of the
+; older SpellAddon the launcher ships (moved aside after installing); the INI also into the game folder, where the
+; instructions put it. SpellAddon may serve other mods too, so uninstalling EItweaks leaves the starter version's
+; copies; its own SPELLADDON.INI changes nothing in the game, and one already there is kept.
 Source: "payload\SpellAddon\*"; Flags: dontcopy recursesubdirs
-Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{code:GameDirValue}"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{code:GameDirValue}"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
+Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
+Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
+Source: "payload\SpellAddon\SPELLADDON.INI"; DestDir: "{app}\Engine"; Flags: onlyifdoesntexist uninsneveruninstall; Check: IsStarter
 Source: "payload\SpellAddon\SPELLADDON.INI"; DestDir: "{code:GameDirValue}"; Flags: onlyifdoesntexist uninsneveruninstall; Check: IsStarter
 Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
 Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
 
 [Registry]
-; The game settings EI starter reads; the game writes them only when quit from its main menu, and starter reports a
-; missing one on its first start. These are the game's own defaults, written only where absent. Starter copies the
-; game's key on its first start; once it has, its copy gets them too.
-#define GameSettings(Key) \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Antialiasing""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Audio""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Dithering""; ValueData: 0; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""FPSIndependentCursor""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""FullScreen""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""Video""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: dword; ValueName: ""VideoColorDepthInBits""; ValueData: 32; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\General Settings""; ValueType: string; ValueName: ""VideoResolution""; ValueData: ""1024x768""; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: dword; ValueName: ""LightingFreq""; ValueData: 1000; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\Terrain Settings""; ValueType: dword; ValueName: ""EnableWaterWaves""; ValueData: 1; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine + \
-  "Root: HKCU; Subkey: """ + Key + "\Network Settings""; ValueType: string; ValueName: ""Master Server Name""; ValueData: """"; Flags: createvalueifdoesntexist; Check: IsStarter" + NewLine
-; Starter's selected mod: EItweaks, just installed.
-Root: HKCU; Subkey: "Software\Gipat.ru\EI_Starter\Settings"; ValueType: string; ValueName: "AddonPath"; ValueData: "{app}\MODS\eitweaks"; Check: IsStarter
-; Starter's game loads its add-on (and so EItweaks' plugin) through the dinput.dll beside it, which Wine skips for its
-; own unless told otherwise; without the add-on, the game asks for the disc. Starter needs this for any mod, so it stays.
-Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType: string; ValueName: "dinput"; ValueData: "native,builtin"; Check: IsStarter and IsWine
-#emit GameSettings("Software\Nival Interactive\EvilIslands")
-#emit StringChange(GameSettings("Software\Gipat.ru\EI_Starter\EvilIslands"), "Check: IsStarter", "Check: IsStarter and StarterCopiedSettings")
+; At every Play EIStarter-UM itself writes the selected mod (AddonPath), the game settings a fresh installation has
+; where missing, and, under Wine, the dinput override its loader needs.
 ; The GOG versions' installers write no camera or light settings, so the game saves its built-in defaults, which
 ; differ from what the CD installer wrote: the camera tilts in jumps, and quest and hero lights glare. A value still at
 ; the built-in default (the same in every language's GOG exe), or missing, gets the CD installer's; one the player
-; changed is kept. Both versions; starter's copy too, once it has made one. The texture and landscape detail settings
-; follow the same rule, to their highest, as starter's options write them: textures High (full size), trilinear
-; filtering, landscape detail High (90 and 130, as the CD installer had), and mipmapping on.
+; changed is kept. Both versions; the launcher's copy too, once it has made one. The texture and landscape detail
+; settings follow the same rule, to their highest, as EI starter's options wrote them: textures High (full size),
+; trilinear filtering, landscape detail High (90 and 130, as the CD installer had), and mipmapping on.
 #define CdFloat(Root, Key, Name, Builtin, CD, Cond) \
   "Root: HKCU; Subkey: """ + Root + "\" + Key + """; ValueType: binary; ValueName: """ + Name + """; ValueData: """ + CD + \
   """; Check: FloatAtBuiltin('" + Root + "\" + Key + "', '" + Name + "', '" + Builtin + "')" + Cond + NewLine
@@ -214,17 +196,32 @@ Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType
 #emit CdSettings("Software\Gipat.ru\EI_Starter\EvilIslands", " and StarterCopiedSettings")
 
 [Run]
-Filename: "{app}\EIStarter.exe"; WorkingDir: "{app}"; Description: "{cm:LaunchStarter}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Check: IsStarter
+Filename: "{app}\EIStarter-UM.exe"; WorkingDir: "{app}"; Description: "{cm:LaunchStarter}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Check: IsStarter
 Filename: "{app}\game.exe"; WorkingDir: "{app}"; Description: "{cm:LaunchGame}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Check: IsStandalone
 
 [Code]
 const
-  StarterURL = 'https://www.gipath.org/forum/thread-3828.html';
-  { EI starter 1.046.1 as published on its page; the download is checked against this. }
-  StarterZipURL = 'https://www.gipath.org/forum/attachment.php?aid=3003';
-  StarterZipSHA256 = 'ee13fa2b7317eadc77b9d69d00d9835c83b56f0fef1f199cd005c2ce9db011e0';
+  StarterURL = 'https://github.com/Kyr4l/ei-universal-mod/blob/master/docs/EIStarter-UM.md';
+  { EIStarter-UM 0.2.9, the first version that keeps the options changed in the game (earlier ones rewrote them at
+    every Play), published with Universal Mod's 0.8.7 pre-release; the download is checked against this. }
+  StarterZipURL = 'https://github.com/Kyr4l/ei-universal-mod/releases/download/0.8.7/EIStarter-UM-0.2.9.zip';
+  StarterZipSHA256 = '5f190de3f59e1cb3604de9c127f1100d577b40cb0564b1cbae173c3a5638d2a9';
+  StarterExe = 'EIStarter-UM.exe';
   { texts.res of the GOG Russian version, the same as the official Russian patch 1.06's. }
   RussianTextsSHA256 = '96d8e49a3472f93d92ec8b4ad4286fa7662d78fc4577fe2335832542014b3a5a';
+  NivalKey = 'Software\Nival Interactive\EvilIslands';
+  StarterCopyKey = 'Software\Gipat.ru\EI_Starter\EvilIslands';
+  AddonKey = 'Software\Gipat.ru\EI_Starter\settings';
+  ENUM_CURRENT_SETTINGS = $FFFFFFFF;
+  { A line starting with #13#10 would be read as a preprocessor directive. }
+  CRLF = #13#10;
+
+type
+  { DEVMODEW, 220 bytes, as dwords: dmSize is the low word of dword 17, dmBitsPerPel dword 42, dmPelsWidth 43 and
+    dmPelsHeight 44. }
+  TDevMode = record
+    D: array[0..54] of Cardinal;
+  end;
 
 var
   GamePage: TInputDirWizardPage;
@@ -233,6 +230,11 @@ var
   StarterPageButton: TNewButton;
   DetectedFor: String;
   Relaunched: Boolean;
+  { The launcher folder the package was downloaded and unpacked for, into the temporary folder; '' before that. }
+  DownloadedFor: String;
+
+function EnumDisplaySettings(DeviceName: Cardinal; ModeNum: Cardinal; var DevMode: TDevMode): BOOL;
+  external 'EnumDisplaySettingsW@user32.dll stdcall';
 
 { Language option index <-> code; the options are added in this order. }
 function LangCode(Index: Integer): String;
@@ -272,12 +274,6 @@ begin
   Result := not IsStarter;
 end;
 
-{ Every Wine prefix has this key. }
-function IsWine: Boolean;
-begin
-  Result := RegKeyExists(HKLM, 'Software\Wine');
-end;
-
 function GameDirValue(Param: String): String;
 begin
   Result := RemoveBackslashUnlessRoot(GamePage.Values[0]);
@@ -294,22 +290,39 @@ begin
   Result := RemoveBackslashUnlessRoot(Result);
 end;
 
+{ The launcher's folder: the one EIStarter-UM wrote at its last Play (EI starter writes the same value, so it counts
+  only with EIStarter-UM in it), else a new folder the player can write to. }
 function StarterDir(Param: String): String;
 begin
-  if not RegQueryStringValue(HKCU, 'Software\Gipat.ru\EI_Starter', 'path', Result) or (Result = '') then
-    Result := ExpandConstant('{autopf}\EI starter');
+  if not RegQueryStringValue(HKCU, 'Software\Gipat.ru\EI_Starter', 'path', Result) or (Result = '') or
+    not FileExists(AddBackslash(Result) + StarterExe) then
+    Result := ExpandConstant('{autopf}\EIStarter-UM');
   Result := RemoveBackslashUnlessRoot(Result);
+end;
+
+{ Whether Dir holds EIStarter-UM 0.2.9 or later, which names the backup of the game's settings it introduced. An
+  older one is updated by the download like a missing one; its config and mods stay. }
+function HasStarter(const Dir: String): Boolean;
+var
+  Exe: AnsiString;
+begin
+  Result := LoadStringFromFile(AddBackslash(Dir) + StarterExe, Exe) and (Pos('EIStarter-UM-reg.cfg', Exe) > 0);
 end;
 
 function StarterInstalled: Boolean;
 begin
-  Result := FileExists(AddBackslash(StarterDir('')) + 'EIStarter.exe');
+  Result := HasStarter(StarterDir(''));
 end;
 
-{ Starter copies the game's key on its first start; writing its copy before that would make it skip the copy. }
+function StarterDownloaded: Boolean;
+begin
+  Result := (DownloadedFor <> '') and (CompareText(DownloadedFor, WizardDirValue) = 0);
+end;
+
+{ Whether the launcher has its copy of the game's key; until its first Play it reads the game's key alone. }
 function StarterCopiedSettings: Boolean;
 begin
-  Result := RegKeyExists(HKCU, 'Software\Gipat.ru\EI_Starter\EvilIslands\Path Settings');
+  Result := RegKeyExists(HKCU, StarterCopyKey + '\Path Settings');
 end;
 
 { For the CD installer's camera and light settings in [Registry]: whether a value is missing or still at the game's
@@ -342,11 +355,14 @@ begin
   Result := not RegQueryDWordValue(HKCU, Key, Name, Cur) or (Cur = Cardinal(Builtin));
 end;
 
-{ Whether this run can write into Dir: a folder under Program Files needs administrator rights. }
+{ Whether this run can write into Dir: a folder under Program Files needs administrator rights. A folder still to be
+  made (the launcher's new one) is judged by the nearest one that exists. }
 function CanWrite(Dir: String): Boolean;
 var
   Probe: String;
 begin
+  while not DirExists(Dir) and (ExtractFileDir(Dir) <> Dir) do
+    Dir := ExtractFileDir(Dir);
   Probe := AddBackslash(Dir) + 'eitweaks-write-test.tmp';
   Result := SaveStringToFile(Probe, '', False);
   if Result then
@@ -380,37 +396,46 @@ begin
     Confirm := False;
 end;
 
-{ Downloads EI starter, checks it, and runs its installer for the game's language; True once starter is installed. }
-function InstallStarter: Boolean;
-var
-  Setup: String;
-  ErrorCode: Integer;
+{ Downloads EIStarter-UM, checks it and unpacks it into the temporary folder, from where [Files] installs it; the
+  wizard shows its download page, a silent install has none. The error message, or '' once unpacked. }
+function DownloadStarter(UsePage: Boolean): String;
 begin
-  Result := False;
-  DownloadPage.Clear;
-  DownloadPage.Add(StarterZipURL, 'eistarter.zip', StarterZipSHA256);
-  DownloadPage.Show;
+  Result := '';
+  if StarterDownloaded then
+    Exit;
   try
-    try
-      DownloadPage.Download;
-      ExtractArchive(ExpandConstant('{tmp}\eistarter.zip'), ExpandConstant('{tmp}\eistarter'), '', True, nil);
-    except
-      MsgBox(FmtMessage(CustomMessage('StarterFailed'), [GetExceptionMessage]), mbError, MB_OK);
-      Exit;
-    end;
-  finally
-    DownloadPage.Hide;
+    if UsePage then
+    begin
+      DownloadPage.Clear;
+      DownloadPage.Add(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256);
+      DownloadPage.Show;
+      try
+        DownloadPage.Download;
+      finally
+        DownloadPage.Hide;
+      end;
+    end
+    else
+      DownloadTemporaryFile(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256, nil);
+    DelTree(ExpandConstant('{tmp}\eistarter-um'), True, True, True);
+    ExtractArchive(ExpandConstant('{tmp}\eistarter-um.zip'), ExpandConstant('{tmp}\eistarter-um'), '', True, nil);
+    DownloadedFor := WizardDirValue;
+  except
+    Result := GetExceptionMessage;
+    Log('EIStarter-UM download failed: ' + Result);
   end;
-  { Starter has Russian and English installers only. }
-  if IsGameLang('ru') then
-    Setup := ExpandConstant('{tmp}\eistarter\setup_ru.exe')
-  else
-    Setup := ExpandConstant('{tmp}\eistarter\setup_en.exe');
-  { ShellExec, not Exec: starter's installer asks for administrator rights. }
-  ShellExecAsOriginalUser('', Setup, '', '', SW_SHOWNORMAL, ewWaitUntilTerminated, ErrorCode);
-  Result := StarterInstalled;
-  if not Result then
-    MsgBox(CustomMessage('StarterNotInstalled'), mbError, MB_OK);
+end;
+
+{ What keeps the launcher from being installed into the chosen folder: '' when it is there or has been downloaded. }
+function StarterProblem(UsePage: Boolean): String;
+begin
+  Result := '';
+  if IsStarter and not HasStarter(WizardDirValue) then
+  begin
+    Result := DownloadStarter(UsePage);
+    if Result <> '' then
+      Result := FmtMessage(CustomMessage('StarterFailed'), [Result]);
+  end;
 end;
 
 function DefaultAppDir(Param: String): String;
@@ -489,6 +514,8 @@ procedure UpdateStarterStatus;
 begin
   if StarterInstalled then
     VariantPage.SubCaptionLabel.Caption := FmtMessage(CustomMessage('StarterFound'), [StarterDir('')])
+  else if FileExists(AddBackslash(StarterDir('')) + StarterExe) then
+    VariantPage.SubCaptionLabel.Caption := FmtMessage(CustomMessage('StarterOld'), [StarterDir('')])
   else
     VariantPage.SubCaptionLabel.Caption := CustomMessage('StarterMissing');
   StarterPageButton.Visible := not StarterInstalled;
@@ -565,12 +592,10 @@ function FolderProblem: String;
 begin
   Result := '';
   if not FileExists(AddBackslash(GameDirValue('')) + 'game.exe') then
-    Result := CustomMessage('NoGame')
-  else if IsStarter and not FileExists(AddBackslash(WizardDirValue) + 'EIStarter.exe') then
-    Result := CustomMessage('NoStarter');
+    Result := CustomMessage('NoGame');
 end;
 
-{ The last page before installing: the version page for standalone, the starter folder page for starter. When this
+{ The last page before installing: the version page for standalone, the launcher folder page for starter. When this
   run cannot write where EItweaks goes, it starts again with administrator rights. }
 function ReadyToInstall: Boolean;
 begin
@@ -594,12 +619,7 @@ begin
   else if CurPageID = VariantPage.ID then
   begin
     if IsStarter then
-    begin
-      if not StarterInstalled then
-        Result := InstallStarter;
-      if Result then
-        WizardForm.DirEdit.Text := StarterDir('');
-    end
+      WizardForm.DirEdit.Text := StarterDir('')
     else
     begin
       WizardForm.DirEdit.Text := GameDirValue('');
@@ -609,8 +629,13 @@ begin
   else if CurPageID = wpSelectDir then
   begin
     Problem := FolderProblem;
+    { After the rights check: a run started again as administrator would download again. }
     if Problem = '' then
+    begin
       Result := ReadyToInstall;
+      if Result then
+        Problem := StarterProblem(True);
+    end;
   end;
   if Problem <> '' then
   begin
@@ -619,10 +644,12 @@ begin
   end;
 end;
 
-{ Also reached by silent installs, which skip the wizard pages. }
+{ Also reached by silent installs, which skip the wizard pages and so download the launcher here. }
 function PrepareToInstall(var NeedsRestart: Boolean): String;
 begin
   Result := FolderProblem;
+  if Result = '' then
+    Result := StarterProblem(False);
 end;
 
 { Standalone: before each file is copied, keeps the game's original once, under eitweaks-backup. }
@@ -674,79 +701,178 @@ begin
   end;
 end;
 
-{ Sets the large-address-aware flag (bit 0x20 of the PE header's Characteristics) of Exe, no other byte, keeping the
-  unchanged file once as Exe + '.eitweaks-nolaa'. The flag gives the 32-bit game 4 GB of address space on 64-bit
-  Windows and Wine instead of 2 GB, which HD texture packs and D7VK need; the game, the original addon.dll and
-  SpellAddon ran with every allocation above 2 GB without a fault. A file that is missing or not a PE is left alone,
-  as the game runs without the flag. }
-procedure SetLargeAddressAware(const Exe: String);
+{ The screen's display modes ('1024x768'): those at 32 bits, the game's colour depth, or every one when the driver
+  reports none at 32 bits; and the desktop's own, '' when unknown. }
+procedure ScreenModes(Modes: TStringList; var Desktop: String);
 var
-  Data: AnsiString;
-  Kept: String;
-  Pe, Flags: Integer;
+  Mode: TDevMode;
+  Any: TStringList;
+  I: Cardinal;
+  J: Integer;
+  Size: String;
 begin
-  if not FileExists(Exe) then
-  begin
-    Log('Large address aware: ' + Exe + ' does not exist');
-    Exit;
+  Any := TStringList.Create;
+  try
+    I := 0;
+    Mode.D[17] := 220;
+    while EnumDisplaySettings(0, I, Mode) do
+    begin
+      Size := IntToStr(Mode.D[43]) + 'x' + IntToStr(Mode.D[44]);
+      if Any.IndexOf(Size) < 0 then
+        Any.Add(Size);
+      if (Mode.D[42] = 32) and (Modes.IndexOf(Size) < 0) then
+        Modes.Add(Size);
+      I := I + 1;
+      Mode.D[17] := 220;
+    end;
+    if Modes.Count = 0 then
+      for J := 0 to Any.Count - 1 do
+        Modes.Add(Any[J]);
+  finally
+    Any.Free;
   end;
-  if not LoadStringFromFile(Exe, Data) then
-  begin
-    Log('Large address aware: could not read ' + Exe);
-    Exit;
-  end;
-  { e_lfanew is the little-endian dword at 0x3C; AnsiString is indexed from 1. }
-  if (Length(Data) < $40) or (Data[1] <> 'M') or (Data[2] <> 'Z') then
-  begin
-    Log('Large address aware: ' + Exe + ' is not an MZ executable');
-    Exit;
-  end;
-  Pe := Ord(Data[$3D]) + Ord(Data[$3E]) shl 8 + Ord(Data[$3F]) shl 16;
-  { A fourth byte above 0 puts the header beyond 16 MB, past any file this flag is for. }
-  if (Ord(Data[$40]) <> 0) or (Pe + 24 > Length(Data)) or (Data[Pe + 1] <> 'P') or (Data[Pe + 2] <> 'E') or
-    (Ord(Data[Pe + 3]) <> 0) or (Ord(Data[Pe + 4]) <> 0) then
-  begin
-    Log('Large address aware: ' + Exe + ' has no PE header');
-    Exit;
-  end;
-  { Characteristics is the 16-bit field 18 bytes into the file header, which follows the 4-byte signature. }
-  Flags := Ord(Data[Pe + 4 + 18 + 1]);
-  if Flags and $20 <> 0 then
-  begin
-    Log('Large address aware: ' + Exe + ' has the flag already');
-    Exit;
-  end;
-  Kept := Exe + '.eitweaks-nolaa';
-  if not FileExists(Kept) and not CopyFile(Exe, Kept, True) then
-  begin
-    Log('Large address aware: could not keep ' + Exe + ' as ' + Kept);
-    Exit;
-  end;
-  Data[Pe + 4 + 18 + 1] := Chr(Flags or $20);
-  if SaveStringToFile(Exe, Data, False) then
-    Log('Large address aware: set for ' + Exe)
-  else
-  begin
-    Log('Large address aware: could not write ' + Exe + ', restoring it');
-    CopyFile(Kept, Exe, False);
+  Desktop := '';
+  Mode.D[17] := 220;
+  if EnumDisplaySettings(0, ENUM_CURRENT_SETTINGS, Mode) then
+    Desktop := IntToStr(Mode.D[43]) + 'x' + IntToStr(Mode.D[44]);
+end;
+
+{ A resolution the screen offers for Want, as EIStarter-UM picks it: Want itself, else the desktop's, else the
+  largest. The game cannot start in a size the screen lacks, and the add-on hides the error. }
+function FitResolution(const Want: String): String;
+var
+  Modes: TStringList;
+  Desktop: String;
+  I, X, Pixels, Best: Integer;
+begin
+  Result := Want;
+  Modes := TStringList.Create;
+  try
+    ScreenModes(Modes, Desktop);
+    if (Modes.Count = 0) or (Modes.IndexOf(Want) >= 0) then
+      Exit;
+    if Modes.IndexOf(Desktop) >= 0 then
+    begin
+      Result := Desktop;
+      Exit;
+    end;
+    Result := Modes[0];
+    Best := 0;
+    for I := 0 to Modes.Count - 1 do
+    begin
+      X := Pos('x', Modes[I]);
+      Pixels := StrToIntDef(Copy(Modes[I], 1, X - 1), 0) * StrToIntDef(Copy(Modes[I], X + 1, MaxInt), 0);
+      if Pixels > Best then
+      begin
+        Best := Pixels;
+        Result := Modes[I];
+      end;
+    end;
+  finally
+    Modes.Free;
   end;
 end;
 
-{ Standalone: into eitweaks-backup, which uninstalling puts back along with removing our SpellAddon. Starter: our
-  SpellAddon stays after uninstalling, so the old ones stay aside too, and so does the large-address-aware flag of
-  starter's game.exe (the unchanged file is beside it). Starter's Engine is checked as its readme tells players to copy
-  SpellAddon there. }
+{ A game setting as the launcher sees it: its copy of the game's key over the game's key. }
+function GameSetting(const Section, Name: String; var Value: String): Boolean;
+begin
+  Result := RegQueryStringValue(HKCU, StarterCopyKey + '\' + Section, Name, Value) or
+    RegQueryStringValue(HKCU, NivalKey + '\' + Section, Name, Value);
+end;
+
+function GameSettingDWord(const Section, Name: String; var Value: Cardinal): Boolean;
+begin
+  Result := RegQueryDWordValue(HKCU, StarterCopyKey + '\' + Section, Name, Value) or
+    RegQueryDWordValue(HKCU, NivalKey + '\' + Section, Name, Value);
+end;
+
+{ What EIStarter-UM changes in the game's settings on its first start, which a written config skips: the cursor drawn
+  independently of the frame rate off (it flickers with D7VK), a resolution the screen offers, 32-bit colour. Written
+  where the launcher reads them: its copy of the game's key once it has one, else the game's key it makes it from. }
+procedure FirstStartSettings;
+var
+  Key, Res, Fit: String;
+  Depth: Cardinal;
+begin
+  if StarterCopiedSettings then
+    Key := StarterCopyKey + '\General Settings'
+  else
+    Key := NivalKey + '\General Settings';
+  RegWriteDWordValue(HKCU, Key, 'FPSIndependentCursor', 0);
+  if GameSetting('General Settings', 'VideoResolution', Res) and (Res <> '') then
+  begin
+    Fit := FitResolution(Res);
+    if Fit <> Res then
+    begin
+      Log('Resolution ' + Res + ' is not offered by this screen: ' + Fit);
+      RegWriteStringValue(HKCU, Key, 'VideoResolution', Fit);
+    end;
+  end;
+  if GameSettingDWord('General Settings', 'VideoColorDepthInBits', Depth) and (Depth <> 32) then
+  begin
+    Log('Colour depth ' + IntToStr(Depth) + ' bits: 32');
+    RegWriteDWordValue(HKCU, Key, 'VideoColorDepthInBits', 32);
+  end;
+end;
+
+{ An [Addon] line of the launcher's config from EI starter's registry value, which EIStarter-UM reads on its first
+  start; '' when absent, so the launcher's own default applies. }
+function AddonLine(const RegName, CfgName: String; IsBool: Boolean): String;
+var
+  Value: Cardinal;
+begin
+  Result := '';
+  if RegQueryDWordValue(HKCU, AddonKey, RegName, Value) then
+    if not IsBool then
+      Result := CfgName + '=' + IntToStr(Value) + CRLF
+    else if Value <> 0 then
+      Result := CfgName + '=true' + CRLF
+    else
+      Result := CfgName + '=false' + CRLF;
+end;
+
+{ Selects EItweaks in the launcher. A new config also turns off the launcher's first-start questions: downloading
+  Universal Mod, asked only while no config exists, and the original CD camera, which the [Registry] section already
+  applies; so it carries what that first start would have set. }
+procedure WriteStarterConfig;
+var
+  Cfg, Text: String;
+begin
+  Cfg := ExpandConstant('{app}\EIStarter-UM.cfg');
+  if FileExists(Cfg) then
+  begin
+    if not SetIniString('Launcher', 'Mod', 'eitweaks', Cfg) then
+      Log('Could not select EItweaks in ' + Cfg);
+    Exit;
+  end;
+  Text := '[Launcher]' + CRLF + 'Mod=eitweaks' + CRLF + 'Language=' + LangCode(LangPage.SelectedValueIndex) + CRLF +
+    'CameraCheck=false' + CRLF + CRLF + '[Addon]' + CRLF +
+    AddonLine('LandscapeDrawRadius', 'LandscapeDrawRadius', False) +
+    AddonLine('ObjectsDrawRadius', 'ObjectsDrawRadius', False) +
+    AddonLine('PauseOnMinimize', 'PauseOnMinimize', True) +
+    AddonLine('MP Speed-control', 'MPSpeedControl', True) +
+    AddonLine('MQ client', 'MQClient', True) +
+    AddonLine('MP console', 'MPConsole', True) +
+    AddonLine('LogLevel', 'LogLevel', False) +
+    AddonLine('ConsoleLogLevel', 'ConsoleLogLevel', False);
+  if SaveStringToFile(Cfg, Text, False) then
+    FirstStartSettings
+  else
+    Log('Could not write ' + Cfg);
+end;
+
+{ Standalone: before installing, into eitweaks-backup, which uninstalling puts back along with removing our SpellAddon.
+  Starter: after installing, as the launcher package just installed brings its own SpellAddon; ours stays after
+  uninstalling, so the old ones stay aside too. }
 procedure CurStepChanged(CurStep: TSetupStep);
 begin
-  if CurStep = ssInstall then
-    if IsStandalone then
-      MoveOldSpellAddons(GameDirValue(''), ExpandConstant('{app}\eitweaks-backup'))
-    else
-    begin
-      MoveOldSpellAddons(GameDirValue(''), AddBackslash(GameDirValue('')) + 'eitweaks-old-SpellAddon');
-      MoveOldSpellAddons(ExpandConstant('{app}\Engine'), ExpandConstant('{app}\eitweaks-old-SpellAddon'));
-      SetLargeAddressAware(ExpandConstant('{app}\Engine\game.exe'));
-    end;
+  if (CurStep = ssInstall) and IsStandalone then
+    MoveOldSpellAddons(GameDirValue(''), ExpandConstant('{app}\eitweaks-backup'))
+  else if (CurStep = ssPostInstall) and IsStarter then
+  begin
+    MoveOldSpellAddons(ExpandConstant('{app}\Engine'), ExpandConstant('{app}\eitweaks-old-SpellAddon'));
+    WriteStarterConfig;
+  end;
 end;
 
 procedure RestoreDir(const Src, Dst: String);
@@ -771,10 +897,11 @@ begin
 end;
 
 { After the uninstaller has removed EItweaks' files: the standalone version puts the game's originals back; the
-  starter version removes what the game and the plugin wrote into the mod's folder. }
+  starter version removes what the game and the plugin wrote into the mod's folder, and the launcher's selection of
+  it, so the launcher picks a mod of its own. }
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
 var
-  Saved: String;
+  Saved, Cfg: String;
 begin
   if CurUninstallStep = usPostUninstall then
   begin
@@ -784,7 +911,12 @@ begin
       RestoreDir(Saved, ExpandConstant('{app}'));
       DelTree(Saved, True, True, True);
     end;
-    if FileExists(ExpandConstant('{app}\EIStarter.exe')) and DirExists(ExpandConstant('{app}\Mods\eitweaks')) then
-      DelTree(ExpandConstant('{app}\Mods\eitweaks'), True, True, True);
+    if FileExists(ExpandConstant('{app}\' + StarterExe)) and DirExists(ExpandConstant('{app}\mods\eitweaks')) then
+    begin
+      DelTree(ExpandConstant('{app}\mods\eitweaks'), True, True, True);
+      Cfg := ExpandConstant('{app}\EIStarter-UM.cfg');
+      if CompareText(GetIniString('Launcher', 'Mod', '', Cfg), 'eitweaks') = 0 then
+        DeleteIniEntry('Launcher', 'Mod', Cfg);
+    end;
   end;
 end;

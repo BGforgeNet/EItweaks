@@ -7,8 +7,8 @@ The game data is kept as source. `mod` is laid out as the mod's folder; `vendor`
 - `mod/res/textures`, `mod/maps`, `mod/movies`, `mod/config`: textures, maps, movies and configs; `mod/config/ai.ini` is compiled to `ai.reg`.
 - `mod/config.ini`: the starter mod config, compiled to `config.reg`.
 - `plugin/eitweaks.c`: the [starter version's](starter.md) plugin, which skips the disc check and turns the tutorials off once, built with a 32-bit Windows C compiler.
-- `vendor/addon/addon.dll`: starter's [add-on](addon.md) 0.12.4.2, as its developer published it on the [Gipat forum](https://www.gipath.org/forum/attachment.php?aid=3007).
-- `mod/SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `vendor/spelladdon`: [SpellAddon](spelladdon.md) 20.6 as published, carried whole in the installer, which installs the files SpellAddon's instructions name into the game folder.
+- `vendor/addon/addon.dll`: EI starter's [add-on](addon.md) 0.12.4.2, as its developer published it on the [Gipat forum](https://www.gipath.org/forum/attachment.php?aid=3007).
+- `mod/SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `vendor/spelladdon`: [SpellAddon](spelladdon.md) 20.6 as published, carried whole in the installer, which installs the files SpellAddon's instructions name: into the game folder (standalone version) or the launcher's `Engine` folder (starter version).
 
 The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container, and the installer with [Inno Setup](https://jrsoftware.org/isinfo.php) (`build/installer.iss`) in another. Install `podman` and put it on `PATH`, then, from the repository root:
 
@@ -25,9 +25,9 @@ To edit a database in a spreadsheet, convert it to a workbook and back, in the s
 
 ### Further reading
 
-EI starter and its add-on are closed source. These open projects describe the same machinery or the game itself:
+EI starter's loader and add-on are closed source. These open projects describe the same machinery or the game itself:
 
-- [EIStarter-UM](https://github.com/Kyr4l/ei-universal-mod/blob/master/docs/EIStarter-UM.md), part of Universal Mod: an open source launcher that reads EI starter's mod format and uses its loader and add-on. Its documentation describes the loading chain: the `dinput.dll` loader, the add-on, the mod's `config.reg`, plugins and the registry keys.
+- [EIStarter-UM](https://github.com/Kyr4l/ei-universal-mod/blob/master/docs/EIStarter-UM.md), part of Universal Mod: the open source launcher the starter version uses, which reads EI starter's mod format and uses its loader and add-on. Its documentation describes the loading chain: the `dinput.dll` loader, the add-on, the mod's `config.reg`, plugins and the registry keys.
 - [ei-rebuild](https://github.com/DoctorGester/ei-rebuild): readable C++ source for the Russian 1.06 `game.exe`, with notes on each part of the engine.
 - [Cursed Lands](https://github.com/TheWWWorm/CursedLands): a separate engine that plays the original game's files; its documentation covers its compatibility with older mods and its tests against the original `game.exe`.
 - [EIrepack](https://github.com/aspadm/EIrepack): a tool for decompiling the game.
