@@ -10,6 +10,7 @@
 - Magic-using monsters show the corresponding damage type in the description window. That includes bats, dragons, banshees, evil eyes, toads, will-o-wisps and harpies.
 - Goblins with slings do bludgeoning damage.
 - Dark banshees' lightning had broken spell settings, as 1.07 fixed for multiplayer.
+- The medium strength potion lost both its duration modifiers to a broken spell setting and wore off sooner than the very small one, as 1.07 fixed for multiplayer.
 - Red harpies show their real damage range.
 - Mountain lizards, grey harpies, foxbats and black foxbats wear their own textures from the game files, instead of those of lake lizards, red harpies and bats.
 - The wings of foxbats and black foxbats have their names the right way round.
