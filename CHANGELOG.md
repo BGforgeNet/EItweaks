@@ -53,6 +53,7 @@
 - Black banshees in Death canyon at night wear the black banshee texture, not the white one.
 - Black Clan woodsfolk in the City environs wear their own clan's texture, not the White Clan's. Black Clan magicians
   wear the magician texture from the game files, and two Green Clan magicians wear theirs, like the other magicians.
+- White horses in Karansul's domain and Suslanger wear the white horse texture, not the red one.
 
 ### 1.0
 Initial release.
