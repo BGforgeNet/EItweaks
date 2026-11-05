@@ -8,7 +8,7 @@ The game data is kept as source. `mod` is laid out as the mod's folder; `vendor`
 - `mod/config.ini`: the starter mod config, compiled to `config.reg`.
 - `plugin/eitweaks.c`: the [starter version's](starter.md) plugin, which skips the disc check and turns the tutorials off once, built with a 32-bit Windows C compiler.
 - `vendor/addon/addon.dll`: EI starter's [add-on](addon.md) 0.12.4.2, as its developer published it on the [Gipat forum](https://www.gipath.org/forum/attachment.php?aid=3007).
-- `mod/SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `vendor/spelladdon`: [SpellAddon](spelladdon.md) 20.6 as published, carried whole in the installer, which installs the files SpellAddon's instructions name: into the game folder (standalone version) or the launcher's `Engine` folder (starter version).
+- `mod/SPELLADDON.INI`: EItweaks' SpellAddon settings (SpellAddon's default with the running drain set to absolute); `vendor/spelladdon`: [SpellAddon](spelladdon.md) 20.6 as published, with the `SpellAddonInfo.txt` that `SpellAddonXa.asi` writes at the game's start in place of the one beside it (the module replaces any other text, the published one included), carried whole in the installer, which installs the files SpellAddon's instructions name: into the game folder (standalone version) or the launcher's `Engine` folder (starter version).
 
 The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container, and the installer with [Inno Setup](https://jrsoftware.org/isinfo.php) (`build/installer.iss`) in another. Install `podman` and put it on `PATH`, then, from the repository root:
 
