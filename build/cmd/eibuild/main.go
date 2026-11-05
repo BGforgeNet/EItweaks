@@ -204,6 +204,24 @@ func sameTrees(a, b string) (string, error) {
 
 // ---- build ----
 
+// The texts.res entry the main menu shows as the version: its placeholder becomes the version being built, so the
+// menu cannot fall behind a release.
+const (
+	versionEntry       = "string version_name"
+	versionPlaceholder = "{EITWEAKS_VERSION}"
+)
+
+func setVersion(path, version string) error {
+	text, err := os.ReadFile(path)
+	if err != nil {
+		return err
+	}
+	if !bytes.Contains(text, []byte(versionPlaceholder)) {
+		return fmt.Errorf("%s: no %s to replace", path, versionPlaceholder)
+	}
+	return os.WriteFile(path, bytes.ReplaceAll(text, []byte(versionPlaceholder), []byte(version)), 0o644)
+}
+
 func build(repo, version, out string) error {
 	work, err := os.MkdirTemp("", "eibuild-")
 	if err != nil {
@@ -291,7 +309,18 @@ func build(repo, version, out string) error {
 		}
 		var extra []string
 		for _, a := range archives {
-			if err := pack(filepath.Join(langSrc, "res", a.Name()), filepath.Join(mod, "res", a.Name()+".res"), work); err != nil {
+			dir := filepath.Join(langSrc, "res", a.Name())
+			if a.Name() == "texts" {
+				staged := filepath.Join(work, "texts-"+lang)
+				if err := copyTree(dir, staged); err != nil {
+					return err
+				}
+				if err := setVersion(filepath.Join(staged, versionEntry), version); err != nil {
+					return err
+				}
+				dir = staged
+			}
+			if err := pack(dir, filepath.Join(mod, "res", a.Name()+".res"), work); err != nil {
 				return err
 			}
 			if !strings.Contains(string(modIni), "\n"+a.Name()+".res=") {
