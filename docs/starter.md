@@ -8,6 +8,15 @@ EIStarter-UM ships an older SpellAddon. The game it runs loads SpellAddon from t
 
 ### Playing
 
+EItweaks loads Universal Mod's `um.dll` runtime from its mod folder. The bundled `d7vk.dll` keeps its original name:
+UM's `DDRAW_DLL=auto` selects it under Wine and the game's DirectDraw on Windows. D7VK translates Direct3D 7 to
+Vulkan; if it cannot create a device, UM falls back to the game's DirectDraw. Under Wine, the installer turns off
+the frame-rate-independent cursor, including in existing launcher settings, to prevent flicker with D7VK.
+
+`um.cfg` in the mod folder controls the runtime, including its overlay. The installer keeps an existing config.
+EItweaks disables UM's check for the older SpellAddon filename, since it bundles SpellAddon 20.6, and does not bundle
+the separate `um-engine.dll` runtime.
+
 - Launch EIStarter-UM: the installer has already selected EItweaks. Press Play.
 - To play without EItweaks, select another entry in the dropdown. EItweaks uses the game's own saves, so a game can be continued with EItweaks turned off, and back on.
 - The launcher's Options set the game's graphics and sound, as the game's own options do, and the add-on's options.

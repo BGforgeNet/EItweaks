@@ -251,6 +251,18 @@ var
 function EnumDisplaySettings(DeviceName: Cardinal; ModeNum: Cardinal; var DevMode: TDevMode): BOOL;
   external 'EnumDisplaySettingsW@user32.dll stdcall';
 
+function WineVersion: Integer;
+  external 'wine_get_version@ntdll.dll cdecl delayload';
+
+function IsWine: Boolean;
+begin
+  try
+    Result := WineVersion <> 0;
+  except
+    Result := False;
+  end;
+end;
+
 { Language option index <-> code; the options are added in this order. }
 function LangCode(Index: Integer): String;
 begin
@@ -912,6 +924,15 @@ begin
   begin
     MoveOldSpellAddons(ExpandConstant('{app}\Engine'), ExpandConstant('{app}\eitweaks-old-SpellAddon'));
     WriteStarterConfig;
+  end;
+  if (CurStep = ssPostInstall) and IsStarter and IsWine then
+  begin
+    { Existing launcher configs skip FirstStartSettings. Both keys must agree: the launcher switches between them. }
+    if not RegWriteDWordValue(HKCU, NivalKey + '\General Settings', 'FPSIndependentCursor', 0) then
+      RaiseException('Could not disable the independent cursor for D7VK.');
+    if IsStarter and StarterCopiedSettings then
+      if not RegWriteDWordValue(HKCU, StarterCopyKey + '\General Settings', 'FPSIndependentCursor', 0) then
+        RaiseException('Could not disable the independent cursor in the launcher settings.');
   end;
 end;
 

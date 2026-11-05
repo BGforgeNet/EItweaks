@@ -4,7 +4,8 @@
  *   game disc. GOG's game.exe skips that check; this applies the same one-byte change in memory, after checking the
  *   exact bytes expected, so any other exe is left alone.
  * - Tutorials: the game's "Show tutorial" option (Options > Windows) is turned off once, on the first start with
- *   EItweaks; the player's later choice in that option is kept. */
+ *   EItweaks; the player's later choice in that option is kept.
+ * - Universal Mod's runtime is loaded from the mod folder after the disc check is patched. */
 #include <windows.h>
 #include <string.h>
 
@@ -60,9 +61,17 @@ __declspec(dllexport) int __cdecl EntryBeforePatch(const char *path)
 
 __declspec(dllexport) int __cdecl EntryAfterPatch(const char *path)
 {
-    (void)path;
+    char runtime[MAX_PATH];
     /* je 0x456c10; mov edi, [0x73b670] -> jmp 0x456c10, as in GOG's game.exe. */
     static const unsigned char cd_check[] = {0x74, 0x59, 0x8b, 0x3d, 0x70, 0xb6, 0x73, 0x00};
     static const unsigned char cd_skip[] = {0xeb, 0x59, 0x8b, 0x3d, 0x70, 0xb6, 0x73, 0x00};
-    return patch((void *)0x456bb5, cd_check, cd_skip, sizeof cd_check);
+    int result = patch((void *)0x456bb5, cd_check, cd_skip, sizeof cd_check);
+    if (result != 0)
+        return result;
+    if (!path || strlen(path) + sizeof "um.dll" > sizeof runtime)
+        return 2;
+    strcpy(runtime, path);
+    strcat(runtime, "um.dll");
+    /* Keep the runtime loaded for the game. It initializes itself when loaded. */
+    return LoadLibraryExA(runtime, NULL, LOAD_WITH_ALTERED_SEARCH_PATH) ? 0 : 4;
 }

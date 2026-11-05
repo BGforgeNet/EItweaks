@@ -39,7 +39,8 @@ var partialArchives = []string{filepath.Join("res", "textures.res")}
 // starterOnly lists the mod's files the standalone version leaves out: the starter's config, add-on and plugin, which
 // the game's own exe needs none of, and the partial archives.
 func starterOnly() []string {
-	return append([]string{"config.reg", "addon.dll", "eitweaks.dll"}, partialArchives...)
+	return append([]string{"config.reg", "addon.dll", "eitweaks.dll", "um.dll", "um.cfg", "um-LICENSE.txt",
+		"um-source.tar.gz", "d7vk.dll", "d7vk-LICENSE.txt"}, partialArchives...)
 }
 
 // The folder names of each language's GOG install where they are not lowercase. Windows ignores case when the
@@ -265,6 +266,20 @@ func build(repo, version, out string) error {
 	// The add-on loader (EIStarter-UM's, as EI starter's) loads an addon.dll from the selected mod's folder in place of
 	// the launcher's own, for this mod only.
 	if err := copyFile(filepath.Join(vendor, "addon", "addon.dll"), filepath.Join(common, "addon.dll")); err != nil {
+		return err
+	}
+	for _, file := range []struct{ src, dst string }{
+		{"universal-mod/um.dll", "um.dll"},
+		{"universal-mod/LICENSE", "um-LICENSE.txt"},
+		{"universal-mod/source.tar.gz", "um-source.tar.gz"},
+		{"d7vk/d7vk.dll", "d7vk.dll"},
+		{"d7vk/LICENSE", "d7vk-LICENSE.txt"},
+	} {
+		if err := copyFile(filepath.Join(vendor, file.src), filepath.Join(common, file.dst)); err != nil {
+			return err
+		}
+	}
+	if err := copyFile(filepath.Join(src, "um.cfg"), filepath.Join(common, "um.cfg")); err != nil {
 		return err
 	}
 	// SpellAddon reads a SPELLADDON.INI from the active mod's folder, so these settings apply to EItweaks only.
