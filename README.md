@@ -35,7 +35,6 @@ The tweaks are mostly to make things more consistent within the game, add some f
 ### Speedup
 
 - 1C/Nival intro movies are disabled.
-- New game starting movie is disabled.
 - Help screens are disabled by default.
 
 ### Items

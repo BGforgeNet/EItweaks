@@ -120,6 +120,12 @@ de.OldSpellAddon=Eine ältere SpellAddon-Version, %1, konnte nicht beiseitegeleg
 de.LaunchStarter=EIStarter-UM starten
 de.LaunchGame=Spiel starten
 
+[InstallDelete]
+; EItweaks 1.0 and the 2.0 test builds replaced the new game's movie with an empty file; one left in the mod folder by
+; an earlier install would keep hiding it.
+Type: files; Name: "{app}\mods\eitweaks\movies\intro.bik"; Check: IsStarter
+Type: dirifempty; Name: "{app}\mods\eitweaks\movies"; Check: IsStarter
+
 [Files]
 ; EIStarter-UM, when its folder had none or an older one: the downloaded package, unpacked into {tmp}. It may serve
 ; other mods, so it stays after uninstalling, as the launcher a player installs by hand would.

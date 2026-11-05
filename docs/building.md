@@ -4,7 +4,7 @@ The game data is kept as source. `mod` is laid out as the mod's folder; `vendor`
 
 - `mod/res/database/csv`, `mod/res/databaselmp/csv`: the single and multiplayer databases, one CSV per sheet. `mod/res/database/extra` holds the entries that have no CSV form.
 - `lang/<language>`: what one language adds, laid out as `mod`: `res/<archive>` holds an archive as loose entries (texts; multiplayer texts), the rest is copied as is. `lang/de/maps` holds the maps and quests of the German patch 1.06 that 1.07 left alone, for a German game without that patch; the maps equal the other languages' 1.06 ones, and the file names are spelled as in the GOG German version.
-- `mod/res/textures`, `mod/maps`, `mod/movies`, `mod/config`: textures, maps, movies and configs; `mod/config/ai.ini` is compiled to `ai.reg`.
+- `mod/res/textures`, `mod/maps`, `mod/config`: textures, maps and configs; `mod/config/ai.ini` is compiled to `ai.reg`.
 - `mod/config.ini`: the starter mod config, compiled to `config.reg`.
 - `plugin/eitweaks.c`: the [starter version's](starter.md) plugin, which skips the disc check and turns the tutorials off once, built with a 32-bit Windows C compiler.
 - `vendor/addon/addon.dll`: EI starter's [add-on](addon.md) 0.12.4.2, as its developer published it on the [Gipat forum](https://www.gipath.org/forum/attachment.php?aid=3007).

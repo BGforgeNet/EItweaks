@@ -45,8 +45,8 @@ func starterOnly() []string {
 // The folder names of each language's GOG install where they are not lowercase. Windows ignores case when the
 // standalone release is copied over the game; Wine on a case-sensitive file system would get a second folder.
 var gogFolders = map[string]map[string]string{
-	"ru": {"config": "Config", "maps": "Maps", "movies": "Movies", "res": "Res"},
-	"de": {"maps": "Maps", "movies": "Movies", "res": "Res"},
+	"ru": {"config": "Config", "maps": "Maps", "res": "Res"},
+	"de": {"maps": "Maps", "res": "Res"},
 }
 
 // SpellAddon patches the Russian 1.06 game.exe at fixed addresses without checking them. The starter runs that exe for
@@ -223,10 +223,8 @@ func build(repo, version, out string) error {
 	if err := pack(filepath.Join(src, "res", "textures"), filepath.Join(common, "res", "textures.res"), work); err != nil {
 		return err
 	}
-	for _, d := range []string{"maps", "movies"} {
-		if err := copyTree(filepath.Join(src, d), filepath.Join(common, d)); err != nil {
-			return err
-		}
+	if err := copyTree(filepath.Join(src, "maps"), filepath.Join(common, "maps")); err != nil {
+		return err
 	}
 	configs, err := filepath.Glob(filepath.Join(src, "config", "*.ini"))
 	if err != nil {
