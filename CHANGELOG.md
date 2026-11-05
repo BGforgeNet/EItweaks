@@ -19,6 +19,7 @@
 - English and German: 1.07's corrected marker position for the "Punishing goblins" quest on the world map.
 - Hide armor blueprints (shirt, pants, boots, gloves) for sale in the Gipath shop.
 - Half effect rune for sale on Gipath.
+- Blue harpies drop their heads, like the other harpies. The game had the heads but gave them to no monster.
 - Running depletes stamina by points rather than percentage: longer runs above 75 maximum stamina, shorter below.
   The installer installs SpellAddon 20.6, configured for EItweaks only.
 - Through SpellAddon, with the Russian game executable only (so not in the English and German standalone versions):
