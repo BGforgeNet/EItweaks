@@ -3,7 +3,7 @@
 ; Expects payload\ beside this file, as `eibuild payload` writes it; writes to out\.
 ;
 ; The player picks the game folder, the game's language (detected, can be changed) and the version:
-; with EIStarter-UM (recommended): the launcher is downloaded when its folder has none, the mod goes into its mods
+; with EIStarter-UM (recommended): the bundled launcher is installed when missing, the mod goes into its mods
 ; folder, SpellAddon into its Engine folder, and the launcher's config selects EItweaks;
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
 ; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>.
@@ -14,8 +14,7 @@
 
 #include "payload\files.iss"
 
-; The downloaded EIStarter-UM package, kept in the launcher's folder so installing again needs no download (the
-; release's files can be replaced upstream).
+; The pinned launcher package is embedded so installation works offline.
 #define StarterZipName "EIStarter-UM-0.2.9.zip"
 
 [Setup]
@@ -36,7 +35,7 @@ PrivilegesRequiredOverridesAllowed=commandline
 DisableProgramGroupPage=yes
 ; Every choice has its own page already.
 DisableReadyPage=yes
-; Unpacks the downloaded EIStarter-UM zip.
+; Unpacks the embedded EIStarter-UM zip.
 ArchiveExtraction=full
 DirExistsWarning=no
 AppendDefaultDirName=no
@@ -65,13 +64,11 @@ en.VariantDesc=How do you want to play EItweaks?
 en.VariantStarter=With EIStarter-UM (recommended): selected in the launcher, the game's files stay untouched.
 en.VariantStandalone=Standalone: installed directly into the game folder. Can be used with Cursed Lands.
 en.StarterFound=EIStarter-UM is installed in %1.
-en.StarterMissing=EIStarter-UM is not installed: it is downloaded from GitHub into the folder chosen next.
-en.StarterOld=EIStarter-UM in %1 is older than 0.2.9, which keeps the options changed in the game: it is updated from GitHub, keeping its settings and mods.
+en.StarterMissing=EIStarter-UM is not installed: the bundled version is installed into the folder chosen next.
+en.StarterOld=EIStarter-UM in %1 is older than 0.2.9: it is updated from the bundled version, keeping its settings and mods.
 en.OpenStarterPage=EIStarter-UM's page
-en.DownloadCaption=EIStarter-UM
-en.DownloadDesc=Downloading EIStarter-UM 0.2.9 from GitHub.
-en.StarterFailed=EIStarter-UM could not be downloaded: %1%n%nClick Next to try again, or go back and choose the standalone version.
-en.StarterDirLabel=Select the folder of EIStarter-UM. When it is not there, it is downloaded into this folder.
+en.StarterFailed=EIStarter-UM could not be unpacked: %1%n%nClick Next to try again, or go back and choose the standalone version.
+en.StarterDirLabel=Select the folder of EIStarter-UM. When it is not there, the bundled version is installed into this folder.
 en.OldSpellAddon=An older SpellAddon, %1, could not be moved aside and would load together with EItweaks' one. Remove it by hand.
 en.LaunchStarter=Launch EIStarter-UM
 en.LaunchGame=Launch the game
@@ -87,13 +84,11 @@ ru.VariantDesc=Как вы хотите играть в EItweaks?
 ru.VariantStarter=С EIStarter-UM (рекомендуется): выбирается в лаунчере, файлы игры не меняются.
 ru.VariantStandalone=Отдельно: устанавливается прямо в папку игры. Подходит для Cursed Lands.
 ru.StarterFound=EIStarter-UM установлен в %1.
-ru.StarterMissing=EIStarter-UM не установлен: он будет скачан с GitHub в папку, выбранную далее.
-ru.StarterOld=EIStarter-UM в %1 старше версии 0.2.9, которая сохраняет настройки, изменённые в игре: он будет обновлён с GitHub, его настройки и моды сохранятся.
+ru.StarterMissing=EIStarter-UM не установлен: встроенная версия будет установлена в папку, выбранную далее.
+ru.StarterOld=EIStarter-UM в %1 старше версии 0.2.9: он будет обновлён из установщика, его настройки и моды сохранятся.
 ru.OpenStarterPage=Страница EIStarter-UM
-ru.DownloadCaption=EIStarter-UM
-ru.DownloadDesc=Загрузка EIStarter-UM 0.2.9 с GitHub.
-ru.StarterFailed=Не удалось скачать EIStarter-UM: %1%n%nНажмите «Далее», чтобы попробовать снова, или вернитесь и выберите отдельный вариант.
-ru.StarterDirLabel=Выберите папку EIStarter-UM. Если его там нет, он будет скачан в эту папку.
+ru.StarterFailed=Не удалось распаковать EIStarter-UM: %1%n%nНажмите Далее, чтобы попробовать снова, или вернитесь и выберите отдельный вариант.
+ru.StarterDirLabel=Выберите папку EIStarter-UM. Если его там нет, встроенная версия будет установлена в эту папку.
 ru.OldSpellAddon=Старую версию SpellAddon, %1, не удалось убрать, и она будет загружаться вместе с версией EItweaks. Удалите её вручную.
 ru.LaunchStarter=Запустить EIStarter-UM
 ru.LaunchGame=Запустить игру
@@ -109,13 +104,11 @@ de.VariantDesc=Wie möchten Sie EItweaks spielen?
 de.VariantStarter=Mit EIStarter-UM (empfohlen): im Launcher ausgewählt, die Spieldateien bleiben unverändert.
 de.VariantStandalone=Eigenständig: direkt in den Spielordner installiert. Auch mit Cursed Lands nutzbar.
 de.StarterFound=EIStarter-UM ist in %1 installiert.
-de.StarterMissing=EIStarter-UM ist nicht installiert: Er wird von GitHub in den als Nächstes gewählten Ordner heruntergeladen.
-de.StarterOld=EIStarter-UM in %1 ist älter als 0.2.9, die im Spiel geänderte Optionen behält: Er wird von GitHub aktualisiert, seine Einstellungen und Mods bleiben erhalten.
+de.StarterMissing=EIStarter-UM ist nicht installiert: Die enthaltene Version wird im folgenden Ordner installiert.
+de.StarterOld=EIStarter-UM in %1 ist aelter als 0.2.9: Er wird aus dem Installationspaket aktualisiert, seine Einstellungen und Mods bleiben erhalten.
 de.OpenStarterPage=Seite von EIStarter-UM
-de.DownloadCaption=EIStarter-UM
-de.DownloadDesc=EIStarter-UM 0.2.9 wird von GitHub heruntergeladen.
-de.StarterFailed=EIStarter-UM konnte nicht heruntergeladen werden: %1%n%nKlicken Sie auf "Weiter", um es erneut zu versuchen, oder gehen Sie zurück und wählen Sie die eigenständige Variante.
-de.StarterDirLabel=Wählen Sie den Ordner von EIStarter-UM. Ist er dort nicht vorhanden, wird er in diesen Ordner heruntergeladen.
+de.StarterFailed=EIStarter-UM konnte nicht entpackt werden: %1%n%nKlicken Sie auf "Weiter", um es erneut zu versuchen, oder waehlen Sie die eigenstaendige Variante.
+de.StarterDirLabel=Waehlen Sie den Ordner von EIStarter-UM. Ist er dort nicht vorhanden, wird die enthaltene Version dort installiert.
 de.OldSpellAddon=Eine ältere SpellAddon-Version, %1, konnte nicht beiseitegelegt werden und würde zusammen mit der von EItweaks geladen. Entfernen Sie sie von Hand.
 de.LaunchStarter=EIStarter-UM starten
 de.LaunchGame=Spiel starten
@@ -127,11 +120,10 @@ Type: files; Name: "{app}\mods\eitweaks\movies\intro.bik"; Check: IsStarter
 Type: dirifempty; Name: "{app}\mods\eitweaks\movies"; Check: IsStarter
 
 [Files]
-; EIStarter-UM, when its folder had none or an older one: the downloaded package, unpacked into {tmp}. It may serve
+; EIStarter-UM, when its folder had none or an older one: the embedded package, unpacked into {tmp}. It may serve
 ; other mods, so it stays after uninstalling, as the launcher a player installs by hand would.
-Source: "{tmp}\eistarter-um\EIStarter-UM\*"; DestDir: "{app}"; Flags: external recursesubdirs createallsubdirs ignoreversion uninsneveruninstall; Check: StarterDownloaded
-; The downloaded package itself, kept beside it for installing again without a download.
-Source: "{tmp}\eistarter-um.zip"; DestDir: "{app}"; DestName: "{#StarterZipName}"; Flags: external ignoreversion uninsneveruninstall; Check: StarterFetchedNow
+Source: "{#StarterZipName}"; Flags: dontcopy
+Source: "{tmp}\eistarter-um\EIStarter-UM\*"; DestDir: "{app}"; Flags: external recursesubdirs createallsubdirs ignoreversion uninsneveruninstall; Check: StarterPrepared
 ; SpellAddon's licence forbids distributing its files apart from its whole folder: the installer carries the folder
 ; unmodified (dontcopy) and installs the files SpellAddon's own instructions name. EIStarter-UM's game runs with its
 ; own Miles (Engine\mss32.dll), which loads the .asi files of the Engine folder only, so they go there, in place of the
@@ -215,8 +207,7 @@ Filename: "{app}\game.exe"; WorkingDir: "{app}"; Description: "{cm:LaunchGame}";
 const
   StarterURL = 'https://github.com/Kyr4l/ei-universal-mod/blob/master/docs/EIStarter-UM.md';
   { EIStarter-UM 0.2.9, the first version that keeps the options changed in the game (earlier ones rewrote them at
-    every Play), published with Universal Mod's 0.8.7 pre-release; the download is checked against this. }
-  StarterZipURL = 'https://github.com/Kyr4l/ei-universal-mod/releases/download/0.8.7/EIStarter-UM-0.2.9.zip';
+    every Play), published with Universal Mod's 0.8.7 pre-release; the embedded archive is checked against this. }
   StarterZipSHA256 = '5f190de3f59e1cb3604de9c127f1100d577b40cb0564b1cbae173c3a5638d2a9';
   StarterZipName = '{#StarterZipName}';
   StarterExe = 'EIStarter-UM.exe';
@@ -239,14 +230,11 @@ type
 var
   GamePage: TInputDirWizardPage;
   LangPage, VariantPage: TInputOptionWizardPage;
-  DownloadPage: TDownloadWizardPage;
   StarterPageButton: TNewButton;
   DetectedFor: String;
   Relaunched: Boolean;
-  { The launcher folder the package was downloaded and unpacked for, into the temporary folder; '' before that. }
-  DownloadedFor: String;
-  { The package came from the network, not from the kept copy. }
-  StarterFetched: Boolean;
+  { The launcher folder the embedded package was unpacked for; '' before that. }
+  PreparedFor: String;
 
 function EnumDisplaySettings(DeviceName: Cardinal; ModeNum: Cardinal; var DevMode: TDevMode): BOOL;
   external 'EnumDisplaySettingsW@user32.dll stdcall';
@@ -329,7 +317,7 @@ begin
 end;
 
 { Whether Dir holds EIStarter-UM 0.2.9 or later, which names the backup of the game's settings it introduced. An
-  older one is updated by the download like a missing one; its config and mods stay. }
+  older one is updated from the embedded package like a missing one; its config and mods stay. }
 function HasStarter(const Dir: String): Boolean;
 var
   Exe: AnsiString;
@@ -342,14 +330,9 @@ begin
   Result := HasStarter(StarterDir(''));
 end;
 
-function StarterDownloaded: Boolean;
+function StarterPrepared: Boolean;
 begin
-  Result := (DownloadedFor <> '') and (CompareText(DownloadedFor, WizardDirValue) = 0);
-end;
-
-function StarterFetchedNow: Boolean;
-begin
-  Result := StarterDownloaded and StarterFetched;
+  Result := (PreparedFor <> '') and (CompareText(PreparedFor, WizardDirValue) = 0);
 end;
 
 { Whether the launcher has its copy of the game's key; until its first Play it reads the game's key alone. }
@@ -429,62 +412,37 @@ begin
     Confirm := False;
 end;
 
-{ The copy of the launcher package kept in its folder after a download, when it is the pinned one. }
-function CachedStarterZip: String;
-begin
-  Result := AddBackslash(WizardDirValue) + StarterZipName;
-  if not FileExists(Result) or (Lowercase(GetSHA256OfFile(Result)) <> StarterZipSHA256) then
-    Result := '';
-end;
-
-{ Gets EIStarter-UM, from the copy a previous install kept in its folder, else downloaded and checked, and unpacks it
-  into the temporary folder, from where [Files] installs it; the wizard shows its download page, a silent install has
-  none. The error message, or '' once unpacked. }
-function DownloadStarter(UsePage: Boolean): String;
+{ Unpacks the embedded launcher into the temporary folder, from where [Files] installs it.
+  The error message, or '' once unpacked. }
+function PrepareStarter: String;
 var
   Zip: String;
 begin
   Result := '';
-  if StarterDownloaded then
+  if StarterPrepared then
     Exit;
   try
-    Zip := CachedStarterZip;
-    StarterFetched := Zip = '';
-    if StarterFetched then
-    begin
-      if UsePage then
-      begin
-        DownloadPage.Clear;
-        DownloadPage.Add(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256);
-        DownloadPage.Show;
-        try
-          DownloadPage.Download;
-        finally
-          DownloadPage.Hide;
-        end;
-      end
-      else
-        DownloadTemporaryFile(StarterZipURL, 'eistarter-um.zip', StarterZipSHA256, nil);
-      Zip := ExpandConstant('{tmp}\eistarter-um.zip');
-    end
-    else
-      Log('EIStarter-UM from the kept copy ' + Zip);
+    ExtractTemporaryFile(StarterZipName);
+    Zip := ExpandConstant('{tmp}\') + StarterZipName;
+    if Lowercase(GetSHA256OfFile(Zip)) <> StarterZipSHA256 then
+      RaiseException('EIStarter-UM archive checksum mismatch');
+    Log('EIStarter-UM from the embedded package');
     DelTree(ExpandConstant('{tmp}\eistarter-um'), True, True, True);
     ExtractArchive(Zip, ExpandConstant('{tmp}\eistarter-um'), '', True, nil);
-    DownloadedFor := WizardDirValue;
+    PreparedFor := WizardDirValue;
   except
     Result := GetExceptionMessage;
-    Log('EIStarter-UM download failed: ' + Result);
+    Log('EIStarter-UM extraction failed: ' + Result);
   end;
 end;
 
-{ What keeps the launcher from being installed into the chosen folder: '' when it is there or has been downloaded. }
-function StarterProblem(UsePage: Boolean): String;
+{ What keeps the launcher from being installed into the chosen folder: '' when it is there or has been unpacked. }
+function StarterProblem: String;
 begin
   Result := '';
   if IsStarter and not HasStarter(WizardDirValue) then
   begin
-    Result := DownloadStarter(UsePage);
+    Result := PrepareStarter;
     if Result <> '' then
       Result := FmtMessage(CustomMessage('StarterFailed'), [Result]);
   end;
@@ -618,7 +576,6 @@ begin
   VariantPage.CheckListBox.Height := StarterPageButton.Top - VariantPage.CheckListBox.Top - ScaleY(8);
   UpdateStarterStatus;
 
-  DownloadPage := CreateDownloadPage(CustomMessage('DownloadCaption'), CustomMessage('DownloadDesc'), nil);
   WizardForm.SelectDirLabel.Caption := CustomMessage('StarterDirLabel');
 end;
 
@@ -681,12 +638,12 @@ begin
   else if CurPageID = wpSelectDir then
   begin
     Problem := FolderProblem;
-    { After the rights check: a run started again as administrator would download again. }
+    { Unpack after the rights check so a restarted installer does not repeat the work. }
     if Problem = '' then
     begin
       Result := ReadyToInstall;
       if Result then
-        Problem := StarterProblem(True);
+        Problem := StarterProblem;
     end;
   end;
   if Problem <> '' then
@@ -696,12 +653,12 @@ begin
   end;
 end;
 
-{ Also reached by silent installs, which skip the wizard pages and so download the launcher here. }
+{ Also reached by silent installs, which skip the wizard pages and unpack the launcher here. }
 function PrepareToInstall(var NeedsRestart: Boolean): String;
 begin
   Result := FolderProblem;
   if Result = '' then
-    Result := StarterProblem(False);
+    Result := StarterProblem;
 end;
 
 { Standalone: before each file is copied, keeps the game's original once, under eitweaks-backup. }
