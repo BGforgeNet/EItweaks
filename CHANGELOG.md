@@ -15,6 +15,8 @@
 - Starter version: info windows show spell damage to one decimal, cast time in seconds, and the attack rate as a
   percentage of the normal one.
 - Starter version: the unit panel lists the spells of a unit outside the party, with their effects.
+- Starter version: the load a hero carries slows running and makes it more tiring; above the maximum load it slows
+  walking too.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
 - The fixes of the unofficial patch 1.07 (Gipat Group) that 1.0 lacked, for every language: campaign map scripts
