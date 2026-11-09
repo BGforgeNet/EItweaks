@@ -3,5 +3,5 @@ mod/res/** -text
 lang/** -text
 mod/maps/** -text
 mod/config/ai.ini -text
-mod/SPELLADDON.INI -text
+mod/spelladdon.ini -text
 vendor/spelladdon/** -text
