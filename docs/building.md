@@ -9,7 +9,7 @@ The game data is kept as source. `mod` is laid out as the mod's folder; `vendor`
 - `vendor/universal-mod`: Universal Mod's runtime, its license and corresponding source archive. The starter build places these in the mod folder alongside `vendor/d7vk`'s DLL and license; `mod/config.ini` loads the runtime as a plugin. `mod/um.cfg` selects D7VK automatically under Wine, disables the check for the older SpellAddon file and disables the separate, unbundled engine runtime. Standalone builds leave these files out.
 - `vendor/eix/eix-<version>.zip`: the [eix](eix.md) release package, unmodified. The starter build places its `addon.dll`, license and third-party notices in the mod folder, and its `dinput.dll` in the zip's `Engine` folder, which the installer puts into the launcher's.
 - `vendor/eistarter-um/EIStarter-UM-0.2.9.zip`: the pinned launcher package, embedded in the installer for offline installation and upgrades.
-- `mod/spelladdon.ini`: EItweaks' settings for eix's built-in SpellAddon (SpellAddon's default with the running drain set to absolute). Standalone builds leave it out.
+- `mod/spelladdon.ini`: EItweaks' settings for eix's built-in SpellAddon (eix's `spelladdon.ini` with EItweaks' options on). Standalone builds leave it out.
 
 The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container, and the installer with [Inno Setup](https://jrsoftware.org/isinfo.php) (`build/installer.iss`) in another. Install `podman` and put it on `PATH`, then, from the repository root:
 
