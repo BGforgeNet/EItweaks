@@ -14,9 +14,9 @@ import (
 )
 
 // payload writes the installer's payload from the starter zips in dir: under common/ the mod's files that every
-// language has with the same content, stored once; under <lang>/ the rest; SpellAddon/; and files.iss, the
-// installer's [Files] entries for the mod in both versions. The standalone version installs the same files minus
-// starterOnly, into the game's own folders.
+// language has with the same content, stored once; under <lang>/ the rest; Engine/, for the launcher's Engine folder;
+// and files.iss, the installer's [Files] entries for the mod in both versions. The standalone version installs the
+// same files minus starterOnly, into the game's own folders.
 func payload(dir, version, dst string) error {
 	zips, err := filepath.Glob(filepath.Join(dir, "eitweaks-"+version+"-*-starter.zip"))
 	if err != nil {
@@ -27,7 +27,7 @@ func payload(dir, version, dst string) error {
 	}
 	mods := map[string]map[string][]byte{}
 	var langs []string
-	var spellAddon map[string][]byte
+	var engine map[string][]byte
 	for _, z := range zips {
 		lang := strings.TrimSuffix(strings.TrimPrefix(filepath.Base(z), "eitweaks-"+version+"-"), "-starter.zip")
 		files, err := readZip(z)
@@ -35,18 +35,18 @@ func payload(dir, version, dst string) error {
 			return err
 		}
 		mods[lang] = map[string][]byte{}
-		addon := map[string][]byte{}
+		engineFiles := map[string][]byte{}
 		for name, data := range files {
 			switch top, rest, _ := strings.Cut(name, "/"); top {
 			case "eitweaks":
 				mods[lang][rest] = data
-			case "SpellAddon":
-				addon[rest] = data
+			case "Engine":
+				engineFiles[rest] = data
 			default:
 				return fmt.Errorf("%s: unexpected entry %s", z, name)
 			}
 		}
-		spellAddon = addon
+		engine = engineFiles
 		langs = append(langs, lang)
 	}
 	sort.Strings(langs)
@@ -72,7 +72,7 @@ func payload(dir, version, dst string) error {
 			}
 		}
 	}
-	trees["SpellAddon"] = spellAddon
+	trees["Engine"] = engine
 	for tree, files := range trees {
 		for name, data := range files {
 			p := filepath.Join(dst, tree, filepath.FromSlash(name))

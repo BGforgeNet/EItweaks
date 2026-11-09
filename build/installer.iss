@@ -4,7 +4,7 @@
 ;
 ; The player picks the game folder, the game's language (detected, can be changed) and the version:
 ; with EIStarter-UM (recommended): the bundled launcher is installed when missing, the mod goes into its mods
-; folder, SpellAddon into its Engine folder, and the launcher's config selects EItweaks;
+; folder, eix's loader into its Engine folder, and the launcher's config selects EItweaks;
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
 ; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>.
 
@@ -69,7 +69,6 @@ en.StarterOld=EIStarter-UM in %1 is older than 0.2.9: it is updated from the bun
 en.OpenStarterPage=EIStarter-UM's page
 en.StarterFailed=EIStarter-UM could not be unpacked: %1%n%nClick Next to try again, or go back and choose the standalone version.
 en.StarterDirLabel=Select the folder of EIStarter-UM. When it is not there, the bundled version is installed into this folder.
-en.OldSpellAddon=An older SpellAddon, %1, could not be moved aside and would load together with EItweaks' one. Remove it by hand.
 en.LaunchStarter=Launch EIStarter-UM
 en.LaunchGame=Launch the game
 ru.GameDirCaption=Папка игры
@@ -89,7 +88,6 @@ ru.StarterOld=EIStarter-UM в %1 старше версии 0.2.9: он буде�
 ru.OpenStarterPage=Страница EIStarter-UM
 ru.StarterFailed=Не удалось распаковать EIStarter-UM: %1%n%nНажмите Далее, чтобы попробовать снова, или вернитесь и выберите отдельный вариант.
 ru.StarterDirLabel=Выберите папку EIStarter-UM. Если его там нет, встроенная версия будет установлена в эту папку.
-ru.OldSpellAddon=Старую версию SpellAddon, %1, не удалось убрать, и она будет загружаться вместе с версией EItweaks. Удалите её вручную.
 ru.LaunchStarter=Запустить EIStarter-UM
 ru.LaunchGame=Запустить игру
 de.GameDirCaption=Spielordner
@@ -109,7 +107,6 @@ de.StarterOld=EIStarter-UM in %1 ist aelter als 0.2.9: Er wird aus dem Installat
 de.OpenStarterPage=Seite von EIStarter-UM
 de.StarterFailed=EIStarter-UM konnte nicht entpackt werden: %1%n%nKlicken Sie auf "Weiter", um es erneut zu versuchen, oder waehlen Sie die eigenstaendige Variante.
 de.StarterDirLabel=Waehlen Sie den Ordner von EIStarter-UM. Ist er dort nicht vorhanden, wird die enthaltene Version dort installiert.
-de.OldSpellAddon=Eine ältere SpellAddon-Version, %1, konnte nicht beiseitegelegt werden und würde zusammen mit der von EItweaks geladen. Entfernen Sie sie von Hand.
 de.LaunchStarter=EIStarter-UM starten
 de.LaunchGame=Spiel starten
 
@@ -124,19 +121,10 @@ Type: dirifempty; Name: "{app}\mods\eitweaks\movies"; Check: IsStarter
 ; other mods, so it stays after uninstalling, as the launcher a player installs by hand would.
 Source: "{#StarterZipName}"; Flags: dontcopy
 Source: "{tmp}\eistarter-um\EIStarter-UM\*"; DestDir: "{app}"; Flags: external recursesubdirs createallsubdirs ignoreversion uninsneveruninstall; Check: StarterPrepared
-; SpellAddon's licence forbids distributing its files apart from its whole folder: the installer carries the folder
-; unmodified (dontcopy) and installs the files SpellAddon's own instructions name. EIStarter-UM's game runs with its
-; own Miles (Engine\mss32.dll), which loads the .asi files of the Engine folder only, so they go there, in place of the
-; older SpellAddon the launcher ships (moved aside after installing); the INI also into the game folder, where the
-; instructions put it. SpellAddon may serve other mods too, so uninstalling EItweaks leaves the starter version's
-; copies; its own SPELLADDON.INI changes nothing in the game, and one already there is kept.
-Source: "payload\SpellAddon\*"; Flags: dontcopy recursesubdirs
-Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SPELLADDON.INI"; DestDir: "{app}\Engine"; Flags: onlyifdoesntexist uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SPELLADDON.INI"; DestDir: "{code:GameDirValue}"; Flags: onlyifdoesntexist uninsneveruninstall; Check: IsStarter
-Source: "payload\SpellAddon\SpellAddonXa.asi"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
-Source: "payload\SpellAddon\SpellAddonInfo.txt"; DestDir: "{app}"; Flags: ignoreversion; Check: IsStandalone; BeforeInstall: Backup
+; eix's add-on, in the mod folder, stops the game when the launcher's loader starts it, so eix's loader replaces that
+; one, after the launcher package above. It still loads the original add-on of the launcher and its other mods, so it
+; stays after uninstalling, as the launcher does. eix's built-in SpellAddon keeps any SpellAddon*.asi from loading.
+Source: "payload\Engine\dinput.dll"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
 
 [Registry]
 ; At every Play EIStarter-UM itself writes the selected mod (AddonPath), the game settings a fresh installation has
@@ -675,41 +663,6 @@ begin
   end;
 end;
 
-{ SpellAddon's instructions ask to remove its older versions first: any other SpellAddon*.asi would load beside ours.
-  They are moved into BackupDir, not deleted; one already backed up under the same name is kept and the player told. }
-procedure MoveOldSpellAddons(const Dir, BackupDir: String);
-var
-  Found: TFindRec;
-  Names: TStringList;
-  I: Integer;
-begin
-  Names := TStringList.Create;
-  try
-    if FindFirst(Dir + '\SpellAddon*.asi', Found) then
-      try
-        repeat
-          if CompareText(Found.Name, 'SpellAddonXa.asi') <> 0 then
-            Names.Add(Found.Name);
-        until not FindNext(Found);
-      finally
-        FindClose(Found);
-      end;
-    for I := 0 to Names.Count - 1 do
-    begin
-      ForceDirectories(BackupDir);
-      if FileExists(BackupDir + '\' + Names[I]) or not RenameFile(Dir + '\' + Names[I], BackupDir + '\' + Names[I]) then
-      begin
-        Log('Could not move ' + Dir + '\' + Names[I] + ' into ' + BackupDir);
-        SuppressibleMsgBox(FmtMessage(CustomMessage('OldSpellAddon'), [Dir + '\' + Names[I]]), mbError, MB_OK, IDOK);
-      end
-      else
-        Log('Moved ' + Dir + '\' + Names[I] + ' into ' + BackupDir);
-    end;
-  finally
-    Names.Free;
-  end;
-end;
-
 { The screen's display modes ('1024x768'): those at 32 bits, the game's colour depth, or every one when the driver
   reports none at 32 bits; and the desktop's own, '' when unknown. }
 procedure ScreenModes(Modes: TStringList; var Desktop: String);
@@ -870,18 +823,10 @@ begin
     Log('Could not write ' + Cfg);
 end;
 
-{ Standalone: before installing, into eitweaks-backup, which uninstalling puts back along with removing our SpellAddon.
-  Starter: after installing, as the launcher package just installed brings its own SpellAddon; ours stays after
-  uninstalling, so the old ones stay aside too. }
 procedure CurStepChanged(CurStep: TSetupStep);
 begin
-  if (CurStep = ssInstall) and IsStandalone then
-    MoveOldSpellAddons(GameDirValue(''), ExpandConstant('{app}\eitweaks-backup'))
-  else if (CurStep = ssPostInstall) and IsStarter then
-  begin
-    MoveOldSpellAddons(ExpandConstant('{app}\Engine'), ExpandConstant('{app}\eitweaks-old-SpellAddon'));
+  if (CurStep = ssPostInstall) and IsStarter then
     WriteStarterConfig;
-  end;
   if (CurStep = ssPostInstall) and IsStarter and IsWine then
   begin
     { Existing launcher configs skip FirstStartSettings. Both keys must agree: the launcher switches between them. }
@@ -915,7 +860,7 @@ begin
 end;
 
 { After the uninstaller has removed EItweaks' files: the standalone version puts the game's originals back; the
-  starter version removes what the game and the plugin wrote into the mod's folder, and the launcher's selection of
+  starter version removes what the game and the add-on wrote into the mod's folder, and the launcher's selection of
   it, so the launcher picks a mod of its own. }
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
 var

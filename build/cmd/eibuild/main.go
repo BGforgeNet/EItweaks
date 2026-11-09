@@ -36,11 +36,12 @@ var databases = []string{"database", "databaselmp"}
 // while a standalone copy would replace the whole archive, so the standalone release leaves them out.
 var partialArchives = []string{filepath.Join("res", "textures.res")}
 
-// starterOnly lists the mod's files the standalone version leaves out: the starter's config, add-on and plugin, which
-// the game's own exe needs none of, and the partial archives.
+// starterOnly lists the mod's files the standalone version leaves out: the starter's config, eix's add-on and its
+// settings, and Universal Mod's runtime, which the game's own exe runs none of, and the partial archives.
 func starterOnly() []string {
-	return append([]string{"config.reg", "addon.dll", "eitweaks.dll", "um.dll", "um.cfg", "um-LICENSE.txt",
-		"um-source.tar.gz", "d7vk.dll", "d7vk-LICENSE.txt"}, partialArchives...)
+	return append([]string{"config.reg", "addon.dll", "eix.ini", "SPELLADDON.INI", "eix-LICENSE.txt",
+		"eix-THIRD-PARTY-NOTICES.txt", "um.dll", "um.cfg", "um-LICENSE.txt", "um-source.tar.gz", "d7vk.dll",
+		"d7vk-LICENSE.txt"}, partialArchives...)
 }
 
 // The folder names of each language's GOG install where they are not lowercase. Windows ignores case when the
@@ -50,27 +51,29 @@ var gogFolders = map[string]map[string]string{
 	"de": {"maps": "Maps", "res": "Res"},
 }
 
-// SpellAddon patches the Russian 1.06 game.exe at fixed addresses without checking them. The starter runs that exe for
-// every language; a standalone install runs the game's own, and the English and German exe have other code or data
-// where these settings patch (or were not compared), so their standalone releases turn them off.
-var russianExeOnlySpellAddon = []string{
-	"batterycharge", "ultrafixes", "nightpowervisionpatch", "nightvisionincaves", "removefrozenvar",
-}
-
-// disableSpellAddonKeys sets each key, which must be on exactly once, to 0 in the SPELLADDON.INI at path.
-func disableSpellAddonKeys(path string, keys []string) error {
-	data, err := os.ReadFile(path)
+// eixPackage returns the files of the one vendored eix release package, keyed by their names inside its top folder.
+func eixPackage(vendor string) (map[string][]byte, error) {
+	zips, err := filepath.Glob(filepath.Join(vendor, "eix", "eix-*.zip"))
 	if err != nil {
-		return err
+		return nil, err
 	}
-	for _, k := range keys {
-		on := []byte("\r\n" + k + "=1\r\n")
-		if n := bytes.Count(data, on); n != 1 {
-			return fmt.Errorf("%s: %q is on %d times, want exactly once", path, k+"=1", n)
+	if len(zips) != 1 {
+		return nil, fmt.Errorf("%s: want exactly one eix-*.zip, found %d", filepath.Join(vendor, "eix"), len(zips))
+	}
+	files, err := readZip(zips[0])
+	if err != nil {
+		return nil, err
+	}
+	top := strings.TrimSuffix(filepath.Base(zips[0]), ".zip") + "/"
+	pkg := map[string][]byte{}
+	for name, data := range files {
+		rest, ok := strings.CutPrefix(name, top)
+		if !ok {
+			return nil, fmt.Errorf("%s: entry %s is outside %s", zips[0], name, top)
 		}
-		data = bytes.Replace(data, on, []byte("\r\n"+k+"=0\r\n"), 1)
+		pkg[rest] = data
 	}
-	return os.WriteFile(path, data, 0o644)
+	return pkg, nil
 }
 
 func main() {
@@ -230,7 +233,7 @@ func build(repo, version, out string) error {
 	}
 	defer os.RemoveAll(work)
 
-	// Everything but lang/<lang> is the same for every language: mod/, the plugin and the vendored add-on.
+	// Everything but lang/<lang> is the same for every language: mod/ and the vendored runtime.
 	src := filepath.Join(repo, "mod")
 	vendor := filepath.Join(repo, "vendor")
 	common := filepath.Join(work, "common")
@@ -260,12 +263,34 @@ func build(repo, version, out string) error {
 	if err := um("inireg", "--ini2reg", filepath.Join(src, "config", "ai.ini"), "-o", filepath.Join(common, "config", "ai.reg")); err != nil {
 		return err
 	}
-	if err := buildPlugin(filepath.Join(repo, "plugin", "eitweaks.c"), filepath.Join(common, "eitweaks.dll")); err != nil {
+	// eix's loader loads an addon.dll from the selected mod's folder in place of the launcher's own, so eix's add-on
+	// runs for this mod only. The loader itself replaces the launcher's, in its Engine folder.
+	eix, err := eixPackage(vendor)
+	if err != nil {
 		return err
 	}
-	// The add-on loader (EIStarter-UM's, as EI starter's) loads an addon.dll from the selected mod's folder in place of
-	// the launcher's own, for this mod only.
-	if err := copyFile(filepath.Join(vendor, "addon", "addon.dll"), filepath.Join(common, "addon.dll")); err != nil {
+	for src, dst := range map[string]string{
+		"addon.dll":               "addon.dll",
+		"LICENSE":                 "eix-LICENSE.txt",
+		"THIRD-PARTY-NOTICES.txt": "eix-THIRD-PARTY-NOTICES.txt",
+	} {
+		data, ok := eix[src]
+		if !ok {
+			return fmt.Errorf("the eix package has no %s", src)
+		}
+		if err := os.WriteFile(filepath.Join(common, dst), data, 0o644); err != nil {
+			return err
+		}
+	}
+	loader, ok := eix["dinput.dll"]
+	if !ok {
+		return errors.New("the eix package has no dinput.dll")
+	}
+	engine := filepath.Join(work, "engine")
+	if err := os.MkdirAll(engine, 0o755); err != nil {
+		return err
+	}
+	if err := os.WriteFile(filepath.Join(engine, "dinput.dll"), loader, 0o644); err != nil {
 		return err
 	}
 	for _, file := range []struct{ src, dst string }{
@@ -282,9 +307,12 @@ func build(repo, version, out string) error {
 	if err := copyFile(filepath.Join(src, "um.cfg"), filepath.Join(common, "um.cfg")); err != nil {
 		return err
 	}
-	// SpellAddon reads a SPELLADDON.INI from the active mod's folder, so these settings apply to EItweaks only.
-	if err := copyFile(filepath.Join(src, "SPELLADDON.INI"), filepath.Join(common, "SPELLADDON.INI")); err != nil {
-		return err
+	// eix reads eix.ini, and its built-in SpellAddon reads a SPELLADDON.INI, from the active mod's folder first, so
+	// these settings apply to EItweaks only.
+	for _, name := range []string{"eix.ini", "SPELLADDON.INI"} {
+		if err := copyFile(filepath.Join(src, name), filepath.Join(common, name)); err != nil {
+			return err
+		}
 	}
 	modIni, err := os.ReadFile(filepath.Join(src, "config.ini"))
 	if err != nil {
@@ -364,22 +392,22 @@ func build(repo, version, out string) error {
 				return err
 			}
 		}
-		if lang != "ru" {
-			if err := disableSpellAddonKeys(filepath.Join(standalone, "SPELLADDON.INI"), russianExeOnlySpellAddon); err != nil {
-				return err
-			}
-		}
 		for from, to := range gogFolders[lang] {
 			if err := os.Rename(filepath.Join(standalone, from), filepath.Join(standalone, to)); err != nil && !errors.Is(err, fs.ErrNotExist) {
 				return err
 			}
 		}
-		for _, v := range []struct{ dir, variant string }{{mod, "starter"}, {standalone, "standalone"}} {
+		for _, v := range []struct {
+			variant string
+			folders []zipFolder
+		}{
+			// The starter zip's Engine folder goes into the launcher's.
+			{"starter", []zipFolder{{mod, "eitweaks"}, {engine, "Engine"}}},
+			{"standalone", []zipFolder{{standalone, "eitweaks"}}},
+		} {
 			name := fmt.Sprintf("eitweaks-%s-%s-%s.zip", version, lang, v.variant)
 			zipPath := filepath.Join(out, name)
-			// SpellAddon ships unmodified beside the mod: its licence forbids distributing its files separately.
-			folders := []zipFolder{{v.dir, "eitweaks"}, {filepath.Join(vendor, "spelladdon"), "SpellAddon"}}
-			if err := writeZip(folders, zipPath); err != nil {
+			if err := writeZip(v.folders, zipPath); err != nil {
 				return err
 			}
 			data, err := os.ReadFile(zipPath)
@@ -391,18 +419,6 @@ func build(repo, version, out string) error {
 		}
 	}
 	return os.WriteFile(filepath.Join(out, "SHA256SUMS"), []byte(strings.Join(sums, "\n")+"\n"), 0o644)
-}
-
-// buildPlugin compiles the starter plugin.
-func buildPlugin(src, dll string) error {
-	// The linker otherwise stamps the build time and derives the image base from the (temporary) output path.
-	args := []string{"-shared", "-O2", "-s", "-static-libgcc", "-Wl,--no-insert-timestamp,--disable-auto-image-base",
-		"-o", dll, src}
-	out, err := exec.Command("i686-w64-mingw32-gcc", args...).CombinedOutput()
-	if err != nil {
-		return fmt.Errorf("i686-w64-mingw32-gcc %s: %w\n%s", strings.Join(args, " "), err, out)
-	}
-	return nil
 }
 
 // buildDatabase compiles <dbSrc>/csv with xlsxdb, packs the result with <dbSrc>/extra (the entries xlsxdb does
