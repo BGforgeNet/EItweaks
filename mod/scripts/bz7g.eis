@@ -1,0 +1,851 @@
+GlobalVars (
+  NULL : object,
+  VSS#i#val : object,
+  i : object,
+  Heroes : group 
+)
+
+DeclareScript VCheck#0#1 (  this : object )
+DeclareScript VTriger#0#2 (  this : object )
+DeclareScript VCheck#0#4 (  this : object )
+DeclareScript VTriger#0#6 (  this : object )
+DeclareScript VCheck#0#12 (  this : object )
+DeclareScript VCheck#0#14 (  this : object )
+DeclareScript VTriger#0#16 (  this : object )
+DeclareScript VTriger#0#18 (  this : object )
+DeclareScript VCheck#0#20 (  this : object )
+DeclareScript VCheck#0#22 (  this : object )
+DeclareScript VTriger#0#24 (  this : object )
+DeclareScript VCheck#0#26 (  this : object )
+DeclareScript VCheck#0#28 (  this : object )
+DeclareScript VTriger#0#30 (  this : object )
+DeclareScript VTriger#0#33 (  this : object )
+DeclareScript VTriger#0#36 (  this : object )
+DeclareScript VCheck#0#38 (  this : object )
+DeclareScript VCheck#0#40 (  this : object )
+DeclareScript VTriger#0#42 (  this : object )
+DeclareScript VTriger#0#43 (  this : object )
+DeclareScript VCheck#0#46 (  this : object )
+DeclareScript VTriger#0#47 (  this : object )
+DeclareScript VCheck#0#49 (  this : object )
+DeclareScript VCheck#0#50 (  this : object )
+DeclareScript VTriger#0#52 (  this : object )
+DeclareScript VTriger#0#54 (  this : object )
+DeclareScript VCheck#0#56 (  this : object )
+DeclareScript VTriger#0#57 (  this : object )
+DeclareScript VCheck#0#59 (  this : object )
+DeclareScript VTriger#0#60 (  this : object )
+DeclareScript VCheck#0#62 (  this : object )
+DeclareScript VTriger#0#63 (  this : object )
+DeclareScript VCheck#0#65 (  this : object )
+DeclareScript VCheck#0#66 (  this : object )
+DeclareScript VTriger#0#67 (  this : object )
+DeclareScript VTriger#0#69 (  this : object )
+DeclareScript VCheck#0#71 (  this : object )
+DeclareScript VTriger#0#72 (  this : object )
+DeclareScript VTriger#0#74 (  this : object )
+DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
+
+Script VCheck#0#1
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz14k.q55k" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#2( this ) 
+  )
+)
+
+Script VTriger#0#2
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( GetObjectByName( "Deva" ) , 0 ) 
+  )
+)
+
+Script VCheck#0#4
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz19k.q72h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#2( this ) 
+  )
+)
+
+Script VTriger#0#6
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( GetObjectByName( "Deva" ) , 1 ) 
+    VCheck#0#1( this ) 
+    VCheck#0#4( this ) 
+  )
+)
+
+Script VCheck#0#12
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.Rick.R36_3" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#14( this ) 
+  )
+)
+
+Script VCheck#0#14
+(
+  if
+  (
+    Not( IsEqual( GetMercsNumber( 0 ) , 0 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#18( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#16( this ) 
+  )
+)
+
+Script VTriger#0#16
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R36_2", 1 ) 
+  )
+)
+
+Script VTriger#0#18
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R36_4", 1 ) 
+    GSSetVarMax( 0, "b.merc1.n10_1", 1 ) 
+    GSSetVarMax( 0, "b.merc2.n10_2", 1 ) 
+    GSSetVarMax( 0, "b.merc3.n10_3", 1 ) 
+    GSSetVarMax( 0, "b.merc4.n10_4", 1 ) 
+  )
+)
+
+Script VCheck#0#20
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "apartyn1" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#22( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#30( this ) 
+  )
+)
+
+Script VCheck#0#22
+(
+  if
+  (
+    Not( IsEqual( GSGetVar( 0, "adeadn1" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#24( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#30( this ) 
+  )
+)
+
+Script VTriger#0#24
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.merc1.n1_10", 1 ) 
+    GSSetVarMax( 0, "afarn1", 1 ) 
+    VCheck#0#38( this ) 
+  )
+)
+
+Script VCheck#0#26
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "apartyn3" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#28( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#33( this ) 
+  )
+)
+
+Script VCheck#0#28
+(
+  if
+  (
+    Not( IsEqual( GSGetVar( 0, "adeadn3" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#36( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#33( this ) 
+  )
+)
+
+Script VTriger#0#30
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "RMC", Add( GSGetVar( 0, "RMC" ) , 1 )  ) 
+  )
+)
+
+Script VTriger#0#33
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "RMC", Add( GSGetVar( 0, "RMC" ) , 1 )  ) 
+  )
+)
+
+Script VTriger#0#36
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.merc3.n3_10", 1 ) 
+    GSSetVarMax( 0, "afarn3", 1 ) 
+    VCheck#0#40( this ) 
+  )
+)
+
+Script VCheck#0#38
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc1.n1_10" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#42( this ) 
+  )
+)
+
+Script VCheck#0#40
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc3.n3_10" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#43( this ) 
+  )
+)
+
+Script VTriger#0#42
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "RMC", Add( GSGetVar( 0, "RMC" ) , 1 )  ) 
+  )
+)
+
+Script VTriger#0#43
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "RMC", Add( GSGetVar( 0, "RMC" ) , 1 )  ) 
+  )
+)
+
+Script VCheck#0#46
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.Rick.R36_4" ) , 2 ) 
+    IsEqual( GetMercsNumber( 0 ) , 0 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#47( this ) 
+  )
+)
+
+Script VTriger#0#47
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R36_2", 1 ) 
+  )
+)
+
+Script VCheck#0#49
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz7g.R72" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#50( this ) 
+  )
+)
+
+Script VCheck#0#50
+(
+  if
+  (
+    Not( IsEqual( GetMercsNumber( 0 ) , 0 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#54( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#52( this ) 
+  )
+)
+
+Script VTriger#0#52
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R72_1", 1 ) 
+  )
+)
+
+Script VTriger#0#54
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R72_3", 1 ) 
+    GSSetVarMax( 0, "b.merc7.n10_7", 1 ) 
+    GSSetVarMax( 0, "b.merc8.n10_8", 1 ) 
+    GSSetVarMax( 0, "b.merc10.n10_10", 1 ) 
+  )
+)
+
+Script VCheck#0#56
+(
+  if
+  (
+    Not( IsEqual( GSGetVar( 0, "JPC" ) , 1 )  ) 
+    IsEqual( GSGetVar( 0, "b.Rick.R72_1" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#57( this ) 
+  )
+)
+
+Script VTriger#0#57
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "JPC", 1 ) 
+    CreateParticleSource( 1, 0, 0, 0, 2, "StartTrans" ) 
+    AttachParticles( 1, GetObjectByName( "Hero" )  ) 
+    CreateFX( GetX( GetObjectByName( "Hero" )  ) , GetY( GetObjectByName( "Hero" )  ) , 2.5, 15, 30, "Tools\atzako01.wav" ) 
+    Sleep( 18 ) 
+    CreateParticleSource( 2, GetX( GetObjectByName( "Hero" )  ) , GetY( GetObjectByName( "Hero" )  ) , -1, 2, "Transform" ) 
+    CreateFX( GetX( GetObjectByName( "Hero" )  ) , GetY( GetObjectByName( "Hero" )  ) , 2.5, 15, 30, "Tools\atzako02.wav" ) 
+    Sleep( 10 ) 
+    CreateParty( 0, "JunParty" ) 
+    GSSetVar( 0, "Polymorph", 1 ) 
+    AddUnitToParty( 0, "JunParty::JunBoy", "Jun Male Hero" ) 
+    GSSetVar( 0, "Polymorph", 2 ) 
+    CopyStats( 0, "Hero", "JunParty::JunBoy" ) 
+    GSSetVar( 0, "Polymorph", 3 ) 
+    CopyLoot( 0, "", "JunParty" ) 
+    GSSetVar( 0, "Polymorph", 4 ) 
+    CopyItems( 0, "Hero", "JunParty::JunBoy" ) 
+    GSSetVar( 0, "Polymorph", 5 ) 
+    SetCurrentParty( 0, "JunParty" ) 
+    GSSetVar( 0, "Polymorph", 6 ) 
+    RedeployParty( 0 ) 
+    GSSetVar( 0, "Polymorph", 7 ) 
+    Sleep( 25 ) 
+    GSSetVar( 0, "b.Rick.R72_4", 1 ) 
+    SendStringEvent( 0, "briefing R72_4" ) 
+    GSSetVar( 0, "Polymorph", 8 ) 
+  )
+)
+
+Script VCheck#0#59
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "afarn1" ) , 1 ) 
+    IsEqual( GSGetVar( 0, "apartyn1" ) , 1 ) 
+    Not( IsEqual( GSGetVar( 0, "adeadn1" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#60( this ) 
+  )
+)
+
+Script VTriger#0#60
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.merc1.n1_10", 1 ) 
+  )
+)
+
+Script VCheck#0#62
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "afarn3" ) , 1 ) 
+    IsEqual( GSGetVar( 0, "apartyn3" ) , 1 ) 
+    Not( IsEqual( GSGetVar( 0, "adeadn3" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#63( this ) 
+  )
+)
+
+Script VTriger#0#63
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.merc3.n3_10", 1 ) 
+  )
+)
+
+Script VCheck#0#65
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc1.n1_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#67( this ) 
+  )
+)
+
+Script VCheck#0#66
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc3.n3_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#69( this ) 
+  )
+)
+
+Script VTriger#0#67
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc1.n1_2", 0 ) 
+  )
+)
+
+Script VTriger#0#69
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc3.n3_2", 0 ) 
+  )
+)
+
+Script VCheck#0#71
+(
+  if
+  (
+    IsEqual( GetMercsNumber( 0 ) , 0 ) 
+    IsEqual( GSGetVar( 0, "b.Rick.R72_3" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#72( this ) 
+  )
+)
+
+Script VTriger#0#72
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R72_1", 1 ) 
+    GSSetVarMax( 0, "b.Rick.R72_3", 2 ) 
+    GSSetVarMax( 0, "TestMercs", 2 ) 
+  )
+)
+
+Script VTriger#0#74
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( GetObjectByName( "Deva" ) , 1 ) 
+  )
+)
+
+Script #OnBriefingComplete
+(
+  if
+  (
+    IsEqualString( szComplete, "b.bz7g.R36" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R36_3", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.bz7g.R54" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R54_1", 1 ) 
+    GSSetVarMax( 0, "b.Rick.R54_2", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R36_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "z.gz4g_bz7g", 1 ) 
+    EraseQuestItem( 0, 5 ) 
+    EraseQuestItem( 0, 1 ) 
+    EraseQuestItem( 0, 2 ) 
+    EraseQuestItem( 0, 6 ) 
+    EraseQuestItem( 0, 7 ) 
+    EraseQuestItem( 0, 8 ) 
+    EraseQuestItem( 0, 9 ) 
+    EraseQuestItem( 0, 10 ) 
+    EraseQuestItem( 0, 11 ) 
+    EraseQuestItem( 0, 12 ) 
+    EraseQuestItem( 0, 13 ) 
+    EraseQuestItem( 0, 21 ) 
+    EraseQuestItem( 0, 22 ) 
+    EraseQuestItem( 0, 34 ) 
+    EraseQuestItem( 0, 48 ) 
+    EraseQuestItem( 0, 40 ) 
+    EraseQuestItem( 0, 33 ) 
+    EraseQuestItem( 0, 26 ) 
+    EraseQuestItem( 0, 15 ) 
+    EraseQuestItem( 0, 27 ) 
+    EraseQuestItem( 0, 39 ) 
+    EraseQuestItem( 0, 32 ) 
+    EraseQuestItem( 0, 31 ) 
+    EraseQuestItem( 0, 65 ) 
+    EraseQuestItem( 0, 29 ) 
+    EraseQuestItem( 0, 30 ) 
+    EraseQuestItem( 0, 25 ) 
+    EraseQuestItem( 0, 63 ) 
+    EraseQuestItem( 0, 18 ) 
+    EraseQuestItem( 0, 19 ) 
+    EraseQuestItem( 0, 20 ) 
+    EraseQuestItem( 0, 49 ) 
+    EraseQuestItem( 0, 14 ) 
+    EraseQuestItem( 0, 16 ) 
+    EraseQuestItem( 0, 17 ) 
+    EraseQuestItem( 0, 43 ) 
+    EraseQuestItem( 0, 45 ) 
+    EraseQuestItem( 0, 44 ) 
+    EraseQuestItem( 0, 38 ) 
+    EraseQuestItem( 0, 23 ) 
+    EraseQuestItem( 0, 35 ) 
+    EraseQuestItem( 0, 36 ) 
+    EraseQuestItem( 0, 37 ) 
+    EraseQuestItem( 0, 46 ) 
+    EraseQuestItem( 0, 28 ) 
+    EraseQuestItem( 0, 41 ) 
+    EraseQuestItem( 0, 24 ) 
+    EraseQuestItem( 0, 25 ) 
+    EraseQuestItem( 0, 42 ) 
+    EraseQuestItem( 0, 61 ) 
+    EraseQuestItem( 0, 62 ) 
+    EraseQuestItem( 0, 51 ) 
+    EraseQuestItem( 0, 50 ) 
+    EraseQuestItem( 0, 52 ) 
+    EraseQuestItem( 0, 47 ) 
+    EraseQuestItem( 0, 55 ) 
+    EraseQuestItem( 0, 64 ) 
+    EraseQuestItem( 0, 66 ) 
+    EraseQuestItem( 0, 67 ) 
+    EraseQuestItem( 0, 68 ) 
+    EraseQuestItem( 0, 98 ) 
+    EraseQuestItem( 0, 99 ) 
+    PlayMovie( "teleprt1.bik" ) 
+    LeaveToZone( 0, "gz11k", 3 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R54_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.bz13h.Hns59", 1 ) 
+    CreateParty( 0, "HeroAlone" ) 
+    AddUnitToParty( 0, "HeroAlone::Hero", "Human Hero Hadagan" ) 
+    CopyStats( 0, "Hero", "HeroAlone::Hero" ) 
+    SetCurrentParty( 0, "HeroAlone" ) 
+    PlayMovie( "teleprt3.bik" ) 
+    LeaveToZone( 0, "bz13h", 0 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.bz7g.R72" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R72_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc1.n1_10" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "afarn1", 0 ) 
+    RemoveUnitFromParty( 0, "merc1" ) 
+    RemoveUnitFromServer( GetObjectByName( "merc1" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n3_10" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "afarn3", 0 ) 
+    RemoveUnitFromParty( 0, "merc3" ) 
+    RemoveUnitFromServer( GetObjectByName( "merc3" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R72_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R72_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Deva.D72_5", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Deva.D72_5" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R72_6", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R72_6" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R72_7", 1 ) 
+    GSSetVarMax( 0, "b.Rick.constr_5", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R72_7" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 5 ) 
+    LeaveToZone( 0, "gz20g", 0 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Rick.R36_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Rick.R36_1", 1 ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+)
+
+WorldScript
+(
+  Sleep( 2 ) 
+  VTriger#0#6( NULL ) 
+  VCheck#0#12( NULL ) 
+  VCheck#0#46( NULL ) 
+  VCheck#0#49( NULL ) 
+  VCheck#0#56( NULL ) 
+  VCheck#0#71( NULL ) 
+)

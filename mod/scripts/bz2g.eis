@@ -1,0 +1,1257 @@
+GlobalVars (
+  NULL : object,
+  VSS#i#val : object,
+  i : object,
+  merc3 : object,
+  LeverA : object,
+  LeverL : object,
+  Trap2 : object,
+  Trap3 : object,
+  Trap4 : object,
+  Daughter : object,
+  Clerk : object,
+  Cellar : object,
+  Witch : object 
+)
+
+DeclareScript VCheck#0#42 (  this : object )
+DeclareScript VTriger#0#43 (  this : object )
+DeclareScript VCheck#0#45 (  this : object )
+DeclareScript VTriger#0#46 (  this : object )
+DeclareScript VCheck#0#48 (  this : object )
+DeclareScript VCheck#0#49 (  this : object )
+DeclareScript VCheck#0#51 (  this : object )
+DeclareScript VCheck#0#52 (  this : object )
+DeclareScript VTriger#0#55 (  this : object )
+DeclareScript VTriger#0#56 (  this : object )
+DeclareScript VCheck#0#59 (  this : object )
+DeclareScript VTriger#0#60 (  this : object )
+DeclareScript VCheck#0#62 (  this : object )
+DeclareScript VTriger#0#63 (  this : object )
+DeclareScript VCheck#0#65 (  this : object )
+DeclareScript VTriger#0#66 (  this : object )
+DeclareScript VTriger#0#68 (  this : object )
+DeclareScript VCheck#0#69 (  this : object )
+DeclareScript VTriger#0#70 (  this : object )
+DeclareScript VCheck#0#72 (  this : object )
+DeclareScript VTriger#0#73 (  this : object )
+DeclareScript VCheck#0#75 (  this : object )
+DeclareScript VCheck#0#76 (  this : object )
+DeclareScript VCheck#0#77 (  this : object )
+DeclareScript VCheck#0#78 (  this : object )
+DeclareScript VCheck#0#79 (  this : object )
+DeclareScript VCheck#0#80 (  this : object )
+DeclareScript VCheck#0#81 (  this : object )
+DeclareScript VTriger#0#82 (  this : object )
+DeclareScript VCheck#0#83 (  this : object )
+DeclareScript VCheck#0#92 (  this : object )
+DeclareScript VTriger#0#93 (  this : object )
+DeclareScript VCheck#0#95 (  this : object )
+DeclareScript VTriger#0#96 (  this : object )
+DeclareScript VCheck#0#98 (  this : object )
+DeclareScript VTriger#0#99 (  this : object )
+DeclareScript VCheck#0#101 (  this : object )
+DeclareScript VTriger#0#102 (  this : object )
+DeclareScript VTriger#0#104 (  this : object )
+DeclareScript VCheck#0#106 (  this : object )
+DeclareScript VTriger#0#107 (  this : object )
+DeclareScript VCheck#0#109 (  this : object )
+DeclareScript VTriger#0#110 (  this : object )
+DeclareScript VCheck#0#112 (  this : object )
+DeclareScript VTriger#0#113 (  this : object )
+DeclareScript VCheck#0#115 (  this : object )
+DeclareScript VTriger#0#116 (  this : object )
+DeclareScript VCheck#0#118 (  this : object )
+DeclareScript VTriger#0#119 (  this : object )
+DeclareScript VCheck#0#121 (  this : object )
+DeclareScript VTriger#0#122 (  this : object )
+DeclareScript VTriger#0#124 (  this : object )
+DeclareScript VCheck#0#126 (  this : object )
+DeclareScript VTriger#0#127 (  this : object )
+DeclareScript VCheck#0#129 (  this : object )
+DeclareScript VTriger#0#130 (  this : object )
+DeclareScript VCheck#0#132 (  this : object )
+DeclareScript VTriger#0#133 (  this : object )
+DeclareScript DaughterBrief ()
+DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
+
+Script VCheck#0#42
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "apartyn3" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#43( this ) 
+  )
+)
+
+Script VTriger#0#43
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    RemoveUnitFromServer( merc3 ) 
+  )
+)
+
+Script VCheck#0#45
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "apartyn4" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#46( this ) 
+  )
+)
+
+Script VTriger#0#46
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    RemoveUnitFromServer( GetObjectByName( "merc4" )  ) 
+  )
+)
+
+Script VCheck#0#48
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.elder.s11" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#49( this ) 
+  )
+)
+
+Script VCheck#0#49
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.elder.s12_4" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#51( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#52( this ) 
+  )
+)
+
+Script VCheck#0#51
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "z12_2" ) , 0 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#55( this ) 
+  )
+)
+
+Script VCheck#0#52
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "z12_1" ) , 0 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#56( this ) 
+  )
+)
+
+Script VTriger#0#55
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.witch.z12_2", 1 ) 
+    GSSetVar( 0, "z12_2", 1 ) 
+  )
+)
+
+Script VTriger#0#56
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.witch.z12_1", 1 ) 
+    GSSetVar( 0, "z12_1", 1 ) 
+  )
+)
+
+Script VCheck#0#59
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "z13_1" ) , 0 ) 
+    IsEqual( GSGetVar( 0, "b.witch.z12_2" ) , 2 ) 
+    IsEqual( GSGetVar( 0, "q.gz7g.q13g" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#60( this ) 
+  )
+)
+
+Script VTriger#0#60
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "z13_1", 1 ) 
+    GSSetVar( 0, "b.witch.z13_1", 1 ) 
+  )
+)
+
+Script VCheck#0#62
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "OLSC" ) , 1 ) 
+    IsEqual( GSGetVar( 0, "z32" ) , 0 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#63( this ) 
+  )
+)
+
+Script VTriger#0#63
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.witch.z32", 1 ) 
+    GSSetVar( 0, "z32", 1 ) 
+  )
+)
+
+Script VCheck#0#65
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "z.gz6g.frozen" ) , 1 ) 
+    IsGreater( Sub( GSGetVar( 0, "GTime" ) , GSGetVar( 0, "FrTime" )  ) , 72 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#66( this ) 
+  )
+)
+
+Script VTriger#0#66
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "z.gz6g.frozen", 0 ) 
+  )
+)
+
+Script VTriger#0#68
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SendEvent( 0, 21113 ) 
+    DaughterBrief(  ) 
+  )
+)
+
+Script VCheck#0#69
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "DCP" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#70( this ) 
+  )
+)
+
+Script VTriger#0#70
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SetCP( Daughter, GetX( Daughter ) , GetY( Daughter ) , 0 ) 
+    HideObject( Daughter, 0 ) 
+    GSSetVar( 0, "DCP", 0 ) 
+  )
+)
+
+Script VCheck#0#72
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.witch.z27" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#73( this ) 
+  )
+)
+
+Script VTriger#0#73
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( Clerk, 0 ) 
+  )
+)
+
+Script VCheck#0#75
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz2g.z0" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VCheck#0#76
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.daughter.z0_1" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VCheck#0#77
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz2g.z0_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VCheck#0#78
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.witch.z13_1" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VCheck#0#79
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.witch.z14_1" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VCheck#0#80
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.witch.z43_1" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VCheck#0#81
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.witch.z43_3" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VTriger#0#82
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SetCP( Daughter, 31.3, 21.6, 0 ) 
+  )
+)
+
+Script VCheck#0#83
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.witch.z11" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#82( this ) 
+  )
+)
+
+Script VCheck#0#92
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz5g.q22g" ) , 2 ) 
+    IsGreater( GSGetVar( 0, "b.witch.z24_1" ) , 0 ) 
+    Not( IsEqual( GSGetVar( 0, "SecondDRun" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#93( this ) 
+  )
+)
+
+Script VTriger#0#93
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 15 ) 
+    GSSetVarMax( 0, "b.witch.z38", 1 ) 
+    HideObject( Daughter, 1 ) 
+    GSSetVar( 0, "DHide", 1 ) 
+    GSSetVarMax( 0, "SecondDRun", 1 ) 
+  )
+)
+
+Script VCheck#0#95
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "DQ" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#96( this ) 
+  )
+)
+
+Script VTriger#0#96
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( Daughter, 1 ) 
+  )
+)
+
+Script VCheck#0#98
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz2g.z1" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#99( this ) 
+  )
+)
+
+Script VTriger#0#99
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( Witch, 0 ) 
+    HideObject( merc3, 0 ) 
+    GSSetVar( 0, "DQ", 0 ) 
+  )
+)
+
+Script VCheck#0#101
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz2g.z0" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#102( this ) 
+  )
+)
+
+Script VTriger#0#102
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( Witch, 1 ) 
+    HideObject( merc3, 1 ) 
+  )
+)
+
+Script VTriger#0#104
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( Clerk, 1 ) 
+    VCheck#0#72( this ) 
+  )
+)
+
+Script VCheck#0#106
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "apartyn3" ) , 1 ) 
+    Not( IsEqual( GSGetVar( 0, "adeadn3" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#107( this ) 
+  )
+)
+
+Script VTriger#0#107
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.merc3.n3_2", 1 ) 
+  )
+)
+
+Script VCheck#0#109
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc1.n1_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#110( this ) 
+  )
+)
+
+Script VTriger#0#110
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc1.n1_2", 0 ) 
+  )
+)
+
+Script VCheck#0#112
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc1.n1_10" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#113( this ) 
+  )
+)
+
+Script VTriger#0#113
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc1.n1_10", 0 ) 
+  )
+)
+
+Script VCheck#0#115
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc3.n3_10" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#116( this ) 
+  )
+)
+
+Script VTriger#0#116
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc3.n3_10", 0 ) 
+  )
+)
+
+Script VCheck#0#118
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "DRun1" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#119( this ) 
+  )
+)
+
+Script VTriger#0#119
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Run( Daughter ) 
+    MoveToPoint( Daughter, 54, 81.4 ) 
+    GSSetVar( 0, "DRun1", 0 ) 
+    GSSetVarMax( 0, "DHide", 1 ) 
+    SleepUntilIdle( Daughter ) 
+    HideObject( Daughter, 1 ) 
+  )
+)
+
+Script VCheck#0#121
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "DHide" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#122( this ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#124( this ) 
+  )
+)
+
+Script VTriger#0#122
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( Daughter, 1 ) 
+  )
+)
+
+Script VTriger#0#124
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SetCPFast( Daughter, 65.58, 86.13, 0 ) 
+    RotateTo( Daughter, 65.4075, 83.6321 ) 
+    HideObject( Daughter, 0 ) 
+  )
+)
+
+Script VCheck#0#126
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz6g.q24g" ) , 2 ) 
+    IsLess( GSGetVar( 0, "b.elder.s24" ) , 2 ) 
+    IsLess( GSGetVar( 0, "b.smith.m24" ) , 2 ) 
+    Not( IsEqual( GSGetVar( 0, "z24a" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#127( this ) 
+  )
+)
+
+Script VTriger#0#127
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "z24a", 1 ) 
+    GSSetVarMax( 0, "b.witch.z24", 1 ) 
+  )
+)
+
+Script VCheck#0#129
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "Troll-1Dead" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#130( this ) 
+  )
+)
+
+Script VTriger#0#130
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    RemoveUnitFromServer( GetObjectByID( "1338" )  ) 
+  )
+)
+
+Script VCheck#0#132
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "Troll-3Dead" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#133( this ) 
+  )
+)
+
+Script VTriger#0#133
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    RemoveUnitFromServer( GetObjectByID( "1339" )  ) 
+  )
+)
+
+Script DaughterBrief
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz2g.z0" ) , 2 ) 
+  )
+  then
+  (
+    SendEvent( 0, 21110 ) 
+    SetCP( Daughter, 31.5, 20.8, 0 ) 
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz2g.z1" ) , 2 ) 
+  )
+  then
+  (
+    SendEvent( 0, 21112 ) 
+    SetCP( Daughter, 31.5, 20.8, 0 ) 
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.witch.z13_1" ) , 1 ) 
+  )
+  then
+  (
+    SendEvent( 0, 21111 ) 
+    SetCP( Daughter, 31.5, 20.8, 0 ) 
+    KillScript(  ) 
+  )
+)
+
+Script #OnBriefingComplete
+(
+  if
+  (
+    IsEqualString( szComplete, "b.bz2g.z1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( nPlayer, "b.witch.z1_2", 1 ) 
+    GSSetVarMax( nPlayer, "b.witch.z1_4", 1 ) 
+    GSSetVarMax( nPlayer, "b.daughter.z0_2", 1 ) 
+    GSSetVarMax( nPlayer, "b.smith.m6_1", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z1_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z1_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( nPlayer, "b.elder.s6_1", 1 ) 
+    GSSetVarMax( 0, "amerc_3", 1 ) 
+    RecalcMercBriefings(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z1_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z11" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.witch.z11_1", 1 ) 
+    GSSetVarMax( 0, "b.elder.s11", 1 ) 
+    GSSetVarMax( 0, "DRun1", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z11_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z12_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z13_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.witch.z11_1", 2 ) 
+    GSSetVarMax( 0, "b.witch.z12_1", 2 ) 
+    GSSetVarMax( 0, "b.witch.z12_2", 2 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z13_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.smith.m13_4", 2 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z14" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z17" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "z.gz6g.frozen", 1 ) 
+    GSSetVar( 0, "FrTime", GSGetVar( 0, "GTime" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z17_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z15" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z26" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z21" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z24_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.elder.s24_2", 1 ) 
+    GSSetVarMax( 0, "b.smith.m24_2", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z27" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.nsheriff.nv26", 2 ) 
+    GSSetVarMax( 0, "b.NSheriff.nv27_1", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z30" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.DrPlen.l30" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z31" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z32" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z35" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.bz2g.z0" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.daughter.z0_1", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.bz2g.z0_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z1_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( nPlayer, "b.witch.constr_2", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.witch.z14_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.smith.m13_1", 1 ) 
+    GSSetVarMax( 0, "b.sheriff.v13_2", 1 ) 
+    GSSetVarMax( 0, "b.elder.s13_1", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.daughter.z0_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.daughter.z0_3", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.daughter.z0_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.daughter.z0_3", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n3_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n3_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    MoveToPoint( GetObjectByName( "merc3" ) , 59.5, 81.2 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    RotateTo( GetObjectByName( "merc3" ) , 54.5, 84.1 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    GSSetVar( 0, "apartyn3", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n1_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    MoveToPoint( GetObjectByName( "merc3" ) , 59.5, 81.2 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    RotateTo( GetObjectByName( "merc3" ) , 54.5, 84.1 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    GSSetVar( 0, "apartyn3", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n2_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    MoveToPoint( GetObjectByName( "merc3" ) , 68.3, 84.8 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    RotateTo( GetObjectByName( "merc3" ) , 66, 82 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    GSSetVar( 0, "apartyn3", 0 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.daughter.z18" ) 
+  )
+  then
+  (
+    KillScript(  )
+    GiveSkill(GetObjectByName("Hero"),"sense",2)
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+)
+
+WorldScript
+(
+  Sleep( 2 ) 
+  merc3 = GetObjectByID( "1000059186" ) 
+  LeverA = GetObjectByID( "1321" ) 
+  LeverL = GetObjectByID( "1323" ) 
+  Trap2 = GetObjectByID( "1335" ) 
+  Trap3 = GetObjectByID( "1336" ) 
+  Trap4 = GetObjectByID( "1337" ) 
+  Daughter = GetObjectByID( "1006649652" ) 
+  Clerk = GetObjectByID( "1000053585" ) 
+  Cellar = GetObjectByID( "653" ) 
+  Witch = GetObjectByID( "1000066007" ) 
+  VCheck#0#59( NULL ) 
+  VCheck#0#65( NULL ) 
+  VCheck#0#69( NULL ) 
+  VCheck#0#92( NULL ) 
+  VCheck#0#95( NULL ) 
+  VCheck#0#98( NULL ) 
+  VCheck#0#101( NULL ) 
+  VTriger#0#104( NULL ) 
+  VCheck#0#118( NULL ) 
+  VCheck#0#121( NULL ) 
+  VCheck#0#126( NULL ) 
+  VCheck#0#129( NULL ) 
+  VCheck#0#132( NULL ) 
+)

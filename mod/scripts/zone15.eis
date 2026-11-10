@@ -1,0 +1,2388 @@
+GlobalVars (
+  NULL : object,
+  VSS#i#val : object,
+  i : object,
+  BeastCage04 : object,
+  BeastCage05 : object,
+  BeastCage01 : object,
+  HadoganPrison00-43202y : object,
+  HadoganPrison00-43202x : object,
+  HadoganPrison00-43202w : object,
+  BeastCage03 : object,
+  HadoganPrison00-43202u : object,
+  BeastCage02 : object,
+  HadoganPrison00-43202s : object,
+  HadoganPrison00-43202r : object,
+  HadoganPrison00-43202o : object,
+  HadoganPrison00-43202n : object,
+  HadoganPrison00-43202m : object,
+  HadoganPrison00-43202e : object,
+  HadoganPrison00-43202b : object,
+  HSecondBridge : object,
+  HadoganPrison00-43202l : object,
+  HadoganCaveDoor00-43193a : object,
+  BonusChest00 : object,
+  BonusChest01 : object,
+  Leit1 : object,
+  HadoganPrison00-43202i : object,
+  HadoganPrison00-43202d : object,
+  CaveGates : object,
+  Healing01 : object,
+  Healing02 : object,
+  Healing03 : object,
+  YardGates01 : object,
+  YardGates02 : object,
+  YardGates04 : object,
+  YardGates03 : object,
+  MainGates : object,
+  CageLever : object,
+  FinishGates : object,
+  HeroPrison : object,
+  PChest : object,
+  HeroStatue : object,
+  HBridge3 : object,
+  HadoganPrison00-43202k : object,
+  HadoganPrison00-43202j : object,
+  HadoganPrison00-43202h : object,
+  HadoganPrison00-43202g : object,
+  HadoganPrison00-43202f : object,
+  HadoganPrison00-43202c : object,
+  HadoganPrison00-43202a : object,
+  GKeeper : group,
+  NightUnits : group,
+  Beasts : group,
+  Heroes : group,
+  DayUnits : group,
+  Chasers : group,
+  CaveG : group,
+  PrisonG : group,
+  Students : group,
+  KKeeper : group 
+)
+
+DeclareScript VCheck#0#1 (  this : object )
+DeclareScript VTriger#0#2 (  this : object )
+DeclareScript VCheck#0#10 (  this : object )
+DeclareScript VTriger#0#11 (  this : object )
+DeclareScript VCheck#0#13 (  this : object )
+DeclareScript VTriger#0#14 (  this : object )
+DeclareScript VCheck#0#16 (  this : object )
+DeclareScript VCheck#0#17 (  this : object )
+DeclareScript VTriger#0#18 (  this : object )
+DeclareScript VCheck#0#21 (  this : object )
+DeclareScript VCheck#0#22 (  this : object )
+DeclareScript VTriger#0#23 (  this : object )
+DeclareScript VCheck#0#26 (  this : object )
+DeclareScript VCheck#0#27 (  this : object )
+DeclareScript VTriger#0#28 (  this : object )
+DeclareScript VTriger#0#35 (  this : object )
+DeclareScript VCheck#0#38 (  this : object )
+DeclareScript VTriger#0#39 (  this : object )
+DeclareScript VTriger#0#40 (  this : object )
+DeclareScript VTriger#0#43 (  this : object )
+DeclareScript VCheck#0#44 (  this : object )
+DeclareScript VTriger#0#48 (  this : object )
+DeclareScript VCheck#0#49 (  this : object )
+DeclareScript VTriger#0#50 (  this : object )
+DeclareScript VCheck#0#51 (  this : object )
+DeclareScript VTriger#0#52 (  this : object )
+DeclareScript VTriger#0#53 (  this : object )
+DeclareScript VCheck#0#58 (  this : object )
+DeclareScript VCheck#0#59 (  this : object )
+DeclareScript VCheck#0#60 (  this : object )
+DeclareScript VTriger#0#61 (  this : object )
+DeclareScript VCheck#0#62 (  this : object )
+DeclareScript VTriger#0#63 (  this : object )
+DeclareScript VTriger#0#68 (  this : object )
+DeclareScript VCheck#0#71 (  this : object )
+DeclareScript VCheck#0#72 (  this : object )
+DeclareScript VCheck#0#77 (  this : object )
+DeclareScript VTriger#0#78 (  this : object )
+DeclareScript VCheck#0#80 (  this : object )
+DeclareScript VTriger#0#81 (  this : object )
+DeclareScript VCheck#0#83 (  this : object )
+DeclareScript VCheck#0#86 (  this : object )
+DeclareScript VTriger#0#88 (  this : object )
+DeclareScript VTriger#0#90 (  this : object )
+DeclareScript VTriger#0#97 (  this : object )
+DeclareScript VTriger#0#98 (  this : object )
+DeclareScript VTriger#0#101 (  this : object )
+DeclareScript VCheck#0#103 (  this : object )
+DeclareScript VTriger#0#104 (  this : object )
+DeclareScript VCheck#0#106 (  this : object )
+DeclareScript VTriger#0#107 (  this : object )
+DeclareScript VTriger#0#109 (  this : object )
+DeclareScript VCheck#0#113 (  this : object )
+DeclareScript VTriger#0#115 (  this : object )
+DeclareScript VTriger#0#120 (  this : object )
+DeclareScript VCheck#0#126 (  this : object )
+DeclareScript VTriger#0#127 (  this : object )
+DeclareScript VTriger#0#128 (  this : object )
+DeclareScript VTriger#0#132 (  this : object )
+DeclareScript VCheck#0#133 (  this : object )
+DeclareScript VTriger#0#134 (  this : object )
+DeclareScript VCheck#0#147 (  this : object )
+DeclareScript VTriger#0#148 (  this : object )
+DeclareScript VCheck#0#152 (  this : object )
+DeclareScript VTriger#0#153 (  this : object )
+DeclareScript VTriger#0#155 (  this : object )
+DeclareScript VTriger#0#157 (  this : object )
+DeclareScript VCheck#0#159 (  this : object )
+DeclareScript VTriger#0#160 (  this : object )
+DeclareScript VCheck#0#162 (  this : object )
+DeclareScript VTriger#0#163 (  this : object )
+DeclareScript VTriger#0#165 (  this : object )
+DeclareScript VCheck#0#166 (  this : object )
+DeclareScript VCheck#0#168 (  this : object )
+DeclareScript VTriger#0#169 (  this : object )
+DeclareScript VCheck#0#171 (  this : object )
+DeclareScript VTriger#0#172 (  this : object )
+DeclareScript VTriger#0#173 (  this : object )
+DeclareScript VTriger#0#174 (  this : object )
+DeclareScript VTriger#0#178 (  this : object )
+DeclareScript VTriger#0#179 (  this : object )
+DeclareScript VTriger#0#182 (  this : object )
+DeclareScript VTriger#0#183 (  this : object )
+DeclareScript VCheck#0#186 (  this : object )
+DeclareScript VTriger#0#187 (  this : object )
+DeclareScript VCheck#0#189 (  this : object )
+DeclareScript VCheck#0#191 (  this : object )
+DeclareScript VTriger#0#193 (  this : object )
+DeclareScript VCheck#0#195 (  this : object )
+DeclareScript VTriger#0#198 (  this : object )
+DeclareScript VTriger#0#200 (  this : object )
+DeclareScript VTriger#0#202 (  this : object )
+DeclareScript VTriger#0#205 (  this : object )
+DeclareScript VTriger#0#208 (  this : object )
+DeclareScript VCheck#0#212 (  this : object )
+DeclareScript VCheck#0#218 (  this : object )
+DeclareScript VTriger#0#220 (  this : object )
+DeclareScript VCheck#0#222 (  this : object )
+DeclareScript VTriger#0#223 (  this : object )
+DeclareScript VTriger#0#236 (  this : object )
+DeclareScript VCheck#0#237 (  this : object )
+DeclareScript VTriger#0#238 (  this : object )
+DeclareScript VCheck#0#241 (  this : object )
+DeclareScript VTriger#0#244 (  this : object )
+DeclareScript VTriger#0#257 (  this : object )
+DeclareScript VCheck#0#258 (  this : object )
+DeclareScript VTriger#0#259 (  this : object )
+DeclareScript VTriger#0#268 (  this : object )
+DeclareScript VTriger#0#280 (  this : object )
+DeclareScript VTriger#0#283 (  this : object )
+DeclareScript VTriger#0#286 (  this : object )
+DeclareScript VCheck#0#289 (  this : object )
+DeclareScript VTriger#0#290 (  this : object )
+DeclareScript VTriger#0#292 (  this : object )
+DeclareScript VTriger#0#294 (  this : object )
+DeclareScript VTriger#0#295 (  this : object )
+DeclareScript VCheck#0#296 (  this : object )
+DeclareScript VCheck#0#297 (  this : object )
+DeclareScript VTriger#0#298 (  this : object )
+DeclareScript VTriger#0#299 (  this : object )
+DeclareScript VCheck#0#316 (  this : object )
+DeclareScript VCheck#0#317 (  this : object )
+DeclareScript VCheck#0#318 (  this : object )
+DeclareScript VCheck#0#319 (  this : object )
+DeclareScript VCheck#0#320 (  this : object )
+DeclareScript VCheck#0#321 (  this : object )
+DeclareScript VCheck#0#322 (  this : object )
+DeclareScript VCheck#0#323 (  this : object )
+DeclareScript VTriger#0#324 (  this : object )
+DeclareScript VTriger#0#325 (  this : object )
+DeclareScript VTriger#0#326 (  this : object )
+DeclareScript VTriger#0#327 (  this : object )
+DeclareScript VTriger#0#336 (  this : object )
+DeclareScript VTriger#0#337 (  this : object )
+DeclareScript VTriger#0#340 (  this : object )
+DeclareScript VTriger#0#343 (  this : object )
+DeclareScript VCheck#0#345 (  this : object )
+DeclareScript VCheck#0#346 (  this : object )
+DeclareScript VTriger#0#347 (  this : object )
+DeclareScript VTriger#0#348 (  this : object )
+DeclareScript VCheck#0#352 (  this : object )
+DeclareScript VTriger#0#353 (  this : object )
+DeclareScript VCheck#0#356 (  this : object )
+DeclareScript VTriger#0#358 (  this : object )
+DeclareScript VCheck#0#360 (  this : object )
+DeclareScript VTriger#0#361 (  this : object )
+DeclareScript VTriger#0#364 (  this : object )
+DeclareScript VTriger#0#365 (  this : object )
+DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
+
+Script VCheck#0#1
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+    IsEqual( GetLeverState( MainGates ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#2( this ) 
+  )
+)
+
+Script VTriger#0#2
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.3", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.5", 1 ) 
+    EraseQuestItem( 0, 35 ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VCheck#0#10
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+    IsEqual( GetLeverState( CaveGates ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#11( this ) 
+  )
+)
+
+Script VTriger#0#11
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.9", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q62h", 2 ) 
+    EraseQuestItem( 0, 37 ) 
+  )
+)
+
+Script VCheck#0#13
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q61h" ) , 1 ) 
+    IsEqual( GetLeverState( HeroPrison ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#14( this ) 
+  )
+)
+
+Script VTriger#0#14
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    EraseQuestItem( 0, 36 ) 
+    GSSetVarMax( 0, "q.gz15h.q61h.3", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q61h", 2 ) 
+  )
+)
+
+Script VCheck#0#16
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.q60h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#17( this ) 
+  )
+)
+
+Script VCheck#0#17
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q60h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#18( this ) 
+  )
+)
+
+Script VTriger#0#18
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    QuestComplete( 0, "q60h" ) 
+    Sleep( 30 ) 
+    GSSetVarMax( 0, "b.Nalo.Kr60", 1 ) 
+    LeaveToZone( 0, "bz13h", 0 ) 
+  )
+)
+
+Script VCheck#0#21
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.q61h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#22( this ) 
+  )
+)
+
+Script VCheck#0#22
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q61h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#23( this ) 
+  )
+)
+
+Script VTriger#0#23
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    QuestComplete( 0, "q61h" ) 
+    Sleep( 30 ) 
+    SetCurrentParty( 0, "HeroAlone" ) 
+    GSSetVarMax( 0, "b.Nalo.Kr61", 1 ) 
+    FixWorldTime( 0 ) 
+    LeaveToZone( 0, "bz13h", 0 ) 
+  )
+)
+
+Script VCheck#0#26
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.q62h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#27( this ) 
+  )
+)
+
+Script VCheck#0#27
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#28( this ) 
+  )
+)
+
+Script VTriger#0#28
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    QuestComplete( 0, "q62h" ) 
+    GSSetVar( 0, "z.gz15h_gz16h", 0 ) 
+    GSSetVarMax( 0, "q.gz16h.q63h", 1 ) 
+    GSSetVarMax( 0, "q.gz16h.q63h.1", 1 ) 
+    GSSetVarMax( 0, "z.gz16h", 1 ) 
+    GSSetVarMax( 0, "z.gz15h", 2 ) 
+  )
+)
+
+Script VTriger#0#35
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "z.gz15h_gz16h", 1 ) 
+  )
+)
+
+Script VCheck#0#38
+(
+  if
+  (
+    IsEqual( GetLeverState( BonusChest00 ) , 1 ) 
+    IsLess( GSGetVar( 0, "q.gz15h.qh1h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#39( this ) 
+  )
+)
+
+Script VTriger#0#39
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#40( this ) 
+  )
+)
+
+Script VTriger#0#40
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh1h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh1h", 2 ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VTriger#0#43
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#44( VSS#i#val ) 
+    )
+  )
+)
+
+Script VCheck#0#44
+(
+  if
+  (
+    IsLess( GetX( this ) , 64 ) 
+    IsLess( GetY( this ) , 288 ) 
+    IsGreater( GetX( this ) , 36 ) 
+    IsGreater( GetY( this ) , 262 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#268( this ) 
+  )
+)
+
+Script VTriger#0#48
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#49( VSS#i#val ) 
+    )
+  )
+)
+
+Script VCheck#0#49
+(
+  if
+  (
+    IsLess( GetX( this ) , 257 ) 
+    IsLess( GetY( this ) , 57 ) 
+    IsGreater( GetX( this ) , 232 ) 
+    IsGreater( GetY( this ) , 45 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#50( this ) 
+  )
+)
+
+Script VTriger#0#50
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh2h", 1 ) 
+    GSSetVarMax( 0, "q.gz15h.qh2h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh2h.2", 1 ) 
+  )
+)
+
+Script VCheck#0#51
+(
+  if
+  (
+    IsEqual( GetLeverState( BonusChest01 ) , 1 ) 
+    IsLess( GSGetVar( 0, "q.gz15h.qh2h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#52( this ) 
+  )
+)
+
+Script VTriger#0#52
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#53( this ) 
+  )
+)
+
+Script VTriger#0#53
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh2h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh2h", 2 ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VCheck#0#58
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.qh1h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#59( this ) 
+  )
+)
+
+Script VCheck#0#59
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.qh1h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#61( this ) 
+  )
+)
+
+Script VCheck#0#60
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.qh2h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#62( this ) 
+  )
+)
+
+Script VTriger#0#61
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GiveMoney( 0, 50000 ) 
+    QuestComplete( 0, "qh1h" ) 
+  )
+)
+
+Script VCheck#0#62
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.qh2h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#63( this ) 
+  )
+)
+
+Script VTriger#0#63
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GiveMoney( 0, 50000 ) 
+    QuestComplete( 0, "qh2h" ) 
+  )
+)
+
+Script VTriger#0#68
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayMusic( 0, "chance" ) 
+    FixWorldTime( 12 ) 
+    SetScience( CageLever, 0, 0, 0, 0, 0, 0 ) 
+  )
+)
+
+Script VCheck#0#71
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q60h" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#68( this ) 
+  )
+)
+
+Script VCheck#0#72
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.q62h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#35( this ) 
+  )
+)
+
+Script VCheck#0#77
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#78( this ) 
+  )
+)
+
+Script VTriger#0#78
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "z.gz15h_gz16h", 0 ) 
+  )
+)
+
+Script VCheck#0#80
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#81( this ) 
+    VTriger#0#97( this ) 
+  )
+)
+
+Script VTriger#0#81
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    FixWorldTime( 0 ) 
+    AddMob( "zone15night.mob" ) 
+    SwitchLeverState( PChest, 1 ) 
+    SetCPFast( HeroStatue, GetX( HeroStatue ) , GetY( HeroStatue ) , -3 ) 
+    Sleep( 15 ) 
+    VTriger#0#101( this ) 
+  )
+)
+
+Script VCheck#0#83
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q61h" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#90( this ) 
+    VTriger#0#155( this ) 
+    VCheck#0#360( this ) 
+    VTriger#0#365( this ) 
+  )
+)
+
+Script VCheck#0#86
+(
+  if
+  (
+    IsGreater( GetWorldTime(  ) , 23.5 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#88( this ) 
+  )
+)
+
+Script VTriger#0#88
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    FixWorldTime( 0 ) 
+  )
+)
+
+Script VTriger#0#90
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SetCPFast( HeroStatue, GetX( HeroStatue ) , GetY( HeroStatue ) , 0.2 ) 
+    RunWorldTime( 12 ) 
+    VCheck#0#86( this ) 
+  )
+)
+
+Script VTriger#0#97
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, DayUnits ) 
+    (
+      VTriger#0#98( VSS#i#val ) 
+    )
+  )
+)
+
+Script VTriger#0#98
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    RemoveUnitFromServer( this ) 
+  )
+)
+
+Script VTriger#0#101
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SwitchLeverState( FinishGates, 0 ) 
+    SetScience( FinishGates, 0, 0, 0, 0, 0, 0 ) 
+    SetScience( CageLever, 0, 0, 1, 0, 0, 0 ) 
+    VTriger#0#157( this ) 
+  )
+)
+
+Script VCheck#0#103
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q60h" ) , 1 ) 
+    IsEqual( GetLeverState( FinishGates ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#104( this ) 
+  )
+)
+
+Script VTriger#0#104
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q60h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q60h.3", 1 ) 
+  )
+)
+
+Script VCheck#0#106
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q60h" ) , 1 ) 
+    IsLess( GetX( this ) , 212 ) 
+    IsLess( GetY( this ) , 321 ) 
+    IsGreater( GetX( this ) , 206 ) 
+    IsGreater( GetY( this ) , 316 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#107( this ) 
+  )
+)
+
+Script VTriger#0#107
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q60h.3", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q60h", 2 ) 
+  )
+)
+
+Script VTriger#0#109
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#106( VSS#i#val ) 
+    )
+  )
+)
+
+Script VCheck#0#113
+(
+  if
+  (
+    IsEqual( GetLeverState( Healing01 ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#280( this ) 
+  )
+)
+
+Script VTriger#0#115
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    CastSpellUnit( "strength{d2;d2;d2;d2}", GetX( Healing02 ) , GetY( Healing02 ) , GetObjectByName( "Hero" )  ) 
+    VTriger#0#120( this ) 
+  )
+)
+
+Script VTriger#0#120
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 450 ) 
+    SwitchLeverState( Healing01, 0 ) 
+    EnableLever( Healing01, 1 ) 
+    VCheck#0#113( this ) 
+  )
+)
+
+Script VCheck#0#126
+(
+  if
+  (
+    IsEqual( GetLeverState( Healing02 ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#283( this ) 
+  )
+)
+
+Script VTriger#0#127
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    CastSpellUnit( "infravision{d2;d2;d2;d2}", GetX( Healing03 ) , GetY( Healing03 ) , GetObjectByName( "Hero" )  ) 
+    VTriger#0#128( this ) 
+  )
+)
+
+Script VTriger#0#128
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 450 ) 
+    SwitchLeverState( Healing02, 0 ) 
+    EnableLever( Healing02, 1 ) 
+    VCheck#0#126( this ) 
+  )
+)
+
+Script VTriger#0#132
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    CastSpellUnit( "healing{e2;e2;e2;e2}", GetX( Healing01 ) , GetY( Healing01 ) , GetObjectByName( "Hero" )  ) 
+    VTriger#0#134( this ) 
+  )
+)
+
+Script VCheck#0#133
+(
+  if
+  (
+    IsEqual( GetLeverState( Healing03 ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#286( this ) 
+  )
+)
+
+Script VTriger#0#134
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 450 ) 
+    SwitchLeverState( Healing03, 0 ) 
+    EnableLever( Healing03, 1 ) 
+    VCheck#0#133( this ) 
+  )
+)
+
+Script VCheck#0#147
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q61h" ) , 1 ) 
+    GroupSize( GroupCross( PlayerSee( 0 ) , KKeeper )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#148( this ) 
+  )
+)
+
+Script VTriger#0#148
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q61h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q61h.2", 1 ) 
+  )
+)
+
+Script VCheck#0#152
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q61h" ) , 1 ) 
+    HaveItem( 0, 36 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#153( this ) 
+  )
+)
+
+Script VTriger#0#153
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q61h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q61h.3", 1 ) 
+  )
+)
+
+Script VTriger#0#155
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SetDiplomacy( 0, 2, 0 ) 
+    SetDiplomacy( 2, 0, 0 ) 
+    SetDiplomacy( 0, 3, 0 ) 
+    SetDiplomacy( 3, 0, 0 ) 
+    SetDiplomacy( 0, 4, 0 ) 
+    SetDiplomacy( 4, 0, 0 ) 
+    VTriger#0#343( this ) 
+  )
+)
+
+Script VTriger#0#157
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SetDiplomacy( 0, 2, -1 ) 
+    SetDiplomacy( 2, 0, -1 ) 
+    SetDiplomacy( 0, 3, -1 ) 
+    SetDiplomacy( 3, 0, -1 ) 
+    SetDiplomacy( 0, 4, -1 ) 
+    SetDiplomacy( 4, 0, -1 ) 
+  )
+)
+
+Script VCheck#0#159
+(
+  if
+  (
+    IsEqual( GetLeverState( YardGates01 ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#160( this ) 
+  )
+)
+
+Script VTriger#0#160
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VCheck#0#162
+(
+  if
+  (
+    IsEqual( GetLeverState( YardGates02 ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#163( this ) 
+  )
+)
+
+Script VTriger#0#163
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VTriger#0#165
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VCheck#0#166
+(
+  if
+  (
+    IsEqual( GetLeverState( YardGates03 ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#165( this ) 
+  )
+)
+
+Script VCheck#0#168
+(
+  if
+  (
+    IsEqual( GetLeverState( YardGates04 ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#169( this ) 
+  )
+)
+
+Script VTriger#0#169
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VCheck#0#171
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+    IsEqual( GetLeverState( CageLever ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#172( this ) 
+    VCheck#0#191( this ) 
+    VTriger#0#336( this ) 
+  )
+)
+
+Script VTriger#0#172
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.4", 2 ) 
+    GSSetVarMax( 0, "LongD", 1 ) 
+    VTriger#0#173( this ) 
+  )
+)
+
+Script VTriger#0#173
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SwitchLeverState( BeastCage01, 1 ) 
+    SwitchLeverState( BeastCage02, 1 ) 
+    SwitchLeverState( BeastCage04, 1 ) 
+    SwitchLeverState( BeastCage05, 1 ) 
+    VTriger#0#174( this ) 
+    VTriger#0#178( this ) 
+    VTriger#0#182( this ) 
+  )
+)
+
+Script VTriger#0#174
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VTriger#0#178
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Beasts ) 
+    (
+      VTriger#0#179( VSS#i#val ) 
+    )
+  )
+)
+
+Script VTriger#0#179
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Run( this ) 
+    UMSentry( this, 98, 75 ) 
+  )
+)
+
+Script VTriger#0#182
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Chasers ) 
+    (
+      VTriger#0#183( VSS#i#val ) 
+    )
+  )
+)
+
+Script VTriger#0#183
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Run( this ) 
+    UMSentry( this, 98, 75 ) 
+  )
+)
+
+Script VCheck#0#186
+(
+  if
+  (
+    IsEqual( GetLeverState( FinishGates ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#187( this ) 
+  )
+)
+
+Script VTriger#0#187
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 30 ) 
+  )
+)
+
+Script VCheck#0#189
+(
+  if
+  (
+    IsLess( GetX( this ) , 56 ) 
+    IsLess( GetY( this ) , 213 ) 
+    IsGreater( GetX( this ) , 38 ) 
+    IsGreater( GetY( this ) , 204 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#195( this ) 
+  )
+)
+
+Script VCheck#0#191
+(
+  if
+  (
+    Every( i, Beasts, IsDead( i )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#340( this ) 
+  )
+)
+
+Script VTriger#0#193
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( GSGetVar( 0, "DefaultChaseDelay" )  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.10", 1 ) 
+    VTriger#0#198( this ) 
+  )
+)
+
+Script VCheck#0#195
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.q62h.4" ) , 2 ) 
+    Not( IsEqual( GSGetVar( 0, "LongD" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#193( this ) 
+  )
+)
+
+Script VTriger#0#198
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Chasers ) 
+    (
+      VTriger#0#200( VSS#i#val ) 
+    )
+  )
+)
+
+Script VTriger#0#200
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Run( this ) 
+    VTriger#0#202( this ) 
+  )
+)
+
+Script VTriger#0#202
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    UMSentry( this, GetX( GetObjectByName( "Hero" )  ) , GetY( GetObjectByName( "Hero" )  )  ) 
+    VTriger#0#205( this ) 
+  )
+)
+
+Script VTriger#0#205
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( GSGetVar( 0, "ChaseDelay15" )  ) 
+    VTriger#0#200( this ) 
+  )
+)
+
+Script VTriger#0#208
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#189( VSS#i#val ) 
+    )
+  )
+)
+
+Script VCheck#0#212
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#208( this ) 
+    VTriger#0#337( this ) 
+  )
+)
+
+Script VCheck#0#218
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+    GroupSize( GroupCross( PlayerSee( 0 ) , GKeeper )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#220( this ) 
+  )
+)
+
+Script VTriger#0#220
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.2", 1 ) 
+  )
+)
+
+Script VCheck#0#222
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+    HaveItem( 0, 35 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#223( this ) 
+  )
+)
+
+Script VTriger#0#223
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.3", 1 ) 
+  )
+)
+
+Script VTriger#0#236
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#237( VSS#i#val ) 
+    )
+  )
+)
+
+Script VCheck#0#237
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+    IsLess( GetX( this ) , 125 ) 
+    IsLess( GetY( this ) , 336 ) 
+    IsGreater( GetX( this ) , 100 ) 
+    IsGreater( GetY( this ) , 303 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#238( this ) 
+  )
+)
+
+Script VTriger#0#238
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.5", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.6", 1 ) 
+  )
+)
+
+Script VCheck#0#241
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q62h" ) , 1 ) 
+    HaveItem( 0, 37 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#244( this ) 
+  )
+)
+
+Script VTriger#0#244
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.8", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q62h.9", 1 ) 
+  )
+)
+
+Script VTriger#0#257
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#258( VSS#i#val ) 
+      VCheck#0#352( VSS#i#val ) 
+      VCheck#0#356( VSS#i#val ) 
+    )
+  )
+)
+
+Script VCheck#0#258
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q60h" ) , 1 ) 
+    IsLess( GetX( this ) , 208 ) 
+    IsLess( GetY( this ) , 335 ) 
+    IsGreater( GetX( this ) , 190 ) 
+    IsGreater( GetY( this ) , 308 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#259( this ) 
+  )
+)
+
+Script VTriger#0#259
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.q60h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.q60h.2", 1 ) 
+    SendStringEvent( 0, "say s30 Hero" ) 
+  )
+)
+
+Script VTriger#0#268
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh1h", 1 ) 
+    GSSetVarMax( 0, "q.gz15h.qh1h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh1h.2", 1 ) 
+  )
+)
+
+Script VTriger#0#280
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh3h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh3h", 2 ) 
+    VTriger#0#115( this ) 
+  )
+)
+
+Script VTriger#0#283
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh4h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh4h", 2 ) 
+    VTriger#0#127( this ) 
+  )
+)
+
+Script VTriger#0#286
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh5h.2", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh5h", 2 ) 
+    VTriger#0#132( this ) 
+  )
+)
+
+Script VCheck#0#289
+(
+  if
+  (
+    IsLess( DistanceUnitUnit( this, Healing01 ) , 10 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#292( this ) 
+  )
+)
+
+Script VTriger#0#290
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#289( VSS#i#val ) 
+    )
+  )
+)
+
+Script VTriger#0#292
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh3h", 1 ) 
+    GSSetVarMax( 0, "q.gz15h.qh3h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh3h.2", 1 ) 
+  )
+)
+
+Script VTriger#0#294
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#296( VSS#i#val ) 
+    )
+  )
+)
+
+Script VTriger#0#295
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    For( VSS#i#val, Heroes ) 
+    (
+      VCheck#0#297( VSS#i#val ) 
+    )
+  )
+)
+
+Script VCheck#0#296
+(
+  if
+  (
+    IsLess( DistanceUnitUnit( this, Healing02 ) , 10 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#298( this ) 
+  )
+)
+
+Script VCheck#0#297
+(
+  if
+  (
+    IsLess( DistanceUnitUnit( this, Healing03 ) , 10 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#299( this ) 
+  )
+)
+
+Script VTriger#0#298
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh4h", 1 ) 
+    GSSetVarMax( 0, "q.gz15h.qh4h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh4h.2", 1 ) 
+  )
+)
+
+Script VTriger#0#299
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "q.gz15h.qh5h", 1 ) 
+    GSSetVarMax( 0, "q.gz15h.qh5h.1", 2 ) 
+    GSSetVarMax( 0, "q.gz15h.qh5h.2", 1 ) 
+  )
+)
+
+Script VCheck#0#316
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.qh3h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#320( this ) 
+  )
+)
+
+Script VCheck#0#317
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.qh4h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#321( this ) 
+  )
+)
+
+Script VCheck#0#318
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.qh5h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#322( this ) 
+  )
+)
+
+Script VCheck#0#319
+(
+  if
+  (
+    IsLess( GSGetVar( 0, "q.gz15h.qh6h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VCheck#0#323( this ) 
+  )
+)
+
+Script VCheck#0#320
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.qh3h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#324( this ) 
+  )
+)
+
+Script VCheck#0#321
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.qh4h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#325( this ) 
+  )
+)
+
+Script VCheck#0#322
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.qh5h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#326( this ) 
+  )
+)
+
+Script VCheck#0#323
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.qh6h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#327( this ) 
+  )
+)
+
+Script VTriger#0#324
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    QuestComplete( 0, "qh3h" ) 
+  )
+)
+
+Script VTriger#0#325
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    QuestComplete( 0, "qh4h" ) 
+  )
+)
+
+Script VTriger#0#326
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    QuestComplete( 0, "qh5h" ) 
+  )
+)
+
+Script VTriger#0#327
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    QuestComplete( 0, "qh6h" ) 
+  )
+)
+
+Script VTriger#0#336
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ChaseDelay15", 300 ) 
+  )
+)
+
+Script VTriger#0#337
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ChaseDelay15", 300 ) 
+  )
+)
+
+Script VTriger#0#340
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( GSGetVar( 0, "AdditionalChaseDelay" )  ) 
+    VTriger#0#193( this ) 
+  )
+)
+
+Script VTriger#0#343
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SetScience( CageLever, 0, 0, 0, 0, 0, 0 ) 
+  )
+)
+
+Script VCheck#0#345
+(
+  if
+  (
+    IsDead( GetObjectByName( "merc7" )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#347( this ) 
+  )
+)
+
+Script VCheck#0#346
+(
+  if
+  (
+    IsDead( GetObjectByName( "merc8" )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#348( this ) 
+  )
+)
+
+Script VTriger#0#347
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "adeadn7", 1 ) 
+  )
+)
+
+Script VTriger#0#348
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "adeadn8", 1 ) 
+  )
+)
+
+Script VCheck#0#352
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q60h" ) , 1 ) 
+    Not( IsEqual( GSGetVar( 0, "S28W" ) , 1 )  ) 
+    IsGreater( DistanceUnitUnit( this, MainGates ) , 15 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#353( this ) 
+  )
+)
+
+Script VTriger#0#353
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "S28W", 1 ) 
+    SendStringEvent( 0, "say s28 Hero" ) 
+  )
+)
+
+Script VCheck#0#356
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz15h.q60h" ) , 1 ) 
+    Not( IsEqual( GSGetVar( 0, "S29W" ) , 1 )  ) 
+    IsLess( DistanceUnitUnit( this, HSecondBridge ) , 7 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#358( this ) 
+  )
+)
+
+Script VTriger#0#358
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "S29W", 1 ) 
+    SendStringEvent( 0, "say s29 Hero" ) 
+  )
+)
+
+Script VCheck#0#360
+(
+  if
+  (
+    Not( IsEqual( GSGetVar( 0, "S40W" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#361( this ) 
+  )
+)
+
+Script VTriger#0#361
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "S40W", 1 ) 
+    SendStringEvent( 0, "say s40 Nalo" ) 
+  )
+)
+
+Script VTriger#0#364
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "DefaultChaseDelay", 2000 ) 
+    GSSetVar( 0, "AdditionalChaseDelay", 10000 ) 
+  )
+)
+
+Script VTriger#0#365
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayMusic( 0, "Crawler" ) 
+    Sleep( 4320 ) 
+    VCheck#0#83( this ) 
+  )
+)
+
+Script #OnBriefingComplete
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+)
+
+WorldScript
+(
+  Sleep( 2 ) 
+  BeastCage04 = GetObjectByID( "42988" ) 
+  BeastCage05 = GetObjectByID( "42989" ) 
+  BeastCage01 = GetObjectByID( "42990" ) 
+  HadoganPrison00-43202y = GetObjectByID( "42991" ) 
+  HadoganPrison00-43202x = GetObjectByID( "42992" ) 
+  HadoganPrison00-43202w = GetObjectByID( "42993" ) 
+  BeastCage03 = GetObjectByID( "42994" ) 
+  HadoganPrison00-43202u = GetObjectByID( "42995" ) 
+  BeastCage02 = GetObjectByID( "42996" ) 
+  HadoganPrison00-43202s = GetObjectByID( "42997" ) 
+  HadoganPrison00-43202r = GetObjectByID( "42998" ) 
+  HadoganPrison00-43202o = GetObjectByID( "43000" ) 
+  HadoganPrison00-43202n = GetObjectByID( "43001" ) 
+  HadoganPrison00-43202m = GetObjectByID( "43002" ) 
+  HadoganPrison00-43202e = GetObjectByID( "42983" ) 
+  HadoganPrison00-43202b = GetObjectByID( "42986" ) 
+  HSecondBridge = GetObjectByID( "43212" ) 
+  HadoganPrison00-43202l = GetObjectByID( "42976" ) 
+  HadoganCaveDoor00-43193a = GetObjectByID( "43225" ) 
+  BonusChest00 = GetObjectByID( "43397" ) 
+  BonusChest01 = GetObjectByID( "43398" ) 
+  Leit1 = GetObjectByID( "43400" ) 
+  HadoganPrison00-43202i = GetObjectByID( "42979" ) 
+  HadoganPrison00-43202d = GetObjectByID( "42984" ) 
+  CaveGates = GetObjectByID( "338768" ) 
+  Healing01 = GetObjectByID( "338769" ) 
+  Healing02 = GetObjectByID( "338770" ) 
+  Healing03 = GetObjectByID( "338771" ) 
+  YardGates01 = GetObjectByID( "338772" ) 
+  YardGates02 = GetObjectByID( "338773" ) 
+  YardGates04 = GetObjectByID( "338774" ) 
+  YardGates03 = GetObjectByID( "338775" ) 
+  MainGates = GetObjectByID( "338776" ) 
+  CageLever = GetObjectByID( "338779" ) 
+  FinishGates = GetObjectByID( "338794" ) 
+  HeroPrison = GetObjectByID( "338795" ) 
+  PChest = GetObjectByID( "914718" ) 
+  HeroStatue = GetObjectByID( "914719" ) 
+  HBridge3 = GetObjectByID( "42934" ) 
+  HadoganPrison00-43202k = GetObjectByID( "42977" ) 
+  HadoganPrison00-43202j = GetObjectByID( "42978" ) 
+  HadoganPrison00-43202h = GetObjectByID( "42980" ) 
+  HadoganPrison00-43202g = GetObjectByID( "42981" ) 
+  HadoganPrison00-43202f = GetObjectByID( "42982" ) 
+  HadoganPrison00-43202c = GetObjectByID( "42985" ) 
+  HadoganPrison00-43202a = GetObjectByID( "42987" ) 
+  AddObject( Beasts, GetObject( 338780 )  ) 
+  AddObject( Beasts, GetObject( 338781 )  ) 
+  AddObject( Beasts, GetObject( 338787 )  ) 
+  AddObject( Beasts, GetObject( 338788 )  ) 
+  AddObject( Beasts, GetObject( 338783 )  ) 
+  AddObject( Beasts, GetObject( 338784 )  ) 
+  AddObject( Beasts, GetObject( 338785 )  ) 
+  AddObject( Beasts, GetObject( 338786 )  ) 
+  AddObject( DayUnits, GetObject( 914721 )  ) 
+  AddObject( DayUnits, GetObject( 43399 )  ) 
+  AddObject( DayUnits, GetObject( 338798 )  ) 
+  AddObject( DayUnits, GetObject( 338807 )  ) 
+  AddObject( DayUnits, GetObject( 338808 )  ) 
+  AddObject( DayUnits, GetObject( 338814 )  ) 
+  AddObject( DayUnits, GetObject( 43402 )  ) 
+  AddObject( DayUnits, GetObject( 43403 )  ) 
+  AddObject( DayUnits, GetObject( 338799 )  ) 
+  AddObject( DayUnits, GetObject( 338803 )  ) 
+  AddObject( DayUnits, GetObject( 338809 )  ) 
+  AddObject( DayUnits, GetObject( 338815 )  ) 
+  AddObject( DayUnits, GetObject( 43404 )  ) 
+  AddObject( DayUnits, GetObject( 43405 )  ) 
+  AddObject( DayUnits, GetObject( 338804 )  ) 
+  AddObject( DayUnits, GetObject( 338805 )  ) 
+  AddObject( DayUnits, GetObject( 338806 )  ) 
+  AddObject( DayUnits, GetObject( 338816 )  ) 
+  AddObject( DayUnits, GetObject( 338820 )  ) 
+  AddObject( DayUnits, GetObject( 338821 )  ) 
+  AddObject( DayUnits, GetObject( 338823 )  ) 
+  AddObject( DayUnits, GetObject( 43400 )  ) 
+  AddObject( Chasers, GetObject( 338790 )  ) 
+  AddObject( Chasers, GetObject( 338791 )  ) 
+  AddObject( Chasers, GetObject( 338792 )  ) 
+  AddObject( Chasers, GetObject( 338793 )  ) 
+  AddObject( PrisonG, GetObject( 338790 )  ) 
+  AddObject( PrisonG, GetObject( 338791 )  ) 
+  AddObject( PrisonG, GetObject( 338792 )  ) 
+  AddObject( PrisonG, GetObject( 338793 )  ) 
+  AddObject( KKeeper, GetObject( 43400 )  ) 
+  VCheck#0#1( NULL ) 
+  VCheck#0#10( NULL ) 
+  VCheck#0#13( NULL ) 
+  VCheck#0#16( NULL ) 
+  VCheck#0#21( NULL ) 
+  VCheck#0#26( NULL ) 
+  VCheck#0#38( NULL ) 
+  VTriger#0#43( NULL ) 
+  VTriger#0#48( NULL ) 
+  VCheck#0#51( NULL ) 
+  VCheck#0#58( NULL ) 
+  VCheck#0#60( NULL ) 
+  VCheck#0#71( NULL ) 
+  VCheck#0#72( NULL ) 
+  VCheck#0#77( NULL ) 
+  VCheck#0#80( NULL ) 
+  VCheck#0#83( NULL ) 
+  VCheck#0#103( NULL ) 
+  VTriger#0#109( NULL ) 
+  VCheck#0#113( NULL ) 
+  VCheck#0#126( NULL ) 
+  VCheck#0#133( NULL ) 
+  VCheck#0#147( NULL ) 
+  VCheck#0#152( NULL ) 
+  VCheck#0#159( NULL ) 
+  VCheck#0#162( NULL ) 
+  VCheck#0#166( NULL ) 
+  VCheck#0#168( NULL ) 
+  VCheck#0#171( NULL ) 
+  VCheck#0#186( NULL ) 
+  VCheck#0#212( NULL ) 
+  VCheck#0#218( NULL ) 
+  VCheck#0#222( NULL ) 
+  VTriger#0#236( NULL ) 
+  VCheck#0#241( NULL ) 
+  VTriger#0#257( NULL ) 
+  VTriger#0#290( NULL ) 
+  VTriger#0#294( NULL ) 
+  VTriger#0#295( NULL ) 
+  VCheck#0#316( NULL ) 
+  VCheck#0#317( NULL ) 
+  VCheck#0#318( NULL ) 
+  VCheck#0#319( NULL ) 
+  VTriger#0#364( NULL ) 
+)

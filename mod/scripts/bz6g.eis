@@ -1,0 +1,562 @@
+GlobalVars (
+  NULL : object,
+  VSS#i#val : object,
+  i : object,
+  OrcCamp10 : object,
+  OrcCamp9 : object,
+  OrcCamp6 : object,
+  OrcCamp8 : object,
+  OrcCamp18 : object,
+  OrcCamp3 : object,
+  OrcCamp1 : object,
+  OrcCamp23 : object,
+  OrcCamp12 : object,
+  OB1L6 : object,
+  OrcCamp2 : object,
+  OrcCamp20 : object,
+  OrcCamp11 : object,
+  OrcCamp7 : object,
+  OrcCamp14 : object,
+  OrcCamp15 : object,
+  OrcCamp4 : object 
+)
+
+DeclareScript VTriger#0#1 (  this : object )
+DeclareScript VTriger#0#2 (  this : object )
+DeclareScript VTriger#0#3 (  this : object )
+DeclareScript VTriger#0#4 (  this : object )
+DeclareScript VTriger#0#5 (  this : object )
+DeclareScript VTriger#0#6 (  this : object )
+DeclareScript VTriger#0#7 (  this : object )
+DeclareScript VTriger#0#8 (  this : object )
+DeclareScript VTriger#0#9 (  this : object )
+DeclareScript VTriger#0#10 (  this : object )
+DeclareScript VTriger#0#11 (  this : object )
+DeclareScript VTriger#0#12 (  this : object )
+DeclareScript VTriger#0#17 (  this : object )
+DeclareScript VTriger#0#18 (  this : object )
+DeclareScript VTriger#0#21 (  this : object )
+DeclareScript VTriger#0#22 (  this : object )
+DeclareScript VTriger#0#25 (  this : object )
+DeclareScript VTriger#0#27 (  this : object )
+DeclareScript VTriger#0#31 (  this : object )
+DeclareScript VTriger#0#32 (  this : object )
+DeclareScript VTriger#0#35 (  this : object )
+DeclareScript VTriger#0#36 (  this : object )
+DeclareScript VTriger#0#41 (  this : object )
+DeclareScript VTriger#0#42 (  this : object )
+DeclareScript VCheck#0#61 (  this : object )
+DeclareScript VCheck#0#62 (  this : object )
+DeclareScript VCheck#0#63 (  this : object )
+DeclareScript VCheck#0#64 (  this : object )
+DeclareScript VTriger#0#65 (  this : object )
+DeclareScript VTriger#0#67 (  this : object )
+DeclareScript VTriger#0#69 (  this : object )
+DeclareScript VTriger#0#71 (  this : object )
+DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
+
+Script VTriger#0#1
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp1, "crest" ) 
+  )
+)
+
+Script VTriger#0#2
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp2, "crest" ) 
+  )
+)
+
+Script VTriger#0#3
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp3, "crest" ) 
+  )
+)
+
+Script VTriger#0#4
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp4, "crest" ) 
+  )
+)
+
+Script VTriger#0#5
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp6, "crest" ) 
+  )
+)
+
+Script VTriger#0#6
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp7, "crest" ) 
+  )
+)
+
+Script VTriger#0#7
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp8, "crest" ) 
+  )
+)
+
+Script VTriger#0#8
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp9, "crest" ) 
+  )
+)
+
+Script VTriger#0#9
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp10, "uattack07" ) 
+    Sleep( 23 ) 
+    PlayAnimation( OrcCamp10, "uattack05" ) 
+    VTriger#0#11( this ) 
+  )
+)
+
+Script VTriger#0#10
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp11, "uattack04" ) 
+    Sleep( 26 ) 
+    PlayAnimation( OrcCamp11, "uattack09" ) 
+    Sleep( 25 ) 
+    PlayAnimation( OrcCamp11, "uattack08" ) 
+    VTriger#0#12( this ) 
+  )
+)
+
+Script VTriger#0#11
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 28 ) 
+    VTriger#0#9( this ) 
+  )
+)
+
+Script VTriger#0#12
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 25 ) 
+    VTriger#0#10( this ) 
+  )
+)
+
+Script VTriger#0#17
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp12, "uattack04" ) 
+    VTriger#0#18( this ) 
+  )
+)
+
+Script VTriger#0#18
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 26 ) 
+    VTriger#0#17( this ) 
+  )
+)
+
+Script VTriger#0#21
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp14, "cidle04" ) 
+    VTriger#0#22( this ) 
+  )
+)
+
+Script VTriger#0#22
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 45 ) 
+    VTriger#0#21( this ) 
+  )
+)
+
+Script VTriger#0#25
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp15, "ubriefing01" ) 
+    VTriger#0#27( this ) 
+  )
+)
+
+Script VTriger#0#27
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 56 ) 
+    VTriger#0#25( this ) 
+  )
+)
+
+Script VTriger#0#31
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp18, "ubriefing02" ) 
+    VTriger#0#32( this ) 
+  )
+)
+
+Script VTriger#0#32
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 100 ) 
+    VTriger#0#31( this ) 
+  )
+)
+
+Script VTriger#0#35
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp20, "ubriefing01" ) 
+    VTriger#0#36( this ) 
+  )
+)
+
+Script VTriger#0#36
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 110 ) 
+    VTriger#0#35( this ) 
+  )
+)
+
+Script VTriger#0#41
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( OrcCamp23, "cidle04" ) 
+    VTriger#0#42( this ) 
+  )
+)
+
+Script VTriger#0#42
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 45 ) 
+    VTriger#0#41( this ) 
+  )
+)
+
+Script VCheck#0#61
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc1.n1_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#65( this ) 
+  )
+)
+
+Script VCheck#0#62
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc3.n3_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#67( this ) 
+  )
+)
+
+Script VCheck#0#63
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc1.n1_10" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#69( this ) 
+  )
+)
+
+Script VCheck#0#64
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc3.n3_10" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#71( this ) 
+  )
+)
+
+Script VTriger#0#65
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc1.n1_2", 0 ) 
+  )
+)
+
+Script VTriger#0#67
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc3.n3_2", 0 ) 
+  )
+)
+
+Script VTriger#0#69
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc1.n1_10", 0 ) 
+  )
+)
+
+Script VTriger#0#71
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc3.n3_10", 0 ) 
+  )
+)
+
+Script #OnBriefingComplete
+(
+  if
+  (
+    IsEqualString( szComplete, "b.OrcC.Sh40" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "PeaceSv", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n1_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    MoveToPoint( GetObjectByName( "merc4" ) , 67, 68 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    RotateTo( GetObjectByName( "merc4" ) , 70.7, 62.7 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    GSSetVar( 0, "apartyn4", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n2_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    MoveToPoint( GetObjectByName( "merc4" ) , 74.7, 58.1 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    RotateTo( GetObjectByName( "merc4" ) , 72.7, 62.45 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    GSSetVar( 0, "apartyn4", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n3_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    MoveToPoint( GetObjectByName( "merc4" ) , 67, 68 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    RotateTo( GetObjectByName( "merc4" ) , 70.7, 62.7 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    GSSetVar( 0, "apartyn4", 1 ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+)
+
+WorldScript
+(
+  Sleep( 2 ) 
+  OrcCamp10 = GetObjectByID( "678151" ) 
+  OrcCamp9 = GetObjectByID( "945408" ) 
+  OrcCamp6 = GetObjectByID( "661275" ) 
+  OrcCamp8 = GetObjectByID( "256621" ) 
+  OrcCamp18 = GetObjectByID( "129914" ) 
+  OrcCamp3 = GetObjectByID( "925597" ) 
+  OrcCamp1 = GetObjectByID( "222552" ) 
+  OrcCamp23 = GetObjectByID( "956881" ) 
+  OrcCamp12 = GetObjectByID( "756113" ) 
+  OB1L6 = GetObjectByID( "1375" ) 
+  OrcCamp2 = GetObjectByID( "467629" ) 
+  OrcCamp20 = GetObjectByID( "741404" ) 
+  OrcCamp11 = GetObjectByID( "373075" ) 
+  OrcCamp7 = GetObjectByID( "53210" ) 
+  OrcCamp14 = GetObjectByID( "204762" ) 
+  OrcCamp15 = GetObjectByID( "880952" ) 
+  OrcCamp4 = GetObjectByID( "738068" ) 
+  VTriger#0#1( NULL ) 
+  VTriger#0#2( NULL ) 
+  VTriger#0#3( NULL ) 
+  VTriger#0#4( NULL ) 
+  VTriger#0#5( NULL ) 
+  VTriger#0#6( NULL ) 
+  VTriger#0#7( NULL ) 
+  VTriger#0#8( NULL ) 
+  VTriger#0#9( NULL ) 
+  VTriger#0#10( NULL ) 
+  VTriger#0#17( NULL ) 
+  VTriger#0#25( NULL ) 
+  VTriger#0#31( NULL ) 
+  VTriger#0#35( NULL ) 
+  VTriger#0#41( NULL ) 
+)

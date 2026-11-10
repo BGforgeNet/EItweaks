@@ -1,0 +1,285 @@
+GlobalVars (
+  NULL : object,
+  VSS#i#val : object,
+  i : object,
+  HeroPrison : object,
+  YardGates03opened : object,
+  MainGatesOpened : object,
+  YardGates04opened : object,
+  HadoganPrison00-43202l : object,
+  HadoganPrison00-43202k : object,
+  HadoganPrison00-43202i : object,
+  HadoganPrison00-43202c : object,
+  HadoganPrison00-43202b : object,
+  HadoganPrison00-43202a : object,
+  BeastCage04 : object,
+  BeastCage05 : object,
+  BeastCage01 : object,
+  HadoganPrison00-43202w : object,
+  BeastCage02 : object,
+  HadoganPrison00-43202s : object,
+  HadoganPrison00-43202r : object,
+  HeroPrisonOpened : object,
+  HadoganPrison00-43202o : object,
+  HadoganPrison00-43202n : object,
+  HadoganPrison00-43202m : object,
+  PChest : object,
+  YardGates04 : object,
+  YardGates03 : object,
+  MainGates : object,
+  CageLeverOn : object,
+  CageLever : object,
+  HGuard1 : object 
+)
+
+DeclareScript VCheck#0#1 (  this : object )
+DeclareScript VTriger#0#2 (  this : object )
+DeclareScript VCheck#0#4 (  this : object )
+DeclareScript VTriger#0#5 (  this : object )
+DeclareScript VCheck#0#7 (  this : object )
+DeclareScript VTriger#0#8 (  this : object )
+DeclareScript VTriger#0#10 (  this : object )
+DeclareScript VTriger#0#11 (  this : object )
+DeclareScript VCheck#0#14 (  this : object )
+DeclareScript VCheck#0#15 (  this : object )
+DeclareScript VTriger#0#16 (  this : object )
+DeclareScript VTriger#0#17 (  this : object )
+DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
+
+Script VCheck#0#1
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz13h.Hns59" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#2( this ) 
+  )
+)
+
+Script VTriger#0#2
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( GetObjectByName( "Nalo" ) , 1 ) 
+  )
+)
+
+Script VCheck#0#4
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.bz13h.Hns59" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#5( this ) 
+  )
+)
+
+Script VTriger#0#5
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( GetObjectByName( "Nalo" ) , 0 ) 
+    HideObject( GetObjectByName( "Karh" ) , 1 ) 
+    HideObject( GetObjectByName( "IZ" ) , 1 ) 
+  )
+)
+
+Script VCheck#0#7
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.Nalo.Kr61" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#8( this ) 
+  )
+)
+
+Script VTriger#0#8
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    SwitchLeverState( HeroPrisonOpened, 1 ) 
+    FixWorldTime( 0 ) 
+  )
+)
+
+Script VTriger#0#10
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( HGuard1, "uspecial10" ) 
+    VTriger#0#11( this ) 
+  )
+)
+
+Script VTriger#0#11
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 50 ) 
+    VTriger#0#10( this ) 
+  )
+)
+
+Script VCheck#0#14
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc7.n7_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#16( this ) 
+  )
+)
+
+Script VCheck#0#15
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc8.n8_2" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#17( this ) 
+  )
+)
+
+Script VTriger#0#16
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc7.n7_2", 0 ) 
+  )
+)
+
+Script VTriger#0#17
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "b.merc8.n8_2", 0 ) 
+  )
+)
+
+Script #OnBriefingComplete
+(
+  if
+  (
+    IsEqualString( szComplete, "b.bz13h.Hns59" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "z.gz15h", 1 ) 
+    LeaveToZone( 0, "gz15h", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Nalo.Kr61" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    CopyStats( 0, "HeroAlone::Hero", "Hero" ) 
+    AddLoot( 0, "HeroAlone", "" ) 
+    SetCurrentParty( 0, "" ) 
+    FixItems(  ) 
+    RunWorldTime( 0 ) 
+    LeaveToZone( 0, "gz15h", 3 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Nalo.Kr60" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    CreateParty( 0, "Pretty" ) 
+    AddUnitToParty( 0, "Pretty::Nalo", "Human Hadagan Pretty" ) 
+    SetCurrentParty( 0, "Pretty" ) 
+    LeaveToZone( 0, "gz15h", 3 ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+)
+
+WorldScript
+(
+  Sleep( 2 ) 
+  HeroPrison = GetObjectByID( "338795" ) 
+  YardGates03opened = GetObjectByID( "42962" ) 
+  MainGatesOpened = GetObjectByID( "42965" ) 
+  YardGates04opened = GetObjectByID( "42966" ) 
+  HadoganPrison00-43202l = GetObjectByID( "42976" ) 
+  HadoganPrison00-43202k = GetObjectByID( "42977" ) 
+  HadoganPrison00-43202i = GetObjectByID( "42979" ) 
+  HadoganPrison00-43202c = GetObjectByID( "42985" ) 
+  HadoganPrison00-43202b = GetObjectByID( "42986" ) 
+  HadoganPrison00-43202a = GetObjectByID( "42987" ) 
+  BeastCage04 = GetObjectByID( "42988" ) 
+  BeastCage05 = GetObjectByID( "42989" ) 
+  BeastCage01 = GetObjectByID( "42990" ) 
+  HadoganPrison00-43202w = GetObjectByID( "42993" ) 
+  BeastCage02 = GetObjectByID( "42996" ) 
+  HadoganPrison00-43202s = GetObjectByID( "42997" ) 
+  HadoganPrison00-43202r = GetObjectByID( "42998" ) 
+  HeroPrisonOpened = GetObjectByID( "42999" ) 
+  HadoganPrison00-43202o = GetObjectByID( "43000" ) 
+  HadoganPrison00-43202n = GetObjectByID( "43001" ) 
+  HadoganPrison00-43202m = GetObjectByID( "43002" ) 
+  PChest = GetObjectByID( "566988" ) 
+  YardGates04 = GetObjectByID( "338774" ) 
+  YardGates03 = GetObjectByID( "338775" ) 
+  MainGates = GetObjectByID( "338776" ) 
+  CageLeverOn = GetObjectByID( "338777" ) 
+  CageLever = GetObjectByID( "338779" ) 
+  HGuard1 = GetObjectByID( "338791" ) 
+  VCheck#0#1( NULL ) 
+  VCheck#0#4( NULL ) 
+  VCheck#0#7( NULL ) 
+  VTriger#0#10( NULL ) 
+)

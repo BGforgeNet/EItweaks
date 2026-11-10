@@ -1,0 +1,604 @@
+GlobalVars (
+  NULL : object,
+  VSS#i#val : object,
+  i : object,
+  MuzicGoer : object,
+  MuzicPretty : object,
+  MuzicSit4 : object,
+  MuzicSitTalk1 : object,
+  MuzicSit2 : object,
+  MuzicSit : object,
+  ManTalk1 : object,
+  FakeBox00-928579 : object,
+  BabaSit : object,
+  BabaSit2 : object,
+  MuzicSitTalk2 : object 
+)
+
+DeclareScript VTriger#0#1 (  this : object )
+DeclareScript VTriger#0#2 (  this : object )
+DeclareScript VTriger#0#3 (  this : object )
+DeclareScript VTriger#0#8 (  this : object )
+DeclareScript VTriger#0#9 (  this : object )
+DeclareScript VTriger#0#13 (  this : object )
+DeclareScript VTriger#0#14 (  this : object )
+DeclareScript VTriger#0#15 (  this : object )
+DeclareScript VTriger#0#18 (  this : object )
+DeclareScript VTriger#0#19 (  this : object )
+DeclareScript VTriger#0#22 (  this : object )
+DeclareScript VTriger#0#23 (  this : object )
+DeclareScript VTriger#0#26 (  this : object )
+DeclareScript VTriger#0#27 (  this : object )
+DeclareScript VTriger#0#30 (  this : object )
+DeclareScript VTriger#0#33 (  this : object )
+DeclareScript VTriger#0#41 (  this : object )
+DeclareScript VTriger#0#44 (  this : object )
+DeclareScript VTriger#0#45 (  this : object )
+DeclareScript VCheck#0#48 (  this : object )
+DeclareScript VTriger#0#49 (  this : object )
+DeclareScript VCheck#0#51 (  this : object )
+DeclareScript VTriger#0#52 (  this : object )
+DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
+
+Script VTriger#0#1
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( BabaSit, "uspecial08" ) 
+    VTriger#0#3( this ) 
+  )
+)
+
+Script VTriger#0#2
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( MuzicSit, "uspecial19" ) 
+    VTriger#0#30( this ) 
+  )
+)
+
+Script VTriger#0#3
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 31 ) 
+    VTriger#0#1( this ) 
+  )
+)
+
+Script VTriger#0#8
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( ManTalk1, "ubriefing09" ) 
+    VTriger#0#9( this ) 
+  )
+)
+
+Script VTriger#0#9
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 122 ) 
+    VTriger#0#8( this ) 
+  )
+)
+
+Script VTriger#0#13
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( BabaSit2, "crest" ) 
+  )
+)
+
+Script VTriger#0#14
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( MuzicSit2, "uspecial13" ) 
+    VTriger#0#15( this ) 
+  )
+)
+
+Script VTriger#0#15
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 46 ) 
+    VTriger#0#14( this ) 
+  )
+)
+
+Script VTriger#0#18
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( MuzicSit4, "uspecial13" ) 
+    VTriger#0#19( this ) 
+  )
+)
+
+Script VTriger#0#19
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 46 ) 
+    VTriger#0#18( this ) 
+  )
+)
+
+Script VTriger#0#22
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( MuzicSitTalk1, "uspecial16" ) 
+    VTriger#0#23( this ) 
+  )
+)
+
+Script VTriger#0#23
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 206 ) 
+    VTriger#0#22( this ) 
+  )
+)
+
+Script VTriger#0#26
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( MuzicSitTalk2, "uspecial15" ) 
+    VTriger#0#27( this ) 
+  )
+)
+
+Script VTriger#0#27
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 206 ) 
+    VTriger#0#26( this ) 
+  )
+)
+
+Script VTriger#0#30
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 96 ) 
+    VTriger#0#2( this ) 
+  )
+)
+
+Script VTriger#0#33
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Idle( MuzicGoer ) 
+    PlayAnimation( MuzicGoer, "uspecial12" ) 
+    Sleep( 53 ) 
+    UMSentry( MuzicGoer, 55, 40 ) 
+    SleepUntil( IsLess( DistanceUnitPoint( MuzicGoer, 55, 40 ) , 0.2 )  ) 
+    Sleep( 5 ) 
+    RotateTo( MuzicGoer, 53, 38 ) 
+    Sleep( 5 ) 
+    Idle( MuzicGoer ) 
+    PlayAnimation( MuzicGoer, "ubriefing19" ) 
+    Sleep( 35 ) 
+    UMSentry( MuzicGoer, 56, 38 ) 
+    SleepUntil( IsLess( DistanceUnitPoint( MuzicGoer, 56, 38 ) , 0.2 )  ) 
+    Sleep( 5 ) 
+    RotateTo( MuzicGoer, 55.5, 35 ) 
+    Sleep( 5 ) 
+    Idle( MuzicGoer ) 
+    PlayAnimation( MuzicGoer, "ubriefing17" ) 
+    Sleep( 186 ) 
+    PlayAnimation( MuzicGoer, "uspecial02" ) 
+    Sleep( 123 ) 
+    UMSentry( MuzicGoer, 49.4392, 40.8781 ) 
+    SleepUntil( IsLess( DistanceUnitPoint( MuzicGoer, 49.4392, 40.8781 ) , 0.2 )  ) 
+    RotateTo( MuzicGoer, 45.76, 39.33 ) 
+    VTriger#0#41( this ) 
+  )
+)
+
+Script VTriger#0#41
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 5 ) 
+    VTriger#0#33( this ) 
+  )
+)
+
+Script VTriger#0#44
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    PlayAnimation( MuzicPretty, "uspecial19" ) 
+    VTriger#0#45( this ) 
+  )
+)
+
+Script VTriger#0#45
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    Sleep( 96 ) 
+    VTriger#0#44( this ) 
+  )
+)
+
+Script VCheck#0#48
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "b.merc10.Vo65_1" ) , 2 ) 
+    IsEqual( GSGetVar( 0, "q.gz18h.q66h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#49( this ) 
+  )
+)
+
+Script VTriger#0#49
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "amerc_10", 1 ) 
+    RecalcMercBriefings(  ) 
+  )
+)
+
+Script VCheck#0#51
+(
+  if
+  (
+    IsEqual( GSGetVar( 0, "q.gz19h.q71h" ) , 2 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#52( this ) 
+  )
+)
+
+Script VTriger#0#52
+(
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    HideObject( GetObjectByName( "Zaku" ) , 1 ) 
+  )
+)
+
+Script #OnBriefingComplete
+(
+  if
+  (
+    IsEqualString( szComplete, "b.bz14h.gl63" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "z.gz17h_bz15h", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.nekro.ne67" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.glav.gl70" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Glav.Gl64" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Zaku.S64", 1 ) 
+    GSSetVarMax( 0, "b.Nekro.Ne64_2", 1 ) 
+    GSSetVarMax( 0, "b.Nekro.Ne64_1", 1 ) 
+    GSSetVarMax( 0, "b.Kuzn.Kuz64_2", 1 ) 
+    GSSetVarMax( 0, "b.Kuzn.Kuz64_1", 1 ) 
+    GSSetVarMax( 0, "b.Kuzn.constr_4", 1 ) 
+    GSSetVarMax( 0, "b.merc10.Vo64", 1 ) 
+    GSSetVarMax( 0, "amerc_7", 1 ) 
+    GSSetVarMax( 0, "amerc_8", 1 ) 
+    RecalcMercBriefings(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Nekro.Ne70" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.Glav.Gl70", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.Glav.Gl64_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "b.guru.Guru1", 1 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.guru.Guru1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GiveDexterity( GetObjectByName( "Hero" ) , 3 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc7.n1_7" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn7", 1 ) 
+    MoveToPoint( GetObjectByName( "merc7" ) , 65.8, 39 ) 
+    SleepUntilIdle( GetObjectByName( "merc7" )  ) 
+    RotateTo( GetObjectByName( "merc7" ) , 69.8, 48 ) 
+    SleepUntilIdle( GetObjectByName( "merc7" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc7.n2_7" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn7", 0 ) 
+    MoveToPoint( GetObjectByName( "merc7" ) , 54.35, 32.1 ) 
+    SleepUntilIdle( GetObjectByName( "merc7" )  ) 
+    RotateTo( GetObjectByName( "merc7" ) , 57, 32.2 ) 
+    SleepUntilIdle( GetObjectByName( "merc7" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc7.n3_7" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn7", 1 ) 
+    MoveToPoint( GetObjectByName( "merc7" ) , 65.8, 39 ) 
+    SleepUntilIdle( GetObjectByName( "merc7" )  ) 
+    RotateTo( GetObjectByName( "merc7" ) , 69.8, 48 ) 
+    SleepUntilIdle( GetObjectByName( "merc7" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc8.n1_8" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn8", 1 ) 
+    MoveToPoint( GetObjectByName( "merc8" ) , 68, 38 ) 
+    SleepUntilIdle( GetObjectByName( "merc8" )  ) 
+    RotateTo( GetObjectByName( "merc8" ) , 68, 44 ) 
+    SleepUntilIdle( GetObjectByName( "merc8" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc8.n2_8" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn8", 0 ) 
+    MoveToPoint( GetObjectByName( "merc8" ) , 51, 36.6 ) 
+    SleepUntilIdle( GetObjectByName( "merc8" )  ) 
+    RotateTo( GetObjectByName( "merc8" ) , 50.4, 32.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc8" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc8.n3_8" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn8", 1 ) 
+    MoveToPoint( GetObjectByName( "merc8" ) , 68, 38 ) 
+    SleepUntilIdle( GetObjectByName( "merc8" )  ) 
+    RotateTo( GetObjectByName( "merc8" ) , 68, 44 ) 
+    SleepUntilIdle( GetObjectByName( "merc8" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc10.n1_10" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn10", 1 ) 
+    MoveToPoint( GetObjectByName( "merc10" ) , 66.4, 35.6 ) 
+    SleepUntilIdle( GetObjectByName( "merc10" )  ) 
+    RotateTo( GetObjectByName( "merc10" ) , 57, 42 ) 
+    SleepUntilIdle( GetObjectByName( "merc10" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc10.n2_10" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn10", 0 ) 
+    MoveToPoint( GetObjectByName( "merc10" ) , 44.1, 44.1 ) 
+    SleepUntilIdle( GetObjectByName( "merc10" )  ) 
+    RotateTo( GetObjectByName( "merc10" ) , 49, 45.6 ) 
+    SleepUntilIdle( GetObjectByName( "merc10" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc10.n3_10" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "apartyn10", 1 ) 
+    MoveToPoint( GetObjectByName( "merc10" ) , 66.4, 35.6 ) 
+    SleepUntilIdle( GetObjectByName( "merc10" )  ) 
+    RotateTo( GetObjectByName( "merc10" ) , 57, 42 ) 
+    SleepUntilIdle( GetObjectByName( "merc10" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc10.vo64" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc10.vo65" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+)
+
+WorldScript
+(
+  Sleep( 2 ) 
+  MuzicGoer = GetObjectByID( "28372" ) 
+  MuzicPretty = GetObjectByID( "585377" ) 
+  MuzicSit4 = GetObjectByID( "263075" ) 
+  MuzicSitTalk1 = GetObjectByID( "426933" ) 
+  MuzicSit2 = GetObjectByID( "423464" ) 
+  MuzicSit = GetObjectByID( "679026" ) 
+  ManTalk1 = GetObjectByID( "900787" ) 
+  FakeBox00-928579 = GetObjectByID( "928579" ) 
+  BabaSit = GetObjectByID( "401593" ) 
+  BabaSit2 = GetObjectByID( "991988" ) 
+  MuzicSitTalk2 = GetObjectByID( "451996" ) 
+  VTriger#0#1( NULL ) 
+  VTriger#0#2( NULL ) 
+  VTriger#0#8( NULL ) 
+  VTriger#0#13( NULL ) 
+  VTriger#0#14( NULL ) 
+  VTriger#0#18( NULL ) 
+  VTriger#0#22( NULL ) 
+  VTriger#0#26( NULL ) 
+  VTriger#0#33( NULL ) 
+  VTriger#0#44( NULL ) 
+  VCheck#0#48( NULL ) 
+  VCheck#0#51( NULL ) 
+)
