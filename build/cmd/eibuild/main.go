@@ -41,7 +41,7 @@ var partialArchives = []string{filepath.Join("res", "textures.res")}
 // starterOnly lists the mod's files the standalone version leaves out: the starter's config, eix's add-on and its
 // settings, and Universal Mod's runtime, which the game's own exe runs none of, and the partial archives.
 func starterOnly() []string {
-	return append([]string{"config.reg", "addon.dll", "eix.ini", "spelladdon.ini", "eix-LICENSE.txt",
+	return append([]string{"config.reg", "addon.dll", "eix.ini", "eitweaks.ini", "spelladdon.ini", "eix-LICENSE.txt",
 		"eix-THIRD-PARTY-NOTICES.txt", "um.dll", "um.cfg", "um-LICENSE.txt", "um-source.tar.gz", "d7vk.dll",
 		"d7vk-LICENSE.txt"}, partialArchives...)
 }
@@ -315,8 +315,8 @@ func build(repo, version, out string) error {
 		return err
 	}
 	// eix reads eix.ini, and its built-in SpellAddon reads a spelladdon.ini, from the active mod's folder first, so
-	// these settings apply to EItweaks only.
-	for _, name := range []string{"eix.ini", "spelladdon.ini"} {
+	// these settings apply to EItweaks only. The map scripts read eitweaks.ini through eix's ini.* variables.
+	for _, name := range []string{"eix.ini", "spelladdon.ini", "eitweaks.ini"} {
 		if err := copyFile(filepath.Join(src, name), filepath.Join(common, name)); err != nil {
 			return err
 		}
