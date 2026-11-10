@@ -139,6 +139,9 @@ func Replace(data, text []byte) ([]byte, error) {
 	}
 	var body []byte
 	if id == scriptCoded {
+		if c.size < headerSize+seedSize {
+			return nil, errors.New("coded script chunk has no seed")
+		}
 		seed := binary.LittleEndian.Uint32(data[c.off+headerSize:])
 		body = binary.LittleEndian.AppendUint32(body, seed)
 		body = append(body, text...)

@@ -346,6 +346,9 @@ func build(repo, version, out string) error {
 		if err != nil {
 			return err
 		}
+		if err := checkLangMaps(filepath.Join(src, "scripts"), filepath.Join(langSrc, "maps")); err != nil {
+			return err
+		}
 		for _, e := range entries {
 			if e.Name() != "res" {
 				if err := copyTree(filepath.Join(langSrc, e.Name()), filepath.Join(mod, e.Name())); err != nil {
@@ -467,6 +470,33 @@ func applyScripts(scripts, maps string) error {
 		}
 		if err := os.WriteFile(mob, data, 0o644); err != nil {
 			return err
+		}
+	}
+	return nil
+}
+
+// checkLangMaps fails when a language's maps folder holds a map that has a script source: copied over the mod's
+// maps after the scripts are applied, it would ship that language without the script. Names compare ignoring case,
+// as the game's file system does.
+func checkLangMaps(scripts, langMaps string) error {
+	sources, err := filepath.Glob(filepath.Join(scripts, "*.eis"))
+	if err != nil {
+		return err
+	}
+	maps, err := os.ReadDir(langMaps)
+	if errors.Is(err, fs.ErrNotExist) {
+		return nil
+	}
+	if err != nil {
+		return err
+	}
+	for _, eis := range sources {
+		name := strings.TrimSuffix(filepath.Base(eis), ".eis") + ".mob"
+		for _, m := range maps {
+			if strings.EqualFold(m.Name(), name) {
+				return fmt.Errorf("%s: has a script source in mod/scripts; keep the map in mod/maps only",
+					filepath.Join(langMaps, m.Name()))
+			}
 		}
 	}
 	return nil
