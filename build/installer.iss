@@ -6,7 +6,8 @@
 ; with EIStarter-UM (recommended): the bundled launcher is installed when missing, the mod goes into its mods
 ; folder, eix's loader into its Engine folder, and the launcher's config selects EItweaks;
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
-; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>.
+; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>; the starter's
+; options /EICOMPANIONS=<1|0> and /EIRUNSYSTEM=<1|0> (default 1) set its mercenary travel and running system.
 
 #if !Defined(Version)
   #error Define Version
@@ -71,6 +72,11 @@ en.StarterFailed=EIStarter-UM could not be unpacked: %1%n%nClick Next to try aga
 en.StarterDirLabel=Select the folder of EIStarter-UM. When it is not there, the bundled version is installed into this folder.
 en.LaunchStarter=Launch EIStarter-UM
 en.LaunchGame=Launch the game
+en.OptionsCaption=Options
+en.OptionsDesc=Which EItweaks features do you want?
+en.OptionsSub=Both can be changed later in the mod folder: the mercenaries in eitweaks.ini, running and walking in eix.ini and spelladdon.ini.
+en.OptCompanions=Mercenaries travel with the hero between allods
+en.OptRunSystem=Rebalanced running and walking: running costs a fixed amount of stamina, and the load carried slows running, and above the maximum load walking too
 ru.GameDirCaption=Папка игры
 ru.GameDirDesc=Куда установлены Проклятые Земли?
 ru.GameDirSub=Выберите папку игры, для которой устанавливается EItweaks.
@@ -90,6 +96,11 @@ ru.StarterFailed=Не удалось распаковать EIStarter-UM: %1%n%n
 ru.StarterDirLabel=Выберите папку EIStarter-UM. Если его там нет, встроенная версия будет установлена в эту папку.
 ru.LaunchStarter=Запустить EIStarter-UM
 ru.LaunchGame=Запустить игру
+ru.OptionsCaption=Настройки
+ru.OptionsDesc=Какие возможности EItweaks включить?
+ru.OptionsSub=Обе можно изменить позже в папке мода: наёмников в eitweaks.ini, бег и ходьбу в eix.ini и spelladdon.ini.
+ru.OptCompanions=Наёмники путешествуют с героем между аллодами
+ru.OptRunSystem=Новая система бега и ходьбы: бег тратит постоянное количество выносливости, а переносимый груз замедляет бег, а сверх максимального груза и ходьбу
 de.GameDirCaption=Spielordner
 de.GameDirDesc=Wo ist Evil Islands installiert?
 de.GameDirSub=Wählen Sie den Ordner des Spiels, für das EItweaks bestimmt ist.
@@ -109,6 +120,11 @@ de.StarterFailed=EIStarter-UM konnte nicht entpackt werden: %1%n%nKlicken Sie au
 de.StarterDirLabel=Waehlen Sie den Ordner von EIStarter-UM. Ist er dort nicht vorhanden, wird die enthaltene Version dort installiert.
 de.LaunchStarter=EIStarter-UM starten
 de.LaunchGame=Spiel starten
+de.OptionsCaption=Optionen
+de.OptionsDesc=Welche Funktionen von EItweaks moechten Sie?
+de.OptionsSub=Beide lassen sich spaeter im Mod-Ordner aendern: die Soeldner in eitweaks.ini, Rennen und Gehen in eix.ini und spelladdon.ini.
+de.OptCompanions=Soeldner reisen mit dem Helden zwischen den Allods
+de.OptRunSystem=Neues Renn- und Gehsystem: Rennen kostet eine feste Menge Ausdauer, und die getragene Last verlangsamt das Rennen, ueber der Hoechstlast auch das Gehen
 
 [InstallDelete]
 ; EItweaks 1.0 and the 2.0 test builds replaced the new game's movie with an empty file; one left in the mod folder by
@@ -217,7 +233,7 @@ type
 
 var
   GamePage: TInputDirWizardPage;
-  LangPage, VariantPage: TInputOptionWizardPage;
+  LangPage, VariantPage, OptionsPage: TInputOptionWizardPage;
   StarterPageButton: TNewButton;
   DetectedFor: String;
   Relaunched: Boolean;
@@ -373,6 +389,14 @@ begin
     DeleteFile(Probe);
 end;
 
+function BoolFlag(Value: Boolean): String;
+begin
+  if Value then
+    Result := '1'
+  else
+    Result := '0';
+end;
+
 { Starts this setup again with administrator rights and the choices made so far, and closes this one. }
 procedure RelaunchAsAdmin;
 var
@@ -385,6 +409,8 @@ begin
     Params := Params + ' /EIVARIANT=starter'
   else
     Params := Params + ' /EIVARIANT=standalone';
+  Params := Params + ' /EICOMPANIONS=' + BoolFlag(OptionsPage.Values[0]) + ' /EIRUNSYSTEM=' +
+    BoolFlag(OptionsPage.Values[1]);
   if ShellExec('', ExpandConstant('{srcexe}'), Params, '', SW_SHOWNORMAL, ewNoWait, ErrorCode) then
   begin
     Relaunched := True;
@@ -564,6 +590,14 @@ begin
   VariantPage.CheckListBox.Height := StarterPageButton.Top - VariantPage.CheckListBox.Top - ScaleY(8);
   UpdateStarterStatus;
 
+  { Both features need eix, which only the starter version has. }
+  OptionsPage := CreateInputOptionPage(VariantPage.ID, CustomMessage('OptionsCaption'), CustomMessage('OptionsDesc'),
+    CustomMessage('OptionsSub'), False, False);
+  OptionsPage.Add(CustomMessage('OptCompanions'));
+  OptionsPage.Add(CustomMessage('OptRunSystem'));
+  OptionsPage.Values[0] := ExpandConstant('{param:EICOMPANIONS|1}') <> '0';
+  OptionsPage.Values[1] := ExpandConstant('{param:EIRUNSYSTEM|1}') <> '0';
+
   WizardForm.SelectDirLabel.Caption := CustomMessage('StarterDirLabel');
 end;
 
@@ -581,7 +615,7 @@ end;
 
 function ShouldSkipPage(PageID: Integer): Boolean;
 begin
-  Result := (PageID = wpSelectDir) and IsStandalone;
+  Result := ((PageID = wpSelectDir) or (PageID = OptionsPage.ID)) and IsStandalone;
 end;
 
 { The first problem with the chosen folders, or '' when there is none. }
@@ -823,10 +857,32 @@ begin
     Log('Could not write ' + Cfg);
 end;
 
+procedure SetModIni(const Section, Key, Value, FileName: String);
+begin
+  if not SetIniString(Section, Key, Value, ExpandConstant('{app}\mods\eitweaks\') + FileName) then
+    RaiseException('Could not write ' + Key + ' into ' + FileName + '.');
+end;
+
+{ The options page's choices, into the mod's settings files, which every install replaces. Off gives the game's own
+  behaviour: the mercenaries' farewells, and running's drain and speed without the load. }
+procedure WriteOptions;
+var
+  Run: String;
+begin
+  SetModIni('Companions', 'Travel', BoolFlag(OptionsPage.Values[0]), 'eitweaks.ini');
+  Run := BoolFlag(OptionsPage.Values[1]);
+  SetModIni('Encumbrance', 'Enabled', Run, 'eix.ini');
+  SetModIni('rebalanceengine', 'newrunsystem', Run, 'spelladdon.ini');
+  SetModIni('rebalanceengine', 'rewriterunabilitytime', Run, 'spelladdon.ini');
+end;
+
 procedure CurStepChanged(CurStep: TSetupStep);
 begin
   if (CurStep = ssPostInstall) and IsStarter then
+  begin
     WriteStarterConfig;
+    WriteOptions;
+  end;
   if (CurStep = ssPostInstall) and IsStarter and IsWine then
   begin
     { Existing launcher configs skip FirstStartSettings. Both keys must agree: the launcher switches between them. }
