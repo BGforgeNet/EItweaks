@@ -2,6 +2,7 @@
 mod/res/** -text
 lang/** -text
 mod/maps/** -text
+mod/scripts/** -text
 mod/config/ai.ini -text
 mod/spelladdon.ini -text
 vendor/spelladdon/** -text

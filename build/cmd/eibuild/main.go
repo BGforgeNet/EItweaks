@@ -5,6 +5,7 @@
 //	eibuild xlsx <csv-dir> <out.xlsx>      a database's CSV sheets as one workbook, for spreadsheet editing
 //	eibuild csv <in.xlsx> <csv-dir>        a workbook back to CSV sheets, cell text verbatim
 //	eibuild payload <dir> <version> <out>  the installer's payload, from the starter zips in <dir>
+//	eibuild script-extract <map.mob> <out.eis>  a map's script text, byte for byte, for import into mod/scripts
 //
 // The build calls um-multitool, expected on PATH as in the image built from build/Containerfile.
 package main
@@ -24,6 +25,7 @@ import (
 	"strings"
 	"time"
 
+	"eitweaks/build/internal/mobscript"
 	"eitweaks/build/internal/xlsxcsv"
 )
 
@@ -90,6 +92,8 @@ func main() {
 		err = xlsxcsv.Export(args[0], args[1])
 	case os.Args[1] == "payload" && len(args) == 3:
 		err = payload(args[0], args[1], args[2])
+	case os.Args[1] == "script-extract" && len(args) == 2:
+		err = scriptExtract(args[0], args[1])
 	default:
 		usage()
 	}
@@ -100,7 +104,7 @@ func main() {
 }
 
 func usage() {
-	fmt.Fprintln(os.Stderr, "usage: eibuild build <repo> <version> <out> | xlsx <csv-dir> <out.xlsx> | csv <in.xlsx> <csv-dir> | payload <dir> <version> <out>")
+	fmt.Fprintln(os.Stderr, "usage: eibuild build <repo> <version> <out> | xlsx <csv-dir> <out.xlsx> | csv <in.xlsx> <csv-dir> | payload <dir> <version> <out> | script-extract <map.mob> <out.eis>")
 	os.Exit(2)
 }
 
@@ -246,6 +250,9 @@ func build(repo, version, out string) error {
 		return err
 	}
 	if err := copyTree(filepath.Join(src, "maps"), filepath.Join(common, "maps")); err != nil {
+		return err
+	}
+	if err := applyScripts(filepath.Join(src, "scripts"), filepath.Join(common, "maps")); err != nil {
 		return err
 	}
 	configs, err := filepath.Glob(filepath.Join(src, "config", "*.ini"))
@@ -419,6 +426,50 @@ func build(repo, version, out string) error {
 		}
 	}
 	return os.WriteFile(filepath.Join(out, "SHA256SUMS"), []byte(strings.Join(sums, "\n")+"\n"), 0o644)
+}
+
+// scriptExtract writes the script text of a map, byte for byte, to out.
+func scriptExtract(mob, out string) error {
+	data, err := os.ReadFile(mob)
+	if err != nil {
+		return err
+	}
+	s, err := mobscript.Extract(data)
+	if err != nil {
+		return fmt.Errorf("%s: %w", mob, err)
+	}
+	return os.WriteFile(out, s.Text, 0o644)
+}
+
+// applyScripts writes each <scripts>/<map>.eis into <maps>/<map>.mob, which must already be there (copied from the
+// mod's maps). Without a scripts folder no map has a script source.
+func applyScripts(scripts, maps string) error {
+	sources, err := filepath.Glob(filepath.Join(scripts, "*.eis"))
+	if err != nil {
+		return err
+	}
+	for _, eis := range sources {
+		mob := filepath.Join(maps, strings.TrimSuffix(filepath.Base(eis), ".eis")+".mob")
+		base, err := os.ReadFile(mob)
+		if errors.Is(err, fs.ErrNotExist) {
+			return fmt.Errorf("%s: no map %s in mod/maps", eis, filepath.Base(mob))
+		}
+		if err != nil {
+			return err
+		}
+		text, err := os.ReadFile(eis)
+		if err != nil {
+			return err
+		}
+		data, err := mobscript.Replace(base, text)
+		if err != nil {
+			return fmt.Errorf("%s: %w", eis, err)
+		}
+		if err := os.WriteFile(mob, data, 0o644); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 // buildDatabase compiles <dbSrc>/csv with xlsxdb, packs the result with <dbSrc>/extra (the entries xlsxdb does
