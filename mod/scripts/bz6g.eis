@@ -483,6 +483,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc4", 1 ) 
     MoveToPoint( GetObjectByName( "merc4" ) , 67, 68 ) 
     SleepUntilIdle( GetObjectByName( "merc4" )  ) 
     RotateTo( GetObjectByName( "merc4" ) , 70.7, 62.7 ) 
@@ -496,6 +497,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc4", 0 ) 
     MoveToPoint( GetObjectByName( "merc4" ) , 74.7, 58.1 ) 
     SleepUntilIdle( GetObjectByName( "merc4" )  ) 
     RotateTo( GetObjectByName( "merc4" ) , 72.7, 62.45 ) 
@@ -509,6 +511,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc4", 1 ) 
     MoveToPoint( GetObjectByName( "merc4" ) , 67, 68 ) 
     SleepUntilIdle( GetObjectByName( "merc4" )  ) 
     RotateTo( GetObjectByName( "merc4" ) , 70.7, 62.7 ) 

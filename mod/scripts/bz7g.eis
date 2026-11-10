@@ -44,6 +44,7 @@ DeclareScript VTriger#0#69 (  this : object )
 DeclareScript VCheck#0#71 (  this : object )
 DeclareScript VTriger#0#72 (  this : object )
 DeclareScript VTriger#0#74 (  this : object )
+DeclareScript CTravelFinale (  this : object )
 DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
 
 Script VCheck#0#1
@@ -113,6 +114,16 @@ Script VCheck#0#12
 
 Script VCheck#0#14
 (
+  // Companions travel (eitweaks.ini): no farewells, go to Ingos as without mercenaries.
+  if
+  (
+    IsEqual( GSGetVar( 0, "ini.eitweaks.Companions.Travel" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#16( this ) 
+  )
   if
   (
     Not( IsEqual( GetMercsNumber( 0 ) , 0 )  ) 
@@ -387,6 +398,16 @@ Script VCheck#0#49
 
 Script VCheck#0#50
 (
+  // Companions travel: no farewells, Rick goes on as without mercenaries.
+  if
+  (
+    IsEqual( GSGetVar( 0, "ini.eitweaks.Companions.Travel" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#52( this ) 
+  )
   if
   (
     Not( IsEqual( GetMercsNumber( 0 ) , 0 )  ) 
@@ -435,6 +456,19 @@ Script VTriger#0#54
 
 Script VCheck#0#56
 (
+  // Companions travel: the mercenaries in the party join the finale party.
+  if
+  (
+    Not( IsEqual( GSGetVar( 0, "JPC" ) , 1 )  ) 
+    IsEqual( GSGetVar( 0, "b.Rick.R72_1" ) , 2 ) 
+    IsEqual( GSGetVar( 0, "ini.eitweaks.Companions.Travel" ) , 1 ) 
+    Not( IsEqual( GetMercsNumber( 0 ) , 0 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    CTravelFinale( this ) 
+  )
   if
   (
     Not( IsEqual( GSGetVar( 0, "JPC" ) , 1 )  ) 
@@ -625,6 +659,156 @@ Script VTriger#0#74
   (
     KillScript(  ) 
     HideObject( GetObjectByName( "Deva" ) , 1 ) 
+  )
+)
+
+// VTriger#0#57 with companions: JunParty gets each living mercenary of the party, after JunBoy, its leader.
+// The blocks run in order in one pass: the party is built before the last block runs the transformation.
+// After the redeploy the leader is put back on Zak's place, facing Rick, for the scene that follows.
+Script CTravelFinale
+(
+  if
+  (
+  )
+  then
+  (
+    CreateParty( 0, "JunParty" ) 
+    GSSetVar( 0, "Polymorph", 1 ) 
+    AddUnitToParty( 0, "JunParty::JunBoy", "Jun Male Hero" ) 
+    GSSetVar( 0, "Polymorph", 2 ) 
+    CopyStats( 0, "Hero", "JunParty::JunBoy" ) 
+    GSSetVar( 0, "Polymorph", 3 ) 
+    CopyLoot( 0, "", "JunParty" ) 
+    GSSetVar( 0, "Polymorph", 4 ) 
+    CopyItems( 0, "Hero", "JunParty::JunBoy" ) 
+    GSSetVar( 0, "Polymorph", 5 ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc1" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc1", "Human Mercenary Warrior" ) 
+    CopyStats( 0, "merc1", "JunParty::merc1" ) 
+    CopyItems( 0, "merc1", "JunParty::merc1" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc2" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc2", "Human Mercenary Bodyguard" ) 
+    CopyStats( 0, "merc2", "JunParty::merc2" ) 
+    CopyItems( 0, "merc2", "JunParty::merc2" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc3" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc3", "Human Mercenary Thief" ) 
+    CopyStats( 0, "merc3", "JunParty::merc3" ) 
+    CopyItems( 0, "merc3", "JunParty::merc3" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc4" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc4", "Human Mercenary Shaivar" ) 
+    CopyStats( 0, "merc4", "JunParty::merc4" ) 
+    CopyItems( 0, "merc4", "JunParty::merc4" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc5" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc5", "Human Mercenary Kania Thief" ) 
+    CopyStats( 0, "merc5", "JunParty::merc5" ) 
+    CopyItems( 0, "merc5", "JunParty::merc5" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc6" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc6", "Human Mercenary Kania Archer" ) 
+    CopyStats( 0, "merc6", "JunParty::merc6" ) 
+    CopyItems( 0, "merc6", "JunParty::merc6" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc7" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc7", "Human Mercenary Hadagan Warrior" ) 
+    CopyStats( 0, "merc7", "JunParty::merc7" ) 
+    CopyItems( 0, "merc7", "JunParty::merc7" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc8" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc8", "Human Mercenary Hadagan Thief" ) 
+    CopyStats( 0, "merc8", "JunParty::merc8" ) 
+    CopyItems( 0, "merc8", "JunParty::merc8" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc9" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc9", "Human Mercenary Kania Paladin" ) 
+    CopyStats( 0, "merc9", "JunParty::merc9" ) 
+    CopyItems( 0, "merc9", "JunParty::merc9" ) 
+  )
+  if
+  (
+    IsEqual( IsAlive( GetObjectByName( "merc10" )  ) , 1 ) 
+  )
+  then
+  (
+    AddUnitToParty( 0, "JunParty::merc10", "Human Mercenary Hadagan Rogue" ) 
+    CopyStats( 0, "merc10", "JunParty::merc10" ) 
+    CopyItems( 0, "merc10", "JunParty::merc10" ) 
+  )
+  if
+  (
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVarMax( 0, "JPC", 1 ) 
+    CreateParticleSource( 1, 0, 0, 0, 2, "StartTrans" ) 
+    AttachParticles( 1, GetObjectByName( "Hero" )  ) 
+    CreateFX( GetX( GetObjectByName( "Hero" )  ) , GetY( GetObjectByName( "Hero" )  ) , 2.5, 15, 30, "Tools\atzako01.wav" ) 
+    Sleep( 18 ) 
+    CreateParticleSource( 2, GetX( GetObjectByName( "Hero" )  ) , GetY( GetObjectByName( "Hero" )  ) , -1, 2, "Transform" ) 
+    CreateFX( GetX( GetObjectByName( "Hero" )  ) , GetY( GetObjectByName( "Hero" )  ) , 2.5, 15, 30, "Tools\atzako02.wav" ) 
+    Sleep( 10 ) 
+    GSSetVar( 0, "ctravel.herox", GetX( GetObjectByName( "Hero" )  )  ) 
+    GSSetVar( 0, "ctravel.heroy", GetY( GetObjectByName( "Hero" )  )  ) 
+    SetCurrentParty( 0, "JunParty" ) 
+    GSSetVar( 0, "Polymorph", 6 ) 
+    RedeployParty( 0 ) 
+    GSSetVar( 0, "Polymorph", 7 ) 
+    SetCPFast( GetLeader(  ) , GSGetVar( 0, "ctravel.herox" ) , GSGetVar( 0, "ctravel.heroy" ) , 0 ) 
+    RotateTo( GetObjectByName( "JunBoy" ) , GetX( GetObjectByName( "Rick" )  ) , GetY( GetObjectByName( "Rick" )  )  ) 
+    Sleep( 25 ) 
+    GSSetVar( 0, "b.Rick.R72_4", 1 ) 
+    SendStringEvent( 0, "briefing R72_4" ) 
+    GSSetVar( 0, "Polymorph", 8 ) 
   )
 )
 

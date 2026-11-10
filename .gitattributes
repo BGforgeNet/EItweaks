@@ -5,4 +5,5 @@ mod/maps/** -text
 mod/scripts/** -text
 mod/config/ai.ini -text
 mod/spelladdon.ini -text
+mod/eitweaks.ini -text
 vendor/spelladdon/** -text

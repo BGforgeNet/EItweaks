@@ -17,6 +17,8 @@
 - Starter version: the unit panel lists the spells of a unit outside the party, with their effects.
 - Starter version: the load a hero carries slows running and makes it more tiring; above the maximum load it slows
   walking too.
+- Starter version: mercenaries travel with the hero between allods and join the finale party; `Travel` in
+  `eitweaks.ini` turns it off.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
 - The fixes of the unofficial patch 1.07 (Gipat Group) that 1.0 lacked, for every language: campaign map scripts

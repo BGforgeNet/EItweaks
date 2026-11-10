@@ -38,6 +38,7 @@ DeclareScript VCheck#0#48 (  this : object )
 DeclareScript VTriger#0#49 (  this : object )
 DeclareScript VCheck#0#51 (  this : object )
 DeclareScript VTriger#0#52 (  this : object )
+DeclareScript CTravelOffers (  this : object )
 DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
 
 Script VTriger#0#1
@@ -361,6 +362,77 @@ Script VTriger#0#52
   )
 )
 
+// Companions travel (eitweaks.ini): a mercenary from Gipath or Ingos in the party can be left here and taken back.
+// The game offers the leave briefing only in the mercenary's own base and clears it at every merc briefing,
+// so this script offers it again on every pass. ctravel.mercN is 1 while the mercenary is in the party.
+Script CTravelOffers
+(
+  if
+  (
+    Not( IsEqual( GSGetVar( 0, "ini.eitweaks.Companions.Travel" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc1" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc1.n2_1", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc2" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc2.n2_2", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc3" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc3.n2_3", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc4" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc4.n2_4", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc5" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc5.n2_5", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc6" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc6.n2_6", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc9" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc9.n2_9", 1 ) 
+  )
+)
+
 Script #OnBriefingComplete
 (
   if
@@ -432,6 +504,188 @@ Script #OnBriefingComplete
   (
     KillScript(  ) 
     GiveDexterity( GetObjectByName( "Hero" ) , 3 ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc1.n2_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc1", 0 ) 
+    MoveToPoint( GetObjectByName( "merc1" ) , 46, 27 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+    RotateTo( GetObjectByName( "merc1" ) , 49, 27 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc1.n3_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc1", 1 ) 
+    MoveToPoint( GetObjectByName( "merc1" ) , 68.5, 39 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+    RotateTo( GetObjectByName( "merc1" ) , 65, 40 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc2.n2_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc2", 0 ) 
+    MoveToPoint( GetObjectByName( "merc2" ) , 48, 25 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+    RotateTo( GetObjectByName( "merc2" ) , 49, 27 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc2.n3_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc2", 1 ) 
+    MoveToPoint( GetObjectByName( "merc2" ) , 70, 38.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+    RotateTo( GetObjectByName( "merc2" ) , 65, 40 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n2_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc3", 0 ) 
+    MoveToPoint( GetObjectByName( "merc3" ) , 50, 24 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    RotateTo( GetObjectByName( "merc3" ) , 49, 27 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n3_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc3", 1 ) 
+    MoveToPoint( GetObjectByName( "merc3" ) , 71.5, 38 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    RotateTo( GetObjectByName( "merc3" ) , 65, 40 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n2_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc4", 0 ) 
+    MoveToPoint( GetObjectByName( "merc4" ) , 59, 28.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    RotateTo( GetObjectByName( "merc4" ) , 57, 30 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n3_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc4", 1 ) 
+    MoveToPoint( GetObjectByName( "merc4" ) , 70, 36.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    RotateTo( GetObjectByName( "merc4" ) , 65, 40 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc5.n2_5" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc5", 0 ) 
+    MoveToPoint( GetObjectByName( "merc5" ) , 52, 34 ) 
+    SleepUntilIdle( GetObjectByName( "merc5" )  ) 
+    RotateTo( GetObjectByName( "merc5" ) , 54, 36 ) 
+    SleepUntilIdle( GetObjectByName( "merc5" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc5.n3_5" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc5", 1 ) 
+    MoveToPoint( GetObjectByName( "merc5" ) , 67.5, 36.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc5" )  ) 
+    RotateTo( GetObjectByName( "merc5" ) , 65, 40 ) 
+    SleepUntilIdle( GetObjectByName( "merc5" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc6.n2_6" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc6", 0 ) 
+    MoveToPoint( GetObjectByName( "merc6" ) , 57, 34.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc6" )  ) 
+    RotateTo( GetObjectByName( "merc6" ) , 54, 36 ) 
+    SleepUntilIdle( GetObjectByName( "merc6" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc6.n3_6" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc6", 1 ) 
+    MoveToPoint( GetObjectByName( "merc6" ) , 68.5, 34.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc6" )  ) 
+    RotateTo( GetObjectByName( "merc6" ) , 65, 40 ) 
+    SleepUntilIdle( GetObjectByName( "merc6" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc9.n2_9" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc9", 0 ) 
+    MoveToPoint( GetObjectByName( "merc9" ) , 44, 35 ) 
+    SleepUntilIdle( GetObjectByName( "merc9" )  ) 
+    RotateTo( GetObjectByName( "merc9" ) , 45, 37 ) 
+    SleepUntilIdle( GetObjectByName( "merc9" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc9.n3_9" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc9", 1 ) 
+    MoveToPoint( GetObjectByName( "merc9" ) , 66.5, 33.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc9" )  ) 
+    RotateTo( GetObjectByName( "merc9" ) , 65, 40 ) 
+    SleepUntilIdle( GetObjectByName( "merc9" )  ) 
   )
   if
   (
@@ -601,4 +855,5 @@ WorldScript
   VTriger#0#44( NULL ) 
   VCheck#0#48( NULL ) 
   VCheck#0#51( NULL ) 
+  CTravelOffers( NULL ) 
 )

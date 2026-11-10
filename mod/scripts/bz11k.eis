@@ -294,6 +294,16 @@ Script VTriger#0#33
 
 Script VCheck#0#35
 (
+  // Companions travel (eitweaks.ini): no farewells, Deva goes on as without mercenaries.
+  if
+  (
+    IsEqual( GSGetVar( 0, "ini.eitweaks.Companions.Travel" ) , 1 ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    VTriger#0#2( this ) 
+  )
   if
   (
     Not( IsEqual( GetMercsNumber( 0 ) , 0 )  ) 

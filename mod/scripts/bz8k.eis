@@ -115,6 +115,7 @@ DeclareScript VTriger#0#190 (  this : object )
 DeclareScript VCheck#0#191 (  this : object )
 DeclareScript VTriger#0#192 (  this : object )
 DeclareScript VTriger#0#193 (  this : object )
+DeclareScript CTravelOffers (  this : object )
 DeclareScript #OnBriefingComplete (  nPlayer : float,  szComplete : string )
 
 Script VCheck#0#1
@@ -1339,6 +1340,53 @@ Script VTriger#0#193
   )
 )
 
+// Companions travel (eitweaks.ini): a mercenary from Gipath in the party can be left here and taken back.
+// The game offers the leave briefing only in the mercenary's own base and clears it at every merc briefing,
+// so this script offers it again on every pass. ctravel.mercN is 1 while the mercenary is in the party.
+Script CTravelOffers
+(
+  if
+  (
+    Not( IsEqual( GSGetVar( 0, "ini.eitweaks.Companions.Travel" ) , 1 )  ) 
+  )
+  then
+  (
+    KillScript(  ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc1" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc1.n2_1", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc2" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc2.n2_2", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc3" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc3.n2_3", 1 ) 
+  )
+  if
+  (
+    IsEqual( GSGetVar( 0, "ctravel.merc4" ) , 1 ) 
+  )
+  then
+  (
+    GSSetVarMax( 0, "b.merc4.n2_4", 1 ) 
+  )
+)
+
 Script #OnBriefingComplete
 (
   if
@@ -1527,6 +1575,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc5", 1 ) 
     GSSetVarMax( 0, "apartyn5", 1 ) 
     MoveToPoint( GetObjectByName( "merc5" ) , 75.9, 46.55 ) 
     SleepUntilIdle( GetObjectByName( "merc5" )  ) 
@@ -1540,6 +1589,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc5", 0 ) 
     GSSetVarMax( 0, "apartyn5", 0 ) 
     MoveToPoint( GetObjectByName( "merc5" ) , 66, 68 ) 
     SleepUntilIdle( GetObjectByName( "merc5" )  ) 
@@ -1553,6 +1603,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc5", 1 ) 
     GSSetVarMax( 0, "apartyn5", 1 ) 
     MoveToPoint( GetObjectByName( "merc5" ) , 75.9, 46.55 ) 
     SleepUntilIdle( GetObjectByName( "merc5" )  ) 
@@ -1566,6 +1617,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc6", 1 ) 
     GSSetVarMax( 0, "apartyn6", 1 ) 
     MoveToPoint( GetObjectByName( "merc6" ) , 71.8, 49 ) 
     SleepUntilIdle( GetObjectByName( "merc6" )  ) 
@@ -1579,6 +1631,7 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc6", 0 ) 
     GSSetVarMax( 0, "apartyn6", 1 ) 
     MoveToPoint( GetObjectByName( "merc6" ) , 68, 68 ) 
     SleepUntilIdle( GetObjectByName( "merc6" )  ) 
@@ -1592,11 +1645,116 @@ Script #OnBriefingComplete
   then
   (
     KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc6", 1 ) 
     GSSetVarMax( 0, "apartyn6", 1 ) 
     MoveToPoint( GetObjectByName( "merc6" ) , 71.8, 49 ) 
     SleepUntilIdle( GetObjectByName( "merc6" )  ) 
     RotateTo( GetObjectByName( "merc6" ) , 76.8, 55 ) 
     SleepUntilIdle( GetObjectByName( "merc6" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc1.n2_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc1", 0 ) 
+    MoveToPoint( GetObjectByName( "merc1" ) , 51, 72 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+    RotateTo( GetObjectByName( "merc1" ) , 52, 71 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc1.n3_1" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc1", 1 ) 
+    MoveToPoint( GetObjectByName( "merc1" ) , 78, 44 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+    RotateTo( GetObjectByName( "merc1" ) , 79, 45 ) 
+    SleepUntilIdle( GetObjectByName( "merc1" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc2.n2_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc2", 0 ) 
+    MoveToPoint( GetObjectByName( "merc2" ) , 78.5, 67 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+    RotateTo( GetObjectByName( "merc2" ) , 76.5, 67.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc2.n3_2" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc2", 1 ) 
+    MoveToPoint( GetObjectByName( "merc2" ) , 81, 50 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+    RotateTo( GetObjectByName( "merc2" ) , 80, 49 ) 
+    SleepUntilIdle( GetObjectByName( "merc2" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n2_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc3", 0 ) 
+    MoveToPoint( GetObjectByName( "merc3" ) , 52, 59 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    RotateTo( GetObjectByName( "merc3" ) , 52, 60 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc3.n3_3" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc3", 1 ) 
+    MoveToPoint( GetObjectByName( "merc3" ) , 83, 48 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+    RotateTo( GetObjectByName( "merc3" ) , 82, 47 ) 
+    SleepUntilIdle( GetObjectByName( "merc3" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n2_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc4", 0 ) 
+    MoveToPoint( GetObjectByName( "merc4" ) , 63, 84.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    RotateTo( GetObjectByName( "merc4" ) , 63, 82 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+  )
+  if
+  (
+    IsEqualString( szComplete, "b.merc4.n3_4" ) 
+  )
+  then
+  (
+    KillScript(  ) 
+    GSSetVar( 0, "ctravel.merc4", 1 ) 
+    MoveToPoint( GetObjectByName( "merc4" ) , 75.5, 55.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
+    RotateTo( GetObjectByName( "merc4" ) , 74.5, 54.5 ) 
+    SleepUntilIdle( GetObjectByName( "merc4" )  ) 
   )
   if
   (
@@ -1667,4 +1825,5 @@ WorldScript
   VTriger#0#110( NULL ) 
   VTriger#0#160( NULL ) 
   VTriger#0#188( NULL ) 
+  CTravelOffers( NULL ) 
 )
