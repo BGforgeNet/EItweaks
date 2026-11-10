@@ -8,7 +8,7 @@ Besides loading EItweaks, it brings:
 
 - **Widescreen**: wide resolutions show correctly. On by default.
 - **Draw distance**: how far objects and landscape are drawn, `ObjectsDrawRadius` and `LandscapeDrawRadius` (100 by default).
-- **Engine fixes**: spell effects no longer stack wrongly; a lock that needs no Use/Steal skill opens without it; chests no longer open for a character without the required abilities; several bugs of the game's script engine; more in eix's [fixes](https://github.com/BGforgeNet/eix/blob/main/docs/fixes.md).
+- **Engine fixes**: spell effects no longer stack wrongly; a lock that needs no Use/Steal skill opens without it; chests no longer open for a character without the required abilities; several bugs of the game's script engine; more in eix's [fixes](https://github.com/BGforgeNet/eix/blob/main/docs/engine.md#fixes).
 - **No game disc**: the launcher's game runs without the disc.
 - **Info windows**: spell damage to one decimal, cast time in seconds, and the attack rate as a percentage of the normal one (`ImproveInfoWindows`, on in EItweaks).
 - **Spells on the unit panel**: the values page of a unit outside the party lists its spells, each with its icon and effect, in single player (`UnitPanelSpells`, set in `eix.ini` in `mods\eitweaks`).
