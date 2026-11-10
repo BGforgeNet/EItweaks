@@ -23,6 +23,8 @@ WORKDIR /eibuild
 COPY go.mod ./
 COPY cmd cmd
 COPY internal internal
+# Every image build, in CI and locally, vets and tests eibuild before compiling it.
+RUN CGO_ENABLED=0 go vet ./... && CGO_ENABLED=0 go test ./...
 RUN CGO_ENABLED=0 go build -trimpath -o /eibuild-bin ./cmd/eibuild
 
 FROM docker.io/library/debian:sid-slim@sha256:10e9e0d7aa4ed47205c7053f117199e6b06a9b17ac3eeb7f7bb1a818b963a803
