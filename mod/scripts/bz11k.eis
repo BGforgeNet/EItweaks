@@ -76,7 +76,12 @@ Script VTriger#0#3
     GSSetVarMax( 0, "b.Deva.D55_1", 1 ) 
     GSSetVarMax( 0, "b.merc5.n10_5", 1 ) 
     GSSetVarMax( 0, "b.merc6.n10_6", 1 ) 
-    GSSetVarMax( 0, "b.merc9.n10_9", 1 ) 
+    GSSetVarMax( 0, "b.merc9.n10_9", 1 )
+    // Companions travel: mercenaries carried here before the switch was turned off take their leave too.
+    GSSetVarMax( 0, "b.merc1.n10_1", 1 )
+    GSSetVarMax( 0, "b.merc2.n10_2", 1 )
+    GSSetVarMax( 0, "b.merc3.n10_3", 1 )
+    GSSetVarMax( 0, "b.merc4.n10_4", 1 )
   )
 )
 
