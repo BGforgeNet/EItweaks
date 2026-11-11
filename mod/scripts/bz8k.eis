@@ -29,7 +29,8 @@ GlobalVars (
   FemaleTalk2 : object,
   WinterFirTree00-243335 : object,
   Tiger : object,
-  Eda1 : object 
+  Eda1 : object,
+  Heroes : group 
 )
 
 DeclareScript VCheck#0#1 (  this : object )

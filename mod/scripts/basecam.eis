@@ -22,7 +22,8 @@ GlobalVars (
   Human8 : object,
   Human7 : object,
   Fake : object,
-  Salut : group 
+  Salut : group,
+  Heroes : group 
 )
 
 DeclareScript VCheck#0#1 (  this : object )

@@ -12,7 +12,8 @@ GlobalVars (
   FakeBox00-928579 : object,
   BabaSit : object,
   BabaSit2 : object,
-  MuzicSitTalk2 : object 
+  MuzicSitTalk2 : object,
+  Heroes : group 
 )
 
 DeclareScript VTriger#0#1 (  this : object )

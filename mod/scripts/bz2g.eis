@@ -11,7 +11,8 @@ GlobalVars (
   Daughter : object,
   Clerk : object,
   Cellar : object,
-  Witch : object 
+  Witch : object,
+  Heroes : group 
 )
 
 DeclareScript VCheck#0#42 (  this : object )

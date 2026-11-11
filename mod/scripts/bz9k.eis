@@ -4,7 +4,8 @@ GlobalVars (
   i : object,
   Talker2 : object,
   Talker : object,
-  DRunaway : group 
+  DRunaway : group,
+  Heroes : group 
 )
 
 DeclareScript VTriger#0#1 (  this : object )

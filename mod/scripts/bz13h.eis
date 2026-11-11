@@ -29,7 +29,8 @@ GlobalVars (
   MainGates : object,
   CageLeverOn : object,
   CageLever : object,
-  HGuard1 : object 
+  HGuard1 : object,
+  Heroes : group 
 )
 
 DeclareScript VCheck#0#1 (  this : object )

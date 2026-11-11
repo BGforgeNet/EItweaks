@@ -18,7 +18,8 @@ GlobalVars (
   OrcCamp7 : object,
   OrcCamp14 : object,
   OrcCamp15 : object,
-  OrcCamp4 : object 
+  OrcCamp4 : object,
+  Heroes : group 
 )
 
 DeclareScript VTriger#0#1 (  this : object )
