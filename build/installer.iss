@@ -7,7 +7,9 @@
 ; folder, eix's loader into its Engine folder, and the launcher's config selects EItweaks;
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
 ; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>; the starter's
-; options /EICOMPANIONS=<1|0> and /EIRUNSYSTEM=<1|0> (default 1) set its mercenary travel and running system.
+; options /EICOMPANIONS=<1|0> and /EIRUNSYSTEM=<1|0> (default 1) set its mercenary travel and running system,
+; /EIPAUSEHEALTH=<1|0> (default 1) its pause at 25% health, /EIPAUSESIGHTED, /EIPAUSEAGGRO and /EIPAUSEDEAD=<1|0>
+; (default 0) its pauses on enemies, and /EICLIPCURSOR=<1|0> (default 0) keeping the mouse in the game window.
 
 #if !Defined(Version)
   #error Define Version
@@ -74,9 +76,14 @@ en.LaunchStarter=Launch EIStarter-UM
 en.LaunchGame=Launch the game
 en.OptionsCaption=Options
 en.OptionsDesc=Which EItweaks features do you want?
-en.OptionsSub=Both can be changed later in the mod folder: the mercenaries in eitweaks.ini, running and walking in eix.ini and spelladdon.ini.
+en.OptionsSub=All can be changed later in the mod folder: the mercenaries in eitweaks.ini, running and walking in eix.ini and spelladdon.ini, the pauses (single player) and the mouse in eix.ini.
 en.OptCompanions=Mercenaries travel with the hero between allods
 en.OptRunSystem=Rebalanced running and walking: running costs a fixed amount of stamina, and the load carried slows running, and above the maximum load walking too
+en.OptPauseHealth=Pause when a party member's health falls below 25%
+en.OptPauseSighted=Pause when an enemy comes into view
+en.OptPauseAggro=Pause when an enemy attacks the party
+en.OptPauseDead=Pause when an enemy in view dies
+en.OptClipCursor=Keep the mouse inside the game window in windowed mode
 ru.GameDirCaption=Папка игры
 ru.GameDirDesc=Куда установлены Проклятые Земли?
 ru.GameDirSub=Выберите папку игры, для которой устанавливается EItweaks.
@@ -98,9 +105,14 @@ ru.LaunchStarter=Запустить EIStarter-UM
 ru.LaunchGame=Запустить игру
 ru.OptionsCaption=Настройки
 ru.OptionsDesc=Какие возможности EItweaks включить?
-ru.OptionsSub=Обе можно изменить позже в папке мода: наёмников в eitweaks.ini, бег и ходьбу в eix.ini и spelladdon.ini.
+ru.OptionsSub=Всё можно изменить позже в папке мода: наёмников в eitweaks.ini, бег и ходьбу в eix.ini и spelladdon.ini, паузы (в одиночной игре) и мышь в eix.ini.
 ru.OptCompanions=Наёмники путешествуют с героем между аллодами
 ru.OptRunSystem=Новая система бега и ходьбы: бег тратит постоянное количество выносливости, а переносимый груз замедляет бег, а сверх максимального груза и ходьбу
+ru.OptPauseHealth=Пауза, когда здоровье члена отряда падает ниже 25%
+ru.OptPauseSighted=Пауза, когда в поле зрения появляется враг
+ru.OptPauseAggro=Пауза, когда враг нападает на отряд
+ru.OptPauseDead=Пауза, когда погибает враг в поле зрения
+ru.OptClipCursor=Не выпускать курсор мыши из окна игры в оконном режиме
 de.GameDirCaption=Spielordner
 de.GameDirDesc=Wo ist Evil Islands installiert?
 de.GameDirSub=Wählen Sie den Ordner des Spiels, für das EItweaks bestimmt ist.
@@ -122,9 +134,14 @@ de.LaunchStarter=EIStarter-UM starten
 de.LaunchGame=Spiel starten
 de.OptionsCaption=Optionen
 de.OptionsDesc=Welche Funktionen von EItweaks moechten Sie?
-de.OptionsSub=Beide lassen sich spaeter im Mod-Ordner aendern: die Soeldner in eitweaks.ini, Rennen und Gehen in eix.ini und spelladdon.ini.
+de.OptionsSub=Alles laesst sich spaeter im Mod-Ordner aendern: die Soeldner in eitweaks.ini, Rennen und Gehen in eix.ini und spelladdon.ini, die Pausen (Einzelspieler) und die Maus in eix.ini.
 de.OptCompanions=Soeldner reisen mit dem Helden zwischen den Allods
 de.OptRunSystem=Neues Renn- und Gehsystem: Rennen kostet eine feste Menge Ausdauer, und die getragene Last verlangsamt das Rennen, ueber der Hoechstlast auch das Gehen
+de.OptPauseHealth=Pause, wenn die Gesundheit eines Gruppenmitglieds unter 25% faellt
+de.OptPauseSighted=Pause, wenn ein Feind in Sicht kommt
+de.OptPauseAggro=Pause, wenn ein Feind die Gruppe angreift
+de.OptPauseDead=Pause, wenn ein Feind in Sicht stirbt
+de.OptClipCursor=Den Mauszeiger im Fenstermodus im Spielfenster halten
 
 [InstallDelete]
 ; EItweaks 1.0 and the 2.0 test builds replaced the new game's movie with an empty file; one left in the mod folder by
@@ -415,7 +432,9 @@ begin
   else
     Params := Params + ' /EIVARIANT=standalone';
   Params := Params + ' /EICOMPANIONS=' + BoolFlag(OptionsPage.Values[0]) + ' /EIRUNSYSTEM=' +
-    BoolFlag(OptionsPage.Values[1]);
+    BoolFlag(OptionsPage.Values[1]) + ' /EIPAUSEHEALTH=' + BoolFlag(OptionsPage.Values[2]) + ' /EIPAUSESIGHTED=' +
+    BoolFlag(OptionsPage.Values[3]) + ' /EIPAUSEAGGRO=' + BoolFlag(OptionsPage.Values[4]) + ' /EIPAUSEDEAD=' +
+    BoolFlag(OptionsPage.Values[5]) + ' /EICLIPCURSOR=' + BoolFlag(OptionsPage.Values[6]);
   if ShellExec('', ExpandConstant('{srcexe}'), Params, '', SW_SHOWNORMAL, ewNoWait, ErrorCode) then
   begin
     Relaunched := True;
@@ -595,13 +614,23 @@ begin
   VariantPage.CheckListBox.Height := StarterPageButton.Top - VariantPage.CheckListBox.Top - ScaleY(8);
   UpdateStarterStatus;
 
-  { Both features need eix, which only the starter version has. }
+  { Every option needs eix, which only the starter version has. }
   OptionsPage := CreateInputOptionPage(VariantPage.ID, CustomMessage('OptionsCaption'), CustomMessage('OptionsDesc'),
     CustomMessage('OptionsSub'), False, False);
   OptionsPage.Add(CustomMessage('OptCompanions'));
   OptionsPage.Add(CustomMessage('OptRunSystem'));
+  OptionsPage.Add(CustomMessage('OptPauseHealth'));
+  OptionsPage.Add(CustomMessage('OptPauseSighted'));
+  OptionsPage.Add(CustomMessage('OptPauseAggro'));
+  OptionsPage.Add(CustomMessage('OptPauseDead'));
+  OptionsPage.Add(CustomMessage('OptClipCursor'));
   OptionsPage.Values[0] := ExpandConstant('{param:EICOMPANIONS|1}') <> '0';
   OptionsPage.Values[1] := ExpandConstant('{param:EIRUNSYSTEM|1}') <> '0';
+  OptionsPage.Values[2] := ExpandConstant('{param:EIPAUSEHEALTH|1}') <> '0';
+  OptionsPage.Values[3] := ExpandConstant('{param:EIPAUSESIGHTED|0}') = '1';
+  OptionsPage.Values[4] := ExpandConstant('{param:EIPAUSEAGGRO|0}') = '1';
+  OptionsPage.Values[5] := ExpandConstant('{param:EIPAUSEDEAD|0}') = '1';
+  OptionsPage.Values[6] := ExpandConstant('{param:EICLIPCURSOR|0}') = '1';
 
   WizardForm.SelectDirLabel.Caption := CustomMessage('StarterDirLabel');
 end;
@@ -916,6 +945,42 @@ begin
   SetModIni('Encumbrance', 'Enabled', Run, 'eix.ini');
   SetModIni('rebalanceengine', 'newrunsystem', Run, 'spelladdon.ini');
   SetModIni('rebalanceengine', 'rewriterunabilitytime', Run, 'spelladdon.ini');
+  if OptionsPage.Values[2] then
+    SetModIni('AutoPause', 'HealthPercent', '25', 'eix.ini')
+  else
+    SetModIni('AutoPause', 'HealthPercent', '0', 'eix.ini');
+  SetModIni('AutoPause', 'EnemySighted', BoolFlag(OptionsPage.Values[3]), 'eix.ini');
+  SetModIni('AutoPause', 'EnemyAggro', BoolFlag(OptionsPage.Values[4]), 'eix.ini');
+  SetModIni('AutoPause', 'EnemyDead', BoolFlag(OptionsPage.Values[5]), 'eix.ini');
+  SetModIni('EngineFixes', 'ClipCursorToWindow', BoolFlag(OptionsPage.Values[6]), 'eix.ini');
+end;
+
+{ eix pads the game's heap blocks itself, so Universal Mod's padding is off. um.cfg is installed only when there is
+  none, so an existing one gets that key here, its other lines kept. }
+procedure SetUmHeapPadding;
+var
+  Cfg: String;
+  Lines: TArrayOfString;
+  I: Integer;
+  Found: Boolean;
+begin
+  Cfg := ExpandConstant('{app}\mods\eitweaks\um.cfg');
+  if not LoadStringsFromFile(Cfg, Lines) then
+    SetArrayLength(Lines, 0);
+  Found := False;
+  for I := 0 to GetArrayLength(Lines) - 1 do
+    if Pos('HEAP_ALLOC_PADDING=', Uppercase(Trim(Lines[I]))) = 1 then
+    begin
+      Lines[I] := 'HEAP_ALLOC_PADDING=0';
+      Found := True;
+    end;
+  if not Found then
+  begin
+    SetArrayLength(Lines, GetArrayLength(Lines) + 1);
+    Lines[GetArrayLength(Lines) - 1] := 'HEAP_ALLOC_PADDING=0';
+  end;
+  if not SaveStringsToFile(Cfg, Lines, False) then
+    RaiseException('Could not write ' + Cfg + '.');
 end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
@@ -925,6 +990,7 @@ begin
     WriteStarterConfig;
     SetStarterExe;
     WriteOptions;
+    SetUmHeapPadding;
   end;
   if (CurStep = ssPostInstall) and IsStarter and IsWine then
   begin
