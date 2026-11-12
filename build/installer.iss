@@ -649,8 +649,14 @@ begin
     Problem := CustomMessage('NoGame')
   else if CurPageID = VariantPage.ID then
   begin
+    { A folder given with /DIR (by the player, or by the relaunch as administrator) stays the starter's folder. }
     if IsStarter then
-      WizardForm.DirEdit.Text := StarterDir('')
+    begin
+      if ExpandConstant('{param:DIR|}') <> '' then
+        WizardForm.DirEdit.Text := ExpandConstant('{param:DIR}')
+      else
+        WizardForm.DirEdit.Text := StarterDir('');
+    end
     else
     begin
       WizardForm.DirEdit.Text := GameDirValue('');
@@ -930,7 +936,8 @@ begin
       RestoreDir(Saved, ExpandConstant('{app}'));
       DelTree(Saved, True, True, True);
     end;
-    if FileExists(ExpandConstant('{app}\' + StarterExe)) and DirExists(ExpandConstant('{app}\mods\eitweaks')) then
+    { The uninstaller may already have removed an empty mod folder, so the launcher's selection is cleared either way. }
+    if FileExists(ExpandConstant('{app}\' + StarterExe)) then
     begin
       DelTree(ExpandConstant('{app}\mods\eitweaks'), True, True, True);
       Cfg := ExpandConstant('{app}\EIStarter-UM.cfg');
