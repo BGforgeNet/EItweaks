@@ -4,6 +4,8 @@
 
 The installer selects EItweaks in the launcher. On a new installation of the launcher it also skips the launcher's first-start questions (whether to download Universal Mod, whether to use the original CD camera, which EItweaks already sets) and makes the settings changes the launcher makes on its first start: a resolution the screen offers, 32-bit colour, and the frame-rate-independent cursor off.
 
+The launcher's own `Engine\game.exe` is the Russian game's. On the GOG English or German version, whose briefing voices it cannot find, the installer copies that game's own `game.exe` into the launcher's `Engine` folder as `game-en.exe`, with the large address aware bit set as in the launcher's, and the launcher runs it for every mod. Any other game keeps the launcher's own exe; uninstalling EItweaks puts it back.
+
 The installer replaces the launcher's loader, `Engine\dinput.dll`, with eix's, which also loads the launcher's own add-on for its other mods. eix has SpellAddon built in, and keeps the older SpellAddon the launcher ships from loading.
 
 ### Playing

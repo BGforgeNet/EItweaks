@@ -217,6 +217,11 @@ const
   StarterExe = 'EIStarter-UM.exe';
   { texts.res of the GOG Russian version, the same as the official Russian patch 1.06's. }
   RussianTextsSHA256 = '96d8e49a3472f93d92ec8b4ad4286fa7662d78fc4577fe2335832542014b3a5a';
+  { game.exe of the GOG English and German versions (one file), and the same with the large address aware bit set. }
+  GogExeSHA256 = 'd0fc0bb2acf45f0e59fae89e55c16a59848ffa89fb68feee9f298a680b660ad8';
+  GogExeLargeSHA256 = 'e09e15be36c3568ecc689e85b56788dfe4c400700b72d291a3ec3461d66cdb19';
+  { The launcher's copy of that exe, in its Engine folder. }
+  GameExeCopy = 'game-en.exe';
   NivalKey = 'Software\Nival Interactive\EvilIslands';
   StarterCopyKey = 'Software\Gipat.ru\EI_Starter\EvilIslands';
   AddonKey = 'Software\Gipat.ru\EI_Starter\settings';
@@ -863,6 +868,37 @@ begin
     Log('Could not write ' + Cfg);
 end;
 
+{ The game exe the launcher runs. The launcher's own is the Russian one, whose briefing voices an English or German
+  game's speech does not have, so on the GOG English or German version the launcher runs a copy of that game's own
+  exe, with the large address aware bit set as in the launcher's; eix supports both. Any other game gets the
+  launcher's own back. }
+procedure SetStarterExe;
+var
+  Cfg, ExeCopy: String;
+  Exe: AnsiString;
+  Header, Flags: Integer;
+begin
+  Cfg := ExpandConstant('{app}\EIStarter-UM.cfg');
+  ExeCopy := ExpandConstant('{app}\Engine\') + GameExeCopy;
+  if Lowercase(GetSHA256OfFile(AddBackslash(GameDirValue('')) + 'game.exe')) <> GogExeSHA256 then
+  begin
+    if CompareText(GetIniString('Launcher', 'ExeName', '', Cfg), GameExeCopy) = 0 then
+      DeleteIniEntry('Launcher', 'ExeName', Cfg);
+    DeleteFile(ExeCopy);
+    Exit;
+  end;
+  if not LoadStringFromFile(AddBackslash(GameDirValue('')) + 'game.exe', Exe) then
+    RaiseException('Could not read the game''s game.exe.');
+  { The PE header's offset is at 0x3C; its Characteristics field, 0x16 into it, holds the bit (0x20). }
+  Header := Ord(Exe[$3D]) or (Ord(Exe[$3E]) shl 8) or (Ord(Exe[$3F]) shl 16) or (Ord(Exe[$40]) shl 24);
+  Flags := Ord(Exe[Header + $17]) or $20;
+  Exe[Header + $17] := Chr(Flags);
+  if not SaveStringToFile(ExeCopy, Exe, False) or (Lowercase(GetSHA256OfFile(ExeCopy)) <> GogExeLargeSHA256) then
+    RaiseException('Could not write ' + ExeCopy + '.');
+  if not SetIniString('Launcher', 'ExeName', GameExeCopy, Cfg) then
+    RaiseException('Could not set the game exe in ' + Cfg + '.');
+end;
+
 procedure SetModIni(const Section, Key, Value, FileName: String);
 begin
   if not SetIniString(Section, Key, Value, ExpandConstant('{app}\mods\eitweaks\') + FileName) then
@@ -887,6 +923,7 @@ begin
   if (CurStep = ssPostInstall) and IsStarter then
   begin
     WriteStarterConfig;
+    SetStarterExe;
     WriteOptions;
   end;
   if (CurStep = ssPostInstall) and IsStarter and IsWine then
@@ -943,6 +980,9 @@ begin
       Cfg := ExpandConstant('{app}\EIStarter-UM.cfg');
       if CompareText(GetIniString('Launcher', 'Mod', '', Cfg), 'eitweaks') = 0 then
         DeleteIniEntry('Launcher', 'Mod', Cfg);
+      if CompareText(GetIniString('Launcher', 'ExeName', '', Cfg), GameExeCopy) = 0 then
+        DeleteIniEntry('Launcher', 'ExeName', Cfg);
+      DeleteFile(ExpandConstant('{app}\Engine\') + GameExeCopy);
     end;
   end;
 end;

@@ -12,6 +12,8 @@
 - The starter version runs on the GOG versions without the game disc.
 - The starter version runs with eix 0.1.0, which reimplements EI starter's add-on and loader with SpellAddon built in,
   and adds engine fixes of its own.
+- Starter version on the GOG English or German version: the launcher runs that game's own `game.exe`, so the
+  briefing voices play.
 - Starter version: info windows show spell damage to one decimal, cast time in seconds, and the attack rate as a
   percentage of the normal one.
 - Starter version: the unit panel lists the spells of a unit outside the party, with their effects.
