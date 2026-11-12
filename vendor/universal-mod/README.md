@@ -7,5 +7,6 @@ To rebuild, extract the archive, install a 32-bit MinGW C++ compiler and put it 
 
     i686-w64-mingw32-g++ -shared -o um.dll resources/universal-mod/um-dll/*.cpp -I resources/universal-mod/um-dll -std=c++17 -O3 -flto -static -s -Wall -Wextra -Wno-unused-parameter -lgdi32 -lws2_32
 
-EItweaks loads this runtime from its starter plugin. `um.cfg` disables the check for the older SpellAddon filename
-and the separate, unbundled `um-engine.dll`. `DDRAW_DLL=auto` selects the bundled D7VK under Wine.
+EItweaks' starter version loads this runtime as a plugin, set in the mod's `config.ini`. `um.cfg` disables the check
+for the older SpellAddon filename and the separate, unbundled `um-engine.dll`. `DDRAW_DLL=auto` selects the bundled
+D7VK under Wine.

@@ -31,7 +31,7 @@ The tweaks are mostly to make things more consistent within the game, add some f
 - Dragons on Gipath no longer have over 1000 hit points. Same reason.
 - Running depletes stamina by points rather than percentage, like game text suggests, so a character can run longer as stamina grows.
 - Batteries are disabled.
-- Starter version: mercenaries travel with the hero between allods and join the finale party. One from an earlier allod can be left in a later base and taken back there. `Travel=0` in `eitweaks.ini` in `mods\eitweaks` restores the original game.
+- Starter version: mercenaries travel with the hero between allods and join the finale party with their equipment; as with the hero, backpacks stay behind. One from an earlier allod can be left in a later base and taken back there. `Travel=0` in `eitweaks.ini` in `mods\eitweaks` restores the original game.
 
 ### Speedup
 

@@ -365,7 +365,8 @@ Script VTriger#0#52
 
 // Companions travel (eitweaks.ini): a mercenary from Gipath or Ingos in the party can be left here and taken back.
 // The game offers the leave briefing only in the mercenary's own base and clears it at every merc briefing,
-// so this script offers it again on every pass. ctravel.mercN is 1 while the mercenary is in the party.
+// so this script offers it again on every pass. ctravel.mercN is 1 from hiring or taking back until the mercenary is
+// left at a base; after a farewell or a death it stays 1, which offers a line no one here can speak.
 Script CTravelOffers
 (
   if
