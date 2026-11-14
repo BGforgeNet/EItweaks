@@ -277,7 +277,7 @@ type
 var
   GamePage: TInputDirWizardPage;
   LangPage, VariantPage, OptionsPage: TInputOptionWizardPage;
-  StarterPageButton, RunSystemButton: TNewButton;
+  StarterPageLink: TNewStaticText;
   DetectedFor: String;
   Relaunched: Boolean;
   { The launcher folder the embedded package was unpacked for; '' before that. }
@@ -587,6 +587,20 @@ begin
   ShellExecAsOriginalUser('open', RunSystemURL, '', '', SW_SHOWNORMAL, ewNoWait, ErrorCode);
 end;
 
+{ A web link at the bottom of a page: blue underlined text with the hand cursor. The page's list ends above it. }
+function CreateLink(Page: TInputOptionWizardPage; const Caption: String; OnClick: TNotifyEvent): TNewStaticText;
+begin
+  Result := TNewStaticText.Create(Page);
+  Result.Parent := Page.Surface;
+  Result.Caption := Caption;
+  Result.Cursor := crHand;
+  Result.Font.Color := clBlue;
+  Result.Font.Style := [fsUnderline];
+  Result.OnClick := OnClick;
+  Result.Top := Page.SurfaceHeight - Result.Height;
+  Page.CheckListBox.Height := Result.Top - Page.CheckListBox.Top - ScaleY(8);
+end;
+
 procedure UpdateStarterStatus;
 begin
   if StarterInstalled then
@@ -595,7 +609,7 @@ begin
     VariantPage.SubCaptionLabel.Caption := FmtMessage(CustomMessage('StarterOld'), [StarterDir('')])
   else
     VariantPage.SubCaptionLabel.Caption := CustomMessage('StarterMissing');
-  StarterPageButton.Visible := not StarterInstalled;
+  StarterPageLink.Visible := not StarterInstalled;
 end;
 
 procedure InitializeWizard;
@@ -633,14 +647,7 @@ begin
     VariantPage.SelectedValueIndex := 1
   else
     VariantPage.SelectedValueIndex := 0;
-  StarterPageButton := TNewButton.Create(VariantPage);
-  StarterPageButton.Parent := VariantPage.Surface;
-  StarterPageButton.Caption := CustomMessage('OpenStarterPage');
-  StarterPageButton.Width := ScaleX(200);
-  StarterPageButton.Height := ScaleY(25);
-  StarterPageButton.Top := VariantPage.SurfaceHeight - StarterPageButton.Height;
-  StarterPageButton.OnClick := @StarterPageClick;
-  VariantPage.CheckListBox.Height := StarterPageButton.Top - VariantPage.CheckListBox.Top - ScaleY(8);
+  StarterPageLink := CreateLink(VariantPage, CustomMessage('OpenStarterPage'), @StarterPageClick);
   UpdateStarterStatus;
 
   { Every option needs eix, which only the starter version has. }
@@ -662,14 +669,7 @@ begin
   OptionsPage.Values[OptPauseAggro] := ExpandConstant('{param:EIPAUSEAGGRO|0}') = '1';
   OptionsPage.Values[OptPauseDead] := ExpandConstant('{param:EIPAUSEDEAD|0}') = '1';
   OptionsPage.Values[OptClipCursor] := ExpandConstant('{param:EICLIPCURSOR|0}') = '1';
-  RunSystemButton := TNewButton.Create(OptionsPage);
-  RunSystemButton.Parent := OptionsPage.Surface;
-  RunSystemButton.Caption := CustomMessage('RunSystemPage');
-  RunSystemButton.Width := ScaleX(200);
-  RunSystemButton.Height := ScaleY(25);
-  RunSystemButton.Top := OptionsPage.SurfaceHeight - RunSystemButton.Height;
-  RunSystemButton.OnClick := @RunSystemClick;
-  OptionsPage.CheckListBox.Height := RunSystemButton.Top - OptionsPage.CheckListBox.Top - ScaleY(8);
+  CreateLink(OptionsPage, CustomMessage('RunSystemPage'), @RunSystemClick);
 
   WizardForm.SelectDirLabel.Caption := CustomMessage('StarterDirLabel');
 end;
