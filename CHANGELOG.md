@@ -42,6 +42,7 @@
 - The starter version runs through EIStarter-UM, Universal Mod's open source launcher, instead of EI starter.
 - Airy grants +2 to Sensory Magic instead of +10, and Trickster +2 to Use/Steal instead of +10.
 - Dragons on Gipath no longer have more than 1000 hit points.
+- Dragons regenerate half as fast.
 - Starter version: spells with a permanent or triggered action item rune can't be put into wands.
 - Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).
 - Russian: Zak's "My head hurts" speech at the start of a new game is no longer shortened.
