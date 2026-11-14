@@ -3,8 +3,6 @@
 *.res
 *.xlsx
 *.zip
-!vendor/eistarter-um/EIStarter-UM-0.2.9.zip
-!vendor/eix/eix-0.1.0.zip
 game.exe
 tmp/
 dist/

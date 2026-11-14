@@ -4,7 +4,7 @@
 | [**Report issues**](https://github.com/BGforgeNet/EItweaks/issues)
 | [**Discuss**](https://forums.bgforge.net/viewtopic.php?f=22&t=183)
 
-EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes and various tweaks, QoL and a few balance changes. It bundles [EIStarter-UM](docs/starter.md), [eix](docs/eix.md) (EI starter's add-on reimplemented, with SpellAddon built in), and Universal Mod's runtime with D7VK for Wine. Installation needs no internet connection.
+EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes and various tweaks, QoL and a few balance changes. It bundles [EIStarter-UM](docs/starter.md), [eix](docs/eix.md) (EI starter's add-on reimplemented, with SpellAddon built in), and D7VK. Installation needs no internet connection.
 
 - [Fixes](docs/fixes.md)
 - [Tweaks](#tweaks)

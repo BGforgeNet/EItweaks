@@ -10,14 +10,10 @@ The installer replaces the launcher's loader, `Engine\dinput.dll`, with eix's, w
 
 ### Playing
 
-EItweaks loads Universal Mod's `um.dll` runtime from its mod folder. The bundled `d7vk.dll` keeps its original name:
-UM's `DDRAW_DLL=auto` selects it under Wine and the game's DirectDraw on Windows. D7VK translates Direct3D 7 to
-Vulkan; if it cannot create a device, UM falls back to the game's DirectDraw. Under Wine, the installer turns off
-the frame-rate-independent cursor, including in existing launcher settings, to prevent flicker with D7VK.
-
-`um.cfg` in the mod folder controls the runtime, including its overlay. The installer keeps an existing config.
-EItweaks disables UM's check for the older SpellAddon file, since eix has SpellAddon built in, and does not bundle
-the separate `um-engine.dll` runtime.
+The installer puts D7VK, which translates Direct3D 7 to Vulkan, into the launcher's `Engine` folder as `ddraw.dll`, so
+every mod the launcher runs uses it. Under Wine it also sets the game's DLL override for `ddraw` to native, which Wine
+needs to load it. The installer turns off the frame-rate-independent cursor, including in existing launcher settings,
+to prevent flicker with D7VK. Uninstalling EItweaks removes D7VK.
 
 - Launch EIStarter-UM: the installer has already selected EItweaks. Press Play.
 - To play without EItweaks, select another entry in the dropdown. EItweaks uses the game's own saves, so a game can be continued with EItweaks turned off, and back on.

@@ -158,10 +158,14 @@ Source: "{tmp}\eistarter-um\EIStarter-UM\*"; DestDir: "{app}"; Flags: external r
 ; one, after the launcher package above. It still loads the original add-on of the launcher and its other mods, so it
 ; stays after uninstalling, as the launcher does. eix's built-in SpellAddon keeps any SpellAddon*.asi from loading.
 Source: "payload\Engine\dinput.dll"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
+; D7VK, as the game's DirectDraw: the game loads ddraw.dll from its own folder before the system's.
+Source: "payload\Engine\ddraw.dll"; DestDir: "{app}\Engine"; Flags: ignoreversion; Check: IsStarter
 
 [Registry]
 ; At every Play EIStarter-UM itself writes the selected mod (AddonPath), the game settings a fresh installation has
 ; where missing, and, under Wine, the dinput override its loader needs.
+; Wine uses its own DirectDraw even with a ddraw.dll beside the game, unless the game's overrides prefer the native one.
+Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType: string; ValueName: "ddraw"; ValueData: "native,builtin"; Flags: uninsdeletevalue; Check: IsStarter and IsWine
 ; The GOG versions' installers write no camera or light settings, so the game saves its built-in defaults, which
 ; differ from what the CD installer wrote: the camera tilts in jumps, and quest and hero lights glare. A value still at
 ; the built-in default (the same in every language's GOG exe), or missing, gets the CD installer's; one the player
@@ -955,34 +959,6 @@ begin
   SetModIni('EngineFixes', 'ClipCursorToWindow', BoolFlag(OptionsPage.Values[6]), 'eix.ini');
 end;
 
-{ eix pads the game's heap blocks itself, so Universal Mod's padding is off. um.cfg is installed only when there is
-  none, so an existing one gets that key here, its other lines kept. }
-procedure SetUmHeapPadding;
-var
-  Cfg: String;
-  Lines: TArrayOfString;
-  I: Integer;
-  Found: Boolean;
-begin
-  Cfg := ExpandConstant('{app}\mods\eitweaks\um.cfg');
-  if not LoadStringsFromFile(Cfg, Lines) then
-    SetArrayLength(Lines, 0);
-  Found := False;
-  for I := 0 to GetArrayLength(Lines) - 1 do
-    if Pos('HEAP_ALLOC_PADDING=', Uppercase(Trim(Lines[I]))) = 1 then
-    begin
-      Lines[I] := 'HEAP_ALLOC_PADDING=0';
-      Found := True;
-    end;
-  if not Found then
-  begin
-    SetArrayLength(Lines, GetArrayLength(Lines) + 1);
-    Lines[GetArrayLength(Lines) - 1] := 'HEAP_ALLOC_PADDING=0';
-  end;
-  if not SaveStringsToFile(Cfg, Lines, False) then
-    RaiseException('Could not write ' + Cfg + '.');
-end;
-
 procedure CurStepChanged(CurStep: TSetupStep);
 begin
   if (CurStep = ssPostInstall) and IsStarter then
@@ -990,10 +966,6 @@ begin
     WriteStarterConfig;
     SetStarterExe;
     WriteOptions;
-    SetUmHeapPadding;
-  end;
-  if (CurStep = ssPostInstall) and IsStarter and IsWine then
-  begin
     { Existing launcher configs skip FirstStartSettings. Both keys must agree: the launcher switches between them. }
     if not RegWriteDWordValue(HKCU, NivalKey + '\General Settings', 'FPSIndependentCursor', 0) then
       RaiseException('Could not disable the independent cursor for D7VK.');

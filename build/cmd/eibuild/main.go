@@ -1,7 +1,9 @@
 // eibuild builds EItweaks from the repository's source data: per language, an EI starter mod zip and a standalone zip,
 // and the payload of the one installer.
 //
-//	eibuild build <repo> <version> <out>   write <out>/eitweaks-<version>-<lang>-{starter,standalone}.zip and SHA256SUMS
+//	eibuild fetch <manifest> <downloads>   download the third-party files <manifest> lists into <downloads>, checked
+//	eibuild build <repo> <downloads> <version> <out>
+//	                                       write <out>/eitweaks-<version>-<lang>-{starter,standalone}.zip and SHA256SUMS
 //	eibuild xlsx <csv-dir> <out.xlsx>      a database's CSV sheets as one workbook, for spreadsheet editing
 //	eibuild csv <in.xlsx> <csv-dir>        a workbook back to CSV sheets, cell text verbatim
 //	eibuild payload <dir> <version> <out>  the installer's payload, from the starter zips in <dir>
@@ -25,6 +27,7 @@ import (
 	"strings"
 	"time"
 
+	"eitweaks/build/internal/fetch"
 	"eitweaks/build/internal/mobscript"
 	"eitweaks/build/internal/xlsxcsv"
 )
@@ -39,11 +42,10 @@ var databases = []string{"database", "databaselmp"}
 var partialArchives = []string{filepath.Join("res", "textures.res")}
 
 // starterOnly lists the mod's files the standalone version leaves out: the starter's config, eix's add-on and its
-// settings, and Universal Mod's runtime, which the game's own exe runs none of, and the partial archives.
+// settings, which the game's own exe runs none of, D7VK's license, and the partial archives.
 func starterOnly() []string {
 	return append([]string{"config.reg", "addon.dll", "eix.ini", "eitweaks.ini", "spelladdon.ini", "eix-LICENSE.txt",
-		"eix-THIRD-PARTY-NOTICES.txt", "um.dll", "um.cfg", "um-LICENSE.txt", "um-source.tar.gz", "d7vk.dll",
-		"d7vk-LICENSE.txt"}, partialArchives...)
+		"eix-THIRD-PARTY-NOTICES.txt", "d7vk-LICENSE.txt"}, partialArchives...)
 }
 
 // The folder names of each language's GOG install where they are not lowercase. Windows ignores case when the
@@ -53,14 +55,14 @@ var gogFolders = map[string]map[string]string{
 	"de": {"maps": "Maps", "res": "Res"},
 }
 
-// eixPackage returns the files of the one vendored eix release package, keyed by their names inside its top folder.
-func eixPackage(vendor string) (map[string][]byte, error) {
-	zips, err := filepath.Glob(filepath.Join(vendor, "eix", "eix-*.zip"))
+// eixPackage returns the files of the one downloaded eix release package, keyed by their names inside its top folder.
+func eixPackage(downloads string) (map[string][]byte, error) {
+	zips, err := filepath.Glob(filepath.Join(downloads, "eix-*.zip"))
 	if err != nil {
 		return nil, err
 	}
 	if len(zips) != 1 {
-		return nil, fmt.Errorf("%s: want exactly one eix-*.zip, found %d", filepath.Join(vendor, "eix"), len(zips))
+		return nil, fmt.Errorf("%s: want exactly one eix-*.zip, found %d", downloads, len(zips))
 	}
 	files, err := readZip(zips[0])
 	if err != nil {
@@ -84,8 +86,10 @@ func main() {
 	}
 	var err error
 	switch args := os.Args[2:]; {
-	case os.Args[1] == "build" && len(args) == 3:
-		err = build(args[0], args[1], args[2])
+	case os.Args[1] == "fetch" && len(args) == 2:
+		err = fetchAll(args[0], args[1])
+	case os.Args[1] == "build" && len(args) == 4:
+		err = build(args[0], args[1], args[2], args[3])
 	case os.Args[1] == "xlsx" && len(args) == 2:
 		err = xlsxcsv.Import(args[0], args[1])
 	case os.Args[1] == "csv" && len(args) == 2:
@@ -104,11 +108,24 @@ func main() {
 }
 
 func usage() {
-	fmt.Fprintln(os.Stderr, "usage: eibuild build <repo> <version> <out> | xlsx <csv-dir> <out.xlsx> | csv <in.xlsx> <csv-dir> | payload <dir> <version> <out> | script-extract <map.mob> <out.eis>")
+	fmt.Fprintln(os.Stderr, "usage: eibuild fetch <manifest> <downloads> | build <repo> <downloads> <version> <out> | xlsx <csv-dir> <out.xlsx> | csv <in.xlsx> <csv-dir> | payload <dir> <version> <out> | script-extract <map.mob> <out.eis>")
 	os.Exit(2)
 }
 
 // ---- helpers ----
+
+func fetchAll(manifest, downloads string) error {
+	f, err := os.Open(manifest)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	entries, err := fetch.Parse(f)
+	if err != nil {
+		return fmt.Errorf("%s: %w", manifest, err)
+	}
+	return fetch.All(fetch.NewClient(), entries, downloads)
+}
 
 // um runs um-multitool; on failure its combined output is part of the error.
 func um(args ...string) error {
@@ -230,16 +247,15 @@ func setVersion(path, version string) error {
 	return os.WriteFile(path, bytes.ReplaceAll(text, []byte(versionPlaceholder), []byte(version)), 0o644)
 }
 
-func build(repo, version, out string) error {
+func build(repo, downloads, version, out string) error {
 	work, err := os.MkdirTemp("", "eibuild-")
 	if err != nil {
 		return err
 	}
 	defer os.RemoveAll(work)
 
-	// Everything but lang/<lang> is the same for every language: mod/ and the vendored runtime.
+	// Everything but lang/<lang> is the same for every language: mod/ and the downloaded runtime.
 	src := filepath.Join(repo, "mod")
-	vendor := filepath.Join(repo, "vendor")
 	common := filepath.Join(work, "common")
 	for _, db := range databases {
 		if err := buildDatabase(filepath.Join(src, "res", db), filepath.Join(common, "res", db+".res"), filepath.Join(work, db)); err != nil {
@@ -272,7 +288,7 @@ func build(repo, version, out string) error {
 	}
 	// eix's loader loads an addon.dll from the selected mod's folder in place of the launcher's own, so eix's add-on
 	// runs for this mod only. The loader itself replaces the launcher's, in its Engine folder.
-	eix, err := eixPackage(vendor)
+	eix, err := eixPackage(downloads)
 	if err != nil {
 		return err
 	}
@@ -300,18 +316,12 @@ func build(repo, version, out string) error {
 	if err := os.WriteFile(filepath.Join(engine, "dinput.dll"), loader, 0o644); err != nil {
 		return err
 	}
-	for _, file := range []struct{ src, dst string }{
-		{"universal-mod/um.dll", "um.dll"},
-		{"universal-mod/LICENSE", "um-LICENSE.txt"},
-		{"universal-mod/source.tar.gz", "um-source.tar.gz"},
-		{"d7vk/d7vk.dll", "d7vk.dll"},
-		{"d7vk/LICENSE", "d7vk-LICENSE.txt"},
-	} {
-		if err := copyFile(filepath.Join(vendor, file.src), filepath.Join(common, file.dst)); err != nil {
-			return err
-		}
+	// D7VK renders the game's DirectDraw through Vulkan. The game loads ddraw.dll from its own folder first, which
+	// for the launcher is its Engine folder; its license goes with the mod.
+	if err := copyFile(filepath.Join(downloads, "d7vk.dll"), filepath.Join(engine, "ddraw.dll")); err != nil {
+		return err
 	}
-	if err := copyFile(filepath.Join(src, "um.cfg"), filepath.Join(common, "um.cfg")); err != nil {
+	if err := copyFile(filepath.Join(downloads, "d7vk-LICENSE"), filepath.Join(common, "d7vk-LICENSE.txt")); err != nil {
 		return err
 	}
 	// eix reads eix.ini, and its built-in SpellAddon reads a spelladdon.ini, from the active mod's folder first, so
