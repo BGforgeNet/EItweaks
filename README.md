@@ -6,7 +6,7 @@
 
 EItweaks is a mod for Evil Islands: Curse of the Lost Soul. It includes multiple fixes and various tweaks, QoL and a few balance changes.
 
-EItweaks utilizes [eix](docs/eix.md) and [EIStarter-UM](docs/starter.md) to provide engine fixes and tweaks such as Widescreen and HQ music support, Autopause, dynamic run speed, and more.
+EItweaks utilizes [eix](docs/eix.md) and [EIStarter-UM](docs/starter.md) to provide engine fixes and tweaks such as widescreen and HQ music support, AutoPause, dynamic run speed, and more.
 
 - [Fixes](docs/fixes.md)
 - [Tweaks](#tweaks)

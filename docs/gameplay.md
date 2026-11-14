@@ -9,7 +9,7 @@
 
 - Human (PC and NPC) run speed slightly increased to match other characters.
 - Human (PC and NPC) walk speed considerably increased (it was the same as sneaking originally).
-- Running depletes stamina by points rather than percentage, like game text suggests, so a character can run longer as stamina grows. However, higher encumbrance spends stamina faster and reduces run speed.
+- Starter version: running depletes stamina by points rather than percentage, as the game text suggests, so a character can run longer as stamina grows: longer than before above 75 maximum stamina, shorter below it. However, higher encumbrance spends stamina faster and reduces run speed.
 
 ### Exploits
 
