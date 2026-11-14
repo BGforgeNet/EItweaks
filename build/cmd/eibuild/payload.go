@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"io"
 	"os"
@@ -73,6 +74,9 @@ func payload(dir, version, dst string) error {
 		}
 	}
 	trees["Engine"] = engine
+	if _, ok := trees["common"]["d7vk.dll"]; !ok {
+		return errors.New("the mod packages share no d7vk.dll")
+	}
 	for tree, files := range trees {
 		for name, data := range files {
 			p := filepath.Join(dst, tree, filepath.FromSlash(name))
@@ -132,6 +136,10 @@ func filesISS(trees map[string]map[string][]byte, langs []string) string {
 			fmt.Fprintf(&b, "#define TextsSHA256_%s \"%s\"\n", l, hex.EncodeToString(sum[:]))
 		}
 	}
+	// The installer removes an Engine\ddraw.dll an earlier build left only when it is this D7VK (payload checks that
+	// the common tree has it).
+	d7vkSum := sha256.Sum256(trees["common"]["d7vk.dll"])
+	fmt.Fprintf(&b, "#define D7vkSHA256 \"%s\"\n", hex.EncodeToString(d7vkSum[:]))
 	b.WriteString("\n[Files]\n")
 	for _, tree := range append([]string{"common"}, langs...) {
 		check := "IsStarter"

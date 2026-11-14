@@ -10,10 +10,10 @@ The installer replaces the launcher's loader, `Engine\dinput.dll`, with eix's, w
 
 ### Playing
 
-The installer puts D7VK, which translates Direct3D 7 to Vulkan, into the launcher's `Engine` folder as `ddraw.dll`, so
-every mod the launcher runs uses it. Under Wine it also sets the game's DLL override for `ddraw` to native, which Wine
-needs to load it. The installer turns off the frame-rate-independent cursor, including in existing launcher settings,
-to prevent flicker with D7VK. Uninstalling EItweaks removes D7VK.
+EItweaks runs the game's graphics through D7VK, which translates Direct3D 7 to Vulkan, on Windows and Wine alike. It
+sits in the mod folder and `um.dll` (below) loads it, so it applies to EItweaks only. On a graphics card without the
+Vulkan support D7VK needs, the game uses its own DirectDraw instead. The installer turns off the
+frame-rate-independent cursor, including in existing launcher settings, to prevent flicker with D7VK.
 
 EItweaks loads Universal Mod's `um.dll` (the runtime alone, not the rest of Universal Mod) for what eix does not do
 yet: sharp anti-aliasing (MSAA) and faster interface drawing through D7VK, and a crash log (`um.log`) and dump in

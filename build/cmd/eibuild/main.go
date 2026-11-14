@@ -41,11 +41,13 @@ var databases = []string{"database", "databaselmp"}
 // while a standalone copy would replace the whole archive, so the standalone release leaves them out.
 var partialArchives = []string{filepath.Join("res", "textures.res")}
 
-// starterOnly lists the mod's files the standalone version leaves out: the starter's config, eix's add-on, um.dll
-// and their settings, which the game's own exe runs none of, D7VK's license, and the partial archives.
+// starterOnly lists the mod's files the standalone version leaves out: the starter's config, eix's add-on, um.dll,
+// D7VK, which um.dll loads, and their settings and licenses, which the game's own exe runs none of, and the partial
+// archives.
 func starterOnly() []string {
 	return append([]string{"config.reg", "addon.dll", "eix.ini", "eitweaks.ini", "spelladdon.ini", "eix-LICENSE.txt",
-		"eix-THIRD-PARTY-NOTICES.txt", "d7vk-LICENSE.txt", "um.dll", "um.cfg", "um-LICENSE.txt", "um-SOURCE.txt"},
+		"eix-THIRD-PARTY-NOTICES.txt", "d7vk.dll", "d7vk-LICENSE.txt", "um.dll", "um.cfg", "um-LICENSE.txt",
+		"um-SOURCE.txt"},
 		partialArchives...)
 }
 
@@ -326,9 +328,9 @@ func build(repo, downloads, version, out string) error {
 	if err := os.WriteFile(filepath.Join(engine, "dinput.dll"), loader, 0o644); err != nil {
 		return err
 	}
-	// D7VK renders the game's DirectDraw through Vulkan. The game loads ddraw.dll from its own folder first, which
-	// for the launcher is its Engine folder; its license goes with the mod.
-	if err := copyFile(filepath.Join(downloads, "d7vk.dll"), filepath.Join(engine, "ddraw.dll")); err != nil {
+	// D7VK renders the game's DirectDraw through Vulkan. um.dll loads it from the mod folder (um.cfg DDRAW_DLL) and
+	// falls back to the game's own DirectDraw when it cannot make a device, as on a GPU without the Vulkan it needs.
+	if err := copyFile(filepath.Join(downloads, "d7vk.dll"), filepath.Join(common, "d7vk.dll")); err != nil {
 		return err
 	}
 	if err := copyFile(filepath.Join(downloads, "d7vk-LICENSE"), filepath.Join(common, "d7vk-LICENSE.txt")); err != nil {

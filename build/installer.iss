@@ -166,14 +166,10 @@ Source: "{tmp}\eistarter-um\EIStarter-UM\*"; DestDir: "{app}"; Flags: external r
 ; one, after the launcher package above. It still loads the original add-on of the launcher and its other mods, so it
 ; stays after uninstalling, as the launcher does. eix's built-in SpellAddon keeps any SpellAddon*.asi from loading.
 Source: "payload\Engine\dinput.dll"; DestDir: "{app}\Engine"; Flags: ignoreversion uninsneveruninstall; Check: IsStarter
-; D7VK, as the game's DirectDraw: the game loads ddraw.dll from its own folder before the system's.
-Source: "payload\Engine\ddraw.dll"; DestDir: "{app}\Engine"; Flags: ignoreversion; Check: IsStarter
 
 [Registry]
 ; At every Play EIStarter-UM itself writes the selected mod (AddonPath), the game settings a fresh installation has
 ; where missing, and, under Wine, the dinput override its loader needs.
-; Wine uses its own DirectDraw even with a ddraw.dll beside the game, unless the game's overrides prefer the native one.
-Root: HKCU; Subkey: "Software\Wine\AppDefaults\game.exe\DllOverrides"; ValueType: string; ValueName: "ddraw"; ValueData: "native,builtin"; Flags: uninsdeletevalue; Check: IsStarter and IsWine
 ; The GOG versions' installers write no camera or light settings, so the game saves its built-in defaults, which
 ; differ from what the CD installer wrote: the camera tilts in jumps, and quest and hero lights glare. A value still at
 ; the built-in default (the same in every language's GOG exe), or missing, gets the CD installer's; one the player
@@ -1021,12 +1017,29 @@ begin
     SetArrayLength(Lines, 0);
   SetUmKey(Lines, 'SPELLADDON_ASI_CHECK', 'false');
   SetUmKey(Lines, 'UM_ENGINE', 'false');
-  SetUmKey(Lines, 'DDRAW_DLL', '""');
+  SetUmKey(Lines, 'DDRAW_DLL', 'd7vk.dll');
   SetUmKey(Lines, 'HEAP_ALLOC_PADDING', '0');
   { um.cfg says why. }
   SetUmKey(Lines, 'KEYBOARD_REWRITES', 'false');
   if not SaveStringsToFile(Cfg, Lines, False) then
     RaiseException('Could not write ' + Cfg + '.');
+end;
+
+{ Earlier builds put D7VK into the launcher's Engine folder as ddraw.dll, and under Wine set the game's ddraw override
+  to native. um.dll now loads D7VK from the mod folder, so a second copy as the game's ddraw.dll would load it twice;
+  a ddraw.dll that is not that D7VK is the player's and stays. }
+procedure RemoveEngineD7vk;
+var
+  Dll, Value: String;
+begin
+  Dll := ExpandConstant('{app}\Engine\ddraw.dll');
+  if FileExists(Dll) and (Lowercase(GetSHA256OfFile(Dll)) = '{#D7vkSHA256}') then
+    if not DeleteFile(Dll) then
+      RaiseException('Could not remove ' + Dll + ', an earlier copy of D7VK.');
+  if IsWine and RegQueryStringValue(HKCU, 'Software\Wine\AppDefaults\game.exe\DllOverrides', 'ddraw', Value) and
+    (Value = 'native,builtin') then
+    { A value left behind is harmless once no ddraw.dll sits beside the game, so a failure here is not fatal. }
+    RegDeleteValue(HKCU, 'Software\Wine\AppDefaults\game.exe\DllOverrides', 'ddraw');
 end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
@@ -1037,6 +1050,7 @@ begin
     SetStarterExe;
     WriteOptions;
     SetUmConfig;
+    RemoveEngineD7vk;
     { Existing launcher configs skip FirstStartSettings. Both keys must agree: the launcher switches between them. }
     if not RegWriteDWordValue(HKCU, NivalKey + '\General Settings', 'FPSIndependentCursor', 0) then
       RaiseException('Could not disable the independent cursor for D7VK.');

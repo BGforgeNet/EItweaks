@@ -4,8 +4,9 @@
 ### 2.0
 
 #### Added
-- The starter version runs the game's DirectDraw through D7VK, which translates it to Vulkan. The installer disables
-  the frame-rate-independent cursor to prevent flicker with D7VK.
+- The starter version runs the game's DirectDraw through D7VK, which translates it to Vulkan, and falls back to the
+  game's own DirectDraw on a graphics card without the Vulkan D7VK needs. The installer disables the
+  frame-rate-independent cursor to prevent flicker with D7VK.
 - Separate releases for the Russian, English and German versions of the game.
 - A standalone version, copied over the game's files, for playing without a launcher.
 - An installer for every game language and both versions: it detects the game's language, installs the bundled
