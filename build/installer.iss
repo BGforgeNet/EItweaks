@@ -154,12 +154,7 @@ de.OptClipCursor=Den Mauszeiger im Fenstermodus im Spielfenster halten
 ; an earlier install would keep hiding it.
 Type: files; Name: "{app}\mods\eitweaks\movies\intro.bik"; Check: IsStarter
 Type: dirifempty; Name: "{app}\mods\eitweaks\movies"; Check: IsStarter
-; The 2.0 test builds shipped Universal Mod's runtime in the mod folder. A leftover um.dll that config.reg no longer
-; names makes the launcher report it as not enabled.
-Type: files; Name: "{app}\mods\eitweaks\um.dll"; Check: IsStarter
-Type: files; Name: "{app}\mods\eitweaks\um.cfg"; Check: IsStarter
-Type: files; Name: "{app}\mods\eitweaks\um.log"; Check: IsStarter
-Type: files; Name: "{app}\mods\eitweaks\um-LICENSE.txt"; Check: IsStarter
+; The 2.0 test builds shipped um.dll's source archive; um-SOURCE.txt now tells where the source is.
 Type: files; Name: "{app}\mods\eitweaks\um-source.tar.gz"; Check: IsStarter
 
 [Files]
@@ -999,6 +994,39 @@ begin
   SetModIni('EngineFixes', 'ClipCursorToWindow', BoolFlag(OptionsPage.Values[OptClipCursor]), 'eix.ini');
 end;
 
+{ Sets one KEY=value line of um.cfg (no sections), replacing the key's line or adding one. }
+procedure SetUmKey(var Lines: TArrayOfString; const Key, Value: String);
+var
+  I: Integer;
+begin
+  for I := 0 to GetArrayLength(Lines) - 1 do
+    if Pos(Uppercase(Key) + '=', Uppercase(Trim(Lines[I]))) = 1 then
+    begin
+      Lines[I] := Key + '=' + Value;
+      Exit;
+    end;
+  SetArrayLength(Lines, GetArrayLength(Lines) + 1);
+  Lines[GetArrayLength(Lines) - 1] := Key + '=' + Value;
+end;
+
+{ um.cfg is installed only when there is none, so the player's own settings stay; the keys EItweaks needs are set in
+  it here. }
+procedure SetUmConfig;
+var
+  Cfg: String;
+  Lines: TArrayOfString;
+begin
+  Cfg := ExpandConstant('{app}\mods\eitweaks\um.cfg');
+  if not LoadStringsFromFile(Cfg, Lines) then
+    SetArrayLength(Lines, 0);
+  SetUmKey(Lines, 'SPELLADDON_ASI_CHECK', 'false');
+  SetUmKey(Lines, 'UM_ENGINE', 'false');
+  SetUmKey(Lines, 'DDRAW_DLL', '""');
+  SetUmKey(Lines, 'HEAP_ALLOC_PADDING', '0');
+  if not SaveStringsToFile(Cfg, Lines, False) then
+    RaiseException('Could not write ' + Cfg + '.');
+end;
+
 procedure CurStepChanged(CurStep: TSetupStep);
 begin
   if (CurStep = ssPostInstall) and IsStarter then
@@ -1006,6 +1034,7 @@ begin
     WriteStarterConfig;
     SetStarterExe;
     WriteOptions;
+    SetUmConfig;
     { Existing launcher configs skip FirstStartSettings. Both keys must agree: the launcher switches between them. }
     if not RegWriteDWordValue(HKCU, NivalKey + '\General Settings', 'FPSIndependentCursor', 0) then
       RaiseException('Could not disable the independent cursor for D7VK.');

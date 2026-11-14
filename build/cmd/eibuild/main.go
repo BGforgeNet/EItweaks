@@ -41,12 +41,22 @@ var databases = []string{"database", "databaselmp"}
 // while a standalone copy would replace the whole archive, so the standalone release leaves them out.
 var partialArchives = []string{filepath.Join("res", "textures.res")}
 
-// starterOnly lists the mod's files the standalone version leaves out: the starter's config, eix's add-on and its
-// settings, which the game's own exe runs none of, D7VK's license, and the partial archives.
+// starterOnly lists the mod's files the standalone version leaves out: the starter's config, eix's add-on, um.dll
+// and their settings, which the game's own exe runs none of, D7VK's license, and the partial archives.
 func starterOnly() []string {
 	return append([]string{"config.reg", "addon.dll", "eix.ini", "eitweaks.ini", "spelladdon.ini", "eix-LICENSE.txt",
-		"eix-THIRD-PARTY-NOTICES.txt", "d7vk-LICENSE.txt"}, partialArchives...)
+		"eix-THIRD-PARTY-NOTICES.txt", "d7vk-LICENSE.txt", "um.dll", "um.cfg", "um-LICENSE.txt", "um-SOURCE.txt"},
+		partialArchives...)
 }
+
+// umSource tells where um.dll's source is: the downloaded um.dll is Universal Mod's release build of that commit.
+const umSource = `um.dll is Universal Mod's, from its 0.8.8 release, under the GNU General Public License version 3
+(um-LICENSE.txt). Its source is the commit that release's tag names:
+
+https://github.com/Kyr4l/ei-universal-mod/tree/810a9019a57d1b3081e39d50444f3339ba0fa56f/resources/universal-mod/um-dll
+
+tools/ei-um-autopacker/makemod.sh at the same commit builds it.
+`
 
 // The folder names of each language's GOG install where they are not lowercase. Windows ignores case when the
 // standalone release is copied over the game; Wine on a case-sensitive file system would get a second folder.
@@ -324,9 +334,20 @@ func build(repo, downloads, version, out string) error {
 	if err := copyFile(filepath.Join(downloads, "d7vk-LICENSE"), filepath.Join(common, "d7vk-LICENSE.txt")); err != nil {
 		return err
 	}
+	// Universal Mod's um.dll, which config.reg loads as the mod's plugin, with its license and where its source is.
+	if err := copyFile(filepath.Join(downloads, "um.dll"), filepath.Join(common, "um.dll")); err != nil {
+		return err
+	}
+	if err := copyFile(filepath.Join(downloads, "um-LICENSE"), filepath.Join(common, "um-LICENSE.txt")); err != nil {
+		return err
+	}
+	if err := os.WriteFile(filepath.Join(common, "um-SOURCE.txt"), []byte(umSource), 0o644); err != nil {
+		return err
+	}
 	// eix reads eix.ini, and its built-in SpellAddon reads a spelladdon.ini, from the active mod's folder first, so
-	// these settings apply to EItweaks only. The map scripts read eitweaks.ini through eix's ini.* variables.
-	for _, name := range []string{"eix.ini", "spelladdon.ini", "eitweaks.ini"} {
+	// these settings apply to EItweaks only. The map scripts read eitweaks.ini through eix's ini.* variables. um.dll
+	// reads um.cfg from the same folder.
+	for _, name := range []string{"eix.ini", "spelladdon.ini", "eitweaks.ini", "um.cfg"} {
 		if err := copyFile(filepath.Join(src, name), filepath.Join(common, name)); err != nil {
 			return err
 		}

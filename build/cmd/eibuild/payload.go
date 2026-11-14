@@ -140,7 +140,12 @@ func filesISS(trees map[string]map[string][]byte, langs []string) string {
 			check += " and IsGameLang('" + tree + "')"
 			standaloneCheck += " and IsGameLang('" + tree + "')"
 		}
-		fmt.Fprintf(&b, "Source: \"payload\\%s\\*\"; DestDir: \"{app}\\mods\\eitweaks\"; Flags: recursesubdirs createallsubdirs ignoreversion; Check: %s\n", tree, check)
+		// um.cfg holds the player's own um.dll settings too (the launcher writes its window mode there), so an existing
+		// one is kept; the installer sets the keys EItweaks needs in it.
+		fmt.Fprintf(&b, "Source: \"payload\\%s\\*\"; DestDir: \"{app}\\mods\\eitweaks\"; Excludes: \"um.cfg\"; Flags: recursesubdirs createallsubdirs ignoreversion; Check: %s\n", tree, check)
+		if _, ok := trees[tree]["um.cfg"]; ok {
+			fmt.Fprintf(&b, "Source: \"payload\\%s\\um.cfg\"; DestDir: \"{app}\\mods\\eitweaks\"; Flags: onlyifdoesntexist; Check: %s\n", tree, check)
+		}
 		var names []string
 		for name := range trees[tree] {
 			names = append(names, name)

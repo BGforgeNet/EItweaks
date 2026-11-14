@@ -15,6 +15,12 @@ every mod the launcher runs uses it. Under Wine it also sets the game's DLL over
 needs to load it. The installer turns off the frame-rate-independent cursor, including in existing launcher settings,
 to prevent flicker with D7VK. Uninstalling EItweaks removes D7VK.
 
+EItweaks loads Universal Mod's `um.dll` (the runtime alone, not the rest of Universal Mod) for what eix does not do
+yet: sharp anti-aliasing (MSAA) and faster interface drawing through D7VK, the backtick and number-row keys working
+as on a US keyboard with other layouts, and a crash log (`um.log`) and dump in the mod folder instead of an error
+dialog. Its settings are in `um.cfg` in `mods\eitweaks`, which the installer keeps on a reinstall. Its diagnostic
+overlay starts hidden: F9 shows it, F10 its log panel.
+
 - Launch EIStarter-UM: the installer has already selected EItweaks. Press Play.
 - To play without EItweaks, select another entry in the dropdown. EItweaks uses the game's own saves, so a game can be continued with EItweaks turned off, and back on.
 - The launcher's Options set the game's graphics and sound, as the game's own options do, and the add-on's options.
