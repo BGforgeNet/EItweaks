@@ -11,3 +11,4 @@ A collection of changes to standardize protections and make them "make sense".
 - Cyclopes have no extra magic protection.
 - Lava elementals get extra protection from fire instead of acid, Snow elementals get vulnerability to it.
 - Lightning vulnerability for NPCs using metal armor and golems.
+- Bats and will-o-wisps have extra protection from the element of their own spells.
