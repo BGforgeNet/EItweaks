@@ -15,8 +15,8 @@
 - The starter version runs on the GOG versions without the game disc.
 - The starter version runs with eix 0.1.0, which reimplements EI starter's add-on and loader with SpellAddon built in,
   and adds engine fixes of its own.
-- The starter version loads Universal Mod's `um.dll`: anti-aliasing and faster interface drawing with D7VK, the
-  backtick and number-row keys as on a US keyboard with other layouts, and a crash log instead of an error dialog.
+- The starter version loads Universal Mod's `um.dll`: anti-aliasing and faster interface drawing with D7VK, and a
+  crash log instead of an error dialog.
 - Starter version on the GOG English or German version: the launcher runs that game's own `game.exe`, so the
   briefing voices play.
 - Starter version: info windows show spell damage to one decimal, cast time in seconds, and the attack rate as a

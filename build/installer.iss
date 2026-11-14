@@ -1023,6 +1023,8 @@ begin
   SetUmKey(Lines, 'UM_ENGINE', 'false');
   SetUmKey(Lines, 'DDRAW_DLL', '""');
   SetUmKey(Lines, 'HEAP_ALLOC_PADDING', '0');
+  { um.cfg says why. }
+  SetUmKey(Lines, 'KEYBOARD_REWRITES', 'false');
   if not SaveStringsToFile(Cfg, Lines, False) then
     RaiseException('Could not write ' + Cfg + '.');
 end;
