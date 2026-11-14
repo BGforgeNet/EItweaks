@@ -44,6 +44,8 @@
 - Dragons on Gipath no longer have more than 1000 hit points.
 - Dragons regenerate half as fast.
 - Bats and will-o-wisps have extra protection from the element of their own spells.
+- Black troll hide is no longer weak to lightning. Tiger hide and hard leather protect exactly as much as the
+  tigers, ogres and lizardmen they come from.
 - Starter version: spells with a permanent or triggered action item rune can't be put into wands.
 - Multiplayer: spears, maces, hammers and clubs give no attack skill bonus (1.07 added one).
 - Russian: Zak's "My head hurts" speech at the start of a new game is no longer shortened.
