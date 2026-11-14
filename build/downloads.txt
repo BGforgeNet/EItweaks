@@ -4,7 +4,7 @@
 # EIStarter-UM 0.2.9, published with Universal Mod 0.8.7: the launcher the installer installs or updates.
 EIStarter-UM-0.2.9.zip 5f190de3f59e1cb3604de9c127f1100d577b40cb0564b1cbae173c3a5638d2a9 https://github.com/Kyr4l/ei-universal-mod/releases/download/0.8.7/EIStarter-UM-0.2.9.zip
 # The eix release package: its loader, add-on, license and notices.
-eix-0.1.0.zip 84bb1c62db28687e26d2eb7b242999f3e38f31aded35035a1683dfcbbf894e73 https://github.com/BGforgeNet/eix/releases/download/v0.1.0/eix-0.1.0.zip
+eix-0.2.0.zip 32cb89bb0a8c370be4c194b3ac11f0ebf083cc986a1a89df70cfa667fa2cd039 https://github.com/BGforgeNet/eix/releases/download/v0.2.0/eix-0.2.0.zip
 # D7VK 3.1.1 with Universal Mod's present-before-download patch, 32-bit, as Universal Mod distributes it, and D7VK's
 # zlib/libpng license.
 d7vk.dll 39ce647e6f27ecaf8adb37ad8a7c4172b07dbb8100df564534f95fb3a4ab53d4 https://raw.githubusercontent.com/Kyr4l/ei-universal-mod/810a9019a57d1b3081e39d50444f3339ba0fa56f/resources/universal-mod/d7vk/d7vk.dll

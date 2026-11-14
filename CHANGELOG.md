@@ -14,7 +14,7 @@
   On a new launcher it skips the first-start questions and makes its first-start settings changes. The standalone
   version backs up the game files it replaces, and uninstalling puts them back.
 - The starter version runs on the GOG versions without the game disc.
-- The starter version runs with eix 0.1.0, which reimplements EI starter's add-on and loader with SpellAddon built in,
+- The starter version runs with eix 0.2.0, which reimplements EI starter's add-on and loader with SpellAddon built in,
   and adds engine fixes of its own.
 - The starter version loads Universal Mod's `um.dll`: anti-aliasing and faster interface drawing with D7VK, and a
   crash log instead of an error dialog.
