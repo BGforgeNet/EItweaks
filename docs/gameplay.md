@@ -1,5 +1,10 @@
 ## Gameplay
 
+- [Walking and running](#walking-and-running)
+- [Exploits](#exploits)
+- [Genocide](#genocide)
+- [PC and team](#pc-and-team)
+
 ### Walking and running
 
 - Human (PC and NPC) run speed slightly increased to match other characters.
