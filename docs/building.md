@@ -19,7 +19,7 @@ The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/e
 
 The build downloads the third-party files into `~/.cache/eitweaks/downloads`, or the folder `EITWEAKS_DOWNLOADS` names, and keeps them there for the next build while their checksums match. This writes the installer, `eitweaks-<version>.exe`, and `SHA256SUMS`. On the way it builds, in a temporary folder, a starter and a standalone zip for each language; the installer is made from the starter zips (`eibuild payload` stores the files every language shares once). The standalone zip leaves out the archive that holds only a few of the game's entries (textures), as copied over the game it would replace the whole archive, and names its folders as that language's GOG version does; the installer's standalone version installs the same files into the game's folders as it finds them. Two builds of the same tree give identical zips. `scripts/release.sh <version>` builds a release and publishes the installer.
 
-CI runs the same build on every push to `dev` or `master` and on pull requests, and keeps the files as the run's artifact.
+CI runs the same build on every push to `master` and on pull requests, and keeps the files as the run's artifact.
 
 To edit a database in a spreadsheet, convert it to a workbook and back, in the same container with the repository mounted read-write:
 

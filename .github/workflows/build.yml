@@ -2,7 +2,7 @@ name: build
 
 on:
   push:
-    branches: [dev, master]
+    branches: [master]
   pull_request:
 
 permissions:
