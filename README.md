@@ -2,7 +2,6 @@
 
 [![Build status](https://github.com/BGforgeNet/EItweaks/actions/workflows/build.yml/badge.svg)](https://github.com/BGforgeNet/EItweaks/actions/workflows/build.yml)
 [![Patreon](https://img.shields.io/badge/Patreon-support-FF424D?logo=Patreon&labelColor=141518)](https://www.patreon.com/BGforge)
-
 [![Telegram](https://img.shields.io/badge/telegram-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange?logo=telegram)](https://t.me/bgforge)
 [![Discord](https://img.shields.io/discord/420268540700917760?logo=discord&label=discord&color=blue&logoColor=FEE75C)](https://discord.gg/4Yqfggm)
 [![IRC](https://img.shields.io/badge/%23IRC-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange)](https://bgforge.net/irc)
@@ -34,6 +33,10 @@ The tweaks are mostly to make things more consistent within the game, add some f
 The game must be at version 1.06. The GOG releases are ready as they are. If you have an older version, grab [1.06](https://allods.gipat.ru/index.php?p=filesei#patch-1-06) first.
 
 Download the installer, `eitweaks-<version>.exe`, from the latest [release](https://github.com/BGforgeNet/EItweaks/releases/latest) and run it.
+
+### Recommended mods
+
+- [Evil Islands HQ music](https://github.com/BGforgeNet/Evil_Islands_HQ_music): lossless FLAC music for most tracks, and several tracks the game has but never plays. The FLAC tracks play in the starter version of EItweaks.
 
 ### More
 
