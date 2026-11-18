@@ -16,10 +16,10 @@ EItweaks utilizes [eix](docs/eix.md) and [EIStarter-UM](docs/starter.md) to prov
 
 The tweaks are mostly to make things more consistent within the game, add some flavour, improve QoL. Also close obvious exploits, but give PC a chance against previously impossible enemies, with [Hardcore](https://pihwiki.bgforge.net/Evil_Islands:_Curse_of_the_Lost_Soul) play style in mind.
 
-- [Gameplay](docs/gameplay.md): faster walking and running, stamina rebalance, killable golems and dragons, no XP exploits, and mercenaries travelling with the hero (starter version).
+- [Gameplay](docs/gameplay.md): faster walking and running, stamina rebalance, killable golems and dragons, no XP exploits, and mercenaries travelling with the hero.
 - [Speedup](docs/speedup.md): no intro movies, help screens off by default.
-- [Items](docs/items.md): dragon hide, a stronger Green Dragon Horn, more goods on Gipath, blue harpy heads.
-- [Regeneration](docs/regeneration.md): much slower regeneration, none for undead, golems and other unliving monsters.
+- [Items](docs/items.md): dragon hide, a stronger Green Dragon Horn, more goods on Gipath.
+- [Regeneration](docs/regeneration.md): rebalanced (much slower) regeneration)
 - [Resistances](docs/resistances.md): consistent protections for armor materials and monsters.
 
 ## Installation
