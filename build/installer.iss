@@ -8,7 +8,8 @@
 ; standalone: the mod is copied over the game, each replaced file backed up and restored on uninstall.
 ; Silent installs take /EIGAMEDIR=<folder>, /EILANG=<ru|en|de> and /EIVARIANT=<starter|standalone>; the starter's
 ; options /EICOMPANIONS=<1|0> and /EIRUNSYSTEM=<1|0> (default 1) set its mercenary travel and running system,
-; /EIPAUSEHEALTH=<1|0> (default 1) its pause at 25% health, /EIPAUSESIGHTED, /EIPAUSEAGGRO and /EIPAUSEDEAD=<1|0>
+; /EIPAUSEHEALTH=<percents> (any of 50, 25 and 10, comma-separated; default 25; 0 for none) its pauses at health
+; limits, /EIPAUSESIGHTED, /EIPAUSEAGGRO and /EIPAUSEDEAD=<1|0>
 ; (default 0) its pauses on enemies, and /EICLIPCURSOR=<1|0> (default 0) keeping the mouse in the game window.
 
 #if !Defined(Version)
@@ -74,6 +75,7 @@ en.StarterFailed=EIStarter-UM could not be unpacked: %1%n%nClick Next to try aga
 en.StarterDirLabel=Select the folder of EIStarter-UM. When it is not there, the bundled version is installed into this folder.
 en.LaunchStarter=Launch EIStarter-UM
 en.LaunchGame=Launch the game
+en.MoreSettings=More settings, in the mod folder:
 en.OptionsCaption=Options
 en.OptionsDesc=Which EItweaks features do you want?
 en.OptionsSub=All can be changed later in the mod folder: the mercenaries in eitweaks.ini, running and walking in eix.ini and spelladdon.ini, the pauses (single player) and the mouse in eix.ini.
@@ -81,7 +83,9 @@ en.OptCompanions=Mercenaries can travel with the hero between allods
 en.OptRunSystem=Rebalanced running and walking: stamina and the load carried
 en.RunSystemPage=About running and walking
 en.OptPauseGroup=Pause the game (single player):
-en.OptPauseHealth=When a party member's health falls below 25%
+en.OptPauseHealth50=When a party member's health falls below 50%
+en.OptPauseHealth25=When a party member's health falls below 25%
+en.OptPauseHealth10=When a party member's health falls below 10%
 en.OptPauseSighted=When an enemy comes into view
 en.OptPauseAggro=When an enemy attacks the party
 en.OptPauseDead=When an enemy in view dies
@@ -105,6 +109,7 @@ ru.StarterFailed=Не удалось распаковать EIStarter-UM: %1%n%n
 ru.StarterDirLabel=Выберите папку EIStarter-UM. Если его там нет, встроенная версия будет установлена в эту папку.
 ru.LaunchStarter=Запустить EIStarter-UM
 ru.LaunchGame=Запустить игру
+ru.MoreSettings=Другие настройки, в папке мода:
 ru.OptionsCaption=Настройки
 ru.OptionsDesc=Какие возможности EItweaks включить?
 ru.OptionsSub=Всё можно изменить позже в папке мода: наёмников в eitweaks.ini, бег и ходьбу в eix.ini и spelladdon.ini, паузы (в одиночной игре) и мышь в eix.ini.
@@ -112,7 +117,9 @@ ru.OptCompanions=Наёмники могут путешествовать с г�
 ru.OptRunSystem=Новая система бега и ходьбы: выносливость и переносимый груз
 ru.RunSystemPage=О беге и ходьбе
 ru.OptPauseGroup=Ставить игру на паузу (одиночная игра):
-ru.OptPauseHealth=Когда здоровье члена отряда падает ниже 25%
+ru.OptPauseHealth50=Когда здоровье члена отряда падает ниже 50%
+ru.OptPauseHealth25=Когда здоровье члена отряда падает ниже 25%
+ru.OptPauseHealth10=Когда здоровье члена отряда падает ниже 10%
 ru.OptPauseSighted=Когда в поле зрения появляется враг
 ru.OptPauseAggro=Когда враг нападает на отряд
 ru.OptPauseDead=Когда погибает враг в поле зрения
@@ -136,6 +143,7 @@ de.StarterFailed=EIStarter-UM konnte nicht entpackt werden: %1%n%nKlicken Sie au
 de.StarterDirLabel=Waehlen Sie den Ordner von EIStarter-UM. Ist er dort nicht vorhanden, wird die enthaltene Version dort installiert.
 de.LaunchStarter=EIStarter-UM starten
 de.LaunchGame=Spiel starten
+de.MoreSettings=Weitere Einstellungen, im Mod-Ordner:
 de.OptionsCaption=Optionen
 de.OptionsDesc=Welche Funktionen von EItweaks moechten Sie?
 de.OptionsSub=Alles laesst sich spaeter im Mod-Ordner aendern: die Soeldner in eitweaks.ini, Rennen und Gehen in eix.ini und spelladdon.ini, die Pausen (Einzelspieler) und die Maus in eix.ini.
@@ -143,7 +151,9 @@ de.OptCompanions=Soeldner koennen mit dem Helden zwischen den Allods reisen
 de.OptRunSystem=Neues Renn- und Gehsystem: Ausdauer und getragene Last
 de.RunSystemPage=Mehr zu Rennen und Gehen
 de.OptPauseGroup=Spiel pausieren (Einzelspieler):
-de.OptPauseHealth=Wenn die Gesundheit eines Gruppenmitglieds unter 25% faellt
+de.OptPauseHealth50=Wenn die Gesundheit eines Gruppenmitglieds unter 50% faellt
+de.OptPauseHealth25=Wenn die Gesundheit eines Gruppenmitglieds unter 25% faellt
+de.OptPauseHealth10=Wenn die Gesundheit eines Gruppenmitglieds unter 10% faellt
 de.OptPauseSighted=Wenn ein Feind in Sicht kommt
 de.OptPauseAggro=Wenn ein Feind die Gruppe angreift
 de.OptPauseDead=Wenn ein Feind in Sicht stirbt
@@ -239,11 +249,12 @@ const
   { Rows of the options page; the pause group's heading is a row with no checkbox. }
   OptCompanions = 0;
   OptRunSystem = 1;
+  { The health limits' rows, OptPauseHealth + I for HealthLimit(I). }
   OptPauseHealth = 3;
-  OptPauseSighted = 4;
-  OptPauseAggro = 5;
-  OptPauseDead = 6;
-  OptClipCursor = 7;
+  OptPauseSighted = 6;
+  OptPauseAggro = 7;
+  OptPauseDead = 8;
+  OptClipCursor = 9;
   { EIStarter-UM 0.2.9, the first version that keeps the options changed in the game (earlier ones rewrote them at
     every Play), published with Universal Mod's 0.8.7 pre-release; the embedded archive is checked against this. }
   StarterZipSHA256 = '5f190de3f59e1cb3604de9c127f1100d577b40cb0564b1cbae173c3a5638d2a9';
@@ -273,7 +284,7 @@ type
 var
   GamePage: TInputDirWizardPage;
   LangPage, VariantPage, OptionsPage: TInputOptionWizardPage;
-  StarterPageLink: TNewStaticText;
+  StarterPageLink, SettingsLabel, EixIniLink, EitweaksIniLink: TNewStaticText;
   DetectedFor: String;
   Relaunched: Boolean;
   { The launcher folder the embedded package was unpacked for; '' before that. }
@@ -436,6 +447,34 @@ begin
     Result := '0';
 end;
 
+{ The health limit, in percent, of the options page's row OptPauseHealth + I. }
+function HealthLimit(I: Integer): String;
+begin
+  case I of
+    0: Result := '50';
+    1: Result := '25';
+  else
+    Result := '10';
+  end;
+end;
+
+{ The checked health limits as eix's HealthPercent takes them, highest first, such as '50,25'; '0' for none. }
+function HealthLimits: String;
+var
+  I: Integer;
+begin
+  Result := '';
+  for I := 0 to 2 do
+    if OptionsPage.Values[OptPauseHealth + I] then
+    begin
+      if Result <> '' then
+        Result := Result + ',';
+      Result := Result + HealthLimit(I);
+    end;
+  if Result = '' then
+    Result := '0';
+end;
+
 { Starts this setup again with administrator rights and the choices made so far, and closes this one. }
 procedure RelaunchAsAdmin;
 var
@@ -449,7 +488,7 @@ begin
   else
     Params := Params + ' /EIVARIANT=standalone';
   Params := Params + ' /EICOMPANIONS=' + BoolFlag(OptionsPage.Values[OptCompanions]) + ' /EIRUNSYSTEM=' +
-    BoolFlag(OptionsPage.Values[OptRunSystem]) + ' /EIPAUSEHEALTH=' + BoolFlag(OptionsPage.Values[OptPauseHealth]) +
+    BoolFlag(OptionsPage.Values[OptRunSystem]) + ' /EIPAUSEHEALTH=' + HealthLimits +
     ' /EIPAUSESIGHTED=' + BoolFlag(OptionsPage.Values[OptPauseSighted]) + ' /EIPAUSEAGGRO=' +
     BoolFlag(OptionsPage.Values[OptPauseAggro]) + ' /EIPAUSEDEAD=' + BoolFlag(OptionsPage.Values[OptPauseDead]) +
     ' /EICLIPCURSOR=' + BoolFlag(OptionsPage.Values[OptClipCursor]);
@@ -597,6 +636,61 @@ begin
   Page.CheckListBox.Height := Result.Top - Page.CheckListBox.Top - ScaleY(8);
 end;
 
+procedure OpenModFile(const FileName: String);
+var
+  ErrorCode: Integer;
+begin
+  ShellExecAsOriginalUser('open', ExpandConstant('{app}\mods\eitweaks\') + FileName, '', '', SW_SHOWNORMAL, ewNoWait,
+    ErrorCode);
+end;
+
+procedure EixIniClick(Sender: TObject);
+begin
+  OpenModFile('eix.ini');
+end;
+
+procedure EitweaksIniClick(Sender: TObject);
+begin
+  OpenModFile('eitweaks.ini');
+end;
+
+{ A text on the finished page, hidden until the page shows it. }
+function CreateFinishedText(const Caption: String): TNewStaticText;
+begin
+  Result := TNewStaticText.Create(WizardForm);
+  Result.Parent := WizardForm.FinishedPage;
+  Result.Caption := Caption;
+  Result.Left := WizardForm.FinishedLabel.Left;
+  Result.Visible := False;
+end;
+
+{ A link on the finished page: blue underlined text with the hand cursor. }
+function CreateFinishedLink(const Caption: String; OnClick: TNotifyEvent): TNewStaticText;
+begin
+  Result := CreateFinishedText(Caption);
+  Result.Cursor := crHand;
+  Result.Font.Color := clBlue;
+  Result.Font.Style := [fsUnderline];
+  Result.OnClick := OnClick;
+end;
+
+{ The starter version's settings files, linked at the bottom of the finished page. The launch checkbox list reaches
+  the page's bottom, so it ends above them. }
+procedure ShowSettingsLinks;
+begin
+  if not IsStarter or not FileExists(ExpandConstant('{app}\mods\eitweaks\eix.ini')) then
+    Exit;
+  EixIniLink.Top := WizardForm.FinishedPage.Height - EixIniLink.Height - ScaleY(16);
+  EitweaksIniLink.Top := EixIniLink.Top;
+  EitweaksIniLink.Left := EixIniLink.Left + EixIniLink.Width + ScaleX(24);
+  SettingsLabel.Top := EixIniLink.Top - SettingsLabel.Height - ScaleY(6);
+  if WizardForm.RunList.Top + WizardForm.RunList.Height > SettingsLabel.Top - ScaleY(8) then
+    WizardForm.RunList.Height := SettingsLabel.Top - ScaleY(8) - WizardForm.RunList.Top;
+  SettingsLabel.Visible := True;
+  EixIniLink.Visible := True;
+  EitweaksIniLink.Visible := True;
+end;
+
 procedure UpdateStarterStatus;
 begin
   if StarterInstalled then
@@ -610,8 +704,8 @@ end;
 
 procedure InitializeWizard;
 var
-  Variant: String;
-  Lang: Integer;
+  Variant, Health: String;
+  Lang, I: Integer;
 begin
   GamePage := CreateInputDirPage(wpWelcome, CustomMessage('GameDirCaption'), CustomMessage('GameDirDesc'),
     CustomMessage('GameDirSub'), False, '');
@@ -653,14 +747,19 @@ begin
   OptionsPage.Add(CustomMessage('OptCompanions'));
   OptionsPage.Add(CustomMessage('OptRunSystem'));
   OptionsPage.CheckListBox.AddGroup(CustomMessage('OptPauseGroup'), '', 0, nil);
-  OptionsPage.CheckListBox.AddCheckBox(CustomMessage('OptPauseHealth'), '', 1, False, True, False, False, nil);
+  for I := 0 to 2 do
+    OptionsPage.CheckListBox.AddCheckBox(CustomMessage('OptPauseHealth' + HealthLimit(I)), '', 1, False, True, False,
+      False, nil);
   OptionsPage.CheckListBox.AddCheckBox(CustomMessage('OptPauseSighted'), '', 1, False, True, False, False, nil);
   OptionsPage.CheckListBox.AddCheckBox(CustomMessage('OptPauseAggro'), '', 1, False, True, False, False, nil);
   OptionsPage.CheckListBox.AddCheckBox(CustomMessage('OptPauseDead'), '', 1, False, True, False, False, nil);
   OptionsPage.Add(CustomMessage('OptClipCursor'));
   OptionsPage.Values[OptCompanions] := ExpandConstant('{param:EICOMPANIONS|1}') <> '0';
   OptionsPage.Values[OptRunSystem] := ExpandConstant('{param:EIRUNSYSTEM|1}') <> '0';
-  OptionsPage.Values[OptPauseHealth] := ExpandConstant('{param:EIPAUSEHEALTH|1}') <> '0';
+  Health := ',' + ExpandConstant('{param:EIPAUSEHEALTH|25}') + ',';
+  StringChangeEx(Health, ' ', '', True);
+  for I := 0 to 2 do
+    OptionsPage.Values[OptPauseHealth + I] := Pos(',' + HealthLimit(I) + ',', Health) > 0;
   OptionsPage.Values[OptPauseSighted] := ExpandConstant('{param:EIPAUSESIGHTED|0}') = '1';
   OptionsPage.Values[OptPauseAggro] := ExpandConstant('{param:EIPAUSEAGGRO|0}') = '1';
   OptionsPage.Values[OptPauseDead] := ExpandConstant('{param:EIPAUSEDEAD|0}') = '1';
@@ -668,6 +767,10 @@ begin
   CreateLink(OptionsPage, CustomMessage('RunSystemPage'), @RunSystemClick);
 
   WizardForm.SelectDirLabel.Caption := CustomMessage('StarterDirLabel');
+
+  SettingsLabel := CreateFinishedText(CustomMessage('MoreSettings'));
+  EixIniLink := CreateFinishedLink('eix.ini', @EixIniClick);
+  EitweaksIniLink := CreateFinishedLink('eitweaks.ini', @EitweaksIniClick);
 end;
 
 procedure CurPageChanged(CurPageID: Integer);
@@ -680,6 +783,8 @@ begin
   end;
   if CurPageID = VariantPage.ID then
     UpdateStarterStatus;
+  if CurPageID = wpFinished then
+    ShowSettingsLinks;
 end;
 
 function ShouldSkipPage(PageID: Integer): Boolean;
@@ -980,10 +1085,7 @@ begin
   SetModIni('Encumbrance', 'Enabled', Run, 'eix.ini');
   SetModIni('rebalanceengine', 'newrunsystem', Run, 'spelladdon.ini');
   SetModIni('rebalanceengine', 'rewriterunabilitytime', Run, 'spelladdon.ini');
-  if OptionsPage.Values[OptPauseHealth] then
-    SetModIni('AutoPause', 'HealthPercent', '25', 'eix.ini')
-  else
-    SetModIni('AutoPause', 'HealthPercent', '0', 'eix.ini');
+  SetModIni('AutoPause', 'HealthPercent', HealthLimits, 'eix.ini');
   SetModIni('AutoPause', 'EnemySighted', BoolFlag(OptionsPage.Values[OptPauseSighted]), 'eix.ini');
   SetModIni('AutoPause', 'EnemyAggro', BoolFlag(OptionsPage.Values[OptPauseAggro]), 'eix.ini');
   SetModIni('AutoPause', 'EnemyDead', BoolFlag(OptionsPage.Values[OptPauseDead]), 'eix.ini');

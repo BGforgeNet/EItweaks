@@ -27,8 +27,9 @@
   walking too.
 - Starter version: mercenaries travel with the hero between allods and join the finale party; `Travel` in
   `eitweaks.ini` turns it off.
-- Starter version: single player pauses when a party member falls below 25% health; installer options also pause
-  on enemies coming into view, attacking or dying, and keep the mouse inside the game window.
+- Starter version: single player pauses when a party member falls below 25% health; installer options add 50% and
+  10%, also pause on enemies coming into view, attacking or dying, and keep the mouse inside the game window. The
+  installer's last page links the settings files, `eix.ini` and `eitweaks.ini`.
 - Starter version: music tracks play from FLAC files put into the `Stream` folder.
 - German: the data of the official German patch 1.06 (maps, quests, multiplayer texts), so the GOG German version,
   which the patch refuses to install on, needs no patch.
