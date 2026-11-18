@@ -81,7 +81,7 @@ en.OptionsDesc=Which EItweaks features do you want?
 en.OptionsSub=All can be changed later in the mod folder: the mercenaries in eitweaks.ini, running and walking in eix.ini and spelladdon.ini, the pauses (single player) and the mouse in eix.ini.
 en.OptCompanions=Mercenaries can travel with the hero between allods
 en.OptRunSystem=Rebalanced running and walking: stamina and the load carried
-en.RunSystemPage=About running and walking
+en.RowDocs=Docs
 en.OptPauseGroup=Pause the game (single player):
 en.OptPauseHealth50=When a party member's health falls below 50%
 en.OptPauseHealth25=When a party member's health falls below 25%
@@ -115,7 +115,7 @@ ru.OptionsDesc=Какие возможности EItweaks включить?
 ru.OptionsSub=Всё можно изменить позже в папке мода: наёмников в eitweaks.ini, бег и ходьбу в eix.ini и spelladdon.ini, паузы (в одиночной игре) и мышь в eix.ini.
 ru.OptCompanions=Наёмники могут путешествовать с героем между аллодами
 ru.OptRunSystem=Новая система бега и ходьбы: выносливость и переносимый груз
-ru.RunSystemPage=О беге и ходьбе
+ru.RowDocs=Подробнее
 ru.OptPauseGroup=Ставить игру на паузу (одиночная игра):
 ru.OptPauseHealth50=Когда здоровье члена отряда падает ниже 50%
 ru.OptPauseHealth25=Когда здоровье члена отряда падает ниже 25%
@@ -149,7 +149,7 @@ de.OptionsDesc=Welche Funktionen von EItweaks moechten Sie?
 de.OptionsSub=Alles laesst sich spaeter im Mod-Ordner aendern: die Soeldner in eitweaks.ini, Rennen und Gehen in eix.ini und spelladdon.ini, die Pausen (Einzelspieler) und die Maus in eix.ini.
 de.OptCompanions=Soeldner koennen mit dem Helden zwischen den Allods reisen
 de.OptRunSystem=Neues Renn- und Gehsystem: Ausdauer und getragene Last
-de.RunSystemPage=Mehr zu Rennen und Gehen
+de.RowDocs=Doku
 de.OptPauseGroup=Spiel pausieren (Einzelspieler):
 de.OptPauseHealth50=Wenn die Gesundheit eines Gruppenmitglieds unter 50% faellt
 de.OptPauseHealth25=Wenn die Gesundheit eines Gruppenmitglieds unter 25% faellt
@@ -680,15 +680,46 @@ procedure ShowSettingsLinks;
 begin
   if not IsStarter or not FileExists(ExpandConstant('{app}\mods\eitweaks\eix.ini')) then
     Exit;
-  EixIniLink.Top := WizardForm.FinishedPage.Height - EixIniLink.Height - ScaleY(16);
-  EitweaksIniLink.Top := EixIniLink.Top;
-  EitweaksIniLink.Left := EixIniLink.Left + EixIniLink.Width + ScaleX(24);
+  EitweaksIniLink.Top := WizardForm.FinishedPage.Height - EitweaksIniLink.Height - ScaleY(16);
+  EixIniLink.Top := EitweaksIniLink.Top - EixIniLink.Height - ScaleY(4);
   SettingsLabel.Top := EixIniLink.Top - SettingsLabel.Height - ScaleY(6);
   if WizardForm.RunList.Top + WizardForm.RunList.Height > SettingsLabel.Top - ScaleY(8) then
     WizardForm.RunList.Height := SettingsLabel.Top - ScaleY(8) - WizardForm.RunList.Top;
   SettingsLabel.Visible := True;
   EixIniLink.Visible := True;
   EitweaksIniLink.Visible := True;
+end;
+
+{ A web link right after the text of a checkbox row of Page's list. The list cannot hold a control, so the link lies
+  over it. The list draws a row's text one checkbox width and two Offsets from its left, and Windows gives each
+  row's height (LB_GETITEMHEIGHT). }
+procedure CreateRowLink(Page: TInputOptionWizardPage; Row: Integer; const Caption: String; OnClick: TNotifyEvent);
+var
+  List: TNewCheckListBox;
+  Measure, Link: TNewStaticText;
+  I, Top, Height: Integer;
+begin
+  List := Page.CheckListBox;
+  Top := 0;
+  for I := 0 to Row - 1 do
+    Top := Top + SendMessage(List.Handle, $01A1, I, 0);
+  Height := SendMessage(List.Handle, $01A1, Row, 0);
+  Measure := TNewStaticText.Create(Page);
+  Measure.Parent := Page.Surface;
+  Measure.Visible := False;
+  Measure.Font.Assign(List.Font);
+  Measure.Caption := List.ItemCaption[Row];
+  Link := TNewStaticText.Create(Page);
+  Link.Parent := Page.Surface;
+  Link.Font.Assign(List.Font);
+  Link.Caption := Caption;
+  Link.Cursor := crHand;
+  Link.Font.Color := clBlue;
+  Link.Font.Style := [fsUnderline];
+  Link.OnClick := OnClick;
+  Link.Left := List.Left + ScaleX(13) + 2 * List.Offset + 1 + Measure.Width + ScaleX(8);
+  Link.Top := List.Top + Top + (Height - Link.Height) div 2;
+  Link.BringToFront;
 end;
 
 procedure UpdateStarterStatus;
@@ -764,7 +795,7 @@ begin
   OptionsPage.Values[OptPauseAggro] := ExpandConstant('{param:EIPAUSEAGGRO|0}') = '1';
   OptionsPage.Values[OptPauseDead] := ExpandConstant('{param:EIPAUSEDEAD|0}') = '1';
   OptionsPage.Values[OptClipCursor] := ExpandConstant('{param:EICLIPCURSOR|0}') = '1';
-  CreateLink(OptionsPage, CustomMessage('RunSystemPage'), @RunSystemClick);
+  CreateRowLink(OptionsPage, OptRunSystem, CustomMessage('RowDocs'), @RunSystemClick);
 
   WizardForm.SelectDirLabel.Caption := CustomMessage('StarterDirLabel');
 
