@@ -24,7 +24,8 @@ The tweaks are mostly to make things more consistent within the game, add some f
 
 - [Gameplay](docs/gameplay.md): faster walking and running, stamina rebalance, killable golems and dragons, no XP exploits, and mercenaries travelling with the hero.
 - [Speedup](docs/speedup.md): no intro movies, help screens off by default.
-- [Items](docs/items.md): dragon hide, a stronger Green Dragon Horn, more goods on Gipath.
+- [Items](docs/items.md): dragon hide, a stronger Green Dragon Horn, hide armor blueprints on Gipath.
+- [Restorations](docs/restorations.md): unused content from the game files, such as the half effect rune on Gipath and blue harpy heads.
 - [Regeneration](docs/regeneration.md): rebalanced (much slower) regeneration)
 - [Resistances](docs/resistances.md): consistent protections for armor materials and monsters.
 
