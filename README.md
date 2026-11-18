@@ -1,5 +1,12 @@
 # EItweaks
 
+[![Build status](https://github.com/BGforgeNet/EItweaks/actions/workflows/build.yml/badge.svg)](https://github.com/BGforgeNet/EItweaks/actions/workflows/build.yml)
+[![Patreon](https://img.shields.io/badge/Patreon-donate-FF424D?logo=Patreon&labelColor=141518)](https://www.patreon.com/BGforge)
+
+[![Telegram](https://img.shields.io/badge/telegram-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange?logo=telegram)](https://t.me/bgforge)
+[![Discord](https://img.shields.io/discord/420268540700917760?logo=discord&label=discord&color=blue&logoColor=FEE75C)](https://discord.gg/4Yqfggm)
+[![IRC](https://img.shields.io/badge/%23IRC-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange)](https://bgforge.net/irc)
+
 [**Download**](https://github.com/BGforgeNet/EItweaks/releases/latest)
 | [**Report issues**](https://github.com/BGforgeNet/EItweaks/issues)
 | [**Discuss**](https://forums.bgforge.net/viewtopic.php?f=22&t=183)
