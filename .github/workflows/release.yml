@@ -1,0 +1,53 @@
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      # Creates the release and uploads the installer.
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: check the version, take the notes
+        env:
+          TAG: ${{ github.ref_name }}
+        run: .github/scripts/release-notes.sh "$TAG" "$RUNNER_TEMP/notes.md"
+
+      # The build image and downloads master's builds saved, read only: a tag's run writes no cache.
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ runner.temp }}/image
+          key: build-image-${{ hashFiles('build/Containerfile', 'build/um-multitool.patch', 'build/go.mod', 'build/cmd/**', 'build/internal/**') }}
+
+      - run: .github/scripts/build-image.sh
+
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ runner.temp }}/downloads
+          key: downloads-${{ hashFiles('build/downloads.txt') }}
+
+      - name: build the installer
+        env:
+          TAG: ${{ github.ref_name }}
+          EITWEAKS_BUILD_IMAGE_READY: "1"
+          EITWEAKS_DOWNLOADS: ${{ runner.temp }}/downloads
+        run: scripts/build.sh "$TAG" "$RUNNER_TEMP/dist"
+
+      - name: publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: >-
+          gh release create "$TAG" "$RUNNER_TEMP"/dist/* --repo "$GITHUB_REPOSITORY" --verify-tag
+          --title "EItweaks $TAG" --notes-file "$RUNNER_TEMP/notes.md"
