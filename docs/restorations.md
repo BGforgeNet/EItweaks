@@ -1,6 +1,6 @@
 ## Restorations
 
-Content that is in the game files but unused by the game.
+EItweaks restores some content present in game resources, but previously unavailable.
 
 - Half effect rune is sold on Gipath. Makes starting a mage a bit easier.
 - Blue harpies drop their heads, like the other harpies.
