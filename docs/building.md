@@ -10,7 +10,7 @@ The game data is kept as source. `mod` is laid out as the mod's folder. The thir
 - `eix-<version>.zip`: the [eix](eix.md) release package, unmodified. The starter build places its `addon.dll`, license and third-party notices in the mod folder, and its `dinput.dll` in the zip's `Engine` folder, which the installer puts into the launcher's.
 - `d7vk.dll`: D7VK as Universal Mod distributes it. The starter build places it and its license in the mod folder, where `um.dll` loads it (`DDRAW_DLL` in `mod/um.cfg`). Standalone builds leave both out.
 - `um.dll`: Universal Mod's runtime from its release, without the rest of Universal Mod. The starter build places it in the mod folder with its license and `um-SOURCE.txt`, which says where its source is, and `mod/config.ini` loads it as the mod's plugin. `mod/um.cfg` holds the settings EItweaks needs; the installer keeps a player's existing `um.cfg` and sets those keys in it. Standalone builds leave all of it out.
-- `EIStarter-UM-0.2.9.zip`: the pinned launcher package, embedded in the installer for offline installation and upgrades.
+- `EIStarter-UM-0.3.0.zip`: the pinned launcher package, embedded in the installer for offline installation and upgrades.
 - `mod/spelladdon.ini`: EItweaks' settings for eix's built-in SpellAddon (eix's `spelladdon.ini` with EItweaks' options on). Standalone builds leave it out.
 
 The build compiles them with a patched [um-multitool](https://github.com/Kyr4l/ei-universal-mod) inside a container, and the installer with [Inno Setup](https://jrsoftware.org/isinfo.php) (`build/installer.iss`) in another. Install `podman` and put it on `PATH`, then, from the repository root:

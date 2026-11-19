@@ -33,7 +33,7 @@ mkdir "$work/zips"
 podman run --rm --network none -v "$repo:/repo:ro" -v "$downloads:/downloads:ro" -v "$work/zips:/out" \
     eitweaks-build eibuild build /repo /downloads "$version" /out
 cp build/installer.iss "$work/"
-cp "$downloads/EIStarter-UM-0.2.9.zip" "$work/"
+cp "$downloads/EIStarter-UM-0.3.0.zip" "$work/"
 podman run --rm --network none -v "$work/zips:/zips:ro" -v "$work:/work" eitweaks-build \
     eibuild payload /zips "$version" /work/payload
 # The compiler runs as the image's own user, which writes the installer under the script's folder.

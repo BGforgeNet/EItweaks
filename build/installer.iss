@@ -19,7 +19,7 @@
 #include "payload\files.iss"
 
 ; The pinned launcher package is embedded so installation works offline.
-#define StarterZipName "EIStarter-UM-0.2.9.zip"
+#define StarterZipName "EIStarter-UM-0.3.0.zip"
 
 [Setup]
 AppId=EItweaks
@@ -69,7 +69,7 @@ en.VariantStarter=With EIStarter-UM (recommended): selected in the launcher, the
 en.VariantStandalone=Standalone: installed directly into the game folder. Can be used with Cursed Lands or ei-rebuild.
 en.StarterFound=EIStarter-UM is installed in %1.
 en.StarterMissing=EIStarter-UM is not installed: the bundled version is installed into the folder chosen next.
-en.StarterOld=EIStarter-UM in %1 is older than 0.2.9: it is updated from the bundled version, keeping its settings and mods.
+en.StarterOld=EIStarter-UM in %1 is older than 0.3.0: it is updated from the bundled version, keeping its settings and mods.
 en.OpenStarterPage=EIStarter-UM's page
 en.StarterFailed=EIStarter-UM could not be unpacked: %1%n%nClick Next to try again, or go back and choose the standalone version.
 en.StarterDirLabel=Select the folder of EIStarter-UM. When it is not there, the bundled version is installed into this folder.
@@ -103,7 +103,7 @@ ru.VariantStarter=С EIStarter-UM (рекомендуется): выбирает
 ru.VariantStandalone=Отдельно: устанавливается прямо в папку игры. Подходит для Cursed Lands и ei-rebuild.
 ru.StarterFound=EIStarter-UM установлен в %1.
 ru.StarterMissing=EIStarter-UM не установлен: встроенная версия будет установлена в папку, выбранную далее.
-ru.StarterOld=EIStarter-UM в %1 старше версии 0.2.9: он будет обновлён из установщика, его настройки и моды сохранятся.
+ru.StarterOld=EIStarter-UM в %1 старше версии 0.3.0: он будет обновлён из установщика, его настройки и моды сохранятся.
 ru.OpenStarterPage=Страница EIStarter-UM
 ru.StarterFailed=Не удалось распаковать EIStarter-UM: %1%n%nНажмите Далее, чтобы попробовать снова, или вернитесь и выберите отдельный вариант.
 ru.StarterDirLabel=Выберите папку EIStarter-UM. Если его там нет, встроенная версия будет установлена в эту папку.
@@ -137,7 +137,7 @@ de.VariantStarter=Mit EIStarter-UM (empfohlen): im Launcher ausgewählt, die Spi
 de.VariantStandalone=Eigenständig: direkt in den Spielordner installiert. Auch mit Cursed Lands oder ei-rebuild nutzbar.
 de.StarterFound=EIStarter-UM ist in %1 installiert.
 de.StarterMissing=EIStarter-UM ist nicht installiert: Die enthaltene Version wird im folgenden Ordner installiert.
-de.StarterOld=EIStarter-UM in %1 ist aelter als 0.2.9: Er wird aus dem Installationspaket aktualisiert, seine Einstellungen und Mods bleiben erhalten.
+de.StarterOld=EIStarter-UM in %1 ist aelter als 0.3.0: Er wird aus dem Installationspaket aktualisiert, seine Einstellungen und Mods bleiben erhalten.
 de.OpenStarterPage=Seite von EIStarter-UM
 de.StarterFailed=EIStarter-UM konnte nicht entpackt werden: %1%n%nKlicken Sie auf "Weiter", um es erneut zu versuchen, oder waehlen Sie die eigenstaendige Variante.
 de.StarterDirLabel=Waehlen Sie den Ordner von EIStarter-UM. Ist er dort nicht vorhanden, wird die enthaltene Version dort installiert.
@@ -255,9 +255,9 @@ const
   OptPauseAggro = 7;
   OptPauseDead = 8;
   OptClipCursor = 9;
-  { EIStarter-UM 0.2.9, the first version that keeps the options changed in the game (earlier ones rewrote them at
-    every Play), published with Universal Mod's 0.8.7 pre-release; the embedded archive is checked against this. }
-  StarterZipSHA256 = '5f190de3f59e1cb3604de9c127f1100d577b40cb0564b1cbae173c3a5638d2a9';
+  { EIStarter-UM 0.3.0, published with Universal Mod's 0.8.8 pre-release alongside the um.dll EItweaks ships; the
+    embedded archive is checked against this. }
+  StarterZipSHA256 = 'ea0c4255869860834c97bb3ede18cc3cb687aab5b0951e1c8aa43fe397b44c1a';
   StarterZipName = '{#StarterZipName}';
   StarterExe = 'EIStarter-UM.exe';
   { texts.res of the GOG Russian version, the same as the official Russian patch 1.06's. }
@@ -370,13 +370,13 @@ begin
   Result := RemoveBackslashUnlessRoot(Result);
 end;
 
-{ Whether Dir holds EIStarter-UM 0.2.9 or later, which names the backup of the game's settings it introduced. An
-  older one is updated from the embedded package like a missing one; its config and mods stay. }
+{ Whether Dir holds EIStarter-UM 0.3.0 or later, which names the D7VK check program it introduced. An older one is
+  updated from the embedded package like a missing one; its config and mods stay. }
 function HasStarter(const Dir: String): Boolean;
 var
   Exe: AnsiString;
 begin
-  Result := LoadStringFromFile(AddBackslash(Dir) + StarterExe, Exe) and (Pos('EIStarter-UM-reg.cfg', Exe) > 0);
+  Result := LoadStringFromFile(AddBackslash(Dir) + StarterExe, Exe) and (Pos('d7vk-check.exe', Exe) > 0);
 end;
 
 function StarterInstalled: Boolean;
