@@ -37,7 +37,7 @@ Download the installer, `eitweaks-<version>.exe`, from the latest [release](http
 
 ### Recommended mods
 
-- [Evil Islands HQ music](https://github.com/BGforgeNet/Evil_Islands_HQ_music): lossless FLAC music for most tracks, and several tracks the game has but never plays. The FLAC tracks play in the starter version of EItweaks.
+- [Evil Islands HQ music](https://github.com/BGforgeNet/Evil_Islands_HQ_music): high quality in-game music.
 
 ### More
 
